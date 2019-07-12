@@ -1,0 +1,32 @@
+{{ define "header" }}
+{{- partial "news/header.html" . -}}
+{{ end }}
+
+{{ define "pagestyles" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/news.css"/>
+    <style>
+        .container .article_page {
+            width: 75%;
+            margin: 0 auto;
+        }
+        @media ( max-width: 768px ) {
+            .container .article_page {
+                width: auto;
+                margin: 0 auto;
+            }
+        }
+    </style>
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+    {{- partial "news/breadcrumbs.html" . -}}
+    <div class="article_page">
+        <h3>{{ .Title | safeHTML }}</h3>
+        <em>{{ .Date.Format "Mon, Jan 2, 2006" }}</em>
+        <div class="article_content">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}

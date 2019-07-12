@@ -1,0 +1,58 @@
+    <h3>Gallery Spaces</h3>
+    <ul>
+        {{ if eq .Params.location "bapst" }}
+        <li class="target">{{ .Site.Params.bapst }}</li>
+        {{ else }}
+        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/bapst">{{ .Site.Params.bapst }}</a></li>
+        {{ end }}
+
+        {{ if eq .Params.location "burns" }}
+        <li class="target">{{ .Site.Params.burns }}</li>
+        {{ else }}
+        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/burns">{{ .Site.Params.burns }}</a></li>
+        {{ end }}
+
+        {{ if eq .Params.Location "tml" }}
+        <li class="target">{{ .Site.Params.tml }}</li>
+        {{ else }}
+        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/tml">{{ .Site.Params.tml }}</a></li>
+        {{ end }}
+
+        {{ if eq .Params.location "lvl1" }}
+        <li class="target">{{ .Site.Params.lvl1 }}</li>
+        {{ else }}
+        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/lvl1">{{ .Site.Params.lvl1 }}</a></li>
+        {{ end }}
+
+        {{ if eq .Params.location "lvl3" }}
+        <li class="target">{{ .Site.Params.lvl3 }}</li>
+        {{ else }}
+        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/lvl3">{{ .Site.Params.lvl3 }}</a></li>
+        {{ end }}
+
+        {{ if eq .Params.location "reading" }}
+        <li class="target">{{ .Site.Params.reading }}</li>
+        {{ else }}
+        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/reading">{{ .Site.Params.reading }}</a></li>
+        {{ end }}
+
+        {{ if eq .Params.location "backwall" }}
+        <li class="target">{{ .Site.Params.backwall }}</li>
+        {{ else }}
+        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/backwall">{{ .Site.Params.backwall }}</a></li>
+        {{ end }}
+
+        {{ if eq .Params.location "lobby" }}
+        <li class="target">{{ .Site.Params.lobby }}</li>
+        {{ else }}
+        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/lobby">{{ .Site.Params.lobby }}</a></li>
+        {{ end }}
+
+        {{ if eq .Params.location "stokes" }}
+        <li class="target">{{ .Site.Params.stokes }}</li>
+        {{ else }}
+        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/stokes">{{ .Site.Params.stokes }}</a></li>
+        {{ end }}
+        
+        <li class="digital-exhibits-li"><a href="https://library.bc.edu/digital-exhibits/">Boston College Libraries Digital Exhibits</a></li>
+    </ul>

@@ -1,0 +1,59 @@
+{{ define "title" }}
+{{ .Site.Params.bapst }} Exhibits Archive
+{{ end }}
+
+{{ define "header" }}
+{{- partial "exhibits/header.html" . -}}
+{{ end }}
+
+{{ define "pagestyles" }}{{ end }}
+
+{{ define "main" }}
+<div class="container exhibit-container">
+    {{- partial "exhibits/breadcrumbs.html" . -}}
+    
+    <div id="exhibit" class="archives">
+        {{- partial "exhibits/locations/headers.html" . -}}
+
+        <div class="row">
+            <div class="latest_exhibit">
+                <div class="left">
+                    {{- partial "exhibits/gallerynav.html" . -}}
+                </div>
+    
+                <div class="right">
+                    <h3>Exhibits in the Bapst Art Library Gargan Hall Exhibit Cases</h3>
+                    <ul>
+                        <div class="holdhead">
+                            <h4>2016-2019</h4>
+                        </div>
+                        
+                        {{ range (where .Site.RegularPages ".Params.location" .Params.location) }}
+                        {{ .Scratch.Set "loc" .Params.location }}
+                        {{- partial "exhibits/summary.html" . -}}
+                        {{ end }}
+                    </ul>
+
+                    <br /> <br />
+
+                    <h3>Archived Exhibits from the Bapst Student Gallery</h3>
+                    <p>In the spring of 2004, Bapst Art Library became the host for the first ever Boston College student art gallery. The gallery is a joint endeavor of the Bapst Art Library, the Fine Arts Department, and ArtVision, a student group for the promotion of the arts on campus. The gallery features a range of media including painting, sketches, watercolors, photography, and ceramic sculptures. Students plan, jury, hang, and manage several exhibits throughout the year. <br />
+                    <em>Note: This gallery is no longer in use.</em></p>
+
+                    <ul>
+                        <div class="holdhead">
+                            <h4>2011-2014</h4>
+                        </div>
+                        {{/* manually set the location to "bapstarchive" */}}
+                        {{ range (where .Site.Pages ".Params.location" "bapstarchive") }}
+                        {{ .Scratch.Set "loc" "bapstarchive" }}
+                        {{- partial "exhibits/summary.html" . -}}
+                        {{ end }}
+                    </ul>
+
+                </div> {{/* end .right */}}
+            </div> {{/* end .latest_exhibit */}}
+        </div> {{/* end .row */}}
+    </div> {{/* end #exhibit */}}
+</div>
+{{ end }}

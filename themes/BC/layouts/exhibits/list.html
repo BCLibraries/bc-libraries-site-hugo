@@ -1,0 +1,227 @@
+{{ define "title" }}
+Exhibits at Boston College Libraries
+{{ end }}
+
+{{ define "header" }}
+{{- partial "news/header.html" . -}}
+{{ end }}
+
+{{ define "pagestyles" }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
+    <style>
+        article {
+            margin: 1rem 0 3rem 0;
+        }
+        img.media-object {
+            max-width: 137px;
+        }
+    </style>
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+    {{- partial "exhibits/breadcrumbs.html" . -}}
+
+    <div id="exhibit">
+        <div class="blackband">
+            <div class="bandcenter">
+                <h2>Exhibits at Boston College Libraries</h2>
+                <p>Exhibits in the Boston College Libraries will advance discovery of library resources by highlighting
+                    connections between our collections and academic and community life at BC. The Libraries welcome
+                    partnerships with the Boston College community and other institutions, groups, or individuals to
+                    create thoughtful and attractive exhibits. Successful exhibit proposals will be in strong alignment
+                    with the mission and collections of the Libraries.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="latest_exhibit">
+                <div class="left col-md-3">
+                    {{- partial "exhibits/gallerynav.html" . -}}
+                </div>
+
+                <div class="right col-md-9">
+                    <h3>Latest Exhibits</h3>
+
+                    {{/* BAPST LATEST EXHIBIT */}}
+                    {{ range first 1 (where (where .Site.Pages ".Params.location" "bapst") ".Params.active" true) }}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>{{ .Site.Params.Bapst }}, Gargan Hall</h4>
+                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.bapst }} Past Exhibits</a></p>
+                        </div>
+
+                        {{- partial "exhibits/location-summary.html" . -}}
+                    </div>
+                    {{ end }}
+
+                    {{/* BURNS LATEST EXHIBIT */}}
+                    {{ range first 1 (where (where .Site.Pages ".Params.location" "burns") ".Params.active" true) }}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>{{ .Site.Params.Burns }}</h4>
+                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.burns }} Past Exhibits</a></p>
+                        </div>
+
+                        {{- partial "exhibits/location-summary.html" . -}}
+                    </div>
+                    {{ end }}
+
+                    {{/* Boston College Libraries Digital Exhibits */}}
+                    {{ range first 1 (where (where .Site.Pages ".Params.location" "burnsomeka") ".Params.active" true) }}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>Boston College Libraries Digital Exhibits</h4>
+                            <p>&nbsp;</p>
+                        </div>
+
+                        <div class="frame">
+                            <a href="https://library.bc.edu/digital-exhibits/">
+                                <img src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.location }}/{{ .Params.imagethumb}}" alt="{{ .Params.imagealt }}">
+
+                                <div class="info">
+                                    <p class="date">{{ .Params.Daterange }}</p>
+                                    <p class="title">{{ .Title }}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    {{ end }}
+
+                    {{/* HISTORY DEPT, STOKE HALL LATEST EXHIBIT */}}
+                    {{ range first 1 (where (where .Site.Pages ".Params.location" "stokes") ".Params.active" true) }}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>{{ .Site.Params.stokes }}</h4>
+                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.stokes }} Past Exhibits</a></p>
+                        </div>
+
+                        {{- partial "exhibits/location-summary.html" . -}}
+                    </div>
+                    {{ end }}
+
+                    {{/* O'NEILL LEVEL ONE LATEST EXHIBIT */}}
+                    {{ range first 1 (where (where .Site.Pages ".Params.location" "lvl1") ".Params.active" true) }}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>{{ .Site.Params.lvl1 }}</h4>
+                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.lvl1 }} Past Exhibits</a></p>
+                        </div>
+
+                        {{- partial "exhibits/location-summary.html" . -}}
+                    </div>
+                    {{ end }}
+
+                    {{/* O'NEILL LEVEL THREE LATEST EXHIBIT */}}
+                    {{ range first 1 (where (where .Site.Pages ".Params.location" "lvl3") ".Params.active" true) }}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>{{ .Site.Params.lvl3 }}</h4>
+                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.lvl3 }} Past Exhibits</a></p>
+                        </div>
+
+                        {{- partial "exhibits/location-summary.html" . -}}
+                    </div>
+                    {{ end }}
+
+                    {{/* O'NEILL READING ROOM LATEST EXHIBIT */}}
+                    {{ range first 1 (where (where .Site.Pages ".Params.location" "reading") ".Params.active" true) }}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>{{ .Site.Params.reading }}</h4>
+                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.Location }}">{{ .Site.Params.reading }} Past Exhibits</a></p>
+                        </div>
+
+                        {{- partial "exhibits/location-summary.html" . -}}
+                    </div>
+                    {{ end }}
+
+                    {{/* O'NEILL READING ROOM BACK WALL LATEST EXHIBIT */}}
+                    {{ range first 1 (where (where .Site.Pages ".Params.location" "backwall") ".Params.active" true) }}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>{{ .Site.Params.backwall }}</h4>
+                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.backwall }} Past Exhibits</a></p>
+                        </div>
+
+                        {{- partial "exhibits/location-summary.html" . -}}
+                    </div>
+                    {{ end }}
+
+                    {{/* O'NEILL LEVEL 3 LOBBY LATEST EXHIBIT */}}
+                    {{ range first 1 (where (where .Site.Pages ".Params.location" "lobby") ".Params.active" true) }}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>{{ .Site.Params.lobby }}</h4>
+                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.lobby }} Past Exhibits</a></p>
+                        </div>
+
+                        {{- partial "exhibits/location-summary.html" . -}}
+                    </div>
+                    {{ end }}
+
+                    {{/* TML LATEST EXHIBIT */}}
+                    {{ range first 1 (where (where .Site.Pages ".Params.location" "tml") ".Params.active" true) }}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>{{ .Site.Params.tml }}</h4>
+                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.tml }} Past Exhibits</a></p>
+                        </div>
+
+                        {{- partial "exhibits/location-summary.html" . -}}
+                    </div>
+                    {{ end }}
+
+                    {{/* AREA FOR PERMANENT EXHIBITS, TIP O'NEILL AND VIRTUAL. LEAVING THIS HERE UNTIL SECTIONS ARE BUILT */}}
+                    <div class="above_footer">
+                        <hr/>
+                    </div>
+    
+                    {{/* TIP O'NEILL */}}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>Tip O’Neill Exhibit</h4>
+                            <p>Click here for more information on the <a href="http://www.bc.edu/libraries/about/exhibits/burnsvirtual/oneill.html">virtual exhibit</a>.</p>
+                        </div>
+
+                        <div class="frame">
+                            <a href="http://www.bc.edu/content/bc/libraries/about/exhibits/oneill/oneill.html">
+                                <img src="{{ .Site.BaseURL }}img/{{ .Section }}/virtual/tip-thumb.png" alt="Painting of Tip O'Neill">
+                                <div class="info">
+                                    <p class="date">&nbsp;</p>
+                                    <p class="title">Tip O'Neill Exhibit</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+    
+                    {{/* BURNS VIRTUAL EXHIBIT LINK */}}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>Burns Library Virtual Exhibits</h4>
+                            <p>Click here for <a href="http://www.bc.edu/libraries/about/exhibits-new/burnsvirtual.html">virtual Past Exhibits</a>.</p>
+                        </div>
+
+                        <div class="frame">
+                            <a href="http://www.bc.edu/libraries/about/exhibits-new/burnsvirtual/irish-connections.html">
+                                <img src="{{ .Site.BaseURL }}img/{{ .Section }}/virtual/burns-thumb.png" alt="Tip O'Neill with John F. Kennedy">
+                                <div class="info">
+                                    <p class="date">&nbsp;</p>
+                                    <p class="title">Exploring Boston Irish Connections</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="above_footer">
+                        <hr/>
+                        <h4>Interested in using library space for an exhibit?</h4>
+                        <p>See our <a href="{{ .Site.BaseURL }}{{ .Section }}/spaces">exhibit spaces page</a> for descriptions and contact information.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{end}}

@@ -1,0 +1,49 @@
+{{ define "header" }}
+{{- partial "exhibits/header.html" . -}}
+{{ end }}
+
+{{ define "pagestyles" }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
+{{ end }}
+
+{{ define "main" }}
+<div class="container exhibit-container">
+    {{- partial "exhibits/breadcrumbs.html" . -}}
+
+    <div class="exhibit_page">
+        {{- partial "exhibits/locations/headers.html" . -}}
+
+        <div class="row">
+            <div id="individualpage" class="{{ .Params.style }}">
+                <div class="exhibittitle">
+                    <h3>
+                        {{ .Title }} <br/>
+                        <span class="subtitle">{{ .Params.subtitle }}</span>
+                    </h3>
+
+                    <p><span class="date"><em>{{ .Params.daterange }}</em></span><br/>
+                        <span class="sponsor">{{ .Params.sponsor }}</span></p>
+                </div>
+                <div class="article_content">
+                    <div class="poster">
+                        <img src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.location }}/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                    </div>
+
+                    <div class="text">
+                        {{ .Content }}
+                    </div>
+                </div>
+                <div class="article_content_two">
+                    <div class="text">
+                        {{ .Content }}
+                    </div>
+    
+                    <div class="poster">
+                        <img src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.location }}/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

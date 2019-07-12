@@ -1,0 +1,30 @@
+<footer role="contentinfo">
+    <h2 class="sr-only sr-only-focusable">Footer</h2>
+    
+    {{- partial "footer-lib.html" . -}}
+
+    {{- partial "footer-bc.html" . -}}
+</footer>
+
+{{/* bootom of <body> scripts */}}
+<script src="{{ .Site.BaseURL }}js/nospam.js"></script>
+<script src="{{ .Site.BaseURL }}js/libhoursv2.js"></script>
+
+<!-- MEGA MENU SCRIPTS -->
+<!-- This code will prevent unexpected menu close when using some components (like accordion, forms, etc) -->
+<script>$(document).on('click','.yamm .dropdown-menu',function(e){e.stopPropagation()});</script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/bootstrap-hover-dropdown.min.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/megamenu.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}js/libraryinfo.js"></script>
+<!-- END MEGA MENU SCRIPTS -->
+
+<script src="https://arc.bc.edu/notices/downtime-notices-client.js"></script>
+<script>
+    // Only run in test for now.
+    if (window.location.hostname === 'libdev.bc.edu') {
+        BCLibDowntimeNotices({
+            styles: true
+        });
+    }
+</script>

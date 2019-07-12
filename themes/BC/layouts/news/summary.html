@@ -1,0 +1,29 @@
+<article class="post col-sm-6">
+    {{ if .Params.Destination }}
+        {{ .Scratch.Set "dest" .Params.Destination }}
+    {{ else }}
+        {{ .Scratch.Set "dest" .Permalink }}
+    {{ end }}
+
+    {{ if .Params.Imagethumb }}
+        {{ .Scratch.Set "img" "/news/" }}
+        {{ .Scratch.Add "img"  .Params.Imagethumb }}
+        {{ .Scratch.Set "imgalt" .Params.imagealt }}
+    {{ else }}
+        {{ .Scratch.Set "img" "/generic_news.png" }}
+        {{ .Scratch.Set "imgalt" "News icon" }}
+    {{ end }}
+
+    <div class="media">
+        <div class="media-left">
+            <a href='{{ .Scratch.Get "dest" }}'>
+                <img class="media-object" src='{{ .Site.BaseURL }}img/{{ .Scratch.Get "img" }}' alt='{{ .Scratch.Get "imgalt" }}'>
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading"><a href='{{ .Scratch.Get "dest" }}'>{{ .Title | safeHTML }}</a></h4>
+            <div class="archive_date">{{ .Date.Format "Jan 2, 2006" }}</div>
+            <p>{{ .Summary | safeHTML | truncate 200 }}</p>
+        </div>
+    </div>
+</article>

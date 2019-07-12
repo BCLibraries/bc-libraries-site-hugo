@@ -1,0 +1,12 @@
+<div class="facpub_archives">
+    <!-- START ARCHIVES -->
+    <div class="yearlyblock row">
+        <h3>Recent Highlights</h3>
+
+        <div class="row">
+            {{ range first 10 (where (where .Site.RegularPages ".Params.type" "facpub") ".Params.oneoff" false) }}
+            {{- partial "facpub/archive-item.html" . -}}
+            {{ end }}
+        </div>
+    </div>
+</div>

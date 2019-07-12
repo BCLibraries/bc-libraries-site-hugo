@@ -1,0 +1,10 @@
+<div class="frame">
+    <a href="{{ .Permalink }}">
+        <img src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.location }}/{{ .Params.imagethumb}}" alt="{{ .Params.imagealt }}">
+
+        <div class="info">
+            <p class="date">{{ .Params.daterange }}</p>
+            <p class="title">{{ .Title }}</p>
+        </div>
+    </a>
+</div>

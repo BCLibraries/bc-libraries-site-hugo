@@ -1,0 +1,91 @@
+{{ define "title" }}
+Faculty Publication Highlights at Boston College Libraries
+{{ end }}
+
+{{ define "header" }}
+<!-- BEGIN HEADER -->
+<div id="header" class="fph_header">
+    <a href="{{ .Site.BaseURL }}{{ .Section }}" class="facpubtitle" title="Back to the Faculty Publication Highlight's archives"><h1>Faculty Publication Highlights</h1> </a>
+</div>
+<!-- END HEADER -->
+{{ end }}
+
+{{ define "pagestyles" }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/facpub_refresh.css"/>
+{{ end }}
+
+{{ define "main" }}
+<div class="facpub_wrap">
+    <ol class="breadcrumb" id="s-lib-bc-list">
+        <li id="s-lib-bc-customer"><a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a></li>
+        <li id="s-lib-bc-site" class="active">Faculty Publication Highlights</li>
+    </ol>
+
+    <div class="row">
+        <div class="latest-highlight">
+            <h2>Current Highlight</h2>
+
+            <!-- LATEST FACPUB -->
+            {{ range first 1 (where .Site.RegularPages ".Params.type" "facpub") }}
+            <div class="youtube">
+                <div id="titleauthor">
+                    <h3><a href="{{ .Permalink }}">{{ .Title | safeHTML }}</a></h3>
+                    {{ .Params.by }} by {{ .Params.authorfirstname }} {{ .Params.authorlastname }} 
+                
+                    {{ if .Params.secondauthor }}
+                    &#x26; {{ .Params.secondauthor}} 
+                    {{ end }}
+
+                    {{ if .Params.thirdauthor }}
+                    &#x26; {{ .Params.thirdauthor}} 
+                    {{ end }}
+                </div>
+
+                <div class="video-container">
+                    <iframe width="640" height="360" src="{{ .Params.youtube }}" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- END LATEST -->
+
+            <div class="row">
+                <div class="col-sm-6 fph_content_left">
+                    <p><em>The Faculty Publication Highlights series features recent publications by Boston College faculty. 
+                        While it is likely that monographs will figure largely among these publications, the Libraries are also 
+                        eager to promote other faculty productions such as significant journal articles, paintings, 
+                        musical compositions, and movies.</em></p>
+                    <p>If you have any comments or suggestions for future highlights, please contact <a href="mailto:leslie.homzie@bc.edu">Leslie Homzie</a>, Senior Research Librarian. </p>
+                </div>
+                <div class="col-sm-6 fph_content_right">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="{{ .Permalink }}"><img class="media-object" src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.bookcover }}" alt="{{ .Params.imagealt }}"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><strong>{{ .Params.authorfirstname }} {{ .Params.authorlastname }}</strong></h4>
+                            <em>{{ .Params.authorposition }}</em>
+    
+                            {{ if .Params.secondauthor }}
+                            <p><strong>{{ .Params.secondauthor }}</strong><br /><em>{{ .Params.secondposition }}</em></p>
+                            {{ end }}
+                            {{ if .Params.thirdauthor }}
+                            <p><strong>{{ .Params.thirdauthor }}</strong><br /><em>{{ .Params.thirdposition }}</em></p>
+                            {{ end }}
+    
+                            {{ if eq .Params.showbooklocation true }}
+                            <p class="{{ .Params.showbooklocation }}"><a href="{{ .Params.booklocation }}" class="location">Find this item</a></p>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <a href="{{ .Permalink }}" class="view-interview">View interview and more</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+
+    {{- partial "facpub/archive.html" . -}}
+</div>
+{{end}}

@@ -1,0 +1,20 @@
+baseURL = "https://library.bc.edu"
+languageCode = "en-us"
+title = "Libraries"
+theme = "BC"
+summaryLength = 10
+[permalinks]
+    news = "/news/:year/:month/:slug/"
+    exhibits = "/exhibits/:year/:month/:slug/"
+    facpub = "/facpub/:year/:month/:slug/"
+[params]
+    exhibits = "Library Exhibits"
+    burns = "Burns Library"
+    bapst = "Bapst Library"
+    tml = "Theology & Ministry Library"
+    backwall = "O'Neill Reading Room Back Wall"
+    lobby = "O'Neill Level 3 Lobby"
+    lvl1 = "O'Neill Level One Gallery"
+    lvl3 = "O'Neill Level Three Gallery"
+    reading = "O'Neill Reading Room"
+    stokes = "History Dept, Stokes Hall"

@@ -1,0 +1,70 @@
+{{/* 
+    There's a lot going on here... 
+    First, we are filtering for all exhibit regular pages that are active and belong to various locations. We do this for five specific locations.
+    Second, we use the 'union' operator to combine all of the results into the $exhibits variable. 
+
+    This set of results is then used to create the carousel indicators and the carousel slide below.
+    */}}
+{{ $exhibits := (where (where (where .Site.RegularPages ".Params.type" "exhibits") ".Params.active" true) ".Params.location" "burns") }}
+{{ $exhibits := $exhibits | union (where (where (where .Site.RegularPages ".Params.type" "exhibits") ".Params.active" true) ".Params.location" "lvl1") }}
+{{ $exhibits := $exhibits | union (where (where (where .Site.RegularPages ".Params.type" "exhibits") ".Params.active" true) ".Params.location" "lvl3") }}
+{{ $exhibits := $exhibits | union (where (where (where .Site.RegularPages ".Params.type" "exhibits") ".Params.active" true) ".Params.location" "backwall") }}
+{{ $exhibits := $exhibits | union (where (where (where .Site.RegularPages ".Params.type" "exhibits") ".Params.active" true) ".Params.location" "tml") }}
+
+<!-- EXHIBIT HIGHLIGHT START -->
+<!-- FUTURE NOTES, ADD SLIDER AND OTHER EXHIBITS -->
+<div id="exhibit-highlight">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>Exhibits</h2>
+            </div>
+
+            <div class="col-md-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        {{/* we use $idx to indicate the index of the set, which starts from 0. */}}
+                        {{/* the variable containing the current iteration of the range loop is $exhibit. */}}
+                        {{/* we also sort the entire $exhibits set by date desending. */}}
+                        {{ range $idx, $exhibit := sort $exhibits ".Params.date"  "desc" }}
+                        <li data-target="#myCarousel" data-slide-to="{{ $idx }}" class='{{ if eq $idx 0 }}active{{ end }}' data-location="{{ $exhibit.Params.location }}"></li>
+                        {{ end }}
+                    </ol>
+
+                    <div class="carousel-inner" id="exhibits"  data-tag="ga-tag">
+                        {{ range $idx, $exhibit := sort $exhibits ".Params.date"  "desc" }}
+                        <div class='item exhibit-box {{ if eq $idx 0 }}active{{ end }}' data-location='{{ $exhibit.Params.location }}'>
+                            <div class="row">
+                                <div class="exhibit-left col-md-9 col-sm-9 col-xs-12">
+                                    <p><em>{{ .Site.Param $exhibit.Params.location }}</em></p>
+                                    <a href="{{ $exhibit.Permalink }}" class="current-exhibits-title">{{ $exhibit.Title }}</a>
+
+                                    <div class="exhibit-blurb"><p>{{ $exhibit.Summary }}</p></div>
+                                    <br />
+                                    <p class="more-exhibits-button"><a href="{{ .Site.BaseURL }}{{ .Params.type }}"><span class="btn btn-default btn-blue">See more exhibits</span></a></p>
+                                </div>
+
+                                <div class="exhibit-right col-md-3 col-sm-3 col-xs-4">
+                                    <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ $exhibit.Params.location }}/{{ $exhibit.Params.imagethumb }}" alt="{{ $exhibit.Params.imagealt }}" class="exhibit-poster">
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="left:-15%">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next" style="right:-15%">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- EXHIBIT HIGHLIGHT END -->

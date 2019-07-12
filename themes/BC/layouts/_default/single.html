@@ -1,0 +1,13 @@
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
+
+{{ define "header" }}{{ end }}
+
+{{ define "pagestyles" }}{{ end }}
+
+{{ define "main" }}
+<h2 class="page-title">{{ .Title }}</h2>
+
+{{ .Content }}
+{{ end }}

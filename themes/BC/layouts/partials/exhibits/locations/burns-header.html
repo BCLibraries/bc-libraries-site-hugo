@@ -1,0 +1,9 @@
+<div class="blackband {{ .Params.location }}">
+    <div class="bandcenter">
+        <h2>{{ .Site.Params.burns }} Exhibit{{ if eq .Params.archivepage true }}s Archive{{ end }}</h2>
+        <p>Four wall cases featuring exhibits highlighting collections in the Burns Library.</p>
+        {{ if ne .Params.archivepage true }}
+        <p><a href="/{{ .Section }}/{{ .Params.location }}" class="arrow">Return to the {{ .Site.Params.burns }} Exhibits</a></p>
+        {{ end }}
+    </div>
+</div>

@@ -1,0 +1,23 @@
+    <div class="archive-item col-sm-6">
+        <div class="media">
+            <div class="media-left">
+                <a href="{{ .Permalink }}">
+                    <img class="media-object" src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.bookcover }}" alt="{{ .Params.imagealt }}">
+                </a>
+            </div>
+            <div class="media-body">
+                <a href="{{ .Permalink }}" class="archive-item-title"><em>{{ .Title | safeHTML }}</em></a>
+                <div class="archive-item-authors">
+                    {{ .Params.by }} by {{ .Params.authorfirstname }} {{ .Params.authorlastname }}
+
+                    {{ if .Params.secondauthor }}
+                    &#x26; {{ .Params.secondauthor }} 
+                    {{ end }}
+    
+                    {{ if .Params.thirdauthor }}
+                    &#x26; {{ .Params.thirdauthor }} 
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,104 @@
+{{ define "title" }}
+Boston College Libraries
+{{ end }}
+
+{{ define "header" }}
+{{- partial "homepage/header.html" . -}}
+{{ end }}
+
+{{ define "pagestyles" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/stories.css"/>
+{{ end }}
+
+{{ define "main" }}
+    <div id="main-body" role="main">
+        <!-- DB RG BOX START -->
+        <div class="container" id="db-rg-hours">
+            <div class="row nobottom">
+                {{- partial "homepage/quick-links.html" . -}}
+    
+                {{- partial "homepage/start-research.html" . -}}
+    
+                {{- partial "homepage/story-box.html" . -}}
+            </div>
+        </div>
+        <!-- DB RG HOURS BOX END -->
+
+        {{- partial "homepage/news-row.html" . -}}
+
+        {{- partial "homepage/digital-scholarship-highlight.html" . -}}
+
+        {{- partial "homepage/scholarship-at-bc.html" . -}}
+
+        {{- partial "homepage/exhibits-highlight.html" . -}}
+
+        {{- partial "homepage/facpub-highlight.html" . -}}
+
+        {{- partial "homepage/special-collections-highlight.html" . -}}
+    </div>
+{{ end }}
+
+{{ define "pagescripts" }}
+    <script type="text/javascript" src="{{ .Site.BaseURL }}js/story-box.js"></script>
+    <script type="text/javascript" src="{{ .Site.BaseURL }}bcbento/js/typeahead.bundle.min.js"></script>
+    <script type="text/javascript" src="{{ .Site.BaseURL }}bcbento/js/bclib-typeahead.js"></script>
+    <script type="text/javascript">
+        // Various glue scripts for the front page.
+        (function () {
+            function run_on_ready(fn) {
+                if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                    fn();
+                } else {
+                    document.addEventListener('DOMContentLoaded', fn);
+                }
+            }
+
+            function listenForTypeahead() {
+                $('#search-panel').on('typeahead:selected', function (evt, data) {
+                    $('#search-panel form').submit();
+                });
+            }
+
+            /* Rewrote makeQuickLinkBoxesClickable to use jQuery methods. */
+            /* Fixes IE/Edge issue with forEach() not supporting nodeList */
+
+            /* object returned from document.querySelectorAll */
+            function makeQuickLinkBoxesClickable() {
+                $(".quick-link-block").click(function (evt) {
+                    window.location = $(this).find("a").attr("href");
+                });
+            }
+
+            function smartLinkToSearch() {
+                var host = window.location.host === 'libdev.bc.edu' ? 'bcprimo-test.hosted.exlibrisgroup.com' : 'bc-primo.hosted.exlibrisgroup.com';
+
+                var book_search_url = 'https://' + host + '/primo-explore/search?tab=bcl_only&search_scope=bcl&vid=bclib_new&lang=en_US&offset=0',
+                    article_search_url = 'https://' + host + '/primo-explore/search?tab=pci_only&search_scope=pci&vid=bclib_new&lang=en_US&offset=0',
+                    journal_search_url = 'https://' + host + '/primo-explore/jsearch?tab=jsearch_slot&vid=bclib_new&lang=en_US&offset=0';
+
+                linkToSearch('.book-search-link', book_search_url);
+                linkToSearch('.article-search-link', article_search_url);
+                linkToSearch('.journal-search-link', journal_search_url, 'journals=any,~~TERM~~');
+            }
+
+            function linkToSearch(link_class, base_url, additional_search_param) {
+                $(link_class).click(function (e) {
+                    var term = $('#lib-search-box').val();
+                    if (term) {
+                        base_url = base_url + '&query=any,contains,~~TERM~~';
+                        if (additional_search_param) {
+                            base_url = base_url + '&' + additional_search_param
+                        }
+                    }
+                    e.preventDefault();
+                    window.location.href = base_url.replace(/~~TERM~~/g, term);
+                    return false;
+                });
+            }
+
+            run_on_ready(smartLinkToSearch());
+            run_on_ready(listenForTypeahead);
+            run_on_ready(makeQuickLinkBoxesClickable);
+        })();
+    </script>
+{{ end }}

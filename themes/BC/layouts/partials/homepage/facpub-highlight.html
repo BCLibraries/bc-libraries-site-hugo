@@ -1,0 +1,30 @@
+<!-- FACPUB START -->
+<div class="container" id="facpub" data-tag="ga-tag">
+    <div class="row">
+        <div class="col-md-12">
+            <h2><a href="{{ .Site.BaseURL }}facpub/">Faculty Publication Highlights</a></h2>
+        </div>
+        
+        {{ range first 1 (where .Site.RegularPages ".Params.type" "facpub") }}
+        <div class="col-md-5 col-sm-5 col-xs-12">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p>{{ .Params.authorfirstname }} {{ .Params.authorlastname }}<br/>
+                <em>{{ .Params.authorposition }}</em>
+            </p>
+        </div>
+        <div class="col-md-7 col-sm-7 col-xs-12">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="{{ .Params.youtube }}" frameborder="0" allowfullscreen title="Interview with author"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <p class="more-link"><a href="{{ .Permalink }}">Read more about <em>{{ .Title }}</em> <i class="fa fa-lg fa-long-arrow-right" aria-hidden="true"></i></a></p>
+        </div>
+        {{ end }}
+    </div>
+</div>
+<!-- FACPUB END -->

@@ -1,0 +1,20 @@
+<div id="storybox" class="col-md-6 col-sm-12 col-xs-12 col-xxs" data-tag="ga-tag">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 col-xxs story-display">
+            {{ range $idx, $val := first 4 (where (where .Site.RegularPages ".Params.type" "stories") ".Params.expired" false) }}
+            <figure class="story sr-only" id="story-{{$idx}}">
+                <a href="{{ .Params.destination }}">
+                    <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}" />
+                    <figcaption>{{ .Title }}</figcaption>
+                </a>
+            </figure>
+            {{ end }}
+        </div>
+
+        <div class="col-md-2 story-selectors" aria-hidden="true">
+            {{ range $idx, $val := first 4 (where (where .Site.RegularPages ".Params.type" "stories") ".Params.expired" false) }}
+            <img class="selector" src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.selectorimg }}" alt="thumbnail" data-story="story-{{ $idx }}" aria-hidden="true" />
+            {{ end }}
+        </div>
+    </div>
+</div>

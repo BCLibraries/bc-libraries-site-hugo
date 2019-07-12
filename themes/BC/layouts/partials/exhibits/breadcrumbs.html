@@ -1,0 +1,17 @@
+<ol class="breadcrumb" id="s-lib-bc-list">
+    <li id="s-lib-bc-customer"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></li>
+    {{/* pages like /exhibits and /exhibits/burns are nodes */}}
+    {{ if .Page.IsNode }}
+        {{/* pages like /exhibits/burns and /exhibits/bapst have 'archivepage: true' set in their respective _index.md front matter */}}
+        {{ if eq .Page.Params.archivepage true }}
+            <li id="s-lib-bc-site"><a href="{{ .Site.BaseURL }}{{ .Section }}">{{ .Site.Params.exhibits }}</a></li>
+            <li id="s-lib-bc-group" class="active">{{ .Site.Param .Page.Params.location }} Exhibit Archives</li>
+        {{ else }}
+            <li id="s-lib-bc-page" class="active">{{ .Site.Params.exhibits }}</li>
+        {{ end }}
+    {{ else }} {{/* all other exhibit pages */}}
+        <li id="s-lib-bc-site"><a href="{{ .Site.BaseURL }}{{ .Section }}">{{ .Site.Params.exhibits }}</a></li>
+        <li id="s-lib-bc-group"><a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Page.Params.location }}">{{ .Site.Param .Page.Params.location }} Exhibit Archives</a></li>
+        <li id="s-lib-bc-page" class="active">{{ .Title }}</li>
+    {{ end }}
+</ol>
