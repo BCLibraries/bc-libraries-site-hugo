@@ -3,7 +3,7 @@
 
 name = "BC"
 license = "MIT"
-licenselink = "https://github.com/bc-libraries-site-hugo/BC/blob/master/LICENSE"
+licenselink = "https://github.com/BCLibraries/bc-libraries-site-hugo/blob/master/themes/BC/LICENSE"
 description = "BC Library theme"
 homepage = "https://library.bc.edu"
 tags = []
