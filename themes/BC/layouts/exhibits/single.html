@@ -1,3 +1,7 @@
+{{ define "title" }}
+{{ .Title }} | {{ .Site.Param .Page.Params.location }} Exhibit Archives
+{{ end }}
+
 {{ define "header" }}
 {{- partial "exhibits/header.html" . -}}
 {{ end }}
