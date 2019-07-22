@@ -4,7 +4,9 @@
 
 {{ define "header" }}{{ end }}
 
-{{ define "pagestyles" }}{{ end }}
+{{ define "pagestyles" }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
+{{ end }}
 
 {{ define "main" }}
 <div class="container exhibit-container">
