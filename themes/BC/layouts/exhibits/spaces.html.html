@@ -1,0 +1,139 @@
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
+
+{{ define "header" }}{{ end }}
+
+{{ define "pagestyles" }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
+<style>
+    .exhibit-spaces section.exhibit-space {
+        display: block;
+        margin-bottom:4rem;
+    }
+    .exhibit-spaces p {
+        margin: 0 0 1rem 0;
+        padding: 0;
+        line-height: 1.5;
+    }
+    .exhibit-spaces .space-label {
+        font-weight: 600;
+        display: block;
+    }
+</style>
+{{ end }}
+
+{{ define "main" }}
+<div class="container exhibit-container">
+    <ol class="breadcrumb" id="s-lib-bc-list">
+        <li id="s-lib-bc-customer"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></li>
+        <li id="s-lib-bc-site"><a href="{{ .Site.BaseURL }}{{ .Section }}">{{ .Site.Params.exhibits }}</a></li>
+        <li id="s-lib-bc-page" class="active">{{ .Title }}</li>
+    </ol>
+
+    <div class="blackband {{ .Params.location }}">
+        <div class="bandcenter">
+            <h2>Exhibits Spaces</h2>
+            <p>Exhibits in the Boston College University Libraries will advance discovery of library resources 
+                by highlighting connections between our collections and academic and community life at BC. 
+                The Libraries welcome partnerships with the Boston College community and other institutions, 
+                groups, or individuals to create thoughtful and attractive exhibits. Successful exhibit proposals 
+                will be in strong alignment with the mission and collections of the Libraries.</p>
+        </div>
+    </div>
+    
+    <div id="exhibit" class="archives">
+        {{- partial "exhibits/locations/headers.html" . -}}
+
+        <div class="row">
+            <div class="latest_exhibit">
+                <div class="left">
+                    {{- partial "exhibits/gallerynav.html" . -}}
+                </div>
+    
+                <div class="right exhibit-spaces">
+                    <section class="exhibit-space">
+                        <h3>Bapst Library, Gargan Hall Exhibit Cases</h3>
+                        <p><span class="space-label">Description of space:</span> One exhibit case in Gargan Hall.</p>
+                        <p><span class="space-label">Policy for use of space:</span> Exhibit space is used to highlight books in the collection and selected items from the University Archives.</p>
+                        <p><span class="space-label">Contact:</span> <a href="mailto:laurie.mayville@bc.edu">Laurie Mayville</a></p>
+                    </section>
+
+                    <section class="exhibit-space">
+                        <h3>Bapst Library, Outside Gargan Hall Exhibit Cases</h3>
+                        <p><span class="space-label">Description of space:</span> Two cases found outside Gargan Hall.</p>
+                        <p><span class="space-label"rong>Policy for use of space:</span> Exhibit space is used to highlight books in the collection and selected items from the University Archives.</p>
+                        <p><span class="space-label">Contact:</span> <a href="mailto:katherine.fox@bc.edu">Katherine Fox</a></p>
+                    </section>
+
+                    <section class="exhibit-space">
+                        <h3>Burns Library</h3>
+                        <p><span class="space-label">Description of space:</span> Burns wall cases (4 cases). </p>
+                        <p><span class="space-label">Policy for use of space:</span> Exhibits highlight collections in the Burns Library.</p>
+                        <p><span class="space-label">Contact:</span> <a href="mailto:katherine.fox@bc.edu">Katherine Fox</a></p>
+                    </section>
+
+                    <section class="exhibit-space">
+                        <h3>Educational Resource Center, Campion Hall G13</h3>
+                        <p><span class="space-label">Description of space:</span> One wall with bulletin board and two bookcases (approximately 11 linear feet)</p>
+                        <p><span class="space-label">Policy for use of space:</span> This space is designated to feature educational and curriculum materials. Student work may be exhibited with approval of ERC exhibit committee.</p>
+                        <p><span class="space-label">Contact:</span> <a href="mailto:tiffeni.fontno@bc.edu">Tiffeni Fontno</a></p>
+                    </section>
+
+                    <section class="exhibit-space">
+                        <h3>O&rsquo;Neill Library, 3rd floor Lobby</h3>
+                        <p><span class="space-label">Description of space:</span> One horizontal case</p>
+                        <p><span class="space-label">Policy of use for the main exhibit case:</span> The space is designated to materials relating to the Lowell Humanities Series. </p>
+                        <p><span class="space-label">Contact:</span> <a href="mailto:sturgest@bc.edu@bc.edu">Stephen Sturgeon</a></p>
+                    </section>
+
+                    <section class="exhibit-space">
+                        <h3>O&rsquo;Neill Library, Level One Gallery, 1st floor</h3>
+                        <p><span class="space-label">Description of space:</span> The galley is an open space of 770 sq. ft., with wall space of 385 sq. ft. for displaying flatwork only.</p>
+                        <p><span class="space-label">Policy for use of space:</span> Since 2009 Level One Gallery in O'Neill Library has been a space for the BC Community to display their creative work. The Boston College Libraries fully support the Arts here at the university and the gallery encourages the creative spirit of Boston College.</p>
+                        <p><span class="space-label">Contact:</span> <a href="mailto:brittons@bc.edu@bc.edu">Scott Britton</a> </p>
+                    </section>
+
+                    <section class="exhibit-space">
+                        <h3>O&rsquo;Neill Library: Level Three Gallery, 3rd floor</h3>
+                        <p><span class="space-label">Description of space:</span> Gallery space for hanging art, 11&rsquo; tall with at total length of approximately 75&rsquo;. The entire length includes 3 wall bays that are 24&rsquo; each with 2 pilasters bump outs at one third intervals. There is existing library furniture in front of the wall that comes to about 3 feet of the lower portion of the wall.</p>
+                        <p><span class="space-label">Policy for use of space:</span> Level Three Gallery in O'Neill Library is a space for the BC faculty and alumni to display their creative work. Work should support the educational purpose and curricula of the university.</p>
+                        <p><span class="space-label">Contact:</span> <a href="mailto:bogdanon@bc.edu@bc.edu">Nina Bogdanovsky</a></p>
+                    </section>
+
+                    <section class="exhibit-space">
+                        <h3>O&rsquo;Neill Reading Room, 3rd floor</h3>
+                        <p><span class="space-label">Description of space:</span> There are three horizontal cases in the O&rsquo;Neill Reading Room.</p>
+                        <p><span class="space-label">Policy of use of space:</span> Exhibits in the O&rsquo;Neill Reading Room feature special collections from the John J. Burns Library.</p>
+                        <p><span class="space-label">Contact:</span> <a href="mailto:katherine.fox@bc.edu">Katherine Fox</a></p>
+                    </section>
+
+                    <section class="exhibit-space">
+                        <h3>O&rsquo;Neill Reading Room, Back Wall</h3>
+                        <p><span class="space-label">Description of space:</span> There are three horizontal cases against the Back Wall of the O&rsquo;Neill Reading Room.</p>
+                        <p><span class="space-label">Policy of use of space:</span> Policy of use for the main exhibit case</strong>: Exhibits in O&rsquo;Neill are part of the Library&rsquo;s educational outreach and are specifically created to stimulate interest in, and encourage further study of, the topics showcased in the displays.  One case is devoted to campus events, and the remaining are open to exhibits which highlight collections, spotlight interesting research being done on campus, explore current and/or historically important events, or demonstrate cultural trends and their significance for the BC community. </p>
+                        <p><span class="space-label">Contact:</span> <a href="mailto:sally.wyman@bc.edu">Sally Wyman</a></p>
+                    </section>
+
+                    <section class="exhibit-space">
+                        <h3>Social Work Library</h3>
+                        <p><span class="space-label">Description of space:</span> 5'x4' magnetic whiteboard and a five-feet long credenza on top of which to display items. </p>
+                        <p><span class="space-label">Policy for use of space:</span> Display themes need to be relevant to social work matters and consistent with the missions and values of BC and the BC School of Social Work. </p>
+                        <p><span class="space-label">Contact:</span> <a href="mailto:hannah.ha@bc.edu">Hannah Ha</a></p>
+                    </section>
+
+                    <section class="exhibit-space">
+                        <h3>Theology &amp; Ministry Library Atrium Gallery</h3>
+                        <p><span class="space-label">Description of space:</span> Approximately 90 linear feet of space along three walls fitted with picture rail on the lower level of the Theology &amp; Ministry Library.</p>
+                        <p><span class="space-label">Policy for use of space:</span> Exhibits are sought which are consistent with the Jesuit mission of Boston College and, more specifically, with the mission and values of the School of Theology &amp; Ministry</p>
+                        <p><span class="space-label">Contact:</span> <a href="mailto:daltonst@bc.edu">Steve Dalton</a></p>
+                    </section>
+
+                    <!-- NO CONTENT BELOW THIS MARK -->
+
+                </div> {{/* end .right */}}
+            </div> {{/* end .latest_exhibit */}}
+        </div> {{/* end .row */}}
+    </div> {{/* end #exhibit */}}
+</div>
+{{ end }}
