@@ -21,7 +21,7 @@
             <div id="individualpage" class="{{ .Params.style }}">
                 <div class="exhibittitle">
                     <h3>
-                        {{ .Title }} <br/>
+                        {{ .Title | safeHTML }} <br/>
                         <span class="subtitle">{{ .Params.subtitle }}</span>
                     </h3>
 
