@@ -45,6 +45,9 @@
 
 .facpub_wrap .breadcrumb {
     background: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    margin: .5rem 0 1rem 0;
 }
 
 .facpub_wrap #titleauthor {

@@ -2,9 +2,7 @@
 {{ .Title }} | News Archive
 {{ end }}
 
-{{ define "header" }}
-{{- partial "news/header.html" . -}}
-{{ end }}
+{{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/news.css"/>
@@ -23,7 +21,7 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="container">
+<div class="container news-container">
     {{- partial "news/breadcrumbs.html" . -}}
     <div class="article_page">
         <h3>{{ .Title | safeHTML }}</h3>

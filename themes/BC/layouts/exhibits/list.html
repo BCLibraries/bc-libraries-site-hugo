@@ -2,24 +2,14 @@
 Exhibits
 {{ end }}
 
-{{ define "header" }}
-{{- partial "news/header.html" . -}}
-{{ end }}
+{{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
-    <style>
-        article {
-            margin: 1rem 0 3rem 0;
-        }
-        img.media-object {
-            max-width: 137px;
-        }
-    </style>
 {{ end }}
 
 {{ define "main" }}
-<div class="container">
+<div class="container exhibit-container">
     {{- partial "exhibits/breadcrumbs.html" . -}}
 
     <div id="exhibit">

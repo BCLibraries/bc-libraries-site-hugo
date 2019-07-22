@@ -1,3 +1,7 @@
+.news-container {
+    padding-top: 50px;
+}
+
 .news_listing {
     margin-bottom: .5em;
 }
@@ -21,4 +25,8 @@
 .news_archives .archive_date {
 	font-style: italic;
 	font-size: 12px;
+}
+
+.news-container .breadcrumb {
+    margin: 1rem 0 1rem 0;
 }

@@ -2,9 +2,7 @@
 {{ .Title }} | {{ .Site.Param .Page.Params.location }} Exhibit Archives
 {{ end }}
 
-{{ define "header" }}
-{{- partial "exhibits/header.html" . -}}
-{{ end }}
+{{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
