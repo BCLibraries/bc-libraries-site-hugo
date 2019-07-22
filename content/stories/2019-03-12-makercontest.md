@@ -3,12 +3,11 @@ title: "Boston College Libraries Maker Contest!"
 date: 2019-03-12T15:30:21-04:00
 draft: false
 year: "2019"
-tags: "news, tags"
 slug: "story-library-maker"
 expired: true
 destination: "http://bit.ly/2C7n4qB"
+image: "2019/03-maker.png"
 imagealt: "reads bring history to life"
-imagethumb: "2019/03-maker.png"
 selectorimg: "2019/03-maker.png"
 type: stories
 ---

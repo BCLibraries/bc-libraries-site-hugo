@@ -4,7 +4,7 @@
             {{ range $idx, $val := first 4 (where (where .Site.RegularPages ".Params.type" "stories") ".Params.expired" false) }}
             <figure class="story sr-only" id="story-{{$idx}}">
                 <a href="{{ .Params.destination }}">
-                    <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}" />
+                    <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.image }}" alt="{{ .Params.imagealt }}" />
                     <figcaption>{{ .Title }}</figcaption>
                 </a>
             </figure>

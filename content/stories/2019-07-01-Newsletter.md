@@ -6,8 +6,8 @@ year: "2019"
 slug: "newsletter-summer19"
 expired: false
 destination: "http://bit.ly/newsletterSummer19-news"
+image: "2019/02-newsletter.png"
 imagealt: "A photo of the O'Neill Library"
-imagethumb: "2019/02-newsletter.png"
 selectorimg: "2019/02-newsletter.png"
 type: "stories"
 ---

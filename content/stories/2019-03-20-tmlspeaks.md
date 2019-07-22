@@ -3,12 +3,11 @@ title: "Data in Ministry: Research Methods and Resources to Understand Changes i
 date: 2019-03-20T15:28:52-04:00
 draft: false
 year: "2019"
-tags: "news, tags"
 slug: "story-tml-speaks-s19"
 expired: true
 destination: "http://bit.ly/tmlspeaks"
+image: "2019/03-tml.png"
 imagealt: "Tuesday, April 16th, 2019 12:00pm - 1:30pm at the Theology and Ministry Library Auditorium, 117 Lake Street"
-imagethumb: "2019/03-tml.png"
 selectorimg: "2019/03-tml.png"
 type: stories
 ---
