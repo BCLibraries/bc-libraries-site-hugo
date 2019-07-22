@@ -7,7 +7,7 @@
             spotlight interesting research being done on campus, explore current and/or historically important events, 
             or demonstrate cultural trends and their significance for the BC community.</p>
         {{ if ne .Params.archivepage true }}
-        <p><a href="/{{ .Section }}/{{ .Params.location }}" class="arrow">Return to the {{ .Site.Params.lobby }} Exhibits</a></p>
+        <p><a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}" class="arrow">Return to the {{ .Site.Params.lobby }} Exhibits</a></p>
         {{ end }}
     </div>
 </div>
