@@ -1,13 +1,8 @@
 <!-- HEADER START -->
 <div id="header">
     <div class="container">
-        
-        {{ if .IsHome }}
         <h1 id="main-heading" class="sr-only sr-only-focusable">Main content</h1>
         {{- partial "homepage/search-box.html" . -}}
-        {{ else }}
-        <h1 id="main-heading" class="sr-only sr-only-focusable">Main content</h1>
-        {{ end }}
 
         <div class="caption-link" id="hero" data-tag="ga-tag">
             <!--<a href="http://libguides.bc.edu/bapst">Portion from the Bapst Illuminating Stained Glass</a>-->
