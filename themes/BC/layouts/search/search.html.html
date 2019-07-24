@@ -72,9 +72,9 @@
     <script id="librarians-template" type="text/x-template">
         <h2 id="librarianh3" class="search-heading">Librarians</h2>
 
-        {{ "{{ #if . }}" }}
+        {{ "{{#if this}}" }}
         <div class="results-highlight">
-            {{ "{{ #. }}" }}
+            {{ "{{#this}}" }}
             <div class="media">
                 <div class="media-left">
                     <a href='http://libguides.bc.edu/prf.php?account_id={{ "{{id}}" }}' onclick='trackOutboundLink(\"http://libguides.bc.edu/prf.php?account_id={{ "{{id}}" }}\"); return false;'><img src='//{{ "{{image}}" }}' alt='picture of {{ "{{name}}" }}'></a>
@@ -87,7 +87,7 @@
                     <p class="guide-description">{{ "{{display_subjects}}" }}</p>
                 </div>
             </div>
-            {{ "{{/.}}" }}
+            {{ "{{/this}}" }}
             <p class="all-librarians">
                 <a href="http://libguides.bc.edu/ask-a-librarian/contact" onclick="trackOutboundLink('http://libguides.bc.edu/ask-a-librarian/contact'); return false;">See
                     all subject librarians</a>
@@ -176,7 +176,7 @@
 
                     <h3 class="media-heading">
                         <a href='{{ "{{link}}" }}' class="title" onclick='trackOutboundLink(\"{{ "{{link}}" }}\"); return false;'>
-                            {{ "{{truncate '100' title}}" }}
+                            {{ "{{truncate 100 title}}" }}
                         </a>
                     </h3>
 
@@ -185,14 +185,14 @@
                     <div class="catalog-metadata">
                         {{ "{{#if creator}}" }}
                         <div class="creator">
-                            {{ "{{truncate '40' creator}}" }}
+                            {{ "{{truncate 40 creator}}" }}
                         </div>
                         {{ "{{/if}}" }}
 
                         {{ "{{^creator}}" }}
                         {{ "{{#if contributors.[0]}}" }}
                         <div class="creator">
-                            {{ "{{truncate '40' contributors.[0]}}" }}
+                            {{ "{{truncate 40 contributors.[0]}}" }}
                         </div>
                         {{ "{{/if}}" }}
                         {{ "{{/creator}}" }}
@@ -209,7 +209,7 @@
                         <ul class="available-items">
                             {{ "{{#avail}}" }}
                             <li class='item-info {{ "{{#unless on_shelf}}" }}unavailable{{ "{{/unless}}" }}'>
-                                <a href=' {{ "{{../link}}" }}' class="avail-link" onclick='trackOutboundLink(\"{{ "{{../link}}" }}\")'>
+                                <a href='../{{ "{{link}}" }}' class="avail-link" onclick='trackOutboundLink(\"../{{ "{{link}}" }}\")'>
                                     {{ "{{#if on_shelf}}" }}
                                     <span class="library">Find in {{ "{{lib_display}}" }}</span>
                                     <span class="location">{{ "{{loc_display}}" }}</span>
@@ -272,7 +272,7 @@
 
                     <h3 class="media-heading">
                         <a href='{{ "{{link}}" }}' class="title" onclick='trackOutboundLink(\"{{ "{{link}}" }}\"); return false;'>
-                            {{ "{{truncate '100' title}}" }}
+                            {{ "{{truncate 100 title}}" }}
                         </a>
                     </h3>
 
@@ -281,14 +281,14 @@
                     <div class="catalog-metadata">
                         {{ "{{#if creator}}" }}
                         <div class="creator">
-                            {{ "{{truncate '40' creator}}" }}
+                            {{ "{{truncate 40 creator}}" }}
                         </div>
                         {{ "{{/if}}" }}
 
                         {{ "{{^creator}}" }}
                         {{ "{{#if contributors.[0]}}" }}
                         <div class="creator">
-                            {{ "{{truncate '40' contributors.[0]}}" }}
+                            {{ "{{truncate 40 contributors.[0]}}" }}
                         </div>
                         {{ "{{/if}}" }}
                         {{ "{{/creator}}" }}
@@ -363,14 +363,14 @@
                 <div class="media-body">
                     <h3 class="media-heading">
                         <a href='{{ "{{link}}" }}' class="title" onclick='trackOutboundLink(\"{{ "{{link}}" }}\"); return false;'>
-                            {{ "{{truncate '100' title}}" }}
+                            {{ "{{truncate 100 title}}" }}
                         </a>
                     </h3>
 
                     {{ "{{date}}" }}
 
                     {{ "{{#if creator}}" }}
-                    <div class="creator">{{ "{{truncate '80' creator}}" }}</div>
+                    <div class="creator">{{ "{{truncate 80 creator}}" }}</div>
                     {{ "{{/if}}" }}
                     <div class="publisher">{{ "{{part_of}}" }}</div>
                 </div>
