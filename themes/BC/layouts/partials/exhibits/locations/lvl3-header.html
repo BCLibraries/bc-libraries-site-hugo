@@ -4,7 +4,7 @@
         <p>Level Three Gallery is an exhibition area in the O'Neill Library. Faculty members and alumni
              are encouraged to submit exhibition proposals.</p>
         {{ if ne .Params.archivepage true }}
-        <p><a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}" class="arrow">Return to the {{ .Site.Params.lvl3 }} Exhibits</a></p>
+        <p><a href="/{{ .Section }}/{{ .Params.location }}" class="arrow">Return to the {{ .Site.Params.lvl3 }} Exhibits</a></p>
         {{ end }}
     </div>
 </div>

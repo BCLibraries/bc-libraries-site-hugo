@@ -4,7 +4,7 @@
         <p>One exhibit case in Gargan Hall as well as two cases found outside Gargan Hall. 
             Exhibit space is used to highlight books in the collection and selected items from the University Archives.</p>
         {{ if ne .Params.archivepage true }}
-        <p><a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}" class="arrow">Return to the {{ .Site.Params.bapst }} Exhibits</a></p>
+        <p><a href="/{{ .Section }}/{{ .Params.location }}" class="arrow">Return to the {{ .Site.Params.bapst }} Exhibits</a></p>
         {{ end }}
     </div>
 </div>

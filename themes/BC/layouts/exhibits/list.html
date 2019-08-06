@@ -5,7 +5,7 @@ Exhibits
 {{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
+<link rel="stylesheet" href="/css/exhibit_refresh.css"/>
 {{ end }}
 
 {{ define "main" }}
@@ -38,7 +38,7 @@ Exhibits
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.Bapst }}, Gargan Hall</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.bapst }} Past Exhibits</a></p>
+                            <p>Click here for <a href="/{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.bapst }} Past Exhibits</a></p>
                         </div>
 
                         {{- partial "exhibits/location-summary.html" . -}}
@@ -50,7 +50,7 @@ Exhibits
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.Burns }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.burns }} Past Exhibits</a></p>
+                            <p>Click here for <a href="/{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.burns }} Past Exhibits</a></p>
                         </div>
 
                         {{- partial "exhibits/location-summary.html" . -}}
@@ -67,7 +67,7 @@ Exhibits
 
                         <div class="frame">
                             <a href="https://library.bc.edu/digital-exhibits/">
-                                <img src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.location }}/{{ .Params.imagethumb}}" alt="{{ .Params.imagealt }}">
+                                <img src="/img/{{ .Section }}/{{ .Params.location }}/{{ .Params.imagethumb}}" alt="{{ .Params.imagealt }}">
 
                                 <div class="info">
                                     <p class="date">{{ .Params.Daterange }}</p>
@@ -83,7 +83,7 @@ Exhibits
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.stokes }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.stokes }} Past Exhibits</a></p>
+                            <p>Click here for <a href="/{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.stokes }} Past Exhibits</a></p>
                         </div>
 
                         {{- partial "exhibits/location-summary.html" . -}}
@@ -95,7 +95,7 @@ Exhibits
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.lvl1 }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.lvl1 }} Past Exhibits</a></p>
+                            <p>Click here for <a href="/{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.lvl1 }} Past Exhibits</a></p>
                         </div>
 
                         {{- partial "exhibits/location-summary.html" . -}}
@@ -107,7 +107,7 @@ Exhibits
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.lvl3 }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.lvl3 }} Past Exhibits</a></p>
+                            <p>Click here for <a href="/{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.lvl3 }} Past Exhibits</a></p>
                         </div>
 
                         {{- partial "exhibits/location-summary.html" . -}}
@@ -119,7 +119,7 @@ Exhibits
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.reading }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.Location }}">{{ .Site.Params.reading }} Past Exhibits</a></p>
+                            <p>Click here for <a href="/{{ .Section }}/{{ .Params.Location }}">{{ .Site.Params.reading }} Past Exhibits</a></p>
                         </div>
 
                         {{- partial "exhibits/location-summary.html" . -}}
@@ -131,7 +131,7 @@ Exhibits
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.backwall }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.backwall }} Past Exhibits</a></p>
+                            <p>Click here for <a href="/{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.backwall }} Past Exhibits</a></p>
                         </div>
 
                         {{- partial "exhibits/location-summary.html" . -}}
@@ -143,7 +143,7 @@ Exhibits
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.lobby }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.lobby }} Past Exhibits</a></p>
+                            <p>Click here for <a href="/{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.lobby }} Past Exhibits</a></p>
                         </div>
 
                         {{- partial "exhibits/location-summary.html" . -}}
@@ -155,7 +155,7 @@ Exhibits
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.tml }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.tml }} Past Exhibits</a></p>
+                            <p>Click here for <a href="/{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.tml }} Past Exhibits</a></p>
                         </div>
 
                         {{- partial "exhibits/location-summary.html" . -}}
@@ -176,7 +176,7 @@ Exhibits
 
                         <div class="frame">
                             <a href="http://www.bc.edu/content/bc/libraries/about/exhibits/oneill/oneill.html">
-                                <img src="{{ .Site.BaseURL }}img/{{ .Section }}/virtual/tip-thumb.png" alt="Painting of Tip O'Neill">
+                                <img src="/img/{{ .Section }}/virtual/tip-thumb.png" alt="Painting of Tip O'Neill">
                                 <div class="info">
                                     <p class="date">&nbsp;</p>
                                     <p class="title">Tip O'Neill Exhibit</p>
@@ -194,7 +194,7 @@ Exhibits
 
                         <div class="frame">
                             <a href="http://www.bc.edu/libraries/about/exhibits-new/burnsvirtual/irish-connections.html">
-                                <img src="{{ .Site.BaseURL }}img/{{ .Section }}/virtual/burns-thumb.png" alt="Tip O'Neill with John F. Kennedy">
+                                <img src="/img/{{ .Section }}/virtual/burns-thumb.png" alt="Tip O'Neill with John F. Kennedy">
                                 <div class="info">
                                     <p class="date">&nbsp;</p>
                                     <p class="title">Exploring Boston Irish Connections</p>
@@ -206,7 +206,7 @@ Exhibits
                     <div class="above_footer">
                         <hr/>
                         <h4>Interested in using library space for an exhibit?</h4>
-                        <p>See our <a href="{{ .Site.BaseURL }}{{ .Section }}/spaces">exhibit spaces page</a> for descriptions and contact information.</p>
+                        <p>See our <a href="/{{ .Section }}/spaces">exhibit spaces page</a> for descriptions and contact information.</p>
                     </div>
 
                 </div>

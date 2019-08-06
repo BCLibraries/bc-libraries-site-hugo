@@ -4,7 +4,7 @@
             {{ range $idx, $val := first 4 (where (where .Site.RegularPages ".Params.type" "stories") ".Params.expired" false) }}
             <figure class="story sr-only" id="story-{{$idx}}">
                 <a href="{{ .Params.destination }}">
-                    <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.image }}" alt="{{ .Params.imagealt }}" />
+                    <img src="/img/{{ .Params.type }}/{{ .Params.image }}" alt="{{ .Params.imagealt }}" />
                     <figcaption>{{ .Title }}</figcaption>
                 </a>
             </figure>
@@ -13,7 +13,7 @@
 
         <div class="col-md-2 story-selectors" aria-hidden="true">
             {{ range $idx, $val := first 4 (where (where .Site.RegularPages ".Params.type" "stories") ".Params.expired" false) }}
-            <img class="selector" src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.selectorimg }}" alt="thumbnail" data-story="story-{{ $idx }}" aria-hidden="true" />
+            <img class="selector" src="/img/{{ .Params.type }}/{{ .Params.selectorimg }}" alt="thumbnail" data-story="story-{{ $idx }}" aria-hidden="true" />
             {{ end }}
         </div>
     </div>
