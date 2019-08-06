@@ -12,6 +12,11 @@
 
         <a id="skiplink" href="#main-heading" class="accessibility-text">Skip to main content</a>
 
+        {{/* add Bamboo build header */}}
+        {{ if eq .Site.Params.showbuildheader true }}
+        {{ partial "build-header.html" . }}
+        {{ end }}
+
         {{/* add maroon bar to header */}}
         {{- partial "bclib-header.html" . -}}
 

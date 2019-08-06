@@ -18,3 +18,4 @@ summaryLength = 10
     lvl3 = "O'Neill Level Three Gallery"
     reading = "O'Neill Reading Room"
     stokes = "History Dept, Stokes Hall"
+    showBuildHeader = false
