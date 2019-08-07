@@ -15,13 +15,13 @@
                             <div class="newstext">
                                 <p class="newslink">{{ .Title | safeHTML }}</p>
                             </div>
-                            <img src="/img/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
+                            <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
                         </div>
                     </a>
                 </div>
             </div>
         {{ end }}
     </div>
-    <div class="more-news"><a href="/news">See all news  <i class="fa fa-lg fa-long-arrow-right" aria-hidden="true"></i></a></div>
+    <div class="more-news"><a href="{{ .Site.BaseURL }}news">See all news  <i class="fa fa-lg fa-long-arrow-right" aria-hidden="true"></i></a></div>
 </div>
 <!-- NEWS END -->

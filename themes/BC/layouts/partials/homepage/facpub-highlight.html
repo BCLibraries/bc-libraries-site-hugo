@@ -2,7 +2,7 @@
 <div class="container" id="facpub" data-tag="ga-tag">
     <div class="row">
         <div class="col-md-12">
-            <h2><a href="/facpub/">Faculty Publication Highlights</a></h2>
+            <h2><a href="{{ .Site.BaseURL }}facpub/">Faculty Publication Highlights</a></h2>
         </div>
         
         {{ range first 1 (where .Site.RegularPages ".Params.type" "facpub") }}

@@ -18,7 +18,7 @@
 <div class="container" id="main-404">
     <h1>Page not found</h1>
     <p>Sorry, the page you are looking for is not here.</p>
-    <img src="/img/404.png"/>
+    <img src="{{ .Site.BaseURL }}img/404.png"/>
     <p class="backlink"><a href="{{ "/" | relURL }}">Go Home</a></p>
 </div>
 {{ end }}

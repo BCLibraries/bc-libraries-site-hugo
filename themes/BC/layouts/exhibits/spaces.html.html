@@ -5,7 +5,7 @@
 {{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
-<link rel="stylesheet" href="/css/exhibit_refresh.css"/>
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
 <style>
     .exhibit-spaces section.exhibit-space {
         display: block;
@@ -26,8 +26,8 @@
 {{ define "main" }}
 <div class="container exhibit-container">
     <ol class="breadcrumb" id="s-lib-bc-list">
-        <li id="s-lib-bc-customer"><a href="/">{{ .Site.Title }}</a></li>
-        <li id="s-lib-bc-site"><a href="/{{ .Section }}">{{ .Site.Params.exhibits }}</a></li>
+        <li id="s-lib-bc-customer"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></li>
+        <li id="s-lib-bc-site"><a href="{{ .Site.BaseURL }}{{ .Section }}">{{ .Site.Params.exhibits }}</a></li>
         <li id="s-lib-bc-page" class="active">{{ .Title }}</li>
     </ol>
 

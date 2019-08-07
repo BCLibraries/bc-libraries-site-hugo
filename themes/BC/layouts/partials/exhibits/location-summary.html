@@ -1,6 +1,6 @@
 <div class="frame">
     <a href="{{ .Permalink }}">
-        <img src="/img/{{ .Section }}/{{ .Params.location }}/{{ .Params.imagethumb}}" alt="{{ .Params.imagealt }}">
+        <img src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.location }}/{{ .Params.imagethumb}}" alt="{{ .Params.imagealt }}">
 
         <div class="info">
             <p class="date">{{ .Params.daterange }}</p>

@@ -5,7 +5,7 @@
 {{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
-<link rel="stylesheet" href="/css/exhibit_refresh.css"/>
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
 {{ end }}
 
 {{ define "main" }}
@@ -28,7 +28,7 @@
                 </div>
                 <div class="article_content">
                     <div class="poster">
-                        <img src="/img/{{ .Section }}/{{ .Params.location }}/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                        <img src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.location }}/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
                     </div>
 
                     <div class="text">
@@ -41,7 +41,7 @@
                     </div>
     
                     <div class="poster">
-                        <img src="/img/{{ .Section }}/{{ .Params.location }}/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                        <img src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.location }}/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
                     </div>
                 </div>
             </div>

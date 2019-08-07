@@ -4,7 +4,7 @@
         <p>There are three horizontal cases in the O’Neill Reading Room, featuring special collections 
             from the John J. Burns Library.</p>
         {{ if ne .Params.archivepage true }}
-        <p><a href="/{{ .Section }}/{{ .Params.location }}" class="arrow">Return to the {{ .Site.Params.reading }} Exhibits</a></p>
+        <p><a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}" class="arrow">Return to the {{ .Site.Params.reading }} Exhibits</a></p>
         {{ end }}
     </div>
 </div>

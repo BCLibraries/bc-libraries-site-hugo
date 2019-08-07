@@ -64,8 +64,8 @@
             </div>
         </div>
     </div>
-    <script src="/bcbento/js/handlebars-v3.0.0.js"></script>
-    <script src="/bcbento/js/search.js"></script>
+    <script src="{{ .Site.BaseURL }}bcbento/js/handlebars-v3.0.0.js"></script>
+    <script src="{{ .Site.BaseURL }}bcbento/js/search.js"></script>
 
     <!--{% raw %}-->
     <!-- Search result templates -->
@@ -428,8 +428,8 @@
 {{ end }}
 
 {{ define "pagescripts" }}
-<script type="text/javascript" src="/bcbento/js/typeahead.bundle.min.js"></script>
-<script type="text/javascript" src="/bcbento/js/bclib-typeahead.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}bcbento/js/typeahead.bundle.min.js"></script>
+<script type="text/javascript" src="{{ .Site.BaseURL }}bcbento/js/bclib-typeahead.js"></script>
 <script>
     function run_on_ready(fn) {
         if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {

@@ -2,7 +2,7 @@
     <div class="frame">
         <a href="{{ .Permalink }}">
             {{/* the {{.Scratch.Get "loc"}} block is defined in the exhibit template that is calling this partial */}}
-            <img src='/img/{{ .Section }}/{{ .Scratch.Get "loc" }}/{{ .Params.imagethumb }}' alt="{{ .Params.imagealt }}">
+            <img src='{{ .Site.BaseURL }}/img/{{ .Section }}/{{ .Scratch.Get "loc" }}/{{ .Params.imagethumb }}' alt="{{ .Params.imagealt }}">
             
             <div class="info">
                 <p class="date">{{ .Params.daterange }}</p>
