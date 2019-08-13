@@ -7,7 +7,8 @@ Home
 {{ end }}
 
 {{ define "pagestyles" }}
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/stories.css"/>
+    {{ $stories := resources.Get "css/stories.css" | resources.Minify }}
+    <link rel="stylesheet" type="text/css" href="{{ $stories.Permalink }}"/>
 {{ end }}
 
 {{ define "main" }}
@@ -39,9 +40,13 @@ Home
 {{ end }}
 
 {{ define "pagescripts" }}
-    <script type="text/javascript" src="{{ .Site.BaseURL }}js/story-box.js"></script>
-    <script type="text/javascript" src="{{ .Site.BaseURL }}bcbento/js/typeahead.bundle.min.js"></script>
-    <script type="text/javascript" src="{{ .Site.BaseURL }}bcbento/js/bclib-typeahead.js"></script>
+    {{ $story  := resources.Get "js/story-box.js" | resources.Minify }}
+    {{ $type   := resources.Get "bcbento/js/typeahead.bundle.min.js" }}
+    {{ $bctype := resources.Get "bcbento/js/bclib-typeahead.js" | resources.Minify }}
+
+    <script type="text/javascript" src="{{ $story.Permalink }}"></script>
+    <script type="text/javascript" src="{{ $type.Permalink }}"></script>
+    <script type="text/javascript" src="{{ $bctype.Permalink }}"></script>
     <script type="text/javascript">
         // Various glue scripts for the front page.
         (function () {
