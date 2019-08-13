@@ -19,3 +19,4 @@ summaryLength = 10
     reading = "O'Neill Reading Room"
     stokes = "History Dept, Stokes Hall"
     showBuildHeader = false
+    showFloatingHelpButton = true

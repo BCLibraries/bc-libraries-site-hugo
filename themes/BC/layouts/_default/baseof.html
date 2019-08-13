@@ -8,7 +8,9 @@
         {{- block "pagestyles" . }}{{- end }}
     </head>
     <body id="index" class="s-lg-guide-body mainhomepage homepagerefresh">
-        {{/*- partial "library-help-button.html" . -*/}}
+        {{ if eq .Site.Params.showfloatinghelpbutton true }}
+        {{ partial "library-help-button.html" . }}
+        {{ end }}
 
         <a id="skiplink" href="#main-heading" class="accessibility-text">Skip to main content</a>
 
