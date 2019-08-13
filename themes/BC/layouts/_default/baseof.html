@@ -28,9 +28,7 @@
 
         <h1 class="sr-only sr-only-focusable">{{ .Title }}</h1>
 
-        {{ block "header" . }} 
-        {{ partial "header.html" . }}
-        {{ end}}
+        {{ block "header" . }}{{ end}}
         
         {{ block "main" . }}{{ end }}
 
