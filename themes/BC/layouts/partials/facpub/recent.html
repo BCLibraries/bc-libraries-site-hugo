@@ -5,7 +5,7 @@
 
         <div class="row">
             {{ range first 10 (where (where .Site.RegularPages ".Params.type" "facpub") ".Params.oneoff" false) }}
-            {{- partial "facpub/archive-item.html" . -}}
+            {{ partial "facpub/archive-item.html" . }}
             {{ end }}
         </div>
     </div>

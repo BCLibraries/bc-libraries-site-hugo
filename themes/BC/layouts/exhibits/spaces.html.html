@@ -1,11 +1,9 @@
-{{ define "title" }}
-{{ .Title }}
-{{ end }}
+{{ define "title" }}{{ .Title }}{{ end }}
 
 {{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
 <style>
     .exhibit-spaces section.exhibit-space {
         display: block;
@@ -43,12 +41,12 @@
     </div>
     
     <div id="exhibit" class="archives">
-        {{- partial "exhibits/locations/headers.html" . -}}
+        {{ partial "exhibits/locations/headers.html" . }}
 
         <div class="row">
             <div class="latest_exhibit">
                 <div class="left">
-                    {{- partial "exhibits/gallerynav.html" . -}}
+                    {{ partial "exhibits/gallerynav.html" . }}
                 </div>
     
                 <div class="right exhibit-spaces">
@@ -128,9 +126,7 @@
                         <p><span class="space-label">Policy for use of space:</span> Exhibits are sought which are consistent with the Jesuit mission of Boston College and, more specifically, with the mission and values of the School of Theology &amp; Ministry</p>
                         <p><span class="space-label">Contact:</span> <a href="mailto:daltonst@bc.edu">Steve Dalton</a></p>
                     </section>
-
                     <!-- NO CONTENT BELOW THIS MARK -->
-
                 </div> {{/* end .right */}}
             </div> {{/* end .latest_exhibit */}}
         </div> {{/* end .row */}}

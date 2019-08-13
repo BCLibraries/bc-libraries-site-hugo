@@ -1,6 +1,4 @@
-{{ define "title" }}
-{{ .Title }} | Faculty Publication Highlights
-{{ end }}
+{{ define "title" }}{{ .Title }} | Faculty Publication Highlights{{ end }}
 
 {{ define "header" }}
 <!-- BEGIN HEADER -->
@@ -11,7 +9,7 @@
 {{ end }}
 
 {{ define "pagestyles" }}
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/facpub_refresh.css"/>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/facpub_refresh.css"/>
 {{ end }}
 
 {{ define "main" }}
@@ -80,7 +78,7 @@
             For further information about research in this area please visit the <a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Subject Librarian portal</a>.
         </div>
 
-        {{- partial "facpub/recent.html" . -}}
+        {{ partial "facpub/recent.html" . }}
     </div>
 </div>
 {{ end }}

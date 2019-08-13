@@ -1,6 +1,4 @@
-{{ define "title" }}
-News Archive
-{{ end }}
+{{ define "title" }}News Archive{{ end }}
 
 {{ define "header" }}{{ end }}
 
@@ -23,7 +21,7 @@ News Archive
 
 {{ define "main" }}
 <div class="container news-container">
-    {{- partial "news/breadcrumbs.html" . -}}
+    {{ partial "news/breadcrumbs.html" . }}
     <h2 class="page-title">{{ .Title }} Archive</h2>
 
     <h3>2019</h3>

@@ -1,24 +1,22 @@
-{{ define "title" }}
-{{ .Site.Params.lvl1 }} Exhibits Archive
-{{ end }}
+{{ define "title" }}{{ .Site.Params.lvl1 }} Exhibits Archive{{ end }}
 
 {{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
 {{ end }}
 
 {{ define "main" }}
 <div class="container exhibit-container">
-    {{- partial "exhibits/breadcrumbs.html" . -}}
+    {{ partial "exhibits/breadcrumbs.html" . }}
     
     <div id="exhibit" class="archives">
-        {{- partial "exhibits/locations/headers.html" . -}}
+        {{ partial "exhibits/locations/headers.html" . }}
 
         <div class="row">
             <div class="latest_exhibit">
                 <div class="left">
-                    {{- partial "exhibits/gallerynav.html" . -}}
+                    {{ partial "exhibits/gallerynav.html" . }}
                 </div>
     
                 <div class="right">
@@ -29,7 +27,7 @@
                         </div>
                         {{ range (where (where .Site.RegularPages ".Params.location" .Params.location) ".Params.year" "2019") }}
                         {{ .Scratch.Set "loc" .Params.Location }}
-                        {{- partial "exhibits/summary.html" . -}}
+                        {{ partial "exhibits/summary.html" . }}
                         {{ end }}
                     </ul>
 
@@ -39,7 +37,7 @@
                         </div>
                         {{ range (where (where .Site.RegularPages ".Params.location" .Params.location) ".Params.year" "2018") }}
                         {{ .Scratch.Set "loc" .Params.Location }}
-                        {{- partial "exhibits/summary.html" . -}}
+                        {{ partial "exhibits/summary.html" . }}
                         {{ end }}
                     </ul>
 
@@ -49,7 +47,7 @@
                         </div>
                         {{ range (where (where .Site.RegularPages ".Params.location" .Params.location) ".Params.year" "2017") }}
                         {{ .Scratch.Set "loc" .Params.Location }}
-                        {{- partial "exhibits/summary.html" . -}}
+                        {{ partial "exhibits/summary.html" . }}
                         {{ end }}
                     </ul>
 
@@ -59,7 +57,7 @@
                         </div>
                         {{ range (where (where .Site.RegularPages ".Params.location" .Params.location) ".Params.year" "2016") }}
                         {{ .Scratch.Set "loc" .Params.Location }}
-                        {{- partial "exhibits/summary.html" . -}}
+                        {{ partial "exhibits/summary.html" . }}
                         {{ end }}
                     </ul>
 
@@ -69,7 +67,7 @@
                         </div>
                         {{ range (where (where .Site.RegularPages ".Params.location" .Params.location) ".Params.year" "2015") }}
                         {{ .Scratch.Set "loc" .Params.Location }}
-                        {{- partial "exhibits/summary.html" . -}}
+                        {{ partial "exhibits/summary.html" . }}
                         {{ end }}
                     </ul>
 
@@ -79,7 +77,7 @@
                         </div>
                         {{ range (where (where .Site.RegularPages ".Params.location" .Params.location) ".Params.year" "2014") }}
                         {{ .Scratch.Set "loc" .Params.Location }}
-                        {{- partial "exhibits/summary.html" . -}}
+                        {{ partial "exhibits/summary.html" . }}
                         {{ end }}
                     </ul>
 
@@ -89,7 +87,7 @@
                         </div>
                         {{ range (where (where .Site.RegularPages ".Params.location" .Params.location) ".Params.year" "2013") }}
                         {{ .Scratch.Set "loc" .Params.Location }}
-                        {{- partial "exhibits/summary.html" . -}}
+                        {{ partial "exhibits/summary.html" . }}
                         {{ end }}
                     </ul>
 
@@ -99,14 +97,13 @@
                         </div>
                         {{ range (where (where .Site.RegularPages ".Params.location" .Params.location) ".Params.year" "2012") }}
                         {{ .Scratch.Set "loc" .Params.Location }}
-                        {{- partial "exhibits/summary.html" . -}}
+                        {{ partial "exhibits/summary.html" . }}
                         {{ end }}
                     </ul>
 
                     <hr/>
 
                     <p>Please click this link for <a href="http://www.bc.edu/libraries/about/exhibits/oneill/level1/archive.html">exhibit archives from 2009-2011</a>.</p>
-
                 </div> {{/* end .right */}}
             </div> {{/* end .latest_exhibit */}}
         </div> {{/* end .row */}}

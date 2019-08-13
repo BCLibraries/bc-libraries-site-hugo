@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{{- block "title" . }}{{ .Title }}{{- end }} | Boston College Libraries</title>
+        <title>{{ block "title" . }}{{ .Title }}{{ end }} | Boston College Libraries</title>
 
-        {{- partial "head.html" . -}}
+        {{ partial "head.html" . }}
 
-        {{- block "pagestyles" . }}{{- end }}
+        {{ block "pagestyles" . }}{{ end }}
     </head>
     <body id="index" class="s-lg-guide-body mainhomepage homepagerefresh">
+        {{/* show floating help button */}}
         {{ if eq .Site.Params.showfloatinghelpbutton true }}
         {{ partial "library-help-button.html" . }}
         {{ end }}
@@ -20,21 +21,21 @@
         {{ end }}
 
         {{/* add maroon bar to header */}}
-        {{- partial "bclib-header.html" . -}}
+        {{ partial "bclib-header.html" . }}
 
         {{/* add mega menu to header */}}
-        {{- partial "megamenu.html" . -}}
+        {{ partial "megamenu.html" . }}
 
         <h1 class="sr-only sr-only-focusable">{{ .Title }}</h1>
 
-        {{- block "header" . }} 
-        {{- partial "header.html" . -}}
-        {{- end}}
+        {{ block "header" . }} 
+        {{ partial "header.html" . }}
+        {{ end}}
         
-        {{- block "main" . }}{{- end }}
+        {{ block "main" . }}{{ end }}
 
-        {{- partial "footer.html" . -}}
+        {{ partial "footer.html" . }}
 
-        {{- block "pagescripts" . }}{{- end }}
+        {{ block "pagescripts" . }}{{ end }}
     </body>
 </html>

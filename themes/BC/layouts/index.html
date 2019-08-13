@@ -1,9 +1,7 @@
-{{ define "title" }}
-Home
-{{ end }}
+{{ define "title" }}Home{{ end }}
 
 {{ define "header" }}
-{{- partial "homepage/header.html" . -}}
+{{ partial "homepage/header.html" . }}
 {{ end }}
 
 {{ define "pagestyles" }}
@@ -15,26 +13,26 @@ Home
         <!-- DB RG BOX START -->
         <div class="container" id="db-rg-hours">
             <div class="row nobottom">
-                {{- partial "homepage/quick-links.html" . -}}
+                {{ partial "homepage/quick-links.html" . }}
     
-                {{- partial "homepage/start-research.html" . -}}
+                {{ partial "homepage/start-research.html" . }}
     
-                {{- partial "homepage/story-box.html" . -}}
+                {{ partial "homepage/story-box.html" . }}
             </div>
         </div>
         <!-- DB RG HOURS BOX END -->
 
-        {{- partial "homepage/news-row.html" . -}}
+        {{ partial "homepage/news-row.html" . }}
 
-        {{- partial "homepage/digital-scholarship-highlight.html" . -}}
+        {{ partial "homepage/digital-scholarship-highlight.html" . }}
 
-        {{- partial "homepage/scholarship-at-bc.html" . -}}
+        {{ partial "homepage/scholarship-at-bc.html" . }}
 
-        {{- partial "homepage/exhibits-highlight.html" . -}}
+        {{ partial "homepage/exhibits-highlight.html" . }}
 
-        {{- partial "homepage/facpub-highlight.html" . -}}
+        {{ partial "homepage/facpub-highlight.html" . }}
 
-        {{- partial "homepage/special-collections-highlight.html" . -}}
+        {{ partial "homepage/special-collections-highlight.html" . }}
     </div>
 {{ end }}
 

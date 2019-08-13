@@ -7,7 +7,7 @@
 
         <div class="row">
             {{ range (where (where (where .Site.RegularPages ".Params.type" "facpub") ".Params.year" "2019") ".Params.oneoff" false) }}
-            {{- partial "facpub/archive-item.html" . -}}
+            {{ partial "facpub/archive-item.html" . }}
             {{ end }}
         </div>
     </div>
@@ -18,7 +18,7 @@
 
         <div class="row">
             {{ range (where (where (where .Site.RegularPages ".Params.type" "facpub") ".Params.year" "2018") ".Params.oneoff" false) }}
-            {{- partial "facpub/archive-item.html" . -}}
+            {{ partial "facpub/archive-item.html" . }}
             {{ end }}
         </div>
     </div>
@@ -29,7 +29,7 @@
 
         <div class="row">
             {{ range (where (where (where .Site.RegularPages ".Params.type" "facpub") ".Params.year" "2017") ".Params.oneoff" false) }}
-            {{- partial "facpub/archive-item.html" . -}}
+            {{ partial "facpub/archive-item.html" . }}
             {{ end }}
         </div>
     </div>
@@ -40,7 +40,7 @@
 
         <div class="row">
             {{ range (where (where (where .Site.RegularPages ".Params.type" "facpub") ".Params.year" "2016") ".Params.oneoff" false) }}
-            {{- partial "facpub/archive-item.html" . -}}
+            {{ partial "facpub/archive-item.html" . }}
             {{ end }}
         </div>
     </div>
@@ -51,7 +51,7 @@
 
         <div class="row">
             {{ range (where (where (where .Site.RegularPages ".Params.type" "facpub") ".Params.year" "2015") ".Params.oneoff" false) }}
-            {{- partial "facpub/archive-item.html" . -}}
+            {{ partial "facpub/archive-item.html" . }}
             {{ end }}
         </div>
     </div>

@@ -1,24 +1,22 @@
-{{ define "title" }}
-{{ .Site.Params.bapst }} Exhibits Archive
-{{ end }}
+{{ define "title" }}{{ .Site.Params.bapst }} Exhibits Archive{{ end }}
 
 {{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
 {{ end }}
 
 {{ define "main" }}
 <div class="container exhibit-container">
-    {{- partial "exhibits/breadcrumbs.html" . -}}
+    {{ partial "exhibits/breadcrumbs.html" . }}
     
     <div id="exhibit" class="archives">
-        {{- partial "exhibits/locations/headers.html" . -}}
+        {{ partial "exhibits/locations/headers.html" . }}
 
         <div class="row">
             <div class="latest_exhibit">
                 <div class="left">
-                    {{- partial "exhibits/gallerynav.html" . -}}
+                    {{ partial "exhibits/gallerynav.html" . }}
                 </div>
     
                 <div class="right">
@@ -30,7 +28,7 @@
                         
                         {{ range (where .Site.RegularPages ".Params.location" .Params.location) }}
                         {{ .Scratch.Set "loc" .Params.location }}
-                        {{- partial "exhibits/summary.html" . -}}
+                        {{ partial "exhibits/summary.html" . }}
                         {{ end }}
                     </ul>
 
@@ -47,7 +45,7 @@
                         {{/* manually set the location to "bapstarchive" */}}
                         {{ range (where .Site.Pages ".Params.location" "bapstarchive") }}
                         {{ .Scratch.Set "loc" "bapstarchive" }}
-                        {{- partial "exhibits/summary.html" . -}}
+                        {{ partial "exhibits/summary.html" . }}
                         {{ end }}
                     </ul>
 

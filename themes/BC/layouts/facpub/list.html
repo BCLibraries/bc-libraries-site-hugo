@@ -1,6 +1,4 @@
-{{ define "title" }}
-Faculty Publication Highlights
-{{ end }}
+{{ define "title" }}Faculty Publication Highlights{{ end }}
 
 {{ define "header" }}
 <!-- BEGIN HEADER -->
@@ -11,7 +9,7 @@ Faculty Publication Highlights
 {{ end }}
 
 {{ define "pagestyles" }}
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/facpub_refresh.css"/>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/facpub_refresh.css"/>
 {{ end }}
 
 {{ define "main" }}
@@ -86,6 +84,6 @@ Faculty Publication Highlights
         </div>
     </div>
 
-    {{- partial "facpub/archive.html" . -}}
+    {{ partial "facpub/archive.html" . }}
 </div>
 {{end}}

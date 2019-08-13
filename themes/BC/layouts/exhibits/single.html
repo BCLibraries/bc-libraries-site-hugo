@@ -1,19 +1,17 @@
-{{ define "title" }}
-{{ .Title }} | {{ .Site.Param .Page.Params.location }} Exhibit Archives
-{{ end }}
+{{ define "title" }}{{ .Title }} | {{ .Site.Param .Page.Params.location }} Exhibit Archives{{ end }}
 
 {{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
 {{ end }}
 
 {{ define "main" }}
 <div class="container exhibit-container">
-    {{- partial "exhibits/breadcrumbs.html" . -}}
+    {{ partial "exhibits/breadcrumbs.html" . }}
 
     <div class="exhibit_page">
-        {{- partial "exhibits/locations/headers.html" . -}}
+        {{ partial "exhibits/locations/headers.html" . }}
 
         <div class="row">
             <div id="individualpage" class="{{ .Params.style }}">
