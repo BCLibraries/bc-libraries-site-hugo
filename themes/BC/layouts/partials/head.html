@@ -6,12 +6,27 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}bcbento/css/app.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/refresh.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/megamenu.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/footer.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/refresh_content_rows.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/notification.css"/>
+
+    {{ $bento    := resources.Get "bcbento/css/app.css" }}
+    {{ $refresh  := resources.Get "css/refresh.css" }}
+    {{ $megamenu := resources.Get "css/megamenu.css" }}
+    {{ $footer   := resources.Get "css/footer.css" }}
+    {{ $rows     := resources.Get "css/refresh_content_rows.css" }}
+    {{ $notify   := resources.Get "css/notification.css" }}
+
+    {{/* bundle and minify core CSS files -- used for production */}}
+    {{ if eq .Site.Params.bundlecss true }}
+        {{ $allcss := slice $bento $refresh $megamenu $footer $rows $notify | resources.Concat "css/bundle.css" }}
+        <link rel="stylesheet" type="text/css" href="{{ $allcss.Permalink }}">
+    {{ else }}
+    <link rel="stylesheet" type="text/css" href="{{ $bento.Permalink }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ $refresh.Permalink }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ $megamenu.Permalink }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ $footer.Permalink }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ $rows.Permalink }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ $notify.Permalink }}"/>
+    {{ end }}
+    
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Libraries"
 theme = "BC"
 summaryLength = 10
+assetDir = "static"
 [permalinks]
     news = "/news/:year/:month/:slug/"
     exhibits = "/exhibits/:year/:month/:slug/"
@@ -19,3 +20,5 @@ summaryLength = 10
     reading = "O'Neill Reading Room"
     stokes = "History Dept, Stokes Hall"
     showBuildHeader = false
+    bundleCSS = false
+    bundleJS = false

@@ -6,16 +6,26 @@
     {{- partial "footer-bc.html" . -}}
 </footer>
 
-<script type="text/javascript" src="{{ .Site.BaseURL }}js/libhoursv2.js"></script>
-
-<!-- MEGA MENU SCRIPTS -->
 <!-- This code will prevent unexpected menu close when using some components (like accordion, forms, etc) -->
 <script>$(document).on('click','.yamm .dropdown-menu',function(e){e.stopPropagation()});</script>
-<script type="text/javascript" src="{{ .Site.BaseURL }}js/bootstrap-hover-dropdown.min.js"></script>
-<script type="text/javascript" src="{{ .Site.BaseURL }}js/jquery.hoverIntent.minified.js"></script>
-<script type="text/javascript" src="{{ .Site.BaseURL }}js/megamenu.js"></script>
-<script type="text/javascript" src="{{ .Site.BaseURL }}js/libraryinfo.js"></script>
-<!-- END MEGA MENU SCRIPTS -->
+
+{{ $libhours := resources.Get "js/libhoursv2.js" }}
+{{ $dropdown := resources.Get "js/bootstrap-hover-dropdown.min.js" }}
+{{ $hover    := resources.Get "js/jquery.hoverIntent.minified.js" }}
+{{ $megamenu := resources.Get "js/megamenu.js" }}
+{{ $libinfo  := resources.Get "js/libraryinfo.js" }}
+
+  {{/* bundle and minify core JS files -- used for production */}}
+{{ if eq .Site.Params.bundlejs true }}
+    {{ $alljs := slice $libhours $dropdown $hover $megamenu $libinfo | resources.Concat "js/bundle.js" | resources.Minify }}
+    <script type="text/javascript" src="{{ $alljs.Permalink }}"></script>
+{{ else }}
+<script type="text/javascript" src="{{ $libhours.Permalink }}"></script>
+<script type="text/javascript" src="{{ $dropdown.Permalink }}"></script>
+<script type="text/javascript" src="{{ $hover.Permalink }}"></script>
+<script type="text/javascript" src="{{ $megamenu.Permalink }}"></script>
+<script type="text/javascript" src="{{ $libinfo.Permalink }}"></script>
+{{ end }}
 
 <script src="https://arc.bc.edu/notices/downtime-notices-client.js"></script>
 <script>

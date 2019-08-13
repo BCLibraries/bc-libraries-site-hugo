@@ -1,2 +1,4 @@
 [params]
     showBuildHeader = false
+    bundleCSS = false
+    bundleJS = false
