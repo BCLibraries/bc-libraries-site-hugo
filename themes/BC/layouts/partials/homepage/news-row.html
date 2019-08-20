@@ -9,17 +9,17 @@
             */}}
         {{ range first 4 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news") }}
         <div class="col-xxs col-xs-6 col-sm-6 col-md-3">
-                <div class="news-content">
-                    <a href='{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}' id="{{ .Params.slug }}">
-                        <div class="newsitem">
-                            <div class="newstext">
-                                <p class="newslink">{{ .Title | safeHTML }}</p>
-                            </div>
-                            <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
+            <div class="news-content">
+                <a href='{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}' id="{{ .Params.slug }}">
+                    <div class="newsitem">
+                        <div class="newstext">
+                            <p class="newslink">{{ .Title | safeHTML }}</p>
                         </div>
-                    </a>
-                </div>
+                        <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
+                    </div>
+                </a>
             </div>
+        </div>
         {{ end }}
     </div>
     <div class="more-news"><a href="{{ .Site.BaseURL }}news">See all news  <i class="fa fa-lg fa-long-arrow-right" aria-hidden="true"></i></a></div>
