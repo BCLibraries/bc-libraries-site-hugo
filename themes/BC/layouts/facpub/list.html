@@ -24,7 +24,8 @@
             <h2>Current Highlight</h2>
 
             <!-- LATEST FACPUB -->
-            {{ range first 1 (where .Site.RegularPages ".Params.type" "facpub") }}
+            {{/* make sure to only pull in facpub record that has "oneoff: false" */}}
+            {{ range first 1 (where (where .Site.RegularPages ".Params.type" "facpub") ".Params.oneoff" false) }}
             <div class="youtube">
                 <div id="titleauthor">
                     <h3><a href="{{ .Permalink }}">{{ .Title | safeHTML }}</a></h3>
