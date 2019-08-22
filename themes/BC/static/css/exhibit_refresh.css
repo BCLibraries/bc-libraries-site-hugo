@@ -188,6 +188,9 @@ html {
         height: 100%;
         width: auto;
     }
+    .exhibit-container .breadcrumb {
+        margin: 1rem 0 1rem 0;
+    }
 }
 
 #exhibit .latest_exhibit .holder .frame:hover {
@@ -304,7 +307,7 @@ html {
 }  
 
 @media ( max-width: 768px ) {
-     .blackband .bandcenter, .exhibit_page .blackband .bandcenter {
+    .blackband .bandcenter, .exhibit_page .blackband .bandcenter {
         width: 100%;
         max-width: 100%;
         padding: 0 20px;
@@ -312,47 +315,47 @@ html {
 }
 
 #exhibit .burns, .exhibit_page .burns {
-        background: url("/img/exhibits/banner_burns.jpg") no-repeat 50% 0% #101010;
+    background: url("/img/exhibits/banner_burns.jpg") no-repeat 50% 0% #101010;
 }
 
 #exhibit .tml, .exhibit_page .tml {
-        background: url("/img/exhibits/banner_tml.jpg") no-repeat 50% 0% #101010;
+    background: url("/img/exhibits/banner_tml.jpg") no-repeat 50% 0% #101010;
 }
 
 #exhibit .lvl1, .exhibit_page .lvl1 {
-        background: url("/img/exhibits/banner_lvl1.jpg") no-repeat 50% 0% #101010;
+    background: url("/img/exhibits/banner_lvl1.jpg") no-repeat 50% 0% #101010;
 }
 
 #exhibit .lvl3, .exhibit_page .lvl3 {
-        background: url("/img/exhibits/banner_lvl3.jpg") no-repeat 50% 0% #101010;
+    background: url("/img/exhibits/banner_lvl3.jpg") no-repeat 50% 0% #101010;
 }
 
 #exhibit .reading, .exhibit_page .reading {
-        background: url("/img/exhibits/banner_reading.jpg") no-repeat 50% 0% #101010;
+    background: url("/img/exhibits/banner_reading.jpg") no-repeat 50% 0% #101010;
 }
 
 #exhibit .backwall, .exhibit_page .backwall {
-        background: url("/img/exhibits/banner_backwall.jpg") no-repeat 50% 0% #101010;
+    background: url("/img/exhibits/banner_backwall.jpg") no-repeat 50% 0% #101010;
 }
 
 #exhibit .lobby, .exhibit_page .lobby {
-        background: url("/img/exhibits/banner_oneill.jpg") no-repeat 50% 0% #101010;
+    background: url("/img/exhibits/banner_oneill.jpg") no-repeat 50% 0% #101010;
 }
 
 #exhibit .stokes, .exhibit_page .stokes {
-        background: url("/img/exhibits/banner_stokes.jpg") no-repeat 50% 0% #101010;
+    background: url("/img/exhibits/banner_stokes.jpg") no-repeat 50% 0% #101010;
 }
 
 #exhibit .bapst, .exhibit_page .bapst, #exhibit .bapstarchive, .exhibit_page .bapstarchive  {
-        background: url("/img/exhibits/banner_bapst.jpg") no-repeat 50% 0% #101010;
+    background: url("/img/exhibits/banner_bapst.jpg") no-repeat 50% 0% #101010;
 }
 
 #exhibit .virtual, .exhibit_page .virtual {
-        background: url("/img/exhibits/banner_default.jpg") no-repeat 0% 100% #101010;
+    background: url("/img/exhibits/banner_default.jpg") no-repeat 0% 100% #101010;
 }
 
 #exhibit .tip, .exhibit_page .tip {
-        background: url("/img/exhibits/banner_default.jpg") no-repeat 0% 100% #101010;
+    background: url("/img/exhibits/banner_default.jpg") no-repeat 0% 100% #101010;
 }
 
 .blackband a {
@@ -379,7 +382,7 @@ html {
 }
 
 @media ( max-width: 768px ) {
-        #exhibit.archives .latest_exhibit .holder:nth-child(odd) {
+    #exhibit.archives .latest_exhibit .holder:nth-child(odd) {
        float: none;
        margin: 0 0px 25px 0;
     }
@@ -426,14 +429,19 @@ html {
     }
 }
 
-@media ( max-width: 768px ) {
+@media ( max-width: 767px ) {
+    .exhibit-container {
+        padding-top: 60px;
+    }
     #exhibit.archives .latest_exhibit .holder {
         margin: 0px 0px 25px 0;
         padding: 0;
         width: 100%;
         height: auto;
     }
-
+    #exhibit.archives .latest_exhibit .holdhead {
+        width: 100%;
+    }
 }
 
 #exhibit.archives .latest_exhibit .holder .frame:hover {

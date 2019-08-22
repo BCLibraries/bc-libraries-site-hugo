@@ -7,12 +7,14 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="container exhibit-container">
-    {{ partial "exhibits/breadcrumbs.html" . }}
-    
+<div class="exhibit-container">
+    <div class="container">
+        {{ partial "exhibits/breadcrumbs.html" . }}
+    </div>
+    {{ partial "exhibits/locations/headers.html" . }}
+</div>
+<div class="container">
     <div id="exhibit" class="archives">
-        {{ partial "exhibits/locations/headers.html" . }}
-
         <div class="row">
             <div class="latest_exhibit">
                 <div class="left">
