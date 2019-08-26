@@ -220,6 +220,11 @@
     content: "\f16d";
 }
 
+#media_stayconnected:after {
+    font-family: 'FontAwesome';
+    content: "\f067";
+}
+
 
 @media (min-width: 1201px) {
     .homepagerefresh #lib-footer .address-wrap,
