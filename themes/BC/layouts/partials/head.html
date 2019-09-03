@@ -30,3 +30,9 @@
     {{ partial "google-analytics.html" . }}
     {{ partial "matomo-analytics.html" . }}
     {{ end }}
+
+    {{/* temporarily activate analytics on staging */}}
+    {{ if eq hugo.Environment "staging" }}
+    {{ partial "google-staging-analytics.html" . }}
+    {{ partial "matomo-staging-analytics.html" . }}
+    {{ end }}
