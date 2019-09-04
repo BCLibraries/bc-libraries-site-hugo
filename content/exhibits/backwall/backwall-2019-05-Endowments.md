@@ -2,7 +2,7 @@
 title: "Recent Acquisitions by the Boston College Libraries"
 subtitle: "With Great Thanks to Our Benefactors"
 draft: false
-active: true
+active: false
 date: 2019-05-17T01:01:00-04:00
 daterange: "May - August 2019"
 year: "2019"
