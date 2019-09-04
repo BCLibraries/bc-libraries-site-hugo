@@ -1,77 +1,84 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3008279-25"></script>
 <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-3008279-25', 'auto');
-        ga('require', 'linkid');
-        ga('send', 'pageview');
-        $(function () {
-            var $all_anchors = $('a');
-            $('#megamenu-refresh ul.nav li.dropdown').mouseenter(function() {
-                var myText = $(this).find("a.menu-option").text();
-                ga('send', 'event', 'megamenu', 'hover', myText.trim());
-            });
-            $("ul.item-desktop li a").mouseenter(function(){
-                var myPane = $(this).html();
-                ga('send', 'event', 'librarypanes', 'hover', myPane);
-            });
-            //
-            // HOMEPAGE only GA event triggers
-            //
-            // send 'outbound' event for all link clicks
-            $all_anchors.not('#askuswidget, .search-link, .accessibility-text').click(function(e) {
-                var url = $(this).attr("href");
-                /* Bug fix to stop screen jump when clicking carousel controls */
-                if (url.indexOf('#') !== 0) {
-                    ga("send", "event", "outbound", "click", url);
-                }
-            });
-            // send 'homepage' event for all link clicks and include sections
-            // ignore news carousel and mega menu top-level links
-            $all_anchors.not("#askuswidget, .carousel-control, li.dropdown > a.menu-option, .accessibility-text").click(function(e){
-                var url = $(this).attr("href");                
-                var dataTag = $(this).parents("[data-tag=ga-tag]");
-                var dataID = "-";
-                if (dataTag && dataTag.length) {
-                    dataID = dataTag.attr("id");
-                    if (typeof dataID === 'undefined') {
-                        dataID = "-"
-                    }
-                }
-                ga('send', 'event', 'homepage', dataID, url);
-            });
-            // send 'exhibits-nav' event for carosel nav clicks
-            // -   left and right nav buttons
-            $("a.carousel-control").click(function(e){
-                var nav = $(this).attr("data-slide");
-                if (typeof nav === "undefined") {
-                    nav = "-";
-                }
-                ga('send', 'event', 'exhibits-nav', 'click', nav);
-            });
-            // -   dot indicators
-            $("ol.carousel-indicators li").click(function(e){
-                var slide = $(this).attr("data-slide-to");
-                if (typeof slide === "undefined") {
-                    slide = "-";
-                }
-                ga('send', 'event', 'exhibits-nav', 'click', 'indicator', slide);
-            });
-            // send 'story-nav' event for story selector clicks
-            $("#storybox .story-selectors img.selector").click(function(e){
-                var src = $(this).attr("src");
-                ga('send', 'event', 'story-nav', 'click', src);
-            });
-            //
-            // catch Ask Us fixed button clicks
-            //
-            $("a#askuswidget").click(function(e){
-                var src = window.location.href;
-                ga('send', 'event', 'chat-widget', 'click', src);
-            });
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-3008279-25');
+    $(function () {
+        var $all_anchors = $('a');
+        $('#megamenu-refresh ul.nav li.dropdown').mouseenter(function() {
+            var myText = $(this).find("a.menu-option").text();
+            //ga('send', 'event', 'megamenu',      'hover',       myText.trim());
+            //ga('send', 'event', [eventCategory], [eventAction], [eventLabel], [eventValue]);
+            gtag('event', 'hover', {'event_category': 'megamenu', 'event_label': myText.trim()});
         });
-        // Initialize bootstrap popover
-        //$(function () { $('[data-toggle="tooltip"]').tooltip() });
-    </script>
-    
+        $("ul.item-desktop li a").mouseenter(function(){
+            var myPane = $(this).html();
+            //gtag('send', 'event', 'librarypanes', 'hover', myPane);
+            gtag('event', 'hover', {'event_category': 'librarypanes', 'event_label': myPane});
+        });
+        //
+        // HOMEPAGE only GA event triggers
+        //
+        // send 'outbound' event for all link clicks
+        $all_anchors.not('#askuswidget, .search-link, .accessibility-text').click(function(e) {
+            var url = $(this).attr("href");
+            /* Bug fix to stop screen jump when clicking carousel controls */
+            if (url.indexOf('#') !== 0) {
+                //gtag("send", "event", "outbound", "click", url);
+                gtag('event', 'click', {'event_category': 'outbound', 'event_label': url});
+            }
+        });
+        // send 'homepage' event for all link clicks and include sections
+        // ignore news carousel and mega menu top-level links
+        $all_anchors.not("#askuswidget, .carousel-control, li.dropdown > a.menu-option, .accessibility-text").click(function(e){
+            var url = $(this).attr("href");                
+            var dataTag = $(this).parents("[data-tag=ga-tag]");
+            var dataID = "-";
+            if (dataTag && dataTag.length) {
+                dataID = dataTag.attr("id");
+                if (typeof dataID === 'undefined') {
+                    dataID = "[undefined]"
+                }
+            }
+            //gtag('send', 'event', 'homepage', dataID, url);
+            gtag('event', dataID, {'event_category': 'homepage', 'event_label': url});
+        });
+        // send 'exhibits-nav' event for carosel nav clicks
+        // -   left and right nav buttons
+        $("a.carousel-control").click(function(e){
+            var nav = $(this).attr("data-slide");
+            if (typeof nav === "undefined") {
+                nav = "[undefined]";
+            }
+            //gtag('send', 'event', 'exhibits-nav', 'click', nav);
+            gtag('event', 'click', {'event_category': 'exhibits-nav', 'event_label': nav});
+        });
+        // -   dot indicators
+        $("ol.carousel-indicators li").click(function(e){
+            var slide = $(this).attr("data-slide-to");
+            if (typeof slide === "undefined") {
+                slide = "[undefined]";
+            }
+            //gtag('send', 'event', 'exhibits-nav', 'click', 'indicator', slide);
+            gtag('event', 'click', {'event_category': 'exhibits-nav', 'event_label': indicator, 'value': slide});
+        });
+        // send 'story-nav' event for story selector clicks
+        /*$("#storybox .story-selectors img.selector").click(function(e){
+            var src = $(this).attr("src");
+            //gtag('send', 'event', 'story-nav', 'click', src);
+            gtag('event', 'click', {'event_category': 'story-nav', 'event_label': src});
+        });*/
+        //
+        // catch Ask Us fixed button clicks
+        //
+        $("a#askuswidget").click(function(e){
+            var src = window.location.href;
+            //gtag('send', 'event', 'chat-widget', 'click', src);
+            gtag('event', 'click', {'event_category': 'chat-widget', 'event_label': src});
+        });
+    });
+    // Initialize bootstrap popover
+    //$(function () { $('[data-toggle="tooltip"]').tooltip() });
+</script>
