@@ -7,8 +7,8 @@ by: "Edited"
 authorfirstname: "Rowena"
 authorlastname: "Fong"
 authorposition: "EdD, MSW, University of Texas at Austin, School of Social Work"
-secondauthor: "James Luben"
-secondposition: "PhD, Professor Emeritu, Boston College School of Social Work"
+secondauthor: "James Lubben"
+secondposition: "PhD, Professor Emeritus, Boston College School of Social Work"
 thirdauthor: "Richard Barth"
 thirdposition: "PhD, MSW, Dean of the University of Maryland School of Social Work"
 slug: "grand-challenges"
@@ -19,7 +19,7 @@ booklocation: "https://bc-primo.hosted.exlibrisgroup.com/permalink/f/l6ucgu/ALMA
 showbooklocation: true
 bookcover: "2019/grand-cover.jpg"
 imagealt: "the book cover"
-oneoff: true
+oneoff: no
 type: "facpub"
 ---
 
