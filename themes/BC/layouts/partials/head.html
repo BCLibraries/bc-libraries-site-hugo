@@ -27,15 +27,14 @@
     
     {{/* Google Analytics script - only display on production */}}
     {{ if eq hugo.Environment "production" }}
-    {{ partial "google-analytics.html" . }}
-    {{ partial "matomo-analytics.html" . }}
-    {{/* analytics-event-tracking.html uses gtag site tag, which is not used for production at this time */}}
-    {{/* partial "analytics-event-tracking.html" . */}}
+    {{ partial "analytics-google.html" . }}
+    {{ partial "analytics-matomo.html" . }}
+    {{ partial "analytics-event-tracking.html" . }}
     {{ end }}
 
     {{/* temporarily activate analytics on staging */}}
     {{ if eq hugo.Environment "staging" }}
-    {{ partial "google-staging-analytics.html" . }}
-    {{ partial "matomo-staging-analytics.html" . }}
+    {{ partial "analytics-google-staging.html" . }}
+    {{ partial "analytics-matomo-staging.html" . }}
     {{ partial "analytics-event-tracking.html" . }}
     {{ end }}
