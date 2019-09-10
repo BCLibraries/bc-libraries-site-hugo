@@ -27,5 +27,14 @@
     
     {{/* Google Analytics script - only display on production */}}
     {{ if eq hugo.Environment "production" }}
-    {{ partial "google-analytics.html" . }}
+    {{ partial "analytics-google.html" . }}
+    {{ partial "analytics-matomo.html" . }}
+    {{ partial "analytics-event-tracking.html" . }}
+    {{ end }}
+
+    {{/* temporarily activate analytics on staging */}}
+    {{ if eq hugo.Environment "staging" }}
+    {{ partial "analytics-google-staging.html" . }}
+    {{ partial "analytics-matomo-staging.html" . }}
+    {{ partial "analytics-event-tracking.html" . }}
     {{ end }}
