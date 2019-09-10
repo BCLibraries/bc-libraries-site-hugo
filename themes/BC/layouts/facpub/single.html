@@ -23,7 +23,7 @@
     <div class="article_page">
         <div class="youtube">
             <div id="titleauthor">
-                <h3>{{ .Title | safeHTML }}</h3>
+                <h3 id="main-heading">{{ .Title | safeHTML }}</h3>
                 {{ .Params.by }} by {{ .Params.authorfirstname }} {{ .Params.authorlastname }} 
                 
                 {{ if .Params.secondauthor }}
@@ -49,7 +49,7 @@
                 <div class="col-sm-4 fph_content_right">
                     <div class="media">
                         <div class="media-left">
-                            <img class="media-object" src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.bookcover }}" alt="{{ .Params.imagealt }}">
+                            <img class="media-object" src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.bookcover }}" alt="">
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">{{ .Params.authorfirstname }} {{ .Params.authorlastname }}</h4>
