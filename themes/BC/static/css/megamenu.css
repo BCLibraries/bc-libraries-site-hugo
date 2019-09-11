@@ -953,3 +953,17 @@
     height: 150px;
     background-position: -165px -325px;
 }
+
+/* About menu redesign TEST */
+#mm-help-about .row {
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+#mm-help-about .panel {
+    margin-bottom: 0;
+    height: 100%;
+}
