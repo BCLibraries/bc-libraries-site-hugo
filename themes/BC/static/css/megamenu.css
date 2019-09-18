@@ -980,4 +980,23 @@
 #mm-help-about .panel-heading .media img {
     width: 100%;
     height: 100px;
+    /*opacity: .85;*/
 }
+
+.library-boxes {
+    margin-bottom: -2rem;
+}
+
+.library-box {
+    margin-bottom: 2rem;
+    font-size: 13px;
+}
+
+.library-box .lib-name {
+    font-weight: 600;
+}
+
+/*.library-box .media img:focus,
+.library-box .media img:hover {
+    opacity: .99!important;
+}*/
