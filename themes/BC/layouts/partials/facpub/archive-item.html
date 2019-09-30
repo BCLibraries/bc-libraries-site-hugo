@@ -8,15 +8,7 @@
             <div class="media-body">
                 <a href="{{ .Permalink }}" class="archive-item-title"><em>{{ .Title | safeHTML }}</em></a>
                 <div class="archive-item-authors">
-                    {{ .Params.by }} by {{ .Params.authorfirstname }} {{ .Params.authorlastname }}
-
-                    {{ if .Params.secondauthor }}
-                    &#x26; {{ .Params.secondauthor }} 
-                    {{ end }}
-    
-                    {{ if .Params.thirdauthor }}
-                    &#x26; {{ .Params.thirdauthor }} 
-                    {{ end }}
+                    {{ partial "facpub/author-summary.html" . }}
                 </div>
             </div>
         </div>

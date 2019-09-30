@@ -1,0 +1,9 @@
+{{ .Params.by }} by {{ .Params.authorfirstname }} {{ .Params.authorlastname }}
+
+{{ if .Params.secondauthor }}
+&#x26; {{ .Params.secondauthor }} 
+{{ end }}
+
+{{ if .Params.thirdauthor }}
+&#x26; {{ .Params.thirdauthor }} 
+{{ end }}

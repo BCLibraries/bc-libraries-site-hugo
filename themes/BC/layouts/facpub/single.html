@@ -24,15 +24,7 @@
         <div class="youtube">
             <div id="titleauthor">
                 <h3 id="main-heading">{{ .Title | safeHTML }}</h3>
-                {{ .Params.by }} by {{ .Params.authorfirstname }} {{ .Params.authorlastname }} 
-                
-                {{ if .Params.secondauthor }}
-                &#x26; {{ .Params.secondauthor}} 
-                {{ end }}
-
-                {{ if .Params.thirdauthor }}
-                &#x26; {{ .Params.thirdauthor}} 
-                {{ end }}
+                {{ partial "facpub/author-summary.html" . }}
             </div>
 
             <div class="video-container">
