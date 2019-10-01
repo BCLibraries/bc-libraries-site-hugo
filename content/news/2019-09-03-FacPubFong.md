@@ -2,7 +2,7 @@
 title: "Faculty Publication Highlight: Rowena Fong, James Lubben, & Richard Barth"
 draft: false
 expired: false
-date: 2019-09-03T16:52:08-04:00
+date: 2019-09-10T16:52:08-04:00
 year: "2019"
 slug: "facpub-fong"
 destination: "https://library.bc.edu/facpub/2019/Jul/grand-challenges/"
