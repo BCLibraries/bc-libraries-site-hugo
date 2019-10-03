@@ -7,6 +7,8 @@ resources/_gen
 output
 cache
 *.pyc
+*.gitkeep
+*.pid
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
