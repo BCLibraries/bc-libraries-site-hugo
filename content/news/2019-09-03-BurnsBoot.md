@@ -1,7 +1,7 @@
 ---
 title: "Primary Source Boot Camp"
 draft: false
-expired: false
+expired: true
 date: 2019-09-15T16:51:16-04:00
 year: "2019"
 slug: "burns-primary-boot"
