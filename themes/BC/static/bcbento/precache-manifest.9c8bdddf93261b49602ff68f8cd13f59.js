@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "../theme/bcbento/static/js/runtime~main.1cf1c718.js"
   },
   {
-    "revision": "a916fa7b4d038ebea123",
-    "url": "../theme/bcbento/static/js/main.55b3477f.chunk.js"
+    "revision": "be5f98adc1588464941d",
+    "url": "../theme/bcbento/static/js/main.06192fe9.chunk.js"
   },
   {
     "revision": "085f51a48a63fec3b01f",
     "url": "../theme/bcbento/static/js/2.8207eb23.chunk.js"
   },
   {
-    "revision": "6e7f7409546c9d539329f02bf5d516ca",
+    "revision": "4af897c491797c54e0a35258b3faf680",
     "url": "../theme/bcbento/index.html"
   }
 ];
