@@ -425,7 +425,7 @@ ol.faq-results-list {
 .bento-search-box textarea {
     width: 800px;
     font-size: 20px;
-    height: 50px;
+    height: 150px;
     margin: 0;
     color: #555;
     padding-top: 7px;
@@ -435,13 +435,18 @@ ol.faq-results-list {
     display: block;
 }
 
-.bento-search-box textarea.searchbox-animate-enter-done {
+.bento-search-box textarea.searchbox-animate-enter {
     width: 800px;
-    height: 150px;
-  }
+    height: 50px;
+}
 
   .bento-search-box textarea.searchbox-animate-enter-active {
     width: 800px;
     height: 150px;
     transition: width 100ms, height 100ms;
+  }
+
+  .bento-search-box textarea.searchbox-animate-enter-done {
+    width: 800px;
+    height: 150px;
   }
