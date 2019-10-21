@@ -112,3 +112,6 @@ news - imgs.lnk
 
 # Touch
 html/index.html
+
+# Visual Studio Code workspaces
+*.code-workspace
