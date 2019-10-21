@@ -11,35 +11,13 @@ SEARCH_LAYOUT=${THEME_DIR}/layouts/search/search.html.html
 BUILD=false
 BRANCH="master"
 
+# Arguments
+path_to_client=
+
 function main() {
-
   validate_theme_files
+  get_options "$@"
 
-  # Set options
-  while getopts ":hb:" opt; do
-    case ${opt} in
-    h)
-      show_usage
-      exit 0
-      ;;
-    b)
-      BUILD=true
-      BRANCH=$OPTARG
-      ;;
-    \?)
-      error_exit "Invalid Option: -$OPTARG" 1>&2
-      ;;
-    esac
-  done
-  shift $(($OPTIND - 1))
-
-  # Get arguments
-  path_to_client=$1
-  if [ ! -d "$path_to_client" ]; then
-    error_exit "${path_to_client}: No such directory"
-  fi
-  
-  # Do the deployment
   if [ "$BUILD" = true ]; then
     build_client
   fi
@@ -83,25 +61,54 @@ function validate_theme_files() {
   fi
 }
 
+function get_options() {
+  local OPTIND
+  while getopts ":hb:" opt; do
+    case ${opt} in
+    h)
+      show_usage
+      exit 0
+      ;;
+    b)
+      BUILD=true
+      BRANCH=$OPTARG
+      ;;
+    \?)
+      error_exit "Invalid Option: -$OPTARG" 1>&2
+      ;;
+    esac
+  done
+  shift $((OPTIND - 1))
+
+  path_to_client=$1
+  if [ ! -d "$path_to_client" ]; then
+    error_exit "${path_to_client}: No such directory"
+  fi
+}
+
 # Build a new deployment of the client.
 function build_client() {
-  pushd $path_to_client || error_exit "$path_to_client: Could not cd to client"
+  pushd "$path_to_client" || error_exit "$path_to_client: Could not cd to client"
   current_branch=$(git rev-parse --abbrev-ref HEAD)
-  git checkout $BRANCH || error_exit "Couldn't checkout client branch $BRANCH"
+  git checkout "$BRANCH" || error_exit "Couldn't checkout client branch $BRANCH"
   yarn build || error_exit "Couldn't build client"
-  git checkout $current_branch
-  popd
+  git checkout "$current_branch"
+  popd || return
+}
+
+function validate_build_environment() {
+  
 }
 
 # Remove any old files.
 function clean_old_files() {
   echo "Remove old js dir..."
-  rm -r ${JS_THEME_DIR} || error_exit "$JS_THEME_DIR: Couldn't delete js directory"
+  rm -r "${JS_THEME_DIR}" || error_exit "$JS_THEME_DIR: Couldn't delete js directory"
 
   echo "Remove stray javascript and json..."
-  for f in ${BENTO_THEME_DIR}/*js*; do
+  for f in "${BENTO_THEME_DIR}"/*js*; do
     if [ -f "$f" ]; then
-      rm $f || error_exit " $f: Couldn't delete"
+      rm "$f" || error_exit " $f: Couldn't delete"
     fi
   done
 }
@@ -109,10 +116,10 @@ function clean_old_files() {
 # Copy in the fresh files.
 function copy_build_files() {
   echo "Copy over new js directory..."
-  cp -r ${path_to_client}/build/static/js ${STATIC_THEME_DIR} || error_exit "Couldn't copy js directory"
+  cp -r "${path_to_client}"/build/static/js "${STATIC_THEME_DIR}" || error_exit "Couldn't copy js directory"
 
   echo "Copy over new stray javascript and json..."
-  cp ${path_to_client}/build/*js* ${BENTO_THEME_DIR} || error_exit "Couldn't copy stray js"
+  cp "${path_to_client}"/build/*js* "${BENTO_THEME_DIR}" || error_exit "Couldn't copy stray js"
 }
 
 # Update the Hugo search layout document to reflect the new javascript files.
@@ -123,15 +130,15 @@ function update_search_layout() {
     error_exit "${build_index_path}: Build index.html not found"
   fi
 
-  build_index=$(cat ${build_index_path})
+  build_index=$(cat "${build_index_path}")
   pattern='\/([^/]*.chunk.js).*\/([^/]*.chunk.js)'
 
   [[ "$build_index" =~ $pattern ]]
   loader_chunk=${BASH_REMATCH[1]}
   main_chunk=${BASH_REMATCH[2]}
 
-  sed -i '' -e "s/[0-9]\.[^/]*.chunk.js/$loader_chunk/" $SEARCH_LAYOUT
-  sed -i '' -e "s/main\.[^/]*.chunk.js/$main_chunk/" $SEARCH_LAYOUT
+  sed -i '' -e "s/[0-9]\.[^/]*.chunk.js/$loader_chunk/" "$SEARCH_LAYOUT"
+  sed -i '' -e "s/main\.[^/]*.chunk.js/$main_chunk/" "$SEARCH_LAYOUT"
 }
 
 main "$@"
