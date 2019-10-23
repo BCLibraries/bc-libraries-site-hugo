@@ -96,10 +96,6 @@ function build_client() {
   popd || return
 }
 
-function validate_build_environment() {
-  
-}
-
 # Remove any old files.
 function clean_old_files() {
   echo "Remove old js dir..."
