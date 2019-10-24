@@ -130,8 +130,8 @@ function update_search_layout() {
   loader_chunk=${BASH_REMATCH[1]}
   main_chunk=${BASH_REMATCH[2]}
 
-  sed -i '' -e "s/[0-9]\.[^/]*.chunk.js/$loader_chunk/" $SEARCH_LAYOUT
-  sed -i '' -e "s/main\.[^/]*.chunk.js/$main_chunk/" $SEARCH_LAYOUT
+  sed -i -e "s/[0-9]\.[^/]*.chunk.js/$loader_chunk/" $SEARCH_LAYOUT
+  sed -i -e "s/main\.[^/]*.chunk.js/$main_chunk/" $SEARCH_LAYOUT
 }
 
 main "$@"
