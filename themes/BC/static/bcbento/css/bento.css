@@ -226,6 +226,19 @@
     margin-right: 1em;
 }
 
+.best-bet-result .btn.btn-primary {
+    display: block;
+}
+
+.best-bet-result__publication {
+    font-size: 14px;
+}
+
+.best-bet-result__doi {
+    color: #44555F;
+    fontSize: 13px;
+}
+
 /** End best bets **/
 
 /** Video results **/
@@ -363,6 +376,9 @@ ol.faq-results-list {
         left: 0;
         position: absolute;
         display: block;
+    }
+    .bcbento-search-box {
+        width: inherit
     }
 }
 
