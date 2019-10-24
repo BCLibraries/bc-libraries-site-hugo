@@ -329,58 +329,6 @@ ol.faq-results-list {
 
 /** End FAQ **/
 
-/** Mobile */
-
-.media-body__mobile-link {
-    display: none;
-}
-
-@media (max-width: 767px) {
-    .link-to-results {
-        flex-wrap: wrap;
-        justify-content: initial;
-    }
-
-    .link-to-results > div {
-        margin-right: 1em;
-    }
-
-    .not-finding.col-md-4 {
-        text-align: initial;
-        margin-top: 1em;
-    }
-
-    .article-result-item,
-    .catalog-result-item {
-        padding-top: 1em;
-        border-top: 1px solid rgba(0, 0, 0, .2);
-    }
-
-    .article-result-item:first-child,
-    .catalog-result-item:first-child {
-        border: none;
-    }
-
-    .media-body {
-        position: relative;
-    }
-
-    .video-results-list li {
-        margin-bottom: 3em;
-    }
-
-    .media-body__mobile-link {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        position: absolute;
-        display: block;
-    }
-    .bcbento-search-box {
-        width: inherit
-    }
-}
 
 /** Search bar **/
 .react-autosuggest__suggestion {
@@ -466,3 +414,140 @@ ol.faq-results-list {
     width: 800px;
     height: 150px;
   }
+
+
+/** Mobile */
+
+.media-body__mobile-link {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .link-to-results {
+        flex-wrap: wrap;
+        justify-content: initial;
+    }
+
+    .link-to-results > div {
+        margin-right: 1em;
+    }
+
+    .not-finding.col-md-4 {
+        text-align: initial;
+        margin-top: 1em;
+    }
+
+    .article-result-item,
+    .catalog-result-item {
+        padding-top: 1em;
+        border-top: 1px solid rgba(0, 0, 0, .2);
+    }
+
+    .article-result-item:first-child,
+    .catalog-result-item:first-child {
+        border: none;
+    }
+
+    .media-body {
+        position: relative;
+    }
+
+    .video-results-list li {
+        margin-bottom: 3em;
+    }
+
+    .media-body__mobile-link {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: block;
+    }
+
+    .bcbento-search-box {
+        width: inherit;
+    }
+
+    .bento-results-page .btn.btn-default {
+        width: 48px;
+        padding-left: 0.75em;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        margin-left: -1px;
+    }
+
+    .bento-results-page .btn.btn-default  .search-button-text {
+        display: none;
+    }
+
+    .link-to-results,
+    .not-finding.col-md-4 {
+        font-size: 13px;
+    }
+
+    .best-bet-row__heading {
+        margin: .1rem 0 1rem 0
+    }
+    .bento-results-box h2,
+    .best-bet-row__heading,
+    .bento-results-box__header-row {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .best-bet-result__title,
+    .bento-results-box .media-heading {
+        font-size: 20px;
+    }
+
+    .best-bet-result__author {
+        font-size: 16px;
+    }
+
+    .best-bet-result__publication {
+        font-size: 13px;
+    }
+
+    .best-bet-result__doi {
+        font-size: 12px;
+    }
+
+    .best-bet-result .btn.btn-primary {
+        margin-top: -2rem;
+    }
+
+    .books-results-list,
+    .articles-results-list {
+        padding: 0;
+    }
+
+    .catalog-result-item__creator,
+    .article-result-item__creator,
+    .article-result-item__publisher {
+        line-height: normal;
+        font-size: 14px;
+    }
+
+    .bento-results-box__header-row .see-all-link {
+        font-size: 14px;
+        margin-left: 5em;
+    }
+
+    .catalog-result-item,
+    .article-result-item {
+        margin-bottom: 1em;
+    }
+
+    .results-row-1,
+    .results-row-2,
+    .results-row-3 {
+        padding-bottom: 2em;
+        padding-top: 1em;
+    }
+
+    #root {
+        margin-bottom: 1em;
+    }
+
+}
