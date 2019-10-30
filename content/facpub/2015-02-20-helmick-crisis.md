@@ -30,4 +30,4 @@ The Catholic Church in the United States and Europe has seen declining numbers b
 
 How will the Church revive? Helmick believes that a new growth of Christianity can come now only by a return to the love and care of its original premises, to the things that are redolent of the life of Jesus. The 'new evangelization' can only be done by living a Christian life, giving an example.
 
-<em>View a <a href="http://library.bc.edu/theme/img/facpub/2015/02/helmick-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>
+<em>View a <a href="http://library.bc.edu/images/facpub/2015/02/helmick-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>

@@ -32,4 +32,4 @@ Extending Lonergan's method into the realm of ethics, Byrne argues that we can u
 Written both for those with an interest in Lonergan's philosophy and for those interested in theories of ethics who have only a limited knowledge of Lonergan's work, Byrne's book is the first detailed exposition of an ethical theory based on Lonergan's philosophical method.
 
 
-<em>View a <a href="http://library.bc.edu/theme/img/facpub/2016/06/byrne-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>
+<em>View a <a href="http://library.bc.edu/images/facpub/2016/06/byrne-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>
