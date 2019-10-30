@@ -49,7 +49,7 @@
                 <div class="col-sm-6 fph_content_right">
                     <div class="media">
                         <div class="media-left">
-                            <a href="{{ .Permalink }}"><img class="media-object" src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.bookcover }}" alt=""></a>
+                            <a href="{{ .Permalink }}"><img class="media-object" src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.bookcover }}" alt=""></a>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading"><strong>{{ .Params.authorfirstname }} {{ .Params.authorlastname }}</strong></h4>
