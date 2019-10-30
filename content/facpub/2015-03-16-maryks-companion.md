@@ -28,4 +28,4 @@ type: "facpub"
 
 The <em>Companion to Ignatius of Loyola</em> aims at placing Loyola’s life, his writings, and spirituality in a broader context of important late medieval and early modern movements and processes that have been appreciated too little by historians who explored Ignatius more as the colossal icon of the so-called Counter-Reformation than as a man influenced by the dramatic and revolutionary period in which he lived. One book will be never able to cover all aspects of such rich and controversial a figure as Ignatius of Loyola but the fifteen chapters of this volume indicate important directions of current scholarship that reassesses the previous scholarship and suggests new angles of studies on this pivotal figure of early modern period.
 
-<em>View a <a href="http://library.bc.edu/images/facpub/2015/03/maryks-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>
+<em>View a <a href="https://library.bc.edu/images/facpub/2015/03/maryks-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>

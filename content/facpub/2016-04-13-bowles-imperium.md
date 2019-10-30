@@ -33,4 +33,4 @@ type: "facpub"
 <p>Playing with the tropes of classic adventure tales such as <em>Treasure Island</em> and <em>Robinson Crusoe</em>, Kracht's novel, an international bestseller, is funny, bizarre, shocking, and poignant. His allusions are misleading, his historical time line is twisted, his narrator is unreliable--and the result is a novel that is a cabinet of mirrors, a maze pitted with trapdoors.</p>
 
 
-<em>View a <a href="http://library.bc.edu/images/facpub/2016/04/bowles-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>
+<em>View a <a href="https://library.bc.edu/images/facpub/2016/04/bowles-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>

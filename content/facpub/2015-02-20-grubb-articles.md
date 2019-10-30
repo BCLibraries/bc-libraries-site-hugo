@@ -31,4 +31,4 @@ For many goods and services such as electricity, health care, cellular phone ser
 <p><a href="http://dx.doi.org.proxy.bc.edu/10.1093/restud/rdu024">Read "Consumer Inattention and Bill-Shock Regulation"</a> <br />
 <a href="http://proxy.bc.edu/login?url=http://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.20120283">Read "Cellular Service Demand: Biased Beliefs, Learning, and Bill Shock."</a></p>
 
-<em>View a <a href="http://library.bc.edu/images/facpub/2015/02/grubb-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>
+<em>View a <a href="https://library.bc.edu/images/facpub/2015/02/grubb-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>

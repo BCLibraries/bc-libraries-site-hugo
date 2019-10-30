@@ -18,7 +18,7 @@ slug: "twomey-publishing"
 youtube: "//www.youtube.com/embed/VeN9mbDkENI"
 samplepages: "2015/00/NAME-book.pdf"
 showsamplepages: false
-booklocation: "http://library.bc.edu/search/?any=david+twomey"
+booklocation: "https://library.bc.edu/search/?any=david+twomey"
 showbooklocation: true
 bookcover: "2015/05/twomey-cover.jpg"
 imagealt: "Screencap of David P. Twomey's interview."
