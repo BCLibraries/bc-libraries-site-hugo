@@ -220,7 +220,7 @@ a {
     display: inline-block;
     height: 30px;
     width: 30px;
-    background: url('/img/ignatius.png') 0 0;
+    background: url("http://library.bc.edu/images/ignatius.png") 0 0;
     background-size: cover;
     float: right;
 }*/
@@ -229,7 +229,7 @@ a {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background: url('/img/ignatius.png') 0 0;
+    background: url("http://library.bc.edu/images/ignatius.png") 0 0;
     background-size: cover;
     /*float: left;*/
     margin: -10px 10px 0 0;
@@ -247,7 +247,7 @@ a {
 
 /* header */
 #header {
-    background: #ccc url('/img/hero01.jpg') 0 100%; /* CHANGE BACKGROUND SEASONALLY */
+    background: #ccc url("http://library.bc.edu/images/hero01.jpg") 0 100%; /* CHANGE BACKGROUND SEASONALLY */
     height: 450px;
     background-size: cover;
     padding-top: 80px;
@@ -320,7 +320,7 @@ a {
     width: 100%;
     min-height: 150px;
     height: 600px;
-    background: url('/img/digitalscholashipbg-morales.jpg') no-repeat 100% 50% #101010;
+    background: url("http://library.bc.edu/images/digitalscholashipbg-morales.jpg") no-repeat 100% 50% #101010;
     background-size: auto auto;
     border-top: 1px solid #dadada;
     border-bottom: 1px solid #dadada;
@@ -430,7 +430,7 @@ a {
     width: 100%;
     min-height: 150px;
     height: 600px;
-    background: url('/img/sc_bg_02_med.jpg') no-repeat 50% 50% #101010;
+    background: url("http://library.bc.edu/images/sc_bg_02_med.jpg") no-repeat 50% 50% #101010;
     background-size: auto auto;
     color: #fff;
     padding: 55px 0;
@@ -798,7 +798,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 
     #header {
         /* CHANGE BACKGROUND SEASONALLY */
-        background-image: url('/img/hero01-small2.jpg');
+        background-image: url("http://library.bc.edu/images/hero01-small2.jpg");
         height: 322px;
     }
 }
