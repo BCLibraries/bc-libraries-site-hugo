@@ -1005,3 +1005,37 @@
 .library-box .media img:hover {
     opacity: .99!important;
 }*/
+
+.library-boxes .lib-box-small.panel {
+    display: flex;
+    flex-direction: column;
+}
+.library-boxes .panel-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px 8px 5px;
+}
+.library-boxes .lib-box-pair {
+    flex-grow: 1;
+    display: flex;
+}
+.library-boxes .lib-box-pair-label {
+    display: none;
+}
+.library-boxes .lib-box-pair-value {
+    font-weight: 600;
+    align-self: flex-end;
+}
+
+@media ( max-width: 1199px ) {
+    .library-box {
+        padding: 5px;
+    }
+}
+
+@media ( max-width: 767px ) {
+    .library-box .panel-heading {
+        display: none;
+    }
+}
