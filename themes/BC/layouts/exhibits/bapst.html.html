@@ -29,8 +29,7 @@
                         </div>
                         
                         {{ range (where .Site.RegularPages ".Params.location" .Params.location) }}
-                        {{ .Scratch.Set "loc" .Params.location }}
-                        {{ partial "exhibits/summary.html" . }}
+                        {{ partial "exhibits/thumbnail-summary.html" . }}
                         {{ end }}
                     </ul>
 
@@ -46,8 +45,7 @@
                         </div>
                         {{/* manually set the location to "bapstarchive" */}}
                         {{ range (where .Site.Pages ".Params.location" "bapstarchive") }}
-                        {{ .Scratch.Set "loc" "bapstarchive" }}
-                        {{ partial "exhibits/summary.html" . }}
+                        {{ partial "exhibits/thumbnail-summary.html" . }}
                         {{ end }}
                     </ul>
 

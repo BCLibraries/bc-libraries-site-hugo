@@ -67,7 +67,7 @@
 
                         <div class="frame">
                             <a href="https://library.bc.edu/digital-exhibits/">
-                                <img src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.location }}/{{ .Params.imagethumb}}" alt="{{ .Params.imagealt }}">
+                                <img src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.location }}/{{ .Params.imagethumb}}" alt="{{ .Params.imagealt }}">
 
                                 <div class="info">
                                     <p class="date">{{ .Params.Daterange }}</p>
@@ -176,7 +176,7 @@
 
                         <div class="frame">
                             <a href="http://www.bc.edu/content/bc/libraries/about/exhibits/oneill/oneill.html">
-                                <img src="{{ .Site.BaseURL }}img/{{ .Section }}/virtual/tip-thumb.png" alt="Painting of Tip O'Neill">
+                                <img src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/virtual/tip-thumb.png" alt="Painting of Tip O'Neill">
                                 <div class="info">
                                     <p class="date">&nbsp;</p>
                                     <p class="title">Tip O'Neill Exhibit</p>
@@ -194,7 +194,7 @@
 
                         <div class="frame">
                             <a href="http://www.bc.edu/libraries/about/exhibits-new/burnsvirtual/irish-connections.html">
-                                <img src="{{ .Site.BaseURL }}img/{{ .Section }}/virtual/burns-thumb.png" alt="Tip O'Neill with John F. Kennedy">
+                                <img src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/virtual/burns-thumb.png" alt="Tip O'Neill with John F. Kennedy">
                                 <div class="info">
                                     <p class="date">&nbsp;</p>
                                     <p class="title">Exploring Boston Irish Connections</p>

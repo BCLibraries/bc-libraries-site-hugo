@@ -1,0 +1,12 @@
+<li class="holder">
+    <div class="frame">
+        <a href="{{ .Permalink }}">
+            <img src='{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.location }}/{{ .Params.imagethumb }}' alt="{{ .Params.imagealt }}">
+            
+            <div class="info">
+                <p class="date">{{ .Params.daterange }}</p>
+                <p class="title">{{ .Title | safeHTML }}</p>
+            </div>
+        </a>
+    </div>
+</li>

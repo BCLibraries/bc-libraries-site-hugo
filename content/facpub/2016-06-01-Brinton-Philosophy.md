@@ -32,4 +32,4 @@ Brinton examines the ways Cold War dissidents in Central and Eastern Europe turn
 
 According to the author, our conversations about the relationship between philosophy, politics, and dissidence can be deepened by examining this legacy.
 
-<em>View a <a href="http://library.bc.edu/theme/img/facpub/2016/06/brinton-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>
+<em>View a <a href="https://library.bc.edu/images/facpub/2016/06/brinton-guide.pdf">guide of selected resources (PDF)</a> on this topic available through the Libraries. </em>

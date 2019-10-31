@@ -28,8 +28,7 @@
                             <h4>2012-2019</h4>
                         </div-->
                         {{ range (where .Site.RegularPages ".Params.location" .Params.location) }}
-                        {{ .Scratch.Set "loc" .Params.location }}
-                        {{ partial "exhibits/summary.html" . }}
+                        {{ partial "exhibits/thumbnail-summary.html" . }}
                         {{ end }}
                     </ul>
                 </div> {{/* end .right */}}

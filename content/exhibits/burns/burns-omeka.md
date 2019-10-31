@@ -2,7 +2,7 @@
 title: "Boston College Libraries Digital Exhibits"
 subtitle: ""
 draft: false
-active: true
+active: false
 date: 2018-02-01T01:01:00-04:00
 daterange: ""
 year: "2018"

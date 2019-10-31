@@ -1,0 +1,46 @@
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
+
+{{ define "header" }}{{ end }}
+
+{{ define "pagestyles" }}
+<style>
+    #contact-us-form {
+        min-height: 840px;
+        padding: 75px 0 0 0;
+    }
+    .homepagerefresh #header {
+        height: initial;
+    }
+    div#s-la-widget-9340 {
+        max-width: 800px;
+        margin: 16px auto;
+        font-family: "Open sans", sans-serif;
+    }
+</style>
+{{ end }}
+
+{{ define "main" }}
+<div id="contact-us-form">
+    <div id="s-la-widget-9340"></div>
+</div>
+{{ end }}
+
+{{ define "pagescripts" }}
+<script src="//api2.libanswers.com/1.0/widgets/9340"></script>
+
+<script>
+    $(document).ready(function () {
+        // add in referrer string into hidden form field 'url'
+        var referrer = document.referrer;
+        console.log("referrer: " + referrer);
+        var urlFormField = "#s-la-askform-form_9340 fieldset#s-la-askform-section-8126 input#val4_9340";
+
+        $(document.body).one("focus", "#s-la-askform-form_9340", function(){
+            console.log("referrer: " + referrer);
+            $(urlFormField).val(referrer).change();
+        });
+    });
+</script>
+{{ end }}

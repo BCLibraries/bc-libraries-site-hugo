@@ -51,7 +51,7 @@
 	display: inline-block;
 	width: 100%;
 	min-height: 150px;
-	background: url("/img/exhibits/banner_default2.jpg") no-repeat 0% 100% #101010;
+	background: url("https://library.bc.edu/images/exhibits/banner_default2.jpg") no-repeat 0% 100% #101010;
 	border-top: 1px solid #dadada;
 	border-bottom: 1px solid #dadada;
 	color: #fff;
