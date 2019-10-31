@@ -329,6 +329,24 @@ ol.faq-results-list {
 
 /** End FAQ **/
 
+/** Browzine badges **/
+
+.browzine-badge {
+    margin-top: 1em;
+}
+
+.browzine-badge__download-now, .browzine-badge__view-issue {
+    display: block;
+}
+
+.browzine-pdf-icon, .browzine-book-icon {
+    margin-right: .5em;
+    margin-bottom: .2em;
+}
+
+.browzine-badge__pdf_notice {
+    font-size: .8em;
+}
 
 /** Search bar **/
 .react-autosuggest__suggestion {
