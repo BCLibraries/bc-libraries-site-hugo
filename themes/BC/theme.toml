@@ -11,5 +11,5 @@ features = []
 min_version = "0.1"
 
 [author]
-  name = "Boston Colleg Libraries"
+  name = "Boston College Libraries"
   homepage = "https://library.bc.edu"
