@@ -1,11 +1,12 @@
 baseURL = "https://library.bc.edu"
 languageCode = "en-us"
 title = "Libraries"
-theme = "BC"
+theme = ["BC-Beta", "BC"]
 summaryLength = 10
 [permalinks]
     news = "/news/:year/:month/:slug/"
     exhibits = "/exhibits/:year/:month/:slug/"
+	experiments = "/experiments/:year/:month/:slug/"
     facpub = "/facpub/:year/:month/:slug/"
 [params]
     exhibits = "Library Exhibits"
