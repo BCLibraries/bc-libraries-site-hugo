@@ -808,16 +808,12 @@
  }
  
   /* ASK A LIBRARIAN STYLES */
- #mm-help-aal .row {
-     padding-top: 0;
-     padding-bottom: 0;
-     display: flex;
-     align-content: stretch;
-     flex-wrap: wrap;
- }
- 
- #mm-help-aal .row:last-child {
-     padding-top: 10px;
+  #mm-help-aal .aal-box-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
  }
  
  #mm-help-aal .panel {
@@ -833,6 +829,10 @@
  
  #mm-help-aal .panel-body .media-left {
      padding: 0;
+ }
+
+ #mm-help-aal .aal-box-wrapper {
+     margin-bottom: 1rem;
  }
  
  #mm-help-aal .aal-box {
