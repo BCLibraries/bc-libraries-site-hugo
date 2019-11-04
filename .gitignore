@@ -1,6 +1,9 @@
 # hugo
 public
 resources/_gen
+# ignore all files in theme/BC/static/img/ directory
+themes/BC/static/img/**
+!themes/BC/static/img/.keep
 
 .idea
 .vagrant

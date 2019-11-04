@@ -25,16 +25,16 @@ The Passages Artists Collective is a group of fine artists working in diverse me
 <br />
 
 <div class="poster">
-<img src="/theme/img/exhibits/tml/2018/01-holy-city_01.JPG" alt="Photo of the material on display at the Theology & Ministry Library">
+<img src="https://library.bc.edu/images/exhibits/tml/2018/01-holy-city_01.JPG" alt="Photo of the material on display at the Theology & Ministry Library">
 </div>
 <div class="poster">
-<img src="/theme/img/exhibits/tml/2018/01-holy-city_02.JPG" alt="Photo of the material on display at the Theology & Ministry Library">
+<img src="https://library.bc.edu/images/exhibits/tml/2018/01-holy-city_02.JPG" alt="Photo of the material on display at the Theology & Ministry Library">
 </div>
 <div class="poster">
-<img src="/theme/img/exhibits/tml/2018/01-holy-city_03.JPG" alt="Photo of the material on display at the Theology & Ministry Library">
+<img src="https://library.bc.edu/images/exhibits/tml/2018/01-holy-city_03.JPG" alt="Photo of the material on display at the Theology & Ministry Library">
 </div>
 <div class="poster">
-<img src="/theme/img/exhibits/tml/2018/01-holy-city_04.JPG" alt="Photo of the women who put the exhibit together">
+<img src="https://library.bc.edu/images/exhibits/tml/2018/01-holy-city_04.JPG" alt="Photo of the women who put the exhibit together">
 </div>
 
 

@@ -2,7 +2,7 @@
 title: "Pray for Us"
 subtitle: "Holy Cards from the John J. Burns Library Collections"
 draft: false
-active: true
+active: false
 date: 2019-06-16T01:01:00-04:00
 daterange: "June - September 2019"
 year: "2019"

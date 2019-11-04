@@ -54,7 +54,7 @@
                     <div class="newstext">
                         <p class="newslink">{{ .Title | safeHTML }}</p>
                     </div>
-                    <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
+                    <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
                 </div>
             </a>
         </div>
@@ -69,7 +69,7 @@
                     <div class="newstext">
                         <p class="newslink">{{ .Title | safeHTML }}</p>
                     </div>
-                    <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
+                    <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
                 </div>
             </a>
         </div>

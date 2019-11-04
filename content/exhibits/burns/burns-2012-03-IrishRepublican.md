@@ -18,7 +18,7 @@ type: "exhibits"
 
 Using both primary and secondary sources from across the Irish Collections at the John J. Burns Library, the exhibit includes a printed petition, a government document, a memorial pamphlet, a song book and LP records.
 
-<img alt="Irish Republican Army unit Regulations and Orders booklet" src="/theme/img/exhibits/burns/2012/03-rupublic-001.jpg" class="float_left" />
+<img alt="Irish Republican Army unit Regulations and Orders booklet" src="https://library.bc.edu/images/exhibits/burns/2012/03-rupublic-001.jpg" class="float_left" />
 
 Belfast, 1942.  A Royal Ulster Constabulary Officer is dead.  The responsible parties are Tom Williams, an 18 year old commander of an Irish Republican Army unit, and his five soldiers.  For their actions, each young man receives the death penalty.  This exhibit follows the conditions in Northern Ireland that lead up to, and some of the consequences of, the judicial decision.  It demonstrates how a single primary document has the potential to act as a source for many different research themes.
 

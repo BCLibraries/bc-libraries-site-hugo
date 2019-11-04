@@ -483,9 +483,35 @@ ol.faq-results-list {
         display: block;
     }
 
+<<<<<<< HEAD
     .bcbento-search-box {
         width: inherit;
     }
+=======
+.browzine-badge {
+    margin-top: 1em;
+}
+
+.browzine-badge__download-now, .browzine-badge__view-issue {
+    display: block;
+}
+
+.browzine-pdf-icon, .browzine-book-icon {
+    margin-right: .5em;
+    margin-bottom: .2em;
+}
+
+.browzine-badge__pdf_notice {
+    font-size: .8em;
+}
+
+/** Search bar **/
+.react-autosuggest__suggestion {
+    padding: .5em .5em;
+    border: 1px dotted #999;
+    cursor: pointer;
+}
+>>>>>>> master
 
     .bento-results-page .btn.btn-default {
         width: 48px;
@@ -495,15 +521,27 @@ ol.faq-results-list {
         margin-left: -1px;
     }
 
+<<<<<<< HEAD
     .bento-results-page .btn.btn-default  .search-button-text {
         display: none;
     }
+=======
+.react-autosuggest__input {
+    width: 100%;
+    font-size: 20px;
+    height: 50px;
+    margin: 0 auto;
+    color: #555;
+    padding: .5em
+}
+>>>>>>> master
 
     .link-to-results,
     .not-finding.col-md-4 {
         font-size: 13px;
     }
 
+<<<<<<< HEAD
     .best-bet-row__heading {
         margin: .1rem 0 1rem 0
     }
@@ -569,3 +607,60 @@ ol.faq-results-list {
     }
 
 }
+=======
+.react-autosuggest__suggestion--highlighted {
+    background-color: #e9eaea;
+}
+
+.bcbento-search-box {
+    float: left;
+    margin-bottom: 1em;
+    width: 70%;
+}
+
+.bento-search-box .btn-submit {
+    height: 50px;
+}
+
+.bento-results-page .btn.btn-default {
+    height: 50px;
+    width: 124px;
+    font-size: 20px;
+    /* padding: 0 12px; */
+    padding-left: .5em;
+}
+
+.bento-search-box .fa.fa-search {
+    margin-right: .5em;
+}
+
+/** Search textbox **/
+.bento-search-box textarea {
+    width: 800px;
+    font-size: 20px;
+    height: 150px;
+    margin: 0;
+    color: #555;
+    padding-top: 7px;
+    padding-left: 11px;
+    padding-right: 7px;
+    padding: 7px 11px;
+    display: block;
+}
+
+.bento-search-box textarea.searchbox-animate-enter {
+    width: 800px;
+    height: 50px;
+}
+
+.bento-search-box textarea.searchbox-animate-enter-active {
+    width: 800px;
+    height: 150px;
+    transition: width 100ms, height 100ms;
+}
+
+.bento-search-box textarea.searchbox-animate-enter-done {
+    width: 800px;
+    height: 150px;
+}
+>>>>>>> master

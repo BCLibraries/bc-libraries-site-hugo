@@ -901,7 +901,7 @@
  
  /* Image sprites for library thumbnails */
  .libsprite {
-     background: url('/theme/img/librarypane/libthumb-spritesheet.jpg') no-repeat;
+     background: url('https://library.bc.edu/images/librarypane/libthumb-spritesheet.jpg') no-repeat;
      display: block;
      border: 2px solid #990000;
  }

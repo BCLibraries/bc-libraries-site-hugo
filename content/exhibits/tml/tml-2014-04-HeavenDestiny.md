@@ -21,7 +21,7 @@ type: "exhibits"
   <p>"[The] Catholicism that shaped the lives and memories of millions of   children in the 1940s and 1950s was first experienced as a 'vast set of   intermeshed habits' (Garry Wills, Bare Ruined Choirs: Doubt, Prophecy, and Radical Religion)   that was the American Catholic world of religion…. Indeed, this   American Catholic world was a 'total experience' (Wills) not unlike   being Amish in Pennsylvania or Mormon in Utah, but stretching coast to   coast..."</p>
   <p>      --Mark Stephen Massa, The American Catholic Revolution: How the Sixties Changed the Church Forever</p>
   <p>The objects and images chosen for inclusion in the exhibit all   witness - in different ways - to that pre-Vatican II sense of U.S.   Catholicism that "we grew up different" (Wills) from other Americans in   part because almost all U.S. Catholics believed that - even as compared   with other Christians - heaven was their destiny in a privileged sense.</p>
-  <p><a href="/theme/img/exhibits/tml/2014/heavencatalog.pdf">Heaven Be Your Destiny Catalog (pdf)</a></p>
+  <p><a href="https://library.bc.edu/images/exhibits/tml/2014/heavencatalog.pdf">Heaven Be Your Destiny Catalog (pdf)</a></p>
 
 <!--
 
@@ -53,9 +53,9 @@ Style:
     Poster large, centered below text (middle_down)
 
 Add'l images
-    <img src="/theme/img/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_left">
-    <img src="/theme/img/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_right">
-    <img src="/theme/img/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="center">
+    <img src="https://library.bc.edu/images/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_left">
+    <img src="https://library.bc.edu/images/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_right">
+    <img src="https://library.bc.edu/images/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="center">
 
 -->
 

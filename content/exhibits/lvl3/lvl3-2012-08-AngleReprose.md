@@ -54,9 +54,9 @@ Style:
     Poster large, centered below text (middle_down)
 
 Add'l images
-    <img src="/theme/img/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_left">
-    <img src="/theme/img/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_right">
-    <img src="/theme/img/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="center">
+    <img src="https://library.bc.edu/images/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_left">
+    <img src="https://library.bc.edu/images/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_right">
+    <img src="https://library.bc.edu/images/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="center">
 
 -->
 

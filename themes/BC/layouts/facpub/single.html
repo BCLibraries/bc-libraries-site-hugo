@@ -41,7 +41,7 @@
                 <div class="col-sm-4 fph_content_right">
                     <div class="media">
                         <div class="media-left">
-                            <img class="media-object" src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.bookcover }}" alt="">
+                            <img class="media-object" src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.bookcover }}" alt="">
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">{{ .Params.authorfirstname }} {{ .Params.authorlastname }}</h4>
@@ -57,7 +57,7 @@
                     </div>
 
                     {{ if eq .Params.showsamplepages true }}
-                    <p class="{{ .Params.showsamplepages }}"><a href="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.samplepages }}" class="sample">View sample pages</a></p>
+                    <p class="{{ .Params.showsamplepages }}"><a href="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.samplepages }}" class="sample">View sample pages</a></p>
                     {{ end }}
                     {{ if eq .Params.showbooklocation true }}
                     <p class="{{ .Params.showbooklocation }}"><a href="{{ .Params.booklocation }}" class="location">Find this item</a></p>

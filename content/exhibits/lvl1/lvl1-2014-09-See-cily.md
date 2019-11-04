@@ -20,7 +20,7 @@ type: "exhibits"
 <p>The SEE-CILY exhibition will transport you to places tourists never see.</p>
 <p>It is a unique collection of photographs that serve as the nucleus of   an ever-expanding exhibit, bearing witness to the sublime beauty and   ancient rhythms of this most Mediterranean of islands.</p>
 <p>The images reflect the lifestyle and traditions of little towns in   the heart of his land, such as Leonforte, Assoro as well as the more   well-known cities of Palermo and Catania.</p>
-<p><a href="/theme/img/exhibits/lvl1/2014/see-cily.pdf">See-cily opening reception PDF</a>. <em>Photos by Kevin Tringale.</em></p>
+<p><a href="https://library.bc.edu/images/exhibits/lvl1/2014/see-cily.pdf">See-cily opening reception PDF</a>. <em>Photos by Kevin Tringale.</em></p>
 <p><em>Photographs by Antonino Riggio.</em></p>
 
 <!--
@@ -53,9 +53,9 @@ Style:
     Poster large, centered below text (middle_down)
 
 Add'l images
-    <img src="/theme/img/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_left">
-    <img src="/theme/img/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_right">
-    <img src="/theme/img/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="center">
+    <img src="https://library.bc.edu/images/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_left">
+    <img src="https://library.bc.edu/images/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="float_right">
+    <img src="https://library.bc.edu/images/exhibits/XXXX/201X/00-XXXX.png" alt="words" class="center">
 
 -->
 

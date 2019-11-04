@@ -333,7 +333,7 @@ th {
 }}
 
 #librarytitle a h1 {
-    background: url("/theme/img/title.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("https://library.bc.edu/images/title.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: block;
     float: left;
     height: 90px;
@@ -2685,7 +2685,7 @@ nav select {
 
 .mini_hours_container,
 #oconnor_hours_container {
-   /* background: url("/theme/img/megabutton_time.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;*/
+   /* background: url("https://library.bc.edu/images/megabutton_time.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;*/
     font-size: 15px;
     /*height: 30px;*/
     margin: 0 auto;
@@ -3295,7 +3295,7 @@ nav select {
 #all-results .cover-image {
     float: left;
     width: 20%;
-    background: url("/theme/img/results_book.png") no-repeat 50% 50%;
+    background: url("https://library.bc.edu/images/results_book.png") no-repeat 50% 50%;
 }
 
 #all-results .loading {
@@ -3834,7 +3834,7 @@ span.expiredyes {
 /* FACULTY PUBLICATION HIGHLIGHTS STYLES */
 
 .facpub {
-background: url("/theme/img/facpub_bg.png") no-repeat scroll top center rgba(0, 0, 0, 0);
+background: url("https://library.bc.edu/images/facpub_bg.png") no-repeat scroll top center rgba(0, 0, 0, 0);
 background-size: cover;
 background-attachment: fixed;
 
@@ -3859,7 +3859,7 @@ background-attachment: fixed;
     min-height: 110px;
     position: relative;
     border-bottom: 1px solid #666;
-    background: url("/theme/img/facpub_header.png") no-repeat scroll top left #000000; 
+    background: url("https://library.bc.edu/images/facpub_header.png") no-repeat scroll top left #000000; 
     margin: 0 auto 0px;
 }
 
@@ -3892,7 +3892,7 @@ background-attachment: fixed;
 }
 
 .facpub #librarylink a {
-    background: url("/theme/img/facpub_title.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("https://library.bc.edu/images/facpub_title.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: block;
     height: 24px;
     width: 388px;
@@ -4216,7 +4216,7 @@ padding: 0 25px 0 0;
 @media ( max-width: 850px ) {
 
     .facpub #header {
-      background: url("/theme/img/facpub_header.png") no-repeat scroll top right #000000; 
+      background: url("https://library.bc.edu/images/facpub_header.png") no-repeat scroll top right #000000; 
 }
 
     .facpub .article_content .left {
@@ -4616,7 +4616,7 @@ html {
     width: 100vw;
     min-height: 150px;
     height: 290px;
-    background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_default.png") no-repeat 0% 100% #101010;
     border-top: 1px solid #dadada;
     border-bottom: 1px solid #dadada;
     color: #fff;
@@ -4632,7 +4632,7 @@ html {
     width: 100%
     min-height: 150px;
     height: auto;
-    background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_default.png") no-repeat 0% 100% #101010;
     border-top: 1px solid #dadada;
     border-bottom: 1px solid #dadada;
     color: #fff;
@@ -4689,47 +4689,47 @@ html {
 }
 
 #exhibit .burns, .exhibit_page .burns {
-        background: url("/theme/img/exhibits/banner_burns.png") no-repeat 50% 0% #101010;
+        background: url("https://library.bc.edu/images/exhibits/banner_burns.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .tml, .exhibit_page .tml {
-        background: url("/theme/img/exhibits/banner_tml.png") no-repeat 50% 0% #101010;
+        background: url("https://library.bc.edu/images/exhibits/banner_tml.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .lvl1, .exhibit_page .lvl1 {
-        background: url("/theme/img/exhibits/banner_lvl1.png") no-repeat 50% 0% #101010;
+        background: url("https://library.bc.edu/images/exhibits/banner_lvl1.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .lvl3, .exhibit_page .lvl3 {
-        background: url("/theme/img/exhibits/banner_lvl3.png") no-repeat 50% 0% #101010;
+        background: url("https://library.bc.edu/images/exhibits/banner_lvl3.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .reading, .exhibit_page .reading {
-        background: url("/theme/img/exhibits/banner_reading.png") no-repeat 50% 0% #101010;
+        background: url("https://library.bc.edu/images/exhibits/banner_reading.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .backwall, .exhibit_page .backwall {
-        background: url("/theme/img/exhibits/banner_backwall.png") no-repeat 50% 0% #101010;
+        background: url("https://library.bc.edu/images/exhibits/banner_backwall.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .lobby, .exhibit_page .lobby {
-        background: url("/theme/img/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
+        background: url("https://library.bc.edu/images/exhibits/banner_oneill.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .stokes, .exhibit_page .stokes {
-        background: url("/theme/img/exhibits/banner_stokes.png") no-repeat 50% 0% #101010;
+        background: url("https://library.bc.edu/images/exhibits/banner_stokes.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .bapst, .exhibit_page .bapst, #exhibit .bapstarchive, .exhibit_page .bapstarchive  {
-        background: url("/theme/img/exhibits/banner_bapst.png") no-repeat 50% 0% #101010;
+        background: url("https://library.bc.edu/images/exhibits/banner_bapst.png") no-repeat 50% 0% #101010;
 }
 
 #exhibit .virtual, .exhibit_page .virtual {
-        background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
+        background: url("https://library.bc.edu/images/exhibits/banner_default.png") no-repeat 0% 100% #101010;
 }
 
 #exhibit .tip, .exhibit_page .tip {
-        background: url("/theme/img/exhibits/banner_default.png") no-repeat 0% 100% #101010;
+        background: url("https://library.bc.edu/images/exhibits/banner_default.png") no-repeat 0% 100% #101010;
 }
 
 .blackband a {
@@ -5060,7 +5060,7 @@ display: none;
 }
 
 .career #librarytitle a h1 {
-background: url("/theme/img/career_logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+background: url("https://library.bc.edu/images/career_logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 display: block;
 float: left;
 height: 125px;

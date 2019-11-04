@@ -46,7 +46,7 @@
                                 </div>
 
                                 <div class="exhibit-right col-md-3 col-sm-3 col-xs-4">
-                                    <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ $exhibit.Params.location }}/{{ $exhibit.Params.imagethumb }}" alt="{{ $exhibit.Params.imagealt }}" class="exhibit-poster">
+                                    <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ $exhibit.Params.location }}/{{ $exhibit.Params.imagethumb }}" alt="{{ $exhibit.Params.imagealt }}" class="exhibit-poster">
                                 </div>
                             </div>
                         </div>

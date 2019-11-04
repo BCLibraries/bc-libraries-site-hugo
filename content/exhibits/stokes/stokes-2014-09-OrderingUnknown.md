@@ -18,4 +18,4 @@ type: "exhibits"
 
 <p><em>Ordering the Unknown</em>, the Making History   Public Class of Spring 2014 presents maps from the Burns Library that   order the then unknown. Covering more than two centuries and five   continents, these maps offer insights into the ordering impulses   of their age.</p>
 
-<p><a href="/theme/img/exhibits/stokes/2014/ordering.pdf">Ordering the Unknown opening reception PDF</a>. <em>Photos by Kevin Tringale.</em></p>
+<p><a href="https://library.bc.edu/images/exhibits/stokes/2014/ordering.pdf">Ordering the Unknown opening reception PDF</a>. <em>Photos by Kevin Tringale.</em></p>
