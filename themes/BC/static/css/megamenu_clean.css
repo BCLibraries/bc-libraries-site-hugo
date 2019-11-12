@@ -900,7 +900,7 @@
  }
  
  /* Image sprites for library thumbnails */
- .libsprite {
+ /*.libsprite {
      background: url('https://library.bc.edu/images/librarypane/libthumb-spritesheet.jpg') no-repeat;
      display: block;
      border: 2px solid #990000;
@@ -952,7 +952,7 @@
      width: 150px;
      height: 150px;
      background-position: -165px -325px;
- }
+ }*/
 
 /* About menu redesign TEST */
 #mm-help-about .row {
@@ -1031,6 +1031,15 @@
 @media ( max-width: 1199px ) {
     .library-box {
         padding: 5px;
+    }
+    #mm-help-about .panel-heading .media img {
+        height: 90px;
+    }
+}
+
+@media ( max-width: 991px ) {
+    #mm-help-about .panel-heading .media img {
+        height: 67px;
     }
 }
 
