@@ -1,7 +1,7 @@
 ---
 title: "Save The Date: Digital Scholarship Talk by Prof. Lauren Honig"
 draft: false
-expired: false
+expired: true
 date: 2019-10-29T11:14:42-04:00
 year: "2019"
 slug: "savedate-profhonig"
