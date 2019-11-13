@@ -1,0 +1,33 @@
+{{ define "title" }}{{ .Title }} | Experiments Archive{{ end }}
+
+{{ define "header" }}{{ end }}
+
+{{ define "pagestyles" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/news.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Kalam:400&display=swap" rel="stylesheet"> 
+    <style>
+        .container .article_page {
+            width: 75%;
+            margin: 0 auto;
+        }
+        @media ( max-width: 768px ) {
+            .container .article_page {
+                width: auto;
+                margin: 0 auto;
+            }
+        }
+    </style>
+{{ end }}
+
+{{ define "main" }}
+<div class="container news-container">
+    {{ partial "experiments/breadcrumbs.html" . }}
+    <div class="article_page">
+        <h3 id="main-heading">{{ .Title | safeHTML }}</h3>
+        <em>{{ .Date.Format "Mon, Jan 2, 2006" }}</em>
+        <div class="article_content">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}
