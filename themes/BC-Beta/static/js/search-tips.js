@@ -1,4 +1,4 @@
-fetch("/js/search-tips.json")
+fetch("js/search-tips.json")
   .then(function(response) {
     return response.json();
   })
