@@ -99,7 +99,10 @@ function build_client() {
 # Remove any old files.
 function clean_old_files() {
   echo "Remove old js dir..."
-  rm -r "${JS_THEME_DIR}" || error_exit "$JS_THEME_DIR: Couldn't delete js directory"
+
+	if [ -d "${JS_THEME_DIR}" ]; then
+		rm -r "${JS_THEME_DIR}" || error_exit "$JS_THEME_DIR: Couldn't delete js directory"
+	fi
 
   echo "Remove stray javascript and json..."
   for f in "${BENTO_THEME_DIR}"/*js*; do
