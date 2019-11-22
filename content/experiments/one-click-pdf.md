@@ -1,10 +1,10 @@
 ---
-title: "From citation to PDF in one click with Full Text Finder"
+title: "From citation to PDF in one click"
 draft: false
 expired: false
 date: 2019-11-04T11:49:05-05:00
 year: "2019"
-slug: "full-text-finder"
+slug: "one-click-PDF"
 imagethumb: ""
 imagealt: ""
 type: "experiments"
@@ -12,7 +12,7 @@ type: "experiments"
 
 #### What we built
 
-You can now copy and paste a [DOI](https://www.doi.org/doi_handbook/1_Introduction.html#1.6.1) or a citation into the main search box on [beta.library.bc.edu](https://beta.library.bc.edu). 
+We've made it easier to locate the PDF for an article in library search. You can now copy and paste a [DOI](https://www.doi.org/doi_handbook/1_Introduction.html#1.6.1) or a citation into the main search box on [library-beta.bc.edu](https://library-beta.bc.edu). 
 
 ![Screenshot of a DOI input into the library search box](https://library.bc.edu/images/experiments/2019-11/doi-search.png) ![Screenshot of a citation input into the library search box](https://library.bc.edu/images/experiments/2019-11/citation-search.png)
 
