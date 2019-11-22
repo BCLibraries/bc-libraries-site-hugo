@@ -11,7 +11,7 @@
             1) article is not expired
             2) article has an "experiment" type
         */}}
-        {{ range first 3 (where (where .Site.RegularPages ".Params.expired" false) ".Params.type" "experiments") }}
+        {{ range first 3 (after 1 (where (where .Site.RegularPages ".Params.expired" false) ".Params.type" "experiments")) }}
         <div class="col-xs-12 col-sm-6 col-md-4 news-content">
             <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" title="{{ .Title }}" id="{{ .Params.slug }}">
                 <div class="newsitem">                        
@@ -25,7 +25,7 @@
     </div>
 
     <div class="news-bottom">
-        {{ range first 3 (after 3 (where (where .Site.RegularPages ".Params.expired" false) ".Params.type" "experiments")) }}
+        {{ range first 3 (after 4 (where (where .Site.RegularPages ".Params.expired" false) ".Params.type" "experiments")) }}
         <div class="col-xs-12 col-sm-6 col-md-4 news-content">
             <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" title="{{ .Title }}" id="{{ .Params.slug }}">
                 <div class="newsitem">                        

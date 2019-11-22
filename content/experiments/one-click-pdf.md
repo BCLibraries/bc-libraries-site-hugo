@@ -2,7 +2,7 @@
 title: "From citation to PDF in one click"
 draft: false
 expired: false
-date: 2019-11-04T11:49:05-05:00
+date: 2019-11-22T11:49:05-05:00
 year: "2019"
 slug: "one-click-PDF"
 imagethumb: ""

@@ -1,0 +1,11 @@
+<div class="col-md-offset-2 col-md-8 col-xs-12" id="featured-post">
+{{ range first 1 (where (where .Site.RegularPages ".Params.expired" false) ".Params.type" "experiments") }}
+<div class="article_page">
+    <h3 id="main-heading">{{ .Title | safeHTML }}</h3>
+    <em>{{ .Date.Format "Mon, Jan 2, 2006" }}</em>
+    <div class="article_content">
+        {{ .Content }}
+    </div>
+</div>
+{{ end }}
+</div>

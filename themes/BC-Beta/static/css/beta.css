@@ -29,10 +29,24 @@ h3.bclib-header-beta-logo {
     background: white;
 }
 
+#index.beta #main-body > .container  {
+    display: inherit;
+}
+
+#index.beta #featured-post {
+background-color: #fff;
+background-image: none;
+border-radius: 4px;
+box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+margin-bottom: 2em;
+padding: 2em;
+}
+
 .beta #header {
     background: none;
     height: 400px;
 }
+
 #search-panel .search-box-container {
     padding-bottom: 0.5em;
 }
@@ -93,7 +107,7 @@ h3.bclib-header-beta-logo {
     height: 280px;
     margin: 20px 0 20px 0;
     padding: 0;
-    width: 80%;
+    width: 280px;
     overflow: hidden;
     -webkit-transform: rotate(2deg);
     -moz-transform: rotate(2deg);
@@ -129,7 +143,7 @@ h3.bclib-header-beta-logo {
     width: 300px;
     float: right;
     padding: 1em;
-    margin: 0.75em 0 0 1.5em;
+    margin: -2em -2em 0 1.5em;
 }
 
 #index.beta .container .article_page .article_content h4,
