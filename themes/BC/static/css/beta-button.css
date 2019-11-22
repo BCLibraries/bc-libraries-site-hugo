@@ -1,0 +1,30 @@
+#beta-container {
+    position: relative;
+}
+
+#library-beta-button {
+    position: absolute;
+    top: -2em;
+    right: 8em;
+}
+
+#library-beta-button a {
+    margin: 0;
+    padding: 1rem;
+    display: block;
+    color: #322C17;
+    background: #fde073;
+    border: 2px solid #fde073;
+    border-radius: 4px;
+    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+#library-beta-button a:hover {
+    border: 2px dashed rgba(50,44,23,0.2);
+    background: hsl(47.4, 97.2%, 64.2%);
+    text-decoration: none;
+}
+
+#library-beta-button a .fa {
+    font-size: 18px;
+}
