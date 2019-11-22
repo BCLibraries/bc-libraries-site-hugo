@@ -61,6 +61,11 @@ h3.bclib-header-beta-logo {
     margin-left: 0;
 }
 
+#index.beta .tell-us {
+    text-align: right;
+    font-size: 18px;
+}
+
 #index.beta #main-body .newsitem {
     padding: 0;
 }
@@ -69,6 +74,12 @@ h3.bclib-header-beta-logo {
     margin: 15px;
 }
 
+#index.beta #main-body #news h2 a,
+#index.beta .tell-us a {
+    background-color: rgba(221,221,221,0.7);
+    padding: 1rem;
+    border-radius: 4px;
+}
 #index.beta #main-body .newstext, #index.beta #main-body #news .news-content img {
     border: inherit;
 }
