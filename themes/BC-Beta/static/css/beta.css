@@ -36,6 +36,7 @@ h3.bclib-header-beta-logo {
 #search-panel .search-box-container {
     padding-bottom: 0.5em;
 }
+
 #search-tips {
     padding-top: 0;
     padding-bottom: 0;
@@ -44,6 +45,7 @@ h3.bclib-header-beta-logo {
 #search-tips p {
     color: #fff;
     font-style: italic;
+    font-size: 16px;
 }
 
 #search-tips p a {
@@ -63,24 +65,23 @@ h3.bclib-header-beta-logo {
     padding: 0;
 }
 
+#index.beta #main-body #news h2 {
+    margin: 15px;
+}
+
 #index.beta #main-body .newstext, #index.beta #main-body #news .news-content img {
     border: inherit;
 }
 
 #index.beta #main-body .newstext,
 #index.beta .container .article_page #main-heading {
-    font-family: 'Kalam', cursive;
-    font-weight: 400;
     position: inherit;
-    padding: 1em;
-    color: rgba(0,0,0,0.9);
-    font-size: 200%;
     line-height: 1.2;
-    text-align: left;
     box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
     background-color: #fde073;
     height: 280px;
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
+    padding: 0;
     width: 80%;
     overflow: hidden;
     -webkit-transform: rotate(2deg);
@@ -88,6 +89,16 @@ h3.bclib-header-beta-logo {
     -o-transform: rotate(2deg);
     -ms-transform: rotate(2deg);
     transform: rotate(2deg);
+}
+
+#index.beta #main-body .newstext .newslink {
+    text-align: left;
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    color: rgba(0,0,0,0.9);
+    padding: 1em;
+    margin: 0;
 }
 
 #index.beta .news-container, #index.beta .bento-results-page {
@@ -106,7 +117,8 @@ h3.bclib-header-beta-logo {
     font-size: 28px;
     width: 300px;
     float: right;
-    margin-left: 1.5em;
+    padding: 1em;
+    margin: 0.75em 0 0 1.5em;
 }
 
 #index.beta .container .article_page .article_content h4,

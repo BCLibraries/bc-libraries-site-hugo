@@ -13,10 +13,10 @@
         */}}
         {{ range first 3 (where (where .Site.RegularPages ".Params.expired" false) ".Params.type" "experiments") }}
         <div class="col-xs-12 col-sm-6 col-md-4 news-content">
-            <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">
+            <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" title="{{ .Title }}" id="{{ .Params.slug }}">
                 <div class="newsitem">                        
                     <div class="newstext">
-                        <p class="newslink">{{ .Title | safeHTML }}</p>
+                        <h3 class="newslink">{{ .Title | safeHTML }}</h3>
                     </div>
                 </div>
             </a>
@@ -27,10 +27,10 @@
     <div class="news-bottom">
         {{ range first 3 (after 3 (where (where .Site.RegularPages ".Params.expired" false) ".Params.type" "experiments")) }}
         <div class="col-xs-12 col-sm-6 col-md-4 news-content">
-            <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">
+            <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" title="{{ .Title }}" id="{{ .Params.slug }}">
                 <div class="newsitem">                        
                     <div class="newstext">
-                        <p class="newslink">{{ .Title | safeHTML }}</p>
+                        <h3 class="newslink">{{ .Title | safeHTML }}</h3>
                     </div>
                 </div>
             </a>
