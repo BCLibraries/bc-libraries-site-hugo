@@ -1,4 +1,10 @@
-<div class="row">
+{{/* show beta button */}}
+{{ if eq .Site.Params.showbetabutton true }}
+<div id="beta-container" class="row">
+    {{ partial "library-beta-button.html" . }}
+    {{ else }}
+    <div class="row">
+        {{ end }}
     <div class="col-md-10 col-md-offset-1" id="search-panel" data-tag="ga-tag">
         <div class="row">
             <div class="col-md-12">

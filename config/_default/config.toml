@@ -20,4 +20,5 @@ summaryLength = 10
     stokes = "History Dept, Stokes Hall"
     showBuildHeader = false
     showFloatingHelpButton = true
+    showBetaButton = true
     imageBaseURL = "https://library.bc.edu/images"
