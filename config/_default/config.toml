@@ -1,4 +1,4 @@
-baseURL = "https://library.bc.edu"
+baseURL = "https://library-beta.bc.edu/"
 languageCode = "en-us"
 title = "Libraries"
 theme = ["BC-Beta", "BC"]
