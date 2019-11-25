@@ -1,7 +1,7 @@
 h3.bclib-header-beta-logo {
     position: absolute;
-    left: 75%;
-    top: -10px;
+    right: 5px;
+    top: -15px;
     z-index: 10002;
     background-color: #fde073;
     background-image:linear-gradient(to bottom,#fde073,#e3c967);
@@ -132,9 +132,9 @@ padding: 2em;
     border-radius: 4px;
     box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
     margin-bottom: 2em;
-    padding: 2em;
+    padding-top: 50px;
+    padding-bottom: 2rem;
 }
-
 
 #index.beta .container .article_page #main-heading {
     font-family: 'Kalam', cursive;
@@ -144,6 +144,54 @@ padding: 2em;
     float: right;
     padding: 1em;
     margin: -2em -2em 0 1.5em;
+}
+
+/* adjust title sticky placement for a single article page */
+#index.beta .container .article_page.single #main-heading {
+    padding: 1em;
+    margin: .25rem -2rem 2rem 1.5rem;
+}
+
+#index.beta .navbar-header {
+    width: 100%;
+}
+
+#index.beta .navbar-header .library-home-link {
+    padding: 8px 16px;
+    margin: 6px;
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+    background-color: #204375;
+    color: #fff;
+    border-radius: 4px;
+    float: right;
+}
+
+@media ( max-width: 991px ) {
+    #index.beta .container .article_page #main-heading,
+    #index.beta .container .article_page.single #main-heading {
+        width: 240px;
+        height: 240px;
+        font-size: 24px;
+    }
+}
+
+@media ( max-width: 768px ) {
+    #index.beta .container .article_page #main-heading,
+    #index.beta .container .article_page.single #main-heading {
+        width: 200px;
+        height: 200px;
+        font-size: 22px;
+        padding: 1.5rem 1rem 1rem 1rem;
+        margin: .25em 1em 2rem .5em;
+    }
+}
+
+@media ( max-width: 400px ) {
+    #index.beta .container .article_page #main-heading {
+        float: none;
+    }
 }
 
 #index.beta .container .article_page .article_content h4,
