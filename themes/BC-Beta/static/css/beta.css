@@ -164,14 +164,14 @@ padding: 2em;
 }
 }
 
-#index.beta .news-container, #index.beta .bento-results-page {
+#index.beta .news-container,
+#index.beta .bento-results-page {
     background-color: #fff;
     background-image: none;
     border-radius: 4px;
     box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
     margin-bottom: 2em;
-    padding-top: 50px;
-    padding-bottom: 2rem;
+    padding: 50px 3rem 2rem;
 }
 
 #index.beta .container .article_page #main-heading {
