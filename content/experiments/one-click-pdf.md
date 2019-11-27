@@ -16,7 +16,7 @@ We've made it easier to locate the PDF for an article in library search. You can
 
 ![Screenshot of a DOI input into the library search box](https://library.bc.edu/images/experiments/2019-11/doi-search.png) ![Screenshot of a citation input into the library search box](https://library.bc.edu/images/experiments/2019-11/citation-search.png)
 
-If we can identify a likely match, we offer a best bet link front and center on the results page, with one click to the full text. If we can’t make a match, you’ll see the search results and options you do currently. 
+If we can identify a likely match, we offer a best bet link front and center on the results page, with one click to the PDF. If we can’t make a match, you’ll see the search results and options you do currently. 
 
 ![Screenshot of the Top Result for a DOI search](https://library.bc.edu/images/experiments/2019-11/top-result.png)
 
@@ -31,8 +31,8 @@ Let us know what you think! You can email the project team at <a href="mailto:li
 
 #### Why we built it
 
-After a series of interviews with the BC community last year about their research process, and some careful analysis of the obstacles they face, we have begun to identify improvements we can make. One of the things we heard clearly was that users find the process of clicking through to the full text of articles to be confusing and sometimes frustrating. The first project, a tool to make it easier to get directly to the full text of an article, launches today. We built it in-house after a couple of rounds of prototypes and testing with patrons, using a variety of existing services and data sources. This is similar to something we’re currently doing with frequently requested journal titles and databases. Both answer to needs and frustrations expressed in the interviews.
+Last year, we conducted a series of interviews with members of the BC community. We learned about their research process and the obstacles they face, and have begun to identify areas for improvement. One clear and consistent problem we identified was the confusing and frustrating process of navigating to the full text of articles. We tested several rounds of prototypes with patrons, and today we're launching this beta version publicly for wider testing. The solution builds on similar functionality we are already using to show frequently requested [journal titles](https://library.bc.edu/search/?any=nature "libary search for Nature") and [databases](https://library.bc.edu/search/?any=jstor "library search for jstor"). 
 
-#### Description of the project
+#### More about the project
 
-The project team was: Ben Florin, Luke Gaudreau, Teo Doras, and Chris Strauber. The tool was built in-house using a collection of other tools and data sources to program the features we thought best met the requested needs. It uses the CrossRef API and the LibKey feature of our Browzine service. The project started with brainstorming and a quick user test with a prototype. Most of the code was written and refined in October 2019. [fill in more technical detail]
+This project was a 3-month collaborative effort between Teo Doras (E-Resources), Chris Strauber (Research), Ben Florin (Lead Developer), and Luke Gaudreau (Project Lead). It uses the [CrossRef search API](https://github.com/CrossRef/rest-api-doc "CrossRef search API documentation") to identify article citations and the [LibKey API](https://thirdiron.atlassian.net/wiki/spaces/BrowZineAPIDocs/pages/65699928/Article+DOI+Lookup+Endpoint+LibKey "LibKey API documentation") to locate direct links to the full text. We built the application to integrate with our existing search platform. [All of the code is available under an open source license](https://github.com/BCLibraries/FulltextFinder "github repository for FullText Finder"). Feel free to <a href="mailto:library-beta@ggroups.bc.edu">reach out</a> with technical questions.

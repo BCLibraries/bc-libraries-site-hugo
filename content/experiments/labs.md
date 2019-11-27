@@ -14,4 +14,4 @@ BC Libraries Beta is our new testing lab. This a place for us to try out new ide
 
 ### We need your help
 
-As with all good experiments, our work relies on testing to validate our ideas. Help us by trying out experiments and telling us how they work for you.
+As with all good experiments, our work relies on testing to validate our ideas. Help us by trying out experiments and [telling us](https://forms.gle/cfqoEnM6s13KLWJu9 "feedback form") how they work for you.
