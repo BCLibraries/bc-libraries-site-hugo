@@ -28,7 +28,15 @@
     <h3>2019</h3>
     <div class="news_archives row">
     {{ range where .Pages ".Params.year" "2019" }}
-    {{ .Render "summary"}}
+        <div class="col-xs-12 col-sm-6 col-md-4 news-content">
+            <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" title="{{ .Title }}" id="{{ .Params.slug }}">
+                <div class="newsitem">                        
+                    <div class="newstext">
+                        <h3 class="newslink">{{ .Title | safeHTML }}</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
     {{ end }}
     </div>
 
