@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "43a941caca23e5810f8c",
-    "url": "../theme/bcbento/static/js/main.c3d30923.chunk.js"
+    "revision": "c5729b3fab9c159f07d6",
+    "url": "../theme/bcbento/static/js/main.a788a141.chunk.js"
   },
   {
     "revision": "4caa839b0782fd30a881",
@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "../theme/bcbento/static/js/2.6509eec2.chunk.js"
   },
   {
-    "revision": "6cdbd47a3bcc699592a042aed7acea41",
+    "revision": "ef1d2c058ad52e659eb76baf222ef40d",
     "url": "../theme/bcbento/index.html"
   }
 ];
