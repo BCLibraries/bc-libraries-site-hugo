@@ -12,6 +12,11 @@
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/footer_clean.css"/>
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/refresh_content_rows.css"/>
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/notification.css"/>
+
+    {{/* load beta-button stylesheet */}}
+    {{ if eq .Site.Params.showbetabutton true }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/beta-button.css">
+    {{ end }}
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
