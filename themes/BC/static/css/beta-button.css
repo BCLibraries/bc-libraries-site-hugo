@@ -29,3 +29,13 @@
 #library-beta-button a .fa {
     font-size: 15px;
 }
+
+@media ( max-width: 991px ) {
+    #library-beta-button {
+        top: -1.1em;
+        right: .5em;
+    }
+    #library-beta-button a {
+        padding: 0.5rem;
+    }
+}
