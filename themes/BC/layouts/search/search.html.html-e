@@ -72,5 +72,5 @@
     a()
 }([])</script>
 <script src="{{ .Site.BaseURL }}bcbento/static/js/2.6509eec2.chunk.js"></script>
-<script src="{{ .Site.BaseURL }}bcbento/static/js/main.1e0607ef.chunk.js"></script>
+<script src="{{ .Site.BaseURL }}bcbento/static/js/main.f57cba66.chunk.js"></script>
 {{ end }}
