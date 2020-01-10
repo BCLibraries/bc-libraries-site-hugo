@@ -900,7 +900,7 @@
  }
  
  /* Image sprites for library thumbnails */
- .libsprite {
+ /*.libsprite {
      background: url('https://library.bc.edu/images/librarypane/libthumb-spritesheet.jpg') no-repeat;
      display: block;
      border: 2px solid #990000;
@@ -952,4 +952,99 @@
      width: 150px;
      height: 150px;
      background-position: -165px -325px;
- }
+ }*/
+
+/* About menu redesign TEST */
+#mm-help-about .row {
+    padding-top: 0rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+#mm-help-about .panel {
+    margin-bottom: 0;
+    height: 100%;
+}
+
+#mm-help-about .panel-body .media img {
+    max-width: 0px!important;
+}
+
+#mm-help-about .panel-heading {
+    padding: 0;
+    margin: 0;
+}
+
+#mm-help-about .panel-heading .media img {
+    width: 100%;
+    height: 100px;
+    /*opacity: .85;*/
+}
+
+.library-boxes {
+    margin-bottom: -2rem;
+}
+
+.library-box {
+    margin-bottom: 2rem;
+    font-size: 13px;
+}
+
+.library-box .lib-name {
+    font-weight: 600;
+}
+
+.library-box .media a:focus,
+.library-box .media a:hover {
+    outline: 2px solid blue!important;
+}
+
+/*.library-box .media img:focus,
+.library-box .media img:hover {
+    opacity: .99!important;
+}*/
+
+.library-boxes .lib-box-small.panel {
+    display: flex;
+    flex-direction: column;
+}
+.library-boxes .panel-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px 8px 5px;
+}
+.library-boxes .lib-box-pair {
+    flex-grow: 1;
+    display: flex;
+}
+.library-boxes .lib-box-pair-label {
+    display: none;
+}
+.library-boxes .lib-box-pair-value {
+    font-weight: 600;
+    align-self: flex-end;
+}
+
+@media ( max-width: 1199px ) {
+    .library-box {
+        padding: 5px;
+    }
+    #mm-help-about .panel-heading .media img {
+        height: 90px;
+    }
+}
+
+@media ( max-width: 991px ) {
+    #mm-help-about .panel-heading .media img {
+        height: 67px;
+    }
+}
+
+@media ( max-width: 767px ) {
+    .library-box .panel-heading {
+        display: none;
+    }
+}
