@@ -25,6 +25,14 @@
                     <h3 id="main-heading">Exhibits</h3>
                     <ul>
                         <div class="holdhead">
+                            <h4>2020</h4>
+                        </div>
+                        {{ range (where (where .Site.RegularPages ".Params.location" .Params.location) ".Params.year" "2020") }}
+                        {{ partial "exhibits/thumbnail-summary.html" . }}
+                        {{ end }}
+                    </ul>
+                    <ul>
+                        <div class="holdhead">
                             <h4>2019</h4>
                         </div>
                         {{ range (where (where .Site.RegularPages ".Params.location" .Params.location) ".Params.year" "2019") }}
