@@ -1,5 +1,5 @@
 ---
-title: "Database Trial: Making of the Modern World, part IV, 1800 - 1890 (Gale Primary Sources)"
+title: "Database Trial: Making of the Modern World, 1800-1890"
 draft: false
 expired: false
 date: 2020-02-03T01:00:24-05:00
