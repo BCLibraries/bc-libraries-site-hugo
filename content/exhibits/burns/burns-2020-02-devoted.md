@@ -20,4 +20,4 @@ Louise Imogen Guiney (1861-1920), one of only two women represented in Bapst Lib
 
 Guiney’s choice of subjects was informed by her Catholic beliefs, her admiration for Jesuits, and her sojourns in Ireland and England. This retrospective exhibit focuses on her relationships with Catholic religious leaders, fellow writers, and publishers in Boston.
 
-<!--<a href="https://library.bc.edu/burns-exhibits" class="explore" target="_blank">Explore this exhibit online</a>.-->
+<a href="https://library.bc.edu/burns-exhibits/guiney/" class="explore" target="_blank">Explore this exhibit online</a>.

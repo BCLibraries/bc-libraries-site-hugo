@@ -2,7 +2,7 @@
 title: "Golden Spiders and Black Orchids"
 subtitle: "A 'Satisfactory' Look into the Life and Mysteries of Rex Stout"
 draft: false
-active: true
+active: false
 date: 2019-10-10T15:24:12-04:00
 daterange: "October 2019 - January 2020"
 year: "2019"
