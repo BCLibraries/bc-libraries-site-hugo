@@ -1,5 +1,5 @@
 ---
-title: "Visit the New Theology & Ministry Library Exhibit"
+title: "Visit the New Theology & Ministry Library Exhibit"
 draft: false
 expired: false
 date: 2020-02-12T09:50:30-05:00
