@@ -360,6 +360,11 @@ html {
 
 .blackband a {
     color: #fff;
+    text-decoration: underline;
+}
+
+.blackband a:hover {
+    font-weight: bold;
 }
 
 /* EXHIBIT ARCHIVE STYLING */
