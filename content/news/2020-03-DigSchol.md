@@ -1,13 +1,13 @@
 ---
-title: "Transcribe-a-thon for Black History Month"
+title: "Data Service Workshops - Wednesdays in the Digital Studio!"
 draft: false
-expired: true
-date: 2020-02-12T09:50:46-05:00
+expired: false
+date: 2020-03-09T00:50:46-05:00
 year: "2020"
 slug: "transcribe-bhm-s20"
 destination: "https://libcal.bc.edu/event/6454498"
-imagethumb: "2020/02-transcribe.png"
-imagealt: "Transcribe-A-Thon for Black History Month, Friday, February 21, 2020, 1:00pm - 3:00pm, Digital Studio Conference Space O'Neill Library"
+imagethumb: "2020/03-digschol.png"
+imagealt: ""
 type: "news"
 ---
 
