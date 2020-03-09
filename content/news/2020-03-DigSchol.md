@@ -11,4 +11,4 @@ imagealt: ""
 type: "news"
 ---
 
-Join us as we celebrate Black History Month by turning handwritten documents into digital text. We’ll be working with a variety of material, so you can follow your own interests: transcripts of Black political conferences, Civil War service records of African-American soldiers, letters between abolitionists. All skill levels welcome, no particular skill with deciphering handwriting necessary. Bring your own laptop or use one of our computers.
+BC Library Workshops - Upcoming Events
