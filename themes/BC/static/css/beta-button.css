@@ -13,16 +13,15 @@
     padding: 1rem;
     display: block;
     color: #322C17;
-    background: #fde073;
-    border: 1px solid #fde073;
+    background: #DEE3DF;
+    border: 1px solid #DEE3DF;
     border-radius: 4px;
     box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.2);
     font-size: 13px;
 }
 
 #library-beta-button a:hover {
-    border: 1px solid rgba(50,44,23,0.2);
-    background: hsl(47.4, 97.2%, 64.2%);
+    background: #CED4D0;
     text-decoration: none;
 }
 
