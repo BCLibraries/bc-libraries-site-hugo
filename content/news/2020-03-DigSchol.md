@@ -1,7 +1,7 @@
 ---
 title: "Data Service Workshops - Wednesdays in the Digital Studio!"
 draft: false
-expired: false
+expired: true
 date: 2020-03-09T00:50:46-05:00
 year: "2020"
 slug: "digschol-03-s20"
