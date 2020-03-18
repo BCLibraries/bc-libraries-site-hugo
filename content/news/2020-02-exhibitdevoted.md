@@ -1,5 +1,5 @@
 ---
-title: "Visit the New Online Burns Library Exhibit: Devoted Catholic & Determined Writer"
+title: "Visit the New ONLINE Burns Library Exhibit: Devoted Catholic & Determined Writer"
 draft: false
 expired: false
 date: 2020-03-01T10:23:14-05:00

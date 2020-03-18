@@ -1,7 +1,7 @@
 ---
 title: "Visit the New Theology & Ministry Library Exhibit"
 draft: false
-expired: false
+expired: true
 date: 2020-02-12T09:50:30-05:00
 year: "2020"
 slug: "exhibit-manessier"
