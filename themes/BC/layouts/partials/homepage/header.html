@@ -1,7 +1,26 @@
 <!-- HEADER START -->
-<div id="header">
+<div id="header" style="padding-top:30px">
     <div class="container">
         <h1 id="main-heading" class="sr-only sr-only-focusable">Main content</h1>
+        <div class="row">
+        <div class="col-md-10 col-md-offset-1" style="margin-bottom: 1em;">
+            <div class="panel panel-default" style="background: hsl(47, 97%, 90%)
+            ">
+                <div class="panel-body" style="
+                padding: .25em 1em;
+            ">
+                    <h4 style="
+                font-size: 14px;
+                font-weight: bold;
+            "><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            Trouble accessing PDFs in Chrome?</h4>
+                    <p style="
+                font-size: 14px;
+            ">A bug in Google Chrome prevents many PDFs from  opening. For now, we recommned using a different browser (Firefox, Edge, Safari).</p>
+                </div>
+            </div>
+        </div>
+        </div>
         {{ partial "homepage/search-box.html" . }}
 
         <div class="caption-link" id="hero" data-tag="ga-tag">
