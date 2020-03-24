@@ -16,13 +16,13 @@
     font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .chrome-pdf-notification {
         margin-bottom: 1em;
         display: block;
     }
 
     #header {
-        padding: 30px;
+        padding: 35px 0 0 0;
     }
 }
