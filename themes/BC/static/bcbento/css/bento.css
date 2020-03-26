@@ -467,3 +467,25 @@ ol.faq-results-list {
     width: 800px;
     height: 150px;
 }
+
+.catalog-toggle__help-link {
+    margin-left: .5em;
+    font-size: .85em;
+    cursor: pointer;
+    color: #2f7ab9;
+}
+
+.catalog-toggle__explanation-displayed, .catalog-toggle__explanation-hidden {
+    transition:show 0.3s ease-out;
+}
+
+.catalog-toggle__explanation-displayed {
+    background-color: hsl(42, 76%, 90%);
+    padding: .25em .5em;
+    display: block;
+    font-size: .9em;
+}
+
+.catalog-toggle__explanation-hidden {
+    display: none;
+}
