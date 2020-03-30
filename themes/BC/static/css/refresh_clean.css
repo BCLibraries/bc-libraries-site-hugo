@@ -626,6 +626,12 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     font-size: 15px;
 }
 
+.alert-hours {
+    padding: .5rem 1rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
 @media ( max-width: 1199px ) {
     #db-rg-hours h2 {
         line-height: 1.3;

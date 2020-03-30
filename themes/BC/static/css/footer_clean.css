@@ -122,10 +122,6 @@
 .table-hours .table-bordered {
     border-top: none;
 }
-.table-hours .alert {
-    padding: .5rem 1rem;
-    font-weight: 600;
-}
 #lib-footer .hours-todays-date {
     position: absolute;
     top: -5px;
