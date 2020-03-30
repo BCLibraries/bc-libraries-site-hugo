@@ -113,8 +113,18 @@
 #lib-footer .quick-links ul {
     text-align: center;
 }
+.table-hours {
+    padding-bottom: .25rem;
+}
+.table-hours table {
+    margin-bottom: .25rem;
+}
 .table-hours .table-bordered {
     border-top: none;
+}
+.table-hours .alert {
+    padding: .5rem 1rem;
+    font-weight: 600;
 }
 #lib-footer .hours-todays-date {
     position: absolute;
