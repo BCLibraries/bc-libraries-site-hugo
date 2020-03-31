@@ -314,6 +314,38 @@ a {
     /*margin-top: -1px;*/
 }
 
+.online-only-label {
+    color: #f3f3f3;
+}
+
+span.online-only-label-text {
+    margin-left: .5em;
+    margin-right: 0.5em;
+}
+
+#online-only-checkbox {
+    margin-top: 8px;
+}
+
+label.checkbox-inline.online-only-label {
+    font-style: italic;
+    font-size: 16px;
+}
+
+button.whats-this, button.whats-this:active, button.whats-this:hover {
+    color: hsl(207, 59%, 85%); 
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+.whats-this-message {
+    padding: .25em .5em;
+    display: none;
+    font-size: .9em;
+    color: white;
+}
+
 /* digital scholarship highlight */
 #ds-highlight {
     display: inline-block;

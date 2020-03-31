@@ -91,9 +91,17 @@
                 });
             }
 
+            function onlineOnlyPopover() {
+                var tooltip_options = {
+                    content: 'When this box is checked, search is limited to items available online. Uncheck the box to include our physical collections.'
+                }
+                $('.whats-this').popover(tooltip_options);
+            }
+
             run_on_ready(smartLinkToSearch());
             run_on_ready(listenForTypeahead);
             run_on_ready(makeQuickLinkBoxesClickable);
+            run_on_ready(onlineOnlyPopover);
         })();
     </script>
 {{ end }}

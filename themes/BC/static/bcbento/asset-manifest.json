@@ -1,11 +1,11 @@
 {
-  "main.js": "../theme/bcbento/static/js/main.3594e047.chunk.js",
-  "main.js.map": "../theme/bcbento/static/js/main.3594e047.chunk.js.map",
+  "main.js": "../theme/bcbento/static/js/main.f5440d13.chunk.js",
+  "main.js.map": "../theme/bcbento/static/js/main.f5440d13.chunk.js.map",
   "runtime~main.js": "../theme/bcbento/static/js/runtime~main.1cf1c718.js",
   "runtime~main.js.map": "../theme/bcbento/static/js/runtime~main.1cf1c718.js.map",
-  "static/js/2.3db90434.chunk.js": "../theme/bcbento/static/js/2.3db90434.chunk.js",
-  "static/js/2.3db90434.chunk.js.map": "../theme/bcbento/static/js/2.3db90434.chunk.js.map",
+  "static/js/2.6a51df1b.chunk.js": "../theme/bcbento/static/js/2.6a51df1b.chunk.js",
+  "static/js/2.6a51df1b.chunk.js.map": "../theme/bcbento/static/js/2.6a51df1b.chunk.js.map",
   "index.html": "../theme/bcbento/index.html",
-  "precache-manifest.c9047fc13491d251c0871a1d43637ac4.js": "../theme/bcbento/precache-manifest.c9047fc13491d251c0871a1d43637ac4.js",
+  "precache-manifest.c1e44f22dd9381e4e08b6be77a7573e1.js": "../theme/bcbento/precache-manifest.c1e44f22dd9381e4e08b6be77a7573e1.js",
   "service-worker.js": "../theme/bcbento/service-worker.js"
 }
