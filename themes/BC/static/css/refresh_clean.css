@@ -319,16 +319,16 @@ a {
 }
 
 span.online-only-label-text {
-    position: relative;
-    top: 16px;
     margin-left: .5em;
     margin-right: 0.5em;
 }
 
+#online-only-checkbox {
+    margin-top: 8px;
+}
+
 label.checkbox-inline.online-only-label {
-    position: relative;
     font-style: italic;
-    top: -18px;
     font-size: 16px;
 }
 
