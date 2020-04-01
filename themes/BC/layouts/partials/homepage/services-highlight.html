@@ -1,8 +1,19 @@
  <!-- SERVICES-HIGHLIGHT START -->
 <div class="container-fluid" id="services-highlight" data-tag="ga-tag">
     <div class="container">
-        <h2>Online Library Services</h2>
-        <p class="intro">Our library is here to help you with all your research needs.</p>
+        <div class="row header-row">
+            <div class="col-md-8 col-sm-9 col-xs-12">
+                <h2>Online Library Services</h2>
+                <p class="intro">Our library is here to help you with all your research needs.</p>
+            </div>
+            <div class="col-md-4 col-sm-3 col-xs-12">
+                <div class="blockquote">
+                    <div class="quote">Hope is being able to see that there is light despite all of the darkness.</div>
+                    <div class="quoted">- Desmond Tutu</div>
+                </div>
+            </div>
+        </div>
+        
         <div class="highlight-boxes row">
             <div class="col-md-3 col-sm-6 col-xs-12 highlight-box">
                 <div class="panel">
@@ -83,6 +94,68 @@
         border-bottom: solid 9px #dccaa0; 
         border-top: solid 9px #dccaa0;
     }
+    #services-highlight .header-row {
+        padding: 2rem 0 0 0;
+    }
+    #services-highlight h2 {
+        margin-top: 0;
+    }
+    .blockquote {
+        padding: 0px;
+        position: relative;
+        font-family: "Utopia-italic";
+    }
+    .blockquote:before,
+    .blockquote:after {
+        position: absolute;
+        font-family: 'FontAwesome';
+        line-height: 1;
+        font-size: 60px;
+        color: rgba(0,0,0,0.08);
+    }
+    .blockquote:before {
+        top: -1rem;
+        content:"\f10d";
+    }
+    .blockquote:after {
+        right: 0;
+        top: 2rem;
+        content:"\f10e";
+    }
+    .blockquote .quote {
+        padding: .5rem 1rem 0 1rem;
+        font-family: "Utopia-italic";
+        font-size: 19px;
+        line-height: 1.25;
+        text-align: center;
+    }
+    /*.blockquote .quote::before {
+        content: "";
+        top: -5px;
+        left: 50%;
+        margin-left: -25%;
+        position: absolute;
+        border-bottom: 3px solid rgba(138, 16, 11, 0.6);
+        height: 3px;
+        width: 50%;
+    }*/
+    /*.blockquote .quote::after {
+        content: "";
+        bottom: -1rem;
+        left: 50%;
+        margin-left: -25%;
+        position: absolute;
+        border-bottom: 3px solid rgba(138, 16, 11, 0.4);
+        height: 3px;
+        width: 50%;
+    }*/
+    .blockquote .quoted {
+        padding: 0 1rem;
+        font-style: italic;
+        text-align: right;
+        line-height: 1.2;
+    }
+
     #services-highlight .intro,
     #services-highlight .outro {
         font-size: large;
@@ -141,6 +214,19 @@
     @media (max-width: 991px) {
         .highlight-boxes .panel-heading h4 {
             min-height: auto;
+        }
+        .blockquote .quote {
+            font-size: 18px;
+            line-height: 1.1;
+        }
+        .blockquote .quote::before {
+            border:0;
+            height: 0;
+        }
+    }
+    @media (max-width: 767px) {
+        .blockquote {
+            display: none;
         }
     }
     @media (max-width: 540px) {
