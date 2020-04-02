@@ -5,52 +5,60 @@
             <h2 class="">Explore Our Collections</h2>
             <div class="row">
                 <div class="col-md-4 col-sm-12 col-xs-12 collections-box">
-                    <div class="content morales-mass">
-                        <div class="description">
-                            <div class="department">
-                                Digital Scholarship
-                            </div>
-                            <div class="collection-name">
-                                Morales Mass Book
+                    <a href="https://moralesmassbook.bc.edu/">
+                        <div class="content morales-mass">
+                            <div class="description">
+                                <div class="department">
+                                    Digital Scholarship
+                                </div>
+                                <div class="collection-name">
+                                    Morales Mass Book
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 collections-box">
-                    <div class="content">
-                        <div class="description">
-                            <div class="department">
-                                Digital Scholarship
+                    <div class="content job">
+                        <a href="https://jesuitonlinebibliography.bc.edu/">
+                            <div class="description">
+                                <div class="department">
+                                    Digital Scholarship
+                                </div>
+                                <div class="collection-name">
+                                    Jesuit Online Bibliography
+                                </div>
                             </div>
-                            <div class="collection-name">
-                                Jesuit Online Bibliography
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 collections-box">
                     <div class="content japanese-prints">
-                        <div class="description">
-                            <div class="department">
-                                Special Collections
+                        <a href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&inst=BCL&collectionId=81482909060001021">
+                            <div class="description">
+                                <div class="department">
+                                    Special Collections
+                                </div>
+                                <div class="collection-name">
+                                    Japanese prints collection
+                                </div>
                             </div>
-                            <div class="collection-name">
-                                Japanese prints collection
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 collections-box">
-                    <div class="content">
-                        <div class="description">
-                            <div class="department">
-                                Digital Scholarship
-                            </div>
-                            <div class="collection-name">
-                                Jesuit Online Bibliography
+                    <div class="content oneill-bowling">
+                        <a href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&collectionId=81517121150001021">
+                            <div class="description">
+                                <div class="department">
+                                    Digital Collections
+                                </div>
+                                <div class="collection-name">
+                                    Thomas P. "Tip" O'Neill, Jr., Photographs (1953-1987)
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 collections-box">
                     <div class="content">
@@ -114,6 +122,12 @@
     .content.japanese-prints {
         background: url(https://library.bc.edu/images/sc_bg_02_med.jpg) no-repeat 65% 60%;
     }
+    .content.job {
+        background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/jobbackground.png) no-repeat 40% 80%;
+    }
+    .content.oneill-bowling {
+        background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/tiponeillbowling.png) no-repeat 50% 20%;
+    }
     .description {
         font-size: 20px;
         font-weight: 600;
@@ -122,6 +136,10 @@
         height: 100%;
         padding-top: 40%;
         background-image: linear-gradient(0deg,rgba(0,0,0,0.6) 20%,rgba(0,0,0,0.2) 50%);
+    }
+    .description:hover,
+    .description:focus {
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.5) 20%,rgba(0,0,0,0.1) 50%);
     }
     .description .department {
         font-size: smaller;
