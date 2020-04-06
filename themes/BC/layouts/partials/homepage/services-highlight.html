@@ -15,7 +15,7 @@
         </div>
         
         <div class="highlight-boxes row">
-            <div class="col-md-3 col-sm-6 col-xs-12 highlight-box">
+            <div class="col-md-6 col-sm-6 col-xs-12 highlight-box">
                 <div class="panel">
                     <div class="panel-heading">
                         <h4><a href="https://libguides.bc.edu/servicesupdate/online-library-resources">Online Library Resources</a></h4>
@@ -32,7 +32,43 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-12 highlight-box">
+            <div class="col-md-6 col-sm-6 col-xs-12 highlight-box">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4>Featured Librarian</h4>
+                        <hr class="border">
+                    </div>
+                    <div class="panel-body">
+                        <div class="combo-box-inner">
+                            <div class="col-md-3">
+                                <a href="https://libguides.bc.edu/prf.php?account_id=10692">
+                                    <img class="librarian-profile" src="https://libapps.s3.amazonaws.com/accounts/10692/profiles/7892/Enid_Karr.png" />
+                                    <h4>Enid Karr</h4>
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="">
+                                    <span class="featured-librarian">Enid's</span> an expert at:
+                                    <p><a href="https://libguides.bc.edu/subjects/biology">Biology</a>, 
+                                        <a href="https://libguides.bc.edu/subjects/earth-environmental-sciences">Earth &amp; Environmental Sciences</a>, 
+                                        <a href="https://libguides.bc.edu/subjects/environmental-studies">Environmental Studies</a>, and 
+                                        <a href="https://libguides.bc.edu/subjects/science">Science</a>.</p>
+                                </div>
+                                <div class="">
+                                    <span class="featured-librarian">Enid's</span> Featured Guides:
+                                    <div><a href="https://libguides.bc.edu/biology">Biology</a></div>
+                                    <div><a href="https://libguides.bc.edu/environmental">Environmental Science</a></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 bottom-text">
+                                <p style="text-align: right;"><a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Browse all <strong>30</strong> subject experts</a> &rangle;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 highlight-box">
                 <div class="panel">
                     <div class="panel-heading">
                         <h4><a href="https://libguides.bc.edu/servicesupdate/online-research-help">Online Research Help</a></h4>
@@ -49,7 +85,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-12 highlight-box">
+            <div class="col-md-6 col-sm-6 col-xs-12 highlight-box">
                 <div class="panel">
                     <div class="panel-heading">
                         <h4><a href="https://libguides.bc.edu/servicesupdate/renewing-materials">Circulation, ILL &amp; Reserves</a></h4>
@@ -61,22 +97,6 @@
                             <li><a href="https://libguides.bc.edu/servicesupdate/renewing-materials">Renew or return library materials</a></li>
                             <li>Request materials from other libraries through <a href="https://libguides.bc.edu/servicesupdate/ill-requests">Interlibrary Loan</a></li>
                             <li>Request digitization of physical items for <a href="https://libguides.bc.edu/servicesupdate/reserves">Course Reserves</a> (Faculty Only)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-3 col-sm-6 col-xs-12 highlight-box">
-                <div class="panel">
-                    <div class="panel-heading">
-                        <h4>Additional Resources</h4>
-                        <hr class="border">
-                    </div>
-                    <div class="panel-body">
-                        <ul>
-                            <li>Information on <a href="https://libguides.bc.edu/remote">connecting from off-campus</a></li>
-                            <li>Need to find a NY Times article from home? Our <a href="https://answers.bc.edu/">FAQ</a> answers this and dozens of frequently asked questions</li>
-                            <li>Need a quick primer on copyright? Or how to write a lit review? Check out our extensive list of <a href="https://libguides.bc.edu/subjects/general">How To's</a></li>
                         </ul>
                     </div>
                 </div>
@@ -200,15 +220,31 @@
         padding-bottom: .5rem;
     }
     .highlight-boxes .panel-body {
-        padding: 0 15px 5px 15px;
+        padding: 0 15px 0px 15px;
     }
     .highlight-boxes .panel-body a {
         font-weight: 600;
     }
-
+    #services-highlight .librarian-profile {
+        border-top-left-radius: 50% 50%;
+        border-top-right-radius: 50% 50%;
+        border-bottom-right-radius: 50% 50%;
+        border-bottom-left-radius: 50% 50%;
+        max-height: 120px;
+        border: 3px solid #000;
+        margin: 0 auto;
+    }
+    #services-highlight .bottom-text {
+        margin: 1rem 0 0 0;
+        padding-top: .5rem;
+        border-top: 1px dashed #eee;
+    }
     @media (max-width: 1199px) {
         .highlight-boxes .panel-heading h4 {
-            min-height: 4.5rem;
+            /*min-height: 4.5rem;*/
+        }
+        .librarian-profile {
+            max-height: 100px;
         }
     }
     @media (max-width: 991px) {

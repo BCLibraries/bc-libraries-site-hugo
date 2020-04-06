@@ -247,10 +247,10 @@ a {
 
 /* header */
 #header {
-    background: #ccc url("https://library.bc.edu/images/hero01.jpg") 0 70%; /* CHANGE BACKGROUND SEASONALLY */
-    height: 380px;
+    /*background: #ccc url("https://library.bc.edu/images/hero01.jpg") 0 70%; /* CHANGE BACKGROUND SEASONALLY */
+    /*height: 380px;*/
     background-size: cover;
-    padding-top: 80px;
+    padding-top: 0px;
     position: relative;
 }
 
@@ -289,7 +289,7 @@ a {
 #search-panel {
     background-color: #204375;
     border-radius: 6px;
-    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.2);*/
 }
 
 #search-panel .fa-search {
@@ -763,7 +763,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 
 @media (min-width: 768px) {
     #header {
-        padding-top: 110px;
+        padding-top: 50px;
     }
 }
 
