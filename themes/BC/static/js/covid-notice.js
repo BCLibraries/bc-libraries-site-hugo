@@ -3,27 +3,21 @@ $(function () {
     const $openCov19NoticeButton = $('.covid-notice__open-button');
 
     if (localStorage.getItem('c19-notice-hidden') === 'true') {
-        hideNotice();
+        toggleNotice();
     }
 
     $closeCov19NoticeButton.click(function() {
-        hideNotice();
+        toggleNotice();
         localStorage.setItem('c19-notice-hidden', true);
     })
 
     $openCov19NoticeButton.click(function() {
-        showNotice();
+        toggleNotice();
         localStorage.setItem('c19-notice-hidden', false);
     })
 
-    function hideNotice() {
-        console.log('hiding');
-        $('.covid-notice').toggleClass('covid-notice--hidden ');
-        $('.covid-notice__opener').toggleClass('covid-notice--hidden ');
-    }
-
-    function showNotice() {
-        $('.covid-notice__opener').toggleClass('covid-notice--hidden ');
-        $('.covid-notice').toggleClass('covid-notice--hidden ');
+    function toggleNotice() {
+        $('.covid-notice').toggleClass('covid-notice--hidden');
+        $('.covid-notice__opener').toggleClass('covid-notice--hidden');
     }
 });
