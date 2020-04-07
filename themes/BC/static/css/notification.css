@@ -26,7 +26,6 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    display: none;
 }
 
 .covid-notice__close-button {
@@ -36,12 +35,15 @@
 }
 
 .covid-notice__opener {
+    background: #fde073;
     z-index: 101;
     position: fixed;
     bottom: 0;
-    left: -115px;
-    transform: rotate(90deg);
-    transform-origin: right;
+    left: 0;
+}
+
+.covid-notice__open-button {
+    background: #fde073;
 }
 
 .covid-notice--hidden {
