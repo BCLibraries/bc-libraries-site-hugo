@@ -1,8 +1,10 @@
 <div class="container-fluid" id="top-columns">
     <div class="container">
         <div class="row column-items">
-            <div class="col-md-3 column-item">
+            <div class="col-md-3 column-item column-combo">
                 {{ partial "homepage/top-column-quicklinks.html" . }}
+
+                {{ partial "homepage/ask-a-librarian.html" . }}
             </div>
             <div class="col-md-5 column-item">
                 {{ partial "homepage/top-column-services-highlight.html" . }}
@@ -20,7 +22,19 @@
         background-size: cover;
     }
     .column-items {
-        /*display: flex;*/
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+    }
+    .column-item {
+        display: flex;
+    }
+    .column-combo {
+        display: flex;
+        flex-flow: column;
+    }
+    .column-sub-item {
+        flex-wrap: wrap;
+        flex:1;
     }
 </style>
