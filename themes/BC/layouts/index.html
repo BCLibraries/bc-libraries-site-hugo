@@ -11,7 +11,9 @@
 {{ define "main" }}
     <div id="main-body" role="main">
 
-        {{ partial "homepage/services-highlight.html" . }}
+        {{ partial "homepage/top-columns.html" . }}
+
+        <!--{{ partial "homepage/services-highlight.html" . }}-->
 
         <!-- QUICK LINKS and NEWS-->
         <div class="container" id="db-rg-hours">
@@ -20,18 +22,19 @@
             </div>
         </div>
 
-        <!--{{ partial "homepage/scholarship-at-bc.html" . }}-->
-
         {{ partial "homepage/explore-collections.html" . }}
 
-        {{/* Hide Digital Scholarship highlights bar */}}
+        {{ partial "homepage/socialmedia-highlight.html" . }}
+
+        {{/* Hide the following default bars */}}
+
+        <!--{{ partial "homepage/scholarship-at-bc.html" . }}-->
+
         <!--{{ partial "homepage/digital-scholarship-highlight.html" . }}-->
 
         <!--{{ partial "homepage/exhibits-highlight.html" . }}-->
 
         <!--{{ partial "homepage/facpub-highlight.html" . }}-->
-
-        {{ partial "homepage/socialmedia-highlight.html" . }}
 
         <!--{{ partial "homepage/special-collections-highlight.html" . }}-->
     </div>

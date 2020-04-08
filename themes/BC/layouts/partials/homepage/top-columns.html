@@ -1,0 +1,26 @@
+<div class="container-fluid" id="top-columns">
+    <div class="container">
+        <div class="row column-items">
+            <div class="col-md-3 column-item">
+                {{ partial "homepage/top-column-quicklinks.html" . }}
+            </div>
+            <div class="col-md-5 column-item">
+                {{ partial "homepage/top-column-services-highlight.html" . }}
+            </div>
+            <div class="col-md-4 column-item">
+                {{ partial "homepage/top-column-staff-interest.html" . }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #top-columns {
+        background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/background-sample-3.jpg) no-repeat 00% 100%;
+        background-size: cover;
+    }
+    .column-items {
+        /*display: flex;*/
+        display: block;
+    }
+</style>

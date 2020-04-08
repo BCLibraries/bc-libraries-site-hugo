@@ -5,7 +5,7 @@
     {{ else }}
     <div class="row">
         {{ end }}
-    <div class="col-md-10 col-md-offset-1" id="search-panel" data-tag="ga-tag">
+    <div class="col-md-12" id="search-panel" data-tag="ga-tag">
         <div class="row">
             <div class="col-md-12">
                 <form action="{{ .Site.BaseURL }}search">
@@ -45,3 +45,11 @@
         </div>
     </div>
 </div>
+
+<style>
+    #header {
+        padding-bottom: 4rem;
+        padding-top: 80px;
+        background-color: #d6dee7;
+    }
+</style>
