@@ -489,3 +489,7 @@ ol.faq-results-list {
 .catalog-toggle__explanation-hidden {
     display: none;
 }
+
+.hathi-trust-link .fa-external-link {
+    margin-left: .5em;
+}
