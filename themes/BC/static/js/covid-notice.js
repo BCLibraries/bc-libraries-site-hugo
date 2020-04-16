@@ -12,10 +12,13 @@ const noticeHTML = '<div class="covid-notice__opener">' +
 '</div>';
 
 $(function () {
-    $('body').append(noticeHTML);
-
     const hostname = window.location.hostname.replace(/^[^\.]*\./,'.');
     const cookieName = 'bcl-note-open';
+
+    if ((hostname.toLowerCase().indexOf("bc.edu") !== -1) ||
+        (hostname.toLowerCase().indexOf("localhost") !== -1)) {
+        $('body').append(noticeHTML);
+    }
 
     const $closeCov19NoticeButton = $('.covid-notice__close-button');
     const $openCov19NoticeButton = $('.covid-notice__open-button');
