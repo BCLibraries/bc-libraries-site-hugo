@@ -64,146 +64,16 @@
 <!-- SERVICES-HIGHLIGHT END -->
 
 <style>
-    #services-highlight {
-        background-color: #dfddcf; 
-        /*border-bottom: solid 9px #dccaa0; 
-        border-top: solid 9px #dccaa0;*/
-    }
-    #services-highlight .header-row {
-        padding: 2rem 0 0 0;
-    }
-    #services-highlight h2 {
-        margin-top: 0;
-    }
-    .blockquote {
-        padding: 0px;
-        position: relative;
-        font-family: "Utopia-italic";
-    }
-    .blockquote:before,
-    .blockquote:after {
-        position: absolute;
-        font-family: 'FontAwesome';
-        line-height: 1;
-        font-size: 60px;
-        color: rgba(0,0,0,0.08);
-    }
-    .blockquote:before {
-        top: -1rem;
-        content:"\f10d";
-    }
-    .blockquote:after {
-        right: 0;
-        top: 2rem;
-        content:"\f10e";
-    }
-    .blockquote .quote {
-        padding: .5rem 1rem 0 1rem;
-        font-family: "Utopia-italic";
-        font-size: 19px;
-        line-height: 1.25;
-        text-align: center;
-    }
-    /*.blockquote .quote::before {
-        content: "";
-        top: -5px;
-        left: 50%;
-        margin-left: -25%;
-        position: absolute;
-        border-bottom: 3px solid rgba(138, 16, 11, 0.6);
-        height: 3px;
-        width: 50%;
-    }*/
-    /*.blockquote .quote::after {
-        content: "";
-        bottom: -1rem;
-        left: 50%;
-        margin-left: -25%;
-        position: absolute;
-        border-bottom: 3px solid rgba(138, 16, 11, 0.4);
-        height: 3px;
-        width: 50%;
-    }*/
-    .blockquote .quoted {
-        padding: 0 1rem;
-        font-style: italic;
-        text-align: right;
-        line-height: 1.2;
-    }
-
-    #services-highlight .intro,
-    #services-highlight .outro {
-        font-size: large;
-    }
-    #services-highlight .outro {
-        padding: 0 0 .5rem 0;
-    }
-    #services-highlight .outro a {
-        font-weight: 600;
-    }
-    .highlight-boxes {
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 0;
-    }
-    .highlight-boxes .highlight-box {
-        display: flex;
-        padding-bottom: 1rem;
-    }
-    .highlight-boxes .panel {
-        width: 100%;
-    }
-    .highlight-boxes .panel-heading {
-        padding: 5px 15px 2px 15px;
-    }
-    .highlight-boxes .panel-heading hr {
-        border: 0;
-        margin: .75rem 0 .75rem 0;
-        border-bottom: 1px solid #dccaa0;
-        height: 1px;
-    }
-    .highlight-boxes .panel-heading h4 {
-        line-height: 1.3;
-        /*min-height: 55px;*/
-        padding: 0;
-        margin-bottom: 0;
-    }
-    .highlight-boxes .panel ul {
-        padding-left: 2rem;
-    }
-    .highlight-boxes .panel li {
-        padding-bottom: .5rem;
-    }
-    .highlight-boxes .panel-body {
-        padding: 0 15px 0px 15px;
-    }
-    .highlight-boxes .panel-body a {
-        font-weight: 600;
-    }
-    #services-highlight .librarian-profile {
-        border-top-left-radius: 50% 50%;
-        border-top-right-radius: 50% 50%;
-        border-bottom-right-radius: 50% 50%;
-        border-bottom-left-radius: 50% 50%;
-        max-height: 120px;
-        border: 3px solid #000;
-        margin: 0 auto;
-    }
-    #services-highlight .bottom-text {
-        margin: 1rem 0 0 0;
-        padding-top: .5rem;
-        border-top: 1px dashed #eee;
-    }
     @media (max-width: 1199px) {
-        .highlight-boxes .panel-heading h4 {
+        #services-highlight .highlight-boxes .panel-heading h4 {
             /*min-height: 4.5rem;*/
         }
-        .librarian-profile {
+        /*.librarian-profile {
             max-height: 100px;
-        }
+        }*/
     }
     @media (max-width: 991px) {
-        .highlight-boxes .panel-heading h4 {
+        #services-highlight .highlight-boxes .panel-heading h4 {
             min-height: auto;
         }
         .blockquote .quote {
@@ -221,7 +91,7 @@
         }
     }
     @media (max-width: 540px) {
-        .highlight-boxes .panel-heading h4 {
+        #services-highlight .highlight-boxes .panel-heading h4 {
             min-height: auto;
         }
     }

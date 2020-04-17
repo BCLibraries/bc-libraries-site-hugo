@@ -9,59 +9,57 @@
         </div>
     </div>
 
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <img src="https://libapps.s3.amazonaws.com/accounts/3908/images/bostoncollege_libraries.jpg"/>
-        </div>
-        <div class="panel-footer">Some caption</div>
-    </div>
+    <div class="photo_list"></div>
 
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <img src="https://libapps.s3.amazonaws.com/accounts/3908/images/bapst-facilities.png"/>
+    <!-- https://stackoverflow.com/a/18674066 -->
+    <script type="text/template" data-template="listitem">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <img src="${image_url}" alt="${alt_text}" />
+            </div>
+            <div class="panel-footer">${caption}</div>
         </div>
-        <div class="panel-footer">Some caption</div>
-    </div>
+    </script>
 
+    <script>
+        function shuffleArray(array) {
+            for (var i = array.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
 
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <img src="https://libapps.s3.amazonaws.com/accounts/3908/images/blank.jpg"/>
-        </div>
-        <div class="panel-footer">Some caption</div>
-    </div>
+            return array;
+        }
 
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <img src="https://libapps.s3.amazonaws.com/accounts/3908/images/blank.jpg"/>
-        </div>
-        <div class="panel-footer">Some caption</div>
-    </div>
+        function render(props) {
+            return function(tok, i) {
+                return (i % 2) ? props[tok] : tok;
+            };
+        }
+
+        // Load in library staff photos from hugo data
+        // TODO make sure this loads as expected
+        var library_staff_photos = [
+            {{ $.Site.Data.homepage.scenes.librarystaffphotos }}
+        ];
+
+        var library_staff_photos_array = library_staff_photos[0].photos
+
+        // Generate the randomize array
+        var randomized_photos = shuffleArray(library_staff_photos_array);
+
+        // Get first 4 images from randomized array
+        var photos_set = randomized_photos.slice(0,4);
+
+        // Load in template file
+        var itemTpl = $('script[data-template="listitem"]').text().split(/\$\{(.+?)\}/g);
+
+        // Loop through randomized_photos array and render each photo item with template
+        $('.photo_list').append(photos_set.map(function(photo) {
+            return itemTpl.map(render(photo)).join('');
+        }));
+    </script>
+
 </div>
-
-<style>
-    #staff-interest {
-        background-color: #fff;
-        position: relative;
-        padding-bottom: 1rem;
-    }
-    #staff-interest .blockquote {
-        margin: 2rem 0;
-    }
-    #staff-interest img {
-        width: 100%;
-        padding: 0;
-        margin: 0 auto;
-    }
-    #staff-interest .panel {
-        margin: 2rem 0 1rem 0;
-    }
-    #staff-interest .panel-body {
-        padding: .5rem;
-    }
-    #staff-interest .panel-footer {
-        padding: .5rem;
-        font-style: italic;
-        text-align: right;
-    }
-</style>

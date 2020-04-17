@@ -1,12 +1,14 @@
 <div class="container-fluid" id="top-columns">
     <div class="container">
         <div class="row column-items">
-            <div class="col-md-3 column-item column-combo">
-                {{ partial "homepage/top-column-quicklinks.html" . }}
+            <div class="col-md-3 column-item">
+                <div class="column-combo">
+                    {{ partial "homepage/top-column-quicklinks.html" . }}
 
-                {{ partial "homepage/ask-a-librarian.html" . }}
+                    {{ partial "homepage/top-column-ask-a-librarian.html" . }}
+                </div>
             </div>
-            <div class="col-md-5 column-item">
+            <div class="col-md-5 column-item" id="services-highlight-container">
                 {{ partial "homepage/top-column-services-highlight.html" . }}
             </div>
             <div class="col-md-4 column-item">
@@ -15,26 +17,3 @@
         </div>
     </div>
 </div>
-
-<style>
-    #top-columns {
-        background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/background-sample-3.jpg) no-repeat 00% 100%;
-        background-size: cover;
-    }
-    .column-items {
-        display: flex;
-        flex-wrap: wrap;
-        flex-flow: row wrap;
-    }
-    .column-item {
-        display: flex;
-    }
-    .column-combo {
-        display: flex;
-        flex-flow: column;
-    }
-    .column-sub-item {
-        flex-wrap: wrap;
-        flex:1;
-    }
-</style>

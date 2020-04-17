@@ -248,10 +248,14 @@ a {
 /* header */
 #header {
     /*background: #ccc url("https://library.bc.edu/images/hero01.jpg") 0 70%; /* CHANGE BACKGROUND SEASONALLY */
-    /*height: 380px;*/
+    /*height: 380px;
     background-size: cover;
     padding-top: 0px;
-    position: relative;
+    position: relative;*/
+
+    padding-bottom: 4rem;
+    padding-top: 80px;
+    background-color: #C1D3C8;
 }
 
 #header-top-row {
@@ -287,7 +291,7 @@ a {
 
 /* Search panel */
 #search-panel {
-    background-color: #204375;
+    background-color: #8a100b;
     border-radius: 6px;
     /*box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.2);*/
 }
@@ -319,12 +323,12 @@ a {
 }
 
 span.online-only-label-text {
-    margin-left: .5em;
-    margin-right: 0.5em;
+    margin-left: .25em;
+    margin-right: .25em;
 }
 
 #online-only-checkbox {
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 label.checkbox-inline.online-only-label {
@@ -333,10 +337,11 @@ label.checkbox-inline.online-only-label {
 }
 
 button.whats-this, button.whats-this:active, button.whats-this:hover {
-    color: hsl(207, 59%, 85%); 
+    /*color: hsl(207, 59%, 85%); */
     text-decoration: none;
-    background: none;
+    /*background: none;*/
     border: none;
+    cursor: help;
 }
 
 .whats-this-message {
@@ -658,6 +663,190 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     font-size: 15px;
 }
 
+/*                                       */
+/* BEGIN top-columns section on homepage */
+/*                                       */
+
+#top-columns {
+    /*background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/background-sample-3.jpg) no-repeat 00% 100%;
+    background-size: cover;*/
+    background-color: #fff;
+}
+#services-highlight-container {
+    background-color: #dfddcf;
+}
+#top-columns .column-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+#top-columns .column-item {
+    display: flex;
+    flex-flow: column;
+}
+#top-columns .column-combo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+#top-columns .column-sub-item {
+    flex-wrap: wrap;
+    flex:1;
+}
+
+#aal-home {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: #fff;
+}
+#aal-home .aal-box-small a.aal-icon {
+    font-size: 30px!important;
+    width: 60px;
+}
+#aal-home .aal-box a.aal-icon i {
+    padding: 15px;
+}
+
+#services-highlight { 
+    /*border-bottom: solid 9px #dccaa0; 
+    border-top: solid 9px #dccaa0;*/
+}
+#services-highlight .header-row {
+    padding: 2rem 0 0 0;
+}
+#services-highlight h2 {
+    margin-top: 0;
+}
+
+#services-highlight .intro,
+#services-highlight .outro {
+    font-size: large;
+}
+#services-highlight .outro {
+    padding: 0 0 .5rem 0;
+}
+#services-highlight .outro a {
+    font-weight: 600;
+}
+#services-highlight .highlight-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+}
+#services-highlight .highlight-boxes .highlight-box {
+    display: flex;
+    padding-bottom: 1rem;
+}
+#services-highlight .highlight-boxes .panel {
+    width: 100%;
+}
+#services-highlight .highlight-boxes .panel-heading {
+    padding: 5px 15px 2px 15px;
+}
+#services-highlight .highlight-boxes .panel-heading hr {
+    border: 0;
+    margin: .75rem 0 .75rem 0;
+    border-bottom: 1px solid #dccaa0;
+    height: 1px;
+}
+#services-highlight .highlight-boxes .panel-heading h4 {
+    line-height: 1.3;
+    /*min-height: 55px;*/
+    padding: 0;
+    margin-bottom: 0;
+}
+#services-highlight .highlight-boxes .panel ul {
+    padding-left: 2rem;
+}
+#services-highlight .highlight-boxes .panel li {
+    padding-bottom: .5rem;
+}
+#services-highlight .highlight-boxes .panel-body {
+    padding: 0 15px 0px 15px;
+}
+#services-highlight .highlight-boxes .panel-body a {
+    font-weight: 600;
+}
+#services-highlight .librarian-profile {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    max-height: 120px;
+    border: 3px solid #000;
+    margin: 0 auto;
+}
+#services-highlight .bottom-text {
+    margin: 1rem 0 0 0;
+    padding-top: .5rem;
+    border-top: 1px dashed #eee;
+}
+
+#staff-interest {
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 1rem;
+}
+#staff-interest .blockquote {
+    margin: 2rem 0;
+}
+#staff-interest img {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+#staff-interest .panel {
+    margin: 2rem 0 1rem 0;
+}
+#staff-interest .panel-body {
+    padding: .5rem;
+}
+#staff-interest .panel-footer {
+    padding: .5rem;
+    font-style: italic;
+    text-align: right;
+}
+
+
+.blockquote {
+    padding: 0px;
+    position: relative;
+    font-family: "Utopia-italic";
+}
+.blockquote:before,
+.blockquote:after {
+    position: absolute;
+    font-family: 'FontAwesome';
+    line-height: 1;
+    font-size: 60px;
+    color: rgba(0,0,0,0.08);
+}
+.blockquote:before {
+    top: -1rem;
+    content:"\f10d";
+}
+.blockquote:after {
+    right: 0;
+    top: 2rem;
+    content:"\f10e";
+}
+.blockquote .quote {
+    padding: .5rem 1rem 0 1rem;
+    font-family: "Utopia-italic";
+    font-size: 19px;
+    line-height: 1.25;
+    text-align: center;
+}
+.blockquote .quoted {
+    padding: 0 1rem;
+    font-style: italic;
+    text-align: right;
+    line-height: 1.2;
+}
+
+/*                                     */
+/* END top-columns section on homepage */
+/*                                     */
+
 .alert-hours {
     padding: .5rem 1rem;
     font-weight: 600;
@@ -738,9 +927,9 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         padding-right: 0;
     }
 
-    #header {
+    /*#header {
         background-position: 100% 40%;
-    }
+    }*/
 
     #news {
         padding-bottom: 0em;
@@ -763,7 +952,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 
 @media (min-width: 768px) {
     #header {
-        padding-top: 50px;
+        padding-top: 80px;
     }
 }
 
@@ -836,8 +1025,8 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 
     #header {
         /* CHANGE BACKGROUND SEASONALLY */
-        background-image: url("https://library.bc.edu/images/hero01-small2.jpg");
-        height: 322px;
+        /*background-image: url("https://library.bc.edu/images/hero01-small2.jpg");
+        height: 322px;*/
     }
 }
 

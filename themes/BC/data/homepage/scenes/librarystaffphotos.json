@@ -1,0 +1,40 @@
+{
+    "photos": [
+        {
+            "image_url": "https://libapps.s3.amazonaws.com/accounts/3908/images/bostoncollege_libraries.jpg",
+            "alt_text": "Gasson Hall, Boston College",
+            "caption": "Look at Gasson Hall, Boston College",
+            "sticky": false
+        },
+        {
+            "image_url": "https://libapps.s3.amazonaws.com/accounts/3908/images/bapst-facilities.png",
+            "alt_text": "Inside Babst Library",
+            "caption": "Look at these students studying in Bapst",
+            "sticky": false
+        },
+        {
+            "image_url": "https://libapps.s3.amazonaws.com/accounts/3908/images/blank.jpg",
+            "alt_text": "Tom and Baldwin",
+            "caption": "Look at these beautiful people",
+            "sticky": false
+        },
+        {
+            "image_url": "https://libapps.s3.amazonaws.com/accounts/3908/images/dataserver.png",
+            "alt_text": "Inside a server room",
+            "caption": "Look at this sci-fi looking room",
+            "sticky": false
+        },
+        {
+            "image_url": "https://libapps.s3.amazonaws.com/accounts/3908/images/burns-transforminglight.jpg",
+            "alt_text": "Bapst stained glass window",
+            "caption": "Look at this nice stained glass window",
+            "sticky": false
+        },
+        {
+            "image_url": "https://libapps.s3.amazonaws.com/accounts/3908/images/burns-background-mockup-773.jpg",
+            "alt_text": "Burns Library",
+            "caption": "Look at Burns Library",
+            "sticky": false
+        }
+    ]
+}
