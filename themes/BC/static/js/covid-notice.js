@@ -1,9 +1,4 @@
-(function(){
-    console.log('running in here');
-})();
-
 (function () {
-    console.log('running');
     const cookie = ShowCOVIDNoticeCookie();
 
     if (cookie.isValidForThisDomain()) {
