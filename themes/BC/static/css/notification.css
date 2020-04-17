@@ -34,6 +34,16 @@
     right: .5em;
 }
 
+@media (max-width: 900px) {
+    .covid-notice__close-button {
+        position: absolute;
+        top: auto;
+        bottom: .5em;
+        right: .5em;
+    }   
+}
+
+
 .covid-notice__opener {
     background: #fde073;
     z-index: 101;
