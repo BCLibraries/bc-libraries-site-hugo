@@ -1,27 +1,53 @@
-<div class="col-md-12 col-xs-12 ql" id="staff-interest" data-tag="ga-tag">
+<div class="col-md-12 col-xs-12" id="staff-interest" data-tag="ga-tag">
     
     <h2>Scenes from the Library</h2>
 
-    <div class="">
-        <div class="blockquote">
-            <div class="quote">Hope is being able to see that there is light despite all of the darkness.</div>
-            <div class="quoted">- Desmond Tutu</div>
+    <div class="blockquote">
+        <div class="quote">Hope is being able to see that there is light despite all of the darkness.</div>
+        <div class="quoted">- Desmond Tutu</div>
+    </div>
+
+    <div class="photo-list row">
+        {{/* Each image is preloaded with transparent 2x1px png. See http://png-pixel.com/ */}}
+        <div class="col-md-12 col-sm-6 col-xs-6 photo-panel">
+            <div class="panel panel-default" data-photo-id="0">
+                <div class="panel-body">
+                    <img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" />
+                </div>
+                <div class="panel-footer">&nbsp;</div>
+            </div>
+        </div>
+        
+        <div class="col-md-12 col-sm-6 col-xs-6 photo-panel">
+            <div class="panel panel-default" data-photo-id="1">
+                <div class="panel-body">
+                    <img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" />
+                </div>
+                <div class="panel-footer">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-sm-6 col-xs-6 photo-panel">
+            <div class="panel panel-default" data-photo-id="2">
+                <div class="panel-body">
+                    <img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" />
+                </div>
+                <div class="panel-footer">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-sm-6 col-xs-6 photo-panel">
+            <div class="panel panel-default" data-photo-id="3">
+                <div class="panel-body">
+                    <img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" />
+                </div>
+                <div class="panel-footer">&nbsp;</div>
+            </div>
         </div>
     </div>
 
-    <div class="photo_list"></div>
-
-    <!-- https://stackoverflow.com/a/18674066 -->
-    <script type="text/template" data-template="listitem">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <img src="${image_url}" alt="${alt_text}" />
-            </div>
-            <div class="panel-footer">${caption}</div>
-        </div>
-    </script>
-
     <script>
+        // Randomize an array of objects
         function shuffleArray(array) {
             for (var i = array.length - 1; i > 0; i--) {
                 var j = Math.floor(Math.random() * (i + 1));
@@ -33,33 +59,99 @@
             return array;
         }
 
-        function render(props) {
-            return function(tok, i) {
-                return (i % 2) ? props[tok] : tok;
-            };
+        // Fetch images from Hugo data file
+        function loadPhotos(){
+            // Should be loaded as an array object
+            var library_staff_photos = {{ $.Site.Data.homepage.scenes.librarystaffphotos.photos }};
+
+            console.log(library_staff_photos);
+
+            if (library_staff_photos && library_staff_photos.length > 1) {
+                // Generate the randomize array
+                var randomized_photos = shuffleArray(library_staff_photos);
+                return randomized_photos;
+            } 
+
+            // Did not get list of staff photos
+            console.log("Did not get the data");
+            return null;
         }
 
-        // Load in library staff photos from hugo data
-        // TODO make sure this loads as expected
-        var library_staff_photos = [
-            {{ $.Site.Data.homepage.scenes.librarystaffphotos }}
-        ];
+        // Render an array of image objects
+        function renderPhotos(photos){
+            // Get first 4 image objects from array
+            var photos_set = photos.slice(0,4);
 
-        var library_staff_photos_array = library_staff_photos[0].photos
+            $(photos_set).each(function(key,photo){
 
-        // Generate the randomize array
-        var randomized_photos = shuffleArray(library_staff_photos_array);
+                var photo_container = $('[data-photo-id="' + key + '"]');
 
-        // Get first 4 images from randomized array
-        var photos_set = randomized_photos.slice(0,4);
+                // Fade out default image and fade in real image & caption to prevent annoying content update flash
+                // https://stackoverflow.com/a/16714137
+                photo_container.find(".photo-img").fadeTo(100,0.30, function(){
+                    photo_container.find(".photo-img").attr({
+                        "src": photo.image_url,
+                        "alt": photo.alt_text
+                    }).fadeTo(300,1);
+                    photo_container.find(".panel-footer").html(photo.caption);
+                });
 
-        // Load in template file
-        var itemTpl = $('script[data-template="listitem"]').text().split(/\$\{(.+?)\}/g);
+            });
+        }
 
-        // Loop through randomized_photos array and render each photo item with template
-        $('.photo_list').append(photos_set.map(function(photo) {
-            return itemTpl.map(render(photo)).join('');
-        }));
+
+        // Load photos
+        var randomized_photos = loadPhotos();
+
+        // Render photos
+        if (randomized_photos === null) {
+            console.log("Could not load photos.");
+            // TODO: load default images?
+        } else {
+            renderPhotos(randomized_photos);
+        }
     </script>
-
 </div>
+
+<style>
+    #staff-interest .photo-list .panel-body img {
+        min-height: 159px;
+    }
+
+    @media (min-width: 1200px) {
+        #staff-interest .photo-list .photo-panel:last-child {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        #staff-interest .photo-list .panel-body img {
+            min-height: 126px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #staff-interest {
+            margin-top: 3rem;
+        }
+        #staff-interest .photo-list .panel-body img {
+            min-height: 159px;
+        }
+    }
+    @media (max-width: 767px) {
+        #staff-interest .photo-list .panel-body img {
+            min-height: auto;
+        }
+    }
+    @media (max-width: 525px) {
+        #staff-interest .photo-list .panel-body img {
+            min-height: auto;
+        }
+        #staff-interest .photo-panel {
+            width: 100%;
+        }
+        #staff-interest .photo-list .photo-panel:last-child {
+            display: none;
+        }
+    }
+</style>

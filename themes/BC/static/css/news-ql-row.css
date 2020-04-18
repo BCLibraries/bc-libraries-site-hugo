@@ -178,14 +178,15 @@ a .newstext {
 
 
 /* MEDIA QUERIES */
-@media (max-width: 990px) {
+@media (max-width: 991px) {
     .ql {
         height: auto;
-        text-align: center;
+        /*text-align: center;*/
         margin-bottom: 20px;
     }
     .ql li {
-        display: inline-block;
+        display: block;
+        font-size: larger;
     }
     #news .news-content img {
         width: 100%;

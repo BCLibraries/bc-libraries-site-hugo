@@ -694,16 +694,16 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 }
 
 #aal-home {
-    margin-top: 3rem;
-    padding-bottom: 2rem;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
     background-color: #fff;
 }
 #aal-home .aal-box-small a.aal-icon {
-    font-size: 30px!important;
-    width: 60px;
+    font-size: 25px!important;
+    width: 50px;
 }
 #aal-home .aal-box a.aal-icon i {
-    padding: 15px;
+    padding: 12px 15px 13px 11px;
 }
 
 #services-highlight { 
@@ -804,6 +804,10 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     padding: .5rem;
     font-style: italic;
     text-align: right;
+}
+
+#aal-home .chat-link {
+    min-height: 2.75rem;
 }
 
 
@@ -953,6 +957,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 @media (min-width: 768px) {
     #header {
         padding-top: 80px;
+        height: 320px;
     }
 }
 

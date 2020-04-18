@@ -1,19 +1,42 @@
 <div class="container-fluid" id="top-columns">
     <div class="container">
         <div class="row column-items">
-            <div class="col-md-3 column-item">
+            <div class="col-md-3 col-sm-5 column-item">
                 <div class="column-combo">
-                    {{ partial "homepage/top-column-quicklinks.html" . }}
-
-                    {{ partial "homepage/top-column-ask-a-librarian.html" . }}
+                    <div class="col-md-12 col-sm-12 col-xs-6" id="quicklink-container">
+                        {{ partial "homepage/top-column-quicklinks.html" . }}
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-6" id="aal-home-container">
+                        {{ partial "homepage/top-column-ask-a-librarian.html" . }}
+                    </div>
                 </div>
             </div>
-            <div class="col-md-5 column-item" id="services-highlight-container">
+            <div class="col-md-5 col-sm-7 column-item" id="services-highlight-container">
                 {{ partial "homepage/top-column-services-highlight.html" . }}
             </div>
-            <div class="col-md-4 column-item">
+            <div class="col-md-4 col-sm-12 column-item">
                 {{ partial "homepage/top-column-staff-interest.html" . }}
             </div>
         </div>
     </div>
 </div>
+
+<style>
+    @media (max-width: 991px) {
+        #top-columns .column-combo {
+            display: block;
+        }
+        #aal-home {
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 525px) {
+        #quicklink-container {
+            width: 100%;
+        }
+        #aal-home-container {
+            display: none;
+        }
+    }
+</style>
