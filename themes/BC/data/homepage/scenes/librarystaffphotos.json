@@ -1,39 +1,59 @@
 {
     "photos": [
         {
-            "image_url": "https://libapps.s3.amazonaws.com/accounts/3908/images/bostoncollege_libraries.jpg",
-            "alt_text": "Gasson Hall, Boston College",
-            "caption": "Look at Gasson Hall, Boston College",
+            "image_url": "https://library.bc.edu/images/scenes/Access_services-Alison.jpg",
+            "thumb_url": "https://library.bc.edu/images/scenes/Access_services-Alison-thumbnail.jpg",
+            "alt_text": "All smiles with Alison",
+            "caption": "All smiles with Alison",
             "sticky": false
         },
         {
-            "image_url": "https://libapps.s3.amazonaws.com/accounts/3908/images/bapst-facilities.png",
-            "alt_text": "Inside Babst Library",
-            "caption": "Look at these students studying in Bapst",
+            "image_url": "https://library.bc.edu/images/scenes/Admin_office-Kevin.jpg",
+            "thumb_url": "https://library.bc.edu/images/scenes/Admin_office-Kevin-thumbnail.jpg",
+            "alt_text": "Thumbs up with Kevin",
+            "caption": "Thumbs up with Kevin",
             "sticky": false
         },
         {
-            "image_url": "https://libapps.s3.amazonaws.com/accounts/3908/images/blank.jpg",
-            "alt_text": "Tom and Baldwin",
-            "caption": "Look at these beautiful people",
+            "image_url": "https://library.bc.edu/images/scenes/Bibliosaurus.png",
+            "thumb_url": "https://library.bc.edu/images/scenes/Bibliosaurus-thumbnail.jpg",
+            "alt_text": "Bibliosaurus spying the Answer Wall",
+            "caption": "Bibliosaurus spying the Answer Wall",
             "sticky": false
         },
         {
-            "image_url": "https://libapps.s3.amazonaws.com/accounts/3908/images/dataserver.png",
-            "alt_text": "Inside a server room",
-            "caption": "Look at this sci-fi looking room",
+            "image_url": "https://library.bc.edu/images/scenes/ONeill-stacks.jpg",
+            "thumb_url": "https://library.bc.edu/images/scenes/ONeill-stacks-thumbnail.jpg",
+            "alt_text": "Working in the library stacks",
+            "caption": "Working in the library stacks",
             "sticky": false
         },
         {
-            "image_url": "https://libapps.s3.amazonaws.com/accounts/3908/images/burns-transforminglight.jpg",
-            "alt_text": "Bapst stained glass window",
-            "caption": "Look at this nice stained glass window",
+            "image_url": "https://library.bc.edu/images/scenes/ONeill-turkey.jpg",
+            "thumb_url": "https://library.bc.edu/images/scenes/ONeill-turkey-thumbnail.jpg",
+            "alt_text": "Wildlife comes back to Boston College",
+            "caption": "Wildlife comes back to Boston College",
             "sticky": false
         },
         {
-            "image_url": "https://libapps.s3.amazonaws.com/accounts/3908/images/burns-background-mockup-773.jpg",
-            "alt_text": "Burns Library",
-            "caption": "Look at Burns Library",
+            "image_url": "https://library.bc.edu/images/scenes/WFH-Kearney.jpeg",
+            "thumb_url": "https://library.bc.edu/images/scenes/WFH-Kearney-thumbnail.jpg",
+            "alt_text": "Jack's at home in his sunny office",
+            "caption": "Jack's at home in his sunny office",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/scenes/WFH-Melton+cat.JPG",
+            "thumb_url": "https://library.bc.edu/images/scenes/WFH-Melton_cat-thumbnail.jpg",
+            "alt_text": "Sarah and company working from home",
+            "caption": "Sarah and company working from home",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/scenes/WFH-Sally.png",
+            "thumb_url": "https://library.bc.edu/images/scenes/WFH-Sally-thumbnail.jpg",
+            "alt_text": "Sally is answering your questions remotely",
+            "caption": "Sally is answering your questions remotely",
             "sticky": false
         }
     ]

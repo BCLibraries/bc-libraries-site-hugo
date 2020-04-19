@@ -10,40 +10,36 @@
     <div class="photo-list row">
         {{/* Each image is preloaded with transparent 2x1px png. See http://png-pixel.com/ */}}
         <div class="col-md-12 col-sm-6 col-xs-6 photo-panel">
-            <div class="panel panel-default" data-photo-id="0">
-                <div class="panel-body">
-                    <img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" />
-                </div>
-                <div class="panel-footer">&nbsp;</div>
+            <div class="thumbnail" data-photo-id="0">
+                <a href=""><img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" /></a>
+                <div class="caption">&nbsp;</div>
             </div>
         </div>
         
         <div class="col-md-12 col-sm-6 col-xs-6 photo-panel">
-            <div class="panel panel-default" data-photo-id="1">
-                <div class="panel-body">
-                    <img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" />
-                </div>
-                <div class="panel-footer">&nbsp;</div>
+            <div class="thumbnail" data-photo-id="1">
+                <a href=""><img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" /></a>
+                <div class="caption">&nbsp;</div>
             </div>
         </div>
 
         <div class="col-md-12 col-sm-6 col-xs-6 photo-panel">
-            <div class="panel panel-default" data-photo-id="2">
-                <div class="panel-body">
-                    <img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" />
-                </div>
-                <div class="panel-footer">&nbsp;</div>
+            <div class="thumbnail" data-photo-id="2">
+                <a href=""><img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" /></a>
+                <div class="caption">&nbsp;</div>
             </div>
         </div>
 
         <div class="col-md-12 col-sm-6 col-xs-6 photo-panel">
-            <div class="panel panel-default" data-photo-id="3">
-                <div class="panel-body">
-                    <img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" />
-                </div>
-                <div class="panel-footer">&nbsp;</div>
+            <div class="thumbnail" data-photo-id="3">
+                <a href=""><img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" /></a>
+                <div class="caption">&nbsp;</div>
             </div>
         </div>
+    </div>
+
+    <div class="">
+        See more <a href="#">behinds the scenes images</a> from the Library's family!
     </div>
 
     <script>
@@ -90,10 +86,11 @@
                 // https://stackoverflow.com/a/16714137
                 photo_container.find(".photo-img").fadeTo(100,0.30, function(){
                     photo_container.find(".photo-img").attr({
-                        "src": photo.image_url,
+                        "src": photo.thumb_url,
                         "alt": photo.alt_text
                     }).fadeTo(300,1);
-                    photo_container.find(".panel-footer").html(photo.caption);
+                    photo_container.find("a").attr("href", photo.image_url);
+                    photo_container.find(".caption").html(photo.caption);
                 });
 
             });
@@ -114,6 +111,11 @@
 </div>
 
 <style>
+    #staff-interest .photo-list {
+        display: flex;
+        align-content: stretch;
+        flex-wrap: wrap;
+    }
     #staff-interest .photo-list .panel-body img {
         min-height: 159px;
     }
@@ -125,7 +127,7 @@
     }
 
     @media (max-width: 1199px) {
-        #staff-interest .photo-list .panel-body img {
+        #staff-interest .photo-list img {
             min-height: 126px;
         }
     }
@@ -134,17 +136,17 @@
         #staff-interest {
             margin-top: 3rem;
         }
-        #staff-interest .photo-list .panel-body img {
+        #staff-interest .photo-list img {
             min-height: 159px;
         }
     }
     @media (max-width: 767px) {
-        #staff-interest .photo-list .panel-body img {
+        #staff-interest .photo-list img {
             min-height: auto;
         }
     }
     @media (max-width: 525px) {
-        #staff-interest .photo-list .panel-body img {
+        #staff-interest .photo-list img {
             min-height: auto;
         }
         #staff-interest .photo-panel {

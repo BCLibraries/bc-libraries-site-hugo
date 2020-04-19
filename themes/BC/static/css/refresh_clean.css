@@ -789,18 +789,12 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 #staff-interest .blockquote {
     margin: 2rem 0;
 }
-#staff-interest img {
+#staff-interest .photo-panel img {
     width: 100%;
     padding: 0;
     margin: 0 auto;
 }
-#staff-interest .panel {
-    margin: 2rem 0 1rem 0;
-}
-#staff-interest .panel-body {
-    padding: .5rem;
-}
-#staff-interest .panel-footer {
+#staff-interest .photo-panel .caption {
     padding: .5rem;
     font-style: italic;
     text-align: right;
