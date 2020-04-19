@@ -671,6 +671,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     /*background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/background-sample-3.jpg) no-repeat 00% 100%;
     background-size: cover;*/
     background-color: #fff;
+    padding: 0 0 1rem 0;
 }
 #services-highlight-container {
     background-color: #dfddcf;
@@ -786,18 +787,24 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     position: relative;
     padding-bottom: 1rem;
 }
-#staff-interest .blockquote {
-    margin: 2rem 0;
+#staff-interest .photo-list {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
 }
 #staff-interest .photo-panel img {
     width: 100%;
     padding: 0;
     margin: 0 auto;
+    min-height: 159px;
 }
 #staff-interest .photo-panel .caption {
     padding: .5rem;
     font-style: italic;
     text-align: right;
+}
+#staff-interest .blockquote {
+    margin: 2rem 0;
 }
 
 #aal-home .chat-link {
@@ -940,7 +947,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     #news .more-news {
         text-align: center;
         margin-top: -1em;
-        margin-bottom: 2em;
+        /*margin-bottom: 2em;*/
     }
 
     .navbar-brand {

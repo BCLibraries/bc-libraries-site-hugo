@@ -1,27 +1,45 @@
-<!-- NEWS START -->
-<div class="container" id="news" data-tag="ga-tag">
-    <div class="row">
-        {{/* conveluted nested where clause... */}}
-        {{/* checks for:
-                1) article has a thumbnail
-                2) article is not expired
-                3) article has a "news" type
-            */}}
-        {{ range first 4 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news") }}
-        <div class="col-xxs col-xs-6 col-sm-6 col-md-3">
-            <div class="news-content">
-                <a href='{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}' id="{{ .Params.slug }}">
-                    <div class="newsitem">
-                        <div class="newstext">
-                            <p class="newslink">{{ .Title | safeHTML }}</p>
+<div class="container-fluid" id="db-rg-hours">
+    <div class="container ql-news">
+        <div class="row" id="news" data-tag="ga-tag">
+            <h2>News &amp; Events</h2>
+
+            <div class="news-top">
+                {{/* convoluted nested where clause... */}}
+                {{/* checks for:
+                    1) article has a thumbnail
+                    2) article is not expired
+                    3) article has a "news" type
+                */}}
+                {{ range first 2 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news") }}
+                <div class="col-xs-12 col-sm-6 col-md-6 news-content">
+                    <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">
+                        <div class="newsitem">                        
+                            <div class="newstext">
+                                <p class="newslink">{{ .Title | safeHTML }}</p>
+                            </div>
+                            <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
                         </div>
-                        <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
-                    </div>
-                </a>
+                    </a>
+                </div>
+                {{ end }}
             </div>
+            
+            <div class="row news-bottom">
+                {{ range first 4 (after 2 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news")) }}
+                <div class="col-xs-6 col-sm-3 col-md-3 news-content">
+                    <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}"></a>
+                        <div class="newsitem">                        
+                            <div class="newstext">
+                                <p class="newslink">{{ .Title | safeHTML }}</p>
+                            </div>
+                            <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}" />
+                        </div>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+
+            <div class="col-md-12 more-news"><a href="/news">See all news <i class="fa fa-lg fa-long-arrow-right" aria-hidden="true"></i></a></div>
         </div>
-        {{ end }}
     </div>
-    <div class="more-news"><a href="{{ .Site.BaseURL }}news">See all news  <i class="fa fa-lg fa-long-arrow-right" aria-hidden="true"></i></a></div>
 </div>
-<!-- NEWS END -->

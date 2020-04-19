@@ -13,14 +13,7 @@
 
         {{ partial "homepage/top-columns.html" . }}
 
-        <!--{{ partial "homepage/services-highlight.html" . }}-->
-
-        <!-- QUICK LINKS and NEWS-->
-        <div class="container" id="db-rg-hours">
-            <div class="row ql-news">
-            {{ partial "homepage/row-ql-news.html" . }}
-            </div>
-        </div>
+        {{ partial "homepage/news-row.html" . }}
 
         {{ partial "homepage/featured-librarian.html" . }}
 
@@ -28,7 +21,9 @@
 
         {{ partial "homepage/socialmedia-highlight.html" . }}
 
-        {{/* Hide the following default bars */}}
+        {{/* Hide the following bars
+
+        <!--{{ partial "homepage/services-highlight.html" . }}-->
 
         <!--{{ partial "homepage/scholarship-at-bc.html" . }}-->
 
@@ -39,6 +34,8 @@
         <!--{{ partial "homepage/facpub-highlight.html" . }}-->
 
         <!--{{ partial "homepage/special-collections-highlight.html" . }}-->
+
+        */}}
     </div>
 {{ end }}
 
