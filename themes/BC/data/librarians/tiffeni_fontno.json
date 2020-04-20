@@ -1,0 +1,22 @@
+{
+    "name": "Tiffeni Fontno MLIS, M.Ed.",
+    "active": true,
+    "profile_id": "106904",
+    "featured_background": "https://libapps.s3.amazonaws.com/accounts/3908/images/featured-librarian-enid-earth.jpg",
+    "featured_background_source": "<a href='https://www.nasa.gov/image-feature/moroccos-anti-atlas-mountains'>NASA</a>",
+    "featured_background_caption": "Morocco's Anti-Atlas Mountains.",
+    "featured_guides": [
+        {
+            "guide_name": "Education Resource Center (ERC)",
+            "guide_link": "https://libguides.bc.edu/erc"
+        },
+        {
+            "guide_name": "Open Education Resources (OER): K-12 Curriculum",
+            "guide_link": "https://libguides.bc.edu/oerk12"
+        },
+        {
+            "guide_name": "iPads in Education",
+            "guide_link": "https://libguides.bc.edu/edipads"
+        }
+    ]
+}

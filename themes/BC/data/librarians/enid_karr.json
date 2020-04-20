@@ -1,0 +1,18 @@
+{
+    "name": "Enid Karr",
+    "active": true,
+    "profile_id": "10692",
+    "featured_background": "https://libapps.s3.amazonaws.com/accounts/3908/images/featured-librarian-enid-earth.jpg",
+    "featured_background_source": "<a href='https://www.nasa.gov/image-feature/moroccos-anti-atlas-mountains'>NASA</a>",
+    "featured_background_caption": "Morocco's Anti-Atlas Mountains.",
+    "featured_guides": [
+        {
+            "guide_name": "Biology",
+            "guide_link": "https://libguides.bc.edu/biology"
+        },
+        {
+            "guide_name": "Environmental Science",
+            "guide_link": "https://libguides.bc.edu/environmental"
+        }
+    ]
+}

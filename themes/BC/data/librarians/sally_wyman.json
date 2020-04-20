@@ -1,0 +1,18 @@
+{
+    "name": "Sally Wyman",
+    "active": true,
+    "profile_id": "10674",
+    "featured_background": "https://libapps.s3.amazonaws.com/accounts/3908/images/background-sample-3.jpg",
+    "featured_background_source": "<a href='https://www.nasa.gov/image-feature/moroccos-anti-atlas-mountains'>NASA</a>",
+    "featured_background_caption": "Some other capation.",
+    "featured_guides": [
+        {
+            "guide_name": "Chemistry Portal",
+            "guide_link": "https://libguides.bc.edu/chemistryportal"
+        },
+        {
+            "guide_name": "Physics Portal",
+            "guide_link": "https://libguides.bc.edu/physicsportal"
+        }
+    ]
+}
