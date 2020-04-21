@@ -3,8 +3,8 @@
         {
             "image_url": "https://library.bc.edu/images/scenes/Access_services-Alison.jpg",
             "thumb_url": "https://library.bc.edu/images/scenes/Access_services-Alison-thumbnail.jpg",
-            "alt_text": "All smiles with Alison",
-            "caption": "All smiles with Alison",
+            "alt_text": "Here to help, thanks Alison!",
+            "caption": "Here to help, thanks Alison!",
             "sticky": false
         },
         {
@@ -24,15 +24,15 @@
         {
             "image_url": "https://library.bc.edu/images/scenes/ONeill-stacks.jpg",
             "thumb_url": "https://library.bc.edu/images/scenes/ONeill-stacks-thumbnail.jpg",
-            "alt_text": "Working in the library stacks",
-            "caption": "Working in the library stacks",
+            "alt_text": "In the stacks with Nham",
+            "caption": "In the stacks with Nham",
             "sticky": false
         },
         {
             "image_url": "https://library.bc.edu/images/scenes/ONeill-turkey.jpg",
             "thumb_url": "https://library.bc.edu/images/scenes/ONeill-turkey-thumbnail.jpg",
-            "alt_text": "Wildlife comes back to Boston College",
-            "caption": "Wildlife comes back to Boston College",
+            "alt_text": "The library is closed, even for turkeys",
+            "caption": "The library is closed, even for turkeys",
             "sticky": false
         },
         {
