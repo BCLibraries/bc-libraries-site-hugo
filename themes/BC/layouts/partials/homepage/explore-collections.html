@@ -1,13 +1,11 @@
 <!-- DS HIGHLIGHT START -->
-<div class="rightBottom" id="explore-collections" data-tag="ga-tag">
+<div class="" id="explore-collections" data-tag="ga-tag">
     <div class="container-fluid">
         <div class="container">
-            <div class="">
-                <h2>Explore Our Collections</h2>
-            </div>
-            <div class="row">
+            <h2>Explore Our Collections</h2>
 
-                <div class="col-md-4 col-sm-12 col-xs-12 collections-box">
+            <div class="row collections-box-container">
+                <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
                     <a href="https://moralesmassbook.bc.edu/">
                         <div class="content morales-mass">
                             <div class="description">
@@ -22,7 +20,7 @@
                     </a>
                 </div>
 
-                <div class="col-md-4 col-sm-12 col-xs-12 collections-box">
+                <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
                     <div class="content job">
                         <a href="https://jesuitonlinebibliography.bc.edu/">
                             <div class="description">
@@ -37,7 +35,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-12 col-xs-12 collections-box">
+                <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
                     <div class="content japanese-prints">
                         <a href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&inst=BCL&collectionId=81482909060001021">
                             <div class="description">
@@ -52,7 +50,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-12 col-xs-12 collections-box">
+                <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
                     <div class="content oneill-bowling">
                         <a href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&collectionId=81517121150001021">
                             <div class="description">
@@ -67,7 +65,7 @@
                     </a>
                 </div>
 
-                <div class="col-md-4 col-sm-12 col-xs-12 collections-box">
+                <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
                     <div class="content theses">
                         <a href="https://dlib.bc.edu/">
                             <div class="description">
@@ -82,7 +80,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-12 col-xs-12 collections-box">
+                <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
                     <div class="content dataverse">
                         <a href="https://www.bc.edu/dataverse">
                             <div class="description">
@@ -96,8 +94,8 @@
                         </a>
                     </div>
                 </div>
+
             </div>
-            
         </div>
     </div>
 </div>
@@ -109,46 +107,50 @@
         /*background: #204375;*/
         /*background: #0873ae;*/
         background: #fff;
-        padding: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         border-top: 9px solid #dccaa0;
         /*background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/artdecobackground2.png);*/
     }
     #explore-collections h2 {
         color: #000;
-        font-weight: 600;
-        display: inline-block;
-        padding: 2rem 0 0 0;
-        margin: 0;
     }
-    .collections-box {
-        margin: 2rem 0;
+    #explore-collections .row {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #explore-collections .collections-box-container {
+        margin-top: 2rem;
+    }
+    #explore-collections .collections-box {
+        margin: 0 0 2.5rem 0;
         position: relative;
     }
-    .collections-box .content {
+    #explore-collections .collections-box .content {
         background-color: #ccc;
         color: #000;
         padding: 0;
         height: 250px;
     }
-    .content.morales-mass {
+    #explore-collections .content.morales-mass {
         background: url(https://library.bc.edu/images/digitalscholashipbg-morales.jpg) no-repeat 0% 0% #101010;
     }
-    .content.japanese-prints {
+    #explore-collections .content.japanese-prints {
         background: url(https://library.bc.edu/images/sc_bg_02_med.jpg) no-repeat 65% 60%;
     }
-    .content.job {
+    #explore-collections .content.job {
         background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/jobbackground.png) no-repeat 40% 80%;
     }
-    .content.oneill-bowling {
+    #explore-collections .content.oneill-bowling {
         background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/tiponeillbowling.png) no-repeat 50% 20%;
     }
-    .content.theses {
+    #explore-collections .content.theses {
         background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/dataserver.png) no-repeat 0 0;
     }
-    .content.dataverse {
+    #explore-collections .content.dataverse {
         background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/dataserver.png) no-repeat 46% 0;
     }
-    .description {
+    #explore-collections .description {
         font-size: 20px;
         font-weight: 600;
         color: #fff;
@@ -157,17 +159,21 @@
         padding-top: 40%;
         background-image: linear-gradient(0deg,rgba(0,0,0,0.6) 20%,rgba(0,0,0,0.2) 50%);
     }
-    .description:hover,
-    .description:focus {
+    #explore-collections .description:hover,
+    #explore-collections .description:focus {
         background-image: linear-gradient(0deg,rgba(0,0,0,0.5) 20%,rgba(0,0,0,0.1) 50%);
     }
-    .description .department {
+    #explore-collections .description .department {
         font-size: smaller;
         padding: 2rem 2rem 0 2rem;
-       
     }
-    .description .collection-name {
+    #explore-collections .description .collection-name {
         padding: .5rem 2rem 2rem 2rem;
-        
+    }
+
+    @media (max-width: 425px) {
+        #explore-collections .collections-box {
+            width: 100%;
+        }
     }
 </style>

@@ -671,7 +671,12 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     /*background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/background-sample-3.jpg) no-repeat 00% 100%;
     background-size: cover;*/
     background-color: #fff;
-    padding: 0 0 1rem 0;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+#top-columns .row {
+    padding-top:0;
+    padding-bottom:0;
 }
 #services-highlight-container {
     background-color: #dfddcf;

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row column-items">
             <div class="col-md-3 col-sm-5 column-item">
-                <div class="column-combo">
+                <div class="column-combo row">
                     <div class="col-md-12 col-sm-12 col-xs-6" id="quicklink-container">
                         {{ partial "homepage/top-column-quicklinks.html" . }}
                     </div>
@@ -31,7 +31,7 @@
         }
     }
 
-    @media (max-width: 525px) {
+    @media (max-width: 450px) {
         #quicklink-container {
             width: 100%;
         }

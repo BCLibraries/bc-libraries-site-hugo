@@ -4,14 +4,11 @@
 
 #db-rg-hours {
     border-top: solid 9px #dccaa0;
-    padding: 1rem 0 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 #news {
-    margin: 0;
-}
-#news h2 {
-    font-size:30px;
-    padding-bottom: 2rem;
+    /*margin: 0;*/
 }
 #news .news-content img {
     max-height: 100%;
@@ -40,25 +37,15 @@
 
 /* quick links */
 
-.ql-news h2 {
-    font-size: 18px;
-    margin: 10px 0 0;
-    padding: 0 0 10px 0;
-}
-
 .ql-news .ql h2 {
     text-align: center;
     border-bottom: 1px solid #fff;
 }
 
-#news h2 {
-    margin-left: 15px;
-}
-
 .ql {
     height: 100%;
     /*background-color: #d7d7d7;*/
-    padding: 0 10px 10px 10px;
+    padding-bottom:10px;
 }
 
 
@@ -88,7 +75,7 @@
 }
 
 #news .news-top {
-    margin-bottom: 15px;
+    margin-bottom: 0;
     height: auto;
     position: relative;
     display: inherit;
@@ -96,8 +83,9 @@
 }
 
 #news .news-bottom {
-    margin: 0;
-    padding: 0 10px;
+    /*margin: 0;*/
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #news .news-top .news-content {
