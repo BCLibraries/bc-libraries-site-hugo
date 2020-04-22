@@ -118,6 +118,10 @@
 <!-- FEATURED LIBRARIAN END -->
 
 <style>
+    #featured-librarian {
+        background-image: url({{ $background }});
+    }
+
     #featured-librarian ul.featured-librarian-expert-at-list {
         margin: 0 0 1rem 0;
         padding: 0;
@@ -134,69 +138,5 @@
     #featured-librarian ul.featured-librarian-expert-at-list li:last-child::before {
         content: " and ";
     }
-    #featured-librarian {
-        /*border-bottom: solid 9px #dccaa0;*/
-        border-top: solid 9px #dccaa0;
-        padding: 3rem 0 4rem 0;
-        background-color: #edefef;
-        background-image: url({{ $background }});
-        background-size: cover;
-        position: relative;
-    }
-    #featured-librarian h2 {
-        margin-bottom: 2rem;
-    }
-    #featured-librarian h3.librarian-name {
-        margin-top: 1rem;
-        text-align: center;
-    }
-    #featured-librarian h4 {
-        margin-bottom: .5rem;
-    }
-    #featured-librarian .combo-boxes {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    #featured-librarian .combo-box {
-        margin: 0;
-        position: relative;
-    }
-    #featured-librarian .combo-box-inner {
-        padding: 0;
-        background-color: #fff;
-        border-radius: 8px;
-        height: 100%;
-        border: 1px solid rgb(0, 0, 0, .1);
-    }
-    #featured-librarian .combo-boxes-footer p {
-        border-top: 1px solid #ccc;
-        padding: 1rem 0;
-        margin-top: 2rem;
-        text-align: right;
-        font-size: larger;
-    }
-    #featured-librarian .librarian-profile {
-        border-top-left-radius: 50% 50%;
-        border-top-right-radius: 50% 50%;
-        border-bottom-right-radius: 50% 50%;
-        border-bottom-left-radius: 50% 50%;
-        max-width: 220px;
-        width: 100%;
-        border: 3px solid #000;
-    }
-    #featured-librarian .librarian-profile-link {
-        width: 100%;
-        display: block;
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-    #featured-librarian .bottom-text {
-        margin: 2.5rem 0 0 0;
-    }
 
-    @media (max-width: 991px) {
-        #featured-librarian h2 {
-            padding-top: 1.5rem;
-        }
-    }
 </style>

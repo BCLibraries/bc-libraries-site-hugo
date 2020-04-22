@@ -700,6 +700,24 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     flex:1;
 }
 
+@media (max-width: 991px) {
+    #top-columns .column-combo {
+        display: block;
+    }
+    #aal-home {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    #quicklink-container {
+        width: 100%;
+    }
+    #aal-home-container {
+        display: none;
+    }
+}
+
 #aal-home {
     margin-top: 0rem;
     padding-bottom: 0rem;
@@ -788,6 +806,37 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     padding-top: .5rem;
     border-top: 1px dashed #eee;
 }
+@media (max-width: 1199px) {
+    #services-highlight .highlight-boxes .panel-heading h4 {
+        /*min-height: 4.5rem;*/
+    }
+    /*.librarian-profile {
+        max-height: 100px;
+    }*/
+}
+@media (max-width: 991px) {
+    #services-highlight .highlight-boxes .panel-heading h4 {
+        min-height: auto;
+    }
+    .blockquote .quote {
+        font-size: 18px;
+        line-height: 1.1;
+    }
+    .blockquote .quote::before {
+        border:0;
+        height: 0;
+    }
+}
+@media (max-width: 767px) {
+    .blockquote {
+        display: none;
+    }
+}
+@media (max-width: 540px) {
+    #services-highlight .highlight-boxes .panel-heading h4 {
+        min-height: auto;
+    }
+}
 
 #staff-interest {
     background-color: #fff;
@@ -814,10 +863,259 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     margin: 2rem 0;
 }
 
+@media (min-width: 1200px) {
+    #staff-interest .photo-list .photo-panel:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    #staff-interest .photo-list img {
+        min-height: 126px;
+    }
+}
+
+@media (max-width: 991px) {
+    #staff-interest {
+        margin-top: 3rem;
+    }
+    #staff-interest .photo-list img {
+        min-height: 159px;
+    }
+}
+@media (max-width: 767px) {
+    #staff-interest .photo-list img {
+        min-height: auto;
+    }
+}
+@media (max-width: 525px) {
+    #staff-interest .photo-list img {
+        min-height: auto;
+    }
+    #staff-interest .photo-panel {
+        width: 100%;
+    }
+    #staff-interest .photo-list .photo-panel:last-child {
+        display: none;
+    }
+}
+
+
 #aal-home .chat-link {
     min-height: 2.75rem;
 }
 
+
+#featured-librarian {
+    /*border-bottom: solid 9px #dccaa0;*/
+    border-top: solid 9px #dccaa0;
+    padding: 3rem 0 4rem 0;
+    background-color: #edefef;
+    /*background-image: url();*/
+    background-size: cover;
+    position: relative;
+}
+#featured-librarian h2 {
+    margin-bottom: 2rem;
+}
+#featured-librarian h3.librarian-name {
+    margin-top: 1rem;
+    text-align: center;
+}
+#featured-librarian h4 {
+    margin-bottom: .5rem;
+}
+#featured-librarian .combo-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+#featured-librarian .combo-box {
+    margin: 0;
+    position: relative;
+}
+#featured-librarian .combo-box-inner {
+    padding: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 100%;
+    border: 1px solid rgb(0, 0, 0, .1);
+}
+#featured-librarian .combo-boxes-footer p {
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-align: right;
+    font-size: larger;
+}
+#featured-librarian .librarian-profile {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    max-width: 220px;
+    width: 100%;
+    border: 3px solid #000;
+}
+#featured-librarian .librarian-profile-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#featured-librarian .bottom-text {
+    margin: 2.5rem 0 0 0;
+}
+
+@media (max-width: 991px) {
+    #featured-librarian h2 {
+        padding-top: 1.5rem;
+    }
+}
+
+
+#explore-collections {
+    height: auto;
+    /*background: #204375;*/
+    /*background: #0873ae;*/
+    background: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 9px solid #dccaa0;
+}
+#explore-collections h2 {
+    color: #000;
+}
+#explore-collections .row {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#explore-collections .collections-box-container {
+    margin-top: 2rem;
+}
+#explore-collections .collections-box {
+    margin: 0 0 2.5rem 0;
+    position: relative;
+}
+
+#explore-collections .collections-box a {
+    display: block;
+}
+#explore-collections .collections-box a img {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    opacity: .85;
+    display: block;
+    /*min-height: 240px;*/
+}
+
+#explore-collections .collections-box a:hover,
+#explore-collections .collections-box a:focus {
+    text-decoration:none;
+}
+
+#explore-collections .collections-box a:hover img,
+#explore-collections .collections-box a:focus img {
+   opacity:1;
+}
+
+/* set the header color based on department class */
+#explore-collections .collection-description {
+    padding: 1.25rem 1rem 1.25rem 1.25rem;
+    background-color: #c06626;
+    color: #fff;
+}
+#explore-collections .digital-scholarship .collection-description {
+    background-color: #204375;
+}
+#explore-collections .escholarship .collection-description {
+    background-color: #c06626
+}
+#explore-collections .digital-collections .collection-description {
+    background-color: #467282;
+}
+
+#explore-collections .collection-department,
+#explore-collections .collection-name {
+    color: #fff;
+    line-height: 1.2;
+}
+#explore-collections .collection-department {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+#explore-collections .collection-name {
+    font-size: 18px;
+    min-height: 4.75rem;
+}
+#explore-collections .collection-image img {
+    width: 100%;
+}
+
+@media (max-width: 425px) {
+    #explore-collections .collections-box {
+        width: 100%;
+    }
+}
+
+
+#socialmedia-highlight {
+    font-size: 16px;
+    background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/burns-blog-historicalpasttime-1200x519.png) no-repeat 00% 80% #101010;
+    width: 100%;
+    min-height: 150px;
+    height: 600px;
+    background-size: auto auto;
+    color: #fff;
+    padding: 55px 0;
+    z-index: 2;
+    background-size: cover;
+}
+#socialmedia-highlight .highlight-title h2 {
+    margin: 0 0 3rem 0;
+    color: #fff;
+    display: inline-block;
+}
+#socialmedia-highlight.leftBottom .container-fluid .pull-right .content, 
+#socialmedia-highlight.leftTop .container-fluid .pull-right .content, 
+#socialmedia-highlight.rightTop .container-fluid .pull-right .content, 
+#socialmedia-highlight.rightBottom .container-fluid .pull-right .content {
+    color: #fff;
+    display: table;
+    padding: 20px 30px;
+    max-width: 50%;
+    background: rgba(0, 0, 0, 0.875);
+}
+#socialmedia-highlight .content-body {
+    margin-top: 2rem;
+    line-height: 1.6;
+}
+#socialmedia-highlight .content-body .label {
+    padding: 2rem 0 0 0;
+    font-size: 100%;
+    color: #aaa;
+}
+#socialmedia-highlight .content-body a {
+    text-decoration: underline;
+    font-weight: 600;
+}
+#socialmedia-highlight .connect-button {
+    margin-top: 3rem;
+}
+@media (max-width: 1023px) {
+    #socialmedia-highlight {
+        background-position: 50% 50%;
+        height: 519px;
+        background-size:auto;
+    }
+}
+@media (max-width: 767px) {
+    #socialmedia-highlight {
+        background-position: 64% 0%;
+        height: 800px;
+        background-size:auto;
+    }
+}
 
 .blockquote {
     padding: 0px;
