@@ -1,27 +1,36 @@
-<!-- SPECIAL COLLECTIONS HIGHLIGHT START -->
+<!-- SOCIAL MEDIA HIGHLIGHT START -->
 <h2 class="sr-only sr-only-focusable">Special collections</h2>
 <div class="leftBottom" id="socialmedia-highlight" data-tag="ga-tag">
     <div class="container-fluid">
         <div class="row">
-            <div class="highlight-title"><h2>Highlight from our Social Media</h2></div>
             <div class="col-md-12 col-sm-12 col-xs-12 pull-right">
                 <div class="content">
-                    <h3><a href="https://johnjburnslibrary.wordpress.com/">John J. Burns Library's Blog</a></h3>
-                    <p>Post: <a href="https://johnjburnslibrary.wordpress.com/2019/11/18/whats-in-a-game-some-examples-of-board-games-at-burns-library/">What’s in a Game? Some Examples of Board Games at Burns Library</a></p>
-                    <p>Caption: Detail of gameboard with portrait of Queen Victoria, <a href="https://bc-primo.hosted.exlibrisgroup.com/permalink/f/l6ucgu/ALMA-BC21338002760001021">Historical Pastime: A New Game of the History of England</a></p>
-                    <br/>
-                    <p><a href="https://libguides.bc.edu/stayconnected/"><span class="btn btn-default btn-blue">Connect with us over social media</span></a></p>
+                    
+                    <div class="content-body">
+                        <div class="highlight-title"><h2>Social Media Highlight</h2></div>
+
+                        <div class="label">Title</div>
+                        <p><a href="https://johnjburnslibrary.wordpress.com/2019/11/18/whats-in-a-game-some-examples-of-board-games-at-burns-library/">What’s in a Game? Some Examples of Board Games at Burns Library</a></p>
+                    
+                        <div class="label">Image Caption</div>
+                        <p>Detail of gameboard with portrait of Queen Victoria, <a href="https://bc-primo.hosted.exlibrisgroup.com/permalink/f/l6ucgu/ALMA-BC21338002760001021">Historical Pastime: A New Game of the History of England</a></p>
+                        
+                        <div class="label">Source</div>
+                        <p>From the <a href="https://johnjburnslibrary.wordpress.com/">John J. Burns Library's Blog</a></p>
+
+                        <p class="connect-button"><a href="https://libguides.bc.edu/stayconnected/"><span class="btn btn-default btn-blue">Connect with us over social media</span></a></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- SPECIAL COLLECTIONS HIGHLIGHT END -->
+<!-- SOCIAL MEDIA HIGHLIGHT END -->
 
 <style>
     #socialmedia-highlight {
         font-size: 16px;
-        background: url(https://johnjburnslibrary.files.wordpress.com/2019/11/1_historicalpastimedetail.jpg) no-repeat 00% 50% #101010;
+        background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/burns-blog-historicalpasttime-1200x519.png) no-repeat 00% 80% #101010;
         width: 100%;
         min-height: 150px;
         height: 600px;
@@ -30,14 +39,10 @@
         padding: 55px 0;
         z-index: 2;
         background-size: cover;
-
     }
     #socialmedia-highlight .highlight-title h2 {
-        margin: 0 0 0 5rem;
-        padding: 2rem 2rem;
-        background: #204375;
+        margin: 0 0 3rem 0;
         color: #fff;
-        font-weight: 600;
         display: inline-block;
         
     }
@@ -47,13 +52,38 @@
     #socialmedia-highlight.rightBottom .container-fluid .pull-right .content {
         color: #fff;
         display: table;
-        padding: 40px 40px;
+        padding: 20px 30px;
         max-width: 50%;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.875);
     }
-
-    #socialmedia-highlight .content p a {
+    #socialmedia-highlight .content-body {
+        margin-top: 2rem;
+        line-height: 1.6;
+    }
+    #socialmedia-highlight .content-body .label {
+        padding: 2rem 0 0 0;
+        font-size: 100%;
+        color: #aaa;
+    }
+    #socialmedia-highlight .content-body a {
         text-decoration: underline;
         font-weight: 600;
+    }
+    #socialmedia-highlight .connect-button {
+        margin-top: 3rem;
+    }
+    @media (max-width: 1023px) {
+        #socialmedia-highlight {
+            background-position: 50% 50%;
+            height: 519px;
+            background-size:auto;
+        }
+    }
+    @media (max-width: 767px) {
+        #socialmedia-highlight {
+            background-position: 64% 0%;
+            height: 800px;
+            background-size:auto;
+        }
     }
 </style>
