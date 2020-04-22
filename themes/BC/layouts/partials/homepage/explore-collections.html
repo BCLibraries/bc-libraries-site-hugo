@@ -146,37 +146,58 @@
         position: relative;
     }
 
+    #explore-collections .collections-box a {
+        display: block;
+    }
+    #explore-collections .collections-box a img {
+        -webkit-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+        opacity: .85;
+        display: block;
+        /*min-height: 240px;*/
+    }
 
-    .collection-description {
+    #explore-collections .collections-box a:hover,
+    #explore-collections .collections-box a:focus {
+        text-decoration:none;
+    }
+    
+    #explore-collections .collections-box a:hover img,
+    #explore-collections .collections-box a:focus img {
+       opacity:1;
+    }
+
+    /* set the header color based on department class */
+    #explore-collections .collection-description {
         padding: 1.25rem 1rem 1.25rem 1.25rem;
         background-color: #c06626;
         color: #fff;
     }
-    .digital-scholarship .collection-description {
+    #explore-collections .digital-scholarship .collection-description {
         background-color: #204375;
     }
-    .escholarship .collection-description {
+    #explore-collections .escholarship .collection-description {
         background-color: #c06626
     }
-    .digital-collections .collection-description {
+    #explore-collections .digital-collections .collection-description {
         background-color: #467282;
     }
 
-    .collection-department,
-    .collection-name {
+    #explore-collections .collection-department,
+    #explore-collections .collection-name {
         color: #fff;
         line-height: 1.2;
     }
-    .collection-department {
+    #explore-collections .collection-department {
         font-size: 15px;
         font-weight: 600;
         padding-bottom: .5rem;
     }
-    .collection-name {
+    #explore-collections .collection-name {
         font-size: 18px;
         min-height: 4.75rem;
     }
-    .collection-image img {
+    #explore-collections .collection-image img {
         width: 100%;
     }
 
