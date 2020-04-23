@@ -1,57 +1,57 @@
 {
     "photos": [
         {
-            "image_url": "https://library.bc.edu/images/scenes/Access_services-Alison.jpg",
-            "thumb_url": "https://library.bc.edu/images/scenes/Access_services-Alison-thumbnail.jpg",
+            "image_url": "https://library.bc.edu/images/homepage/scenes/Access_services-Alison.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/Access_services-Alison-thumbnail.jpg",
             "alt_text": "Here to help, thanks Alison!",
             "caption": "Here to help, thanks Alison!",
             "sticky": false
         },
         {
-            "image_url": "https://library.bc.edu/images/scenes/Admin_office-Kevin.jpg",
-            "thumb_url": "https://library.bc.edu/images/scenes/Admin_office-Kevin-thumbnail.jpg",
+            "image_url": "https://library.bc.edu/images/homepage/scenes/Admin_office-Kevin.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/Admin_office-Kevin-thumbnail.jpg",
             "alt_text": "Kevin is keeping up with your ILL requests",
             "caption": "Kevin is keeping up with your ILL requests",
             "sticky": false
         },
         {
-            "image_url": "https://library.bc.edu/images/scenes/Bibliosaurus.png",
-            "thumb_url": "https://library.bc.edu/images/scenes/Bibliosaurus-thumbnail.jpg",
+            "image_url": "https://library.bc.edu/images/homepage/scenes/Bibliosaurus.png",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/Bibliosaurus-thumbnail.jpg",
             "alt_text": "Bibliosaurus spying the Answer Wall",
             "caption": "Bibliosaurus spying the Answer Wall",
             "sticky": false
         },
         {
-            "image_url": "https://library.bc.edu/images/scenes/ONeill-stacks.jpg",
-            "thumb_url": "https://library.bc.edu/images/scenes/ONeill-stacks-thumbnail.jpg",
+            "image_url": "https://library.bc.edu/images/homepage/scenes/ONeill-stacks.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/ONeill-stacks-thumbnail.jpg",
             "alt_text": "In the stacks with Nham",
             "caption": "In the stacks with Nham",
             "sticky": false
         },
         {
-            "image_url": "https://library.bc.edu/images/scenes/ONeill-turkey.jpg",
-            "thumb_url": "https://library.bc.edu/images/scenes/ONeill-turkey-thumbnail.jpg",
+            "image_url": "https://library.bc.edu/images/homepage/scenes/ONeill-turkey.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/ONeill-turkey-thumbnail.jpg",
             "alt_text": "The library is closed, even for turkeys",
             "caption": "The library is closed, even for turkeys",
             "sticky": false
         },
         {
-            "image_url": "https://library.bc.edu/images/scenes/WFH-Kearney.jpeg",
-            "thumb_url": "https://library.bc.edu/images/scenes/WFH-Kearney-thumbnail.jpg",
+            "image_url": "https://library.bc.edu/images/homepage/scenes/WFH-Kearney.jpeg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/WFH-Kearney-thumbnail.jpg",
             "alt_text": "Jack's at home in his sunny office",
             "caption": "Jack's at home in his sunny office",
             "sticky": false
         },
         {
-            "image_url": "https://library.bc.edu/images/scenes/WFH-Melton+cat.JPG",
-            "thumb_url": "https://library.bc.edu/images/scenes/WFH-Melton_cat-thumbnail.jpg",
+            "image_url": "https://library.bc.edu/images/homepage/scenes/WFH-Melton+cat.JPG",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/WFH-Melton_cat-thumbnail.jpg",
             "alt_text": "Sarah and company working from home",
             "caption": "Sarah and company working from home",
             "sticky": false
         },
         {
-            "image_url": "https://library.bc.edu/images/scenes/WFH-Sally.png",
-            "thumb_url": "https://library.bc.edu/images/scenes/WFH-Sally-thumbnail.jpg",
+            "image_url": "https://library.bc.edu/images/homepage/scenes/WFH-Sally.png",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/WFH-Sally-thumbnail.jpg",
             "alt_text": "Sally is answering your questions remotely",
             "caption": "Sally is answering your questions remotely",
             "sticky": false
