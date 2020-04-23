@@ -32,7 +32,7 @@
 {{ $profile_url         := "https://library.bc.edu" }}
 {{ $profile_image       := "https://libapps.s3.amazonaws.com/apps/common/images/profile.jpg" }}
 {{ $profile_first_name  := "Baldwin Eagle" }}
-{{ $.Scratch.Set "subjects" "" }}
+{{/* $.Scratch.Set "subjects" "" */}}
 
 {{ range where $all_librarians_data "id" "=" $profile_id }}
     {{/* get first name */}}
@@ -46,7 +46,8 @@
 
     {{/* get list of subjects */}}
     {{ range .subjects }}
-        {{ $.Scratch.Add "subjects" (printf "<li><a href='https://libguides.bc.edu/sb.php?subject_id=%s'>%s</a></li> " .id .name) }}
+        {{ $.Scratch.SetInMap "subjects" .id (printf "<li><a href='https://libguides.bc.edu/sb.php?subject_id=%s'>%s</a></li>" .id .name) }}
+        {{/* $.Scratch.Add "subjects" (printf "<li><a href='https://libguides.bc.edu/sb.php?subject_id=%s'>%s</a></li> " .id .name) */}}
     {{ end }}
 {{ end }}
 
@@ -72,25 +73,19 @@
                         </div>
                         <div class="col-md-8 col-sm-8 col-xs-12">
                             <div class="col-md-12 col-sm-12">
-                                <h4 class="featured-librarian">{{ $profile_first_name }} is an expert at:</h4>
+                                <h3 class="featured-librarian">{{ $profile_first_name }} is an expert at:</h3>
                                 <ul class="featured-librarian-expert-at-list">
-
-                                    {{/* range where $all_librarians "id" "=" $libguides_id }}
-                                        {{ range .subjects }}
-                                            <li><a href="https://libguides.bc.edu/sb.php?subject_id={{ .id }}">{{ .name }}</a></li>
-                                        {{ end }}
-                                    {{ end */}}
-
-                                    {{ .Scratch.Get "subjects" | safeHTML }}
-                                
+                                    {{ delimit (.Scratch.Get "subjects") ", " ", and "}}
                                 </ul>
                             </div>
 
                             <div class="col-md-12 col-sm-12">
-                                <h4 class="featured-librarian">Featured Guides:</h4>
+                                <h3 class="featured-librarian">Featured Guides:</h3>
+                                <ul class="featured-librarian-guides">
                                 {{ range $featured_librarian.featured_guides }}
-                                    <div><a href="{{ .guide_link }}">{{ .guide_name }}</a></div>
+                                    <li><a href="{{ .guide_link }}">{{ .guide_name }}</a></li>
                                 {{ end }}
+                                </ul>
                             </div>
 
                             <div class="col-md-12 col-sm-12 bottom-text">
@@ -121,22 +116,4 @@
     #featured-librarian {
         background-image: url({{ $background }});
     }
-
-    #featured-librarian ul.featured-librarian-expert-at-list {
-        margin: 0 0 1rem 0;
-        padding: 0;
-    }
-    #featured-librarian ul.featured-librarian-expert-at-list li {
-        display:inline;
-    }
-    #featured-librarian ul.featured-librarian-expert-at-list li::after {
-        content: ",";
-    }
-    #featured-librarian ul.featured-librarian-expert-at-list li:last-child::after {
-        content: "";
-    }
-    #featured-librarian ul.featured-librarian-expert-at-list li:last-child::before {
-        content: " and ";
-    }
-
 </style>

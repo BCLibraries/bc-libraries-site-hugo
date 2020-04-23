@@ -919,6 +919,10 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 #featured-librarian h2 {
     margin-bottom: 2rem;
 }
+#featured-librarian h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 #featured-librarian h3.librarian-name {
     margin-top: 1rem;
     text-align: center;
@@ -964,7 +968,16 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     margin-bottom: 3rem;
 }
 #featured-librarian .bottom-text {
-    margin: 2.5rem 0 0 0;
+    margin: 1rem 0 0 0;
+}
+#featured-librarian ul.featured-librarian-expert-at-list,
+#featured-librarian ul.featured-librarian-guides {
+    margin: .5rem 0 2rem 0;
+    padding: 0;
+    list-style-type: none;
+}
+#featured-librarian ul.featured-librarian-expert-at-list li {
+    display:inline;
 }
 
 @media (max-width: 991px) {
