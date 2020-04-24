@@ -5,7 +5,7 @@
 {{ end }}
 
 {{ define "pagestyles" }}
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/news-ql-row.css?v=20200424"/>
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/news-ql-row.css?id={{ now.Unix }}"/>
 {{ end }}
 
 {{ define "main" }}
