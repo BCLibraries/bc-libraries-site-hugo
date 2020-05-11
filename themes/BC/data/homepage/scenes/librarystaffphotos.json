@@ -55,6 +55,13 @@
             "alt_text": "Sally is answering your questions remotely",
             "caption": "Sally is answering your questions remotely",
             "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/Baby-Kai.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/Baby-Kai-thumbnail-450x225.jpg",
+            "alt_text": "Meet the newest member of our library family, Kai!",
+            "caption": "Meet the newest member of our library family, <a href='https://library.bc.edu/images/homepage/scenes/Baby-Kai.jpg'><strong>Kai</strong></a>!",
+            "sticky": false
         }
     ]
 }
