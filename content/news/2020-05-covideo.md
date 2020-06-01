@@ -1,7 +1,7 @@
 ---
 title: "Boston College Libraries, COVID-19 Edition on YouTube"
 draft: false
-expired: false
+expired: true
 date: 2020-05-26T00:00:46-05:00
 year: "2020"
 slug: "covid-story-video"
