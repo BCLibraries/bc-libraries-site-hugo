@@ -896,7 +896,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     #staff-interest .photo-panel {
         width: 100%;
     }
-    #staff-interest .photo-list .photo-panel:last-child {
+    #staff-interest .photo-list .photo-panel:nth-last-of-type(-n+2) {
         display: none;
     }
 }
