@@ -43,3 +43,7 @@
 .news-container .breadcrumb {
     margin: 1rem 0 1rem 0;
 }
+
+.article_content {
+    margin-bottom: 4em;
+}

@@ -59,3 +59,14 @@
 .covid-notice--hidden {
     display: none;
 }
+
+.container-fluid.statement-on-racism {
+    background:#0e0e0e;
+    color: #e6e6e6;
+    font-size: 18px;
+}
+
+.container-fluid.statement-on-racism a {
+    color: white;
+    font-weight: 600;
+}
