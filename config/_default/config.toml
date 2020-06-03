@@ -22,3 +22,5 @@ summaryLength = 10
     showFloatingHelpButton = true
     showBetaButton = true
     imageBaseURL = "https://library.bc.edu/images"
+[markup.goldmark.renderer]
+    unsafe= true

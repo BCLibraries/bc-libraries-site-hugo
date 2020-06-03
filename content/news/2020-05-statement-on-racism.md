@@ -13,7 +13,16 @@ Once again, we are saddened by the crimes in our nation being committed by those
 
 All forms of bigotry and racism are unethical, anti-intellectual, and wrongheaded. As librarians, openness to ideas and rational dialogue are fundamental to our being. We believe that racism and intolerance are unacceptable. Our [Equity, Diversity, and Inclusion Values Statement](https://libguides.bc.edu/edi) begins: “The Boston College Libraries acknowledge historical, structural, and systemic injustice. The struggle against racism, prejudice, stereotyping, and discrimination is central to our mission and profession.” Over the past year, library staff have actively engaged in discussions about racism, privilege, and social justice. We have been reviewing our policies, services, resources, collections, and priorities with attention to equity, diversity and inclusion. We are committed to educating ourselves while supporting those who have lived and learned through difficult experiences. We believe it is imperative that more voices are included. Therefore, we invite comments that will hold us accountable and improve the lives of everyone in the BC community. This work will not stop with an arbitrary deadline or goal, but will be ongoing.
 
-Library staff love to share information with everyone. Here are some links to articles, books, and videos. Please reach out to us if any help is needed in identifying and accessing additional resources. 
+Library staff love to share information with everyone. Here are some links to articles, books, and videos. Please reach out to us if any help is needed in identifying and accessing additional resources.
+
+<div class="statement-attribution">
+
+Thomas B. Wall, PhD<br>
+University Librarian, Boston College
+
+Although the following statement has my name attached to it, the document is a collaboration between our EDI Working Group,  our LEAG (Organizational Culture) group, and senior library management.</div>
+
+#### Resources
 
 * [From #BlackLivesMatter to Black Liberation](https://bc-primo.hosted.exlibrisgroup.com/permalink/f/l6ucgu/ALMA-BC21458828850001021)
 * [Freedom is a Constant Struggle](https://bc-primo.hosted.exlibrisgroup.com/permalink/f/l6ucgu/ALMA-BC51468955120001021)

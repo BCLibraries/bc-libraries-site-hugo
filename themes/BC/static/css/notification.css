@@ -70,3 +70,12 @@
     color: white;
     font-weight: 600;
 }
+
+.statement-attribution {
+    color: #555;
+    width: 80%;
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+    margin: 2em 0;
+    padding: 2em 0;
+}
