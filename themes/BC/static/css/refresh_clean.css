@@ -916,6 +916,11 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     background-size: cover;
     position: relative;
 }
+
+#featured-librarian {
+    background-size: auto;
+}
+
 #featured-librarian h2 {
     margin-bottom: 2rem;
 }

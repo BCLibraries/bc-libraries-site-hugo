@@ -1,14 +1,18 @@
-{{/* Set the featured librarian here */}}
-{{ $featured_librarian := .Site.Data.librarians.sally_wyman }}
-
+{{/* Choose a librarian from the list of featured librarians based
+    on the day of the year. Run a new build nightly to refresh
+    the featured librarian. */}}
+{{ $featured_librarians := .Site.Data.librarians.featured }}
+{{ $featured_librarian_idx := mod now.YearDay (len $featured_librarians) }}
+{{ $featured_librarian := index $featured_librarians $featured_librarian_idx }}
 
 {{/* 
     BEGIN Define template variables 
 */}}
 
-{{/* load supplementary data files */}}
-{{ $all_librarians_data := .Site.Data.librarians.all }}
-{{/* $all_subjects_data   := .Site.Data.librarians.subjects */}}
+{{/* Load librarian info from LibGuides API. This data is looked up
+    once and cached. To clear the cache, start Hugo with --ignoreCache 
+    set or delete the cache files: rm -r $TMPDIR/hugo_cache/ */}}
+{{ $all_librarians_data := getJSON "https://lgapi-us.libapps.com/1.1/accounts?site_id=94&key=a8d4316f3140239e36f101209d9f1b36&expand[]=subjects&expand[]=profile" }}
 
 {{/* Assign a default background image if one is not set in the librarian_name.json file */}}
 {{ $background := "https://library.bc.edu/images/homepage/featuredlibrarian/defaultbackground-1200x675.jpg" }}
@@ -56,7 +60,7 @@
 */}}
 
 <!-- FEATURED LIBRARIAN START -->
-<div class="container-fluid" id="featured-librarian" data-tag="ga-tag">
+<div class="container-fluid bg_{{ $featured_librarian.featured_background_type }}" id="featured-librarian" data-tag="ga-tag">
     <div class="container">
         <div class="row">
             <div class="combo-boxes">
