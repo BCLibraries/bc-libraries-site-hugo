@@ -2,7 +2,8 @@
     on the day of the year. Run a new build nightly to refresh
     the featured librarian. */}}
 {{ $featured_librarians := .Site.Data.librarians.featured }}
-{{ $featured_librarian_idx := mod now.YearDay (len $featured_librarians) }}
+{{ $max_idx := sub (len $featured_librarians) 1 }}
+{{ $featured_librarian_idx := mod now.YearDay $max_idx }}
 {{ $featured_librarian := index $featured_librarians $featured_librarian_idx }}
 
 {{/* 

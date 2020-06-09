@@ -23,6 +23,60 @@
         ]
     },
     {
+        "name": "Chris Strauber",
+        "active": true,
+        "profile_id": "145218",
+        "featured_background": "https://library.bc.edu/images/backgrounds/background-maroon-xv.png",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "pattern",
+        "featured_guides": [
+            {
+                "guide_name": "Classical Studies",
+                "guide_link": "https://libguides.bc.edu/subjects/classical-studies"
+            },
+            {
+                "guide_name": "Philosophy",
+                "guide_link": "https://libguides.bc.edu/subjects/philosophy"
+            },
+            {
+                "guide_name": "Theology",
+                "guide_link": "https://libguides.bc.edu/subjects/theology"
+            }
+        ]
+    },
+    {
+        "name": "Julia Hughes",
+        "active": true,
+        "profile_id": "102982",
+        "featured_background": "https://library.bc.edu/images/backgrounds/background-maroon-xv.png",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "waves",
+        "featured_guides": [
+            {
+                "guide_name": "Asian Studies",
+                "guide_link": "https://libguides.bc.edu/subjects/asian-studies"
+            },
+            {
+                "guide_name": "International Studies",
+                "guide_link": "https://libguides.bc.edu/subjects/international-studies"
+            },
+            {
+                "guide_name": "Islamic Civilization & Societies",
+                "guide_link": "https://libguides.bc.edu/subjects/islamic-civilization-societies"
+            },
+            {
+                "guide_name": "Law",
+                "guide_link": "https://libguides.bc.edu/subjects/law"
+            },            
+            {
+                "guide_name": "Political Science & Government",
+                "guide_link": "https://libguides.bc.edu/subjects/political-science-government"
+            }
+        ]
+    },
+    {
         "name": "Sally Wyman",
         "active": true,
         "profile_id": "10674",
@@ -48,7 +102,7 @@
         "featured_background": "https://library.bc.edu/images/backgrounds/background-slate-linen.png",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "pattern",
+        "featured_background_type": "waves",
         "featured_guides": [
             {
                 "guide_name": "Education Resource Center (ERC)",
