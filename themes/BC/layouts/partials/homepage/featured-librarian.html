@@ -61,7 +61,7 @@
 */}}
 
 <!-- FEATURED LIBRARIAN START -->
-<div class="container-fluid bg_{{ $featured_librarian.featured_background_type }}" id="featured-librarian" data-tag="ga-tag">
+<div class="container-fluid bg-{{ $featured_librarian.featured_background_type }}" id="featured-librarian" data-tag="ga-tag">
     <div class="container">
         <div class="row">
             <div class="combo-boxes">
@@ -117,8 +117,10 @@
 </div>
 <!-- FEATURED LIBRARIAN END -->
 
+{{ if $featured_librarian.featured_background }}
 <style>
     #featured-librarian {
         background-image: url({{ $background }});
     }
 </style>
+{{ end }}
