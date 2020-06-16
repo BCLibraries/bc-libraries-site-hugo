@@ -301,7 +301,16 @@ a {
 }
 
 #search-panel #search-links {
-    padding-top: 0
+    padding-top: 0;
+    text-align: center;
+}
+
+.browse-link {
+    font-weight: 600;
+}
+
+.advanced-search-link {
+    padding-right: 2em;
 }
 
 #search-panel #search-links a, #search-panel #search-links a:visited {
@@ -337,11 +346,14 @@ label.checkbox-inline.online-only-label {
 }
 
 button.whats-this, button.whats-this:active, button.whats-this:hover {
-    /*color: hsl(207, 59%, 85%); */
+    color: hsl(0, 0%, 100%);
     text-decoration: none;
-    /*background: none;*/
+    background: none;
     border: none;
     cursor: help;
+    position: absolute;
+    top: -4px
+    font-style: italic;
 }
 
 .whats-this-message {
