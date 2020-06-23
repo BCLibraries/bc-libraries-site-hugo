@@ -17,5 +17,13 @@
 <!--script type="text/javascript" src="{{ .Site.BaseURL }}js/libraryinfo.js"></script-->
 <!-- END MEGA MENU SCRIPTS -->
 
+<script src="https://arc.bc.edu/notices/downtime-notices-client.js"></script>
+<script>
+    // Only run in test for now.
+    BCLibDowntimeNotices({
+        styles: true
+    });
+</script>
+
 {{/* Uncomment to enable COVID notice on bottom. */}}
 <script src="{{ .Site.BaseURL }}js/covid-notice.js"/></script>
