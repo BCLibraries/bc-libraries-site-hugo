@@ -1228,10 +1228,15 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 /* END top-columns section on homepage */
 /*                                     */
 
-.alert-hours {
+#lib-footer .alert-hours {
     padding: .5rem 1rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: .5rem;
+}
+
+.alert-hours a, .alert-hours a:hover, #lib-footer .alert-hours a, #lib-footer .alert-hours a:hover {
+    color: darkslateblue;
+    font-weight: 600;
 }
 
 @media ( max-width: 1199px ) {
