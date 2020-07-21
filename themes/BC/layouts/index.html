@@ -5,7 +5,6 @@
 {{ end }}
 
 {{ define "pagestyles" }}
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/news-ql-row.css?id={{ now.Unix }}"/>
 {{ end }}
 
 {{ define "main" }}
@@ -40,8 +39,6 @@
 {{ end }}
 
 {{ define "pagescripts" }}
-    <script type="text/javascript" src="{{ .Site.BaseURL }}js/typeahead.bundle.min.js"></script>
-    <script type="text/javascript" src="{{ .Site.BaseURL }}js/bclib-typeahead.js"></script>
     <script type="text/javascript">
         // Various glue scripts for the front page.
         (function () {
