@@ -24,7 +24,7 @@
         '</div>' +
         '<div class="covid-notice covid-notice--hidden">' +
         '<a href="https://libguides.bc.edu/servicesupdate">BC Libraries Services Update - COVID-19</a>' +
-        '<div class="closed-notice" style="font-size: 16px">Most BC Libraries are closed. Burns Library is open <a href="https://libguides.bc.edu/burns/services/covid19access">by appointment</a>. Remote services remain operational.' +
+        '<div class="closed-notice" style="font-size: 16px">Most BC Libraries are closed. <a href="https://libcal.bc.edu/rooms.php?i=16983">O\'Neill Library</a> and <a href="https://libguides.bc.edu/burns/services/covid19access">Burns Library</a> are open by appointment.' +
         '</div>' +
         '<button class="covid-notice__close-button">Close</button>' +
         '</div>';
