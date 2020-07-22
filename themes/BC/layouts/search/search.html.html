@@ -3,10 +3,10 @@
 {{ define "pagestyles" }}
 <script>
     if (document.location.href.indexOf('proxy.bc.edu') > -1) {
-        document.location.href = '{{ .Site.BaseURL }}search?' + window.location.search;
+        document.location.href = '{{ relref . "/search"}}?' + window.location.search;
     }
 </script>
-<link rel="stylesheet" href="{{ .Site.BaseURL }}bcbento/css/bento.css?v=2019103101">
+<link rel="stylesheet" href="{{ relref . "/"}}bcbento/css/bento.css?v=2019103101">
 {{ end }}
 
 {{ define "main" }}
@@ -71,6 +71,6 @@
     var s = n;
     a()
 }([])</script>
-<script src="{{ .Site.BaseURL }}bcbento/static/js/2.6a51df1b.chunk.js"></script>
-<script src="{{ .Site.BaseURL }}bcbento/static/js/main.d324b7a9.chunk.js"></script>
+<script src="{{ relref . "/"}}bcbento/static/js/2.6a51df1b.chunk.js"></script>
+<script src="{{ relref . "/"}}bcbento/static/js/main.d324b7a9.chunk.js"></script>
 {{ end }}

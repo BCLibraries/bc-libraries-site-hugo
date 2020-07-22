@@ -4,7 +4,7 @@
         <p>The History Department in Stokes Hall features exhibits collaborated with the Boston College 
             Libraries for the course HS600 Making History Public. The exhibits change each semester.</p>
         {{ if ne .Params.archivepage true }}
-        <p><a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}" class="arrow">Return to the {{ .Site.Params.stokes }} Exhibits</a></p>
+        <p><a href="{{ relref . "/exhibits/stokes"}}" class="arrow">Return to the {{ .Site.Params.stokes }} Exhibits</a></p>
         {{ end }}
     </div>
 </div>
