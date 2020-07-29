@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "../theme/bcbento/precache-manifest.eaacf7ad5aa1595b05d4f0d692f75546.js"
+  "../theme/bcbento/precache-manifest.7644dd71664de9900a8fcca276615de1.js"
 );
 
 workbox.clientsClaim();
