@@ -27,6 +27,13 @@
 
 
 /* Mega Menu */
+
+/* override custom LG style to zero-out row margins */
+.homepagerefresh #megamenu-refresh .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
 .homepagerefresh #megamenu-refresh .navbar-default .navbar-brand {
     text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85);
     color: #fff;
