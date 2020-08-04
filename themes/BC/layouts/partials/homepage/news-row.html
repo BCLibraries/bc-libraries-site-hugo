@@ -27,7 +27,7 @@
             <div class="row news-bottom">
                 {{ range first 4 (after 2 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news")) }}
                 <div class="col-xs-6 col-sm-3 col-md-3 news-content">
-                    <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}"></a>
+                    <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">
                         <div class="newsitem">                        
                             <div class="newstext">
                                 <p class="newslink">{{ .Title | safeHTML }}</p>
