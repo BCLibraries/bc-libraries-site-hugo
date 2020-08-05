@@ -10,4 +10,4 @@ imagethumb: "2020-07/see-what-staff-are-reading-promo.jpg"
 type: "news"
 ---
 
-Want to be anti-racist but concerned about COVID-19? Librarians can help.
+A collection of library staff recommendations. See what we're reading, and maybe find a new favorite book!

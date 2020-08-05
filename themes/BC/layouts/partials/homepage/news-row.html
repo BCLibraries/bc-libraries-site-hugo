@@ -3,43 +3,45 @@
         <div class="" id="news" data-tag="ga-tag">
             <h2>News &amp; Events</h2>
 
-            <div class="row news-top">
-                {{/* convoluted nested where clause... */}}
-                {{/* checks for:
-                    1) article has a thumbnail
-                    2) article is not expired
-                    3) article has a "news" type
-                */}}
-                {{ range first 2 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news") }}
-                <div class="col-xs-12 col-sm-6 col-md-6 news-content">
-                    <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">
-                        <div class="newsitem">                        
-                            <div class="newstext">
-                                <p class="newslink">{{ .Title | safeHTML }}</p>
-                            </div>
+            <div class="">
+                <div class="row news-content-row">
+                    {{/* convoluted nested where clause... */}}
+                    {{/* checks for:
+                        1) article has a thumbnail
+                        2) article is not expired
+                        3) article has a "news" type
+                    */}}
+                    {{ range first 2 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news") }}
+                    <section class="col-xs-12 col-sm-6 col-md-6 news-content news-content-large">
+                        <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">                     
                             <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
-                        </div>
-                    </a>
-                </div>
-                {{ end }}
-            </div>
-            
-            <div class="row news-bottom">
-                {{ range first 4 (after 2 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news")) }}
-                <div class="col-xs-6 col-sm-3 col-md-3 news-content">
-                    <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">
-                        <div class="newsitem">                        
-                            <div class="newstext">
-                                <p class="newslink">{{ .Title | safeHTML }}</p>
+                            <div class="news-section-text">
+                                <div class="news-section-date">{{ .Date.Format "Mon Jan 2, 2006" }}</div>
+                                <div class="news-section-title">{{ .Title | safeHTML }}</div>
+                                <div class="news-section-content-blurb">{{ .Content }}</div>
                             </div>
-                            <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}" />
-                        </div>
-                    </a>
+                        </a>
+                    </section>
+                    {{ end }}
                 </div>
-                {{ end }}
+            
+                <div class="row news-content-row">
+                    {{ range first 4 (after 2 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news")) }}
+                    <div class="col-xs-6 col-sm-3 col-md-3 news-content news-content-small">
+                        <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">
+                            <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}" />
+                            <div class="news-section-text">
+                                <div class="news-section-date">{{ .Date.Format "Mon Jan 2, 2006" }}</div>
+                                <div class="news-section-title">{{ .Title | safeHTML }}</div>
+                                <!--div class="news-section-content-blurb">{{ .Content }}</div-->
+                            </div>
+                        </a>
+                    </div>
+                    {{ end }}
+                </div>
             </div>
 
-            <div class="more-news"><a href="/news">See all news</a> &rangle;</div>
+            <div class="row col-md-12 more-news"><a href="/news">See all news</a> &rangle;</div>
         </div>
     </div>
 </div>
