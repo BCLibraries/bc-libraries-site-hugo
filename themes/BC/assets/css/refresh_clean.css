@@ -18,6 +18,11 @@ body {
     overflow: hidden;
 }
 
+.alert-hours {
+    margin-bottom:1rem;
+    padding: 1rem;
+}
+
 /* links */
 a {
     color: #2f7ab9; /* BC link color */
