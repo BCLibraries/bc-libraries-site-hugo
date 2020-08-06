@@ -493,3 +493,23 @@ ol.faq-results-list {
 .hathi-trust-link .fa-external-link {
     margin-left: .5em;
 }
+
+.finding-aid-thumb {
+    opacity: .5;
+}
+
+.finding-aid-link {
+    margin-top: .5em;
+}
+
+.finding-aid-link__icon {
+    opacity: .5;
+    width: 16px;
+    margin-right: .5em;
+    bottom: 2px;
+    position: relative;
+}
+
+.finding-aid-link .fa-external-link {
+    margin-left: .25em;
+}

@@ -5,6 +5,7 @@ THEME_DIR=$(dirname "$0")/../themes/BC
 BENTO_THEME_DIR=${THEME_DIR}/static/bcbento
 STATIC_THEME_DIR=${BENTO_THEME_DIR}/static
 JS_THEME_DIR=${STATIC_THEME_DIR}/js
+MEDIA_THEME_DIR=${STATIC_THEME_DIR}/media
 SEARCH_LAYOUT=${THEME_DIR}/layouts/search/search.html.html
 
 #Options
@@ -113,6 +114,9 @@ function clean_old_files() {
 function copy_build_files() {
   echo "Copy over new js directory..."
   cp -r "${path_to_client}"/build/static/js "${STATIC_THEME_DIR}" || error_exit "Couldn't copy js directory"
+
+    cp -r "${path_to_client}"/build/static/media "${STATIC_THEME_DIR}" || error_exit "Couldn't copy media directory"
+
 
   echo "Copy over new stray javascript and json..."
   cp "${path_to_client}"/build/*js* "${BENTO_THEME_DIR}" || error_exit "Couldn't copy stray js"
