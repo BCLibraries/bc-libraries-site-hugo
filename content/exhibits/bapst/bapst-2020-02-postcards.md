@@ -2,7 +2,7 @@
 title: "Souvenirs"
 subtitle: "Postcard Portraits, 1890 - 1915"
 draft: false
-active: true
+active: false
 date: 2020-02-04T10:56:14-05:00
 daterange: "February - April 2020"
 year: "2020"

@@ -2,7 +2,7 @@
 title: "Devoted Catholic & Determined Writer"
 subtitle: "Louise Imogen Guiney in Boston"
 draft: false
-active: true
+active: false
 date: 2020-01-31T01:24:12-04:00
 daterange: "February - May 2020"
 year: "2020"
