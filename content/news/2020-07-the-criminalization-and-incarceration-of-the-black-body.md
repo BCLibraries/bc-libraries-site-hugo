@@ -10,4 +10,4 @@ imagethumb: "2020-07/criminalization-and-incarceration-of-the-black-body-promo.j
 type: "news"
 ---
 
-The list combines a selection of recent studies examining the contemporary system of institutional inequality and its historical development alongside a few of the seminal theoretical works that shaped our current discourse.
+The history of the United States is a history of struggle for civil rights. This reading list highlights some of the studies examining that gross inequality of justice along predominately racial lines focusing on the criminalization of blackness across the United States after the Second World War.
