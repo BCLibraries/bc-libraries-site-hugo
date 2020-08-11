@@ -43,11 +43,17 @@
 #news .news-content.news-content-large .news-section-text .news-section-title {
     font-size: 2rem;
 }
+
 #news .news-content a:hover .news-section-title,
 #news .news-content a:focus .news-section-title {
     text-decoration: underline;
 }
+
 #news .news-content a:hover,
+#news .news-content a:focus {
+    opacity: .8;
+} 
+
 #news .news-content a:focus {
     outline: 1px solid blue;
     outline-offset: 0;
