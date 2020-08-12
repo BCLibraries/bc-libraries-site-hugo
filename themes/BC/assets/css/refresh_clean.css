@@ -769,7 +769,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 }
 #services-highlight .highlight-boxes .panel {
     width: 100%;
-    border: 1px solid rgb(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 #services-highlight .highlight-boxes .panel-heading {
     padding: 5px 15px 2px 15px;
@@ -1005,7 +1005,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     background-color: #fff;
     border-radius: 8px;
     height: 100%;
-    border: 1px solid rgb(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 #featured-librarian .combo-boxes-footer p {
     border-top: 1px solid #ccc;

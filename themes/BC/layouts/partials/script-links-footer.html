@@ -1,0 +1,45 @@
+{{/* Javascripts used on all pages */}}
+
+{{/* Local scripts */}}
+{{ $bootstrap_hover_dropdown_js := resources.Get "js/bootstrap-hover-dropdown.min.js" }}
+{{ $jquery_hoverintent_js := resources.Get "js/jquery.hoverIntent.minified.js" }}
+{{ $megamenu_js := resources.Get "js/megamenu.js" }}
+{{ $libhours_js := resources.Get "js/libhoursv2.js" }}
+{{ $covid_notice_js := resources.Get "js/covid-notice.js" }}
+
+{{/* Bundle all the scripts */}}
+{{ $all_scripts := slice $bootstrap_hover_dropdown_js $jquery_hoverintent_js $megamenu_js $libhours_js $covid_notice_js }}
+{{ $bundled_scripts := $all_scripts | resources.Concat "js/site-scripts.js" }}
+
+{{/* Minify and fingerprint the bundled scripts */}}
+{{ $minified_scripts := $bundled_scripts | minify }}
+{{ $fingerprinted_scripts := $minified_scripts | fingerprint }}
+
+{{/* Link to the minified bundle. */}}
+<script type="text/javascript" src="{{ $fingerprinted_scripts.RelPermalink }}"></script>
+
+{{/* Unbundled inline scripts. */}}
+<!-- This script handles the showing/hiding of all of the libraryH3lp divs. -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        (function () {
+            var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
+            x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?multi,poll";
+            var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
+        })();
+
+        $("#chat-icon-link").click(function (e) {
+            e.preventDefault();
+            var active = $(".aal-box .libraryh3lp > a").filter(":visible");
+            if (active && active.length) {
+                active.first().click();
+            } else {
+                console.log("can't locate active libraryh3lp element!");
+                alert("Sorry, library chat is inactive at the moment. Try again later, or use another method to contact a library staff member.");
+            }
+        });
+    });
+</script>
+
+{{/* Script bundle for use in LibGuides */}}
+{{ "<!--" | safeHTML }}{{ $minified_scripts.RelPermalink }}{{ "-->" | safeHTML }}

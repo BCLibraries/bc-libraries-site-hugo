@@ -8,7 +8,7 @@
     <div class="col-md-12" id="search-panel" data-tag="ga-tag">
         <div class="row">
             <div class="col-md-12">
-                <form action="{{ .Site.BaseURL }}search">
+                <form action="{{ relref . "/search"}}">
                     <div class="input-group">
                         <label for="lib-search-box" class="sr-only">Search</label>
                         <input class="form-control" name="any" placeholder="Search for books, articles, journals, databases" id="lib-search-box">

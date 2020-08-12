@@ -3,19 +3,18 @@
 {{ define "header" }}
 <!-- BEGIN HEADER -->
 <div id="header" class="fph_header">
-    <a href="{{ .Site.BaseURL }}{{ .Section }}" class="facpubtitle" title="Back to the Faculty Publication Highlight's archives"><h1>Faculty Publication Highlights</h1> </a>
+    <a href="{{ relref . "/" }}{{ .Section }}" class="facpubtitle" title="Back to the Faculty Publication Highlight's archives"><h1>Faculty Publication Highlights</h1> </a>
 </div>
 <!-- END HEADER -->
 {{ end }}
 
 {{ define "pagestyles" }}
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/facpub_refresh.css"/>
 {{ end }}
 
 {{ define "main" }}
 <div class="facpub_wrap">
     <ol class="breadcrumb" id="s-lib-bc-list">
-        <li id="s-lib-bc-customer"><a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a></li>
+        <li id="s-lib-bc-customer"><a href="{{ .RelPermalink }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a></li>
         <li id="s-lib-bc-site" class="active">Faculty Publication Highlights</li>
     </ol>
 

@@ -5,7 +5,7 @@
             level Theology and Ministry Library. Exhibits are sought which are consistent with the Jesuit 
             mission of Boston College and, more specifically, with the mission and values of the School of Theology and Ministry.</p>
         {{ if ne .Params.archivepage true }}
-        <p><a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}" class="arrow">Return to the {{ .Site.Params.tml }} Exhibits</a></p>
+        <p><a href="{{ relref . "/exhibits/tml"}}" class="arrow">Return to the {{ .Site.Params.tml }} Exhibits</a></p>
         {{ end }}
     </div>
 </div>
