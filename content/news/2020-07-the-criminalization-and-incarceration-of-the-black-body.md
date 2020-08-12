@@ -10,4 +10,4 @@ imagethumb: "2020-07/criminalization-and-incarceration-of-the-black-body-promo.j
 type: "news"
 ---
 
-Want to be anti-racist but concerned about COVID-19? Librarians can help.
+The list combines a selection of recent studies examining the contemporary system of institutional inequality and its historical development alongside a few of the seminal theoretical works that shaped our current discourse.
