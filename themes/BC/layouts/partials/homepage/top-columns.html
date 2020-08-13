@@ -27,13 +27,28 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3 col-sm-12">
+        <div class="row column-items">
+            <div class="col-md-3 col-sm-12 column-item">
+                <div id="at-a-glance-container">
+                    <div class="" id="at-a-glance" data-tag="ga-tag">
+                        <h2>At a glance</h2>
+                        <p class="intro">New temporary library policies</p>
+                        <div class="alert alert-success" role="alert">
+                            <i class="fa fa-print"></i> More locations to print
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                            <i class="fa fa-cutlery" id="container"><i class="fa fa-ban" id="nested"></i></i> No eating at any library
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            <i class="fa fa-clock-o"></i> Reduced seating &amp; hours
+                        </div>
+                    </div>
+                </div>
                 <div id="aal-home-container">
                     {{ partial "homepage/top-column-ask-a-librarian.html" . }}
                 </div>
             </div>
-            <div class="col-md-9 col-sm-12">
+            <div class="col-md-9 col-sm-12 column-item">
                 <div id="services-highlight-container">
                     {{ partial "homepage/top-column-services-highlight.html" . }}
                 </div>

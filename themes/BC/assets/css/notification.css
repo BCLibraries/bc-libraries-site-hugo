@@ -109,3 +109,34 @@
     font-size: 56px;
     font-weight: 600;
 }
+
+#at-a-glance-container {
+    font-size: larger;
+    margin-bottom: 2rem;
+}
+
+#at-a-glance-container i {
+    padding-right: .5rem;
+    font-size: 22px;
+}
+#at-a-glance-container i#container {
+    position: relative;
+    padding-right: .5rem;
+}
+
+#at-a-glance-container i#nested {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 200%;
+    color: rgba(217, 83, 79, 0.7);
+}
+
+#at-a-glance .alert {
+    padding: 8px 2px 8px 12px;
+    margin-bottom: .75rem;
+}
+
+#at-a-glance .alert:last-child {
+    margin-bottom: 0;
+}
