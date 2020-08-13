@@ -677,7 +677,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     background-size: cover;*/
     background-color: #fff;
     padding-bottom: 3rem;
-    padding-top: 2rem;
+    /*padding-top: 2rem;*/
 }
 #top-columns .row {
     padding-top:0;
@@ -685,7 +685,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 }
 #services-highlight-container {
     background-color: #fcf8e3;
-    border: 1px solid #faebcc;
+    /*border: 1px solid #faebcc;*/
 }
 #top-columns .column-items {
     display: flex;
@@ -785,6 +785,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     /*min-height: 55px;*/
     padding: 0;
     margin-bottom: 0;
+    font-weight: 600;
 }
 #services-highlight .highlight-boxes .panel ul {
     padding-left: 2rem;
@@ -793,7 +794,10 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     padding-bottom: .5rem;
 }
 #services-highlight .highlight-boxes .panel-body {
-    padding: 0 15px 0px 15px;
+    padding: 0 10px 0px 10px;
+}
+#services-highlight .highlight-boxes .embedded-video .panel-body {
+    padding: 10px 10px 10px 10px;
 }
 #services-highlight .highlight-boxes .panel-body a {
     font-weight: 600;

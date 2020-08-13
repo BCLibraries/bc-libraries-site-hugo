@@ -101,6 +101,7 @@
 .ql .list-group {
     margin-bottom: 0px;
     list-style: none;
+    font-size: larger;
 }
 
 .ql .list-group-item {
@@ -108,6 +109,7 @@
     border: 0px solid #fff;
     padding: 10px 5px;
     border-radius: 0px;
+    color: #000;
 }
 
 .ql .fa-lg {

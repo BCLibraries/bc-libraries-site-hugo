@@ -1,9 +1,8 @@
-<div class="container-fluid statement-on-racism">
+<div class="container-fluid welcome-back-message">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="sr-only">Statement on Racism and Current Events</h2>
-                Read the <a href="/news/2020/06/statement-on-racism/">Boston College Libraries Statement on Racism and Current Events</a>
+                <h2>Welcome back students!</h2>
             </div>
         </div>
     </div>
@@ -11,21 +10,33 @@
 <div class="container-fluid" id="top-columns">
     <div class="container">
         <div class="row column-items">
-            <div class="col-md-3 col-sm-5 column-item">
-                <div class="column-combo row">
-                    <div class="col-md-12 col-sm-12 col-xs-6" id="quicklink-container">
-                        {{ partial "homepage/top-column-quicklinks.html" . }}
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-6" id="aal-home-container">
-                        {{ partial "homepage/top-column-ask-a-librarian.html" . }}
-                    </div>
+            <div class="col-md-3 col-sm-12 column-item">
+                <div id="quicklink-container">
+                    {{ partial "homepage/top-column-quicklinks.html" . }}
                 </div>
             </div>
-            <div class="col-md-5 col-sm-7 column-item" id="services-highlight-container">
-                {{ partial "homepage/top-column-services-highlight.html" . }}
+            <div class="col-md-9 col-sm-12 column-item">
+                <div class="col-md-12 welcome-back-message">
+                    <p>The Boston College Libraries are ready to provide a full suite of services <em>(with some modifications, of course)</em>. 
+                        <a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Research consultations</a>, <a href="https://libguides.bc.edu/library-instruction">instruction classes</a>, and <a href="https://libguides.bc.edu/ask-a-librarian">reference services</a> will be online.  
+                        Nearly all <a href="https://library.bc.edu/courses">Course Reserves</a> will be online.  
+                        To meet CDC and Massachusetts guidelines, there is reduced seating, <a href="https://libguides.bc.edu/hours">hours</a>, and public technology. 
+                        Because masks should remain on, all libraries will have a "no food" policy, although most will still allow drinks. 
+                        <em>Check it out</em> &mdash; the 5th floor study area in O'Neill was enlarged to provide more seating overlooking downtown Boston!</p>
+                    <p>For the latest information, consult the BC Libraries' homepage and the <a href="https://libguides.bc.edu/servicesupdate">Library Updates page</a>.</p>
+                </div>
             </div>
-            <div class="col-md-4 col-sm-12 column-item">
-                {{ partial "homepage/top-column-staff-interest.html" . }}
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <div id="aal-home-container">
+                    {{ partial "homepage/top-column-ask-a-librarian.html" . }}
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-12">
+                <div id="services-highlight-container">
+                    {{ partial "homepage/top-column-services-highlight.html" . }}
+                </div>
             </div>
         </div>
     </div>
