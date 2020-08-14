@@ -79,12 +79,12 @@
     margin: 2em 0;
     padding: 2em 0;
 }
-
 .welcome-back-message {
     background-color: rgba(255,205,63,1);
     font-size: 22px;
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
     line-height: 2;
+    height: 100%;
 }
 
 .welcome-back-message em {
@@ -105,9 +105,18 @@
     border-bottom: 2px solid blue;
 }
 
-.welcome-back-message h2 {
+.welcome-back-message-header {
+    padding-bottom: 0;
+}
+
+.welcome-back-message-header h2 {
     font-size: 56px;
     font-weight: 600;
+    margin: .5rem 0;
+}
+
+.welcome-back-video {
+    padding: 0rem 2rem 2rem 2rem;
 }
 
 #at-a-glance-container {
