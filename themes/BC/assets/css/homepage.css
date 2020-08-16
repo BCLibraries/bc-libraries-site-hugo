@@ -1,6 +1,4 @@
-/* NEWS ROW STUFF FROM SUMMER 2019 */
-
-/* news */
+/* News */
 
 #db-rg-hours {
     /*border-top: solid 9px #dccaa0;*/
@@ -84,7 +82,7 @@
     text-align: right;
 }
 
-/* quick links */
+/* Quick Links */
 
 .ql-news .ql h2 {
     text-align: center;
@@ -101,7 +99,7 @@
 .ql .list-group {
     margin-bottom: 0px;
     list-style: none;
-    font-size: larger;
+    font-size: 16px;
 }
 
 .ql .list-group-item {
@@ -116,7 +114,96 @@
     padding-right: 5px;
 }
 
-/* MEDIA QUERIES */
+/* Ask A Librarian */
+
+#aal-home-container h3 {
+    font-size: 18px;
+}
+
+#aal-home-container .aal-box-small {
+    font-size: 16px;
+}
+
+/* Welcome back message */
+
+#welcome-back-message-container-mobile {
+    background-color: rgba(255,205,63,1);
+}
+.welcome-back-message,
+.welcome-back-message-header {
+    background-color: rgba(255,205,63,1);
+    font-size: 22px;
+    padding-bottom: 2rem;
+    line-height: 2;
+    height: 100%;
+}
+
+.welcome-back-message-header {
+    padding-bottom: 0;
+}
+
+.welcome-back-message em {
+    background-color: rgba(255,255,0, .5);
+    font-style: normal;
+}
+
+.welcome-back-message a {
+    border-bottom: 2px solid #000;
+    font-weight: 600;
+    color: #000;
+}
+
+.welcome-back-message a:focus,
+.welcome-back-message a:hover {
+    text-decoration: none;
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.welcome-back-message-header h2 {
+    font-size: 56px;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+
+.welcome-back-video {
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+/* At A Glance */
+
+#at-a-glance-container {
+    font-size: larger;
+    margin-bottom: 2rem;
+}
+
+#at-a-glance-container i {
+    padding-right: .5rem;
+    font-size: 22px;
+}
+#at-a-glance-container i#container {
+    position: relative;
+    padding-right: .5rem;
+}
+
+#at-a-glance-container i#nested {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 200%;
+    color: rgba(217, 83, 79, 0.7);
+}
+
+#at-a-glance .alert {
+    padding: 8px 2px 8px 12px;
+    margin-bottom: .75rem;
+}
+
+#at-a-glance .alert:last-child {
+    margin-bottom: 0;
+}
+
+/* media queries */
 @media (max-width: 991px) {
     .ql {
         height: auto;
@@ -126,5 +213,19 @@
     .ql li {
         display: block;
         font-size: larger;
+    }
+    .welcome-back-video {
+        padding: 0;
+    }
+    #welcome-back-message-container-full {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    #welcome-back-message-container-mobile {
+        display: none;
+    }
+    .ql .list-group {
+        font-size: large;
     }
 }
