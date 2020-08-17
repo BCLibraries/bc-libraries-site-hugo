@@ -1,31 +1,47 @@
-<div class="container-fluid statement-on-racism">
+{{/* This div adds in a top-level banner mesage just below the search bar and above the page contents */}}
+<div class="container-fluid welcome-back-message welcome-back-message-header">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="sr-only">Statement on Racism and Current Events</h2>
-                Read the <a href="/news/2020/06/statement-on-racism/">Boston College Libraries Statement on Racism and Current Events</a>
+                <h2>Welcome back students!</h2>
             </div>
         </div>
     </div>
 </div>
+
+{{/* The Welcome Back message is rearranged on mobile, and the easiest way to handle this is with a 
+    duplicate container that is shown/hidden based on screensize */}}
+<div class="container-fluid" id="welcome-back-message-container-mobile">
+    <div class="container">
+        {{ partial "homepage/top-column-welcome-back-message.html" . }}
+    </div>
+</div>
+
 <div class="container-fluid" id="top-columns">
     <div class="container">
         <div class="row column-items">
-            <div class="col-md-3 col-sm-5 column-item">
-                <div class="column-combo row">
-                    <div class="col-md-12 col-sm-12 col-xs-6" id="quicklink-container">
+            <div class="col-md-3 col-sm-12">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12" id="at-a-glance-container">
+                        {{ partial "homepage/top-column-at-a-glance.html" . }}
+                    </div>
+                    <div class="col-md-12 col-sm-6 col-xs-6" id="quicklink-container">
                         {{ partial "homepage/top-column-quicklinks.html" . }}
                     </div>
-                    <div class="col-md-12 col-sm-12 col-xs-6" id="aal-home-container">
+                    <div class="col-md-12 col-sm-6 col-xs-6" id="aal-home-container">
                         {{ partial "homepage/top-column-ask-a-librarian.html" . }}
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 col-sm-7 column-item" id="services-highlight-container">
-                {{ partial "homepage/top-column-services-highlight.html" . }}
-            </div>
-            <div class="col-md-4 col-sm-12 column-item">
-                {{ partial "homepage/top-column-staff-interest.html" . }}
+            <div class="col-md-9 col-sm-12">
+                <div class="row">
+                    <div class="col-md-12" id="welcome-back-message-container-full">
+                        {{ partial "homepage/top-column-welcome-back-message.html" . }}
+                    </div>
+                    <div class="col-md-12" id="services-highlight-container">
+                        {{ partial "homepage/top-column-services-highlight.html" . }}
+                    </div>
+                </div>
             </div>
         </div>
     </div>

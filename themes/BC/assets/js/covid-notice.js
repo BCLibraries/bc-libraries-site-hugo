@@ -23,8 +23,8 @@
         '</button>' +
         '</div>' +
         '<div class="covid-notice covid-notice--hidden">' +
-        '<a href="https://libguides.bc.edu/servicesupdate">BC Libraries Services Update - COVID-19</a>' +
-        '<div class="closed-notice" style="font-size: 16px">Most BC Libraries are closed. <a href="https://libcal.bc.edu/rooms.php?i=16983">O\'Neill Library</a> and <a href="https://libguides.bc.edu/burns/services/covid19access">Burns Library</a> are open by appointment.' +
+        '<a href="https://libguides.bc.edu/servicesupdate">BC Libraries Update - COVID-19</a>' +
+        '<div class="closed-notice" style="font-size: 16px">Most libraries are open, but only to the BC students and staff and with limited hours. The Law Library will open on August 24th. The Burns Library is open by appointment only.' +
         '</div>' +
         '<button class="covid-notice__close-button">Close</button>' +
         '</div>';
