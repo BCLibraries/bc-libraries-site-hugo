@@ -12,8 +12,18 @@
     display: flex;
     flex-wrap: wrap;
 }
+/* Safari doesn't play well with floated elements and flex display */
+#news .news-content-row:before,
+#news .news-content-row:after {
+    display:none!important;
+}
 #news .news-content {
     display: flex; 
+}
+/* Safari doesn't play well with floated elements and flex display */
+#news .news-content:before,
+#news .news-content:after {
+    display:none!important;
 }
 #news .news-content a {
     display: block;

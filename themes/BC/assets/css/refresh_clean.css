@@ -207,7 +207,11 @@ a {
 #bclib-header #bclib-header-form form {
     display: flex;
 }
-
+/* Safari doesn't play well with floated elements and flex display */
+#bclib-header #bclib-header-form form:before,
+#bclib-header #bclib-header-form form:after {
+    display:none!important;
+}
 #bclib-header input#bclib-header-search {
     font-size: 14px;
     color: #000;
@@ -691,14 +695,29 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     display: flex;
     flex-wrap: wrap;
 }
+/* Safari doesn't play well with floated elements and flex display */
+#top-columns .column-items:before,
+#top-columns .column-items:after {
+    display:none!important;
+}
 #top-columns .column-item {
     display: flex;
     flex-flow: column;
+}
+/* Safari doesn't play well with floated elements and flex display */
+#top-columns .column-item:before,
+#top-columns .column-item:after {
+    display:none!important;
 }
 #top-columns .column-combo {
     display: flex;
     flex-wrap: wrap;
     flex-flow: column;
+}
+/* Safari doesn't play well with floated elements and flex display */
+#top-columns .column-combo:before,
+#top-columns .column-combo:after {
+    display:none!important;
 }
 #top-columns .column-sub-item {
     flex-wrap: wrap;
@@ -763,9 +782,19 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     flex-wrap: wrap;
     padding-bottom: 0;
 }
+/* Safari doesn't play well with floated elements and flex display */
+#services-highlight .highlight-boxes:before,
+#services-highlight .highlight-boxes:after {
+    display:none!important;
+}
 #services-highlight .highlight-boxes .highlight-box {
     display: flex;
     padding-bottom: 1rem;
+}
+/* Safari doesn't play well with floated elements and flex display */
+#services-highlight .highlight-boxes .highlight-box:before,
+#services-highlight .highlight-boxes .highlight-box:after {
+    display:none!important;
 }
 #services-highlight .highlight-boxes .panel {
     width: 100%;
@@ -999,6 +1028,11 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 #featured-librarian .combo-boxes {
     display: flex;
     flex-wrap: wrap;
+}
+/* Safari doesn't play well with floated elements and flex display */
+#featured-librarian .combo-boxes:before,
+#featured-librarian .combo-boxes:after {
+    display:none!important;
 }
 #featured-librarian .combo-box {
     margin: 0;

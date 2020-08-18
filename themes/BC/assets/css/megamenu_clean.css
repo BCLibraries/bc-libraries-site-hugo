@@ -822,7 +822,11 @@
     align-content: stretch;
     flex-wrap: wrap;
  }
- 
+ /* Safari doesn't play well with floated elements and flex display */
+ #mm-help-aal .aal-box-container:before,
+ #mm-help-aal .aal-box-container:after {
+    display:none!important;
+}
  #mm-help-aal .panel {
      padding: .75rem .5rem .75rem .75rem;
      margin-bottom: 0;
@@ -969,7 +973,11 @@
     align-content: stretch;
     flex-wrap: wrap;
 }
-
+/* Safari doesn't play well with floated elements and flex display */
+#mm-help-about .row:before,
+#mm-help-about .row:after {
+    display:none!important;
+}
 #mm-help-about .panel {
     margin-bottom: 0;
     height: 100%;
@@ -1017,15 +1025,30 @@
     display: flex;
     flex-direction: column;
 }
+/* Safari doesn't play well with floated elements and flex display */
+.library-boxes .lib-box-small.panel:before,
+.library-boxes .lib-box-small.panel:after {
+    display:none!important;
+}
 .library-boxes .panel-body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     padding: 5px 5px 8px 5px;
 }
+/* Safari doesn't play well with floated elements and flex display */
+.library-boxes .panel-body:before,
+.library-boxes .panel-body:after {
+    display:none!important;
+}
 .library-boxes .lib-box-pair {
     flex-grow: 1;
     display: flex;
+}
+/* Safari doesn't play well with floated elements and flex display */
+.library-boxes .lib-box-pair:before,
+.library-boxes .lib-box-pair:after {
+    display:none!important;
 }
 .library-boxes .lib-box-pair-label {
     display: none;
