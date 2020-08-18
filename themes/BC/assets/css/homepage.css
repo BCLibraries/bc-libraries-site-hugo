@@ -183,7 +183,7 @@
 }
 #at-a-glance-container i#container {
     position: relative;
-    padding-right: .5rem;
+    padding-right: .75rem;
 }
 
 #at-a-glance-container i#nested {
@@ -194,12 +194,17 @@
     color: rgba(217, 83, 79, 0.7);
 }
 
-#at-a-glance .alert {
-    padding: 8px 2px 8px 12px;
-    margin-bottom: .75rem;
+#at-a-glance .at-a-glance-alert {
+    margin-bottom: 1rem;
+    display: block;
 }
 
-#at-a-glance .alert:last-child {
+#at-a-glance .at-a-glance-alert:last-child {
+    margin-bottom: 0;
+}
+
+#at-a-glance .alert {
+    padding: 8px 2px 8px 12px;
     margin-bottom: 0;
 }
 
