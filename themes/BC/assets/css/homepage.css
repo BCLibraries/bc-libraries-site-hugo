@@ -129,6 +129,13 @@
 #welcome-back-message-container-mobile {
     background-color: rgba(255,205,63,1);
 }
+
+.welcome-back-message-hero {
+    width:100%;
+    margin-bottom:1rem;
+    border:2px solid #000;
+}
+
 .welcome-back-message,
 .welcome-back-message-header {
     background-color: rgba(255,205,63,1);
