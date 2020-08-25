@@ -16,17 +16,19 @@
     function showCOVID19Notice() {
 
         const notice = document.createElement('div');
+        notice.setAttribute("id", "covid-notice");
+        notice.setAttribute("data-tag", "ga-tag");
         notice.innerHTML = '<div class="covid-notice__opener">' +
-        '<button class="covid-notice__open-button">' +
+        '<button class="covid-button covid-notice__open-button" id="covid-open">' +
         '<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>' +
         '<span class="sr-only">Show COVID-19 notice</span>' +
         '</button>' +
         '</div>' +
         '<div class="covid-notice covid-notice--hidden">' +
         '<a href="https://libguides.bc.edu/servicesupdate">BC Libraries Update - COVID-19</a>' +
-        '<div class="closed-notice" style="font-size: 16px">Most libraries are open, but only for BC students and employees, and with limited hours. The Burns Library is open by appointment only.' +
+        '<div class="closed-notice" style="font-size: 16px">The Libraries are open, but only for BC students and employees. The Burns Library is open to visitors by appointment only. <a href="https://library.bc.edu/hours">Hours</a> are still limited.' +
         '</div>' +
-        '<button class="covid-notice__close-button">Close</button>' +
+        '<button class="covid-button covid-notice__close-button" id="covid-close">Close</button>' +
         '</div>';
         document.body.append(notice);
 

@@ -81,5 +81,14 @@ $(function () {
         gtag('event', 'click', {'event_category': 'chat-widget', 'event_label': src});
         _paq.push(['trackEvent', 'chat-widget', 'click', src]);
     });
+
+    //
+    // catch covid notice button open/close clicks
+    //
+    $("button.covid-button").click(function(e){
+        var buttonID = $(this).attr("id");
+        gtag('event', 'click', {'event_category': 'covid-notice', 'event_label': buttonID});
+        _paq.push(['trackEvent', 'covid-notice', 'click', buttonID]);
+    });
 });
 </script>
