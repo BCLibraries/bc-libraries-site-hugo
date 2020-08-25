@@ -35,10 +35,10 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-a, a:visited, .ui-widget-content a, .ui-widget-content a:visited {
+/*a, a:visited, .ui-widget-content a, .ui-widget-content a:visited {
     color: #990000;
     font-weight: normal;
-}
+}*/
 
 a:hover, a:active, a:focus, .ui-widget-content a, .ui-widget-content a:active {
     color: #990000;
@@ -5161,7 +5161,7 @@ span.pad-left-med.hitst {display: none;}
 
 /* updated style - 20170816 */
 body {font-size:14px;}
-a, a:visited, .ui-widget-content a, .ui-widget-content a:visited {color:#337ab7;}
+/*a, a:visited, .ui-widget-content a, .ui-widget-content a:visited {color:#337ab7;}*/
 #bclib-header-form .input-group-btn{width:1%;}
 .megamenu-container {
     background-color: rgba(16,14,15,.90);
