@@ -34,12 +34,10 @@
     $(document).ready(function () {
         // add in referrer string into hidden form field 'url'
         var referrer = document.referrer;
-        console.log("referrer: " + referrer);
-        var urlFormField = "#s-la-askform-form_9340 fieldset#s-la-askform-section-1932 input#val4_9340";
+        var referrerFormField = "#s-la-askform-form_9340 fieldset#s-la-askform-section-1932 input#val4_9340";
 
         $(document.body).one("focus", "#s-la-askform-form_9340", function(){
-            console.log("referrer: " + referrer);
-            $(urlFormField).val(referrer).change();
+            $(referrerFormField).val(referrer).change();
         });
     });
 </script>
