@@ -233,7 +233,7 @@
 }
 
 #featured-research-tip-wrapper-inner {
-    background-color: lightgoldenrodyellow;
+    background-color: #fff;
     margin: 1.5rem 0 1rem 0;
     padding: 0 1.5rem 1rem 1.5rem;
     border: 1px solid #ddd;
@@ -286,6 +286,25 @@
     font-size: smaller;
 }
 
+.aal-boxes-horizontal-layout .aal-boxes {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.aal-boxes-horizontal-layout .aal-box-item {
+    display: flex;
+}
+.aal-boxes-horizontal-layout {
+    padding: 4rem 0;
+    border-bottom: solid 9px #dccaa0;
+    border-top: solid 9px #dccaa0;
+    background: url("https://library.bc.edu/images/homepage/askalibrarian/aal-background-v3.png") repeat  top center rgba(0, 0, 0, 0);
+}
+.aal-boxes-horizontal-layout-inner {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
 /* media queries */
 @media (max-width: 991px) {
     .ql {
@@ -313,8 +332,8 @@
     }
 }
 @media (max-width: 767px) {
-    #in-focus-wrapper .media .media-left,
-    #in-focus-wrapper .media .media-right {
+    #featured-research-tip-wrapper .media .media-left,
+    #featured-research-tip-wrapper .media .media-right {
         display: none;
     }
 }
