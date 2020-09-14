@@ -10,4 +10,4 @@ imagethumb: "2020-09/bc-libraries-covid-edition-iii.jpg"
 type: "news"
 ---
 
-Since the Libraries had to close in March, staff have been working to continue to provide access to our resources and services. Here are the changes that are keeping the library safe.
+Since the Libraries had to close in March, staff have been working to continue to provide access to our resources and services. Here are the changes that are keeping O'Neill Library safe.
