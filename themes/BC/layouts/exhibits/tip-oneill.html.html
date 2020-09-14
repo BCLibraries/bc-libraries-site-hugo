@@ -1,0 +1,38 @@
+{{ define "title" }}{{ .Site.Params.backwall }} Exhibits Archive{{ end }}
+
+{{ define "header" }}{{ end }}
+
+{{ define "pagestyles" }}
+{{ end }}
+
+{{ define "main" }}
+<div class="exhibit-container exhibit_page">
+    <div class="container">
+        {{ partial "exhibits/breadcrumbs.html" . }}
+    </div>
+    {{ partial "exhibits/locations/headers.html" . }}
+</div>
+<div class="container">    
+    <div id="exhibit" class="archives">
+        <div class="row">
+            <div class="latest_exhibit">
+                <div class="left">
+                    {{ partial "exhibits/gallerynav.html" . }}
+                </div>
+    
+                <div class="right">
+                    <h3 id="main-heading">Exhibits</h3>
+                    <ul>
+                        <div class="holdhead">
+                            <h4>2015-2020</h4>
+                        </div>
+                        {{ range (where .Site.RegularPages ".Params.location" .Params.location) }}
+                        {{ partial "exhibits/thumbnail-summary.html" . }}
+                        {{ end }}
+                    </ul>
+                </div> {{/* end .right */}}
+            </div> {{/* end .latest_exhibit */}}
+        </div> {{/* end .row */}}
+    </div> {{/* end #exhibit */}}
+</div>
+{{ end }}
