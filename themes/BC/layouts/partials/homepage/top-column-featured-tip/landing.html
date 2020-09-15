@@ -1,14 +1,18 @@
-<div class="" id="featured-tip-wrapper">
-    <div id="featured-tip-wrapper-inner">
-        <h2>Featured Tip</h2>
-        
-        <p class="intro">We highlight library tools and resources that can help your research.</p>
+<div id="featured-tip" data-tag="ga-tag">
+    <div id="featured-tip-wrapper">
+        <div id="featured-tip-wrapper-inner">
+            <h2>Featured Tip</h2>
+            
+            <p class="intro">We highlight library tools and resources that can help your research.</p>
 
-        {{/* Change out highlight content here */}}
-        {{ partial "homepage/top-column-featured-tip/hathitrust.html" . }}
+            {{/* Change out featured tip content here */}}
+            <div class="featured-tip-element">
+                {{ partial "homepage/top-column-featured-tip/hathitrust.html" . }}
+            </div>
 
-        <p class="outro">
-            <a style="display:inline-block;" href="https://answers.bc.edu/search/?topics=Featured+Tip">Browse all <strong>Featured Tip</strong> FAQs</a> &rangle;
-        </p>
+            <p class="outro">
+                <a style="display:inline-block;" href="https://answers.bc.edu/search/?topics=Featured+Tip">Browse all <strong>Featured Tip</strong> FAQs</a> &rangle;
+            </p>
+        </div>
     </div>
 </div>
