@@ -144,8 +144,20 @@
     flex-wrap: wrap;
 }
 
+/* Safari doesn't play well with floated elements and flex display */
+.aal-boxes-horizontal-layout .aal-boxes::before,
+.aal-boxes-horizontal-layout .aal-boxes::after {
+    display:none!important;
+}
+
 .aal-boxes-horizontal-layout .aal-box-item {
     display: flex;
+}
+
+/* Safari doesn't play well with floated elements and flex display */
+.aal-boxes-horizontal-layout .aal-box-item::before,
+.aal-boxes-horizontal-layout .aal-box-item::after {
+    display:none!important;
 }
 
 /* At A Glance */
