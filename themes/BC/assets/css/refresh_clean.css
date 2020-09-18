@@ -687,8 +687,12 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     padding-top:0;
     padding-bottom:0;
 }
-#services-highlight {
+#services-highlight-container {
     background-color: #fcf8e3;
+    /*border: 1px solid #faebcc;*/
+}
+#services-highlight {
+    /*background-color: #fcf8e3;*/
     /*border: 1px solid #faebcc;*/
 }
 #top-columns .column-items {
@@ -737,9 +741,9 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     #quicklink-container {
         width: 100%;
     }
-    #aal-home-container {
+    /*#aal-home-container {
         display: none;
-    }
+    }*/
 }
 
 #aal-home {

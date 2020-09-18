@@ -1,48 +1,31 @@
-{{/* This div adds in a top-level banner mesage just below the search bar and above the page contents */}}
-<div class="container-fluid welcome-back-message welcome-back-message-header">
+<div class="container-fluid" id="services-highlight-container">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h2>Welcome back students!</h2>
-            </div>
+            {{ partial "homepage/top-column-services-highlight.html" . }}
         </div>
-    </div>
-</div>
-
-{{/* The Welcome Back message is rearranged on mobile, and the easiest way to handle this is with a 
-    duplicate container that is shown/hidden based on screensize */}}
-<div class="container-fluid" id="welcome-back-message-container-mobile">
-    <div class="container">
-        {{ partial "homepage/top-column-welcome-back-message.html" . }}
     </div>
 </div>
 
 <div class="container-fluid" id="top-columns">
     <div class="container">
-        <div class="row column-items">
-            <div class="col-md-3 col-sm-12">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12" id="at-a-glance-container">
-                        {{ partial "homepage/top-column-at-a-glance.html" . }}
-                    </div>
-                    <div class="col-md-12 col-sm-6 col-xs-6" id="quicklink-container">
-                        {{ partial "homepage/top-column-quicklinks.html" . }}
-                    </div>
-                    <div class="col-md-12 col-sm-6 col-xs-6" id="aal-home-container">
-                        {{ partial "homepage/top-column-ask-a-librarian.html" . }}
-                    </div>
+        <div class="column-items">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6" id="quicklink-container">
+                    {{ partial "homepage/top-column-quicklinks.html" . }}
+                </div>
+
+                <div class="col-md-9 col-sm-8 col-xs-6" id="at-a-glance-container">
+                    {{ partial "homepage/top-column-at-a-glance.html" . }}
+                </div>
+
+                <div class="col-md-9 col-sm-12 col-xs-12" id="featured-tip-container">
+                    {{ partial "homepage/top-column-featured-tip/landing.html" . }}
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12" id="aal-home-container">
+                    {{ partial "homepage/top-column-ask-a-librarian.html" . }}
                 </div>
             </div>
-            <div class="col-md-9 col-sm-12">
-                <div class="row">
-                    <div class="col-md-12" id="welcome-back-message-container-full">
-                        {{ partial "homepage/top-column-welcome-back-message.html" . }}
-                    </div>
-                    <div class="col-md-12" id="services-highlight-container">
-                        {{ partial "homepage/top-column-services-highlight.html" . }}
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>      
     </div>
 </div>
