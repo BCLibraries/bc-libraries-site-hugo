@@ -1,4 +1,4 @@
-<article class="post col-sm-6">
+<article class="post col-xs-12 col-sm-6 col-md-4">
     {{ if .Params.Destination }}
         {{ .Scratch.Set "dest" .Params.Destination }}
     {{ else }}
@@ -14,16 +14,12 @@
         {{ .Scratch.Set "imgalt" "News icon" }}
     {{ end }}
 
-    <div class="media">
-        <div class="media-left">
-            <a href='{{ .Scratch.Get "dest" }}'>
-                <img class="media-object" src='{{ .Site.Params.imageBaseURL }}/{{ .Scratch.Get "img" }}' alt='{{ .Scratch.Get "imgalt" }}'>
-            </a>
+    <a href='{{ .Scratch.Get "dest" }}'>
+        <img src='{{ .Site.Params.imageBaseURL }}/{{ .Scratch.Get "img" }}' alt='{{ .Scratch.Get "imgalt" }}' />
+        <div class="news-section-text">
+            <div class="news-section-date">{{ .Date.Format "Jan 2, 2006" }}</div>
+            <h4 class="news-section-title">{{ .Title | safeHTML }}</h4>
+            <div class="news-section-content-blurb">{{ .Summary | safeHTML | truncate 200 }}</div>
         </div>
-        <div class="media-body">
-            <h4 class="media-heading"><a href='{{ .Scratch.Get "dest" }}'>{{ .Title | safeHTML }}</a></h4>
-            <div class="archive_date">{{ .Date.Format "Jan 2, 2006" }}</div>
-            <p>{{ .Summary | safeHTML | truncate 200 }}</p>
-        </div>
-    </div>
+    </a>
 </article>

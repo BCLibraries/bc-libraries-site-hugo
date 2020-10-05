@@ -3,50 +3,41 @@
 {{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
-    <style>
-        article {
-            margin: 1rem 0 2rem 0;
-            height: 180px;
-            overflow: hidden;
-        }
-        article .media-body p {
-            line-height: 1.5;
-        }
-        article img.media-object {
-            max-width: 137px;
-        }
-    </style>
+    {{ $news_styles := resources.Get "css/news.css" }}
+    <link rel="stylesheet" href="{{ $news_styles.RelPermalink }}">
 {{ end }}
 
 {{ define "main" }}
 <div class="container news-container">
+    
     {{ partial "news/breadcrumbs.html" . }}
+
     <h2 id="main-heading" class="page-title">{{ .Title }} Archive</h2>
 
 
     <h3>2020</h3>
-    <div class="news_archives row">
+    <div class="news-archives row">
     {{ range where .Pages ".Params.year" "2020" }}
     {{ .Render "summary"}}
     {{ end }}
     </div>
 
     <h3>2019</h3>
-    <div class="news_archives row">
+    <div class="news-archives row">
     {{ range where .Pages ".Params.year" "2019" }}
     {{ .Render "summary"}}
     {{ end }}
     </div>
 
     <h3>2018</h3>
-    <div class="news_archives row">
+    <div class="news-archives row">
     {{ range where .Pages ".Params.year" "2018" }}
     {{ .Render "summary"}}
     {{ end }}
     </div>
 
     <h3>2017</h3>
-    <div class="news_archives row">
+    <div class="news-archives row">
     {{ range where .Pages ".Params.year" "2017" }}
     {{ .Render "summary"}}
     {{ end }}
