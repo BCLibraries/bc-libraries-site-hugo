@@ -15,7 +15,14 @@
     {{ end }}
 
     <a href='{{ .Scratch.Get "dest" }}'>
-        <img src='{{ .Site.Params.imageBaseURL }}/{{ .Scratch.Get "img" }}' alt='{{ .Scratch.Get "imgalt" }}' />
+        
+        {{/* The <noscript/> tag is for loading attribute polyfill, used
+            for img lazy-loading support in browsers without the loading
+            attribute. */}}
+        <noscript class="loading-lazy">
+            <img src='{{ .Site.Params.imageBaseURL }}/{{ .Scratch.Get "img" }}' alt='{{ .Scratch.Get "imgalt" }}' loading="lazy" />
+        </noscript>
+
         <div class="news-section-text">
             <div class="news-section-date">{{ .Date.Format "Jan 2, 2006" }}</div>
             <h4 class="news-section-title">{{ .Title | safeHTML }}</h4>
