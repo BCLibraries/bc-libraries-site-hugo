@@ -8,6 +8,8 @@
 {{ partial "exhibits/locations/backwall-header.html" . }}
 {{ else if eq .Params.location "lobby" }}
 {{ partial "exhibits/locations/lobby-header.html" . }}
+{{ else if eq .Params.location "bookdisplay" }}
+{{ partial "exhibits/locations/bookdisplay-header.html" . }}
 {{ else if eq .Params.location "lvl1" }}
 {{ partial "exhibits/locations/lvl1-header.html" . }}
 {{ else if eq .Params.location "lvl3" }}

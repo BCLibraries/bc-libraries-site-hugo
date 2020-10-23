@@ -18,6 +18,12 @@
         <li><a href="{{ relref . "/exhibits/tml"}}">{{ .Site.Params.tml }}</a></li>
         {{ end }}
 
+        {{ if eq .Params.location "bookdisplay" }}
+        <li class="target">{{ .Site.Params.bookdisplay }}</li>
+        {{ else }}
+        <li><a href="{{ relref . "/exhibits/bookdisplay"}}">{{ .Site.Params.bookdisplay }}</a></li>
+        {{ end }}
+
         {{ if eq .Params.location "lvl1" }}
         <li class="target">{{ .Site.Params.lvl1 }}</li>
         {{ else }}
@@ -54,5 +60,5 @@
         <li><a href="{{ relref . "/exhibits/stokes"}}">{{ .Site.Params.stokes }}</a></li>
         {{ end }}
         
-        <li class="digital-exhibits-li"><a href="https://library.bc.edu/digital-exhibits/">Boston College Libraries Digital Exhibits</a></li>
+        <li class="digital-exhibits-li"><a href="https://library.bc.edu/digital-exhibits/">Burns Online Exhibits</a></li>
     </ul>

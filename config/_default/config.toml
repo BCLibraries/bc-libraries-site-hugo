@@ -15,6 +15,7 @@ relativeURLs = true
     tml = "Theology & Ministry Library"
     backwall = "O'Neill Reading Room Back Wall"
     lobby = "O'Neill Level 3 Lobby"
+    bookdisplay = "O'Neill Book Display"
     lvl1 = "O'Neill Level One Gallery"
     lvl3 = "O'Neill Level Three Gallery"
     reading = "O'Neill Reading Room"

@@ -92,6 +92,18 @@
                     </div>
                     {{ end }}
 
+                    {{/* O'NEILL BOOK DISPLAY LATEST EXHIBIT */}}
+                    {{ range first 1 (where (where .Site.Pages ".Params.location" "bookdisplay") ".Params.active" true) }}
+                    <div class="col-md-6 holder">
+                        <div class="holdhead">
+                            <h4>{{ .Site.Params.bookdisplay }}</h4>
+                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.lvl1 }} Past Exhibits</a></p>
+                        </div>
+
+                        {{ partial "exhibits/location-summary.html" . }}
+                    </div>
+                    {{ end }}
+
                     {{/* O'NEILL LEVEL ONE LATEST EXHIBIT */}}
                     {{ range first 1 (where (where .Site.Pages ".Params.location" "lvl1") ".Params.active" true) }}
                     <div class="col-md-6 holder">
