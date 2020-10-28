@@ -10,4 +10,4 @@ imagethumb: "2020-10/new-in-the-digital-studio.jpg"
 type: "news"
 ---
 
-As the United States votes this year in a time of crisis, we also honor the centennial anniversary of the 19th Amendment’s ratification.
+Two new Digital Scholarship staff members and updated technology in the Digital Studio are ready to help more digital projects get underway.
