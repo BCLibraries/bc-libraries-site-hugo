@@ -1,7 +1,7 @@
 ---
 title: "Analyze what the whole world is thinking: Gallup Analytics"
 draft: false
-expired: false
+expired: true
 date: 2020-10-07T15:00:46-05:00
 year: "2020"
 slug: "2020-10-gallup-analytics.md"
