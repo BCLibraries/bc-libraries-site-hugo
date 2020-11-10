@@ -1,7 +1,7 @@
 ---
 title: "Vote Smart: Voting Information from BC Libraries"
 draft: false
-expired: false
+expired: true
 date: 2020-10-23T15:00:46-05:00
 year: "2020"
 slug: "2020-10-vote-smart.md"

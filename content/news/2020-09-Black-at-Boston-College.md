@@ -1,7 +1,7 @@
 ---
 title: "Black at Boston College: Amplifying &amp; Learning from Black Student Voices"
 draft: false
-expired: false
+expired: true
 date: 2020-09-30T10:54:05-04:00
 year: "2020"
 slug: "black-at-boston-college"
