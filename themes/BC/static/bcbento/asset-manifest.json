@@ -1,12 +1,18 @@
 {
-  "main.js": "../theme/bcbento/static/js/main.cef644d8.chunk.js",
-  "main.js.map": "../theme/bcbento/static/js/main.cef644d8.chunk.js.map",
-  "runtime~main.js": "../theme/bcbento/static/js/runtime~main.1cf1c718.js",
-  "runtime~main.js.map": "../theme/bcbento/static/js/runtime~main.1cf1c718.js.map",
-  "static/js/2.a6edbe2f.chunk.js": "../theme/bcbento/static/js/2.a6edbe2f.chunk.js",
-  "static/js/2.a6edbe2f.chunk.js.map": "../theme/bcbento/static/js/2.a6edbe2f.chunk.js.map",
-  "index.html": "../theme/bcbento/index.html",
-  "precache-manifest.3be948aeced9592a57ad1bd351e1331e.js": "../theme/bcbento/precache-manifest.3be948aeced9592a57ad1bd351e1331e.js",
-  "service-worker.js": "../theme/bcbento/service-worker.js",
-  "static/media/icon_archives.svg": "../theme/bcbento/static/media/icon_archives.496c7381.svg"
+  "files": {
+    "main.js": "../theme/bcbento/static/js/main.dfe00148.chunk.js",
+    "main.js.map": "../theme/bcbento/static/js/main.dfe00148.chunk.js.map",
+    "runtime-main.js": "../theme/bcbento/static/js/runtime-main.d47131bb.js",
+    "runtime-main.js.map": "../theme/bcbento/static/js/runtime-main.d47131bb.js.map",
+    "static/js/2.75e90ee3.chunk.js": "../theme/bcbento/static/js/2.75e90ee3.chunk.js",
+    "static/js/2.75e90ee3.chunk.js.map": "../theme/bcbento/static/js/2.75e90ee3.chunk.js.map",
+    "index.html": "../theme/bcbento/index.html",
+    "static/js/2.75e90ee3.chunk.js.LICENSE.txt": "../theme/bcbento/static/js/2.75e90ee3.chunk.js.LICENSE.txt",
+    "static/media/icon_archives.9b4cb17a.svg": "../theme/bcbento/static/media/icon_archives.9b4cb17a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d47131bb.js",
+    "static/js/2.75e90ee3.chunk.js",
+    "static/js/main.dfe00148.chunk.js"
+  ]
 }
