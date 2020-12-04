@@ -2,12 +2,16 @@
 <div id="header">
     <div class="container">
         <h1 id="main-heading" class="sr-only sr-only-focusable">Main content</h1>
+
         {{ partial "homepage/search-box.html" . }}
 
+        {{/* remove caption for empty hero image
         <div class="caption-link" id="hero" data-tag="ga-tag">
             <a href="http://libguides.bc.edu/bapst">Portion from the Bapst Illuminating Stained Glass</a>
-            <!--Summer scenery outside Bapst Library, <a href="http://www.bc.edu/offices/omc/">courtesy Office of University Communications.</a-->
+            Summer scenery outside Bapst Library, <a href="http://www.bc.edu/offices/omc/">courtesy Office of University Communications.</a>
         </div>
+        */}}
+        
         {{/* % include 'homepage/notice.html' % */}}
     </div>
 </div>

@@ -1,0 +1,3615 @@
+[
+    {
+        "id": "248",
+        "email": "benjamin.florin@bc.edu",
+        "first_name": "Ben",
+        "last_name": "Florin",
+        "title": null,
+        "nickname": "",
+        "signature": "Ben Florin\nWeb Developer\nBoston College Libraries\n617-552-4582\nbenjamin.florin@bc.edu",
+        "created_by": "0",
+        "created": "2014-02-20 01:26:24",
+        "updated": "2020-04-13 19:09:04",
+        "profile": {
+            "id": 131,
+            "account_id": 248,
+            "customer_id": 94,
+            "box": {
+                "title": "Manager, Library Applications"
+            },
+            "image": {
+                "show": 1,
+                "file": "ben-florin.png",
+                "url": "//libapps.s3.amazonaws.com/accounts/248/profiles/131/ben-florin.png"
+            },
+            "en_page": 1,
+            "page": {
+                "working": ""
+            },
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "librarything": "http://www.librarything.com/profile/otterfan",
+                "email": "",
+                "website": "https://bc-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=TN_gvrl_refCX3727801772&vid=bclib_new&search_scope=pci&tab=pci_only&lang=en_US&context=PC"
+            },
+            "display": {
+                "disp_connect_libraries": "1",
+                "disp_widget_la": "1",
+                "disp_widget_lc": "1",
+                "disp_widget_other": "1"
+            },
+            "created": "2014-02-20 14:33:13",
+            "updated": "2019-10-02 20:54:00",
+            "url": "https://libguides.bc.edu/prf.php?account_id=248"
+        }
+    },
+    {
+        "id": "261",
+        "email": "steven.runge@bc.edu",
+        "first_name": "Steve",
+        "last_name": "Runge",
+        "title": null,
+        "nickname": "",
+        "signature": "Steve Runge\n(he, him, his)\nLearning Commons Manager\nO'Neill Library 308\nBoston College\n617.552.2183\nsteven.runge@bc.edu",
+        "created_by": "248",
+        "created": "2014-02-20 15:46:36",
+        "updated": "2020-04-17 13:01:27",
+        "profile": {
+            "id": 183,
+            "account_id": 261,
+            "customer_id": 94,
+            "box": {
+                "title": "Librarian Profile"
+            },
+            "image": {
+                "show": "1",
+                "file": "Steve-Runge-Official_BC_Libraries_Image.png",
+                "url": "//libapps.s3.amazonaws.com/accounts/261/profiles/183/Steve-Runge-Official_BC_Libraries_Image.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a title=“Steve’s availability\" href=\"https://steverunge.youcanbook.me/\" class=\"label label-info\" style=\"font-size:1.6em;\">Book an Appointment</a>",
+            "connect": {
+                "email": "steven.runge@bc.edu",
+                "address": "308 O'Neill Library\nBoston College\n140 Commonwealth Avenue\nChestnut Hill, MA 02467",
+                "phone": "617-552-2183",
+                "twitter": "https://twitter.com/steverunge"
+            },
+            "display": {
+                "disp_widget_lc": "1"
+            },
+            "created": "2014-02-24 17:22:38",
+            "updated": "2017-10-04 16:55:46",
+            "url": "https://libguides.bc.edu/prf.php?account_id=261"
+        }
+    },
+    {
+        "id": "264",
+        "email": "christoph.houston-ponchak@bc.edu",
+        "first_name": "Chris",
+        "last_name": "Houston-Ponchak",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "248",
+        "created": "2014-02-20 15:47:40",
+        "updated": "2020-04-15 14:28:30",
+        "profile": {
+            "id": 175,
+            "account_id": 264,
+            "customer_id": 94,
+            "box": {
+                "title": "Profile Box"
+            },
+            "image": {
+                "show": 1,
+                "file": "Chris_HP.png",
+                "url": "//libapps.s3.amazonaws.com/accounts/264/profiles/175/Chris_HP.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "houstonp@bc.edu",
+                "address": "Library Systems\nO'Neill Library\nBoston College\n617-552-0127"
+            },
+            "display": null,
+            "created": "2014-02-24 15:31:03",
+            "updated": "2014-10-22 13:41:11",
+            "url": "https://libguides.bc.edu/prf.php?account_id=264"
+        }
+    },
+    {
+        "id": "3302",
+        "email": "theresa.lyman@bc.edu",
+        "first_name": "Theresa",
+        "last_name": "Lyman",
+        "title": "Online Learning Librarian",
+        "nickname": "",
+        "signature": "-------------------<br>\nTheresa Lyman<br>\nOnline Learning Librarian<br>\nBoston College",
+        "created_by": "248",
+        "created": "2014-04-02 16:54:48",
+        "updated": "2020-04-15 14:30:56",
+        "profile": {
+            "id": 7913,
+            "account_id": 3302,
+            "customer_id": 94,
+            "box": {
+                "title": "Online Learning Librarian"
+            },
+            "image": {
+                "file": "FullSizeRender__1_.jpg",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/3302/profiles/7913/FullSizeRender__1_.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "theresa.lyman@bc.edu",
+                "website": "",
+                "address": "O'Neill Library\nRoom 308\n617.552.6334\ntheresa.lyman@bc.edu",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": ""
+            },
+            "display": {
+                "disp_widget_la": "0",
+                "disp_widget_lc": "0",
+                "disp_widget_other": "0"
+            },
+            "created": "2014-06-10 14:26:33",
+            "updated": "2018-11-01 17:37:27",
+            "url": "https://libguides.bc.edu/prf.php?account_id=3302"
+        }
+    },
+    {
+        "id": "3908",
+        "email": "jesse.martinez@bc.edu",
+        "first_name": "Jesse",
+        "last_name": "Martinez",
+        "title": "Library Application Developer",
+        "nickname": "",
+        "signature": "",
+        "created_by": "248",
+        "created": "2014-04-08 18:53:43",
+        "updated": "2020-04-17 17:24:44",
+        "profile": {
+            "id": 2155,
+            "account_id": 3908,
+            "customer_id": 94,
+            "box": {
+                "title": "Guide Author"
+            },
+            "image": {
+                "show": "1",
+                "file": "self.png",
+                "url": "//libapps.s3.amazonaws.com/accounts/3908/profiles/2155/self.png"
+            },
+            "en_page": 1,
+            "page": {
+                "working": "I have been working at Boston College since 2014. My work involves maintaining and developing the library's website and other web properties.\n\nMy other interests and activities include:\n<ul>\n<li>Web accessibility</li>\n<li>Digital Humanities software development</li>\n</ul>"
+            },
+            "widget_la": "",
+            "widget_lc": "<script src=\"//api3.libcal.com/js/myscheduler.js?002\"></script>\n<script>\njQuery(function(){\n   jQuery(\"#mySched2279\").LibCalMySched({ iid: 609, uid: 2279,  width: 500, height: 450  });\n});\n</script>\n<!-- Place the following link anywhere in your page. Make sure the id \"mySched2279\" matches with the above code: jQuery(\"#mySched2279\")  //-->\n<button id=\"mySched2279\" href=\"#\">Schedule Appointment</button>\n<!-- Below is optional button styling  //-->\n<style>\n#mySched2279 {\n  background: #FFFFFF;\n  border: 1px solid #CCCCCC;\n  border-radius: 4px;\n  color: #333333;\n  font: 14px Arial, Helvetica, Verdana;\n  padding: 8px 20px;\n  cursor: pointer;\n}\n#mySched2279:hover {\n  opacity: 0.9;\n}\n</style>",
+            "widget_other": "",
+            "connect": {
+                "address": "O'Neill Library 503\nBoston College",
+                "email": "jesse.martinez@bc.edu",
+                "website": "http://library.bc.edu",
+                "linkedin": "",
+                "facebook": "",
+                "flickr": "",
+                "googleplus": "",
+                "pinterest": "",
+                "twitter": "",
+                "youtube": "",
+                "librarything": "",
+                "_empty_": "",
+                "phone": "617-552-2509"
+            },
+            "display": {
+                "disp_widget_lc": "1",
+                "disp_widget_la": "1",
+                "disp_connect_social": "1"
+            },
+            "created": "2014-04-09 15:02:37",
+            "updated": "2019-03-01 18:50:21",
+            "url": "https://libguides.bc.edu/prf.php?account_id=3908"
+        }
+    },
+    {
+        "id": "10674",
+        "email": "wymanr@bc.edu",
+        "first_name": "Sally",
+        "last_name": "Wyman",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2007-07-16 22:33:35",
+        "updated": "2020-03-30 12:54:12",
+        "subjects": [
+            {
+                "id": "12894",
+                "name": "Chemistry",
+                "slug_id": "144962"
+            },
+            {
+                "id": "12895",
+                "name": "Computer Science",
+                "slug_id": "144969"
+            },
+            {
+                "id": "30938",
+                "name": "Environmental Studies",
+                "slug_id": "165259"
+            },
+            {
+                "id": "73319",
+                "name": "Interdisciplinary",
+                "slug_id": "1871668"
+            },
+            {
+                "id": "12897",
+                "name": "Mathematics",
+                "slug_id": "144992"
+            },
+            {
+                "id": "12898",
+                "name": "Physics",
+                "slug_id": "145015"
+            },
+            {
+                "id": "73230",
+                "name": "Reference",
+                "slug_id": "1871669"
+            },
+            {
+                "id": "12913",
+                "name": "Science",
+                "slug_id": "145019"
+            }
+        ],
+        "profile": {
+            "id": 7874,
+            "account_id": 10674,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Guide"
+            },
+            "image": {
+                "file": "Libguid_photo.png",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10674/profiles/7874/Libguid_photo.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<script>var lc_opt4538 = {};lc_opt4538.title = \"Make an appointment!\";lc_opt4538.button_placement = \"none\";lc_opt4538.popup_color = \"#7EABCD\";lc_opt4538.css = \"http://libcal.bc.edu/css/scheduler.css\";lc_opt4538.user = \"4538\";</script><script src=\"http://libcal.bc.edu/schedulerjs.php?u=4538\"></script><a href=\"#\" onclick=\"lc_show_widget4538();\"><img src=\"http://lcimages.s3.amazonaws.com/LC-SchedWMe.png\" height=\"32\" width=\"190\" title=\"Schedule an Appointment with me!\" border=\"0\" /></a>",
+            "connect": {
+                "email": "sally.wyman@bc.edu",
+                "website": "",
+                "address": "O'Neill Library, Room 408<br />\r\nBoston College Libraries<br />\r\nChestnut Hill, MA 02467<br />\r\n617-552-4452",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": ""
+            },
+            "display": null,
+            "created": "2014-06-10 14:26:20",
+            "updated": "2019-03-01 13:59:55",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10674"
+        }
+    },
+    {
+        "id": "10675",
+        "email": "bogdanon@bc.edu",
+        "first_name": "Nina",
+        "last_name": "Bogdanovsky",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2007-07-19 01:09:04",
+        "updated": "2020-04-13 16:46:29",
+        "subjects": [
+            {
+                "id": "12881",
+                "name": "Art & Architecture",
+                "slug_id": "144937"
+            },
+            {
+                "id": "12883",
+                "name": "Film",
+                "slug_id": "144979"
+            },
+            {
+                "id": "30939",
+                "name": "Jewish Studies",
+                "slug_id": "165258"
+            },
+            {
+                "id": "12887",
+                "name": "Linguistics",
+                "slug_id": "144991"
+            },
+            {
+                "id": "12888",
+                "name": "Music",
+                "slug_id": "145012"
+            },
+            {
+                "id": "12915",
+                "name": "Slavic & Eastern Languages",
+                "slug_id": "145020"
+            },
+            {
+                "id": "12891",
+                "name": "Theatre & Dance",
+                "slug_id": "145024"
+            }
+        ],
+        "profile": {
+            "id": 7875,
+            "account_id": 10675,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Librarian"
+            },
+            "image": {
+                "file": "ProfilePhoto.JPG",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10675/profiles/7875/ProfilePhoto.JPG"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "<script>\r\nvar lc_opt4520 = {};\r\nlc_opt4520.title = \"Make an appointment!\";\r\nlc_opt4520.button_color = \"#7EABCD\";\r\nlc_opt4520.button_placement = \"right\";\r\nlc_opt4520.button_top = \"25%\";\r\nlc_opt4520.button_image = \"http://lcimages.s3.amazonaws.com/schedule.png\";\r\nlc_opt4520.button_height = \"118px\";\r\nlc_opt4520.popup_color = \"#7EABCD\";\r\nlc_opt4520.css = \"http://libcal.bc.edu/css/scheduler.css\";\r\nlc_opt4520.user = \"4520\";\r\n</script>\r\n<script src=\"http://libcal.bc.edu/schedulerjs.php?u=4520\"></script>",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "bogdanon@bc.edu",
+                "website": "",
+                "address": "617-552-1058<br />\nO'Neill Library 311<br />\nBoston College",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": ""
+            },
+            "display": null,
+            "created": "2014-06-10 14:26:21",
+            "updated": "2018-01-25 20:52:13",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10675"
+        }
+    },
+    {
+        "id": "10676",
+        "email": "sarkodik@bc.edu",
+        "first_name": "Kwasi",
+        "last_name": "Sarkodie-Mensah",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2007-07-19 01:25:27",
+        "updated": "2020-04-18 16:53:49",
+        "subjects": [
+            {
+                "id": "12909",
+                "name": "Psychology",
+                "slug_id": "145017"
+            }
+        ],
+        "profile": {
+            "id": 7876,
+            "account_id": 10676,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Guide"
+            },
+            "image": {
+                "file": "Kwasi-Sarkodie-Mensah.png",
+                "show": "1",
+                "url": "//libapps.s3.amazonaws.com/accounts/10676/profiles/7876/Kwasi-Sarkodie-Mensah.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "Sarkodik@bc.edu",
+                "website": "",
+                "address": "312 O'Neill Library\nChestnut Hill, MA 02467\n",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": "",
+                "phone": "617 552 4465"
+            },
+            "display": null,
+            "created": "2014-06-10 14:26:21",
+            "updated": "2019-08-01 14:36:29",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10676"
+        }
+    },
+    {
+        "id": "10677",
+        "email": "cohenlm@bc.edu",
+        "first_name": "Margaret",
+        "last_name": "Cohen",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2007-07-19 06:19:35",
+        "updated": "2020-04-13 12:28:10",
+        "subjects": [
+            {
+                "id": "12905",
+                "name": "Education",
+                "slug_id": "144978"
+            }
+        ],
+        "profile": {
+            "id": 7877,
+            "account_id": 10677,
+            "customer_id": 94,
+            "box": {
+                "title": "Education Subject Specialist"
+            },
+            "image": {
+                "file": "Margaretcohen.jpeg",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10677/profiles/7877/Margaretcohen.jpeg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a href=\"https://margaretcohen.youcanbook.me/\" data-ycbm-modal=\"true\"><img src=\"https://youcanbook.me/resources/pics/ycbm-button.png\" style=\"border-style:none;\"/></a>",
+            "connect": {
+                "email": "margaret.cohen@bc.edu",
+                "website": "",
+                "address": "margaret.cohen@bc.edu\nO'Neill Library\nRoom 407\n617.552.4919\n\nConsultations are available upon request, please contact me to set up a date/time.",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": "",
+                "phone": ""
+            },
+            "display": {
+                "disp_connect_general": "1",
+                "disp_widget_other": "1",
+                "disp_widget_la": "0",
+                "disp_connect_libraries": "1",
+                "disp_connect_social": "1",
+                "disp_widget_lc": "0"
+            },
+            "created": "2014-06-10 14:26:22",
+            "updated": "2020-01-29 21:28:02",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10677"
+        }
+    },
+    {
+        "id": "10678",
+        "email": "homzie@bc.edu",
+        "first_name": "Leslie",
+        "last_name": "Homzie",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2007-07-19 19:54:55",
+        "updated": "2020-04-15 23:02:35",
+        "subjects": [
+            {
+                "id": "12902",
+                "name": "Communication",
+                "slug_id": "144965"
+            },
+            {
+                "id": "12906",
+                "name": "Gender Studies",
+                "slug_id": "144981"
+            },
+            {
+                "id": "12911",
+                "name": "Sociology & Anthropology",
+                "slug_id": "145022"
+            }
+        ],
+        "profile": {
+            "id": 7878,
+            "account_id": 10678,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Guide"
+            },
+            "image": {
+                "file": "Leslie-Homzie.png",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10678/profiles/7878/Leslie-Homzie.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "homzie@bc.edu",
+                "website": "",
+                "address": "O'Neill Library<br />\r\nBoston College<br />\r\n617-552-3221",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": ""
+            },
+            "display": {
+                "disp_connect_general": "1",
+                "disp_widget_lc": "1",
+                "disp_widget_la": "0"
+            },
+            "created": "2014-06-10 14:26:22",
+            "updated": "2015-09-11 20:14:44",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10678"
+        }
+    },
+    {
+        "id": "10680",
+        "email": "ensins@bc.edu",
+        "first_name": "Sonia",
+        "last_name": "Ensins",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2007-07-26 21:16:07",
+        "updated": "2020-04-20 11:24:47",
+        "subjects": [
+            {
+                "id": "12901",
+                "name": "Business & Management",
+                "slug_id": "144961"
+            },
+            {
+                "id": "12904",
+                "name": "Economics",
+                "slug_id": "144977"
+            },
+            {
+                "id": "12907",
+                "name": "Law",
+                "slug_id": "144989"
+            }
+        ],
+        "profile": {
+            "id": 7880,
+            "account_id": 10680,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Librarian"
+            },
+            "image": {
+                "file": "Lib Guide pic.JPG",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10680/profiles/7880/Lib Guide pic.JPG"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a title=\"Sonia's availability\" href=\"https://sonia-ensins.youcanbook.me/\" class=\"label label-info\" style=\"font-size:1.6em;\">Book an Appointment</a>",
+            "connect": {
+                "email": "sonia.ensins@bc.edu",
+                "website": "",
+                "address": "O'Neill Library 311<br />Boston College<br />617/552-2414<br />sonia.ensins@bc.edu",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": ""
+            },
+            "display": {
+                "disp_widget_lc": "1",
+                "disp_widget_other": "1",
+                "disp_widget_la": "0"
+            },
+            "created": "2014-06-10 14:26:23",
+            "updated": "2017-08-22 15:28:58",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10680"
+        }
+    },
+    {
+        "id": "10686",
+        "email": "sweeneec@bc.edu",
+        "first_name": "Elizabeth",
+        "last_name": "Sweeney",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2007-08-14 15:50:35",
+        "updated": "2020-04-16 20:27:33",
+        "subjects": [
+            {
+                "id": "12879",
+                "name": "Irish Studies",
+                "slug_id": "144985"
+            }
+        ],
+        "profile": {
+            "id": 7886,
+            "account_id": 10686,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Librarian"
+            },
+            "image": {
+                "file": "Beth-Sweeney.png",
+                "show": "1",
+                "url": "//libapps.s3.amazonaws.com/accounts/10686/profiles/7886/Beth-Sweeney.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "burns@bc.libanswers.com",
+                "website": "",
+                "address": "617-552-3956",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": ""
+            },
+            "display": null,
+            "created": "2014-06-10 14:26:26",
+            "updated": "2020-02-13 14:13:34",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10686"
+        }
+    },
+    {
+        "id": "10688",
+        "email": "lopa.williams@bc.edu",
+        "first_name": "Lopa",
+        "last_name": "Williams",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2007-08-14 19:40:53",
+        "updated": "2020-04-20 13:44:28",
+        "profile": {
+            "id": 7888,
+            "account_id": 10688,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Guide"
+            },
+            "image": {
+                "file": "otour_lobby317x210.jpg",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10688/profiles/7888/otour_lobby317x210.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "prusty@bc.edu",
+                "website": "",
+                "address": "",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": ""
+            },
+            "display": null,
+            "created": "2014-06-10 14:26:27",
+            "updated": "2014-06-10 14:26:27",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10688"
+        }
+    },
+    {
+        "id": "10692",
+        "email": "karre@bc.edu",
+        "first_name": "Enid",
+        "last_name": "Karr",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2007-11-07 02:59:31",
+        "updated": "2020-04-17 17:34:22",
+        "subjects": [
+            {
+                "id": "12893",
+                "name": "Biology",
+                "slug_id": "144958"
+            },
+            {
+                "id": "12896",
+                "name": "Earth & Environmental Sciences",
+                "slug_id": "144976"
+            },
+            {
+                "id": "30938",
+                "name": "Environmental Studies",
+                "slug_id": "165259"
+            },
+            {
+                "id": "12913",
+                "name": "Science",
+                "slug_id": "145019"
+            }
+        ],
+        "profile": {
+            "id": 7892,
+            "account_id": 10692,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Librarian"
+            },
+            "image": {
+                "file": "Enid_Karr.png",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10692/profiles/7892/Enid_Karr.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "<script>\nvar lc_opt3326 = {};\nlc_opt3326.title = \"Make an appointment!\";\nlc_opt3326.button_placement = \"none\";\nlc_opt3326.popup_color = \"#7EABCD\";\nlc_opt3326.css = \"http://libcal.bc.edu/css/scheduler.css\";\nlc_opt3326.user = \"3326\";\n</script>\n<script src=\"http://libcal.bc.edu/schedulerjs.php?u=3326\"></script>\n<a href=\"#\" onclick=\"lc_show_widget3326();\"><img src=\"http://lcimages.s3.amazonaws.com/LC-SchedWMe.png\" height=\"32\" width=\"250\" title=\"Schedule an Appointment with me!\" border=\"0\" /></a>",
+            "widget_other": "",
+            "connect": {
+                "email": "karre@bc.edu",
+                "website": "",
+                "address": "O'Neill Library 310<br />\r\n617-552-4477",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": ""
+            },
+            "display": {
+                "disp_widget_lc": "0",
+                "disp_widget_la": "0"
+            },
+            "created": "2014-06-10 14:26:27",
+            "updated": "2019-03-01 13:48:45",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10692"
+        }
+    },
+    {
+        "id": "10693",
+        "email": "braitsch@bc.edu",
+        "first_name": "Amy",
+        "last_name": "Braitsch",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2007-12-18 23:53:22",
+        "updated": "2020-03-10 14:45:38",
+        "subjects": [
+            {
+                "id": "12918",
+                "name": "Archives & Special Collections",
+                "slug_id": "144935"
+            }
+        ],
+        "profile": {
+            "id": 7893,
+            "account_id": 10693,
+            "customer_id": 94,
+            "box": {
+                "title": "Archivist"
+            },
+            "image": {
+                "file": "IMG_0003.jpg",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10693/profiles/7893/IMG_0003.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "amy.braitsch@bc.edu",
+                "website": "",
+                "address": "John J. Burns Library<br />\r\n617-552-3249",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": ""
+            },
+            "display": null,
+            "created": "2014-06-10 14:26:28",
+            "updated": "2019-06-27 20:04:49",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10693"
+        }
+    },
+    {
+        "id": "10697",
+        "email": "braitsch.etd@bc.edu",
+        "first_name": "BC",
+        "last_name": "ETD",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2008-07-23 22:52:14",
+        "updated": "2019-05-16 19:13:01",
+        "profile": {
+            "id": 7897,
+            "account_id": 10697,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Guide"
+            },
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2014-06-10 14:26:29",
+            "updated": "2014-06-10 14:26:29",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10697"
+        }
+    },
+    {
+        "id": "10698",
+        "email": "daltonst@bc.edu",
+        "first_name": "Steve",
+        "last_name": "Dalton",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2008-08-05 18:40:39",
+        "updated": "2020-04-14 17:08:51",
+        "subjects": [
+            {
+                "id": "12889",
+                "name": "Philosophy",
+                "slug_id": "145014"
+            }
+        ],
+        "profile": {
+            "id": 7898,
+            "account_id": 10698,
+            "customer_id": 94,
+            "box": {
+                "title": "TML Reference Librarian"
+            },
+            "image": {
+                "file": "Steve_Dalton_-_Photo.png",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10698/profiles/7898/Steve_Dalton_-_Photo.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "<div id=\"libchat_d2o_widget\"></div><script type=\"text/javascript\"> var libchat_d2o = { button_online: \"//libchat.s3.amazonaws.com/chat_button_online.png\", button_offline: \"//libchat.s3.amazonaws.com/chat_button_offline.png\", iid: \"45\", key: \"682df70156c726a\", domain: \"answers.bc.edu\", uid: \"532\" }; </script><script type=\"text/javascript\" src=\"//libanswers.com/js/chat_load_direct.js\"></script>",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "stephen.dalton.1@bc.edu",
+                "website": "http://musingsamidthethorns.com",
+                "address": "Theology and Ministry Library\n617-552-6541 (Office)\n617-552-6553 (Reference Desk)",
+                "twitter": "https://twitter.com/Oansr",
+                "skype": "",
+                "facebook": "",
+                "linkedin": "https://www.linkedin.com/pub/steve-dalton/34/804/835/"
+            },
+            "display": null,
+            "created": "2014-06-10 14:26:29",
+            "updated": "2015-01-21 15:52:35",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10698"
+        }
+    },
+    {
+        "id": "10700",
+        "email": "wyman.bcgreenerlib@bc.edu",
+        "first_name": "BC",
+        "last_name": "Greener Libraries",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2009-08-14 20:30:14",
+        "updated": "2019-05-16 19:18:47",
+        "profile": {
+            "id": 7900,
+            "account_id": 10700,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Guide"
+            },
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2014-06-10 14:26:29",
+            "updated": "2014-06-10 14:26:29",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10700"
+        }
+    },
+    {
+        "id": "10701",
+        "email": "lawrence.busenbark@bc.edu",
+        "first_name": "Lawrence",
+        "last_name": "Busenbark",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2010-01-20 20:49:23",
+        "updated": "2020-03-19 18:00:06",
+        "subjects": [
+            {
+                "id": "12900",
+                "name": "African & African Diaspora Studies",
+                "slug_id": "144932"
+            },
+            {
+                "id": "12884",
+                "name": "German Language & Literature",
+                "slug_id": "144983"
+            },
+            {
+                "id": "12880",
+                "name": "Latin American Studies",
+                "slug_id": "144988"
+            },
+            {
+                "id": "12890",
+                "name": "Romance Languages & Literatures",
+                "slug_id": "145018"
+            }
+        ],
+        "profile": {
+            "id": 7901,
+            "account_id": 10701,
+            "customer_id": 94,
+            "box": {
+                "title": "Bibliographer"
+            },
+            "image": {
+                "file": "Guillaume_IX.jpg",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10701/profiles/7901/Guillaume_IX.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "lawrence.busenbark@bc.edu",
+                "website": "",
+                "address": "O'Neill Library 212",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": "",
+                "phone": "617-552-2253"
+            },
+            "display": {
+                "disp_connect_general": "1",
+                "disp_widget_la": "1"
+            },
+            "created": "2014-06-10 14:26:29",
+            "updated": "2017-06-05 00:45:14",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10701"
+        }
+    },
+    {
+        "id": "10705",
+        "email": "kearneyj@bc.edu",
+        "first_name": "Jack",
+        "last_name": "Kearney",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2011-09-07 15:34:54",
+        "updated": "2019-05-16 19:15:41",
+        "profile": {
+            "id": 7905,
+            "account_id": 10705,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Guide"
+            },
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2014-06-10 14:26:31",
+            "updated": "2014-06-10 14:26:31",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10705"
+        }
+    },
+    {
+        "id": "10710",
+        "email": "lib-libapps-systemaccount-ggroup@bc.edu",
+        "first_name": "Boston College",
+        "last_name": "Libraries",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2012-08-09 17:33:29",
+        "updated": "2019-05-16 19:16:02",
+        "subjects": [
+            {
+                "id": "86733",
+                "name": "General - Librarian Resources",
+                "slug_id": "717778"
+            }
+        ],
+        "profile": {
+            "id": 7910,
+            "account_id": 10710,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Guide"
+            },
+            "image": {
+                "file": "oneill.png",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10710/profiles/7910/oneill.png"
+            },
+            "en_page": 0,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2014-06-10 14:26:32",
+            "updated": "2017-09-11 14:25:18",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10710"
+        }
+    },
+    {
+        "id": "10712",
+        "email": "houstonp@bc.edu",
+        "first_name": "Chris",
+        "last_name": "Houston-Ponchak",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2013-01-14 22:06:28",
+        "updated": "2019-05-16 19:14:48",
+        "profile": {
+            "id": 7912,
+            "account_id": 10712,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Guide"
+            },
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2014-06-10 14:26:33",
+            "updated": "2014-06-10 14:26:33",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10712"
+        }
+    },
+    {
+        "id": "10713",
+        "email": "scott.britton@bc.edu",
+        "first_name": "Scott",
+        "last_name": "Britton",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2013-04-09 00:19:46",
+        "updated": "2020-04-09 20:42:44",
+        "profile": {
+            "id": 7914,
+            "account_id": 10713,
+            "customer_id": 94,
+            "box": {
+                "title": "Profile"
+            },
+            "image": {
+                "file": "Scott-Britton.png",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10713/profiles/7914/Scott-Britton.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "scott.britton@bc.edu",
+                "website": "",
+                "address": "Boston College O’Neill Library, Rm 410-D\n140 Commonwealth Ave\nChestnut Hill, MA  02467\n617-552-3155",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": ""
+            },
+            "display": null,
+            "created": "2014-06-10 14:26:34",
+            "updated": "2015-03-09 12:00:25",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10713"
+        }
+    },
+    {
+        "id": "10716",
+        "email": "andrew.isidoro@bc.edu",
+        "first_name": "Andrew",
+        "last_name": "Isidoro",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2013-06-20 00:11:09",
+        "updated": "2020-04-13 13:20:16",
+        "profile": {
+            "id": 7917,
+            "account_id": 10716,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Guide"
+            },
+            "image": {
+                "file": "Andrew-Isidoro.png",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10716/profiles/7917/Andrew-Isidoro.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "isidoro@bc.edu",
+                "website": "",
+                "address": "617-552-8073",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": "https://www.linkedin.com/pub/andrew-isidoro/47/255/941"
+            },
+            "display": null,
+            "created": "2014-06-10 14:26:34",
+            "updated": "2019-03-01 14:01:27",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10716"
+        }
+    },
+    {
+        "id": "10717",
+        "email": "paul.bridden@bc.edu",
+        "first_name": "Paul",
+        "last_name": "Bridden",
+        "title": "​Manager, Circulation & Collection Maintenance Services",
+        "nickname": "",
+        "signature": "​\nPaul D. Bridden | ​​Manager, Circulation & Collection Maintenance Services\nAccess Services | Thomas P. O'Neill, Jr. Library | Boston College\n140 Commonwealth Avenue | Chestnut Hill, MA 02467-3810 | Tel: 617-552-4186",
+        "created_by": "0",
+        "created": "2013-07-18 19:12:36",
+        "updated": "2020-04-17 15:51:40",
+        "profile": {
+            "id": 7918,
+            "account_id": 10717,
+            "customer_id": 94,
+            "box": {
+                "title": "Access Services - Student Employees"
+            },
+            "image": {
+                "file": "Paul_Bridden.JPG",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10717/profiles/7918/Paul_Bridden.JPG"
+            },
+            "en_page": 0,
+            "page": null,
+            "widget_la": "<div id=\"libchat_d2o_widget\"></div><script type=\"text/javascript\"> var libchat_d2o = { button_online: \"//libchat.s3.amazonaws.com/chat_button_online.png\", button_offline: \"//libchat.s3.amazonaws.com/chat_button_offline.png\", iid: \"45\", key: \"682df70156c726a\", domain: \"answers.bc.edu\", uid: \"9336\" }; </script><script type=\"text/javascript\" src=\"//libanswers.com/js/chat_load_direct.js\"></script>",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "paul.bridden@bc.edu",
+                "website": "",
+                "address": "",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": ""
+            },
+            "display": null,
+            "created": "2014-06-10 14:26:34",
+            "updated": "2014-07-30 19:22:44",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10717"
+        }
+    },
+    {
+        "id": "10719",
+        "email": "hannah.ha@bc.edu",
+        "first_name": "Hannah",
+        "last_name": "Ha",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2013-11-12 00:07:06",
+        "updated": "2020-03-04 20:40:56",
+        "subjects": [
+            {
+                "id": "12910",
+                "name": "Social Work",
+                "slug_id": "145021"
+            }
+        ],
+        "profile": {
+            "id": 7920,
+            "account_id": 10719,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Librarian"
+            },
+            "image": {
+                "file": "office_photo.jpg",
+                "show": 1,
+                "url": "//libapps.s3.amazonaws.com/accounts/10719/profiles/7920/office_photo.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "hannah.ha@bc.edu",
+                "website": "",
+                "address": "Hannah Ha\nHead Librarian\nSocial Work Library\nLower ground floor, McGuinn Hall\nBoston College\n617-552-3234",
+                "twitter": "",
+                "skype": "",
+                "facebook": "",
+                "linkedin": ""
+            },
+            "display": null,
+            "created": "2014-06-10 14:26:35",
+            "updated": "2019-03-01 16:59:14",
+            "url": "https://libguides.bc.edu/prf.php?account_id=10719"
+        }
+    },
+    {
+        "id": "12171",
+        "email": "martiaes@bc.edu",
+        "first_name": "Jesse",
+        "last_name": "Martinez (regular)",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2014-06-16 17:38:45",
+        "updated": "2020-01-09 15:21:19",
+        "profile": {
+            "id": 9246,
+            "account_id": 12171,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 0,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "address": ""
+            },
+            "display": null,
+            "created": "2014-06-16 17:39:49",
+            "updated": "2017-09-11 14:27:58",
+            "url": "https://libguides.bc.edu/prf.php?account_id=12171"
+        }
+    },
+    {
+        "id": "12291",
+        "email": "howardam@bc.edu",
+        "first_name": "Amy",
+        "last_name": "Howard",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2014-06-17 16:54:44",
+        "updated": "2019-09-15 20:21:00",
+        "profile": {
+            "id": 9609,
+            "account_id": 12291,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 1,
+                "file": "3072af3.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/12291/profiles/9609/3072af3.jpg"
+            },
+            "en_page": 1,
+            "page": {
+                "working": "Course Reserves/Streaming Media Specialist"
+            },
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "address": "304B O'Neill Library",
+                "phone": "617-552-2125",
+                "email": "amy.howard.1@bc.edu",
+                "website": "http://library.bc.edu"
+            },
+            "display": null,
+            "created": "2014-06-18 22:41:10",
+            "updated": "2016-12-07 22:28:03",
+            "url": "https://libguides.bc.edu/prf.php?account_id=12291"
+        }
+    },
+    {
+        "id": "12292",
+        "email": "kennya@bc.edu",
+        "first_name": "Anne",
+        "last_name": "Kenny",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2014-06-17 16:55:50",
+        "updated": "2020-04-19 17:53:48",
+        "profile": {
+            "id": 10700,
+            "account_id": 12292,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 1,
+                "file": "Anne_Kenney.png",
+                "url": "//libapps.s3.amazonaws.com/accounts/12292/profiles/10700/Anne_Kenney.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2014-06-27 18:47:19",
+            "updated": "2014-07-06 18:29:28",
+            "url": "https://libguides.bc.edu/prf.php?account_id=12292"
+        }
+    },
+    {
+        "id": "16320",
+        "email": "lefebvga@bc.edu",
+        "first_name": "Gail",
+        "last_name": "Lefebvre",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2014-07-15 13:51:15",
+        "updated": "2020-01-23 16:56:34",
+        "profile": {
+            "id": 94763,
+            "account_id": 16320,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2016-07-07 14:52:11",
+            "updated": "2016-07-07 14:52:11",
+            "url": "https://libguides.bc.edu/prf.php?account_id=16320"
+        }
+    },
+    {
+        "id": "16321",
+        "email": "kohl@bc.edu",
+        "first_name": "Jeff",
+        "last_name": "Kohl",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2014-07-15 13:51:39",
+        "updated": "2020-03-15 19:22:45",
+        "profile": {
+            "id": 13071,
+            "account_id": 16321,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2014-07-15 22:41:53",
+            "updated": "2014-07-15 22:41:53",
+            "url": "https://libguides.bc.edu/prf.php?account_id=16321"
+        }
+    },
+    {
+        "id": "26074",
+        "email": "shelley.barber@bc.edu",
+        "first_name": "Shelley",
+        "last_name": "Barber",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "10695",
+        "created": "2014-10-03 18:18:39",
+        "updated": "2020-04-16 17:01:24",
+        "profile": {
+            "id": 22015,
+            "account_id": 26074,
+            "customer_id": 94,
+            "box": {
+                "title": "Reference & Archives Specialist"
+            },
+            "image": {
+                "show": 1,
+                "file": "A_cropped.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/26074/profiles/22015/A_cropped.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "address": "Burns Library #211A",
+                "email": "shelley.barber@bc.edu"
+            },
+            "display": null,
+            "created": "2014-10-08 18:26:09",
+            "updated": "2018-05-24 14:52:22",
+            "url": "https://libguides.bc.edu/prf.php?account_id=26074"
+        }
+    },
+    {
+        "id": "30233",
+        "email": "mcgratop@bc.edu",
+        "first_name": "Michael",
+        "last_name": "McGrath",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2014-11-13 17:20:26",
+        "updated": "2019-05-16 19:16:33",
+        "profile": {
+            "id": 24924,
+            "account_id": 30233,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2014-11-13 18:07:11",
+            "updated": "2014-11-13 18:07:11",
+            "url": "https://libguides.bc.edu/prf.php?account_id=30233"
+        }
+    },
+    {
+        "id": "32231",
+        "email": "moonyo@bc.edu",
+        "first_name": "Young",
+        "last_name": "Moon",
+        "title": "Head of Resource Acquisition & Management",
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2014-12-03 16:52:36",
+        "updated": "2020-04-19 17:23:07",
+        "profile": {
+            "id": 26740,
+            "account_id": 32231,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 1,
+                "file": "092012GG129v1.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/32231/profiles/26740/092012GG129v1.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "moonyo@bc.edu",
+                "address": "Head of Resource Acquisition & Management\n\n617-552-3207\nO'Neill Library 212\nBoston College"
+            },
+            "display": null,
+            "created": "2014-12-03 18:13:27",
+            "updated": "2014-12-04 13:29:02",
+            "url": "https://libguides.bc.edu/prf.php?account_id=32231"
+        }
+    },
+    {
+        "id": "35200",
+        "email": "pcochran@bc.edu",
+        "first_name": "Peter",
+        "last_name": "Cochrane",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "261",
+        "created": "2014-12-30 16:11:05",
+        "updated": "2019-05-16 19:17:14",
+        "profile": {
+            "id": 30682,
+            "account_id": 35200,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2015-01-13 20:14:59",
+            "updated": "2015-01-13 20:14:59",
+            "url": "https://libguides.bc.edu/prf.php?account_id=35200"
+        }
+    },
+    {
+        "id": "40028",
+        "email": "laurie.mayville@bc.edu",
+        "first_name": "Laurie",
+        "last_name": "Mayville",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "10687",
+        "created": "2015-02-19 15:40:57",
+        "updated": "2020-03-13 19:27:24",
+        "profile": {
+            "id": 33927,
+            "account_id": 40028,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2015-02-19 20:31:26",
+            "updated": "2015-02-19 20:31:26",
+            "url": "https://libguides.bc.edu/prf.php?account_id=40028"
+        }
+    },
+    {
+        "id": "50377",
+        "email": "christian.dupont@bc.edu",
+        "first_name": "Christian",
+        "last_name": "Dupont",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2015-05-13 16:39:25",
+        "updated": "2020-04-06 17:48:02",
+        "profile": {
+            "id": 70314,
+            "account_id": 50377,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 1,
+                "file": "2017_07_15_L1004049_photo_Bobbie_Hanvey_-_reduced.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/50377/profiles/70314/2017_07_15_L1004049_photo_Bobbie_Hanvey_-_reduced.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "website": "bc.edu/burns"
+            },
+            "display": null,
+            "created": "2015-12-26 17:45:47",
+            "updated": "2018-10-22 13:22:09",
+            "url": "https://libguides.bc.edu/prf.php?account_id=50377"
+        }
+    },
+    {
+        "id": "62990",
+        "email": "mary.lafferty@bc.edu",
+        "first_name": "Mary",
+        "last_name": "Lafferty",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "10713",
+        "created": "2015-07-29 18:09:18",
+        "updated": "2020-03-31 13:39:22",
+        "profile": {
+            "id": 54229,
+            "account_id": 62990,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2015-07-29 18:13:28",
+            "updated": "2015-07-29 18:13:28",
+            "url": "https://libguides.bc.edu/prf.php?account_id=62990"
+        }
+    },
+    {
+        "id": "65380",
+        "email": "wanda.anderson@bc.edu",
+        "first_name": "Wanda",
+        "last_name": "Anderson",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2015-08-14 17:44:09",
+        "updated": "2020-03-23 21:09:00",
+        "subjects": [
+            {
+                "id": "12899",
+                "name": "Nursing & Health Sciences",
+                "slug_id": "145013"
+            }
+        ],
+        "profile": {
+            "id": 91104,
+            "account_id": 65380,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 1,
+                "file": "Wanda-Anderson.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/65380/profiles/91104/Wanda-Anderson.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "wanda.anderson@bc.edu",
+                "phone": "617-552-4457",
+                "address": "O'Neill Library 310"
+            },
+            "display": null,
+            "created": "2016-06-07 15:15:42",
+            "updated": "2016-12-09 21:41:19",
+            "url": "https://libguides.bc.edu/prf.php?account_id=65380"
+        }
+    },
+    {
+        "id": "65381",
+        "email": "sally.wyman@bc.edu",
+        "first_name": "Sally",
+        "last_name": "Wyman",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "0",
+        "created": "2015-08-14 17:44:10",
+        "updated": "2019-05-16 19:17:45",
+        "profile": {
+            "id": 156361,
+            "account_id": 65381,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2018-01-10 18:44:20",
+            "updated": "2018-01-10 18:44:20",
+            "url": "https://libguides.bc.edu/prf.php?account_id=65381"
+        }
+    },
+    {
+        "id": "68203",
+        "email": "cindy.jones@bc.edu",
+        "first_name": "Cindy",
+        "last_name": "Jones",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2015-08-28 14:57:41",
+        "updated": "2020-04-17 18:21:34",
+        "profile": {
+            "id": 91102,
+            "account_id": 68203,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2016-06-07 15:15:40",
+            "updated": "2016-06-07 15:15:40",
+            "url": "https://libguides.bc.edu/prf.php?account_id=68203"
+        }
+    },
+    {
+        "id": "75119",
+        "email": "fiskes@bc.edu",
+        "first_name": "Shannon",
+        "last_name": "Fiske",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2015-10-20 13:48:50",
+        "updated": "2020-03-23 14:44:39",
+        "profile": {
+            "id": 63653,
+            "account_id": 75119,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2015-10-20 17:58:07",
+            "updated": "2015-10-20 17:58:07",
+            "url": "https://libguides.bc.edu/prf.php?account_id=75119"
+        }
+    },
+    {
+        "id": "76713",
+        "email": "emily.singley@bc.edu",
+        "first_name": "Emily",
+        "last_name": "Singley",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2015-11-03 16:09:57",
+        "updated": "2020-04-16 16:27:18",
+        "profile": {
+            "id": 64905,
+            "account_id": 76713,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 1,
+                "file": "EmmyWithBikeCropped.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/76713/profiles/64905/EmmyWithBikeCropped.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "phone": "617-552-2918",
+                "email": "emily.singley@bc.edu",
+                "twitter": "https://twitter.com/emilysingley",
+                "linkedin": "https://www.linkedin.com/in/emilysingley",
+                "skype": ""
+            },
+            "display": null,
+            "created": "2015-11-03 16:27:49",
+            "updated": "2017-09-26 18:22:15",
+            "url": "https://libguides.bc.edu/prf.php?account_id=76713"
+        }
+    },
+    {
+        "id": "80433",
+        "email": "margaret.cohen@bc.edu",
+        "first_name": "Margaret",
+        "last_name": "Cohen",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "10672",
+        "created": "2015-12-09 15:06:15",
+        "updated": "2019-05-16 19:16:22",
+        "profile": {
+            "id": 68425,
+            "account_id": 80433,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2015-12-09 15:06:15",
+            "updated": "2015-12-09 15:06:15",
+            "url": "https://libguides.bc.edu/prf.php?account_id=80433"
+        }
+    },
+    {
+        "id": "80821",
+        "email": "adam.williams.2@bc.edu",
+        "first_name": "Adam",
+        "last_name": "Williams",
+        "title": "Senior Reference Librarian/Bibliographer - Social Work Library",
+        "nickname": "",
+        "signature": "adam.williams.2@bc.edu",
+        "created_by": "3908",
+        "created": "2015-12-14 15:25:56",
+        "updated": "2020-04-16 17:36:31",
+        "subjects": [
+            {
+                "id": "12910",
+                "name": "Social Work",
+                "slug_id": "145021"
+            }
+        ],
+        "profile": {
+            "id": 68961,
+            "account_id": 80821,
+            "customer_id": 94,
+            "box": {
+                "title": "Social Work Librarian"
+            },
+            "image": {
+                "show": 1,
+                "file": "adam1.png",
+                "url": "//libapps.s3.amazonaws.com/accounts/80821/profiles/68961/adam1.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a title=\"Chelcie's availability\" href=\"https://willibft.youcanbook.me\" class=\"label label-info\" style=\"font-size:1.6em;\"><span style=\"padding-right: 10px;\">Set up an</span><br /><span style=\"padding-left: 10px;\">Online Meeting</span></a>",
+            "connect": {
+                "email": "adam.williams.2@bc.edu",
+                "phone": "617-552-0792",
+                "address": "McGuinn Hall, 038"
+            },
+            "display": {
+                "disp_connect_general": "1"
+            },
+            "created": "2015-12-14 15:25:56",
+            "updated": "2020-03-13 18:47:50",
+            "url": "https://libguides.bc.edu/prf.php?account_id=80821"
+        }
+    },
+    {
+        "id": "85003",
+        "email": "chris.mayo@bc.edu",
+        "first_name": "Chris",
+        "last_name": "Mayo",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "248",
+        "created": "2016-01-26 14:41:22",
+        "updated": "2020-01-06 17:13:38",
+        "profile": {
+            "id": 73855,
+            "account_id": 85003,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2016-01-26 14:41:22",
+            "updated": "2016-01-26 14:41:22",
+            "url": "https://libguides.bc.edu/prf.php?account_id=85003"
+        }
+    },
+    {
+        "id": "85004",
+        "email": "adam.jazairi@bc.edu",
+        "first_name": "Adam",
+        "last_name": "Jazairi",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "248",
+        "created": "2016-01-26 14:42:50",
+        "updated": "2020-01-06 14:40:30",
+        "profile": {
+            "id": 73856,
+            "account_id": 85004,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2016-01-26 14:42:50",
+            "updated": "2016-01-26 14:42:50",
+            "url": "https://libguides.bc.edu/prf.php?account_id=85004"
+        }
+    },
+    {
+        "id": "86436",
+        "email": "conroyab@bc.edu",
+        "first_name": "Andrea",
+        "last_name": "Conroy",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "10677",
+        "created": "2016-02-03 20:47:53",
+        "updated": "2020-04-02 15:37:26",
+        "profile": {
+            "id": 75434,
+            "account_id": 86436,
+            "customer_id": 94,
+            "box": {
+                "title": "ERC Evening Supervisor/Educational Technology Assistant"
+            },
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "andrea.conroy.2@bc.edu",
+                "phone": "617-552-4619",
+                "address": "Campion Hall"
+            },
+            "display": null,
+            "created": "2016-02-03 20:47:53",
+            "updated": "2016-10-27 01:21:32",
+            "url": "https://libguides.bc.edu/prf.php?account_id=86436"
+        }
+    },
+    {
+        "id": "86438",
+        "email": "kimberly.kowal@bc.edu",
+        "first_name": "Kimberly",
+        "last_name": "Kowal",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "248",
+        "created": "2016-02-03 20:56:53",
+        "updated": "2019-11-05 15:20:52",
+        "profile": {
+            "id": 75436,
+            "account_id": 86438,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 1,
+                "file": "Kowal.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/86438/profiles/75436/Kowal.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a href=\"https://kckowal.youcanbook.me\" class=\"btn btn-default\">Schedule an appointment</a><p><p>\n<a href=\"https://orcid.org/0000-0003-4659-2307\" target=\"orcid.widget\" rel=\"noopener noreferrer\" style=\"vertical-align:top;\"><img src=\"https://orcid.org/sites/default/files/images/orcid_16x16.png\" style=\"width:1em;margin-right:.5em;\" alt=\"ORCID iD icon\">orcid.org/0000-0003-4659-2307</a>\n",
+            "connect": {
+                "phone": "617-552-0841",
+                "email": "kowalk@bc.edu",
+                "address": "O'Neill Library, 410b\nBoston College \n140 Commonwealth Ave.\nChestnut Hill, Massachusetts 02467",
+                "website": ""
+            },
+            "display": null,
+            "created": "2016-02-03 20:56:53",
+            "updated": "2018-10-22 15:23:42",
+            "url": "https://libguides.bc.edu/prf.php?account_id=86438"
+        }
+    },
+    {
+        "id": "97820",
+        "email": "lib-libapps-assetmanager-ggroup@bc.edu",
+        "first_name": "Asset Manager",
+        "last_name": "LibApps",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2016-05-13 15:26:17",
+        "updated": "2019-05-16 19:16:02",
+        "profile": {
+            "id": 88227,
+            "account_id": 97820,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 0,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2016-05-13 15:26:17",
+            "updated": "2017-09-11 14:22:10",
+            "url": "https://libguides.bc.edu/prf.php?account_id=97820"
+        }
+    },
+    {
+        "id": "102982",
+        "email": "julia.hughes@bc.edu",
+        "first_name": "Julia",
+        "last_name": "Hughes",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2016-06-29 17:09:33",
+        "updated": "2020-04-17 19:56:49",
+        "subjects": [
+            {
+                "id": "12916",
+                "name": "Asian Studies",
+                "slug_id": "143247"
+            },
+            {
+                "id": "133507",
+                "name": "International Studies",
+                "slug_id": "1294981"
+            },
+            {
+                "id": "29240",
+                "name": "Islamic Civilization & Societies",
+                "slug_id": "148589"
+            },
+            {
+                "id": "12908",
+                "name": "Political Science & Government",
+                "slug_id": "145016"
+            }
+        ],
+        "profile": {
+            "id": 93853,
+            "account_id": 102982,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 1,
+                "file": "HeadshotCropped.png",
+                "url": "//libapps.s3.amazonaws.com/accounts/102982/profiles/93853/HeadshotCropped.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a title=\"Julia's availability\" href=\"https://juliahughes.youcanbook.me\" class=\"label label-info\" style=\"font-size:1.6em;\">Book an Appointment</a>",
+            "connect": {
+                "phone": "617-552-4758",
+                "email": "Julia.Hughes@bc.edu",
+                "address": "O'Neill Library 309\nBoston College"
+            },
+            "display": {
+                "disp_widget_other": "1"
+            },
+            "created": "2016-06-29 17:09:33",
+            "updated": "2018-10-26 13:58:39",
+            "url": "https://libguides.bc.edu/prf.php?account_id=102982"
+        }
+    },
+    {
+        "id": "103972",
+        "email": "katherine.fox@bc.edu",
+        "first_name": "Katherine",
+        "last_name": "Fox",
+        "title": null,
+        "nickname": "",
+        "signature": "Head of Public Services and Engagement\nJohn J. Burns Library\nBoston College",
+        "created_by": "3302",
+        "created": "2016-07-08 15:29:11",
+        "updated": "2020-04-16 15:31:11",
+        "profile": {
+            "id": 94988,
+            "account_id": 103972,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2016-07-08 15:29:11",
+            "updated": "2016-07-08 15:29:11",
+            "url": "https://libguides.bc.edu/prf.php?account_id=103972"
+        }
+    },
+    {
+        "id": "104126",
+        "email": "lymanth@gmail.com",
+        "first_name": "Theresa non-Admin",
+        "last_name": "Lyman",
+        "title": "",
+        "nickname": "",
+        "signature": "",
+        "created_by": "3302",
+        "created": "2016-07-11 14:27:05",
+        "updated": "2019-05-16 19:16:22",
+        "profile": {
+            "id": 95150,
+            "account_id": 104126,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 0,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2016-07-11 14:27:06",
+            "updated": "2017-09-11 14:18:56",
+            "url": "https://libguides.bc.edu/prf.php?account_id=104126"
+        }
+    },
+    {
+        "id": "106904",
+        "email": "tiffeni.fontno@bc.edu",
+        "first_name": "Tiffeni",
+        "last_name": "Fontno  MLIS, M.Ed.",
+        "title": "Head Librarian, Educational Resource Center",
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2016-08-02 14:24:49",
+        "updated": "2020-04-16 21:20:21",
+        "subjects": [
+            {
+                "id": "12905",
+                "name": "Education",
+                "slug_id": "144978"
+            },
+            {
+                "id": "163549",
+                "name": "Education K-12",
+                "slug_id": "1697241"
+            }
+        ],
+        "profile": {
+            "id": 98149,
+            "account_id": 106904,
+            "customer_id": 94,
+            "box": {
+                "title": "Head Librarian, Educational Resource Center"
+            },
+            "image": {
+                "show": 1,
+                "file": "me2019.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/106904/profiles/98149/me2019.jpg"
+            },
+            "en_page": 1,
+            "page": {
+                "working": ""
+            },
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a href=\"https://bcerc.youcanbook.me/\" data-ycbm-modal=\"true\"><img src=\"https://youcanbook.me/resources/pics/ycbm-button.png\" style=\"border-style:none;\"/></a>",
+            "connect": {
+                "email": "fontno@bc.edu",
+                "phone": "617-552-1172",
+                "address": "Educational Resource Center\nCampion G13",
+                "linkedin": "https://www.linkedin.com/in/tiffeni-fontno-20ba471/",
+                "facebook": "https://www.facebook.com/bcerclibrary/?ref=aymt_homepage_panel&eid=ARB2NViTOXP4GKWavzT6hC_bDy7kygA9cfSbohBmbk7e9NLFgzfrJKBACj99ubts5tdKd1_atzaa5I-4",
+                "pinterest": "https://www.pinterest.com/tiffenif/",
+                "twitter": "https://twitter.com/tiffeni",
+                "website": "http://allthingsineducation.weebly.com/",
+                "instagram": "https://www.instagram.com/bcerclibrary/?hl=en"
+            },
+            "display": {
+                "disp_connect_social": "1",
+                "disp_widget_other": "1",
+                "disp_connect_general": "1",
+                "disp_connect_libraries": "1"
+            },
+            "created": "2016-08-02 14:24:49",
+            "updated": "2019-10-28 00:50:09",
+            "url": "https://libguides.bc.edu/prf.php?account_id=106904"
+        }
+    },
+    {
+        "id": "112905",
+        "email": "meltons@bc.edu",
+        "first_name": "Sarah",
+        "last_name": "Melton",
+        "title": "Head, Digital Scholarship",
+        "nickname": "",
+        "signature": "",
+        "created_by": "10684",
+        "created": "2016-09-14 17:55:23",
+        "updated": "2020-04-14 19:04:43",
+        "subjects": [
+            {
+                "id": "177650",
+                "name": "Digital Scholarship",
+                "slug_id": "1892144"
+            }
+        ],
+        "profile": {
+            "id": 104673,
+            "account_id": 112905,
+            "customer_id": 94,
+            "box": {
+                "title": "Sarah Melton"
+            },
+            "image": {
+                "show": 1,
+                "file": "36359634_10102083327761287_5372186054939901952_n.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/112905/profiles/104673/36359634_10102083327761287_5372186054939901952_n.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "sarah.melton@bc.edu"
+            },
+            "display": null,
+            "created": "2016-09-14 17:55:23",
+            "updated": "2019-10-09 14:44:29",
+            "url": "https://libguides.bc.edu/prf.php?account_id=112905"
+        }
+    },
+    {
+        "id": "115563",
+        "email": "stephen.sturgeon@bc.edu",
+        "first_name": "Stephen",
+        "last_name": "Sturgeon",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2016-10-06 16:22:50",
+        "updated": "2020-03-24 08:19:14",
+        "subjects": [
+            {
+                "id": "12879",
+                "name": "Irish Studies",
+                "slug_id": "144985"
+            },
+            {
+                "id": "12885",
+                "name": "Language & Literature in English",
+                "slug_id": "144986"
+            }
+        ],
+        "profile": {
+            "id": 107477,
+            "account_id": 115563,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 1,
+                "file": "profile_pic.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/115563/profiles/107477/profile_pic.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "stephen.sturgeon@bc.edu"
+            },
+            "display": null,
+            "created": "2016-10-06 16:22:50",
+            "updated": "2016-10-24 15:13:30",
+            "url": "https://libguides.bc.edu/prf.php?account_id=115563"
+        }
+    },
+    {
+        "id": "118250",
+        "email": "luke.gaudreau@bc.edu",
+        "first_name": "Luke",
+        "last_name": "Gaudreau",
+        "title": "Discovery Services Librarian",
+        "nickname": "",
+        "signature": "",
+        "created_by": "3302",
+        "created": "2016-11-04 12:08:20",
+        "updated": "2020-03-25 11:50:36",
+        "profile": {
+            "id": 110357,
+            "account_id": 118250,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2016-11-04 12:08:20",
+            "updated": "2016-11-04 12:08:20",
+            "url": "https://libguides.bc.edu/prf.php?account_id=118250"
+        }
+    },
+    {
+        "id": "118716",
+        "email": "terra.kallemeyn@bc.edu",
+        "first_name": "Terra",
+        "last_name": "Kallemeyn",
+        "title": "",
+        "nickname": "",
+        "signature": "",
+        "created_by": "3302",
+        "created": "2016-11-10 14:40:10",
+        "updated": "2020-04-17 16:11:54",
+        "profile": {
+            "id": 110903,
+            "account_id": 118716,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2016-11-10 14:40:10",
+            "updated": "2016-11-10 14:40:10",
+            "url": "https://libguides.bc.edu/prf.php?account_id=118716"
+        }
+    },
+    {
+        "id": "129323",
+        "email": "john.oconnor.15@bc.edu",
+        "first_name": "John",
+        "last_name": "O'Connor",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2017-03-07 17:53:41",
+        "updated": "2020-03-04 20:43:33",
+        "profile": {
+            "id": 122390,
+            "account_id": 129323,
+            "customer_id": 94,
+            "box": {
+                "title": "Scholarly Communications Librarian"
+            },
+            "image": {
+                "show": 1,
+                "file": "head.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/129323/profiles/122390/head.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a title=\"John's Availability\" href=\"https://oconnowy.youcanbook.me\" class=\"label label-info\" style=\"font-size:1.6em;\">Book Appointment</a>",
+            "connect": {
+                "address": "O'Neill Library 212",
+                "phone": "617-552-1943",
+                "email": "john.oconnor.15@bc.edu"
+            },
+            "display": null,
+            "created": "2017-03-07 17:53:41",
+            "updated": "2019-04-08 17:44:07",
+            "url": "https://libguides.bc.edu/prf.php?account_id=129323"
+        }
+    },
+    {
+        "id": "129352",
+        "email": "rodrigo.castro@bc.edu",
+        "first_name": "Rodrigo",
+        "last_name": "Castro",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "10713",
+        "created": "2017-03-07 20:48:52",
+        "updated": "2020-04-14 17:43:11",
+        "profile": {
+            "id": 122437,
+            "account_id": 129352,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2017-03-07 20:48:52",
+            "updated": "2017-03-07 20:48:52",
+            "url": "https://libguides.bc.edu/prf.php?account_id=129352"
+        }
+    },
+    {
+        "id": "129888",
+        "email": "cody.mansley@bc.edu",
+        "first_name": "Cody",
+        "last_name": "Mansley",
+        "title": "Reference & Collection Development Assistant",
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2017-03-13 13:54:35",
+        "updated": "2020-04-13 13:16:30",
+        "profile": {
+            "id": 123032,
+            "account_id": 129888,
+            "customer_id": 94,
+            "box": {
+                "title": "Reference & Collection Development Assistant"
+            },
+            "image": {
+                "show": 1,
+                "file": "Profile.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/129888/profiles/123032/Profile.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a href=\"https://mansley.youcanbook.me/\" data-ycbm-modal=\"true\"><img src=\"https://youcanbook.me/resources/pics/ycbm-button.png\" style=\"border-style:none;\"/></a>",
+            "connect": {
+                "address": "Theology and Ministry Library",
+                "phone": "617-552-8151",
+                "email": "cody.mansley@bc.edu",
+                "website": "http://libguides.bc.edu/tml"
+            },
+            "display": {
+                "disp_connect_general": "1"
+            },
+            "created": "2017-03-13 13:54:35",
+            "updated": "2020-02-18 19:41:35",
+            "url": "https://libguides.bc.edu/prf.php?account_id=129888"
+        }
+    },
+    {
+        "id": "134980",
+        "email": "kate.edrington@bc.edu",
+        "first_name": "Kate",
+        "last_name": "Edrington",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2017-05-09 13:13:28",
+        "updated": "2020-03-30 14:00:00",
+        "profile": {
+            "id": 128587,
+            "account_id": 134980,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2017-05-09 13:13:28",
+            "updated": "2017-05-09 13:13:28",
+            "url": "https://libguides.bc.edu/prf.php?account_id=134980"
+        }
+    },
+    {
+        "id": "137903",
+        "email": "yaqing.xu@bc.edu",
+        "first_name": "Allison",
+        "last_name": "Xu",
+        "title": "",
+        "nickname": "",
+        "signature": "",
+        "created_by": "87756",
+        "created": "2017-06-08 17:48:18",
+        "updated": "2020-03-27 16:19:22",
+        "profile": {
+            "id": 131768,
+            "account_id": 137903,
+            "customer_id": 94,
+            "box": {
+                "title": "Data Visualization Librarian"
+            },
+            "image": {
+                "show": 1,
+                "file": "093cd1d.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/137903/profiles/131768/093cd1d.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a href=\"https://bcldata.youcanbook.me/\" data-ycbm-modal=\"true\"><img src=\"https://libapps.s3.amazonaws.com/accounts/215925/images/book-appointment-button-3.png\" style=\"border-style:none;\"/></a>",
+            "connect": {
+                "email": "xupr@bc.edu",
+                "address": "O'Neill Library Room 212"
+            },
+            "display": {
+                "disp_connect_social": "1",
+                "disp_widget_other": "1"
+            },
+            "created": "2017-06-08 17:48:18",
+            "updated": "2019-12-09 15:51:02",
+            "url": "https://libguides.bc.edu/prf.php?account_id=137903"
+        }
+    },
+    {
+        "id": "140093",
+        "email": "paige.walker@bc.edu",
+        "first_name": "Paige",
+        "last_name": "Walker",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2017-06-29 17:51:10",
+        "updated": "2019-05-16 19:17:14",
+        "profile": {
+            "id": 134160,
+            "account_id": 140093,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2017-06-29 17:51:10",
+            "updated": "2017-06-29 17:51:10",
+            "url": "https://libguides.bc.edu/prf.php?account_id=140093"
+        }
+    },
+    {
+        "id": "142640",
+        "email": "feinberg@bc.edu",
+        "first_name": "Arlene",
+        "last_name": "Feinberg",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2017-07-27 16:38:41",
+        "updated": "2019-05-16 19:14:17",
+        "profile": {
+            "id": 136952,
+            "account_id": 142640,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2017-07-27 16:38:41",
+            "updated": "2017-07-27 16:38:41",
+            "url": "https://libguides.bc.edu/prf.php?account_id=142640"
+        }
+    },
+    {
+        "id": "142643",
+        "email": "mpolo@bc.edu",
+        "first_name": "Eugenie",
+        "last_name": "M'Polo",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2017-07-27 16:41:19",
+        "updated": "2019-05-16 19:16:54",
+        "profile": {
+            "id": 136955,
+            "account_id": 142643,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2017-07-27 16:41:19",
+            "updated": "2017-07-27 16:41:19",
+            "url": "https://libguides.bc.edu/prf.php?account_id=142643"
+        }
+    },
+    {
+        "id": "145218",
+        "email": "strauber@bc.edu",
+        "first_name": "Chris",
+        "last_name": "Strauber",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2017-08-16 15:45:01",
+        "updated": "2020-04-17 14:33:23",
+        "subjects": [
+            {
+                "id": "12882",
+                "name": "Classical Studies",
+                "slug_id": "144963"
+            },
+            {
+                "id": "12889",
+                "name": "Philosophy",
+                "slug_id": "145014"
+            },
+            {
+                "id": "12892",
+                "name": "Theology",
+                "slug_id": "145025"
+            }
+        ],
+        "profile": {
+            "id": 139694,
+            "account_id": 145218,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 1,
+                "file": "Studio_Session-18441.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/145218/profiles/139694/Studio_Session-18441.jpg"
+            },
+            "en_page": 1,
+            "page": {
+                "redirect": ""
+            },
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a title=\"Make An Appointment\" href=\"https://strauber.youcanbook.me\" class=\"label label-info\" style=\"font-size:1.6em;\">Make an Appointment</a>",
+            "connect": {
+                "twitter": "@cstrauber",
+                "email": "chris.strauber@bc.edu",
+                "phone": "617-552/4447",
+                "address": "O'Neill Library, Room 309\nBoston College Libraries\nChestnut Hill, MA 02467"
+            },
+            "display": null,
+            "created": "2017-08-16 15:45:01",
+            "updated": "2019-01-28 14:31:56",
+            "url": "https://libguides.bc.edu/prf.php?account_id=145218"
+        }
+    },
+    {
+        "id": "148462",
+        "email": "amy.brown.3@bc.edu",
+        "first_name": "Amy",
+        "last_name": "Brown",
+        "title": "",
+        "nickname": "",
+        "signature": "",
+        "created_by": "87756",
+        "created": "2017-09-08 13:47:58",
+        "updated": "2019-12-02 16:45:03",
+        "profile": {
+            "id": 143113,
+            "account_id": 148462,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2017-09-08 13:47:58",
+            "updated": "2017-09-08 13:47:58",
+            "url": "https://libguides.bc.edu/prf.php?account_id=148462"
+        }
+    },
+    {
+        "id": "150597",
+        "email": "monahakk@bc.edu",
+        "first_name": "Kathleen",
+        "last_name": "Monahan",
+        "title": "Reference, Instruction & Digital Services Librarian, Burns Library",
+        "nickname": "",
+        "signature": "Kathleen Monahan\n(she/her/hers)\nReference, Instruction & Digital Services Librarian\nJohn J. Burns Library, Boston College\n\nhttps://libguides.bc.edu/Burns/contact",
+        "created_by": "3908",
+        "created": "2017-09-27 19:29:46",
+        "updated": "2020-04-17 19:38:49",
+        "profile": {
+            "id": 145376,
+            "account_id": 150597,
+            "customer_id": 94,
+            "box": {
+                "title": "Reference, Instruction & Digital Services Librarian, Burns Library"
+            },
+            "image": {
+                "show": 1,
+                "file": "ProfilePhoto_KMonahan.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/150597/profiles/145376/ProfilePhoto_KMonahan.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "kathleen.monahan.2@bc.edu",
+                "address": "Bapst Library 310",
+                "phone": "617-552-8389"
+            },
+            "display": {
+                "disp_connect_general": "0"
+            },
+            "created": "2017-09-27 19:29:46",
+            "updated": "2018-04-10 12:59:52",
+            "url": "https://libguides.bc.edu/prf.php?account_id=150597"
+        }
+    },
+    {
+        "id": "152355",
+        "email": "postleta@bc.edu",
+        "first_name": "Allison",
+        "last_name": "Postlethwait",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "261",
+        "created": "2017-10-16 15:56:17",
+        "updated": "2019-05-16 19:17:24",
+        "profile": {
+            "id": 147286,
+            "account_id": 152355,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2017-10-16 15:56:17",
+            "updated": "2017-10-16 15:56:17",
+            "url": "https://libguides.bc.edu/prf.php?account_id=152355"
+        }
+    },
+    {
+        "id": "180153",
+        "email": "jennifer.butler@bc.edu",
+        "first_name": "Jennifer",
+        "last_name": "Butler",
+        "title": "",
+        "nickname": "",
+        "signature": "",
+        "created_by": "261",
+        "created": "2018-07-18 21:37:42",
+        "updated": "2020-04-16 17:53:11",
+        "subjects": [
+            {
+                "id": "12892",
+                "name": "Theology",
+                "slug_id": "145025"
+            }
+        ],
+        "profile": {
+            "id": 176779,
+            "account_id": 180153,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Librarian"
+            },
+            "image": {
+                "show": 1,
+                "file": "Studio_Session-24224.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/180153/profiles/176779/Studio_Session-24224.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a href=\"https://jennifer-61.youcanbook.me/\" data-ycbm-modal=\"true\"><img src=\"https://youcanbook.me/resources/pics/ycbm-button.png\" style=\"border-style:none;\"/></a>",
+            "connect": {
+                "address": "Theology and Ministry Library\n117 Lake Street\nBrighton Campus",
+                "phone": "617-552-6540",
+                "email": "jennifer.butler@bc.edu",
+                "linkedin": "",
+                "goodreads": ""
+            },
+            "display": {
+                "disp_widget_la": "1"
+            },
+            "created": "2018-07-18 21:37:42",
+            "updated": "2020-02-18 16:32:42",
+            "url": "https://libguides.bc.edu/prf.php?account_id=180153"
+        }
+    },
+    {
+        "id": "183554",
+        "email": "leea.stroia@bc.edu",
+        "first_name": "Leea",
+        "last_name": "Stroia",
+        "title": "",
+        "nickname": "",
+        "signature": "",
+        "created_by": "261",
+        "created": "2018-08-21 13:29:31",
+        "updated": "2020-03-12 15:45:08",
+        "profile": {
+            "id": 180426,
+            "account_id": 183554,
+            "customer_id": 94,
+            "box": {
+                "title": "Supervisor, Theology and Ministry Library"
+            },
+            "image": {
+                "show": 1,
+                "file": "092419PJ187v1.1.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/183554/profiles/180426/092419PJ187v1.1.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "address": "Theology and Ministry Library, 117 Lake St.,             Brighton, MA 02135",
+                "phone": "617-552-6539",
+                "email": "leea.stroia@bc.edu"
+            },
+            "display": null,
+            "created": "2018-08-21 13:29:31",
+            "updated": "2019-10-09 17:13:27",
+            "url": "https://libguides.bc.edu/prf.php?account_id=183554"
+        }
+    },
+    {
+        "id": "184985",
+        "email": "gogel@bc.edu",
+        "first_name": "Catherine",
+        "last_name": "Gogel",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2018-08-29 14:02:26",
+        "updated": "2020-04-13 17:24:38",
+        "profile": {
+            "id": 181924,
+            "account_id": 184985,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2018-08-29 14:02:26",
+            "updated": "2018-08-29 14:02:26",
+            "url": "https://libguides.bc.edu/prf.php?account_id=184985"
+        }
+    },
+    {
+        "id": "191446",
+        "email": "bastidaj@bc.edu",
+        "first_name": "Julian",
+        "last_name": "Johnson ",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2018-10-22 15:38:10",
+        "updated": "2020-03-10 16:47:00",
+        "profile": {
+            "id": 188755,
+            "account_id": 191446,
+            "customer_id": 94,
+            "box": {
+                "title": "Julian Johnson, Access Services Specialist"
+            },
+            "image": {
+                "show": 1,
+                "file": "Julian.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/191446/profiles/188755/Julian.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "bastidaj@bc.edu"
+            },
+            "display": null,
+            "created": "2018-10-22 15:38:10",
+            "updated": "2018-12-29 16:34:45",
+            "url": "https://libguides.bc.edu/prf.php?account_id=191446"
+        }
+    },
+    {
+        "id": "206975",
+        "email": "beattiaa@bc.edu",
+        "first_name": "Alison",
+        "last_name": "Beattie",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2019-04-12 15:48:20",
+        "updated": "2020-04-06 13:41:15",
+        "profile": {
+            "id": 205155,
+            "account_id": 206975,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 1,
+                "file": "e3711ade-d9bb-476b-bb85-f0a4d332a003.jpeg",
+                "url": "//libapps.s3.amazonaws.com/accounts/206975/profiles/205155/e3711ade-d9bb-476b-bb85-f0a4d332a003.jpeg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "address": "O'Neill Library rm. 304\nBoston College\n140 Commonwealth Ave\nBoston, MA 02467",
+                "phone": "1 (617) 552-1200",
+                "email": "alison.beattie@bc.edu",
+                "linkedin": "https://www.linkedin.com/in/alison-beattie-8a098583",
+                "instagram": "https://www.instagram.com/mydadsbirds/"
+            },
+            "display": {
+                "disp_connect_general": "1"
+            },
+            "created": "2019-04-12 15:48:20",
+            "updated": "2020-02-25 13:49:17",
+            "url": "https://libguides.bc.edu/prf.php?account_id=206975"
+        }
+    },
+    {
+        "id": "210459",
+        "email": "REYNAJA@bc.edu ",
+        "first_name": "Jacob",
+        "last_name": "Reyna",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "82588",
+        "created": "2019-06-04 20:29:02",
+        "updated": "2020-04-17 15:41:04",
+        "profile": {
+            "id": 208871,
+            "account_id": 210459,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2019-06-04 20:29:02",
+            "updated": "2019-06-04 20:29:02",
+            "url": "https://libguides.bc.edu/prf.php?account_id=210459"
+        }
+    },
+    {
+        "id": "211795",
+        "email": "izzic@bc.edu",
+        "first_name": "Rina",
+        "last_name": "Izzi",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "261",
+        "created": "2019-06-20 17:51:05",
+        "updated": "2020-02-20 22:01:20",
+        "profile": {
+            "id": 210306,
+            "account_id": 211795,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "izzic@bc.edu"
+            },
+            "display": null,
+            "created": "2019-06-20 17:51:06",
+            "updated": "2019-06-21 14:43:47",
+            "url": "https://libguides.bc.edu/prf.php?account_id=211795"
+        }
+    },
+    {
+        "id": "211804",
+        "email": "bonarb@bc.edu",
+        "first_name": "Bridgett",
+        "last_name": "Bonar",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "261",
+        "created": "2019-06-20 17:53:40",
+        "updated": "2019-11-11 22:26:54",
+        "profile": {
+            "id": 210315,
+            "account_id": 211804,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2019-06-20 17:53:40",
+            "updated": "2019-06-20 17:53:40",
+            "url": "https://libguides.bc.edu/prf.php?account_id=211804"
+        }
+    },
+    {
+        "id": "212024",
+        "email": "feldsteg@bc.edu",
+        "first_name": "Gabriel",
+        "last_name": "Feldstein",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2019-06-24 14:58:49",
+        "updated": "2020-04-15 14:43:36",
+        "profile": {
+            "id": 210542,
+            "account_id": 212024,
+            "customer_id": 94,
+            "box": {
+                "title": "Digital Publishing and Outreach Specialist"
+            },
+            "image": {
+                "show": 1,
+                "file": "Gabe_Pic.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/212024/profiles/210542/Gabe_Pic.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "phone": "VM: (617) 552-1652 & Cell: (617) 584-0468",
+                "address": "O'Neill Library\n140 Commonwealth Avenue, \nChestnut Hill, MA 02467\n",
+                "email": "gabe.feldstein@bc.edu"
+            },
+            "display": {
+                "disp_connect_general": "1"
+            },
+            "created": "2019-06-24 14:58:49",
+            "updated": "2020-03-20 18:33:34",
+            "url": "https://libguides.bc.edu/prf.php?account_id=212024"
+        }
+    },
+    {
+        "id": "212776",
+        "email": "theodore.doras@bc.edu",
+        "first_name": "Teo",
+        "last_name": "Doras",
+        "title": "",
+        "nickname": "",
+        "signature": "",
+        "created_by": "3302",
+        "created": "2019-07-02 16:47:57",
+        "updated": "2020-04-16 18:40:44",
+        "profile": {
+            "id": 211328,
+            "account_id": 212776,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2019-07-02 16:47:59",
+            "updated": "2019-07-02 16:47:59",
+            "url": "https://libguides.bc.edu/prf.php?account_id=212776"
+        }
+    },
+    {
+        "id": "213650",
+        "email": "jacob.kowall@bc.edu",
+        "first_name": "Jacob",
+        "last_name": "Kowall",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "261",
+        "created": "2019-07-12 13:31:25",
+        "updated": "2020-04-20 14:12:11",
+        "profile": {
+            "id": 212187,
+            "account_id": 213650,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2019-07-12 13:31:25",
+            "updated": "2019-07-12 13:31:25",
+            "url": "https://libguides.bc.edu/prf.php?account_id=213650"
+        }
+    },
+    {
+        "id": "213865",
+        "email": "eric.surat@bc.edu",
+        "first_name": "Eric",
+        "last_name": "Surat",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "261",
+        "created": "2019-07-15 13:25:33",
+        "updated": "2020-04-02 15:10:29",
+        "profile": {
+            "id": 212321,
+            "account_id": 213865,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2019-07-15 13:25:33",
+            "updated": "2019-07-15 13:25:33",
+            "url": "https://libguides.bc.edu/prf.php?account_id=213865"
+        }
+    },
+    {
+        "id": "215925",
+        "email": "jiebei.luo@bc.edu",
+        "first_name": "Jiebei",
+        "last_name": "Luo",
+        "title": "Data Services Librarian",
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2019-08-06 14:01:56",
+        "updated": "2020-04-14 20:40:05",
+        "subjects": [
+            {
+                "id": "12903",
+                "name": "Data/Statistics/GIS",
+                "slug_id": "144971"
+            }
+        ],
+        "profile": {
+            "id": 214458,
+            "account_id": 215925,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 1,
+                "file": "luo2020.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/215925/profiles/214458/luo2020.jpg"
+            },
+            "en_page": 1,
+            "page": {
+                "working": "I am a Data Services Librarian at Boston College’s O’Neil Library, where I provide services and support related to research data acquisition, management, curation and visualization. I offer a variety of data instruction workshops and research consultation sessions for faculty, staff and students."
+            },
+            "widget_la": "",
+            "widget_lc": "<script>\njQuery.getScript(\"https://api3.libcal.com/js/myscheduler.min.js\", function() {\n    jQuery(\"#mysched_58454\").LibCalMySched({iid: 609, lid: 0, gid: 0, uid: 58454, width: 560, height: 680, title: 'Make an Appointment', domain: 'https://api3.libcal.com'});\n});\n</script>\n\n<!-- Place the following link anywhere in your page. Make sure the id \"mysched_58454\" matches with the above code: jQuery(\"#mysched_58454\")  //-->\n<button id=\"mysched_58454\" href=\"#\">Schedule Appointment</button>\n<!-- Below is optional button styling  //-->\n<style>\n#mysched_58454 {\n  background: #FFFFFF;\n  border: 1px solid #8C2232;\n  border-radius: 4px;\n  color: #8C2232;\n  font: 14px Arial, Helvetica, Verdana;\n  padding: 8px 20px;\n  cursor: pointer;\n}\n#mysched_58454:hover {\n  opacity: 0.9;\n}\n</style>\n",
+            "widget_other": "",
+            "connect": {
+                "email": "jiebei.luo@bc.edu",
+                "address": "O’Neill Library 212",
+                "website": ""
+            },
+            "display": null,
+            "created": "2019-08-06 14:01:56",
+            "updated": "2020-03-27 02:24:06",
+            "url": "https://libguides.bc.edu/prf.php?account_id=215925"
+        }
+    },
+    {
+        "id": "216542",
+        "email": "brittany.lehman@bc.edu",
+        "first_name": "Brittany",
+        "last_name": "Lehman, Ph.D.",
+        "title": "Senior Liaison Librarian for History",
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2019-08-12 15:19:05",
+        "updated": "2020-04-16 11:58:57",
+        "subjects": [
+            {
+                "id": "7886",
+                "name": "History",
+                "slug_id": "144984"
+            }
+        ],
+        "profile": {
+            "id": 215090,
+            "account_id": 216542,
+            "customer_id": 94,
+            "box": {
+                "title": "Subject Librarian for History"
+            },
+            "image": {
+                "show": 1,
+                "file": "Lehman_Profile_Pictire_Small.png",
+                "url": "//libapps.s3.amazonaws.com/accounts/216542/profiles/215090/Lehman_Profile_Pictire_Small.png"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": {
+                "email": "brittany.lehman@bc.edu",
+                "address": "Office: O'Neill Library 414A\n\n<strong>Office hours for Spring 2020:</strong> (starting Jan. 13): \nM 1-2.30 \nTh 11-12.15 \nlogged into Google Hangouts using lehmanbr@bc.edu</strong>\n-or-\n<a href=\"https://brittany-lehman.youcanbook.me/\" data-ycbm-modal=\"true\"><strong>Schedule an Appointment</strong></a>",
+                "skype": "brittany.lehman@bc.edu"
+            },
+            "display": null,
+            "created": "2019-08-12 15:19:05",
+            "updated": "2020-03-18 19:10:30",
+            "url": "https://libguides.bc.edu/prf.php?account_id=216542"
+        }
+    },
+    {
+        "id": "216706",
+        "email": "jessica.hinson-williams@bc.edu",
+        "first_name": "Jessica",
+        "last_name": "Hinson-Williams",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2019-08-13 13:56:01",
+        "updated": "2020-04-15 13:41:10",
+        "profile": {
+            "id": 215256,
+            "account_id": 216706,
+            "customer_id": 94,
+            "box": {
+                "title": "Jessica Hinson-Williams"
+            },
+            "image": {
+                "show": 1,
+                "file": "jhinsonwilliams_staffphoto_c2.jpg",
+                "url": "//libapps.s3.amazonaws.com/accounts/216706/profiles/215256/jhinsonwilliams_staffphoto_c2.jpg"
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "<a href=\"https://jessicahinsonwilliams.youcanbook.me/\" data-ycbm-modal=\"true\"><img src=\"https://youcanbook.me/resources/pics/ycbm-button.png\" style=\"border-style:none;\"/></a>",
+            "connect": {
+                "email": "jessica.hinson-williams@bc.edu",
+                "phone": "617-552-4450",
+                "address": "O'Neill Library 312\nBoston College",
+                "website": ""
+            },
+            "display": null,
+            "created": "2019-08-13 13:56:01",
+            "updated": "2019-09-19 13:49:51",
+            "url": "https://libguides.bc.edu/prf.php?account_id=216706"
+        }
+    },
+    {
+        "id": "228236",
+        "email": "abby.heingartner@bc.edu",
+        "first_name": "Abby",
+        "last_name": "Heingartner",
+        "title": null,
+        "nickname": "",
+        "signature": "",
+        "created_by": "3908",
+        "created": "2019-11-19 15:01:29",
+        "updated": "2020-03-23 13:24:02",
+        "profile": {
+            "id": 227624,
+            "account_id": 228236,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2019-11-19 15:01:29",
+            "updated": "2019-11-19 15:01:29",
+            "url": "https://libguides.bc.edu/prf.php?account_id=228236"
+        }
+    },
+    {
+        "id": "229447",
+        "email": "elizabeth.carron@bc.edu",
+        "first_name": "Elizabeth",
+        "last_name": "Carron",
+        "title": "",
+        "nickname": "",
+        "signature": "",
+        "created_by": "25996",
+        "created": "2019-12-09 15:44:54",
+        "updated": "2019-12-09 15:44:55",
+        "profile": {
+            "id": 228949,
+            "account_id": 229447,
+            "customer_id": 94,
+            "box": null,
+            "image": {
+                "show": 0,
+                "file": "",
+                "url": ""
+            },
+            "en_page": 1,
+            "page": null,
+            "widget_la": "",
+            "widget_lc": "",
+            "widget_other": "",
+            "connect": null,
+            "display": null,
+            "created": "2019-12-09 15:44:55",
+            "updated": "2019-12-09 15:44:55",
+            "url": "https://libguides.bc.edu/prf.php?account_id=229447"
+        }
+    }
+]

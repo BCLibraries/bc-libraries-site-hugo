@@ -1,0 +1,114 @@
+<div class="" id="staff-interest" data-tag="ga-tag">
+    <h2>Boston College Libraries, COVID-19 Edition</h2>
+    <a href="https://youtu.be/LCGMoNFGohk">
+        <figure>
+                <img src="https://library.bc.edu/images/news/2020/05-covidvideo.png"
+        style="max-width: 100%;"
+        alt="Tom Wall, University Librarian" />
+        <figcaption style="font-size: .9em; text-align: right">Watch on Youtube</caption>
+        </figure>
+    </a>
+
+    
+    <!--h2 style="margin-top: 2em;">Scenes from the Library</h2>
+
+    <div class="blockquote">
+        <div class="quote">Hope is being able to see that there is light despite all of the darkness.</div>
+        <div class="quoted">- Desmond Tutu</div>
+    </div>
+
+    <div class="photo-list row">
+        {{/* Each image is preloaded with transparent 2x1px png. See http://png-pixel.com/ */}}
+        <div class="col-md-12 col-sm-6 col-xs-6 photo-panel">
+            <div class="thumbnail" data-photo-id="0">
+                <img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" />
+                <div class="caption">&nbsp;</div>
+            </div>
+        </div>
+        
+        <div class="col-md-12 col-sm-6 col-xs-6 photo-panel">
+            <div class="thumbnail" data-photo-id="1">
+                <img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" />
+                <div class="caption">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-sm-6 col-xs-6 photo-panel">
+            <div class="thumbnail" data-photo-id="2">
+                <img class="photo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAQAAABeK7cBAAAAC0lEQVR42mNkAAIAAAoAAv/lxKUAAAAASUVORK5CYII=" alt="" />
+                <div class="caption">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        See more <a href="https://library.bc.edu/newsletter/?p=1209">behind the scenes images</a> from the library staff!
+    </div>
+
+    <script>
+        // Randomize an array of objects
+        function shuffleArray(array) {
+            for (var i = array.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+
+            return array;
+        }
+
+        // Fetch images from Hugo data file
+        function loadPhotos(){
+            // Should be loaded as an array object
+            var library_staff_photos = {{ $.Site.Data.homepage.scenes.librarystaffphotos.photos }};
+
+            //console.log(library_staff_photos);
+
+            if (library_staff_photos && library_staff_photos.length > 1) {
+                // Generate the randomize array
+                var randomized_photos = shuffleArray(library_staff_photos);
+                return randomized_photos;
+            } 
+
+            // Did not get list of staff photos
+            console.log("Did not get the data");
+            return null;
+        }
+
+        // Render an array of image objects
+        function renderPhotos(photos){
+            // Get first 4 image objects from array
+            var photos_set = photos.slice(0,4);
+
+            $(photos_set).each(function(key,photo){
+
+                var photo_container = $('[data-photo-id="' + key + '"]');
+
+                // Fade out default image and fade in real image & caption to prevent annoying content update flash
+                // https://stackoverflow.com/a/16714137
+                photo_container.find(".photo-img").fadeTo(100,0.30, function(){
+                    photo_container.find(".photo-img").attr({
+                        "src": photo.thumb_url,
+                        "alt": photo.alt_text
+                    }).fadeTo(300,1);
+                    photo_container.find("a").attr("href", photo.image_url);
+                    photo_container.find(".caption").html(photo.caption);
+                });
+
+            });
+        }
+
+
+        // Load photos
+        var randomized_photos = loadPhotos();
+
+        // Render photos
+        if (randomized_photos === null) {
+            console.log("Could not load photos.");
+            // TODO: load default images?
+        } else {
+            renderPhotos(randomized_photos);
+        }
+    </script-->
+</div>

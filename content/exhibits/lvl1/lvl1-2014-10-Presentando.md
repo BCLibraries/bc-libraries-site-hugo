@@ -17,4 +17,4 @@ type: "exhibits"
 ---
 
 <p>"This exhibit demonstrates the linkage of cultures through food and   how there are no places you cannot go when it comes to this. The   goal here exemplifies this idea of cross-cultural exchange and shows how   linked Latin American countries and the Philippines are through their   cuisine and shared status of having Spain as their colonizer." --   Natalie Blardony, A&amp;S '15</p>
-<p><a href="/theme/img/exhibits/lvl1/2014/presento.pdf">See photos from the opening reception (PDF)</a>. <em>Photos by Kevin Tringale.</em></p>
+<p><a href="https://library.bc.edu/images/exhibits/lvl1/2014/presento.pdf">See photos from the opening reception (PDF)</a>. <em>Photos by Kevin Tringale.</em></p>

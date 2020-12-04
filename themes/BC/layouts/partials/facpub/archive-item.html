@@ -2,21 +2,13 @@
         <div class="media">
             <div class="media-left">
                 <a href="{{ .Permalink }}">
-                    <img class="media-object" src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.bookcover }}" alt="">
+                    <img class="media-object" src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.bookcover }}" alt="">
                 </a>
             </div>
             <div class="media-body">
                 <a href="{{ .Permalink }}" class="archive-item-title"><em>{{ .Title | safeHTML }}</em></a>
                 <div class="archive-item-authors">
-                    {{ .Params.by }} by {{ .Params.authorfirstname }} {{ .Params.authorlastname }}
-
-                    {{ if .Params.secondauthor }}
-                    &#x26; {{ .Params.secondauthor }} 
-                    {{ end }}
-    
-                    {{ if .Params.thirdauthor }}
-                    &#x26; {{ .Params.thirdauthor }} 
-                    {{ end }}
+                    {{ partial "facpub/author-summary.html" . }}
                 </div>
             </div>
         </div>

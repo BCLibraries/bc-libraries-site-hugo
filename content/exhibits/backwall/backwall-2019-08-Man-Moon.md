@@ -2,7 +2,7 @@
 title: "Man on the Moon"
 subtitle: "1969 News Coverage of the Apollo 11 Mission"
 draft: false
-active: true
+active: false
 date: 2019-08-28T16:31:19-04:00
 daterange: "September - December 2019"
 year: "2019"

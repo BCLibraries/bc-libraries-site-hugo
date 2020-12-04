@@ -3,7 +3,6 @@
 {{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
 {{ end }}
 
 {{ define "main" }}
@@ -28,8 +27,7 @@
                             <h4>2011-2019</h4>
                         </div>
                         {{ range (where .Site.RegularPages ".Params.location" .Params.location) }}
-                        {{ .Scratch.Set "loc" .Params.location }}
-                        {{ partial "exhibits/summary.html" . }}
+                        {{ partial "exhibits/thumbnail-summary.html" . }}
                         {{ end }}
                     </ul>
                 </div> {{/* end .right */}}

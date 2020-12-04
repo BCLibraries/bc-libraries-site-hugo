@@ -25,9 +25,9 @@ As Sullivan Artist-in-Residence in the Center for Irish Programs, Connolly teach
 The exhibit highlights influences and milestones in Connolly’s music career, along with his teaching role on and off campus. The materials are primarily from the Séamus Connolly Papers at the Burns Library, with additional items from the Burns Library’s Irish collections.
 
 <br />
-<img src="/theme/img/exhibits/burns/2013/01-connolly-001.jpg" alt="Photograph of Séamus Connolly's awards">
-<img src="/theme/img/exhibits/burns/2013/01-connolly-002.jpg" alt="Photograph of Séamus Connolly's violin" >
-<img src="/theme/img/exhibits/burns/2013/01-connolly-003.jpg" alt="Photograph of Séamus Connolly's sheet music">
+<img src="https://library.bc.edu/images/exhibits/burns/2013/01-connolly-001.jpg" alt="Photograph of Séamus Connolly's awards">
+<img src="https://library.bc.edu/images/exhibits/burns/2013/01-connolly-002.jpg" alt="Photograph of Séamus Connolly's violin" >
+<img src="https://library.bc.edu/images/exhibits/burns/2013/01-connolly-003.jpg" alt="Photograph of Séamus Connolly's sheet music">
 <p><strong>Photographs by Gary Gilbert</strong></p>
 
 <!--

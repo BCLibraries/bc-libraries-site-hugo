@@ -1,0 +1,144 @@
+#!/bin/bash
+
+# Directories in theme.
+THEME_DIR=$(dirname "$0")/../themes/BC
+BENTO_THEME_DIR=${THEME_DIR}/static/bcbento
+STATIC_THEME_DIR=${BENTO_THEME_DIR}/static
+JS_THEME_DIR=${STATIC_THEME_DIR}/js
+MEDIA_THEME_DIR=${STATIC_THEME_DIR}/media
+SEARCH_LAYOUT=${THEME_DIR}/layouts/search/search.html.html
+
+#Options
+BUILD=false
+BRANCH="master"
+
+# Arguments
+path_to_client=
+
+function main() {
+  validate_theme_files
+  get_options "$@"
+
+  if [ "$BUILD" = true ]; then
+    build_client
+  fi
+  clean_old_files
+  copy_build_files
+  update_search_layout
+}
+
+# Something went wrong.
+function error_exit() {
+  echo "$1" 1>&2
+  exit 1
+}
+
+# Show application usage.
+function show_usage() {
+  NC='\033[0m' # No Color
+  YELLOW='\033[1;33m'
+  echo -e "${YELLOW}Usage${NC}:
+  deploy-bento [options] path_to_client
+
+${YELLOW}Options${NC}:
+  -h                        Display this help message.
+  -b branch-name            Perform a fresh build from git branch   
+"
+}
+
+# Make sure all the paths in the Hugo theme exist
+function validate_theme_files() {
+  # Die if theme directories and files aren't where they are supposed to be.
+  if [ ! -d "$BENTO_THEME_DIR" ]; then
+    error_exit "$BENTO_THEME_DIR: Bento directory not found in theme"
+  fi
+
+  if [ ! -d "$STATIC_THEME_DIR" ]; then
+    error_exit "$STATIC_THEME_DIR: Bento static directory not found in theme"
+  fi
+
+  if [ ! -f "$SEARCH_LAYOUT" ]; then
+    error_exit "$SEARCH_LAYOUT: Search layout not found in theme"
+  fi
+}
+
+function get_options() {
+  local OPTIND
+  while getopts ":hb:" opt; do
+    case ${opt} in
+    h)
+      show_usage
+      exit 0
+      ;;
+    b)
+      BUILD=true
+      BRANCH=$OPTARG
+      ;;
+    \?)
+      error_exit "Invalid Option: -$OPTARG" 1>&2
+      ;;
+    esac
+  done
+  shift $((OPTIND - 1))
+
+  path_to_client=$1
+  if [ ! -d "$path_to_client" ]; then
+    error_exit "${path_to_client}: No such directory"
+  fi
+}
+
+# Build a new deployment of the client.
+function build_client() {
+  pushd "$path_to_client" || error_exit "$path_to_client: Could not cd to client"
+  current_branch=$(git rev-parse --abbrev-ref HEAD)
+  git checkout "$BRANCH" || error_exit "Couldn't checkout client branch $BRANCH"
+  yarn build || error_exit "Couldn't build client"
+  git checkout "$current_branch"
+  popd || return
+}
+
+# Remove any old files.
+function clean_old_files() {
+  echo "Remove old js dir..."
+  rm -r "${JS_THEME_DIR}" || error_exit "$JS_THEME_DIR: Couldn't delete js directory"
+
+  echo "Remove stray javascript and json..."
+  for f in "${BENTO_THEME_DIR}"/*js*; do
+    if [ -f "$f" ]; then
+      rm "$f" || error_exit " $f: Couldn't delete"
+    fi
+  done
+}
+
+# Copy in the fresh files.
+function copy_build_files() {
+  echo "Copy over new js directory..."
+  cp -r "${path_to_client}"/build/static/js "${STATIC_THEME_DIR}" || error_exit "Couldn't copy js directory"
+
+    cp -r "${path_to_client}"/build/static/media "${STATIC_THEME_DIR}" || error_exit "Couldn't copy media directory"
+
+
+  echo "Copy over new stray javascript and json..."
+  cp "${path_to_client}"/build/*js* "${BENTO_THEME_DIR}" || error_exit "Couldn't copy stray js"
+}
+
+# Update the Hugo search layout document to reflect the new javascript files.
+function update_search_layout() {
+  echo "Update search layout..."
+  build_index_path=${path_to_client}/build/index.html
+  if [ ! -f "$build_index_path" ]; then
+    error_exit "${build_index_path}: Build index.html not found"
+  fi
+
+  build_index=$(cat "${build_index_path}")
+  pattern='\/([^/]*.chunk.js).*\/([^/]*.chunk.js)'
+
+  [[ "$build_index" =~ $pattern ]]
+  loader_chunk=${BASH_REMATCH[1]}
+  main_chunk=${BASH_REMATCH[2]}
+
+  sed -i '' -e "s/[0-9]\.[^/]*.chunk.js/$loader_chunk/" "$SEARCH_LAYOUT"
+  sed -i '' -e "s/main\.[^/]*.chunk.js/$main_chunk/" "$SEARCH_LAYOUT"
+}
+
+main "$@"

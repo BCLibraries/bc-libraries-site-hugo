@@ -1,0 +1,88 @@
+{
+    "photos": [
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/Access_services-Alison.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/Access_services-Alison-thumbnail-450x225.jpg",
+            "alt_text": "Here to help, thanks Alison!",
+            "caption": "Here to help, thanks Alison!",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/Admin_office-Kevin.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/Admin_office-Kevin-thumbnail-450x225.jpg",
+            "alt_text": "Kevin is keeping up with your ILL requests",
+            "caption": "Kevin is keeping up with your ILL requests",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/Bibliosaurus.png",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/Bibliosaurus-thumbnail-450x225.jpg",
+            "alt_text": "Bibliosaurus spying the Answer Wall",
+            "caption": "Bibliosaurus spying the Answer Wall",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/ONeill-stacks-Nham.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/ONeill-stacks-Nham-thumbnail-450x225.jpg",
+            "alt_text": "In the stacks with Nham",
+            "caption": "In the stacks with Nham",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/ONeill-turkey.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/ONeill-turkey-thumbnail-450x225.jpg",
+            "alt_text": "The library is closed, even for turkeys",
+            "caption": "The library is closed, even for turkeys",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/WFH-Jack.jpeg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/WFH-Jack-thumbnail-450x225.jpg",
+            "alt_text": "Jack's at home in his sunny office",
+            "caption": "Jack's at home in his sunny office",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/WFH-Sarah+cat.JPG",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/WFH-Sarah+cat-thumbnail-450x225.jpg",
+            "alt_text": "Sarah and company working from home",
+            "caption": "Sarah and company working from home",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/WFH-Sally.png",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/WFH-Sally-thumbnail-450x225.jpg",
+            "alt_text": "Sally is answering your questions remotely",
+            "caption": "Sally is answering your questions remotely",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/Baby-Kai.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/Baby-Kai-thumbnail-450x225.jpg",
+            "alt_text": "Meet the newest member of our library family, Kai!",
+            "caption": "Meet the newest member of our library family, <a href='https://library.bc.edu/images/homepage/scenes/Baby-Kai.jpg'><strong>Kai</strong></a>!",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/Lynda-Musilwa-O_Neill-Student-Employee.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/Lynda-Musilwa-O_Neill-Student-Employee-thumbnail-450x225.jpg",
+            "alt_text": "Lynda pulls books for scanning",
+            "caption": "Lynda pulls books for scanning",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/lukechild.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/lukechild-thumbnail-450x225.jpg",
+            "alt_text": "Luke is multitasking today",
+            "caption": "Luke is multitasking today",
+            "sticky": false
+        },
+        {
+            "image_url": "https://library.bc.edu/images/homepage/scenes/Hannah-Clay-Acquisitions.jpg",
+            "thumb_url": "https://library.bc.edu/images/homepage/scenes/Hannah-Clay-Acquisitions-thumbnail-450x225.jpg",
+            "alt_text": "Hannah is processing the new journals",
+            "caption": "Hannah is processing the new journals",
+            "sticky": false
+        }
+    ]
+}

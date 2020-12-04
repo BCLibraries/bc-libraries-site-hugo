@@ -5,33 +5,40 @@
 {{ end }}
 
 {{ define "pagestyles" }}
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/news-ql-row.css"/>
 {{ end }}
 
 {{ define "main" }}
-    <div id="main-body" role="main">
-        <!-- QUICK LINKS and NEWS-->
-        <div class="container" id="db-rg-hours">
-            <div class="row ql-news">
-            {{ partial "homepage/row-ql-news.html" . }}
-            </div>
-        </div>
+    <div id="main-body" class="homepage" role="main">
 
-        {{ partial "homepage/digital-scholarship-highlight.html" . }}
+        {{ partial "homepage/top-columns.html" . }}
 
-        {{ partial "homepage/scholarship-at-bc.html" . }}
+        {{ partial "homepage/news-row.html" . }}
 
-        {{ partial "homepage/exhibits-highlight.html" . }}
+        {{ partial "homepage/featured-librarian.html" . }}
 
-        {{ partial "homepage/facpub-highlight.html" . }}
+        {{ partial "homepage/explore-collections.html" . }}
 
-        {{ partial "homepage/special-collections-highlight.html" . }}
+        {{ partial "homepage/socialmedia-highlight.html" . }}
+
+        {{/* Hide the following bars
+
+        <!--{{ partial "homepage/services-highlight.html" . }}-->
+
+        <!--{{ partial "homepage/scholarship-at-bc.html" . }}-->
+
+        <!--{{ partial "homepage/digital-scholarship-highlight.html" . }}-->
+
+        <!--{{ partial "homepage/exhibits-highlight.html" . }}-->
+
+        <!--{{ partial "homepage/facpub-highlight.html" . }}-->
+
+        <!--{{ partial "homepage/special-collections-highlight.html" . }}-->
+
+        */}}
     </div>
 {{ end }}
 
 {{ define "pagescripts" }}
-    <script type="text/javascript" src="{{ .Site.BaseURL }}bcbento/js/typeahead.bundle.min.js"></script>
-    <script type="text/javascript" src="{{ .Site.BaseURL }}bcbento/js/bclib-typeahead.js"></script>
     <script type="text/javascript">
         // Various glue scripts for the front page.
         (function () {
@@ -65,9 +72,11 @@
                 var book_search_url = 'https://' + host + '/primo-explore/search?tab=bcl_only&search_scope=bcl&vid=bclib_new&lang=en_US&offset=0',
                     article_search_url = 'https://' + host + '/primo-explore/search?tab=pci_only&search_scope=pci&vid=bclib_new&lang=en_US&offset=0',
                     journal_search_url = 'https://' + host + '/primo-explore/jsearch?tab=jsearch_slot&vid=bclib_new&lang=en_US&offset=0';
+                    video_search_url = 'https://' + host + '/primo-explore/search?tab=video&search_scope=VIDEO&vid=bclib_new&lang=en_US&offset=0';
 
                 linkToSearch('.book-search-link', book_search_url);
                 linkToSearch('.article-search-link', article_search_url);
+                linkToSearch('.video-search-link', video_search_url);
                 linkToSearch('.journal-search-link', journal_search_url, 'journals=any,~~TERM~~');
             }
 
@@ -86,9 +95,17 @@
                 });
             }
 
+            function onlineOnlyPopover() {
+                var tooltip_options = {
+                    content: 'When this box is checked, search is limited to items available online. Uncheck the box to include our physical collections.'
+                }
+                $('.whats-this').popover(tooltip_options);
+            }
+
             run_on_ready(smartLinkToSearch());
             run_on_ready(listenForTypeahead);
             run_on_ready(makeQuickLinkBoxesClickable);
+            run_on_ready(onlineOnlyPopover);
         })();
     </script>
 {{ end }}

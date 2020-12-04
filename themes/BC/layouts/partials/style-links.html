@@ -1,0 +1,24 @@
+{{/* Stylesheets used by all pages */}}
+
+{{/* External stylesheets */}}
+{{/* Consider moving these local minimized downloads and reliance on
+    external sites. */}}
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/bcbento/css/app.css"/>
+
+{{/* To add a new stylesheet to the homepage, @include it in homepage.scss */}}
+
+{{/* Options for SCSS builder */}}
+{{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true ) }}
+
+{{/* Build the CSS asset */}}
+{{ $style := resources.Get "css/site.scss" | resources.ToCSS $options | fingerprint }}
+
+{{/* Link the CSS asset */}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+{{/* Build CSS bundle for use in LibGuides */}}
+{{ $libguides_styles := resources.Get "css/libguides.scss" | resources.ToCSS $options }}
+{{ "<!--" | safeHTML }}{{ $libguides_styles.RelPermalink }}{{ "-->" | safeHTML }}

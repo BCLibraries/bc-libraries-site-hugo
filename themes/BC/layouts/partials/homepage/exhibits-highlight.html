@@ -42,11 +42,11 @@
 
                                     <div class="exhibit-blurb"><p>{{ $exhibit.Summary }}</p></div>
                                     <br />
-                                    <p class="more-exhibits-button"><a href="{{ .Site.BaseURL }}{{ .Params.type }}"><span class="btn btn-default btn-blue">See more exhibits</span></a></p>
+                                    <p class="more-exhibits-button"><a href="{{ relref . "/"}}{{ .Params.type }}"><span class="btn btn-default btn-blue">See more exhibits</span></a></p>
                                 </div>
 
                                 <div class="exhibit-right col-md-3 col-sm-3 col-xs-4">
-                                    <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ $exhibit.Params.location }}/{{ $exhibit.Params.imagethumb }}" alt="{{ $exhibit.Params.imagealt }}" class="exhibit-poster">
+                                    <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ $exhibit.Params.location }}/{{ $exhibit.Params.imagethumb }}" alt="{{ $exhibit.Params.imagealt }}" class="exhibit-poster">
                                 </div>
                             </div>
                         </div>

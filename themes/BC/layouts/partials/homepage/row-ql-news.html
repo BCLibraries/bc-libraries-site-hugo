@@ -1,5 +1,5 @@
 <!-- QUICK LINKS -->
-<div class="col-md-2 col-xs-12 ql">
+<div class="col-md-2 col-xs-12 ql" id="quick-links" data-tag="ga-tag">
     
     <h2>Quick Links</h2>
 
@@ -19,8 +19,8 @@
         <li><a href="https://bc.on.worldcat.org/" class="list-group-item">
             <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>WorldCat</a>
         </li>
-        <li><a href="https://libcal.bc.edu/booking/oneill" class="list-group-item">
-            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>Study Rooms</a>
+        <!--li><a href="https://libcal.bc.edu/booking/oneill" class="list-group-item">
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>Study Rooms</a-->
         </li>
         <li><a href="https://libguides.bc.edu/citation/citation-tools" class="list-group-item">
             <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>Citing sources</a>
@@ -38,7 +38,7 @@
 
 <div class="col-md-10 col-xs-12" id="news" data-tag="ga-tag">
 
-    <h2><a href="{{ .Site.BaseURL }}news">News &amp; Events</a></h2>
+    <h2><a href="{{ relref . "/news"}}">News &amp; Events</a></h2>
 
     <div class="news-top">
        {{/* convoluted nested where clause... */}}
@@ -54,7 +54,7 @@
                     <div class="newstext">
                         <p class="newslink">{{ .Title | safeHTML }}</p>
                     </div>
-                    <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
+                    <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
                 </div>
             </a>
         </div>
@@ -69,7 +69,7 @@
                     <div class="newstext">
                         <p class="newslink">{{ .Title | safeHTML }}</p>
                     </div>
-                    <img src="{{ .Site.BaseURL }}img/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
+                    <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
                 </div>
             </a>
         </div>

@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Libraries"
 theme = "BC"
 summaryLength = 10
+relativeURLs = true
 [permalinks]
     news = "/news/:year/:month/:slug/"
     exhibits = "/exhibits/:year/:month/:slug/"
@@ -20,3 +21,7 @@ summaryLength = 10
     stokes = "History Dept, Stokes Hall"
     showBuildHeader = false
     showFloatingHelpButton = true
+    showBetaButton = true
+    imageBaseURL = "https://library.bc.edu/images"
+[markup.goldmark.renderer]
+    unsafe= true

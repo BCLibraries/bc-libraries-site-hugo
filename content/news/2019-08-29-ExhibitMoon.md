@@ -5,7 +5,7 @@ expired: false
 date: 2019-08-29T16:27:36-04:00
 year: "2019"
 slug: "exhibit-man-moon"
-destination: "http://library.bc.edu/exhibits/2019/Aug/man-on-moon/"
+destination: "https://library.bc.edu/exhibits/2019/Aug/man-on-moon/"
 imagethumb: "2019-08/moon-thumb.png"
 imagealt: "Newspapers from 1969 with captions regarding the moon landing."
 type: "news"

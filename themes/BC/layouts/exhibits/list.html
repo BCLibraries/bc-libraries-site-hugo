@@ -3,7 +3,6 @@
 {{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
 {{ end }}
 
 {{ define "main" }}
@@ -13,12 +12,15 @@
     </div>
     <div class="blackband">
         <div class="bandcenter">
+            
             <h2 id="main-heading">Exhibits at Boston College Libraries</h2>
             <p>Exhibits in the Boston College Libraries will advance discovery of library resources by highlighting
                 connections between our collections and academic and community life at BC. The Libraries welcome
                 partnerships with the Boston College community and other institutions, groups, or individuals to
                 create thoughtful and attractive exhibits. Successful exhibit proposals will be in strong alignment
                 with the mission and collections of the Libraries.</p>
+                <h4>Interested in using library space for an exhibit?</h4>
+                <p>See our <a href="./spaces">exhibit spaces page</a> for descriptions and contact information.</p>
         </div>
     </div>
 </div>
@@ -37,8 +39,8 @@
                     {{ range first 1 (where (where .Site.Pages ".Params.location" "bapst") ".Params.active" true) }}
                     <div class="col-md-6 holder">
                         <div class="holdhead">
-                            <h4>{{ .Site.Params.Bapst }}, Gargan Hall</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.bapst }} Past Exhibits</a></p>
+                            <h4>{{ .Site.Params.Bapst }}, Gargaaan Hall</h4>
+                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.bapst }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -50,7 +52,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.Burns }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.burns }} Past Exhibits</a></p>
+                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.burns }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -67,7 +69,7 @@
 
                         <div class="frame">
                             <a href="https://library.bc.edu/digital-exhibits/">
-                                <img src="{{ .Site.BaseURL }}img/{{ .Section }}/{{ .Params.location }}/{{ .Params.imagethumb}}" alt="{{ .Params.imagealt }}">
+                                <img src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.location }}/{{ .Params.imagethumb}}" alt="{{ .Params.imagealt }}">
 
                                 <div class="info">
                                     <p class="date">{{ .Params.Daterange }}</p>
@@ -83,7 +85,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.stokes }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.stokes }} Past Exhibits</a></p>
+                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.stokes }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -95,7 +97,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.lvl1 }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.lvl1 }} Past Exhibits</a></p>
+                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.lvl1 }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -107,7 +109,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.lvl3 }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.lvl3 }} Past Exhibits</a></p>
+                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.lvl3 }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -119,7 +121,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.reading }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.Location }}">{{ .Site.Params.reading }} Past Exhibits</a></p>
+                            <p>Click here for <a href="./{{ .Params.Location }}">{{ .Site.Params.reading }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -131,7 +133,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.backwall }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.backwall }} Past Exhibits</a></p>
+                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.backwall }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -143,7 +145,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.lobby }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.lobby }} Past Exhibits</a></p>
+                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.lobby }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -155,7 +157,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.tml }}</h4>
-                            <p>Click here for <a href="{{ .Site.BaseURL }}{{ .Section }}/{{ .Params.location }}">{{ .Site.Params.tml }} Past Exhibits</a></p>
+                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.tml }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -171,12 +173,12 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>Tip O’Neill Exhibit</h4>
-                            <p>Click here for more information on the <a href="http://www.bc.edu/libraries/about/exhibits/burnsvirtual/oneill.html">virtual exhibit</a>.</p>
+                            <p>Click here for more information on the <a href="https://library.bc.edu/burns-exhibits/tip-oneill/">virtual exhibit</a>.</p>
                         </div>
 
                         <div class="frame">
                             <a href="http://www.bc.edu/content/bc/libraries/about/exhibits/oneill/oneill.html">
-                                <img src="{{ .Site.BaseURL }}img/{{ .Section }}/virtual/tip-thumb.png" alt="Painting of Tip O'Neill">
+                                <img src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/virtual/tip-thumb.png" alt="Painting of Tip O'Neill">
                                 <div class="info">
                                     <p class="date">&nbsp;</p>
                                     <p class="title">Tip O'Neill Exhibit</p>
@@ -187,26 +189,13 @@
     
                     {{/* BURNS VIRTUAL EXHIBIT LINK */}}
                     <div class="col-md-6 holder">
-                        <div class="holdhead">
-                            <h4>Burns Library Virtual Exhibits</h4>
-                            <p>Click here for <a href="http://www.bc.edu/libraries/about/exhibits-new/burnsvirtual.html">virtual Past Exhibits</a>.</p>
-                        </div>
-
-                        <div class="frame">
-                            <a href="http://www.bc.edu/libraries/about/exhibits-new/burnsvirtual/irish-connections.html">
-                                <img src="{{ .Site.BaseURL }}img/{{ .Section }}/virtual/burns-thumb.png" alt="Tip O'Neill with John F. Kennedy">
-                                <div class="info">
-                                    <p class="date">&nbsp;</p>
-                                    <p class="title">Exploring Boston Irish Connections</p>
-                                </div>
-                            </a>
-                        </div>
+                        
                     </div>
     
                     <div class="above_footer">
                         <hr/>
                         <h4>Interested in using library space for an exhibit?</h4>
-                        <p>See our <a href="{{ .Site.BaseURL }}{{ .Section }}/spaces">exhibit spaces page</a> for descriptions and contact information.</p>
+                        <p>See our <a href="./spaces">exhibit spaces page</a> for descriptions and contact information.</p>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,88 @@
+/* NEWS ARCHIVE STUFF */
+
+.news-container {
+    padding-top: 50px;
+}
+
+.news-listing {
+    margin-bottom: .5em;
+}
+
+.news-listing img {
+    float: left;
+    width: 25%;
+    margin: 1em;
+    border: 1px solid #000;
+}
+
+.news-archives {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-archives .row {
+    margin-bottom: 0em;
+    padding: .5em 0;
+}
+
+.news-archives .post {
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+.news-archives .post a {
+    display: block;
+}
+
+.news-archives .post img {
+    width: 100%;
+}
+
+.news-archives .post h4 {
+	margin-bottom: 0em;
+}
+
+.news-archives .post .archive_date {
+	font-style: italic;
+	font-size: 12px;
+}
+
+.news-container .breadcrumb {
+    margin: 1rem 0 1rem 0;
+}
+
+.news-archives .post .news-section-date {
+    font-weight: 600;
+    margin: .5rem 0 .25rem 0;
+    color: #a25729;
+}
+.news-archives .post .news-section-title {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+.news-archives .post .news-section-text {
+    padding: 0;
+    line-height: 1.6;
+    padding: 0 .25rem .25rem .25rem;
+}
+
+.news-archives .post a {
+    text-decoration: none;
+    color: #000;
+}
+
+.news-archives .post a:focus {
+    outline: 1px solid blue;
+    outline-offset: 0;
+}
+
+.news-archives .post a:hover .news-section-title,
+.news-archives .post a:focus .news-section-title {
+    text-decoration: underline;
+}
+
+.news-archives .post a:hover img,
+.news-archives .post a:focus img {
+    opacity: .8;
+}

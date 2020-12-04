@@ -1,57 +1,57 @@
-    <h3>Gallery Spaces</h3>
+    <h3><a href="{{ relref . "/exhibits/spaces"}}">Gallery Spaces</a></h3>
     <ul>
         {{ if eq .Params.location "bapst" }}
         <li class="target">{{ .Site.Params.bapst }}</li>
         {{ else }}
-        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/bapst">{{ .Site.Params.bapst }}</a></li>
+        <li><a href="{{ relref . "/exhibits/bapst"}}">{{ .Site.Params.bapst }}</a></li>
         {{ end }}
 
         {{ if eq .Params.location "burns" }}
         <li class="target">{{ .Site.Params.burns }}</li>
         {{ else }}
-        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/burns">{{ .Site.Params.burns }}</a></li>
+        <li><a href="{{ relref . "/exhibits/burns"}}">{{ .Site.Params.burns }}</a></li>
         {{ end }}
 
         {{ if eq .Params.Location "tml" }}
         <li class="target">{{ .Site.Params.tml }}</li>
         {{ else }}
-        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/tml">{{ .Site.Params.tml }}</a></li>
+        <li><a href="{{ relref . "/exhibits/tml"}}">{{ .Site.Params.tml }}</a></li>
         {{ end }}
 
         {{ if eq .Params.location "lvl1" }}
         <li class="target">{{ .Site.Params.lvl1 }}</li>
         {{ else }}
-        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/lvl1">{{ .Site.Params.lvl1 }}</a></li>
+        <li><a href="{{ relref . "/exhibits/lvl1"}}">{{ .Site.Params.lvl1 }}</a></li>
         {{ end }}
 
         {{ if eq .Params.location "lvl3" }}
         <li class="target">{{ .Site.Params.lvl3 }}</li>
         {{ else }}
-        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/lvl3">{{ .Site.Params.lvl3 }}</a></li>
+        <li><a href="{{ relref . "/exhibits/lvl3"}}">{{ .Site.Params.lvl3 }}</a></li>
         {{ end }}
 
         {{ if eq .Params.location "reading" }}
         <li class="target">{{ .Site.Params.reading }}</li>
         {{ else }}
-        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/reading">{{ .Site.Params.reading }}</a></li>
+        <li><a href="{{ relref . "/exhibits/reading"}}">{{ .Site.Params.reading }}</a></li>
         {{ end }}
 
         {{ if eq .Params.location "backwall" }}
         <li class="target">{{ .Site.Params.backwall }}</li>
         {{ else }}
-        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/backwall">{{ .Site.Params.backwall }}</a></li>
+        <li><a href="{{ relref . "/exhibits/backwall"}}">{{ .Site.Params.backwall }}</a></li>
         {{ end }}
 
         {{ if eq .Params.location "lobby" }}
         <li class="target">{{ .Site.Params.lobby }}</li>
         {{ else }}
-        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/lobby">{{ .Site.Params.lobby }}</a></li>
+        <li><a href="{{ relref . "/exhibits/lobby"}}">{{ .Site.Params.lobby }}</a></li>
         {{ end }}
 
         {{ if eq .Params.location "stokes" }}
         <li class="target">{{ .Site.Params.stokes }}</li>
         {{ else }}
-        <li><a href="{{ .Site.BaseURL }}{{ .Section }}/stokes">{{ .Site.Params.stokes }}</a></li>
+        <li><a href="{{ relref . "/exhibits/stokes"}}">{{ .Site.Params.stokes }}</a></li>
         {{ end }}
         
         <li class="digital-exhibits-li"><a href="https://library.bc.edu/digital-exhibits/">Boston College Libraries Digital Exhibits</a></li>

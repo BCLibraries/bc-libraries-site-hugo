@@ -2,7 +2,7 @@
 title: "Ghost Campus"
 subtitle: "Vanished Buildings of Chestnut Hill"
 draft: false
-active: true
+active: false
 date: 2019-05-14T01:01:00-04:00
 daterange: "May - August 2019"
 year: "2019"

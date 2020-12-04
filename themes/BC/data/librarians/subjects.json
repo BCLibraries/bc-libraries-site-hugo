@@ -1,0 +1,290 @@
+[
+    {
+        "id": "12900",
+        "name": "African & African Diaspora Studies",
+        "slug_id": "144932",
+        "slug": "subjects/african-african-diaspora-studies"
+    },
+    {
+        "id": "12918",
+        "name": "Archives & Special Collections",
+        "slug_id": "144935",
+        "slug": "subjects/archives-special-collections"
+    },
+    {
+        "id": "12914",
+        "name": "Area & Cultural Studies",
+        "slug_id": "144936",
+        "slug": "subjects/area-cultural-studies"
+    },
+    {
+        "id": "12881",
+        "name": "Art & Architecture",
+        "slug_id": "144937",
+        "slug": "subjects/art-architecture"
+    },
+    {
+        "id": "12916",
+        "name": "Asian Studies",
+        "slug_id": "143247",
+        "slug": "subjects/asian-studies"
+    },
+    {
+        "id": "12893",
+        "name": "Biology",
+        "slug_id": "144958",
+        "slug": "subjects/biology"
+    },
+    {
+        "id": "12901",
+        "name": "Business & Management",
+        "slug_id": "144961",
+        "slug": "subjects/business-management"
+    },
+    {
+        "id": "12894",
+        "name": "Chemistry",
+        "slug_id": "144962",
+        "slug": "subjects/chemistry"
+    },
+    {
+        "id": "12882",
+        "name": "Classical Studies",
+        "slug_id": "144963",
+        "slug": "subjects/classical-studies"
+    },
+    {
+        "id": "12902",
+        "name": "Communication",
+        "slug_id": "144965",
+        "slug": "subjects/communication"
+    },
+    {
+        "id": "12895",
+        "name": "Computer Science",
+        "slug_id": "144969",
+        "slug": "subjects/computer-science"
+    },
+    {
+        "id": "12917",
+        "name": "Course Guides",
+        "slug_id": "144970",
+        "slug": "subjects/course-guides"
+    },
+    {
+        "id": "12903",
+        "name": "Data/Statistics/GIS",
+        "slug_id": "144971",
+        "slug": "subjects/data-statistics-gis"
+    },
+    {
+        "id": "12896",
+        "name": "Earth & Environmental Sciences",
+        "slug_id": "144976",
+        "slug": "subjects/earth-environmental-sciences"
+    },
+    {
+        "id": "12904",
+        "name": "Economics",
+        "slug_id": "144977",
+        "slug": "subjects/economics"
+    },
+    {
+        "id": "12905",
+        "name": "Education",
+        "slug_id": "144978",
+        "slug": "subjects/education"
+    },
+    {
+        "id": "163549",
+        "name": "Education K-12",
+        "slug_id": "1697241",
+        "slug": "subjects/education-k12"
+    },
+    {
+        "id": "30938",
+        "name": "Environmental Studies",
+        "slug_id": "165259",
+        "slug": "subjects/environmental-studies"
+    },
+    {
+        "id": "12883",
+        "name": "Film",
+        "slug_id": "144979",
+        "slug": "subjects/film"
+    },
+    {
+        "id": "12906",
+        "name": "Gender Studies",
+        "slug_id": "144981",
+        "slug": "subjects/gender-studies"
+    },
+    {
+        "id": "12912",
+        "name": "General",
+        "slug_id": "144982",
+        "slug": "subjects/general"
+    },
+    {
+        "id": "86733",
+        "name": "General - Librarian Resources",
+        "slug_id": "717778",
+        "slug": "subjects/general/librarianresources"
+    },
+    {
+        "id": "12884",
+        "name": "German Language & Literature",
+        "slug_id": "144983",
+        "slug": "subjects/german-language-literature"
+    },
+    {
+        "id": "7886",
+        "name": "History",
+        "slug_id": "144984",
+        "slug": "subjects/history"
+    },
+    {
+        "id": "73319",
+        "name": "Interdisciplinary",
+        "slug_id": "1871668",
+        "slug": "subjects/interdisciplinary"
+    },
+    {
+        "id": "133507",
+        "name": "International Studies",
+        "slug_id": "1294981",
+        "slug": "subjects/international-studies"
+    },
+    {
+        "id": "12879",
+        "name": "Irish Studies",
+        "slug_id": "144985",
+        "slug": "subjects/irish-studies"
+    },
+    {
+        "id": "29240",
+        "name": "Islamic Civilization & Societies",
+        "slug_id": "148589",
+        "slug": "subjects/islamic-civilization-societies"
+    },
+    {
+        "id": "30939",
+        "name": "Jewish Studies",
+        "slug_id": "165258",
+        "slug": "subjects/jewish-studies"
+    },
+    {
+        "id": "12885",
+        "name": "Language & Literature in English",
+        "slug_id": "144986",
+        "slug": "subjects/english"
+    },
+    {
+        "id": "12880",
+        "name": "Latin American Studies",
+        "slug_id": "144988",
+        "slug": "subjects/latin-american-studies"
+    },
+    {
+        "id": "12907",
+        "name": "Law",
+        "slug_id": "144989",
+        "slug": "subjects/law"
+    },
+    {
+        "id": "12886",
+        "name": "Library Science",
+        "slug_id": "144990",
+        "slug": "subjects/library-science"
+    },
+    {
+        "id": "12887",
+        "name": "Linguistics",
+        "slug_id": "144991",
+        "slug": "subjects/linguistics"
+    },
+    {
+        "id": "12897",
+        "name": "Mathematics",
+        "slug_id": "144992",
+        "slug": "subjects/mathematics"
+    },
+    {
+        "id": "12888",
+        "name": "Music",
+        "slug_id": "145012",
+        "slug": "subjects/music"
+    },
+    {
+        "id": "12899",
+        "name": "Nursing & Health Sciences",
+        "slug_id": "145013",
+        "slug": "subjects/nursing-health-sciences"
+    },
+    {
+        "id": "12889",
+        "name": "Philosophy",
+        "slug_id": "145014",
+        "slug": "subjects/philosophy"
+    },
+    {
+        "id": "12898",
+        "name": "Physics",
+        "slug_id": "145015",
+        "slug": "subjects/physics"
+    },
+    {
+        "id": "12908",
+        "name": "Political Science & Government",
+        "slug_id": "145016",
+        "slug": "subjects/political-science-government"
+    },
+    {
+        "id": "12909",
+        "name": "Psychology",
+        "slug_id": "145017",
+        "slug": "subjects/psychology"
+    },
+    {
+        "id": "12890",
+        "name": "Romance Languages & Literatures",
+        "slug_id": "145018",
+        "slug": "subjects/romance-languages-literatures"
+    },
+    {
+        "id": "12913",
+        "name": "Science",
+        "slug_id": "145019",
+        "slug": "subjects/science"
+    },
+    {
+        "id": "12915",
+        "name": "Slavic & Eastern Languages",
+        "slug_id": "145020",
+        "slug": "subjects/slavic-eastern-languages"
+    },
+    {
+        "id": "12910",
+        "name": "Social Work",
+        "slug_id": "145021",
+        "slug": "subjects/social-work"
+    },
+    {
+        "id": "12911",
+        "name": "Sociology & Anthropology",
+        "slug_id": "145022",
+        "slug": "subjects/sociology-anthropology"
+    },
+    {
+        "id": "12891",
+        "name": "Theatre & Dance",
+        "slug_id": "145024",
+        "slug": "subjects/theatre-dance"
+    },
+    {
+        "id": "12892",
+        "name": "Theology",
+        "slug_id": "145025",
+        "slug": "subjects/theology"
+    }
+]

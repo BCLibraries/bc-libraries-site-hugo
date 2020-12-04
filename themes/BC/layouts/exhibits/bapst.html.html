@@ -3,7 +3,6 @@
 {{ define "header" }}{{ end }}
 
 {{ define "pagestyles" }}
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/exhibit_refresh.css"/>
 {{ end }}
 
 {{ define "main" }}
@@ -25,12 +24,11 @@
                     <h3 id="main-heading">Exhibits in the Bapst Art Library Gargan Hall Exhibit Cases</h3>
                     <ul>
                         <div class="holdhead">
-                            <h4>2016-2019</h4>
+                            <h4>2016-2020</h4>
                         </div>
                         
                         {{ range (where .Site.RegularPages ".Params.location" .Params.location) }}
-                        {{ .Scratch.Set "loc" .Params.location }}
-                        {{ partial "exhibits/summary.html" . }}
+                        {{ partial "exhibits/thumbnail-summary.html" . }}
                         {{ end }}
                     </ul>
 
@@ -46,8 +44,7 @@
                         </div>
                         {{/* manually set the location to "bapstarchive" */}}
                         {{ range (where .Site.Pages ".Params.location" "bapstarchive") }}
-                        {{ .Scratch.Set "loc" "bapstarchive" }}
-                        {{ partial "exhibits/summary.html" . }}
+                        {{ partial "exhibits/thumbnail-summary.html" . }}
                         {{ end }}
                     </ul>
 

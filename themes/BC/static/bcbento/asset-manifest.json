@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "../theme/bcbento/static/js/main.cd03e164.chunk.js",
+    "main.js.map": "../theme/bcbento/static/js/main.cd03e164.chunk.js.map",
+    "runtime-main.js": "../theme/bcbento/static/js/runtime-main.d47131bb.js",
+    "runtime-main.js.map": "../theme/bcbento/static/js/runtime-main.d47131bb.js.map",
+    "static/js/2.75e90ee3.chunk.js": "../theme/bcbento/static/js/2.75e90ee3.chunk.js",
+    "static/js/2.75e90ee3.chunk.js.map": "../theme/bcbento/static/js/2.75e90ee3.chunk.js.map",
+    "index.html": "../theme/bcbento/index.html",
+    "static/js/2.75e90ee3.chunk.js.LICENSE.txt": "../theme/bcbento/static/js/2.75e90ee3.chunk.js.LICENSE.txt",
+    "static/media/icon_archives.9b4cb17a.svg": "../theme/bcbento/static/media/icon_archives.9b4cb17a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d47131bb.js",
+    "static/js/2.75e90ee3.chunk.js",
+    "static/js/main.cd03e164.chunk.js"
+  ]
+}

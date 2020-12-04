@@ -1,0 +1,81 @@
+#downtime-notification {
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fde073;
+    text-align: center;
+    overflow: hidden;
+    padding: 1em 2em;
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
+}
+
+#close {
+    display: none;
+}
+
+.covid-notice {
+    z-index: 101;
+    background: #fde073;
+    text-align: center;
+    overflow: hidden;
+    padding: 1em 2em;
+    box-shadow: 0 0 5px black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.covid-notice__close-button {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+}
+
+@media (max-width: 900px) {
+    .covid-notice__close-button {
+        position: absolute;
+        top: auto;
+        bottom: .5em;
+        right: .5em;
+    }   
+}
+
+
+.covid-notice__opener {
+    background: #fde073;
+    z-index: 101;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.covid-notice__open-button {
+    background: #fde073;
+}
+
+.covid-notice--hidden {
+    display: none;
+}
+
+.container-fluid.statement-on-racism {
+    background:#0e0e0e;
+    color: #e6e6e6;
+    font-size: 18px;
+}
+
+.container-fluid.statement-on-racism a {
+    color: white;
+    font-weight: 600;
+}
+
+.statement-attribution {
+    color: #555;
+    width: 80%;
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+    margin: 2em 0;
+    padding: 2em 0;
+}
