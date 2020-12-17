@@ -53,6 +53,12 @@
         {{ else }}
         <li><a href="{{ relref . "/exhibits/stokes"}}">{{ .Site.Params.stokes }}</a></li>
         {{ end }}
+
+        {{ if eq .Params.Location "tiponeill" }}
+        <li class="target">{{ .Site.Params.tiponeill }}</li>
+        {{ else }}
+        <li><a href="{{ relref . "/exhibits/tiponeill"}}">{{ .Site.Params.tiponeill }}</a></li>
+        {{ end }}
         
         <li class="digital-exhibits-li"><a href="https://library.bc.edu/digital-exhibits/">Boston College Libraries Digital Exhibits</a></li>
     </ul>

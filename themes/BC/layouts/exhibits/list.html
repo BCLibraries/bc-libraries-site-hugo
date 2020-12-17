@@ -39,7 +39,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.Bapst }}, Gargan Hall</h4>
-                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.bapst }} Past Exhibits</a></p>
+                            <p>See all <a href="./{{ .Params.location }}">{{ .Site.Params.bapst }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -51,7 +51,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.Burns }}</h4>
-                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.burns }} Past Exhibits</a></p>
+                            <p>See all <a href="./{{ .Params.location }}">{{ .Site.Params.burns }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -84,7 +84,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.stokes }}</h4>
-                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.stokes }} Past Exhibits</a></p>
+                            <p>See all <a href="./{{ .Params.location }}">{{ .Site.Params.stokes }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -96,7 +96,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.lvl1 }}</h4>
-                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.lvl1 }} Past Exhibits</a></p>
+                            <p>See all <a href="./{{ .Params.location }}">{{ .Site.Params.lvl1 }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -108,7 +108,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.lvl3 }}</h4>
-                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.lvl3 }} Past Exhibits</a></p>
+                            <p>See all <a href="./{{ .Params.location }}">{{ .Site.Params.lvl3 }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -120,7 +120,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.reading }}</h4>
-                            <p>Click here for <a href="./{{ .Params.Location }}">{{ .Site.Params.reading }} Past Exhibits</a></p>
+                            <p>See all <a href="./{{ .Params.Location }}">{{ .Site.Params.reading }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -132,7 +132,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.backwall }}</h4>
-                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.backwall }} Past Exhibits</a></p>
+                            <p>See all <a href="./{{ .Params.location }}">{{ .Site.Params.backwall }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -144,7 +144,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.lobby }}</h4>
-                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.lobby }} Past Exhibits</a></p>
+                            <p>See all <a href="./{{ .Params.location }}">{{ .Site.Params.lobby }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -156,7 +156,7 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>{{ .Site.Params.tml }}</h4>
-                            <p>Click here for <a href="./{{ .Params.location }}">{{ .Site.Params.tml }} Past Exhibits</a></p>
+                            <p>See all <a href="./{{ .Params.location }}">{{ .Site.Params.tml }} Past Exhibits</a></p>
                         </div>
 
                         {{ partial "exhibits/location-summary.html" . }}
@@ -172,11 +172,12 @@
                     <div class="col-md-6 holder">
                         <div class="holdhead">
                             <h4>Tip O’Neill Exhibit</h4>
-                            <p>Click here for more information on the <a href="http://www.bc.edu/libraries/about/exhibits/burnsvirtual/oneill.html">virtual exhibit</a>.</p>
+                            {{/*<p>Read more about the <a href="./{{ .Params.location }}/tiponiell">{{ .Site.Params.tiponeill }}</a>.</p>*/}}
+                            <br/>
                         </div>
 
                         <div class="frame">
-                            <a href="http://www.bc.edu/content/bc/libraries/about/exhibits/oneill/oneill.html">
+                            <a href="./{{ .Params.location }}tiponeill/">
                                 <img src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/virtual/tip-thumb.png" alt="Painting of Tip O'Neill">
                                 <div class="info">
                                     <p class="date">&nbsp;</p>
