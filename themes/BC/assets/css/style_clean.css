@@ -1828,9 +1828,9 @@ a.announcelink {
     border-top: none;
     border-right: none;
     border-left: none;
-    color: #990000;
+    color: #000;
     display: inline-block;
-    padding: 5px 9px;
+    padding: 10px 8px;
     text-decoration: none;
     width: 100%;
     background: #E9E9E9;
@@ -5124,9 +5124,9 @@ span.pad-left-med.hitst {display: none;}
 #s-lg-guide-tabs ul.nav-tabs > li a {display:block; height:100%;}
 #s-lg-guide-tabs ul.nav-tabs > li > .dropdown-wrapper a.dropdown-toggle {vertical-align:middle;}
 #s-lg-guide-tabs ul.nav-tabs > li > .dropdown-wrapper a {height:100%; width: 100%; float:none!important; display:table-cell; color:#000;}
-#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a::before {content:"↳"; position:absolute; left:3px;}
+#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a::before {content:"↳  "; position:relative;}
 #s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a .subitem {width:100%; height:100%; white-space:pre-line;}
-#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a {padding-left:20px!important;}
+#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a {padding-left:10px!important; text-align: left;}
 #s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a:focus,
 #s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a:hover,
 #s-lg-guide-tabs ul.nav-tabs > li.active > ul.wrapper-subitems li.active a:hover,

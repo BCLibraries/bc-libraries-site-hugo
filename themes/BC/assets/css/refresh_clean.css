@@ -1712,3 +1712,8 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         padding: 1.5em 0 0 0;
     }
 }
+
+/* Hide beta bento feedback link */
+.tell-us {
+    display: none;
+}
