@@ -346,6 +346,10 @@ html {
     background: url("https://library.bc.edu/images/exhibits/banner_stokes.jpg") no-repeat 50% 0% #101010;
 }
 
+/*#exhibit .tiponeill, .exhibit_page .tiponeill {
+    background: url("https://library.bc.edu/images/exhibits/banner_tiponeill-tinted.jpg") no-repeat 0% 90% #101010;
+}*/
+
 #exhibit .bapst, .exhibit_page .bapst, #exhibit .bapstarchive, .exhibit_page .bapstarchive  {
     background: url("https://library.bc.edu/images/exhibits/banner_bapst.jpg") no-repeat 50% 0% #101010;
 }
@@ -607,6 +611,20 @@ html {
     margin: 0 auto 15px;
     max-width: 875px;
     width: 50%;
+}
+
+#exhibit.tiponeill .poster figure, .exhibit_page.tiponeill .poster figure {
+    margin: 2rem 0;
+    font-size: small;
+}
+
+#exhibit.tiponeill .poster figure img, .exhibit_page.tiponeill .poster figure img {
+    width: 100%;
+    max-width: 100%;
+}
+
+#exhibit.tiponeill .latest_exhibit .right ul {
+    padding: 0 0 1rem 4rem;
 }
 
 .middle_top .article_content .text {
