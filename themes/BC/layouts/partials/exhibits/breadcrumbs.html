@@ -5,7 +5,11 @@
         {{/* pages like /exhibits/burns and /exhibits/bapst have 'archivepage: true' set in their respective _index.md front matter */}}
         {{ if eq .Page.Params.archivepage true }}
             <li id="s-lib-bc-site"><a href="{{ relref . "/exhibits"}}">{{ .Site.Params.exhibits }}</a></li>
-            <li id="s-lib-bc-group" class="active">{{ .Site.Param .Page.Params.location }} Exhibit Archives</li>
+            {{ if eq .Params.location "tiponeill" }}
+                <li id="s-lib-bc-group" class="active">{{ .Site.Param .Page.Params.location }}</li>
+            {{ else }}
+                <li id="s-lib-bc-group" class="active">{{ .Site.Param .Page.Params.location }} Exhibit Archives</li>
+            {{ end }}
         {{ else }}
             <li id="s-lib-bc-page" class="active">{{ .Site.Params.exhibits }}</li>
         {{ end }}
