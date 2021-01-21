@@ -213,7 +213,7 @@ th {
 
 #guidetitle h1 {
     font-size: 30px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     padding: 0px;
     margin:  0px;
     display: inline-block;
@@ -235,7 +235,7 @@ th {
 
 .colon {
     font-size: 30px;
-    color: #05506d;
+    /*color: #05506d;*/
     display: inline-block;
 }
 
@@ -483,8 +483,8 @@ th {
 /* EFFECTS BOX TITLES. USES BOOTSTRAP STYLE WHEN IN EDIT MODE */       {
     border-bottom: 1px solid #CCC;
     padding: 3px 8px;
-    font-size: 13px;
-    color: #333;
+    /*font-size: 13px;
+    color: #333;*/
     background: #fff;
 }
 
@@ -492,13 +492,13 @@ th {
 /* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. */       {
     border-bottom: 0 none;
     border-radius: 0 0 0 0;
-    color: #05506d;
+    /*color: #05506d;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: normal;*/
     line-height: 1;
-    margin: 15px 0 5px;
+    /*margin: 15px 0 5px;*/
     padding: 0px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     background: none;
 }
 
@@ -1059,16 +1059,12 @@ h5 {font-weight:600;}*/
 
 #content_container .row {padding-top:0; padding-bottom:0;}
 
-h3, h4, h5, h6,
-.view-mode .s-lib-box .s-lib-box-title,
-#guidetitle h1, #guidetitle h2,
-.colon {color:#151515;}
-
 .s-lib-box-content .ui-widget {font-family:inherit;}
 
 /* Custom block header styling */
 .view-mode .s-lib-box .s-lib-box-title,
-.edit-mode .s-lib-box .s-lib-box-title  {margin-top:0em; text-transform: none; font-size:18px; border-bottom: 1px solid #DADADA; padding-bottom: 4px; margin-bottom: 8px;}
+.edit-mode .s-lib-box .s-lib-box-title  {margin-top:0em; text-transform: none; border-bottom: 1px solid #DADADA;}
+.edit-mode .s-lib-box .s-lib-box-title {font-size:18px; padding-bottom: 4px; margin-bottom: 8px;}
 /* END Custom block header styling */
 
 footer {margin-top:1em;}
