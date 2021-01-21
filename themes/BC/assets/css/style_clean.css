@@ -1063,8 +1063,9 @@ h5 {font-weight:600;}*/
 
 /* Custom block header styling */
 .view-mode .s-lib-box .s-lib-box-title,
-.edit-mode .s-lib-box .s-lib-box-title  {margin-top:0em; text-transform: none; border-bottom: 1px solid #DADADA;}
+.edit-mode .s-lib-box .s-lib-box-title {margin-top:0em; text-transform: none; border-bottom: 1px solid #DADADA; color: #000;}
 .edit-mode .s-lib-box .s-lib-box-title {font-size:18px; padding-bottom: 4px; margin-bottom: 8px;}
+.view-mode .s-lib-box .s-lib-box-title {font-size: 24px; font-weight: 200; margin: 0 0 .5rem 0; padding: 0 0 .5rem 0;}
 /* END Custom block header styling */
 
 footer {margin-top:1em;}
