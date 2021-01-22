@@ -495,7 +495,7 @@ th {
     /*color: #05506d;
     font-size: 18px;
     font-weight: normal;*/
-    line-height: 1;
+    line-height: 1.15;
     /*margin: 15px 0 5px;*/
     padding: 0px;
     /*text-transform: uppercase;*/
@@ -1065,7 +1065,7 @@ h5 {font-weight:600;}*/
 .view-mode .s-lib-box .s-lib-box-title,
 .edit-mode .s-lib-box .s-lib-box-title {margin-top:0em; text-transform: none; border-bottom: 1px solid #DADADA; color: #000;}
 .edit-mode .s-lib-box .s-lib-box-title {font-size:18px; padding-bottom: 4px; margin-bottom: 8px;}
-.view-mode .s-lib-box .s-lib-box-title {font-size: 24px; font-weight: 200; margin: 0 0 .5rem 0; padding: 0 0 .5rem 0;}
+.view-mode .s-lib-box .s-lib-box-title {font-size: 24px; font-weight: 200; margin: 0 0 .5rem 0; padding: .25rem 0 .5rem 0;}
 /* END Custom block header styling */
 
 footer {margin-top:1em;}
