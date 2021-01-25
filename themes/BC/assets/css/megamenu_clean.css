@@ -984,7 +984,9 @@
 }
 
 #mm-help-about .panel-body .media img {
-    max-width: 0px!important;
+    /*max-width: 0px!important;*/
+    max-width: 145px!important;
+    height: 100%;
 }
 
 #mm-help-about .panel-heading {
@@ -993,8 +995,8 @@
 }
 
 #mm-help-about .panel-heading .media img {
-    width: 100%;
-    height: 100px;
+    /*width: 100%;
+    height: 100px;*/
     /*opacity: .85;*/
 }
 
@@ -1024,6 +1026,7 @@
 .library-boxes .lib-box-small.panel {
     display: flex;
     flex-direction: column;
+    border-radius: 4px;
 }
 /* Safari doesn't play well with floated elements and flex display */
 .library-boxes .lib-box-small.panel:before,
@@ -1035,6 +1038,10 @@
     display: flex;
     flex-direction: column;
     padding: 5px 5px 8px 5px;
+    /*padding: 5px 5px 5px 0;*/
+}
+.library-boxes .panel-heading {
+    border: 0;
 }
 /* Safari doesn't play well with floated elements and flex display */
 .library-boxes .panel-body:before,
