@@ -1,0 +1,60 @@
+{{ define "title" }}{{ .Site.Params.tiponeill }}{{ end }}
+
+{{ define "header" }}{{ end }}
+
+{{ define "pagestyles" }}
+{{ end }}
+
+{{ define "main" }}
+<div class="exhibit-container exhibit_page">
+    <div class="container">
+        {{ partial "exhibits/breadcrumbs.html" . }}
+    </div>
+    {{ partial "exhibits/locations/headers.html" . }}
+</div>
+<div class="container">
+    <div id="exhibit" class="archives tiponeill">
+        <div class="row">
+            <div class="latest_exhibit">
+                <div class="left">
+                    {{ partial "exhibits/gallerynav.html" . }}
+                </div>
+    
+                <div class="right">
+                    <h3 id="main-heading">Tip O'Neill Exhibit</h3>
+
+                    <p>This exhibit honors Thomas P. (Tip) O'Neill Jr., Speaker of the United States House of Representatives and graduate of Boston College class of 1936. The exhibit is located on the second level of O'Neill Library.</p> 
+                    
+                    <div class="poster">
+                        <figure>
+                            <img src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.location }}/tip_oneill_exhibit-desk.jpg" alt="Tip O'Neill's Desk" />
+                            <figcaption>Tip O'Neill's desk.</figcaption>
+                        </figure>
+                    </div>
+
+                    <p>The exhibit features displays from many facets of O'Neill's life: his North Cambridge neighborhood, his BC years, his legacy as speaker, and his political campaigns. His voice can be heard over audio speakers, a television provides video clips of some of his speeches, and a computer station enables visitors to learn more about his life and legacy.</p>
+
+                    <div class="poster">
+                        <figure>
+                            <a href="https://www.youtube.com/watch?v=8z_vWvR5vYA"><img src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.location }}/tip_oneill_exhibit-wall.jpg" alt="Campaign photos from across Tip O'Neill's career" /></a>
+                            <figcaption>Campaign photos from across Tip O'Neill's career.</figcaption>
+                        </figure>
+                    </div>
+
+                    <p>The exhibit is located on the second level of O'Neill Library. It is kept closed and dim to protect valuable materials, but library staff will be happy provide access. Just check with the Digital Studio staff on the 2nd floor of O'Neill, or check with circulation desk on the main (3rd floor) level to be let into the exhibit.</p>
+                    
+                    <hr/>
+
+                    <p>More information about Thomas P. O'Neill, Jr.:</p>
+                    <ul>
+                        <li><a href="https://library.bc.edu/burns-exhibits/tip-oneill/">Thomas P. O'Neill and Boston College</a>, virtual exhibit from Burns Library.</li>
+                        <li><a href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&collectionId=81517033300001021">Images documenting O'Neill's life</a>, from the Libraries' Digital Collections.</li>
+                        <li><a href="http://hdl.handle.net/2345/988">Finding aid for O'Neill's papers</a> from the Congressional Archives Collection.</li>
+                    </ul>
+
+                </div> {{/* end .right */}}
+            </div> {{/* end .latest_exhibit */}}
+        </div> {{/* end .row */}}
+    </div> {{/* end #exhibit */}}
+</div>
+{{ end }}

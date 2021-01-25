@@ -19,6 +19,7 @@ relativeURLs = true
     lvl3 = "O'Neill Level Three Gallery"
     reading = "O'Neill Reading Room"
     stokes = "History Dept, Stokes Hall"
+    tiponeill = "Tip O'Neill Exhibit"
     showBuildHeader = false
     showFloatingHelpButton = true
     showBetaButton = true
