@@ -1,5 +1,5 @@
 ---
-title: "Scholarship Opportunity: Bookbuilders' of Boston 2021sc"
+title: "Scholarship Opportunity: Bookbuilders' of Boston 2021"
 draft: false
 expired: false
 date: 2021-02-10T12:19:04-05:00
