@@ -46,7 +46,7 @@
 #news .news-content .news-section-text .news-section-title {
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: .25rem;
+    margin: .25rem 0;
 }
 #news .news-content.news-content-large .news-section-text .news-section-title {
     font-size: 2rem;
