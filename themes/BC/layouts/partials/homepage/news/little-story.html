@@ -1,0 +1,10 @@
+<div class="col-xs-6 col-sm-3 col-md-3 news-content news-content-small">
+    <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">
+        <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}" />
+        <div class="news-section-text">
+            {{/*<div class="news-section-date">{{ .Date.Format "Mon Jan 2, 2006" }}</div>*/}}
+            <div class="news-section-title">{{ .Title | safeHTML }}</div>
+            <!--div class="news-section-content-blurb">{{ .Content }}</div-->
+        </div>
+    </a>
+</div>
