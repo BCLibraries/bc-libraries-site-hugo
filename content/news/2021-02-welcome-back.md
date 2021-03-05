@@ -1,7 +1,7 @@
 ---
 title: "Welcome Back to BC Libraries"
 draft: false
-expired: false
+expired: true
 date: 2021-02-15T11:13:31-05:00
 year: "2021"
 slug: "2021-02-welcome-back.md"
