@@ -1,0 +1,25 @@
+<section class="col-xs-12 col-sm-6 col-md-6 news-content news-content-large">
+    {{ if .Params.unsafeHTML }}
+        <div class="news-section-unsafe-html-story">
+            <div class="news-section-unsafe-html-embed">
+                {{ .Params.unsafeHTML | safeHTML }}
+            </div>
+            <div class="news-section-text">
+                {{/*<div class="news-section-date">{{ .Date.Format "Mon Jan 2, 2006" }}</div>*/}}
+                <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">                     
+                    <div class="news-section-title">{{ .Title | safeHTML }}</div>
+                    <div class="news-section-content-blurb">{{ .Content }}</div>
+                </a>
+            </div>
+        </div>
+    {{ else }}
+    <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">                     
+        <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
+        <div class="news-section-text">
+            {{/*<div class="news-section-date">{{ .Date.Format "Mon Jan 2, 2006" }}</div>*/}}
+            <div class="news-section-title">{{ .Title | safeHTML }}</div>
+            <div class="news-section-content-blurb">{{ .Content }}</div>
+        </div>
+    </a>
+    {{ end }}
+</section>
