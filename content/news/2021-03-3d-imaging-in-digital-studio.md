@@ -4,7 +4,7 @@ draft: false
 expired: false
 date: 2021-03-08T00:01:01-05:00
 year: "2021"
-slug: "2021-03-misinformation-literacy"
+slug: "3d-imaging-in-digital-studio"
 destination: "https://library.bc.edu/newsletter/?p=1566"
 imagethumb: "2021-03/3d-imaging-in-digital-studio.jpg"
 type: "news"
