@@ -10,4 +10,4 @@ imagethumb: "2021-03/oluo-menakem.jpg"
 type: "news"
 ---
 
-Read a short introduction to Ijeoma Oluo's and Resmaa Menakem's anti-racism work before their presentations this week (3/23 and 3/24).
+Read a short introduction to Ijeoma Oluo's and Resmaa Menakem's anti-racism work.
