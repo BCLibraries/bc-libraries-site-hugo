@@ -51,7 +51,7 @@
 
     {{/* get list of subjects */}}
     {{ range .subjects }}
-        {{ $.Scratch.SetInMap "subjects" .id (printf "<li><a href='https://libguides.bc.edu/sb.php?subject_id=%s'>%s</a></li>" .id .name) }}
+        {{ $.Scratch.SetInMap "subjects" .id (printf "<a href='https://libguides.bc.edu/sb.php?subject_id=%s'>%s</a>" .id .name) }}
         {{/* $.Scratch.Add "subjects" (printf "<li><a href='https://libguides.bc.edu/sb.php?subject_id=%s'>%s</a></li> " .id .name) */}}
     {{ end }}
 {{ end }}
@@ -79,9 +79,9 @@
                         <div class="col-md-8 col-sm-8 col-xs-12">
                             <div class="col-md-12 col-sm-12">
                                 <h3 class="featured-librarian">{{ $profile_first_name }} is an expert at:</h3>
-                                <ul class="featured-librarian-expert-at-list">
+                                <div class="featured-librarian-expert-at-list">
                                     {{ delimit (.Scratch.Get "subjects") ", " ", and "}}
-                                </ul>
+                                </div>
                             </div>
 
                             <div class="col-md-12 col-sm-12">

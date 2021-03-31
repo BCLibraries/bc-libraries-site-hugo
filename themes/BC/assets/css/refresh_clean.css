@@ -1074,13 +1074,13 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 #featured-librarian .bottom-text {
     margin: 1rem 0 0 0;
 }
-#featured-librarian ul.featured-librarian-expert-at-list,
+#featured-librarian .featured-librarian-expert-at-list,
 #featured-librarian ul.featured-librarian-guides {
     margin: .5rem 0 2rem 0;
     padding: 0;
     list-style-type: none;
 }
-#featured-librarian ul.featured-librarian-expert-at-list li {
+#featured-librarian .featured-librarian-expert-at-list li {
     display:inline;
 }
 
