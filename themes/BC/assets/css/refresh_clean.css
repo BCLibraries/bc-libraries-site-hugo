@@ -615,15 +615,15 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     width: 100%;
 }
 
-.aal-box #chat-icon-link.aal-icon {
+.aal-box .chat-icon-link.aal-icon {
     background-color: #B29D6C;
 }
 
-.aal-box #email-icon-link.aal-icon {
+.aal-box .email-icon-link.aal-icon {
     background-color: #a25729;
 }
 
-.aal-box #meet-icon-link.aal-icon {
+.aal-box .meet-icon-link.aal-icon {
     background-color: #204375;
 }
 

@@ -19,7 +19,7 @@ $(function () {
     // HOMEPAGE only GA event triggers
     //
     // send 'outbound' event for all link clicks
-    $all_anchors.not('#askuswidget, .search-link, .accessibility-text').click(function(e) {
+    $all_anchors.not('.askuswidget, .search-link, .accessibility-text').click(function(e) {
         var url = $(this).attr("href");
         /* Bug fix to stop screen jump when clicking carousel controls */
         if (url.indexOf('#') !== 0) {
@@ -30,7 +30,7 @@ $(function () {
     });
     // send 'homepage' event for all link clicks and include sections
     // ignore news carousel and mega menu top-level links
-    $all_anchors.not("#askuswidget, .carousel-control, li.dropdown > a.menu-option, .accessibility-text").click(function(e){
+    $all_anchors.not(".askuswidget, .carousel-control, li.dropdown > a.menu-option, .accessibility-text").click(function(e){
         var url = $(this).attr("href");                
         var dataTag = $(this).parents("[data-tag=ga-tag]");
         var dataID = "-";
@@ -75,7 +75,7 @@ $(function () {
     //
     // catch Ask Us fixed button clicks
     //
-    $("a#askuswidget").click(function(e){
+    $("a.askuswidget").click(function(e){
         var src = window.location.href;
         //gtag('send', 'event', 'chat-widget', 'click', src);
         gtag('event', 'click', {'event_category': 'chat-widget', 'event_label': src});
