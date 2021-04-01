@@ -30,7 +30,7 @@
             var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
         })();
 
-        $(".chat-icon-link").click(function (e) {
+        $(".chat-icon-link, #chat-icon-link").click(function (e) {
             e.preventDefault();
             var active = $(".aal-box .libraryh3lp > a").filter(":visible");
             if (active && active.length) {
