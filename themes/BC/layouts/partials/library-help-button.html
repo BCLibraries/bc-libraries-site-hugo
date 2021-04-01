@@ -1,5 +1,5 @@
 <style type="text/css">
-    .askuswidget {
+    .askuswidget, #askuswidget {
         position: fixed;
         right: -168px;
         z-index: 99999999999;
@@ -16,22 +16,24 @@
         transform-origin: top left;
         box-shadow: rgb(0,0,0) 0px 0px 5px;
     }
-    .askuswidget.btn {
+    .askuswidget.btn, #askuswidget.btn {
         border-color: #fff;
         border-top: none;
     }
     .askuswidget.btn:focus,
-    .askuswidget.btn:hover  {
+    .askuswidget.btn:hover,
+    #askuswidget.btn:focus,
+    #askuswidget.btn:hover  {
         border-color: inherit;
         border-top: none;
     }
     @media (max-width: 900px) {
-        .askuswidget {
+        .askuswidget,#askuswidget {
             bottom: 200px;
         }
     }
     @media (min-width: 901px) {
-        .askuswidget {
+        .askuswidget, #askuswidget {
             top:25%;
         }
     }

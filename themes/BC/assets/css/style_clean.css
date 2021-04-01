@@ -1139,7 +1139,7 @@ footer h4 {margin:0 0 5px!important;}
 .edit-mode .libraryh3lp {
     display:none;
 }
-.askuswidget {
+.askuswidget, #askuswidget {
     position: fixed;
     right: -169px;
     z-index: 99999999999;
@@ -1159,17 +1159,20 @@ footer h4 {margin:0 0 5px!important;}
     text-shadow: none;
     background-color: #337ab7!important;
 }
-.askuswidget.btn {
+.askuswidget.btn, #askuswidget.btn {
     border-color: #fff;
     border-top: none;
 }
 .askuswidget.btn:focus,
-.askuswidget.btn:hover {
+.askuswidget.btn:hover,
+#askuswidget.btn:hover,
+#askuswidget.btn:focus  {
     border-color: inherit;
     border-top: none;
     background-color: #286090!important;
 }
-.askuswidget.btn:visited {
+.askuswidget.btn:visited,
+#askuswidget.btn:visited {
     color:#fff!important;
 }
 #s-lib-scroll-top {
@@ -1177,12 +1180,12 @@ footer h4 {margin:0 0 5px!important;}
     right: 50px;
 }
 @media (max-width: 900px) {
-    .askuswidget {
+    .askuswidget, #askuswidget {
         bottom: 200px;
     }
 }
 @media (min-width: 901px) {
-    .askuswidget {
+    .askuswidget, #askuswidget {
         top:25%;
     }
     /* reposition scroll-to-top button */
