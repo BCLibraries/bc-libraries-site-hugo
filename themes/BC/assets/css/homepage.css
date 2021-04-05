@@ -290,6 +290,16 @@
     font-size: smaller;
 }
 
+/* Welcome new students */
+
+#welcome-new-students {
+    margin-bottom: 4rem;
+}
+
+#welcome-new-students .intro {
+    font-size: large;
+}
+
 /* media queries */
 @media (max-width: 1199px) {
     .news-section-unsafe-html-embed {
