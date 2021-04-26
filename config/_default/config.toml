@@ -4,6 +4,8 @@ title = "Libraries"
 theme = "BC"
 summaryLength = 10
 relativeURLs = true
+rssLimit = 10
+#copyright = ""
 [permalinks]
     news = "/news/:year/:month/:slug/"
     exhibits = "/exhibits/:year/:month/:slug/"
