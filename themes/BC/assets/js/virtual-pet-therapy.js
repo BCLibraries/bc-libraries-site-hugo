@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function showOrHidePet() {
         if (document.body.clientWidth > minScreenWidth) {
-            showPet();
+            //showPet();
         } else {
             hidePet();
         }
