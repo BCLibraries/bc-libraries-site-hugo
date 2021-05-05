@@ -24,3 +24,19 @@ $vp_shadow_blur: 6px;
     box-shadow:  $vp_shadow_offset_x $vp_shadow_offset_y $vp_shadow_blur $vp_shadow_color;
     padding: .25em
 }
+
+#header .container::after {
+    clear:none;
+}
+
+@media ( max-width: 768px ) {
+    .virtual-pet {
+        top: -35px;
+        width: 75px;
+        font-size: 12px;
+    }
+
+    .virtual-pet__img {
+        height: 75px;
+    }
+}

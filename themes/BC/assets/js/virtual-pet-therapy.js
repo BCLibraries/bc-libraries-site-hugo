@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const virtual_pet_holder = document.querySelector('.virtual-pet');
     const pet = randomPet();
     const url = "https://library.bc.edu/images/virtual-pet-therapy/" + pet.img + ".png";
-    const minScreenWidth = 767;
 
     if (! virtual_pet_holder) {
         return;
@@ -10,30 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelector('.virtual-pet__img').setAttribute("src", url);
     document.querySelector('.virtual-pet__message').innerHTML = randomMessage(pet.name);
-
-    showOrHidePet();
-
-    window.addEventListener('resize', showOrHidePet);
-
-    function showOrHidePet() {
-        if (document.body.clientWidth > minScreenWidth) {
-            showPet();
-        } else {
-            hidePet();
-        }
-    }
-
-    function showPet() {
-        if (virtual_pet_holder.style.display != "block") {
-            virtual_pet_holder.style.display = "block";
-        }
-    }
-
-    function hidePet() {
-        if (virtual_pet_holder.style.display != "none") {
-            virtual_pet_holder.style.display = "none";
-        }
-    }
+    virtual_pet_holder.style.display = "block";
 
     function randomPet() {
         var pets = [
