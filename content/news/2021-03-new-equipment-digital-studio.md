@@ -8,6 +8,7 @@ slug: "2021-03-new-equipment-digital-studio.md"
 destination: "https://library.bc.edu/newsletter/?p=1600/"
 imagethumb: "2021-03/shooting-baldwin-01.jpg"
 type: "news"
+categories: ["highlight"]
 ---
 
 The BC Libraries Digital Studio has added new equipment, software, and support to facilitate digital projects.

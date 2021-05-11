@@ -8,6 +8,7 @@ slug: "2021-04-interlibrary-loan"
 destination: "https://library.bc.edu/newsletter/?p=1638"
 imagethumb: "2021-04/interlibrary-loan-map.jpg"
 type: "news"
+categories: ["highlight"]
 ---
 
 The BC Libraries Interlibrary Loan team handled a tsunami of scan and loan requests during the pandemic.
