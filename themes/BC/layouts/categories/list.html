@@ -1,5 +1,30 @@
+{{ define "title" }}Category Terms{{ end }}
+
+{{ define "header" }}{{ end }}
+
+{{ define "pagestyles" }}
+{{ end }}
+
 {{ define "main" }}
-
-
+<div class="exhibit-container">
+    <div class="container">
+        <ol class="breadcrumb" id="s-lib-bc-list">
+            <li id="s-lib-bc-customer"><a href='{{ relref . "/"}}'>{{ .Site.Title }}</a></li>
+            <li id="s-lib-bc-page" class="active">{{ .Title }}</li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <h2>Categories</h2>
+    <div class="row">
+        <ul class="col-12">
+        {{ range .Pages }}
+            <li>
+                <a href="{{.Permalink}}">{{.Title}}</a>
+            </li>
+        {{ end }}
+    </ul>
+    </div>
+</div>
 
 {{ end }}
