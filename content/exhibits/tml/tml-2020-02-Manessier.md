@@ -14,6 +14,7 @@ imagethumb: "2020/02-manessier-thumb.png"
 imagealt: ""
 style: "right"
 type: "exhibits"
+categories: ["highlight"]
 ---
 
 <a href="http://bowdencollections.com/manessier.html" target="_blank">Alfred Manessier</a> is a non-figurative French painter and stained glass maker of sacred art from the last half of the twentieth century and was associated with the Lyrical Abstraction movement after the Second World War. He is also known for his vibrantly colored lithographs many of which are in this exhibition.
