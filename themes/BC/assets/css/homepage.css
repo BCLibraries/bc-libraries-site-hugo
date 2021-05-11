@@ -246,6 +246,11 @@
     line-height: 1px;
 }
 
+#featured-tip-wrapper .caption {
+    font-size: 10px;
+    text-align: right;
+}
+
 #featured-tip-wrapper .panel a {
     font-weight: 600;
 }
