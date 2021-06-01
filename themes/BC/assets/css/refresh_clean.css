@@ -688,8 +688,12 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     padding-bottom:0;
 }
 #services-highlight-container {
-    background-color: #fcf8e3;
-    /*border: 1px solid #faebcc;*/
+    /* default background color */
+    /* background-color: #fcf8e3; */
+
+    /* Summer 2021 update */
+    background-color: #ffff80;
+    border-bottom: 1px solid #e6e600;
 }
 #services-highlight {
     /*background-color: #fcf8e3;*/
