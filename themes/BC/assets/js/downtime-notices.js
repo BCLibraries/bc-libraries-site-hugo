@@ -27,13 +27,20 @@ const BCLibDowntimeNotices = function (options) {
         opts.callback = options.hasOwnProperty('callback') ? options.callback : display;
         opts.styles = options.hasOwnProperty('styles') ? options.styles : false;
         opts.class = options.hasOwnProperty('class') ? options.class : 'downtime-notification';
+        opts.application = options.hasOwnProperty('application') ? options.application : null
         return opts;
     }
 
     function buildRequest() {
         const request = new XMLHttpRequest();
 
-        request.open('GET', options.url, true);
+        let url = options.url + '?';
+        
+        if (options.application) {
+            url += "application=" + encodeURIComponent(options.application);
+        }
+
+        request.open('GET', url, true);
         request.onload = processRequest;
 
         // Ignore errors for now.
@@ -78,5 +85,6 @@ const BCLibDowntimeNotices = function (options) {
 
 BCLibDowntimeNotices({
     styles: true,
-    url: 'https://arc.bc.edu/notices/active'
+    url: 'http://127.0.0.1:8000/active',
+    application: 'Jesuit Online Bibliography'
 });
