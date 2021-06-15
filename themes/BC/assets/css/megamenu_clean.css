@@ -984,7 +984,9 @@
 }
 
 #mm-help-about .panel-body .media img {
-    max-width: 0px!important;
+    /*max-width: 0px!important;*/
+    max-width: 120px!important;
+    /*height: 100%;*/
 }
 
 #mm-help-about .panel-heading {
@@ -993,8 +995,8 @@
 }
 
 #mm-help-about .panel-heading .media img {
-    width: 100%;
-    height: 100px;
+    /*width: 100%;
+    height: 100px;*/
     /*opacity: .85;*/
 }
 
@@ -1022,29 +1024,62 @@
 }*/
 
 .library-boxes .lib-box-small.panel {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
+    border-radius: 4px;
 }
 /* Safari doesn't play well with floated elements and flex display */
 .library-boxes .lib-box-small.panel:before,
 .library-boxes .lib-box-small.panel:after {
     display:none!important;
 }
+
 .library-boxes .panel-body {
-    flex-grow: 1;
+    /*flex-grow: 1;
+    display: flex;
+    flex-direction: column;*/
+    padding: 5px 5px 8px 5px;
+    /*padding: 5px 5px 5px 0;*/
+}
+
+.library-boxes .panel-heading {
+    border: 0;
+}
+
+.library-boxes .panel-body,
+.library-boxes .panel-body .panel-heading,
+.library-boxes .panel-body .panel-heading .media,
+.library-boxes .panel-body .panel-heading .media .media-left, 
+.library-boxes .panel-body .panel-heading .media .media-right,
+.library-boxes .panel-body .panel-heading .media .media-body, 
+.library-boxes .panel-body .panel-heading .media .media-body .foo {
+    height: 100%;
+    display: block;
+}
+
+.library-boxes .panel-body .panel-heading .media {
+    display: flex;
+    flex-direction: row;
+}
+
+.library-boxes .panel-body .panel-heading .media .media-body .foo {
     display: flex;
     flex-direction: column;
-    padding: 5px 5px 8px 5px;
 }
+
+.library-boxes .panel-body .panel-heading .media .media-body .foo .lib-box-pair {
+    margin-top: auto;
+}
+
 /* Safari doesn't play well with floated elements and flex display */
 .library-boxes .panel-body:before,
 .library-boxes .panel-body:after {
     display:none!important;
 }
-.library-boxes .lib-box-pair {
+/*.library-boxes .lib-box-pair {
     flex-grow: 1;
     display: flex;
-}
+}*/
 /* Safari doesn't play well with floated elements and flex display */
 .library-boxes .lib-box-pair:before,
 .library-boxes .lib-box-pair:after {
@@ -1062,14 +1097,17 @@
     .library-box {
         padding: 5px;
     }
-    #mm-help-about .panel-heading .media img {
+    /*#mm-help-about .panel-heading .media img {
         height: 90px;
-    }
+    }*/
 }
 
 @media ( max-width: 991px ) {
-    #mm-help-about .panel-heading .media img {
+    /*#mm-help-about .panel-heading .media img {
         height: 67px;
+    }*/
+    .library-boxes .panel-body .panel-heading .media .media-left {
+        display: none;
     }
 }
 
