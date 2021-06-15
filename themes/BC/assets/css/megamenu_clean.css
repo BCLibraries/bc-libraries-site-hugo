@@ -1013,9 +1013,10 @@
     font-weight: 600;
 }
 
-.library-box .media a:focus,
-.library-box .media a:hover {
+.library-box .media a.lib-thumb:focus,
+.library-box .media a.lib-thumb:hover {
     outline: 2px solid blue!important;
+    outline-offset: -2px;
 }
 
 /*.library-box .media img:focus,
