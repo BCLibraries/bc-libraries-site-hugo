@@ -1045,6 +1045,8 @@
 
 .library-boxes .panel-heading {
     border: 0;
+    background-color: #f8f8f8;   /* fix for LibAnswers */
+    background-image: none;      /* fix for LibAnswers */
 }
 
 .library-boxes .panel-body,
