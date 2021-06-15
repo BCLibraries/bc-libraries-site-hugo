@@ -1052,7 +1052,7 @@
 .library-boxes .panel-body .panel-heading .media .media-left, 
 .library-boxes .panel-body .panel-heading .media .media-right,
 .library-boxes .panel-body .panel-heading .media .media-body, 
-.library-boxes .panel-body .panel-heading .media .media-body .foo {
+.library-boxes .panel-body .panel-heading .media .media-body .media-body-inner {
     height: 100%;
     display: block;
 }
@@ -1062,12 +1062,12 @@
     flex-direction: row;
 }
 
-.library-boxes .panel-body .panel-heading .media .media-body .foo {
+.library-boxes .panel-body .panel-heading .media .media-body .media-body-inner {
     display: flex;
     flex-direction: column;
 }
 
-.library-boxes .panel-body .panel-heading .media .media-body .foo .lib-box-pair {
+.library-boxes .panel-body .panel-heading .media .media-body .media-body-inner .lib-box-pair {
     margin-top: auto;
 }
 
