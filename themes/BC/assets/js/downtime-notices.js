@@ -85,6 +85,6 @@ const BCLibDowntimeNotices = function (options) {
 
 BCLibDowntimeNotices({
     styles: true,
-    url: 'http://127.0.0.1:8000/active',
+    url: 'https://arc.bc.edu/notices/active',
     application: 'Jesuit Online Bibliography'
 });
