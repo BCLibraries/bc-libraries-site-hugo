@@ -1027,8 +1027,8 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     margin-bottom: 0;
 }
 #featured-librarian h3.librarian-name {
-    margin-top: 1rem;
-    text-align: center;
+    /*margin-top: 1rem;
+    text-align: center;*/
 }
 #featured-librarian h4 {
     margin-bottom: .5rem;
@@ -1069,10 +1069,11 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     width: 100%;
     border: 3px solid #000;
 }
-#featured-librarian .librarian-profile-link {
-    width: 100%;
-    display: block;
-    text-align: center;
+#featured-librarian .librarian-name {
+    font-weight: 400;
+}
+#featured-librarian .librarian-title {
+    font-weight: 200;
     margin-bottom: 3rem;
 }
 #featured-librarian .bottom-text {

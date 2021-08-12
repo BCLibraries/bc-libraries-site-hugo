@@ -1,6 +1,8 @@
 [
     {
         "name": "Julia Hughes",
+        "title": "Senior Research Librarian/Bibliographer",
+        "department": "Collection Development & Research",
         "active": true,
         "profile_id": "102982",
         "featured_background": "",
@@ -32,6 +34,8 @@
     },
     {
         "name": "Chris Strauber",
+        "title": "Senior Research Librarian/Bibliographer",
+        "department": "Collection Development & Research",
         "active": true,
         "profile_id": "145218",
         "featured_background": "https://library.bc.edu/images/backgrounds/background-maroon-xv.png",
@@ -55,6 +59,8 @@
     },
     {
         "name": "Leslie Homzie",
+        "title": "Senior Research Librarian/Bibliographer",
+        "department": "Collection Development & Research",
         "active": true,
         "profile_id": "10678",
         "featured_background": "",
@@ -81,30 +87,9 @@
         ]
     },
     {
-        "name": "Stephen Sturgeon",
-        "active": true,
-        "profile_id": "115563",
-        "featured_background": "",
-        "featured_background_source": "",
-        "featured_background_caption": "",
-        "featured_background_type": "madras",
-        "featured_guides": [
-            {
-                "guide_name": "African American Literature",
-                "guide_link": "https://libguides.bc.edu/aframlit"
-            },
-            {
-                "guide_name": "English Literature: Selected Electronic Resources",
-                "guide_link": "https://libguides.bc.edu/englishlit"
-            },
-            {
-                "guide_name": "Literary Research",
-                "guide_link": "https://libguides.bc.edu/litresearch"
-            }
-        ]
-    },
-    {
         "name": "Tiffeni Fontno MLIS, M.Ed.",
+        "title": "Head, Educational Resource Center",
+        "department": "Educational Resource Center",
         "active": true,
         "profile_id": "106904",
         "featured_background": "https://library.bc.edu/images/backgrounds/background-slate-linen.png",
@@ -128,6 +113,8 @@
     },
     {
         "name": "Enid Karr",
+        "title": "Senior Research Librarian/Bibliographer",
+        "department": "Collection Development & Research",
         "active": true,
         "profile_id": "10692",
         "featured_background": "https://library.bc.edu/images/homepage/featuredlibrarian/morocco-anti-atlas-mountains-nasa-1200x1025.jpg",
@@ -146,6 +133,348 @@
             {
                 "guide_name": "Environmental Studies",
                 "guide_link": "https://libguides.bc.edu/environmental"
+            }
+        ]
+    },
+    {
+        "name": "Larry Busenbark",
+        "title": "Metadata Specialist/Bibliographer",
+        "department": "Metadata Creation & Management",
+        "active": true,
+        "profile_id": "10701",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "waves",
+        "featured_guides": [
+            {
+                "guide_name": "African & African Diaspora Studies",
+                "guide_link": "https://libguides.bc.edu/subjects/african-african-diaspora-studies"
+            },
+            {
+                "guide_name": "German Language & Literature",
+                "guide_link": "https://libguides.bc.edu/germanportal"
+            },
+            {
+                "guide_name": "Latin American Studies",
+                "guide_link": "https://libguides.bc.edu/subjects/latin-american-studies"
+            }
+        ]
+    },
+    {
+        "name": "Nina Bogdanovsky",
+        "title": "Senior Research Librarian/Bibliographer",
+        "department": "Collection Development & Research",
+        "active": true,
+        "profile_id": "10675",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "madras",
+        "featured_guides": [
+            {
+                "guide_name": "Art & Architecture History",
+                "guide_link": "https://libguides.bc.edu/arthistory"
+            },
+            {
+                "guide_name": "Finding Films: Streaming Video and DVDs",
+                "guide_link": "https://libguides.bc.edu/streamingvideo"
+            },
+            {
+                "guide_name": "Chinese Literature",
+                "guide_link": "https://libguides.bc.edu/ChineseLiterature"
+            }
+        ]
+    },
+    {
+        "name": "Adam Williams",
+        "title": "Senior Reference Librarian/Bibliographer",
+        "department": "Social Work Library",
+        "active": true,
+        "profile_id": "80821",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "madras",
+        "featured_guides": [
+            {
+                "guide_name": "Social Work Portal",
+                "guide_link": "https://libguides.bc.edu/socialworkportal"
+            },
+            {
+                "guide_name": "psycINFO",
+                "guide_link": "https://libguides.bc.edu/psycINFO"
+            },
+            {
+                "guide_name": "A Guide to APA Style 7th Edition",
+                "guide_link": "https://libguides.bc.edu/apa"
+            }
+        ]
+    },
+    {
+        "name": "Nancy Curtis",
+        "title": "Senior Liaison Librarian",
+        "department": "Collection Development & Research",
+        "active": true,
+        "profile_id": "264616",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "madras",
+        "featured_guides": [
+            {
+                "guide_name": "Chemistry Portal",
+                "guide_link": "https://libguides.bc.edu/chemistryportal"
+            },
+            {
+                "guide_name": "Physics Portal",
+                "guide_link": "https://libguides.bc.edu/physicsportal"
+            },
+            {
+                "guide_name": "SciFinder and SciFinder-N",
+                "guide_link": "https://libguides.bc.edu/scifinder"
+            }
+        ]
+    },
+    {
+        "name": "Sarah Barbrow",
+        "title": "Senior Liaison Librarian for Engineering, Computer Science and Math",
+        "department": "Collection Development & Research",
+        "active": true,
+        "profile_id": "287686",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "madras",
+        "featured_guides": [
+            {
+                "guide_name": "Mathematics Portal",
+                "guide_link": "https://libguides.bc.edu/mathematicsportal"
+            },
+            {
+                "guide_name": "Computer Science/IT Portal",
+                "guide_link": "https://libguides.bc.edu/computerscienceportal"
+            },
+            {
+                "guide_name": "Mathematics",
+                "guide_link": "https://libguides.bc.edu/mathematics"
+            }
+        ]
+    },
+    {
+        "name": "Elliot Hibbler",
+        "title": "Senior Scholarly Communications Librarian",
+        "department": "Research, Learning & Digital Scholarship",
+        "active": true,
+        "profile_id": "290377",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "blueprint",
+        "featured_guides": [
+            {
+                "guide_name": "Scholarly Communications and Research",
+                "guide_link": "https://libguides.bc.edu/scholcomm"
+            },
+            {
+                "guide_name": "ORCID at BC",
+                "guide_link": "https://libguides.bc.edu/orcid"
+            },
+            {
+                "guide_name": "Copyright and Scholarship",
+                "guide_link": "https://libguides.bc.edu/copyright"
+            }
+        ]
+    },
+    {
+        "name": "Jennifer Butler Moran",
+        "title": "Senior Research Librarian/Bibliographer",
+        "department": "Theology & Ministry Library",
+        "active": true,
+        "profile_id": "180153",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "blueprint",
+        "featured_guides": [
+            {
+                "guide_name": "Theology/Theology & Ministry Portal",
+                "guide_link": "https://libguides.bc.edu/theologyportal"
+            },
+            {
+                "guide_name": "Introduction to Research at the TML",
+                "guide_link": "https://libguides.bc.edu/tml_research_intro"
+            },
+            {
+                "guide_name": "Cybersecurity",
+                "guide_link": "https://libguides.bc.edu/cybersecurity"
+            }
+        ]
+    },
+    {
+        "name": "Jiebei Luo",
+        "title": "Data Services Librarian",
+        "department": "Digital Scholarship",
+        "active": true,
+        "profile_id": "215925",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "blueprint",
+        "featured_guides": [
+            {
+                "guide_name": "Research Data Services",
+                "guide_link": "https://libguides.bc.edu/dataservices"
+            },
+            {
+                "guide_name": "Finding Data/Data Support",
+                "guide_link": "https://libguides.bc.edu/finddata"
+            },
+            {
+                "guide_name": "Finding Spatial Data for Mapping (GIS)",
+                "guide_link": "https://libguides.bc.edu/gis"
+            }
+        ]
+    },
+    {
+        "name": "Jason Hall",
+        "title": "Liaison Librarian",
+        "department": "Collection Development & Research",
+        "active": true,
+        "profile_id": "273235",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "blueprint",
+        "featured_guides": [
+            {
+                "guide_name": "Bloomberg Guide",
+                "guide_link": "https://libguides.bc.edu/Bloomberg"
+            },
+            {
+                "guide_name": "Economics Portal",
+                "guide_link": "https://libguides.bc.edu/economicsportal"
+            },
+            {
+                "guide_name": "Finance",
+                "guide_link": "https://libguides.bc.edu/finance"
+            }
+        ]
+    },
+    {
+        "name": "Margaret Cohen",
+        "title": "Head, Educational Initiatives & Research Services",
+        "department": "Educational Initiatives & Research Services",
+        "active": true,
+        "profile_id": "10677",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "blueprint",
+        "featured_guides": [
+            {
+                "guide_name": "Education",
+                "guide_link": "https://libguides.bc.edu/educationportal"
+            },
+            {
+                "guide_name": "Library and Canvas Integration",
+                "guide_link": "https://libguides.bc.edu/libraryandcanvas"
+            },
+            {
+                "guide_name": "Accessibility",
+                "guide_link": "https://libguides.bc.edu/accessibility"
+            }
+        ]
+    },
+    {
+        "name": "Theresa Lyman",
+        "title": "Online Learning Librarian",
+        "department": "Educational Initiatives & Research Services",
+        "active": true,
+        "profile_id": "3302",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "blueprint",
+        "featured_guides": [
+            {
+                "guide_name": "Healthcare Administration",
+                "guide_link": "https://libguides.bc.edu/healthcareadmin"
+            },
+            {
+                "guide_name": "eBooks",
+                "guide_link": "https://libguides.bc.edu/e-books"
+            },
+            {
+                "guide_name": "Remote Access to Library Resources",
+                "guide_link": "https://libguides.bc.edu/remote"
+            }
+        ]
+    },
+    {
+        "name": "Bee Lehman, Ph.D.",
+        "title": "Senior Liaison Librarian for History",
+        "department": "Collection Development & Research",
+        "active": true,
+        "profile_id": "216542",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "blueprint",
+        "featured_guides": [
+            {
+                "guide_name": "History Research",
+                "guide_link": "https://libguides.bc.edu/history"
+            },
+            {
+                "guide_name": "Irish Studies Portal",
+                "guide_link": "https://libguides.bc.edu/irishportal"
+            },
+            {
+                "guide_name": "Digital History",
+                "guide_link": "https://libguides.bc.edu/digitalhistory"
+            }
+        ]
+    },
+    {
+        "name": "Elizabeth Sweeney",
+        "title": "Irish Music Librarian",
+        "department": "Burns Library",
+        "active": true,
+        "profile_id": "10686",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "blueprint",
+        "featured_guides": [
+            {
+                "guide_name": "Irish Music",
+                "guide_link": "https://libguides.bc.edu/irishmusic"
+            },
+            {
+                "guide_name": "Séamus Connolly Papers (Irish Music)",
+                "guide_link": "https://libguides.bc.edu/seamusconnolly"
+            }
+        ]
+    },
+    {
+        "name": "Wanda Anderson",
+        "title": "Senior Research Librarian/ Bibliographer",
+        "department": "Collection Development & Research",
+        "active": true,
+        "profile_id": "65380",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "blueprint",
+        "featured_guides": [
+            {
+                "guide_name": "Nursing Portal",
+                "guide_link": "https://libguides.bc.edu/nursingportal"
+            },
+            {
+                "guide_name": "Health Statistics",
+                "guide_link": "https://libguides.bc.edu/healthstats"
             }
         ]
     }

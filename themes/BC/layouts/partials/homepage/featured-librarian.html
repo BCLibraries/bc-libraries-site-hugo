@@ -6,6 +6,8 @@
 {{ $featured_librarian_idx := mod now.YearDay $max_idx }}
 {{ $featured_librarian := index $featured_librarians $featured_librarian_idx }}
 
+{{ $featured_librarian := index $featured_librarians 18 }}
+
 {{/* 
     BEGIN Define template variables 
 */}}
@@ -60,7 +62,7 @@
     END Define template variables 
 */}}
 
-<!-- FEATURED LIBRARIAN START -->
+<!-- FEATURED SUBJECT SPECIALIST START -->
 <div class="container-fluid bg-{{ $featured_librarian.featured_background_type }}" id="featured-librarian" data-tag="ga-tag">
     <div class="container">
         <div class="row">
@@ -68,22 +70,28 @@
                 <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 combo-box-xxx" >
                     <div class="combo-box-inner">
                         <div class="col-md-12">
-                            <h2>Featured Subject Librarian</h2>
+                            <h2>Featured Subject Specialist</h2>
+                            <a class="librarian-profile-link" href="{{ $profile_url }}"><h3 class="librarian-name">{{ $featured_librarian.name }}</h3></a>
+                            <h4 class="librarian-title">{{ $featured_librarian.title }}</h4>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12">
                             <a class="librarian-profile-link" href="{{ $profile_url }}">
                                 <img class="librarian-profile" src="{{ $profile_image }}" alt="{{ $featured_librarian.name }} profile" />
-                                <h3 class="librarian-name">{{ $featured_librarian.name }}</h3>
+                                <!--h3 class="librarian-name">{{ $featured_librarian.name }}</h3-->
                             </a>
+                            
                         </div>
                         <div class="col-md-8 col-sm-8 col-xs-12">
+                            {{ if .Scratch.Get "subjects" }}
                             <div class="col-md-12 col-sm-12">
                                 <h3 class="featured-librarian">{{ $profile_first_name }} is an expert at:</h3>
                                 <div class="featured-librarian-expert-at-list">
                                     {{ delimit (.Scratch.Get "subjects") ", " ", and "}}
                                 </div>
                             </div>
+                            {{ end }}
 
+                            {{ if $featured_librarian.featured_guides }}
                             <div class="col-md-12 col-sm-12">
                                 <h3 class="featured-librarian">Featured Guides:</h3>
                                 <ul class="featured-librarian-guides">
@@ -92,6 +100,7 @@
                                 {{ end }}
                                 </ul>
                             </div>
+                            {{ end }}
 
                             <div class="col-md-12 col-sm-12 bottom-text">
                                 <p>We have specialized guides for all your subject interests.<br/>
@@ -100,7 +109,7 @@
                         </div>
 
                         <div class="col-md-12 col-sm-12 col-xs-12 combo-boxes-footer">
-                            <p><a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Browse all our expert subject librarians</a> &rangle;</p>
+                            <p><a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Browse all our expert subject specialists</a> &rangle;</p>
                         </div>
                     </div>
                     
