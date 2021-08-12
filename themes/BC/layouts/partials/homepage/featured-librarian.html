@@ -6,7 +6,8 @@
 {{ $featured_librarian_idx := mod now.YearDay $max_idx }}
 {{ $featured_librarian := index $featured_librarians $featured_librarian_idx }}
 
-{{ $featured_librarian := index $featured_librarians 18 }}
+{{/* feature a specfic subject specialist by adding the index integer from the featured.json list. list index begins at 1. }}
+{{/* $featured_librarian := index $featured_librarians 18 */}}
 
 {{/* 
     BEGIN Define template variables 
@@ -77,9 +78,7 @@
                         <div class="col-md-4 col-sm-4 col-xs-12">
                             <a class="librarian-profile-link" href="{{ $profile_url }}">
                                 <img class="librarian-profile" src="{{ $profile_image }}" alt="{{ $featured_librarian.name }} profile" />
-                                <!--h3 class="librarian-name">{{ $featured_librarian.name }}</h3-->
                             </a>
-                            
                         </div>
                         <div class="col-md-8 col-sm-8 col-xs-12">
                             {{ if .Scratch.Get "subjects" }}
