@@ -696,12 +696,12 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     border-bottom: 1px solid #e6e600;*/
 
     /* Fall 2021 update */
-    background-color: #b3da65;
-    border-bottom: 1px solid #afce71;
+    background-color: #ffc67c;
+    border-bottom: 1px solid #ffbd68;
 }
-#services-highlight {
-    /*background-color: #fcf8e3;*/
-    /*border: 1px solid #faebcc;*/
+#services-highlight a.underline{
+    text-decoration: underline;
+    font-weight: 600;
 }
 #top-columns .column-items {
     display: flex;
