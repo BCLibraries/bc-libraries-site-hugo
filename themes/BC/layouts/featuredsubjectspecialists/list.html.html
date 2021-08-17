@@ -1,0 +1,154 @@
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
+
+{{ define "header" }}{{ end }}
+
+{{ define "pagestyles" }}
+<style>
+.subjectspecialists-container {
+    padding-top:50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+</style>
+{{ end }}
+
+{{ define "main" }}
+<div class="container-fluid subjectspecialists-container">
+    <h2>Featured Subject Specialists list</h2>
+
+    {{/* Load librarian info from LibGuides API. This data is looked up
+        once and cached. To clear the cache, start Hugo with --ignoreCache 
+        set or delete the cache files: rm -r $TMPDIR/hugo_cache/ */}}
+    {{ $all_librarians_data := getJSON "https://lgapi-us.libapps.com/1.1/accounts?site_id=94&key=a8d4316f3140239e36f101209d9f1b36&expand[]=subjects&expand[]=profile" }}
+    
+    {{/* Assign a default background image if one is not set in the librarian_name.json file */}}
+    {{ $background := "https://library.bc.edu/images/homepage/featuredlibrarian/defaultbackground-1200x675.jpg" }}
+    {{ $caption    := "" }}
+    
+    {{/* 
+        BEGIN Define template variables 
+    */}}
+
+    {{ range $elem_index, $featured_librarian := .Site.Data.librarians.featured }}
+    
+        {{ if $featured_librarian.featured_background }}
+            {{ $background = $featured_librarian.featured_background }}
+        
+            {{/* update background caption */}}
+            {{ if $featured_librarian.featured_background_source }}
+                {{ $caption = printf "%s Source: %s." $featured_librarian.featured_background_caption $featured_librarian.featured_background_source | safeHTML }}
+            {{ else if $featured_librarian.featured_background_caption }}
+                {{ $caption = $featured_librarian.featured_background_caption }}
+            {{ end }}
+        {{ else }}
+            {{ $caption = "" }}
+        {{ end }}
+        
+        
+        {{/* look up librarian profile metadata by $featured_librarian.profile_id */}}
+        {{ $profile_id          := $featured_librarian.profile_id }}
+        {{ $profile_url         := "https://library.bc.edu" }}
+        {{ $profile_image       := "https://libapps.s3.amazonaws.com/apps/common/images/profile.jpg" }}
+        {{ $profile_first_name  := "Baldwin Eagle" }}
+        {{ $.Scratch.Delete "subjects" }}
+        
+        {{ range where $all_librarians_data "id" "=" $profile_id }}
+            {{/* get first name */}}
+            {{ $profile_first_name = .first_name }}
+        
+            {{/* get profile image */}}
+            {{ $profile_image = .profile.image.url }}
+        
+            {{/* get profile url */}}
+            {{ $profile_url = .profile.url }}
+        
+            {{/* get list of subjects */}}
+            {{ range $subject := .subjects }}
+                {{ $.Scratch.SetInMap "subjects" $subject.id (printf "<a href='https://libguides.bc.edu/sb.php?subject_id=%s'>%s</a>" $subject.id $subject.name) }}
+            {{ end }}
+        {{ end }}
+        
+        {{/* 
+            END Define template variables 
+        */}}
+        
+        <!-- FEATURED SUBJECT SPECIALIST START -->
+        <div class="container-fluid bg-{{ $featured_librarian.featured_background_type }} featured-librarian-{{ $elem_index }}" id="featured-librarian">
+            <div class="container">
+                <div class="row">
+                    <div class="combo-boxes">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 combo-box-xxx" >
+                            <div class="combo-box-inner">
+                                <div class="col-md-12">
+                                    <h2>Featured Subject Specialist</h2>
+                                    <a class="librarian-profile-link" href="{{ $profile_url }}"><h3 class="librarian-name">{{ $featured_librarian.name }}</h3></a>
+                                    <h4 class="librarian-title">{{ $featured_librarian.title }}</h4>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <a class="librarian-profile-link" href="{{ $profile_url }}">
+                                        <img class="librarian-profile" src="{{ $profile_image }}" alt="{{ $featured_librarian.name }} profile" />
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-12">
+                                    {{ if $.Scratch.Get "subjects" }}
+                                    <div class="col-md-12 col-sm-12">
+                                        <h3 class="featured-librarian">{{ $profile_first_name }} is an expert at:</h3>
+                                        <div class="featured-librarian-expert-at-list">
+                                            {{ delimit ( $.Scratch.Get "subjects") ", " ", and "}}
+                                        </div>
+                                    </div>
+                                    {{ end }}
+        
+                                    {{ if $featured_librarian.featured_guides }}
+                                    <div class="col-md-12 col-sm-12">
+                                        <h3 class="featured-librarian">Featured Guides:</h3>
+                                        <ul class="featured-librarian-guides">
+                                        {{ range $featured_librarian.featured_guides }}
+                                            <li><a href="{{ .guide_link }}">{{ .guide_name }}</a></li>
+                                        {{ end }}
+                                        </ul>
+                                    </div>
+                                    {{ end }}
+        
+                                    <div class="col-md-12 col-sm-12 bottom-text">
+                                        <p>We have specialized guides for all your subject interests.<br/>
+                                        Not sure where to begin? Start with our <a href="https://libguides.bc.edu/ask-a-librarian">Ask A Librarian</a> guide!</p>                                    
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-12 col-sm-12 col-xs-12 combo-boxes-footer">
+                                    <p><a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Browse all our expert subject specialists</a> &rangle;</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+        
+                {{ if not (eq $caption "") }}
+                <div class="caption-link">
+                    {{ $caption }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        <!-- FEATURED LIBRARIAN END -->
+        
+        {{ if $featured_librarian.featured_background }}
+        <style>
+            .featured-librarian-{{$elem_index}} {
+                background-image: url({{ $background }});
+            }
+        </style>
+        {{ end }}
+    {{ end }}
+</div>
+
+
+{{ end }}
+
+{{ define "pagescripts" }}
+
+{{ end }}
