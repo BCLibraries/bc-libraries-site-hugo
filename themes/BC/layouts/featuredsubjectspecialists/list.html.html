@@ -11,6 +11,11 @@
     padding-left: 0;
     padding-right: 0;
 }
+.featured-librarian-item {
+    border-bottom: solid 9px #dccaa0;
+    margin-bottom:40rem;
+    margin-top:20rem;
+}
 </style>
 {{ end }}
 
@@ -31,6 +36,94 @@
         BEGIN Define template variables 
     */}}
 
+    <div class="row" style="margin: 4rem;">
+        <div class="col-md-6">
+            <div class="form-group dropdown-background">
+                <label for="backgrounds">Backgrounds: </label>
+                <select name="backgrounds form-control input-lg">
+                    <option value="waves" selected="selected">waves</option>
+                    <option value="madras">madras</option>
+                    <option value="cicada">cicada</option>
+                    <option value="blueprint">blueprint</option>
+                    <option value="constellation">constellation</option>
+                    <option value="dots">dots</option>
+                    <option value="spectrum">spectrum</option>
+                    <option value="triangles">triangles</option>
+                    <option value="envelope">envelope</option>
+                    <option value="rose">rose</option>
+                    <option value="quantum">quantum</option>
+                    <option value="arrowhead">arrowhead</option>
+                    <option value="sierpinski">sierpinski</option>
+                    <option value="pentagon">pentagon</option>
+                    <option value="sun-tornado">sun tornado</option>
+                    <option value="bullseye">bullseye</option>
+                    <!--option value="zigzag-md">zigzag</option-->
+                </select>
+            </div>
+
+            <div class=" dropdown-librarian">
+                <label for="librarians">Subject Specialists: </label>
+                <select name="librarians form-control input-lg">
+                </select>
+            </div>
+
+            <button type="submit" class="btn-primary" id="update">Update page</button>
+
+            <p style="margin-top: 2rem;">Hint: some backgrounds will "stick" in place while you scroll. Try it with "constellation".</p>
+            <p>Feeling adventurous? Create your own SVG background using the site <a href="https://www.svgbackgrounds.com/">here</a>!
+            <br/>When done, click "Export" then "CSS" and copy the code directly to <a href="mailto:jesse.martinez@bc.edu">Jesse</a> for consultation.</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            // get librarian dropdown element
+            var lib_select = $(".dropdown-librarian select");
+            var bg_select  = $(".dropdown-background select");
+
+            // build list of all librarians
+            $(".featured-librarian-item").each(function(index){
+                var $this    = $(this);
+                var lib_id   = $this.attr("data-id");
+                var lib_name = $this.attr("data-name");
+
+                lib_select.append($('<option>', { 
+                    value: lib_id,
+                    text : lib_name 
+                }));
+                console.log("found: " + lib_name);
+            });
+
+            // make first option selected
+            lib_select.find("option[value=0]").attr('selected','selected');
+
+            $(".featured-librarian-item:first").show();
+
+            // update page
+            $("#update").click(function(){
+                // read in librarian
+                var lib_selected_val = lib_select.find(":selected").val();
+                var lib_selected_elem = $(".featured-librarian-" + lib_selected_val);
+                console.log("librarian selected: " + lib_selected_val);
+
+                // read in background
+                var background_selected_val = bg_select.find(":selected").val();
+                console.log("background selected: " + background_selected_val);
+
+                // update background class
+                lib_selected_elem.removeClass(function (index, css) {
+                    return (css.match (/\bbg-\S+/g) || []).join(' '); // removes any class that starts with "bg-"
+                }).addClass("bg-" + background_selected_val);
+
+                // show/hide librarians
+                $(".featured-librarian-item").each(function(index){
+                    $(this).hide();
+                });
+                lib_selected_elem.show();
+            });
+        });
+    </script>
+
     {{ range $elem_index, $featured_librarian := .Site.Data.librarians.featured }}
     
         {{ if $featured_librarian.featured_background }}
@@ -45,7 +138,6 @@
         {{ else }}
             {{ $caption = "" }}
         {{ end }}
-        
         
         {{/* look up librarian profile metadata by $featured_librarian.profile_id */}}
         {{ $profile_id          := $featured_librarian.profile_id }}
@@ -75,7 +167,7 @@
         */}}
         
         <!-- FEATURED SUBJECT SPECIALIST START -->
-        <div class="container-fluid bg-{{ $featured_librarian.featured_background_type }} featured-librarian-{{ $elem_index }}" id="featured-librarian">
+        <div class="container-fluid bg-{{ $featured_librarian.featured_background_type }} featured-librarian-item featured-librarian-{{ $elem_index }}" style="display:none;" id="featured-librarian" data-id="{{ $elem_index }}" data-name="{{ $featured_librarian.name }}">
             <div class="container">
                 <div class="row">
                     <div class="combo-boxes">

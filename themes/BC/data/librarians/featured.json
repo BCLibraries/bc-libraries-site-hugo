@@ -41,7 +41,7 @@
         "featured_background": "https://library.bc.edu/images/backgrounds/background-maroon-xv.png",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "img",
+        "featured_background_type": "waves",
         "featured_guides": [
             {
                 "guide_name": "Classical Studies Portal",
@@ -95,7 +95,7 @@
         "featured_background": "https://library.bc.edu/images/backgrounds/background-slate-linen.png",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "img",
+        "featured_background_type": "triangles",
         "featured_guides": [
             {
                 "guide_name": "Education Resource Center (ERC)",
@@ -117,10 +117,10 @@
         "department": "Collection Development & Research",
         "active": true,
         "profile_id": "10692",
-        "featured_background": "https://library.bc.edu/images/homepage/featuredlibrarian/morocco-anti-atlas-mountains-nasa-1200x1025.jpg",
-        "featured_background_source": "<a href='https://www.nasa.gov/image-feature/moroccos-anti-atlas-mountains'>NASA</a>",
-        "featured_background_caption": "Morocco's Anti-Atlas Mountains.",
-        "featured_background_type": "img",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "constellation",
         "featured_guides": [
             {
                 "guide_name": "Biology",
