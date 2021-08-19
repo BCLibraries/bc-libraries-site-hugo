@@ -41,9 +41,9 @@
             <div class="form-group dropdown-background">
                 <label for="backgrounds">Backgrounds: </label>
                 <select name="backgrounds form-control input-lg">
-                    <option value="waves" selected="selected">waves</option>
+                    <option value="waves">waves</option>
                     <option value="madras">madras</option>
-                    <option value="cicada">cicada</option>
+                    <!--option value="cicada">cicada</option-->
                     <option value="blueprint">blueprint</option>
                     <option value="constellation">constellation</option>
                     <option value="dots">dots</option>
@@ -70,13 +70,16 @@
             <button type="submit" class="btn-primary" id="update">Update page</button>
 
             <p style="margin-top: 2rem;">Hint: some backgrounds will "stick" in place while you scroll. Try it with "constellation".</p>
-            <p>Feeling adventurous? Create your own SVG background using the site <a href="https://www.svgbackgrounds.com/">here</a>!
-            <br/>When done, click "Export" then "CSS" and copy the code directly to <a href="mailto:jesse.martinez@bc.edu">Jesse</a> for consultation.</p>
+            <p>Feeling adventurous? Create your own SVG background using the site <a href="https://www.svgbackgrounds.com/" target="_blank">here</a>!
+            <br/>When done, click "Export" then "CSS" and copy the code directly to <a href="mailto:jesse.martinez@bc.edu" target="_blank">Jesse</a> for consultation.</p>
         </div>
     </div>
 
     <script>
         $(document).ready(function(){
+            // add commas to list of subjects
+            $(".featured-librarian-expert-at-list ul li").not(":last-child").append(",");
+
             // get librarian dropdown element
             var lib_select = $(".dropdown-librarian select");
             var bg_select  = $(".dropdown-background select");
@@ -93,11 +96,6 @@
                 }));
                 console.log("found: " + lib_name);
             });
-
-            // make first option selected
-            lib_select.find("option[value=0]").attr('selected','selected');
-
-            $(".featured-librarian-item:first").show();
 
             // update page
             $("#update").click(function(){
@@ -121,6 +119,24 @@
                 });
                 lib_selected_elem.show();
             });
+
+            // make first option selected
+            //lib_select.find("option[value=0]").attr('selected','selected');
+
+            var lib_select_options_length = $(".dropdown-librarian select option").length;
+            var bg_select_options_length  = $(".dropdown-background select option").length;
+            console.log("lib_select_options_length: " + lib_select_options_length);
+            console.log("bg_select_options_length: " + bg_select_options_length);
+
+            var lib_select_options_rand = Math.floor(Math.random() * lib_select_options_length);
+            var bg_select_options_rand  = Math.floor(Math.random() * bg_select_options_length);
+            console.log("lib_select_options_rand: " + lib_select_options_rand);
+            console.log("bg_select_options_rand: " + bg_select_options_rand);
+
+            lib_select.find("option[value=" + lib_select_options_rand + "]").attr('selected','selected');
+            bg_select.find("option:eq(" + bg_select_options_rand + ")").attr('selected','selected');
+            
+            $("#update").trigger('click');
         });
     </script>
 
@@ -144,7 +160,6 @@
         {{ $profile_url         := "https://library.bc.edu" }}
         {{ $profile_image       := "https://libapps.s3.amazonaws.com/apps/common/images/profile.jpg" }}
         {{ $profile_first_name  := "Baldwin Eagle" }}
-        {{ $.Scratch.Delete "subjects" }}
         
         {{ range where $all_librarians_data "id" "=" $profile_id }}
             {{/* get first name */}}
@@ -155,11 +170,6 @@
         
             {{/* get profile url */}}
             {{ $profile_url = .profile.url }}
-        
-            {{/* get list of subjects */}}
-            {{ range $subject := .subjects }}
-                {{ $.Scratch.SetInMap "subjects" $subject.id (printf "<a href='https://libguides.bc.edu/sb.php?subject_id=%s'>%s</a>" $subject.id $subject.name) }}
-            {{ end }}
         {{ end }}
         
         {{/* 
@@ -184,11 +194,15 @@
                                     </a>
                                 </div>
                                 <div class="col-md-8 col-sm-8 col-xs-12">
-                                    {{ if $.Scratch.Get "subjects" }}
+                                    {{ if $featured_librarian.subjects }}
                                     <div class="col-md-12 col-sm-12">
                                         <h3 class="featured-librarian">{{ $profile_first_name }} is an expert at:</h3>
                                         <div class="featured-librarian-expert-at-list">
-                                            {{ delimit ( $.Scratch.Get "subjects") ", " ", and "}}
+                                            <ul class="featured-librarian-guides">
+                                            {{ range $featured_librarian.subjects }}
+                                                <li><a href="{{ .url }}" target="_blank">{{ .name }}</a></li> 
+                                            {{ end }}
+                                            </ul>
                                         </div>
                                     </div>
                                     {{ end }}
@@ -198,7 +212,7 @@
                                         <h3 class="featured-librarian">Featured Guides:</h3>
                                         <ul class="featured-librarian-guides">
                                         {{ range $featured_librarian.featured_guides }}
-                                            <li><a href="{{ .guide_link }}">{{ .guide_name }}</a></li>
+                                            <li><a href="{{ .guide_link }}" target="_blank">{{ .guide_name }}</a></li>
                                         {{ end }}
                                         </ul>
                                     </div>

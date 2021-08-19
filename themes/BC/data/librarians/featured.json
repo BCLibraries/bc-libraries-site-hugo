@@ -30,6 +30,56 @@
                 "guide_name": "Political Science Portal",
                 "guide_link": "https://libguides.bc.edu/polisciportal"
             }
+        ],
+        "subjects": [
+            {
+                "id": "12916",
+                "site_id": "94",
+                "name": "Asian Studies",
+                "ordering": "0",
+                "slug": "subjects\/asian-studies",
+                "url": "https://libguides.bc.edu/asianstudiesportal"
+            },
+            {
+                "id": "000000",
+                "site_id": "94",
+                "name": "Government Documents",
+                "ordering": "0",
+                "slug": "",
+                "url": "https://libguides.bc.edu/govdocs"
+            },
+            {
+                "id": "133507",
+                "site_id": "94",
+                "name": "International Studies",
+                "ordering": "0",
+                "slug": "subjects\/international-studies",
+                "url": "https://libguides.bc.edu/internationalstudies"
+            },
+            {
+                "id": "29240",
+                "site_id": "94",
+                "name": "Islamic Civilization & Societies",
+                "ordering": "0",
+                "slug": "subjects\/islamic-civilization-societies",
+                "url": "https://libguides.bc.edu/islamicportal"
+            },
+            {
+                "id": "000000",
+                "site_id": "94",
+                "name": "Law Collection (O'Neill Library)",
+                "ordering": "0",
+                "slug": "",
+                "url": "https://libguides.bc.edu/lawportal"
+            },
+            {
+                "id": "12908",
+                "site_id": "94",
+                "name": "Political Science & Government",
+                "ordering": "0",
+                "slug": "subjects\/political-science-government",
+                "url": "https://libguides.bc.edu/polisciportal"
+            }
         ]
     },
     {
@@ -54,6 +104,32 @@
             {
                 "guide_name": "Theology",
                 "guide_link": "https://libguides.bc.edu/theology"
+            }
+        ],
+        "subjects": [
+            {
+                "id": "12882",
+                "site_id": "94",
+                "name": "Classical Studies",
+                "ordering": "0",
+                "slug": "subjects\/classical-studies",
+                "url": "https://libguides.bc.edu/classicalportal"
+            },
+            {
+                "id": "12889",
+                "site_id": "94",
+                "name": "Philosophy",
+                "ordering": "0",
+                "slug": "subjects\/philosophy",
+                "url": "https://libguides.bc.edu/philosophyportal"
+            },
+            {
+                "id": "12892",
+                "site_id": "94",
+                "name": "Theology",
+                "ordering": "0",
+                "slug": "subjects\/theology",
+                "url": "https://libguides.bc.edu/theologyportal"
             }
         ]
     },
@@ -82,7 +158,41 @@
             },
             {
                 "guide_name": "Sociology",
-                "guide_link": "https://libguides.bc.edu/theology"
+                "guide_link": "https://libguides.bc.edu/sociologyportal"
+            }
+        ],
+        "subjects": [
+            {
+                "id": "12902",
+                "site_id": "94",
+                "name": "Communication",
+                "ordering": "0",
+                "slug": "subjects\/communication",
+                "url": "https://libguides.bc.edu/communicationportal"
+            },
+            {
+                "id": "201799",
+                "site_id": "94",
+                "name": "Criminal & Social Justice",
+                "ordering": "0",
+                "slug": "subjects\/criminal-social-justice",
+                "url": "https://libguides.bc.edu/"
+            },
+            {
+                "id": "12906",
+                "site_id": "94",
+                "name": "Gender Studies",
+                "ordering": "0",
+                "slug": "subjects\/gender-studies",
+                "url": "https://libguides.bc.edu/genderportal"
+            },
+            {
+                "id": "12911",
+                "site_id": "94",
+                "name": "Sociology & Anthropology",
+                "ordering": "0",
+                "slug": "subjects\/sociology-anthropology",
+                "url": "https://libguides.bc.edu/sociologyportal"
             }
         ]
     },
@@ -109,6 +219,16 @@
                 "guide_name": "iPads in Education",
                 "guide_link": "https://libguides.bc.edu/edipads"
             }
+        ],
+        "subjects": [
+            {
+                "id": "163549",
+                "site_id": "94",
+                "name": "Education K-12 curriculum (ERC)",
+                "ordering": "0",
+                "slug": "subjects\/education-k12",
+                "url": "https://libguides.bc.edu/erc"
+            }
         ]
     },
     {
@@ -133,6 +253,40 @@
             {
                 "guide_name": "Environmental Studies",
                 "guide_link": "https://libguides.bc.edu/environmental"
+            }
+        ],
+        "subjects": [
+            {
+                "id": "12893",
+                "site_id": "94",
+                "name": "Biology",
+                "ordering": "0",
+                "slug": "subjects\/biology",
+                "url": "https://libguides.bc.edu/biology"
+            },
+            {
+                "id": "12896",
+                "site_id": "94",
+                "name": "Earth & Environmental Sciences",
+                "ordering": "0",
+                "slug": "subjects\/earth-environmental-sciences",
+                "url": "https://libguides.bc.edu/geology"
+            },
+            {
+                "id": "30938",
+                "site_id": "94",
+                "name": "Environmental Studies",
+                "ordering": "0",
+                "slug": "subjects\/environmental-studies",
+                "url": "https://libguides.bc.edu/enviro-studiesportal"
+            },
+            {
+                "id": "12913",
+                "site_id": "94",
+                "name": "Science",
+                "ordering": "0",
+                "slug": "subjects\/science",
+                "url": "https://libguides.bc.edu/subjects/science"
             }
         ]
     },
@@ -159,6 +313,40 @@
                 "guide_name": "Latin American Studies",
                 "guide_link": "https://libguides.bc.edu/subjects/latin-american-studies"
             }
+        ],
+        "subjects": [
+            {
+                "id": "12900",
+                "site_id": "94",
+                "name": "African & African Diaspora Studies",
+                "ordering": "0",
+                "slug": "subjects\/african-african-diaspora-studies",
+                "url": "https://libguides.bc.edu/subjects/african-african-diaspora-studies"
+            },
+            {
+                "id": "12884",
+                "site_id": "94",
+                "name": "German Language & Literature",
+                "ordering": "0",
+                "slug": "subjects\/german-language-literature",
+                "url": "https://libguides.bc.edu/germanportal"
+            },
+            {
+                "id": "12880",
+                "site_id": "94",
+                "name": "Latin American Studies",
+                "ordering": "0",
+                "slug": "subjects\/latin-american-studies",
+                "url": "https://libguides.bc.edu/subjects/latin-american-studies"
+            },
+            {
+                "id": "12890",
+                "site_id": "94",
+                "name": "Romance Languages & Literatures",
+                "ordering": "0",
+                "slug": "subjects\/romance-languages-literatures",
+                "url": "https://libguides.bc.edu/subjects/romance-languages-literatures"
+            }
         ]
     },
     {
@@ -183,6 +371,64 @@
             {
                 "guide_name": "Chinese Literature",
                 "guide_link": "https://libguides.bc.edu/ChineseLiterature"
+            }
+        ],
+        "subjects": [
+            {
+                "id": "12881",
+                "site_id": "94",
+                "name": "Art & Architecture",
+                "ordering": "0",
+                "slug": "subjects\/art-architecture",
+                "url": "https://libguides.bc.edu/artportal"
+            },
+            {
+                "id": "12883",
+                "site_id": "94",
+                "name": "Film Studies",
+                "ordering": "0",
+                "slug": "subjects\/film",
+                "url": "https://libguides.bc.edu/filmportal"
+            },
+            {
+                "id": "30939",
+                "site_id": "94",
+                "name": "Jewish Studies",
+                "ordering": "0",
+                "slug": "subjects\/jewish-studies",
+                "url": "https://libguides.bc.edu/jewishstudiesportal"
+            },
+            {
+                "id": "12887",
+                "site_id": "94",
+                "name": "Linguistics",
+                "ordering": "0",
+                "slug": "subjects\/linguistics",
+                "url": "https://libguides.bc.edu/linguisticsportal"
+            },
+            {
+                "id": "12888",
+                "site_id": "94",
+                "name": "Music",
+                "ordering": "0",
+                "slug": "subjects\/music",
+                "url": "https://libguides.bc.edu/musicportal"
+            },
+            {
+                "id": "12915",
+                "site_id": "94",
+                "name": "Slavic and Eastern Languages and Literatures",
+                "ordering": "0",
+                "slug": "subjects\/slavic-eastern-languages",
+                "url": "https://libguides.bc.edu/slavicportal"
+            },
+            {
+                "id": "12891",
+                "site_id": "94",
+                "name": "Theatre & Dance",
+                "ordering": "0",
+                "slug": "subjects\/theatre-dance",
+                "url": "https://libguides.bc.edu/theatreanddanceportal"
             }
         ]
     },
@@ -209,6 +455,32 @@
                 "guide_name": "A Guide to APA Style 7th Edition",
                 "guide_link": "https://libguides.bc.edu/apa"
             }
+        ],
+        "subjects": [
+            {
+                "id": "12901",
+                "site_id": "94",
+                "name": "Business",
+                "ordering": "0",
+                "slug": "subjects\/business",
+                "url": "https://libguides.bc.edu/managementportal"
+            },
+            {
+                "id": "12909",
+                "site_id": "94",
+                "name": "Psychology",
+                "ordering": "0",
+                "slug": "subjects\/psychology",
+                "url": "https://libguides.bc.edu/psychologyportal"
+            },
+            {
+                "id": "12910",
+                "site_id": "94",
+                "name": "Social Work",
+                "ordering": "0",
+                "slug": "subjects\/social-work",
+                "url": "https://libguides.bc.edu/socialworkportal"
+            }
         ]
     },
     {
@@ -233,6 +505,24 @@
             {
                 "guide_name": "SciFinder and SciFinder-N",
                 "guide_link": "https://libguides.bc.edu/scifinder"
+            }
+        ],
+        "subjects": [
+            {
+                "id": "12894",
+                "site_id": "94",
+                "name": "Chemistry",
+                "ordering": "0",
+                "slug": "subjects\/chemistry",
+                "url": "https://libguides.bc.edu/chemistryportal"
+            },
+            {
+                "id": "12898",
+                "site_id": "94",
+                "name": "Physics",
+                "ordering": "0",
+                "slug": "subjects\/physics",
+                "url": "https://libguides.bc.edu/physicsportal"
             }
         ]
     },
@@ -259,6 +549,32 @@
                 "guide_name": "Mathematics",
                 "guide_link": "https://libguides.bc.edu/mathematics"
             }
+        ],
+        "subjects": [
+            {
+                "id": "12895",
+                "site_id": "94",
+                "name": "Computer Science",
+                "ordering": "0",
+                "slug": "subjects\/computer-science",
+                "url": "https://libguides.bc.edu/computerscienceportal"
+            },
+            {
+                "id": "204263",
+                "site_id": "94",
+                "name": "Engineering",
+                "ordering": "0",
+                "slug": "subjects\/engineering",
+                "url": ""
+            },
+            {
+                "id": "12897",
+                "site_id": "94",
+                "name": "Mathematics",
+                "ordering": "0",
+                "slug": "subjects\/mathematics",
+                "url": "https://libguides.bc.edu/mathematicsportal"
+            }
         ]
     },
     {
@@ -283,6 +599,16 @@
             {
                 "guide_name": "Copyright and Scholarship",
                 "guide_link": "https://libguides.bc.edu/copyright"
+            }
+        ],
+        "subjects": [
+            {
+                "id": "000000",
+                "site_id": "94",
+                "name": "Copyright",
+                "ordering": "0",
+                "slug": "subjects\/copyright",
+                "url": "https://libguides.bc.edu/copyright"
             }
         ]
     },
@@ -309,6 +635,25 @@
                 "guide_name": "Cybersecurity",
                 "guide_link": "https://libguides.bc.edu/cybersecurity"
             }
+        ],
+        "subjects": [
+            {
+                "id": "201800",
+                "site_id": "94",
+                "name": "Cybersecurity",
+                "ordering": "0",
+                "slug": "subjects\/cybersecurity",
+                "url": "https://libguides.bc.edu/cybersecurity"
+            },
+            {
+                "id": "12892",
+                "site_id": "94",
+                "name": "Theology",
+                "ordering": "0",
+                "slug": "subjects\/theology",
+                "url": "https://libguides.bc.edu/theologyportal"
+            }
+
         ]
     },
     {
@@ -333,6 +678,16 @@
             {
                 "guide_name": "Finding Spatial Data for Mapping (GIS)",
                 "guide_link": "https://libguides.bc.edu/gis"
+            }
+        ],
+        "subjects": [
+            {
+                "id": "12903",
+                "site_id": "94",
+                "name": "Data Services",
+                "ordering": "0",
+                "slug": "subjects\/data",
+                "url": "https://libguides.bc.edu/dataservices"
             }
         ]
     },
@@ -359,6 +714,32 @@
                 "guide_name": "Finance",
                 "guide_link": "https://libguides.bc.edu/finance"
             }
+        ],
+        "subjects": [
+            {
+                "id": "12904",
+                "site_id": "94",
+                "name": "Economics",
+                "ordering": "0",
+                "slug": "subjects\/economics",
+                "url": "https://libguides.bc.edu/economicsportal"
+            },
+            {
+                "id": "201801",
+                "site_id": "94",
+                "name": "Finance",
+                "ordering": "0",
+                "slug": "subjects\/finance",
+                "url": "https://libguides.bc.edu/finance"
+            },
+            {
+                "id": "201803",
+                "site_id": "94",
+                "name": "Sports Administration",
+                "ordering": "0",
+                "slug": "subjects\/sports-administration",
+                "url": "https://libguides.bc.edu/sportseconomics"
+            }
         ]
     },
     {
@@ -383,6 +764,16 @@
             {
                 "guide_name": "Accessibility",
                 "guide_link": "https://libguides.bc.edu/accessibility"
+            }
+        ],
+        "subjects": [
+            {
+                "id": "12905",
+                "site_id": "94",
+                "name": "Education",
+                "ordering": "0",
+                "slug": "subjects\/education",
+                "url": "https://libguides.bc.edu/educationportal"
             }
         ]
     },
@@ -409,6 +800,24 @@
                 "guide_name": "Remote Access to Library Resources",
                 "guide_link": "https://libguides.bc.edu/remote"
             }
+        ],
+        "subjects": [
+            {
+                "id": "201802",
+                "site_id": "94",
+                "name": "Healthcare Administration",
+                "ordering": "0",
+                "slug": "subjects\/healthcare-administration",
+                "url": "https://libguides.bc.edu/healthcareadmin"
+            },
+            {
+                "id": "201802",
+                "site_id": "94",
+                "name": "Online Learning support",
+                "ordering": "0",
+                "slug": "subjects\/online-learning-support",
+                "url": "https://libguides.bc.edu/onlinecoursesupport"
+            }
         ]
     },
     {
@@ -434,6 +843,24 @@
                 "guide_name": "Digital History",
                 "guide_link": "https://libguides.bc.edu/digitalhistory"
             }
+        ],
+        "subjects": [
+            {
+                "id": "7886",
+                "site_id": "94",
+                "name": "History",
+                "ordering": "0",
+                "slug": "subjects\/history",
+                "url": "https://libguides.bc.edu/history"
+            },
+            {
+                "id": "12879",
+                "site_id": "94",
+                "name": "Irish Studies",
+                "ordering": "0",
+                "slug": "subjects\/irish-studies",
+                "url": "https://libguides.bc.edu/irishportal"
+            }
         ]
     },
     {
@@ -455,6 +882,16 @@
                 "guide_name": "Séamus Connolly Papers (Irish Music)",
                 "guide_link": "https://libguides.bc.edu/seamusconnolly"
             }
+        ],
+        "subjects": [
+            {
+                "id": "12879",
+                "site_id": "94",
+                "name": "Irish Studies - Music",
+                "ordering": "0",
+                "slug": "subjects\/irish-studies",
+                "url": "https://libguides.bc.edu/irishmusic"
+            }
         ]
     },
     {
@@ -475,6 +912,16 @@
             {
                 "guide_name": "Health Statistics",
                 "guide_link": "https://libguides.bc.edu/healthstats"
+            }
+        ],
+        "subjects": [
+            {
+                "id": "12899",
+                "site_id": "94",
+                "name": "Nursing & Health Sciences",
+                "ordering": "0",
+                "slug": "subjects\/nursing-health-sciences",
+                "url": "https://libguides.bc.edu/nursingportal"
             }
         ]
     }
