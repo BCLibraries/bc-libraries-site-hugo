@@ -209,6 +209,26 @@
     margin-bottom: 0;
 }
 
+/* Welcome Back Students */
+#welcome-back-students-container {
+    margin-top: 2rem;
+}
+
+#welcome-back-message-wrapper {
+    font-size: 16px;
+    background-color: #FBCD26;
+    color: #000;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#welcome-back-message-wrapper h2 {
+    color:#000;
+    padding: 0 0 1rem 0;
+    margin: 0;
+}
+
+
 /* Featured Tip */
 
 #featured-tip-container {
