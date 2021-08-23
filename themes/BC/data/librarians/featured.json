@@ -362,19 +362,19 @@
         "featured_background": "",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "sun-tornado",
+        "featured_background_type": "spectrum",
         "featured_guides": [
             {
                 "guide_name": "Art & Architecture History",
                 "guide_link": "https://libguides.bc.edu/arthistory"
             },
             {
-                "guide_name": "Finding Films: Streaming Video and DVDs",
-                "guide_link": "https://libguides.bc.edu/streamingvideo"
+                "guide_name": "Music Portal",
+                "guide_link": "https://libguides.bc.edu/musicportal"
             },
             {
-                "guide_name": "Chinese Literature",
-                "guide_link": "https://libguides.bc.edu/ChineseLiterature"
+                "guide_name": "Theatre and Dance Portal",
+                "guide_link": "https://libguides.bc.edu/theatreanddanceportal"
             }
         ],
         "subjects": [
