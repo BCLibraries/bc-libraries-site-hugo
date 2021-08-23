@@ -91,7 +91,7 @@
         "featured_background": "",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "waves",
+        "featured_background_type": "strauber",
         "featured_guides": [
             {
                 "guide_name": "Classical Studies Portal",
@@ -102,8 +102,8 @@
                 "guide_link": "https://libguides.bc.edu/philosophyportal"
             },
             {
-                "guide_name": "Theology",
-                "guide_link": "https://libguides.bc.edu/theology"
+                "guide_name": "Theology at O'Neill",
+                "guide_link": "https://libguides.bc.edu/theology_oneill"
             }
         ],
         "subjects": [
@@ -240,7 +240,7 @@
         "featured_background": "",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "constellation",
+        "featured_background_type": "bullseye",
         "featured_guides": [
             {
                 "guide_name": "Biology",
@@ -299,19 +299,23 @@
         "featured_background": "",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "bullseye",
+        "featured_background_type": "sierpinski",
         "featured_guides": [
             {
-                "guide_name": "African & African Diaspora Studies",
-                "guide_link": "https://libguides.bc.edu/subjects/african-african-diaspora-studies"
+                "guide_name": "French Language and Literature",
+                "guide_link": "https://libguides.bc.edu/french"
             },
             {
-                "guide_name": "German Language & Literature",
+                "guide_name": "Hispanic Studies",
+                "guide_link": "https://libguides.bc.edu/hispanicstudies"
+            },
+            {
+                "guide_name": "Italian Language and Literature",
+                "guide_link": "https://libguides.bc.edu/italian"
+            },
+            {
+                "guide_name": "German Studies Portal",
                 "guide_link": "https://libguides.bc.edu/germanportal"
-            },
-            {
-                "guide_name": "Latin American Studies",
-                "guide_link": "https://libguides.bc.edu/subjects/latin-american-studies"
             }
         ],
         "subjects": [
@@ -441,15 +445,19 @@
         "featured_background": "",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "pentagon",
+        "featured_background_type": "dots",
         "featured_guides": [
             {
-                "guide_name": "Social Work Portal",
-                "guide_link": "https://libguides.bc.edu/socialworkportal"
+                "guide_name": "Social Work: Mental Health",
+                "guide_link": "https://libguides.bc.edu/swlclinical/"
             },
             {
-                "guide_name": "psycINFO",
-                "guide_link": "https://libguides.bc.edu/psycINFO"
+                "guide_name": "Social Work: Finding Tests and Measures",
+                "guide_link": "https://libguides.bc.edu/measures"
+            },
+            {
+                "guide_name": "Social Work: Social Welfare & Policy",
+                "guide_link": "https://libguides.bc.edu/swlpolicy"
             },
             {
                 "guide_name": "A Guide to APA Style 7th Edition",
@@ -535,19 +543,19 @@
         "featured_background": "",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "madras",
+        "featured_background_type": "sun-tornado",
         "featured_guides": [
             {
-                "guide_name": "Mathematics Portal",
-                "guide_link": "https://libguides.bc.edu/mathematicsportal"
+                "guide_name": "Engineering",
+                "guide_link": "https://libguides.bc.edu/engineering"
             },
             {
                 "guide_name": "Computer Science/IT Portal",
                 "guide_link": "https://libguides.bc.edu/computerscienceportal"
             },
             {
-                "guide_name": "Mathematics",
-                "guide_link": "https://libguides.bc.edu/mathematics"
+                "guide_name": "Mathematics Portal",
+                "guide_link": "https://libguides.bc.edu/mathematicsportal"
             }
         ],
         "subjects": [
@@ -565,7 +573,7 @@
                 "name": "Engineering",
                 "ordering": "0",
                 "slug": "subjects\/engineering",
-                "url": ""
+                "url": "https://libguides.bc.edu/engineering"
             },
             {
                 "id": "12897",
@@ -578,7 +586,7 @@
         ]
     },
     {
-        "name": "Elliot Hibbler",
+        "name": "Elliott Hibbler",
         "title": "Senior Scholarly Communications Librarian",
         "department": "Research, Learning & Digital Scholarship",
         "active": true,
@@ -586,19 +594,23 @@
         "featured_background": "",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "arrowhead",
+        "featured_background_type": "sun-tornado",
         "featured_guides": [
             {
                 "guide_name": "Scholarly Communications and Research",
                 "guide_link": "https://libguides.bc.edu/scholcomm"
             },
             {
-                "guide_name": "ORCID at BC",
-                "guide_link": "https://libguides.bc.edu/orcid"
-            },
-            {
                 "guide_name": "Copyright and Scholarship",
                 "guide_link": "https://libguides.bc.edu/copyright"
+            },
+            {
+                "guide_name": "Open Access & Scholarly Publishing",
+                "guide_link": "https://libguides.bc.edu/openaccess"
+            },
+            {
+                "guide_name": "ORCID at BC",
+                "guide_link": "https://libguides.bc.edu/orcid"
             }
         ],
         "subjects": [
@@ -665,19 +677,23 @@
         "featured_background": "",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "blueprint",
+        "featured_background_type": "constellation",
         "featured_guides": [
             {
                 "guide_name": "Research Data Services",
                 "guide_link": "https://libguides.bc.edu/dataservices"
             },
             {
-                "guide_name": "Finding Data/Data Support",
-                "guide_link": "https://libguides.bc.edu/finddata"
+                "guide_name": "Dataverse at Boston College",
+                "guide_link": "https://libguides.bc.edu/dataverse"
             },
             {
-                "guide_name": "Finding Spatial Data for Mapping (GIS)",
-                "guide_link": "https://libguides.bc.edu/gis"
+                "guide_name": "US Data and Statistics Sources",
+                "guide_link": "https://libguides.bc.edu/communityanalysis"
+            },
+            {
+                "guide_name": "Research Data Services: Data Management",
+                "guide_link": "https://libguides.bc.edu/dataservices/datamanagement"
             }
         ],
         "subjects": [
@@ -700,12 +716,8 @@
         "featured_background": "",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "rose",
+        "featured_background_type": "waves",
         "featured_guides": [
-            {
-                "guide_name": "Bloomberg Guide",
-                "guide_link": "https://libguides.bc.edu/Bloomberg"
-            },
             {
                 "guide_name": "Economics Portal",
                 "guide_link": "https://libguides.bc.edu/economicsportal"
@@ -713,7 +725,16 @@
             {
                 "guide_name": "Finance",
                 "guide_link": "https://libguides.bc.edu/finance"
+            },
+            {
+                "guide_name": "Sports Economics and Administration",
+                "guide_link": "https://libguides.bc.edu/sportseconomics"
+            },
+            {
+                "guide_name": "Bloomberg Guide",
+                "guide_link": "https://libguides.bc.edu/Bloomberg"
             }
+            
         ],
         "subjects": [
             {
@@ -829,7 +850,7 @@
         "featured_background": "",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "dots",
+        "featured_background_type": "constellation",
         "featured_guides": [
             {
                 "guide_name": "History Research",
@@ -838,10 +859,6 @@
             {
                 "guide_name": "Irish Studies Portal",
                 "guide_link": "https://libguides.bc.edu/irishportal"
-            },
-            {
-                "guide_name": "Digital History",
-                "guide_link": "https://libguides.bc.edu/digitalhistory"
             }
         ],
         "subjects": [
@@ -903,15 +920,19 @@
         "featured_background": "",
         "featured_background_source": "",
         "featured_background_caption": "",
-        "featured_background_type": "triangles",
+        "featured_background_type": "sun-tornado",
         "featured_guides": [
             {
-                "guide_name": "Nursing Portal",
-                "guide_link": "https://libguides.bc.edu/nursingportal"
+                "guide_name": "Nursing",
+                "guide_link": "https://libguides.bc.edu/nursing"
             },
             {
                 "guide_name": "Health Statistics",
                 "guide_link": "https://libguides.bc.edu/healthstats"
+            },
+            {
+                "guide_name": "US Data and Statistics Sources",
+                "guide_link": "https://libguides.bc.edu/communityanalysis"
             }
         ],
         "subjects": [
