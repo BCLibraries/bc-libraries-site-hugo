@@ -692,12 +692,16 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     /* background-color: #fcf8e3; */
 
     /* Summer 2021 update */
-    background-color: #ffff80;
-    border-bottom: 1px solid #e6e600;
+    /*background-color: #a4ad16;
+    border-bottom: 1px solid #e6e600;*/
+
+    /* Fall 2021 update */
+    background-color: #ffc67c;
+    border-bottom: 1px solid #ffbd68;
 }
-#services-highlight {
-    /*background-color: #fcf8e3;*/
-    /*border: 1px solid #faebcc;*/
+#services-highlight a.underline{
+    text-decoration: underline;
+    font-weight: 600;
 }
 #top-columns .column-items {
     display: flex;
