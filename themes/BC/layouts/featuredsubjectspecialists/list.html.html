@@ -1,0 +1,259 @@
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
+
+{{ define "header" }}{{ end }}
+
+{{ define "pagestyles" }}
+<style>
+.subjectspecialists-container {
+    padding-top:50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.featured-librarian-item {
+    border-bottom: solid 9px #dccaa0;
+    margin-bottom:40rem;
+    margin-top:20rem;
+}
+</style>
+{{ end }}
+
+{{ define "main" }}
+<div class="container-fluid subjectspecialists-container">
+    <h2>Featured Subject Specialists list</h2>
+
+    {{/* Load librarian info from LibGuides API. This data is looked up
+        once and cached. To clear the cache, start Hugo with --ignoreCache 
+        set or delete the cache files: rm -r $TMPDIR/hugo_cache/ */}}
+    {{ $all_librarians_data := getJSON "https://lgapi-us.libapps.com/1.1/accounts?site_id=94&key=a8d4316f3140239e36f101209d9f1b36&expand[]=subjects&expand[]=profile" }}
+    
+    {{/* Assign a default background image if one is not set in the librarian_name.json file */}}
+    {{ $background := "https://library.bc.edu/images/homepage/featuredlibrarian/defaultbackground-1200x675.jpg" }}
+    {{ $caption    := "" }}
+    
+    {{/* 
+        BEGIN Define template variables 
+    */}}
+
+    <div class="row" style="margin: 4rem;">
+        <div class="col-md-6">
+            <div class="form-group dropdown-background">
+                <label for="backgrounds">Backgrounds: </label>
+                <select name="backgrounds form-control input-lg">
+                    <option value="waves">waves</option>
+                    <option value="madras">madras</option>
+                    <!--option value="cicada">cicada</option-->
+                    <option value="blueprint">blueprint</option>
+                    <option value="constellation">constellation</option>
+                    <option value="dots">dots</option>
+                    <option value="spectrum">spectrum</option>
+                    <option value="triangles">triangles</option>
+                    <option value="envelope">envelope</option>
+                    <option value="rose">rose</option>
+                    <option value="quantum">quantum</option>
+                    <option value="arrowhead">arrowhead</option>
+                    <option value="sierpinski">sierpinski</option>
+                    <!--option value="pentagon">pentagon</option-->
+                    <option value="sun-tornado">sun tornado</option>
+                    <option value="bullseye">bullseye</option>
+                    <!--option value="zigzag-md">zigzag</option-->
+                </select>
+            </div>
+
+            <div class=" dropdown-librarian">
+                <label for="librarians">Subject Specialists: </label>
+                <select name="librarians form-control input-lg">
+                </select>
+            </div>
+
+            <button type="submit" class="btn-primary" id="update">Update page</button>
+
+            <p style="margin-top: 2rem;">Hint: some backgrounds will "stick" in place while you scroll. Try it with "constellation".</p>
+            <p>Feeling adventurous? Create your own SVG background using the site <a href="https://www.svgbackgrounds.com/" target="_blank">here</a>!
+            <br/>When done, click "Export" then "CSS" and copy the code directly to the feedback form for consultation.</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            // add commas to list of subjects
+            $(".featured-librarian-expert-at-list ul li").not(":last-child").append(",");
+
+            // get librarian dropdown element
+            var lib_select = $(".dropdown-librarian select");
+            var bg_select  = $(".dropdown-background select");
+
+            // build list of all librarians
+            $(".featured-librarian-item").each(function(index){
+                var $this    = $(this);
+                var lib_id   = $this.attr("data-id");
+                var lib_name = $this.attr("data-name");
+
+                lib_select.append($('<option>', { 
+                    value: lib_id,
+                    text : lib_name 
+                }));
+                console.log("found: " + lib_name);
+            });
+
+            // update page
+            $("#update").click(function(){
+                // read in librarian
+                var lib_selected_val = lib_select.find(":selected").val();
+                var lib_selected_elem = $(".featured-librarian-" + lib_selected_val);
+                console.log("librarian selected: " + lib_selected_val);
+
+                // read in background
+                var background_selected_val = bg_select.find(":selected").val();
+                console.log("background selected: " + background_selected_val);
+
+                // update background class
+                lib_selected_elem.removeClass(function (index, css) {
+                    return (css.match (/\bbg-\S+/g) || []).join(' '); // removes any class that starts with "bg-"
+                }).addClass("bg-" + background_selected_val);
+
+                // show/hide librarians
+                $(".featured-librarian-item").each(function(index){
+                    $(this).hide();
+                });
+                lib_selected_elem.show();
+            });
+
+            // make first option selected
+            //lib_select.find("option[value=0]").attr('selected','selected');
+
+            var lib_select_options_length = $(".dropdown-librarian select option").length;
+            var bg_select_options_length  = $(".dropdown-background select option").length;
+            console.log("lib_select_options_length: " + lib_select_options_length);
+            console.log("bg_select_options_length: " + bg_select_options_length);
+
+            var lib_select_options_rand = Math.floor(Math.random() * lib_select_options_length);
+            var bg_select_options_rand  = Math.floor(Math.random() * bg_select_options_length);
+            console.log("lib_select_options_rand: " + lib_select_options_rand);
+            console.log("bg_select_options_rand: " + bg_select_options_rand);
+
+            lib_select.find("option[value=" + lib_select_options_rand + "]").attr('selected','selected');
+            bg_select.find("option:eq(" + bg_select_options_rand + ")").attr('selected','selected');
+            
+            $("#update").trigger('click');
+        });
+    </script>
+
+    {{ range $elem_index, $featured_librarian := .Site.Data.librarians.featured }}
+    
+        {{ if $featured_librarian.featured_background }}
+            {{ $background = $featured_librarian.featured_background }}
+        
+            {{/* update background caption */}}
+            {{ if $featured_librarian.featured_background_source }}
+                {{ $caption = printf "%s Source: %s." $featured_librarian.featured_background_caption $featured_librarian.featured_background_source | safeHTML }}
+            {{ else if $featured_librarian.featured_background_caption }}
+                {{ $caption = $featured_librarian.featured_background_caption }}
+            {{ end }}
+        {{ else }}
+            {{ $caption = "" }}
+        {{ end }}
+        
+        {{/* look up librarian profile metadata by $featured_librarian.profile_id */}}
+        {{ $profile_id          := $featured_librarian.profile_id }}
+        {{ $profile_url         := "https://library.bc.edu" }}
+        {{ $profile_image       := "https://libapps.s3.amazonaws.com/apps/common/images/profile.jpg" }}
+        {{ $profile_first_name  := "Baldwin Eagle" }}
+        
+        {{ range where $all_librarians_data "id" "=" $profile_id }}
+            {{/* get first name */}}
+            {{ $profile_first_name = .first_name }}
+        
+            {{/* get profile image */}}
+            {{ $profile_image = .profile.image.url }}
+        
+            {{/* get profile url */}}
+            {{ $profile_url = .profile.url }}
+        {{ end }}
+        
+        {{/* 
+            END Define template variables 
+        */}}
+        
+        <!-- FEATURED SUBJECT SPECIALIST START -->
+        <div class="container-fluid bg-{{ $featured_librarian.featured_background_type }} featured-librarian-item featured-librarian-{{ $elem_index }}" style="display:none;" id="featured-librarian" data-id="{{ $elem_index }}" data-name="{{ $featured_librarian.name }}">
+            <div class="container">
+                <div class="row">
+                    <div class="combo-boxes">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 combo-box-xxx" >
+                            <div class="combo-box-inner">
+                                <div class="col-md-12">
+                                    <h2>Featured Subject Specialist</h2>
+                                    <a class="librarian-profile-link" href="{{ $profile_url }}"><h3 class="librarian-name">{{ $featured_librarian.name }}</h3></a>
+                                    <h4 class="librarian-title">{{ $featured_librarian.title }}</h4>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <a class="librarian-profile-link" href="{{ $profile_url }}">
+                                        <img class="librarian-profile" src="{{ $profile_image }}" alt="{{ $featured_librarian.name }} profile" />
+                                    </a>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-12">
+                                    {{ if $featured_librarian.subjects }}
+                                    <div class="col-md-12 col-sm-12">
+                                        <h3 class="featured-librarian">{{ $profile_first_name }} is an expert at:</h3>
+                                        <div class="featured-librarian-expert-at-list">
+                                            <ul class="featured-librarian-guides">
+                                            {{ range $featured_librarian.subjects }}
+                                                <li><a href="{{ .url }}" target="_blank">{{ .name }}</a></li> 
+                                            {{ end }}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    {{ end }}
+        
+                                    {{ if $featured_librarian.featured_guides }}
+                                    <div class="col-md-12 col-sm-12">
+                                        <h3 class="featured-librarian">Featured Guides:</h3>
+                                        <ul class="featured-librarian-guides">
+                                        {{ range $featured_librarian.featured_guides }}
+                                            <li><a href="{{ .guide_link }}" target="_blank">{{ .guide_name }}</a></li>
+                                        {{ end }}
+                                        </ul>
+                                    </div>
+                                    {{ end }}
+        
+                                    <div class="col-md-12 col-sm-12 bottom-text">
+                                        <p>We have many <a href="https://libguides.bc.edu/research_guides">guides for your research</a>.  Not sure where to begin? <a href="https://libguides.bc.edu/ask-a-librarian">Ask Us</a>.</p>                                    
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-12 col-sm-12 col-xs-12 combo-boxes-footer">
+                                    <p><a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Browse all our expert subject specialists</a> &rangle;</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+        
+                {{ if not (eq $caption "") }}
+                <div class="caption-link">
+                    {{ $caption }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        <!-- FEATURED LIBRARIAN END -->
+        
+        {{ if $featured_librarian.featured_background }}
+        <style>
+            .featured-librarian-{{$elem_index}} {
+                background-image: url({{ $background }});
+            }
+        </style>
+        {{ end }}
+    {{ end }}
+</div>
+
+
+{{ end }}
+
+{{ define "pagescripts" }}
+
+{{ end }}

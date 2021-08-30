@@ -6,6 +6,9 @@
 {{ $featured_librarian_idx := mod now.YearDay $max_idx }}
 {{ $featured_librarian := index $featured_librarians $featured_librarian_idx }}
 
+{{/* feature a specfic subject specialist by adding the index integer from the featured.json list. list index begins at 0. */}}
+{{/* $featured_librarian := index $featured_librarians 10 */}}
+
 {{/* 
     BEGIN Define template variables 
 */}}
@@ -27,80 +30,98 @@
         {{ $caption = printf "%s Source: %s." $featured_librarian.featured_background_caption $featured_librarian.featured_background_source | safeHTML }}
     {{ else if $featured_librarian.featured_background_caption }}
         {{ $caption = $featured_librarian.featured_background_caption }}
+    {{ else }}
+        {{ $caption = "" }}
     {{ end }}
-
 {{ end }}
 
 
-{{/* look up librarian profile metadata by $featured_librarian.profile_id */}}
-{{ $profile_id          := $featured_librarian.profile_id }}
+{{/* default values */}}
+{{ $profile_id          := "0" }}
 {{ $profile_url         := "https://library.bc.edu" }}
-{{ $profile_image       := "https://libapps.s3.amazonaws.com/apps/common/images/profile.jpg" }}
-{{ $profile_first_name  := "Baldwin Eagle" }}
-{{/* $.Scratch.Set "subjects" "" */}}
+{{ $profile_image       := "https://library.bc.edu/images/homepage/featuredlibrarian/baldwin-headshot.jpg" }}
+{{ $profile_first_name  := "Baldwin" }}
+{{ $profile_full_name   := "Baldwin Eagle" }}
+{{ $profile_title       := "Pride and joy of the University" }}
+{{ $profile_background  := "triangles" }}
 
-{{ range where $all_librarians_data "id" "=" $profile_id }}
+{{/* look up librarian profile metadata by $featured_librarian.profile_id */}}
+{{ range where $all_librarians_data "id" "=" $featured_librarian.profile_id }}
+    {{/* get profile ID */}}
+    {{ $profile_id = $featured_librarian.profile_id }}
+
     {{/* get first name */}}
     {{ $profile_first_name = .first_name }}
+
+    {{/* get full name */}}
+    {{ $profile_full_name = $featured_librarian.name }}
+
+    {{/* get title */}}
+    {{ $profile_title = $featured_librarian.title }}
+
+    {{/* get background */}}
+    {{ $profile_background = $featured_librarian.featured_background_type }}
 
     {{/* get profile image */}}
     {{ $profile_image = .profile.image.url }}
 
     {{/* get profile url */}}
     {{ $profile_url = .profile.url }}
-
-    {{/* get list of subjects */}}
-    {{ range .subjects }}
-        {{ $.Scratch.SetInMap "subjects" .id (printf "<a href='https://libguides.bc.edu/sb.php?subject_id=%s'>%s</a>" .id .name) }}
-        {{/* $.Scratch.Add "subjects" (printf "<li><a href='https://libguides.bc.edu/sb.php?subject_id=%s'>%s</a></li> " .id .name) */}}
-    {{ end }}
 {{ end }}
 
 {{/* 
     END Define template variables 
 */}}
 
-<!-- FEATURED LIBRARIAN START -->
-<div class="container-fluid bg-{{ $featured_librarian.featured_background_type }}" id="featured-librarian" data-tag="ga-tag">
+<!-- FEATURED SUBJECT SPECIALIST START -->
+<div class="container-fluid bg-{{ $profile_background }} featured-librarian-item" id="featured-librarian" data-profile-id="{{ $profile_id }}" data-id="{{ $featured_librarian_idx }}" data-name="{{ $profile_full_name }}">
     <div class="container">
         <div class="row">
             <div class="combo-boxes">
                 <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 combo-box-xxx" >
                     <div class="combo-box-inner">
                         <div class="col-md-12">
-                            <h2>Featured Subject Librarian</h2>
+                            <h2>Featured Subject Specialist</h2>
+                            <a class="librarian-profile-link" href="{{ $profile_url }}"><h3 class="librarian-name">{{ $profile_full_name }}</h3></a>
+                            <h4 class="librarian-title">{{ $profile_title }}</h4>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12">
                             <a class="librarian-profile-link" href="{{ $profile_url }}">
                                 <img class="librarian-profile" src="{{ $profile_image }}" alt="{{ $featured_librarian.name }} profile" />
-                                <h3 class="librarian-name">{{ $featured_librarian.name }}</h3>
                             </a>
                         </div>
                         <div class="col-md-8 col-sm-8 col-xs-12">
+                            {{ if $featured_librarian.subjects }}
                             <div class="col-md-12 col-sm-12">
                                 <h3 class="featured-librarian">{{ $profile_first_name }} is an expert at:</h3>
                                 <div class="featured-librarian-expert-at-list">
-                                    {{ delimit (.Scratch.Get "subjects") ", " ", and "}}
+                                    <ul class="featured-librarian-guides" role="list">
+                                    {{ range $featured_librarian.subjects }}
+                                        <li><a href="{{ .url }}" target="_blank">{{ .name }}</a></li> 
+                                    {{ end }}
+                                    </ul>
                                 </div>
                             </div>
+                            {{ end }}
 
+                            {{ if $featured_librarian.featured_guides }}
                             <div class="col-md-12 col-sm-12">
                                 <h3 class="featured-librarian">Featured Guides:</h3>
-                                <ul class="featured-librarian-guides">
+                                <ul class="featured-librarian-guides" role="list">
                                 {{ range $featured_librarian.featured_guides }}
-                                    <li><a href="{{ .guide_link }}">{{ .guide_name }}</a></li>
+                                    <li><a href="{{ .guide_link }}" target="_blank">{{ .guide_name }}</a></li>
                                 {{ end }}
                                 </ul>
                             </div>
+                            {{ end }}
 
                             <div class="col-md-12 col-sm-12 bottom-text">
-                                <p>We have specialized guides for all your subject interests.<br/>
-                                Not sure where to begin? Start with our <a href="https://libguides.bc.edu/ask-a-librarian">Ask A Librarian</a> guide!</p>                                    
+                                <p>We have many <a href="https://libguides.bc.edu/research_guides">guides for your research</a>.  Not sure where to begin? <a href="https://libguides.bc.edu/ask-a-librarian">Ask Us</a>.</p>                                    
                             </div>
                         </div>
 
                         <div class="col-md-12 col-sm-12 col-xs-12 combo-boxes-footer">
-                            <p><a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Browse all our expert subject librarians</a> &rangle;</p>
+                            <p><a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Browse all our expert subject specialists</a> &rangle;</p>
                         </div>
                     </div>
                     
@@ -124,3 +145,11 @@
     }
 </style>
 {{ end }}
+
+<script>
+    $(document).ready(function(){
+        // add commas to list of subjects
+        $(".featured-librarian-expert-at-list ul li").not(":last-child").append(", ");
+        $(".featured-librarian-expert-at-list ul li:last-child").not(":first-child").prepend("and ");
+    });
+</script>

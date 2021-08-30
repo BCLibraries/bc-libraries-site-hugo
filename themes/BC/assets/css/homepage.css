@@ -1,3 +1,363 @@
+/*                                       */
+/* BEGIN top-columns section on homepage */
+/*                                       */
+
+#top-columns {
+    /*background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/background-sample-3.jpg) no-repeat 00% 100%;
+    background-size: cover;*/
+    background-color: #fff;
+    padding-bottom: 3rem;
+    /*padding-top: 2rem;*/
+}
+#top-columns .row {
+    padding-top:0;
+    padding-bottom:0;
+}
+#services-highlight-container {
+    /* default background color */
+    /* background-color: #fcf8e3; */
+
+    /* Summer 2021 update */
+    /*background-color: #a4ad16;
+    border-bottom: 1px solid #e6e600;*/
+
+    /* Fall 2021 update */
+    background-color: #ffc67c;
+    border-bottom: 1px solid #ffbd68;
+}
+#services-highlight a.underline{
+    text-decoration: underline;
+    font-weight: 600;
+}
+#top-columns .column-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Safari doesn't play well with floated elements and flex display */
+#top-columns .column-items:before,
+#top-columns .column-items:after {
+    display:none!important;
+}
+#top-columns .column-item {
+    display: flex;
+    flex-flow: column;
+}
+/* Safari doesn't play well with floated elements and flex display */
+#top-columns .column-item:before,
+#top-columns .column-item:after {
+    display:none!important;
+}
+#top-columns .column-combo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+/* Safari doesn't play well with floated elements and flex display */
+#top-columns .column-combo:before,
+#top-columns .column-combo:after {
+    display:none!important;
+}
+#top-columns .column-sub-item {
+    flex-wrap: wrap;
+    flex:1;
+}
+
+@media (max-width: 991px) {
+    #top-columns .column-combo {
+        display: block;
+    }
+    #aal-home {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    #quicklink-container {
+        width: 100%;
+    }
+    /*#aal-home-container {
+        display: none;
+    }*/
+}
+
+
+/* scholarship */
+#scholarship {
+    text-align: center;
+}
+
+#scholarship h2 {
+    /*text-transform: uppercase;*/
+    margin: 0;
+    color: #8a100b;
+    font-size: 20px;
+}
+
+#scholarship h3 {
+    margin-top: 1.25em;
+    font-size: 18px;
+}
+
+/* exhibition highlight */
+#exhibit-highlight {
+    background-color: cyan;
+}
+
+/* faculty publication highlight */
+#facpub {
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+
+#facpub h3 {
+    font-size: 18px;
+}
+
+#facpub .more-link {
+    text-align: right;
+}
+
+/* digital collections highlight */
+#digcol-highlight {
+    width: 100%;
+    min-height: 150px;
+    height: 600px;
+    background: url("https://library.bc.edu/images/sc_bg_02_med.jpg") no-repeat 50% 50% #101010;
+    background-size: auto auto;
+    color: #fff;
+    padding: 55px 0;
+    z-index: 2;
+    background-size: cover;
+}
+
+#digcol-highlight .container-fluid .pull-right .content {
+    max-width: 50%;
+}
+
+/* digital scholarship highlight */
+#ds-highlight {
+    display: inline-block;
+    width: 100%;
+    min-height: 150px;
+    height: 600px;
+    background: url("https://library.bc.edu/images/digitalscholashipbg-morales.jpg") no-repeat 100% 50% #101010;
+    background-size: auto auto;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    color: #fff;
+    padding: 55px 0;
+    z-index: 2;
+    background-size: cover;
+}
+
+/* custom for DS morales project */
+#ds-highlight.rightBottom .container-fluid .pull-right .content {
+    background: rgba(0, 0, 0, 0.80) !important;
+}
+
+#aal-home {
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    background-color: #fff;
+}
+#aal-home .aal-box-small a.aal-icon {
+    font-size: 25px!important;
+    width: 50px;
+}
+#aal-home .aal-box a.aal-icon i {
+    padding: 12px 15px 13px 11px;
+}
+
+#services-highlight { 
+    /*border-bottom: solid 9px #dccaa0; 
+    border-top: solid 9px #dccaa0;*/
+}
+#services-highlight .header-row {
+    padding: 2rem 0 0 0;
+}
+#services-highlight h2 {
+    margin-top: 0;
+}
+
+#services-highlight .intro,
+#services-highlight .outro {
+    font-size: large;
+    padding: 0 0 .5rem 0;
+}
+#services-highlight .outro {
+    padding: 0 0 .5rem 0;
+}
+#services-highlight .outro a {
+    font-weight: 600;
+}
+#services-highlight .highlight-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+}
+/* Safari doesn't play well with floated elements and flex display */
+#services-highlight .highlight-boxes:before,
+#services-highlight .highlight-boxes:after {
+    display:none!important;
+}
+#services-highlight .highlight-boxes .highlight-box {
+    display: flex;
+    padding-bottom: 1rem;
+}
+/* Safari doesn't play well with floated elements and flex display */
+#services-highlight .highlight-boxes .highlight-box:before,
+#services-highlight .highlight-boxes .highlight-box:after {
+    display:none!important;
+}
+#services-highlight .highlight-boxes .panel {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+#services-highlight .highlight-boxes .panel-heading {
+    padding: 5px 15px 2px 15px;
+}
+#services-highlight .highlight-boxes .panel-heading hr {
+    border: 0;
+    margin: .75rem 0 .75rem 0;
+    border-bottom: 1px solid #dccaa0;
+    height: 1px;
+}
+#services-highlight .highlight-boxes .panel-heading h4 {
+    line-height: 1.3;
+    /*min-height: 55px;*/
+    padding: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+#services-highlight .highlight-boxes .panel ul {
+    padding-left: 2rem;
+}
+#services-highlight .highlight-boxes .panel li {
+    padding-bottom: .5rem;
+}
+#services-highlight .highlight-boxes .panel-body {
+    padding: 0 10px 0px 10px;
+}
+#services-highlight .highlight-boxes .embedded-video .panel-body {
+    padding: 10px 10px 10px 10px;
+}
+#services-highlight .highlight-boxes .panel-body a {
+    font-weight: 600;
+}
+#services-highlight .librarian-profile {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    max-height: 120px;
+    border: 3px solid #000;
+    margin: 0 auto;
+}
+#services-highlight .bottom-text {
+    margin: 1rem 0 0 0;
+    padding-top: .5rem;
+    border-top: 1px dashed #eee;
+}
+@media (max-width: 1199px) {
+    #services-highlight .highlight-boxes .panel-heading h4 {
+        /*min-height: 4.5rem;*/
+    }
+    /*.librarian-profile {
+        max-height: 100px;
+    }*/
+}
+@media (max-width: 991px) {
+    #services-highlight .highlight-boxes .panel-heading h4 {
+        min-height: auto;
+    }
+    .blockquote .quote {
+        font-size: 18px;
+        line-height: 1.1;
+    }
+    .blockquote .quote::before {
+        border:0;
+        height: 0;
+    }
+}
+@media (max-width: 767px) {
+    .blockquote {
+        display: none;
+    }
+}
+@media (max-width: 540px) {
+    #services-highlight .highlight-boxes .panel-heading h4 {
+        min-height: auto;
+    }
+}
+
+#staff-interest {
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 1rem;
+}
+#staff-interest .photo-list {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+#staff-interest .photo-panel img {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    min-height: 159px;
+}
+#staff-interest .photo-panel .caption {
+    padding: .5rem;
+    font-style: italic;
+    text-align: right;
+}
+#staff-interest .blockquote {
+    margin: 2rem 0;
+}
+
+@media (min-width: 1200px) {
+    #staff-interest .photo-list .photo-panel:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    #staff-interest .photo-list img {
+        min-height: 126px;
+    }
+}
+
+@media (max-width: 991px) {
+    #staff-interest {
+        margin-top: 3rem;
+    }
+    #staff-interest .photo-list img {
+        min-height: 159px;
+    }
+}
+@media (max-width: 767px) {
+    #staff-interest .photo-list img {
+        min-height: auto;
+    }
+}
+@media (max-width: 525px) {
+    #staff-interest .photo-list img {
+        min-height: auto;
+    }
+    #staff-interest .photo-panel {
+        width: 100%;
+    }
+    #staff-interest .photo-list .photo-panel:nth-last-of-type(-n+2) {
+        display: none;
+    }
+}
+
+
+#aal-home .chat-link {
+    min-height: 2.75rem;
+}
+
+
 /* News */
 
 #db-rg-hours {
@@ -80,11 +440,16 @@
     /*max-height: 100%;*/
     width: 100%;
 }
+
+/* Hide bottom row of news */
+#news .news-content-row:last-of-type {
+    display: none;
+}
+
 #news .more-news {
     padding-top: 1rem;
     font-size: larger;
 }
-
 .row.ql-news {
     /*position: relative;
     display: block;
