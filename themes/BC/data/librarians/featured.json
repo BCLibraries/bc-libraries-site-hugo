@@ -551,11 +551,11 @@
             },
             {
                 "guide_name": "Computer Science/IT Portal",
-                "guide_link": "https://libguides.bc.edu/computerscienceportal"
+                "guide_link": "https://libguides.bc.edu/compscience"
             },
             {
                 "guide_name": "Mathematics Portal",
-                "guide_link": "https://libguides.bc.edu/mathematicsportal"
+                "guide_link": "https://libguides.bc.edu/mathematics"
             }
         ],
         "subjects": [
@@ -565,7 +565,7 @@
                 "name": "Computer Science",
                 "ordering": "0",
                 "slug": "subjects\/computer-science",
-                "url": "https://libguides.bc.edu/computerscienceportal"
+                "url": "https://libguides.bc.edu/compscience"
             },
             {
                 "id": "204263",
@@ -581,7 +581,7 @@
                 "name": "Mathematics",
                 "ordering": "0",
                 "slug": "subjects\/mathematics",
-                "url": "https://libguides.bc.edu/mathematicsportal"
+                "url": "https://libguides.bc.edu/mathematics"
             }
         ]
     },
