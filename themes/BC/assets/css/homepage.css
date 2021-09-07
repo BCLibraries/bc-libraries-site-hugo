@@ -1030,43 +1030,15 @@
 
 
 /* Social Media Highlight */
-
-#socialmedia-highlight.burns-boardgame {
-    font-size: 16px;
-    background: url(https://library.bc.edu/images/homepage/socialmediahighlights/burns-blog-historicalpasttime-1200x519.png) no-repeat 00% 80% #101010;
-    width: 100%;
-    min-height: 150px;
-    height: 600px;
-    background-size: auto auto;
-    color: #fff;
-    padding: 55px 0;
-    z-index: 2;
-    background-size: cover;
-}
-
-#socialmedia-highlight.erc-ducklings {
-    font-size: 16px;
-    background: url(https://library.bc.edu/images/homepage/socialmediahighlights/makewayforducklings-1024px2.jpg) no-repeat 00% 10% #101010;
-    width: 100%;
-    min-height: 150px;
-    height: 600px;
-    background-size: auto auto;
-    color: #fff;
-    padding: 55px 0;
-    z-index: 2;
-    background-size: cover;
-}
-
-
 #socialmedia-highlight .highlight-title h2 {
     margin: 0 0 3rem 0;
     color: #fff;
     display: inline-block;
 }
-#socialmedia-highlight.leftBottom .container-fluid .pull-right .content, 
-#socialmedia-highlight.leftTop .container-fluid .pull-right .content, 
-#socialmedia-highlight.rightTop .container-fluid .pull-right .content, 
-#socialmedia-highlight.rightBottom .container-fluid .pull-right .content {
+#socialmedia-highlight .leftBottom .container-fluid .pull-right .content, 
+#socialmedia-highlight .leftTop .container-fluid .pull-right .content, 
+#socialmedia-highlight .rightTop .container-fluid .pull-right .content, 
+#socialmedia-highlight .rightBottom .container-fluid .pull-right .content {
     color: #fff;
     display: table;
     padding: 20px 30px;
@@ -1093,22 +1065,6 @@
     font-size: small;
     margin-top: 4rem;
 }
-@media (max-width: 1023px) {
-    #socialmedia-highlight {
-        background-position: 50% 50%;
-        height: 519px;
-        background-size:auto;
-    }
-}
-@media (max-width: 767px) {
-    #socialmedia-highlight {
-        background-position: 64% 0%;
-        height: 800px;
-        background-size:auto;
-    }
-}
-
-
 
 /* media queries */
 @media (max-width: 1199px) {
