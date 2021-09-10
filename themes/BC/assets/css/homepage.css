@@ -1104,6 +1104,11 @@
         display: none;
     }
 }
+@media (max-width: 500px) {
+    .ql .list-group {
+        width: 100%;
+    }
+}
 @media (max-width: 450px) {
    #at-a-glance-container {
        width: 100%;
