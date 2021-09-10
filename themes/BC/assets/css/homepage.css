@@ -452,7 +452,8 @@
     display: none;
 }
 
-#news .more-news {
+#news .more-news,
+.browse-more-link {
     padding-top: 1rem;
     font-size: larger;
 }
@@ -469,7 +470,8 @@
     display: flex;
 }
 
-.homepagerefresh #news .more-news{
+.homepagerefresh #news .more-news,
+.browse-more-link {
     text-align: right;
 }
 
