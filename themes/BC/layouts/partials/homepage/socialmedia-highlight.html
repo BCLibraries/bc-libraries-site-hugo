@@ -1,28 +1,7 @@
 <!-- SOCIAL MEDIA HIGHLIGHT START -->
 <h2 class="sr-only sr-only-focusable">Special collections</h2>
-<div class="leftBottom" id="socialmedia-highlight" data-tag="ga-tag">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12 pull-right">
-                <div class="content">
-                    
-                    <div class="content-body">
-                        <div class="highlight-title"><h2>Social Media Highlight</h2></div>
-
-                        <div class="label">Title</div>
-                        <p><a href="https://johnjburnslibrary.wordpress.com/2019/11/18/whats-in-a-game-some-examples-of-board-games-at-burns-library/">What’s in a Game? Some Examples of Board Games at Burns Library</a></p>
-                    
-                        <div class="label">Image Caption</div>
-                        <p>Detail of gameboard with portrait of Queen Victoria, <a href="https://bc-primo.hosted.exlibrisgroup.com/permalink/f/l6ucgu/ALMA-BC21338002760001021">Historical Pastime: A New Game of the History of England</a></p>
-                        
-                        <div class="label">Source</div>
-                        <p>From the <a href="https://johnjburnslibrary.wordpress.com/">John J. Burns Library's Blog</a></p>
-
-                        <p class="connect-button"><a href="https://libguides.bc.edu/stayconnected/"><span class="btn btn-default btn-blue">Connect with us over social media</span></a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div id="socialmedia-highlight" data-tag="ga-tag">
+    {{ partial "homepage/socialmedia-highlight/burns-cat-sketch.html" . }}
+    <!--{{ partial "homepage/socialmedia-highlight/burns-boardgame.html" . }}-->
 </div>
 <!-- SOCIAL MEDIA HIGHLIGHT END -->
