@@ -11,4 +11,4 @@ imagealt: ""
 type: "news"
 ---
 
-On Sept. 28 12-1:30 pm graphic novelist Edgardo Miranda-Rodriguez will speak with us about his acclaimed superhero series La Borinqueña via Zoom. Sponsored by Latinos @ BC and the Educational Resource Center.
+On Sept. 28 12-1:30 pm graphic novelist Edgardo Miranda-Rodriguez will speak with us about his acclaimed superhero series *La Borinqueña* via Zoom. Sponsored by Latinos @ BC and the Educational Resource Center.
