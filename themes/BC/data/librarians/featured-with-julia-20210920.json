@@ -1,5 +1,88 @@
 [
     {
+        "name": "Julia Hughes",
+        "title": "Senior Research Librarian/Bibliographer",
+        "department": "Collection Development & Research",
+        "active": true,
+        "profile_id": "102982",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "waves",
+        "featured_guides": [
+            {
+                "guide_name": "Asian Studies Portal",
+                "guide_link": "https://libguides.bc.edu/asianstudiesportal"
+            },
+            {
+                "guide_name": "International Studies",
+                "guide_link": "https://libguides.bc.edu/InternationalStudies"
+            },
+            {
+                "guide_name": "Islamic Civilization & Societies Portal",
+                "guide_link": "https://libguides.bc.edu/islamicportal"
+            },
+            {
+                "guide_name": "Law Portal",
+                "guide_link": "https://libguides.bc.edu/lawportal"
+            },
+            {
+                "guide_name": "Political Science Portal",
+                "guide_link": "https://libguides.bc.edu/polisciportal"
+            }
+        ],
+        "subjects": [
+            {
+                "id": "12916",
+                "site_id": "94",
+                "name": "Asian Studies",
+                "ordering": "0",
+                "slug": "subjects\/asian-studies",
+                "url": "https://libguides.bc.edu/asianstudiesportal"
+            },
+            {
+                "id": "000000",
+                "site_id": "94",
+                "name": "Government Documents",
+                "ordering": "0",
+                "slug": "",
+                "url": "https://libguides.bc.edu/govdocs"
+            },
+            {
+                "id": "133507",
+                "site_id": "94",
+                "name": "International Studies",
+                "ordering": "0",
+                "slug": "subjects\/international-studies",
+                "url": "https://libguides.bc.edu/internationalstudies"
+            },
+            {
+                "id": "29240",
+                "site_id": "94",
+                "name": "Islamic Civilization & Societies",
+                "ordering": "0",
+                "slug": "subjects\/islamic-civilization-societies",
+                "url": "https://libguides.bc.edu/islamicportal"
+            },
+            {
+                "id": "000000",
+                "site_id": "94",
+                "name": "Law Collection (O'Neill Library)",
+                "ordering": "0",
+                "slug": "",
+                "url": "https://libguides.bc.edu/lawportal"
+            },
+            {
+                "id": "12908",
+                "site_id": "94",
+                "name": "Political Science & Government",
+                "ordering": "0",
+                "slug": "subjects\/political-science-government",
+                "url": "https://libguides.bc.edu/polisciportal"
+            }
+        ]
+    },
+    {
         "name": "Chris Strauber",
         "title": "Senior Research Librarian/Bibliographer",
         "department": "Collection Development & Research",
@@ -102,30 +185,6 @@
                 "ordering": "0",
                 "slug": "subjects\/gender-studies",
                 "url": "https://libguides.bc.edu/genderportal"
-            },
-            {
-                "id": "000000",
-                "site_id": "94",
-                "name": "Government Documents",
-                "ordering": "0",
-                "slug": "",
-                "url": "https://libguides.bc.edu/govdocs"
-            },
-            {
-                "id": "133507",
-                "site_id": "94",
-                "name": "International Studies",
-                "ordering": "0",
-                "slug": "subjects\/international-studies",
-                "url": "https://libguides.bc.edu/internationalstudies"
-            },
-            {
-                "id": "12908",
-                "site_id": "94",
-                "name": "Political Science & Government",
-                "ordering": "0",
-                "slug": "subjects\/political-science-government",
-                "url": "https://libguides.bc.edu/polisciportal"
             },
             {
                 "id": "12911",
@@ -606,14 +665,6 @@
                 "ordering": "0",
                 "slug": "subjects\/copyright",
                 "url": "https://libguides.bc.edu/copyright"
-            },
-            {
-                "id": "000000",
-                "site_id": "94",
-                "name": "Law Collection (O'Neill Library)",
-                "ordering": "0",
-                "slug": "",
-                "url": "https://libguides.bc.edu/lawportal"
             }
         ]
     },
@@ -843,14 +894,6 @@
         ],
         "subjects": [
             {
-                "id": "12916",
-                "site_id": "94",
-                "name": "Asian Studies",
-                "ordering": "0",
-                "slug": "subjects\/asian-studies",
-                "url": "https://libguides.bc.edu/asianstudiesportal"
-            },
-            {
                 "id": "7886",
                 "site_id": "94",
                 "name": "History",
@@ -865,14 +908,6 @@
                 "ordering": "0",
                 "slug": "subjects\/irish-studies",
                 "url": "https://libguides.bc.edu/irishportal"
-            },
-            {
-                "id": "29240",
-                "site_id": "94",
-                "name": "Islamic Civilization & Societies",
-                "ordering": "0",
-                "slug": "subjects\/islamic-civilization-societies",
-                "url": "https://libguides.bc.edu/islamicportal"
             }
         ]
     },
