@@ -42,8 +42,10 @@ $(document).ready(function(){
                     if (loc.name == "O'Neill Library" && loc.rendered.includes('*')) {
                         $('.onl-asterisk-notice').show();
                     }
-
-                    $(libs2[name]).html(rendered);
+                    // libraries with an attached note to the hours will render
+                    // the hours string, then a new line char, then the note string.
+                    // we will replace the new line char with a semicolon.
+                    $(libs2[name]).html(rendered.replace("\n", " ; "));
                 }
             });
         }
