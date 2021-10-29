@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "../theme/bcbento/static/js/main.6c53775f.chunk.js",
-    "main.js.map": "../theme/bcbento/static/js/main.6c53775f.chunk.js.map",
+    "main.js": "../theme/bcbento/static/js/main.bce419dd.chunk.js",
+    "main.js.map": "../theme/bcbento/static/js/main.bce419dd.chunk.js.map",
     "runtime-main.js": "../theme/bcbento/static/js/runtime-main.d47131bb.js",
     "runtime-main.js.map": "../theme/bcbento/static/js/runtime-main.d47131bb.js.map",
     "static/js/2.362906f5.chunk.js": "../theme/bcbento/static/js/2.362906f5.chunk.js",
@@ -13,6 +13,6 @@
   "entrypoints": [
     "static/js/runtime-main.d47131bb.js",
     "static/js/2.362906f5.chunk.js",
-    "static/js/main.6c53775f.chunk.js"
+    "static/js/main.bce419dd.chunk.js"
   ]
 }
