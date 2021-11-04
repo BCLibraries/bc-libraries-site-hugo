@@ -1,0 +1,48 @@
+<!-- MENU BEGINS HERE -->
+<div class="megamenu-container">
+    <div id="megamenu-refresh" class="container">
+        <!-- BEGIN NAVBAR -->
+        <nav class="navbar yamm navbar-default" role="navigation">
+            <div id="navbar-collapse-1" class="container-fluid-skip">
+                <div class="navbar-header">
+                    <a href="https://libguides.bc.edu/my-accounts" class="accounts-link-mobile"><span class="fa fa-user" aria-hidden="true"></span> My Accounts</a>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="accessibility-text">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-close"><span class="fa fa-times" aria-hidden="true"></span><span class="accessibility-text">Close navigation</span></span>
+                    </button>
+
+                    <div class="navbar-brand">Value Beyond Discovery</div>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    
+                    <ul class="nav navbar-nav" id="megamenu" data-tag="ga-tag">
+
+                        {{ partial "megamenu/find.html" . }}
+
+                        {{ partial "megamenu/services.html" . }}
+
+                        {{ partial "megamenu/help.html" . }}
+
+                        {{ partial "megamenu/about.html" . }}
+
+                        {{ partial "megamenu/hours.html" . }}
+                        
+                        {{ partial "megamenu/accounts.html" . }}
+
+                        <!-- END My Accounts list -->
+                    </ul>
+                
+                </div>
+
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
+    </div>
+</div>
+<!-- END MEGAMENU -->

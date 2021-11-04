@@ -1,0 +1,52 @@
+<li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle menu-option" id="mm-about-header">About</a>
+    <ul class="dropdown-menu">
+        <li>
+            <!-- Content container to add padding -->
+            <div class="yamm-content">
+                <div class="row">
+                    <!-- About Us -->
+                    <!--Libraryinfo-content class exists to hide hours info that appears elsewhere.-->
+                    <div class="col-sm-10" id="mm-help-about">
+                        <div class="h4style"><a href="https://libguides.bc.edu/libraries/" id="mm-about-libraries">Libraries</a></div>
+                        
+                        {{/*<div class="alert alert-info alert-hours" role="alert"><i class="fa fa-exclamation-circle"></i> </div>*/}}
+
+                        <div class="row library-boxes">
+                            {{/* Library data is taken from libraries/all.json data file */}}
+                            {{ partial "megamenu/library.html" (dict "library" .Site.Data.libraries.all.oneill ) }}
+                            {{ partial "megamenu/library.html" (dict "library" .Site.Data.libraries.all.bapst ) }}
+                            {{ partial "megamenu/library.html" (dict "library" .Site.Data.libraries.all.burns ) }}
+                            {{ partial "megamenu/library.html" (dict "library" .Site.Data.libraries.all.erc ) }}
+                            {{ partial "megamenu/library.html" (dict "library" .Site.Data.libraries.all.law ) }}
+                            {{ partial "megamenu/library.html" (dict "library" .Site.Data.libraries.all.swl ) }}
+                            {{ partial "megamenu/library.html" (dict "library" .Site.Data.libraries.all.tml ) }}
+                            {{ partial "megamenu/library.html" (dict "library" .Site.Data.libraries.all.oconnor ) }}
+                            {{ partial "megamenu/library.html" (dict "library" .Site.Data.libraries.all.iajs ) }}
+                        </div>
+                        
+                    </div>
+
+                    <ul class="col-sm-2 menu_list end"  style="padding-top: 10px;">
+                        <li><div class="h4style">About us</div></li>
+                        <li><a href="https://libguides.bc.edu/hours" id="mm-about-hours">Hours</a></li>
+                        <li><a href="https://libguides.bc.edu/contact" id="mm-about-contact-us">Contact Us</a></li>
+                        <!--li><a href="https://library.bc.edu/news" id="mm-about-news">News</a></li-->
+                        <li><a href="https://libguides.bc.edu/getting-here" id="mm-about-getting-here">Getting Here</a></li>
+                        <li><a href="https://libguides.bc.edu/policies" id="mm-about-policies">Policies</a></li>
+                        <li><a href="https://libguides.bc.edu/gifts" id="mm-about-gifts">Gifts</a></li>
+                        <li><a href="https://libguides.bc.edu/mission" id="mm-about-mission">Mission</a></li>
+                        <li><a href="https://libguides.bc.edu/edi" id="mm-about-edi">Equity, Diversity, and Inclusion</a></li>
+                        <li><a href="https://libguides.bc.edu/employment" id="mm-about-employment">Employment</a></li>
+                        <!--li><a href="https://libguides.bc.edu/publications" id="mm-about-publications">Publications</a></li-->
+                        <!--li><a href="https://library.bc.edu/exhibits" id="mm-about-exhibits">Exhibits</a></li-->
+                        <li><a href="https://libguides.bc.edu/advertise" id="mm-about-advertise">Advertise Your Event</a></li>
+                        <li><a href="https://libguides.bc.edu/virtual-tours" id="mm-about-virtualtours">Virtual Tours</a></li>
+                    </ul>
+                </div>
+                <div class="row bottom_row">
+                    <div class="more"><a href="https://libguides.bc.edu/about-us" id="mm-more-about-the-libraries">More About the Libraries <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a></div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</li>
