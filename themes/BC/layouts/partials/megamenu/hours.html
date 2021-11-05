@@ -1,21 +1,13 @@
-<li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle menu-option" id="mm-hours-header">Hours</a>
-    <ul class="dropdown-menu">
+<div class="row">
+    <!-- All hours -->
+    <ul class="col-sm-12 col-md-10 col-md-offset-1 hours_menu_list">
         <li>
-            <!-- Content container to add padding -->
-            <div class="yamm-content">
-                <div class="row">
-                    <!-- All hours -->
-                    <ul class="col-sm-12 col-md-10 col-md-offset-1 hours_menu_list">
-                        <li>
-                            <div class="hours-todays-date-container">Library hours for <span class="hours-todays-date"></span></div>
-                            {{ partial "todays-library-hours.html" . }}
-                        </li>
-                    </ul>
-                </div>
-                <div class="row bottom_row">
-                    <div class="more"><a href="https://libguides.bc.edu/hours"><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i> See all hours</a></div>
-                </div>
-            </div>
+            <div class="hours-todays-date-container">Library hours for <span class="hours-todays-date"></span></div>
+            {{ partial "todays-library-hours.html" . }}
         </li>
     </ul>
-</li>
+</div>
+<div class="row bottom_row">
+    <div class="more"><a href="https://libguides.bc.edu/hours"><i class="fa fa-arrow-circle-o-right fa-lg"
+                aria-hidden="true"></i> See all hours</a></div>
+</div>

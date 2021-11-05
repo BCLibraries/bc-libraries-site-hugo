@@ -23,17 +23,17 @@
                     
                     <ul class="nav navbar-nav" id="megamenu" data-tag="ga-tag">
 
-                        {{ partial "megamenu/find.html" . }}
+                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "find" "menu_title" "Find" ) }}
 
-                        {{ partial "megamenu/services.html" . }}
+                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "services" "menu_title" "Services" ) }}
 
-                        {{ partial "megamenu/help.html" . }}
+                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "help" "menu_title" "Get Help" ) }}
 
-                        {{ partial "megamenu/about.html" . }}
+                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "about" "menu_title" "About" ) }}
 
-                        {{ partial "megamenu/hours.html" . }}
+                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "hours" "menu_title" "Hours" ) }}
                         
-                        {{ partial "megamenu/accounts.html" . }}
+                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "myaccounts" "menu_title" "My Accounts" ) }}
 
                         <!-- END My Accounts list -->
                     </ul>
