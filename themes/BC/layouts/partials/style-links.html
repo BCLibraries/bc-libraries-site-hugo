@@ -14,11 +14,11 @@
 {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true ) }}
 
 {{/* Build the CSS asset */}}
-{{ $style := resources.Get "css/site.scss" | resources.ToCSS $options | fingerprint }}
+{{ $style := resources.Get "sass/site.scss" | resources.ToCSS $options | fingerprint }}
 
 {{/* Link the CSS asset */}}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
 {{/* Build CSS bundle for use in LibGuides */}}
-{{ $libguides_styles := resources.Get "css/libguides.scss" | resources.ToCSS $options }}
+{{ $libguides_styles := resources.Get "sass/libguides.scss" | resources.ToCSS $options }}
 {{ "<!--" | safeHTML }}{{ $libguides_styles.RelPermalink }}{{ "-->" | safeHTML }}
