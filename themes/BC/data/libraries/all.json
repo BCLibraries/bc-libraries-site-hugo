@@ -1,0 +1,121 @@
+{
+    "bapst": {
+        "code": "bapst",
+        "name": "Bapst Library",
+        "brief_description": "Art and architecture",
+        "contact_type": "phone",
+        "phone": [
+            {
+                "number": "617-552-3200",
+                "compressed": "16175523200",
+                "description": "Reference"
+            }
+        ]
+    },
+    "burns": {
+        "code": "burns",
+        "name": "Burns Library",
+        "brief_description": "Special collections",
+        "contact_type": "phone",
+        "phone": [
+            {
+                "number": "617-552-4861",
+                "compressed": "16175524861",
+                "description": "Reference"
+            }
+        ]
+    },    
+    "erc": {
+        "code": "erc",
+        "name": "Educational Resource Center",
+        "brief_description": "Curriculum collection",
+        "contact_type": "phone",
+        "phone": [
+            {
+                "number": "617-552-4920",
+                "compressed": "16175524920",
+                "description": "Reference"
+            }
+        ]
+    },
+    "iajs": {
+        "code": "iajs",
+        "name": "Institute for Advanced Jesuit Studies",
+        "brief_description": "Jesuit studies collection",
+        "contact_type": "phone",
+        "phone": [
+            {
+                "number": "617-552-2568",
+                "compressed": "16175522568",
+                "description": "Reference"
+            }
+        ],
+        "url": "https://www.bc.edu/content/bc-web/centers/iajs/research-/research-library.html"
+    },
+    "law": {
+        "code": "law",
+        "name": "Law Library",
+        "brief_description": "Legal research & scholarship",
+        "contact_type": "phone",
+        "phone": [
+            {
+                "number": "617-552-4434",
+                "compressed": "16175524434",
+                "description": "Reference"
+            }
+        ],
+        "url": "https://www.bc.edu/bc-web/schools/law/sites/students/library.html"
+    },
+    "oconnor": {
+        "code": "oconnor",
+        "name": "O'Connor Library",
+        "brief_description": "Earth & environmental sciences",
+        "contact_type": "email",
+        "email": [
+            {
+                "address": "enid.karr@bc.edu",
+                "label": "Enid Karr"
+            }
+        ]
+    },
+    "oneill": {
+        "code": "oneill",
+        "name": "O'Neill Library",
+        "brief_description": "Main library",
+        "contact_type": "phone",
+        "phone": [
+            {
+                "number": "617-552-4472",
+                "compressed": "16175524472",
+                "description": "Reference"
+            }
+        ]
+    },
+    "swl": {
+        "code": "swl",
+        "name": "Social Work Library",
+        "brief_description": "Social services collection",
+        "contact_type": "phone",
+        "phone": [
+            {
+                "number": "617-552-0109",
+                "compressed": "16175520109",
+                "description": "Reference"
+            }
+        ],
+        "url": "https://libguides.bc.edu/socialwork"
+    },
+    "tml": {
+        "code": "tml",
+        "name": "Theology &amp; Ministry Library",
+        "brief_description": "Theology &amp; biblical studies",
+        "contact_type": "phone",
+        "phone": [
+            {
+                "number": "617-552-6553",
+                "compressed": "16175526553",
+                "description": "Reference"
+            }
+        ]
+    }
+}
