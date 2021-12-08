@@ -1,0 +1,47 @@
+<!-- MENU BEGINS HERE -->
+<div class="megamenu-container">
+    <div id="megamenu-refresh" class="container">
+        <!-- BEGIN NAVBAR -->
+        <nav class="navbar yamm navbar-default" role="navigation">
+            <div id="navbar-collapse-1" class="container-fluid-skip">
+                <div class="navbar-header">
+                    <a href="https://libguides.bc.edu/my-accounts" class="accounts-link-mobile"><span class="fa fa-user" aria-hidden="true"></span> My Accounts</a>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="accessibility-text">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-close"><span class="fa fa-times" aria-hidden="true"></span><span class="accessibility-text">Close navigation</span></span>
+                    </button>
+
+                    <div class="navbar-brand">Value Beyond Discovery</div>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    
+                    <ul class="nav navbar-nav" id="megamenu" data-tag="ga-tag">
+
+                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "find" "menu_title" "Find" ) }}
+
+                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "services" "menu_title" "Services" ) }}
+
+                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "help" "menu_title" "Get Help" ) }}
+
+                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "about" "menu_title" "About" ) }}
+
+                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "hours" "menu_title" "Hours" ) }}
+                        
+                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "myaccounts" "menu_title" "My Accounts" ) }}
+
+                    </ul>
+                
+                </div>
+
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
+    </div>
+</div>
+<!-- END MEGAMENU -->

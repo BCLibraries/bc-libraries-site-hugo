@@ -1,0 +1,16 @@
+{{/* Framework for a menu page */}}
+
+{{ $partial_path := printf "megamenu/%s.html" .menu_partial }}
+{{ $menu_id := printf "mm-%s-header" .menu_partial }}
+
+<li class="dropdown yamm-fw">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-option" id="mm-about-header">{{ .menu_title }}</a>
+    <ul class="dropdown-menu">
+        <li>
+            <!-- Content container to add padding -->
+            <div class="yamm-content">
+                {{ partial $partial_path .context }}
+            </div>
+        </li>
+    </ul>
+</li>
