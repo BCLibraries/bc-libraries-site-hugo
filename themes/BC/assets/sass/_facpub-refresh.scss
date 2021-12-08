@@ -11,22 +11,22 @@
 .facpub_wrap {
     width: 1080px;
     margin: 0px auto 0;
-    background: #fff;
+    background: $white-body;
 }
 
 .fph_header {
-  background: url("https://library.bc.edu/images/facpub/fph_header.jpg") no-repeat scroll center center #000000 !important; 
+  background: url("https://library.bc.edu/images/facpub/fph_header.jpg") no-repeat scroll center center $black-body !important; 
   min-height: 200px !important;
   height: 200px !important;
 }
 
 .fph_header h1 {
-    color: #fff;
+    color: $white-text;
     line-height: 1;
     margin: 0;
     text-align: center;
     font-size: 3em;
-    text-shadow: 2px 2px 1px #000000;
+    text-shadow: 2px 2px 1px $black-text;
 }
 
 .fph_header a:hover {
@@ -36,7 +36,7 @@
 /* INDIVIDUAL PAGES */
 
 .facpub_wrap .breadcrumb {
-    background: #fff;
+    background: $white-body;
     padding-left: 0;
     padding-right: 0;
     margin: .5rem 0 1rem 0;
@@ -50,14 +50,14 @@
     margin: 0 0 15px 0;
 }
 .facpub_wrap #titleauthor h3 {
-    color: #990000;
+    color: $red;
 }
 
 .facpub_wrap .youtube {
     width: 100%;
-    background: none repeat scroll 0 0 #eaeaea;
-    border-bottom: 1px solid #dadada;
-    color: #000;
+    background: none repeat scroll 0 0 $very-light-gray;
+    border-bottom: 1px solid $very-light-gray;
+    color: $black-text;
     display: block;
     margin: 0px 0 10px;
     overflow: hidden;
@@ -79,7 +79,7 @@
 }
 
 .facpub_wrap .article_content .fph_content_left {
-    border-right: 1px solid #dadada;
+    border-right: 1px solid $very-light-gray;
     padding: 0 2rem 0 0;
     text-align: justify;
 }
@@ -99,7 +99,7 @@
 
 .facpub_wrap .article_content .fph_content_right .prof_title {
     display: inline-block;
-    border-bottom: 1px solid #dadada;
+    border-bottom: 1px solid $very-light-gray;
     margin: 0 0 10px 0;
     width: 100%;
     padding: 0 0 10px 0;
@@ -135,8 +135,8 @@
     margin: 2rem 0 2rem 0;
     padding: 1rem 0;
     text-align: center;
-    border-top: 1px solid #dadada;
-    background: #eaeaea;
+    border-top: 1px solid $very-light-gray;
+    background: $very-light-gray;
 }
 
 .facpub_wrap .row {
@@ -156,7 +156,7 @@
     padding: 0px 0 25px 0;
     position: relative;
     height: auto;
-    border-bottom: 1px solid #dadada;
+    border-bottom: 1px solid $very-light-gray;
 }
 
 .latest-highlight h2 {
@@ -164,7 +164,7 @@
 }
 
 .latest-highlight .fph_content_left {
-    border-right: 1px solid #dadada;
+    border-right: 1px solid $very-light-gray;
     height: 100%;
     padding: 0 2rem 0 0;
     text-align: justify;
@@ -177,7 +177,7 @@
 }
 
 .latest-highlight img {
-    border: 2px solid #05506d;
+    border: 2px solid $dark-blue-green;
     float: left;
     height: 135px;
     margin: 0 10px 0 0;
@@ -218,7 +218,7 @@
     display: inline-block;
     float: left;
     padding: 10px 0;
-    border-bottom: 1px solid #dadada;
+    border-bottom: 1px solid $very-light-gray;
     overflow: hidden;
 }
 
@@ -230,7 +230,7 @@
 .old_facpub img {
     width: 75px;
     float: left;
-    border: 2px solid #05506d;
+    border: 2px solid $dark-blue-green;
     padding: 1px;
     margin: 0 5px 0 0;
 }
@@ -242,7 +242,7 @@
     display: inline-block;
     margin: 4rem 0 0 0;
     padding: 1.5rem 0 1rem 0;
-    border-top: 1px solid #dadada;
+    border-top: 1px solid $very-light-gray;
     text-align: center;
 }
 
@@ -264,14 +264,14 @@
 }
 
 .yearlyblock .archives {
-    border-top: 1px solid #dadada;
+    border-top: 1px solid $very-light-gray;
     padding: 1.5rem 0 5rem 0;
 }
 
 .archive-item {
     min-height:145px; 
-    border-top: 1px solid #dadada; 
-    border-bottom: 1px solid #dadada; 
+    border-top: 1px solid $very-light-gray; 
+    border-bottom: 1px solid $very-light-gray; 
     margin: .75rem 0 0 0; 
     padding: 1.5rem 0 .5rem 0;
     line-height: 1.25;
@@ -288,7 +288,7 @@
 }
 
 .archive-item img {
-    width:75px; padding: 1px; border:2px solid #05506d;
+    width:75px; padding: 1px; border:2px solid $dark-blue-green;
 }
 
 .archive-item .media-body {
@@ -323,7 +323,7 @@
 
     .fph_header h1 {
         font-size: 2em;
-        text-shadow: 1px 1px 1px #000000;
+        text-shadow: 1px 1px 1px $black-text;
     }
 
     .latest-highlight {
@@ -332,8 +332,8 @@
 
     .facpub_wrap .article_content .fph_content_left,  .latest-highlight .fph_content_left {
         float: none;
-        border-right: 0px solid #dadada;
-        border-bottom: 0px solid #dadada;
+        border-right: 0px solid $very-light-gray;
+        border-bottom: 0px solid $very-light-gray;
         padding: 0 5px;
         width: 100%;
         height: auto;
@@ -355,10 +355,10 @@
         display: none;
     }
     .old_facpub:nth-child(2n+1) {
-        border-right: 0px solid #dadada;
+        border-right: 0px solid $very-light-gray;
     }
     .old_facpub:nth-last-child(2) {
-        border-bottom: 1px solid #dadada;
+        border-bottom: 1px solid $very-light-gray;
     }
     .old_facpub {
         width: 100%;

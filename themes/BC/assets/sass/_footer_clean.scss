@@ -1,8 +1,8 @@
 /* footers */
 #lib-footer {
-    background-color: #8a100b;
-    color: #fff;
-    border-top: 4px #b29d6c solid;
+    background-color: $bc-brand-maroon;
+    color: $white-text;
+    border-top: 4px $bc-brand-gold solid;
     font-size: 14px;
     line-height: 25px;
     font-weight: 300;
@@ -16,17 +16,17 @@
     padding: 0;
 }
 #lib-footer a {
-    color: #fff;
+    color: $white-text;
 }
 #lib-footer a:hover,
 #lib-footer a:focus {
-    color: #dccaa0;
+    color: $bc-primary-light-gold;
     text-decoration: none;
 }
 #lib-footer h4 {
     font-weight: 700;
     text-transform: uppercase;
-    color: #fff;
+    color: $white-text;
     font-size: 14px;
     letter-spacing: 2px;
     margin: 0 0 5px;
@@ -52,7 +52,7 @@
 }
 
 #lib-footer .lib-footer-links a {
-    border-right: 1px solid #fff;
+    border-right: 1px solid $white-body;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -88,11 +88,11 @@
     padding: 0 3px 9px 3px;
 }
 #lib-footer #socialmedia ul li a {
-    color: #8a100b;
+    color: $bc-brand-maroon;
     font-size: 16px;
     border-radius: 50%;
-    border-color: #dccaa0;
-    background: #dccaa0;
+    border-color: $bc-primary-light-gold;
+    background: $bc-primary-light-gold;
     width: 30px;
     height:30px;
     line-height: 30px;
@@ -105,7 +105,7 @@
 }
 #lib-footer #socialmedia ul li a:hover,
 #lib-footer #socialmedia ul li a:focus {
-    background-color: #fff;
+    background-color: $white-body;
 }
 
 #lib-footer .quick-links ul {
@@ -132,10 +132,10 @@
 
 
 #bc-footer {
-    background: #501315;
+    background: $bc-primary-dark-red;
     padding: 15px 0;
     margin-top: 0px;
-    color: #fff;
+    color: $white-text;
     font-size: 10px;
     line-height: 11px;
 }
@@ -153,10 +153,10 @@
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0;
-    color: #fff;
+    color: $white-text;
     text-transform: uppercase;
     padding-right: 20px;
-    border-right: solid 1px #ffffff;
+    border-right: solid 1px $white-body;
     margin-right: 20px;
     display: inline-block;
 }
@@ -169,11 +169,11 @@
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0;
-    color: #fff;
+    color: $white-text;
 }
 #bc-footer .bc-links ul li a:hover,
 #bc-footer .bc-links ul li a:focus {
-    color: #dccaa0;
+    color: $bc-primary-light-gold;
     text-decoration: none;
 }
 
@@ -181,7 +181,7 @@
     font-size: 11px;
     font-weight: 400;
     letter-spacing: 0;
-    color: #b7b7b7;
+    color: $light-gray;
     margin-top: 20px;
     text-align: right;
 }

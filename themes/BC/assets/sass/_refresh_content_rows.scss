@@ -33,7 +33,7 @@
 }
 
 .content .btn.btn-blue:hover, #db-rg-hours .btn.btn-blue:hover, #exhibit-highlight .btn.btn-blue:hover {
-    color: #fff;
+    color: $white-text;
     background: #1d3c68;
 }
 
@@ -51,10 +51,10 @@
 	display: inline-block;
 	width: 100%;
 	min-height: 150px;
-	background: url("https://library.bc.edu/images/exhibits/banner_default2.jpg") no-repeat 0% 100% #101010;
-	border-top: 1px solid #dadada;
-	border-bottom: 1px solid #dadada;
-	color: #fff;
+	background: url("https://library.bc.edu/images/exhibits/banner_default2.jpg") no-repeat 0% 100% $very-dark-gray;
+	border-top: 1px solid $very-light-gray;
+	border-bottom: 1px solid $very-light-gray;
+	color: $white-text;
 	z-index: 2;
 	background-size: cover;
 	padding-bottom: 4rem;
@@ -63,7 +63,7 @@
 #exhibit-highlight h2 {
 	font-weight: 600;
 	/*text-transform: uppercase;*/
-	color: #fff;
+	color: $white-text;
 	/*font-size: 16px;*/
     letter-spacing: 2px;
 	margin: .5em 0 1em 0;
@@ -82,7 +82,7 @@
 }
 
 a.current-exhibits-title {
-	color: #000 !important;
+	color: $black-text !important;
 	font-size: 20px;
     line-height: 22px;
     font-weight: 400;
@@ -98,7 +98,7 @@ a.current-exhibits-title {
 }
 
 .exhibit-box .exhibit-left p {
-	color: #000;
+	color: $black-text;
 	text-align: left;
 	font-size: 18px;
 	line-height: 28px;
@@ -108,7 +108,7 @@ a.current-exhibits-title {
 .exhibit-poster {
 	max-width: 100%;
 	max-height: 100%;
-	border: 1px solid #000;
+	border: 1px solid $black-body;
 }
 
 @media (max-width: 991px) {

@@ -36,7 +36,7 @@
 
  #megamenu-refresh .navbar-default .navbar-brand {
      text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85);
-     color: #fff;
+     color: $white-text;
      font-size: 18px;
      font-style: italic;
      letter-spacing: 1.5px;
@@ -56,7 +56,7 @@
  }
  .megamenu-container {
      background-color: rgba(16,14,15,.85);
-     color: #000;
+     color: $black-text;
      /*margin-top: -1px;*/
      position: absolute;
      width: 100%;
@@ -64,7 +64,7 @@
  }
  .megamenu-container .nav a.menu-option {
      text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85);
-     color: #fff;
+     color: $white-text;
      font-size: 20px;
      font-weight: 200;
  }
@@ -78,17 +78,17 @@
          display: none;
      }
      #megamenu-refresh .navbar-default .navbar-toggle .icon-bar {
-         background-color: #fff;
+         background-color: $white-body;
          margin-left: 13px;
      }
      .megamenu-container .nav a.menu-option {
          text-shadow: none;
-         color: #000;
+         color: $black-text;
      }
      .megamenu-container .navbar-collapse {
          padding-left:15px;
          padding-right:15px;
-         background-color: #fff;
+         background-color: $white-body;
          border-bottom: 15px solid rgba(0, 0, 0, 0);
          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
      }
@@ -97,16 +97,16 @@
  .megamenu-container .nav a.menu-option:hover,
  .megamenu-container .nav .open a.menu-option {
      text-shadow: none;
-     color:#fff;
+     color: $white-text;
      background-color: #534741;
-     /*color:#000;
-     background-color: #b29d6c;*/
+     /*color: $black-text;
+     background-color: $bc-brand-gold;*/
  }
  
  
  /* mega menu style copied from style.css */
  .h3style {
-     color: #05506d;
+     color: $dark-blue-green;
      font-size: 18px;
      line-height: 1.25;
      font-weight: normal;
@@ -115,7 +115,7 @@
      /*text-transform: uppercase;*/
  }
  .h4style {
-     color: #05506d;
+     color: $dark-blue-green;
      font-size: 16px;
      font-weight: normal;
      margin: 5px 0 10px !important;
@@ -130,36 +130,36 @@
      font-size: 18px;
      line-height: 1;
      background-color: #204375;
-     color: #fff;
+     color: $white-text;
      border-radius: 4px;
  }
  
  #megamenu-refresh .navbar-nav > li > a:focus {
-     background: #05506d !important;
-     color: #fff;
+     background: $dark-blue-green !important;
+     color: $white-text;
      outline: 0;
  }
  
  #megamenu-refresh .navbar-nav > li > a:hover {
-     background: #05506d !important;
-     color: #fff;
+     background: $dark-blue-green !important;
+     color: $white-text;
      outline: 0;
  }
  
  #megamenu-refresh .navbar-nav > .open > a, #megamenu-refresh .navbar-nav > .open > a:hover {
-     background: #05506d !important;
-     color: #fff !important;
+     background: $dark-blue-green !important;
+     color: $white-text !important;
  }
  
  #megamenu-refresh .navbar-nav > li > .dropdown-menu {
-     /*border: 1px solid #dadada;*/
+     /*border: 1px solid $very-light-gray;*/
      border-top: none;
      border-radius: 0;
      margin-top: 0;
  }
  
  /*#megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
-     border-top: 3px solid #05506d;
+     border-top: 3px solid $dark-blue-green;
  }*/
  @media ( max-width: 1199px ) {
      #megamenu-refresh .navbar-nav > li > .dropdown-menu {
@@ -169,7 +169,7 @@
          font-size: 12px;
      }
      #megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
-         /*border-top: 3px solid #05506d;*/
+         /*border-top: 3px solid $dark-blue-green;*/
      }
  }
  
@@ -207,14 +207,14 @@
      #megamenu-refresh .navbar-nav > li > .dropdown-menu {
          border: 0;
          font-size: 14px;
-         background-color: #fff;
+         background-color: $white-body;
          z-index: 1000;
      }
  }
  
  .dropdown-menu {
      background-clip: padding-box;
-     background-color: #fff;
+     background-color: $white-body;
      border: 1px solid rgba(0, 0, 0, 0.15);
      border-radius: 4px 4px 4px 4px;
      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
@@ -238,14 +238,14 @@
      height: 100px;
      margin: 0px auto;
      padding: 0;
-     background: #fff;
+     background: $white-body;
  }
  @media ( max-width: 1199px ) {
      #megamenu-refresh {
          width: 100%;
          height: 95px;
          margin: 0px auto;
-         background: #fff;
+         background: $white-body;
          display: inline-block;
      }
  }*/
@@ -270,8 +270,8 @@
      list-style: none outside none;
      padding: 0px;
      margin: 0 0px;
-     border-right: 1px solid #DADADA;
-     border-left: 1px solid #DADADA;
+     border-right: 1px solid $very-light-gray;
+     border-left: 1px solid $very-light-gray;
      margin-left:-1px;
      padding: 0 25px;
  }
@@ -289,7 +289,7 @@
          /*list-style: none outside none;
          padding: 0px;
          margin: 0 0 10px 0;
-         border-right: 1px solid #DADADA;
+         border-right: 1px solid $very-light-gray;
          padding: 0px;
          float: none;
          width: 100%;*/
@@ -328,7 +328,7 @@
      margin-bottom: 4px;
  }
  .yamm .dropdown-menu li > .h4style {
-     color: #05506d;
+     color: $dark-blue-green;
      font-size: 16px;
      line-height: 1.25;
      font-weight: normal;
@@ -356,14 +356,14 @@
  .yamm .dropdown-menu li > a:focus,
  .yamm .dropdown-menu li > .h4style a:hover,
  .yamm .dropdown-menu li > .h4style a:focus {
-     color: #990000;
+     color: $red;
      text-decoration: none;
      background: #E0E0E0;
  }
  
  .bottom_row {
-     /*background: #EAEAEA;*/
-     border-top: 1px solid #DADADA;
+     /*background: $very-light-gray;*/
+     border-top: 1px solid $very-light-gray;
      /*margin: 0px;*/
      padding: 10px 0 10px;
  }
@@ -397,7 +397,7 @@
      text-decoration: none;
      background: #a3a3a3;
      border-bottom: 2px solid #999;
-     color: #fff;
+     color: $white-text;
  }
  
  .more a:after {
@@ -414,7 +414,7 @@
  }
  
  .more a:hover:after {
-     color: #fff;
+     color: $white-text;
  }
  
  
@@ -424,7 +424,7 @@
      background: transparent;
  }
  #megamenu-refresh .navbar-toggle {
-     /*background-color: #990000;
+     /*background-color: $red;
      background-image: none;
      border: 1px solid rgba(0, 0, 0, 0);
      border-radius: 0;
@@ -432,7 +432,7 @@
      margin: 115px 0px 0;
      padding: 13px;
      position: relative;
-     border-color: #dccaa0;
+     border-color: $bc-primary-light-gold;
      width: 100%;*/
      background-color: transparent;
      border: none;
@@ -447,9 +447,9 @@
      }
  }
  .navbar-toggle .icon-bar {
-     background: none repeat scroll 0 0 #fff;
+     background: none repeat scroll 0 0 $white-body;
      border-radius: 1px 1px 1px 1px;
-     color: #000000;
+     color: $black-text;
      display: block;
      height: 2px;
      width: 22px;
@@ -457,7 +457,7 @@
  }*/
  
  #megamenu-refresh .navbar-default .navbar-toggle .icon-close {
-     color: #ffffff;
+     color: $white-text;
      font-size: 30px;
  }
  #megamenu-refresh .navbar-default .navbar-toggle .icon-close .fa {
@@ -491,7 +491,7 @@
      margin: 0;
      padding: 10px 0 0 25px;
      position: relative;
-     border-right: 5px solid #DADADA;
+     border-right: 5px solid $very-light-gray;
  }
  
  .item-desktop {
@@ -523,16 +523,16 @@
  
  .yamm .dropdown-menu li .item-list > li > a:hover,
  .yamm .dropdown-menu li .item-list > li > a:hover {
-     background: #eaeaea;
-     color: #990000;
+     background: $very-light-gray;
+     color: $red;
      text-decoration: none;
  }
  
  .item-list .selected a {
-     color: #990000 !important;
+     color: $red !important;
      font-weight: normal !important;
      text-decoration: none;
-     background: #dadada;
+     background: $very-light-gray;
  }
  
  #bapst_pane,
@@ -669,7 +669,7 @@
  }
  
  .pane_pic img {
-     border: 2px solid #990000;
+     border: 2px solid $red;
      width: 100%;
      padding: 0;
  }
@@ -745,7 +745,7 @@
  .megamenucalendar:before {
      /*font-family: "icomoon";
      content: "\e648";
-     color: #05506d;
+     color: $dark-blue-green;
      float: left;
      padding: 0 10px 0 0;*/
      content: none;
@@ -766,7 +766,7 @@
  .megamenuphone:before {
      /*font-family: "icomoon";
      content: "\e67d";
-     color: #05506d;
+     color: $dark-blue-green;
      float: left;
      padding: 0 10px 0 0;*/
      content: none;
@@ -787,7 +787,7 @@
  .megamenuemail:before {
      /*font-family: "icomoon";
      content: "\e67c";
-     color: #05506d;
+     color: $dark-blue-green;
      float: left;
      padding: 0 10px 0 0;*/
      content: none;
@@ -851,7 +851,7 @@
  }
  
  #mm-help-aal .aal-box .h4style {
-     color: #05506d;
+     color: $dark-blue-green;
      font-size: 16px;
      font-weight: 600;
      margin: 0 0 .25rem 0!important;
@@ -873,7 +873,7 @@
  
  #mm-help-aal .aal-box a.aal-icon {
      font-size:35px!important;
-     color: #fff;
+     color: $white-text;
      display: block;
      line-height: 1;
      width: 55px;
@@ -882,7 +882,7 @@
  #mm-help-aal .aal-box a.aal-icon i {
      padding: 10px;
      width: 100%;
-     color: #fff;
+     color: $white-text;
  }
  
  #mm-help-aal .aal-box h4 {
@@ -914,7 +914,7 @@
  /*.libsprite {
      background: url('https://library.bc.edu/images/librarypane/libthumb-spritesheet.jpg') no-repeat;
      display: block;
-     border: 2px solid #990000;
+     border: 2px solid $red;
  }
  
  .libsprite-librarythumbnails_bapst {

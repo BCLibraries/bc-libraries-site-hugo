@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 body {
-    background: #fff 0% 0%;
+    background: $white-body 0% 0%;
     font-family: 'Open Sans', Arial, sans-serif;
-    color: #000;
+    color: $black-text;
     font-size: 15px;
     padding: 0;
     line-height: 1.75;
@@ -44,16 +44,16 @@ a {
 
 #ds-highlight .content h3 a,
 #digcol-highlight .content h3 a {
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: $white-text;
+    border-bottom: 1px solid $white-body;
 }
 
 #ds-highlight .content h3 a:hover,
 #ds-highlight .content h3 a:focus,
 #digcol-highlight .content h3 a:hover,
 #digcol-highlight .content h3 a:focus {
-    color: #dccaa0;
-    border-bottom: 1px solid #dccaa0;
+    color: $bc-primary-light-gold;
+    border-bottom: 1px solid $bc-primary-light-gold;
     text-decoration: none;
 }
 
@@ -74,9 +74,9 @@ a {
 /* top level maroon bar */
 #bclib-header {
     box-sizing: border-box;
-    background: #8a100b no-repeat 100% 0%;
-    border-bottom: 1px solid #dccaa0;
-    color: #fff;
+    background: $bc-brand-maroon no-repeat 100% 0%;
+    border-bottom: 1px solid $bc-primary-light-gold;
+    color: $white-text;
     height: 38px;
     display: -webkit-box;
     display: -moz-box;
@@ -109,17 +109,17 @@ a {
     width: auto;
     height: auto;
     overflow: visible;
-    background-color: #fff;
+    background-color: $white-body;
     padding: 4px;
 }
 
 #bclib-header a {
-    color: #fff;
+    color: $white-text;
 }
 
 #bclib-header a:hover,
 #bclib-header a:focus {
-    color: #dccaa0;
+    color: $bc-primary-light-gold;
     text-decoration: none;
 }
 
@@ -214,7 +214,7 @@ a {
 }
 #bclib-header input#bclib-header-search {
     font-size: 14px;
-    color: #000;
+    color: $black-text;
     /*padding: 2px 0 2px 4px;*/
     border-right: 0;
     border-radius: 0;
@@ -277,13 +277,13 @@ a {
     right: 0;
     padding: 2px 10px;
     background-color: rgba(16, 14, 15, .85);
-    color: #fff;
+    color: $white-text;
     font-size: 12px;
     font-weight: 200;
 }
 
 .caption-link a {
-    color: #fff;
+    color: $white-text;
 }
 
 .caption-link a:hover,
@@ -300,7 +300,7 @@ a {
 
 /* Search panel */
 #search-panel {
-    background-color: #8a100b;
+    background-color: $bc-brand-maroon;
     border-radius: 6px;
     /*box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.2);*/
 }
@@ -402,7 +402,7 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
 .leftTop .container-fluid .pull-right .content,
 .rightTop .container-fluid .pull-right .content,
 .rightBottom .container-fluid .pull-right .content {
-    color: #fff;
+    color: $white-text;
     display: table;
     padding: 40px 40px;
     max-width: 60%;
@@ -473,7 +473,7 @@ body.body-modal {
 #feedback_close::after {
     font-family: 'FontAwesome';
     content: "\f057";
-    color: #fff;
+    color: $white-text;
     margin: 0 10px;
     position: absolute;
 }
@@ -528,7 +528,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 
 .aal-box a.aal-icon {
     font-size: 100px !important;
-    color: #fff;
+    color: $white-text;
     display: block;
     vertical-align: top;
     line-height: 1;
@@ -541,7 +541,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 }
 
 .aal-box .chat-icon-link.aal-icon, .aal-box #chat-icon-link.aal-icon {
-    background-color: #B29D6C;
+    background-color: $bc-brand-gold;
 }
 
 .aal-box .email-icon-link.aal-icon, .aal-box #email-icon-link.aal-icon {
@@ -553,7 +553,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 }
 
 .aal-box #visit-icon-link.aal-icon {
-    background-color: #dccaa0;
+    background-color: $bc-primary-light-gold;
 }
 
 .aal-box #faq-icon-link.aal-icon {
@@ -958,7 +958,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         font-size: 22px !important;
         font-weight: normal !important;
         letter-spacing: 1px !important;
-        color: #000 !important;
+        color: $black-text !important;
         text-decoration: none !important;
         margin: 0 0 1em 0 !important;
         padding: 0 !important;
@@ -988,8 +988,8 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     }
 
     #quick-links {
-        border-top: 1px solid #dadada;
-        border-bottom: 1px solid #dadada;
+        border-top: 1px solid $very-light-gray;
+        border-bottom: 1px solid $very-light-gray;
         padding: 1em 0;
     }
 
@@ -1057,8 +1057,8 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     #digcol-highlight {
         height: auto !important;
         padding: 0 !important;
-        border-top: 1px solid #dadada;
-        border-bottom: 1px solid #dadada;
+        border-top: 1px solid $very-light-gray;
+        border-bottom: 1px solid $very-light-gray;
         text-align: left !important;
     }
 

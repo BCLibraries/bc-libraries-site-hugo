@@ -46,8 +46,8 @@ html {
 #exhibit .latest_exhibit .left {
     float: left;
     width: 25%;
-    background: #eaeaea;
-    border-bottom: 5px solid #dadada;
+    background: $very-light-gray;
+    border-bottom: 5px solid $very-light-gray;
     padding: 10px 20px 0;
 }
 
@@ -75,13 +75,13 @@ html {
 
 #exhibit .latest_exhibit .left ul li a:hover {
     text-decoration: none;
-    border-bottom: 1px solid #990000;
+    border-bottom: 1px solid $red;
     margin: 0 0 10px;
 }
 
 #exhibit .latest_exhibit .left .target {
     color: #666;
-    border-bottom: 1px solid #990000;
+    border-bottom: 1px solid $red;
     padding: 0 0 0 0px;
     margin: 0 0 10px;
 }
@@ -157,7 +157,7 @@ html {
 }
 
 #exhibit .latest_exhibit .holdhead h4 {
-    border-bottom: 1px solid #05506D;
+    border-bottom: 1px solid $dark-blue-green;
     margin: 5px 0 0 !important;
 }
 
@@ -166,7 +166,7 @@ html {
 }
 
 #exhibit .latest_exhibit .holder .frame {
-    border: 2px solid #05506D;
+    border: 2px solid $dark-blue-green;
     position: relative;
     color: #444;
     height: 375px;
@@ -182,7 +182,7 @@ html {
 
 @media ( max-width: 768px ) {
     #exhibit .latest_exhibit .holder .frame {
-        border: 2px solid #05506D;
+        border: 2px solid $dark-blue-green;
         position: relative;
         color: #444;
         height: 100%;
@@ -209,7 +209,7 @@ html {
     background: rgba(255, 255, 255, 0.8) none repeat scroll 0px 0px;
     min-height: 65px;
     padding: 10px 5px 5px;
-    border-top: 1px solid #05506D;
+    border-top: 1px solid $dark-blue-green;
 }
 
 #exhibit .latest_exhibit .holder .frame .info .date {
@@ -242,10 +242,10 @@ html {
     width: 100vw;
     min-height: 150px;
     height: 290px;
-    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0% 100% #101010;
-    border-top: 1px solid #dadada;
-    border-bottom: 1px solid #dadada;
-    color: #fff;
+    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0% 100% $very-dark-gray;
+    border-top: 1px solid $very-light-gray;
+    border-bottom: 1px solid $very-light-gray;
+    color: $white-text;
     padding: 30px 0;
     z-index: 2;
     background-size: cover;
@@ -258,10 +258,10 @@ html {
     width: 100%;
     min-height: 150px;
     height: auto;
-    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0% 100% #101010;
-    border-top: 1px solid #dadada;
-    border-bottom: 1px solid #dadada;
-    color: #fff;
+    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0% 100% $very-dark-gray;
+    border-top: 1px solid $very-light-gray;
+    border-bottom: 1px solid $very-light-gray;
+    color: $white-text;
     padding: 30px 0;
     z-index: 2;
     background-size: cover;
@@ -270,9 +270,9 @@ html {
 
 .blackband h2 {
     font-size: 36px;
-    color: #fff;
+    color: $white-text;
     text-align: center;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid $white-body;
     margin: 0 0 20px 0;
 }
 
@@ -289,7 +289,7 @@ html {
     position: relative;
     display: block;
     text-align: justify;
-    text-shadow: 2px 2px 1px #000000;
+    text-shadow: 2px 2px 1px $black-text;
 }
 
 .exhibit_page .blackband .bandcenter {
@@ -315,55 +315,55 @@ html {
 }
 
 #exhibit .burns, .exhibit_page .burns {
-    background: url("https://library.bc.edu/images/exhibits/banner_burns.jpg") no-repeat 50% 0% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_burns.jpg") no-repeat 50% 0% $very-dark-gray;
 }
 
 #exhibit .tml, .exhibit_page .tml {
-    background: url("https://library.bc.edu/images/exhibits/banner_tml.jpg") no-repeat 50% 0% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_tml.jpg") no-repeat 50% 0% $very-dark-gray;
 }
 
 #exhibit .lvl1, .exhibit_page .lvl1 {
-    background: url("https://library.bc.edu/images/exhibits/banner_lvl1.jpg") no-repeat 50% 0% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_lvl1.jpg") no-repeat 50% 0% $very-dark-gray;
 }
 
 #exhibit .lvl3, .exhibit_page .lvl3 {
-    background: url("https://library.bc.edu/images/exhibits/banner_lvl3.jpg") no-repeat 50% 0% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_lvl3.jpg") no-repeat 50% 0% $very-dark-gray;
 }
 
 #exhibit .reading, .exhibit_page .reading {
-    background: url("https://library.bc.edu/images/exhibits/banner_reading.jpg") no-repeat 50% 0% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_reading.jpg") no-repeat 50% 0% $very-dark-gray;
 }
 
 #exhibit .backwall, .exhibit_page .backwall {
-    background: url("https://library.bc.edu/images/exhibits/banner_backwall.jpg") no-repeat 50% 0% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_backwall.jpg") no-repeat 50% 0% $very-dark-gray;
 }
 
 #exhibit .lobby, .exhibit_page .lobby {
-    background: url("https://library.bc.edu/images/exhibits/banner_oneill.jpg") no-repeat 50% 0% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_oneill.jpg") no-repeat 50% 0% $very-dark-gray;
 }
 
 #exhibit .stokes, .exhibit_page .stokes {
-    background: url("https://library.bc.edu/images/exhibits/banner_stokes.jpg") no-repeat 50% 0% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_stokes.jpg") no-repeat 50% 0% $very-dark-gray;
 }
 
 /*#exhibit .tiponeill, .exhibit_page .tiponeill {
-    background: url("https://library.bc.edu/images/exhibits/banner_tiponeill-tinted.jpg") no-repeat 0% 90% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_tiponeill-tinted.jpg") no-repeat 0% 90% $very-dark-gray;
 }*/
 
 #exhibit .bapst, .exhibit_page .bapst, #exhibit .bapstarchive, .exhibit_page .bapstarchive  {
-    background: url("https://library.bc.edu/images/exhibits/banner_bapst.jpg") no-repeat 50% 0% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_bapst.jpg") no-repeat 50% 0% $very-dark-gray;
 }
 
 #exhibit .virtual, .exhibit_page .virtual {
-    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0% 100% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0% 100% $very-dark-gray;
 }
 
 #exhibit .tip, .exhibit_page .tip {
-    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0% 100% #101010;
+    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0% 100% $very-dark-gray;
 }
 
 .blackband a {
-    color: #fff;
+    color: $white-text;
     text-decoration: underline;
 }
 
@@ -417,7 +417,7 @@ html {
 }
 
 #exhibit.archives .latest_exhibit .holder .frame {
-    border: 2px solid #05506D;
+    border: 2px solid $dark-blue-green;
     position: relative;
     color: #444;
     height: 250px;
@@ -502,7 +502,7 @@ html {
     padding: 10px 5px 0px;
     margin: 0 auto 25px;
     display: block;
-    background: #fff;
+    background: $white-body;
     position: relative;
     text-align: center;
     z-index: 3;
@@ -531,7 +531,7 @@ html {
 }
 
 .article_content .poster, .article_content_two .poster {
-    border: 2px solid #05506D;
+    border: 2px solid $dark-blue-green;
     padding: 2px;
 }
 
@@ -561,7 +561,7 @@ html {
     padding: 10px 5px 0px;
     margin: 0 auto 25px;
     display: block;
-    background: #fff;
+    background: $white-body;
     position: relative;
     text-align: center;
     z-index: 3;
@@ -574,7 +574,7 @@ html {
 /* FOR NON-POSTER IMAGES THAT APPEAR IN SOME EXHIBIT PAGES */
 
 .exhibit_page .article_content .article_content .text img {
-    border: 2px solid #05506D;
+    border: 2px solid $dark-blue-green;
     padding: 2px;
     margin-bottom: 10px;
 }
