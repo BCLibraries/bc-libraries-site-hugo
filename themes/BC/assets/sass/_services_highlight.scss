@@ -1,0 +1,133 @@
+#services-highlight-container {
+    background-color: #ffc67c;
+    border-bottom: 1px solid #ffbd68;
+}
+
+#services-highlight {
+    a.underline {
+        font-weight: 700;
+        color: #622a27;
+    }
+
+    a.underline:hover,
+    a.underline:focus {
+        text-decoration: underline;
+    }
+
+    .header-row {
+        padding: 2rem 0 0 0;
+    }
+    h2 {
+        margin-top: 0;
+    }
+
+    .intro,
+    .outro {
+        font-size: large;
+        padding: 0 0 0.5rem 0;
+    }
+    .outro {
+        padding: 0 0 0.5rem 0;
+        a {
+            font-weight: 600;
+        }
+    }
+
+    .highlight-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 0;
+
+        .highlight-box {
+            display: flex;
+            padding-bottom: 1rem;
+        }
+
+        /* Safari doesn't play well with floated elements and flex display */
+        .highlight-box:before,
+        .highlight-box:after {
+            display: none !important;
+        }
+
+        .panel {
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+
+            ul {
+                padding-left: 2rem;
+            }
+
+            li {
+                padding-bottom: 0.5rem;
+            }
+        }
+
+        .panel-heading {
+            padding: 5px 15px 2px 15px;
+
+            hr {
+                border: 0;
+                margin: 0.75rem 0 0.75rem 0;
+                border-bottom: 1px solid $bc-primary-light-gold;
+                height: 1px;
+            }
+
+            h4 {
+                line-height: 1.3;
+                padding: 0;
+                margin-bottom: 0;
+                font-weight: 600;
+
+                @media (max-width: 991px) {
+                    min-height: auto;
+                }
+
+            }
+        }
+
+        .panel-body {
+            padding: 0 10px 0px 10px;
+        }
+        .embedded-video .panel-body {
+            padding: 10px 10px 10px 10px;
+        }
+        .panel-body a {
+            font-weight: 600;
+        }
+    }
+
+    /* Safari doesn't play well with floated elements and flex display */
+    .highlight-boxes:before,
+    .highlight-boxes:after {
+        display: none !important;
+    }
+
+    .librarian-profile {
+        border-top-left-radius: 50%;
+        max-height: 120px;
+        border: 3px solid $black-body;
+        margin: 0 auto;
+    }
+    .bottom-text {
+        margin: 1rem 0 0 0;
+        padding-top: 0.5rem;
+        border-top: 1px dashed #eee;
+    }
+}
+
+@media (max-width: 991px) {
+    .blockquote .quote {
+        font-size: 18px;
+        line-height: 1.1;
+    }
+    .blockquote .quote::before {
+        border: 0;
+        height: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .blockquote {
+        display: none;
+    }
+}
