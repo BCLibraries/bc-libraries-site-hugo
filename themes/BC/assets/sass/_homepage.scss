@@ -594,6 +594,10 @@
         line-height: 18px;
         font-weight: 600;
         padding: 0;
+
+        .visitation-alert__date {
+            font-size: 12px;
+        }
     }
 
     .visitation-alert__content {
