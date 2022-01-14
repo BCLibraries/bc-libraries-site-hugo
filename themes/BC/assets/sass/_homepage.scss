@@ -583,34 +583,46 @@
 /* Visitation/Vaccination alert box */
 
 #visitation-alert {
-    background-color: #ffc67c;
-    border-bottom: 1px solid #ffbd68;
+    background-color: #f8c21c;
+    border-bottom: 1px solid #f8c21c;
     border-radius: 8px;
+
+    padding-bottom: 1em;
+
+    .visitation-alert__heading {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 600;
+        padding: 0;
+    }
+
+    .visitation-alert__content {
+        font-size: 16px;
+        line-height: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .visitation-alert__link {
+        text-align: right;
+    }
+
+    .visitation-alert__dismiss { 
+        text-align: right;
+
+        button {
+            background: none!important;
+            border: none;
+            padding: 0!important;
+            font-family: arial, sans-serif;
+            color: #069;
+            cursor: pointer;
+        }
+    }
 
     #featured-tip-wrapper {
         background-color: inherit;
         font-size: 17px;
-
-        .intro {
-            padding-bottom: 1rem;
-            
-            .underline {
-                font-weight: 700;
-                color: #622a27;
-                text-decoration: none;
-                border-bottom: 1px solid #622a27;
-
-                &:hover, &:focus {
-                    color: blue;
-                    text-decoration: none;
-                    border-bottom: 1px solid blue;
-                }
-            }
-
-            &:last-child {
-                padding-bottom: 0;
-            }
-        }
     }
 }
 
@@ -739,6 +751,10 @@
 #socialmedia-highlight .content-body .image-attribution {
     font-size: small;
     margin-top: 4rem;
+}
+
+#visitation-alert {
+    
 }
 
 /* media queries */
