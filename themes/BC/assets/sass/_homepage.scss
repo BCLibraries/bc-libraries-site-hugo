@@ -645,12 +645,15 @@
 
 /* highlight services for students */
 #featured-tip-wrapper.resource-highlights {
+    .featured-tip-element {
+        min-height: 392px;
+        position: relative;
+    }
     
     .overlay-img {
         max-height: 350px;
         overflow: hidden;
         border-radius: 4px;
-        position: relative;
     }
 
     a.panel-overlay {
@@ -679,6 +682,10 @@
 @media (max-width: 991px) {
     #featured-tip-wrapper.resource-highlights {
         margin-bottom: 3rem;
+
+        .featured-tip-element {
+            min-height: auto;
+        }
     }
 }
 
@@ -833,10 +840,6 @@
 #socialmedia-highlight .content-body .image-attribution {
     font-size: small;
     margin-top: 4rem;
-}
-
-#visitation-alert {
-    
 }
 
 /* media queries */

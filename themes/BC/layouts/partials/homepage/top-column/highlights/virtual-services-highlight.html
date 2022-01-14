@@ -8,12 +8,12 @@
             <div class="featured-tip-element">
                 <div class="row">
 
-                    <div class="col-md-12 col-sm-12 col-xs-12 resource-highlight" id="course-reserves" data-id="1">
+                    <div class="col-md-12 col-sm-12 col-xs-12 resource-highlight" id="course-reserves" data-id="0" style="display:none;">
                         <a class="panel-overlay" href="https://libguides.bc.edu/welcome/#s-lg-box-wrapper-32959524">
                             <div class="panel">
                                 <div class="panel-body">
                                     <div class="overlay-img">
-                                        <img class="" src="https://libapps.s3.amazonaws.com/customers/94/images/Valdon-Sewell-O_Neill-Student-Employee.jpg" alt="Student shelving books" />
+                                        <img class="" src="https://libapps.s3.amazonaws.com/customers/94/images/Valdon-Sewell-O_Neill-Student-Employee-807px.jpg" alt="Student shelving books" />
                                     </div>
                                     <div class="overlay-text">
                                         <h3>Course Reserves</h3>
@@ -23,12 +23,12 @@
                         </a>
                     </div>
                     
-                    <!--div class="col-md-12 col-sm-12 col-xs-12 resource-highlight" id="study-spaces" data-id="2">
+                    <div class="col-md-12 col-sm-12 col-xs-12 resource-highlight" id="study-spaces" data-id="1" style="display:none;">
                         <a class="panel-overlay" href="https://libguides.bc.edu/welcome/#s-lg-box-wrapper-32958709">
                             <div class="panel">
                                 <div class="panel-body">
                                     <div class="overlay-img">
-                                        <img class="" src="https://libapps.s3.amazonaws.com/customers/94/images/babst-studyroom.jpg" alt="Babst library reading room" />
+                                        <img class="" src="https://libapps.s3.amazonaws.com/customers/94/images/babst-studyroom-807px.jpg" alt="Babst library reading room" />
                                     </div>
                                     <div class="overlay-text">
                                         <h3>Study spaces</h3>
@@ -38,12 +38,12 @@
                         </a>
                     </div>
 
-                    <div class="col-md-12 col-sm-12 col-xs-12 resource-highlight" id="tech-loans" data-id="3">
+                    <div class="col-md-12 col-sm-12 col-xs-12 resource-highlight" id="tech-loans" data-id="2" style="display:none;">
                         <a class="panel-overlay" href="https://libguides.bc.edu/welcome/#s-lg-box-wrapper-32959096">
                             <div class="panel">
                                 <div class="panel-body">
                                     <div class="overlay-img">
-                                        <img class="" src="https://libapps.s3.amazonaws.com/customers/94/images/swl-equipment.jpg" alt="various equipment" />
+                                        <img class="" src="https://libapps.s3.amazonaws.com/customers/94/images/swl-equipment-807px.jpg" alt="various equipment" />
                                     </div>
                                     <div class="overlay-text">
                                         <h3>Technology &<br/>Equipment Loans</h3>
@@ -51,7 +51,7 @@
                                 </div>
                             </div>
                         </a>
-                    </div-->
+                    </div>
 
                 </div>
             </div>
@@ -62,3 +62,16 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    $(document).ready(function () {
+        var resources = $("#featured-tip-wrapper.resource-highlights .resource-highlight");
+
+        resources.each(function(index){
+            $(this).hide();
+        });
+        
+        resources.filter("[data-id='" + Math.floor(Math.random()*resources.length) + "']").show();
+    });
+</script>
