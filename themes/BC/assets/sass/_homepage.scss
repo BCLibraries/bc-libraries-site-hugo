@@ -521,6 +521,10 @@
     margin: 0;
 }
 
+#featured-tip-wrapper .outro.left{
+    text-align: left;
+}
+
 #featured-tip-wrapper .outro a {
     color: $black-text;
     text-decoration: none;
@@ -542,6 +546,30 @@
     font-size: smaller;
 }
 
+#featured-tip-wrapper {
+    .flexbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        .flex-element {
+            display: flex;
+            flex-grow: 1;
+        }
+    }
+}
+
+/* Welcome students - services highlight */
+
+@media (max-width: 500px) {
+    #featured-tip-wrapper {
+        .flexbox {
+            flex-direction: column;
+        }
+    }
+ }
+
+
 /* Welcome new students */
 
 #welcome-new-students {
@@ -552,14 +580,12 @@
     font-size: large;
 }
 
+/* Visitation/Vaccination alert box */
+
 #visitation-alert {
     background-color: #ffc67c;
     border-bottom: 1px solid #ffbd68;
     border-radius: 8px;
-
-    strong {
-        font-weight: 600;
-    }
 
     #featured-tip-wrapper {
         background-color: inherit;
@@ -571,6 +597,14 @@
             .underline {
                 font-weight: 700;
                 color: #622a27;
+                text-decoration: none;
+                border-bottom: 1px solid #622a27;
+
+                &:hover, &:focus {
+                    color: blue;
+                    text-decoration: none;
+                    border-bottom: 1px solid blue;
+                }
             }
 
             &:last-child {
