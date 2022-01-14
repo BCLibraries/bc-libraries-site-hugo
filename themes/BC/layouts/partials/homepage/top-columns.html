@@ -1,9 +1,11 @@
 <div class="container-fluid" id="services-highlight-container">
+    {{/*
     <div class="container">
         <div class="row">
             {{ partial "homepage/top-column/services-highlight.html" . }}
         </div>
     </div>
+    */}}    
 </div>
 
 <div class="container-fluid" id="top-columns">
@@ -21,15 +23,19 @@
                     {{ partial "homepage/top-column/at-a-glance.html" . }}
                 </div>*/}}
 
+                <div class="col-md-9 col-sm-12 col-xs-12" id="welcome-back-students-container">
+                    {{ partial "homepage/top-column/alerts/visitation-policy.html" . }}
+                </div>
+
                 <div class="col-md-9 col-sm-12 col-xs-12" id="featured-tip-container">
-                    {{ partial "homepage/top-column/alerts/special-oneill-hours-break.html" . }}
+                    {{ partial "homepage/top-column/featured-tips/landing.html" . }}
                 </div>
 
                 {{/*<div class="col-md-9 col-sm-12 col-xs-12" id="welcome-back-students-container">
                     {{ partial "homepage/top-column/alerts/welcome-back-students.html" . }}
                 </div>*/}}
 
-                <div class="col-md-9 col-sm-12 col-xs-12" id="aal-home-container">
+                <div class="col-md-12 col-sm-12 col-xs-12" id="aal-home-container">
                     {{ partial "homepage/top-column/ask-a-librarian.html" . }}
                 </div>
             {{/* END right column */}}

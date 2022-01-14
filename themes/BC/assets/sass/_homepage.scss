@@ -552,6 +552,34 @@
     font-size: large;
 }
 
+#visitation-alert {
+    background-color: #ffc67c;
+    border-bottom: 1px solid #ffbd68;
+    border-radius: 8px;
+
+    strong {
+        font-weight: 600;
+    }
+
+    #featured-tip-wrapper {
+        background-color: inherit;
+        font-size: 17px;
+
+        .intro {
+            padding-bottom: 1rem;
+            
+            .underline {
+                font-weight: 700;
+                color: #622a27;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
 @import 'featured-subject-specialists';
 
 /* Explore collections */
