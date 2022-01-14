@@ -671,7 +671,7 @@
         top: 30px;
         right: 34px;
         text-align: right;
-        font-size: 50px;
+        font-size: 28px;
         font-weight: 400;
         padding: 1rem;
         color: #fff;
@@ -691,18 +691,7 @@
 
 @media (max-width: 767px) {
     #featured-tip-wrapper.resource-highlights {
-        margin-bottom: 2rem;
-        .overlay-text h3 {
-            font-size: 40px;
-        }
-    }
-}
-
-@media (max-width: 500px) {
-    #featured-tip-wrapper.resource-highlights {
-        .overlay-text h3 {
-            font-size: 30px;
-        }
+        margin-bottom: 2rem;      
     }
 }
 
@@ -714,6 +703,13 @@
     }
 }
 
+@media (max-width: 300px) {
+    #featured-tip-wrapper.resource-highlights {
+        .overlay-text h3 {
+            font-size: 16px;
+        }
+    }
+}
 
 @import 'featured-subject-specialists';
 
