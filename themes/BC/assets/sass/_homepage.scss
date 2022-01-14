@@ -589,6 +589,19 @@
 
     padding-bottom: 1em;
 
+    a.underline {
+        font-weight: 700;
+        color: #622a27;
+        text-decoration: none;
+        border-bottom: 1px solid #622a27;
+
+        &:hover, &:focus {
+            color:blue;
+            border-bottom: 1px solid blue;
+        }
+    }
+    
+
     .visitation-alert__heading {
         font-size: 16px;
         line-height: 18px;
@@ -629,6 +642,40 @@
         font-size: 17px;
     }
 }
+
+/* highlight services for students */
+#featured-tip-wrapper {
+
+    .overlay-img {
+        height: 350px;
+        overflow: hidden;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    a.panel-overlay {
+        display: block;
+
+        &:hover, &:focus {
+            outline: 2px solid blue;
+            border-radius: 2px;
+            text-decoration: underline;
+        }
+    }
+
+    .overlay-text h3 {
+        position: absolute;
+        top: 22px;
+        right: 26px;
+        text-align: right;
+        font-size: 50px;
+        font-weight: 400;
+        padding: 1rem;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+}
+
 
 @import 'featured-subject-specialists';
 
