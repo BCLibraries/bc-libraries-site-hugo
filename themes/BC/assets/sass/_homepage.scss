@@ -644,10 +644,10 @@
 }
 
 /* highlight services for students */
-#featured-tip-wrapper {
-
+#featured-tip-wrapper.resource-highlights {
+    
     .overlay-img {
-        height: 350px;
+        max-height: 350px;
         overflow: hidden;
         border-radius: 4px;
         position: relative;
@@ -665,14 +665,45 @@
 
     .overlay-text h3 {
         position: absolute;
-        top: 22px;
-        right: 26px;
+        top: 30px;
+        right: 34px;
         text-align: right;
         font-size: 50px;
         font-weight: 400;
         padding: 1rem;
         color: #fff;
         background-color: rgba(0, 0, 0, 0.85);
+    }
+}
+
+@media (max-width: 991px) {
+    #featured-tip-wrapper.resource-highlights {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #featured-tip-wrapper.resource-highlights {
+        margin-bottom: 2rem;
+        .overlay-text h3 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #featured-tip-wrapper.resource-highlights {
+        .overlay-text h3 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    #featured-tip-wrapper.resource-highlights {
+        .overlay-text h3 {
+            font-size: 20px;
+        }
     }
 }
 
