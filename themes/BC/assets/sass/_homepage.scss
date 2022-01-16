@@ -680,6 +680,14 @@
     }
 }
 
+@media (max-width: 1199px) {
+    #featured-tip-wrapper.resource-highlights {
+        .featured-tip-element {
+            min-height: 331px;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     #featured-tip-wrapper.resource-highlights {
         margin-bottom: 3rem;
