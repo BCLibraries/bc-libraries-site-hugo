@@ -1,7 +1,7 @@
 ---
 title: "Author Talk with Edgardo Miranda-Rodriguez"
 draft: false
-expired: false
+expired: true
 date: 2021-09-17T10:42:50-04:00
 year: "2021"
 slug: "2021-09/edgardo-miranda-rodriguez"

@@ -1,7 +1,7 @@
 ---
 title: "The Day After Yesterday"
 draft: false
-expired: false
+expired: true
 date: 2021-09-10T14:20:20-04:00
 year: "2021"
 slug: ""
