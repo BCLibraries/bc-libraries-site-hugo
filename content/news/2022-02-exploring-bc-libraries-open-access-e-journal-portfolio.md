@@ -11,4 +11,4 @@ imagealt: ""
 type: "news"
 ---
 
-BC Libraries helps publish many open-source online journals, by researchers from undergraduate to seasoned scholars. See how they perform internationally.
+BC Libraries help publish many open-source online journals, by researchers from undergraduate to seasoned scholars. See how they perform internationally.
