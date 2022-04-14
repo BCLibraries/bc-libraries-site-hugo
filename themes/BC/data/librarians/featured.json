@@ -112,6 +112,14 @@
                 "url": "https://libguides.bc.edu/genderportal"
             },
             {
+                "id": "000000",
+                "site_id": "94",
+                "name": "Government Documents",
+                "ordering": "0",
+                "slug": "",
+                "url": "https://libguides.bc.edu/govdocs"
+            },
+            {
                 "id": "12911",
                 "site_id": "94",
                 "name": "Sociology & Anthropology",
@@ -664,10 +672,6 @@
                 "guide_link": "https://libguides.bc.edu/economicsportal"
             },
             {
-                "guide_name": "Finance",
-                "guide_link": "https://libguides.bc.edu/finance"
-            },
-            {
                 "guide_name": "Sports Economics and Administration",
                 "guide_link": "https://libguides.bc.edu/sportseconomics"
             }
@@ -680,14 +684,6 @@
                 "ordering": "0",
                 "slug": "subjects\/economics",
                 "url": "https://libguides.bc.edu/economicsportal"
-            },
-            {
-                "id": "201801",
-                "site_id": "94",
-                "name": "Finance",
-                "ordering": "0",
-                "slug": "subjects\/finance",
-                "url": "https://libguides.bc.edu/finance"
             },
             {
                 "id": "201803",
@@ -704,14 +700,6 @@
                 "ordering": "0",
                 "slug": "subjects\/political-science-government",
                 "url": "https://libguides.bc.edu/polisciportal"
-            },
-            {
-                "id": "000000",
-                "site_id": "94",
-                "name": "Government Documents",
-                "ordering": "0",
-                "slug": "",
-                "url": "https://libguides.bc.edu/govdocs"
             },
             {
                 "id": "133507",
@@ -938,6 +926,14 @@
                 "ordering": "0",
                 "slug": "subjects\/business",
                 "url": "https://libguides.bc.edu/managementportal"
+            },
+            {
+                "id": "201801",
+                "site_id": "94",
+                "name": "Finance",
+                "ordering": "0",
+                "slug": "subjects\/finance",
+                "url": "https://libguides.bc.edu/finance"
             }
         ]
     }
