@@ -1,18 +1,11 @@
 {
   "files": {
-    "main.js": "../theme/bcbento/static/js/main.bce419dd.chunk.js",
-    "main.js.map": "../theme/bcbento/static/js/main.bce419dd.chunk.js.map",
-    "runtime-main.js": "../theme/bcbento/static/js/runtime-main.d47131bb.js",
-    "runtime-main.js.map": "../theme/bcbento/static/js/runtime-main.d47131bb.js.map",
-    "static/js/2.362906f5.chunk.js": "../theme/bcbento/static/js/2.362906f5.chunk.js",
-    "static/js/2.362906f5.chunk.js.map": "../theme/bcbento/static/js/2.362906f5.chunk.js.map",
+    "main.js": "../theme/bcbento/static/js/main.4113e6af.js",
     "index.html": "../theme/bcbento/index.html",
-    "static/js/2.362906f5.chunk.js.LICENSE.txt": "../theme/bcbento/static/js/2.362906f5.chunk.js.LICENSE.txt",
-    "static/media/icon_archives.9b4cb17a.svg": "../theme/bcbento/static/media/icon_archives.9b4cb17a.svg"
+    "static/media/icon_archives.svg": "../theme/bcbento/static/media/icon_archives.9b4cb17afa3de9f4613f71cd6db7f355.svg",
+    "main.4113e6af.js.map": "../theme/bcbento/static/js/main.4113e6af.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.d47131bb.js",
-    "static/js/2.362906f5.chunk.js",
-    "static/js/main.bce419dd.chunk.js"
+    "static/js/main.4113e6af.js"
   ]
 }
