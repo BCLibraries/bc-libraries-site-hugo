@@ -267,6 +267,7 @@
     max-width: 100%;
     max-height: 140px;
     border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
 }
 
 .online-video-thumb__blank_screen {
