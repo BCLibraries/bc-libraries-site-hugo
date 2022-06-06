@@ -618,45 +618,6 @@
         ]
     },
     {
-        "name": "Jiebei Luo",
-        "title": "Data Services Librarian",
-        "department": "Digital Scholarship",
-        "active": true,
-        "profile_id": "215925",
-        "featured_background": "",
-        "featured_background_source": "",
-        "featured_background_caption": "",
-        "featured_background_type": "constellation",
-        "featured_guides": [
-            {
-                "guide_name": "Research Data Services",
-                "guide_link": "https://libguides.bc.edu/dataservices"
-            },
-            {
-                "guide_name": "Dataverse at Boston College",
-                "guide_link": "https://libguides.bc.edu/dataverse"
-            },
-            {
-                "guide_name": "US Data and Statistics Sources",
-                "guide_link": "https://libguides.bc.edu/communityanalysis"
-            },
-            {
-                "guide_name": "Research Data Services: Data Management",
-                "guide_link": "https://libguides.bc.edu/dataservices/datamanagement"
-            }
-        ],
-        "subjects": [
-            {
-                "id": "12903",
-                "site_id": "94",
-                "name": "Data Services",
-                "ordering": "0",
-                "slug": "subjects\/data",
-                "url": "https://libguides.bc.edu/dataservices"
-            }
-        ]
-    },
-    {
         "name": "Jason Hall",
         "title": "Liaison Librarian",
         "department": "Collection Development & Research",
