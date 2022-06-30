@@ -6,6 +6,8 @@ BENTO_THEME_DIR=${THEME_DIR}/static/bcbento
 STATIC_THEME_DIR=${BENTO_THEME_DIR}/static
 JS_THEME_DIR=${STATIC_THEME_DIR}/js
 MEDIA_THEME_DIR=${STATIC_THEME_DIR}/media
+
+# The Hugo layout file for the search page.
 SEARCH_LAYOUT=${THEME_DIR}/layouts/search/search.html.html
 
 #Options
@@ -29,7 +31,9 @@ function main() {
 
 # Something went wrong.
 function error_exit() {
-  echo "$1" 1>&2
+  RED='\033[0;31m'
+  NC='\033[0m' # No Color
+  printf "${RED}ERROR: $1${NC}\n" 1>&2
   exit 1
 }
 
@@ -115,8 +119,7 @@ function copy_build_files() {
   echo "Copy over new js directory..."
   cp -r "${path_to_client}"/build/static/js "${STATIC_THEME_DIR}" || error_exit "Couldn't copy js directory"
 
-    cp -r "${path_to_client}"/build/static/media "${STATIC_THEME_DIR}" || error_exit "Couldn't copy media directory"
-
+  cp -r "${path_to_client}"/build/static/media "${STATIC_THEME_DIR}" || error_exit "Couldn't copy media directory"
 
   echo "Copy over new stray javascript and json..."
   cp "${path_to_client}"/build/*js* "${BENTO_THEME_DIR}" || error_exit "Couldn't copy stray js"
@@ -124,21 +127,28 @@ function copy_build_files() {
 
 # Update the Hugo search layout document to reflect the new javascript files.
 function update_search_layout() {
+
   echo "Update search layout..."
   build_index_path=${path_to_client}/build/index.html
   if [ ! -f "$build_index_path" ]; then
     error_exit "${build_index_path}: Build index.html not found"
   fi
 
+  # Each new version of the application javascript has a unique fingerprint
+  # in the filename (e.g. main.1f0329df.js). Find that file in the built 
+  # index.html file and use it to fill in the value in the search page 
+  # layout.
   build_index=$(cat "${build_index_path}")
-  pattern='\/([^/]*.chunk.js).*\/([^/]*.chunk.js)'
+  pattern='\/main.([^/]*).js'
 
   [[ "$build_index" =~ $pattern ]]
-  loader_chunk=${BASH_REMATCH[1]}
-  main_chunk=${BASH_REMATCH[2]}
+  main_fingerprint=${BASH_REMATCH[1]}
+  if [ -z "$main_fingerprint" ]; then
+   error_exit "Could not find main javascript fingerprint in index.html"
+  fi
 
-  sed -i '' -e "s/[0-9]\.[^/]*.chunk.js/$loader_chunk/" "$SEARCH_LAYOUT"
-  sed -i '' -e "s/main\.[^/]*.chunk.js/$main_chunk/" "$SEARCH_LAYOUT"
+
+  sed -i '' -e "s/main\.[^/]*\.js/main.$main_fingerprint.js/" "$SEARCH_LAYOUT"
 }
 
 main "$@"
