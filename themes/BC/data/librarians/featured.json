@@ -130,41 +130,6 @@
         ]
     },
     {
-        "name": "Tiffeni Fontno MLIS, M.Ed.",
-        "title": "Head, Educational Resource Center",
-        "department": "Educational Resource Center",
-        "active": true,
-        "profile_id": "106904",
-        "featured_background": "",
-        "featured_background_source": "",
-        "featured_background_caption": "",
-        "featured_background_type": "triangles",
-        "featured_guides": [
-            {
-                "guide_name": "Education Resource Center (ERC)",
-                "guide_link": "https://libguides.bc.edu/erc"
-            },
-            {
-                "guide_name": "Open Education Resources (OER): K-12 Curriculum",
-                "guide_link": "https://libguides.bc.edu/oerk12"
-            },
-            {
-                "guide_name": "iPads in Education",
-                "guide_link": "https://libguides.bc.edu/edipads"
-            }
-        ],
-        "subjects": [
-            {
-                "id": "163549",
-                "site_id": "94",
-                "name": "Education K-12 curriculum (ERC)",
-                "ordering": "0",
-                "slug": "subjects\/education-k12",
-                "url": "https://libguides.bc.edu/erc"
-            }
-        ]
-    },
-    {
         "name": "Enid Karr",
         "title": "Senior Research Librarian/Bibliographer",
         "department": "Collection Development & Research",
