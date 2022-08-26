@@ -2,7 +2,7 @@
 title: "Boston College Libraries: A Sanctuary of Learning"
 draft: false
 expired: false
-date: 2022-08-26T22:22:07-04:00
+date: 2022-08-28T22:22:07-04:00
 year: "2022"
 slug: "2022-08/sanctuary-of-learning"
 destination: "https://library.bc.edu/newsletter/?p=2137"
