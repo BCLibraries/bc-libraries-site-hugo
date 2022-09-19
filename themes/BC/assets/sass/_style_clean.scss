@@ -116,6 +116,12 @@ hr {
     margin-top: 0;
 }
 
+.panel-body h2:first-child,
+.panel-body h3:first-child,
+.panel-body h4:first-child,
+#megamenu .h3style,
+#megamenu .h4style {margin-top: .25rem;}
+
 ul, ol {
     margin: 0 0 10px 0;
     padding: 0 0 0 30px;
