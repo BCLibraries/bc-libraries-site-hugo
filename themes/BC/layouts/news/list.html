@@ -17,7 +17,7 @@
 
     {{/* Loop over recent years and show news stories. */}}
     {{ $News := . }}
-    {{ range slice "2021" "2020" "2019" "2018" "2017" }}
+    {{ range slice "2022" "2021" "2020" "2019" "2018" "2017" }}
     <h3>{{ . }}</h3>
     <div class="news-archives row">
         {{ range where $News.Pages ".Params.year" . }}
