@@ -514,3 +514,7 @@ ol.faq-results-list {
 .finding-aid-link .fa-external-link {
     margin-left: .25em;
 }
+
+.item-info__instructions a {
+    font-weight: 600;
+}
