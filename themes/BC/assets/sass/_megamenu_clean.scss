@@ -284,6 +284,10 @@
      border-right: 0;
      padding: 0 25px;
  }
+ .occupancy-link {
+     margin-top: 1rem;
+     text-align: right;
+ }
  @media ( max-width: 767px ) {
      .menu_list, .ask_list {
          /*list-style: none outside none;
