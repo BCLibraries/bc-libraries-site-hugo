@@ -1,0 +1,77 @@
+#explore-collections {
+    height: auto;
+    background: $white-body;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 9px solid $bc-primary-light-gold;
+
+    h2 {
+        color: $black-text;
+    }
+    .row {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .collections-box-container {
+        margin-top: 2rem;
+    }
+    .collections-box {
+        margin: 0 0 2.5rem 0;
+        position: relative;
+
+        a {
+            display: block;
+
+            &:hover,
+            &:focus {
+                text-decoration:none;
+
+                img {
+                    opacity:1;
+                }
+            }
+
+            img {
+                -webkit-transition: all 0.7s ease;
+                transition: all 0.7s ease;
+                opacity: .85;
+                display: block;
+            }
+        }
+    }
+
+    .collection-department,
+    .collection-name {
+        color: $white-text;
+        line-height: 1.2;
+    }
+    .collection-name {
+        font-size: 18px;
+        min-height: 4.75rem;
+    }
+    .collection-image img {
+        width: 100%;
+    }
+
+    /* set the header color based on department class */
+    .collection-description {
+        padding: 1.25rem 1rem 1.25rem 1.25rem;
+        background-color: #c06626;
+        color: $white-text;
+    }
+    .digital-scholarship .collection-description {
+        background-color: #204375;
+    }
+    .escholarship .collection-description {
+        background-color: #c06626
+    }
+    .digital-collections .collection-description {
+        background-color: #467282;
+    }
+}
+
+@media (max-width: 425px) {
+    #explore-collections .collections-box {
+        width: 100%;
+    }
+}

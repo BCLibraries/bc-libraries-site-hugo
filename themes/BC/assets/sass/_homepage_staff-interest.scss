@@ -1,0 +1,62 @@
+/* TODO: possibly unused */
+#staff-interest {
+    background-color: $white-body;
+    position: relative;
+    padding-bottom: 1rem;
+}
+#staff-interest .photo-list {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+#staff-interest .photo-panel img {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    min-height: 159px;
+}
+#staff-interest .photo-panel .caption {
+    padding: .5rem;
+    font-style: italic;
+    text-align: right;
+}
+#staff-interest .blockquote {
+    margin: 2rem 0;
+}
+
+@media (min-width: 1200px) {
+    #staff-interest .photo-list .photo-panel:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    #staff-interest .photo-list img {
+        min-height: 126px;
+    }
+}
+
+@media (max-width: 991px) {
+    #staff-interest {
+        margin-top: 3rem;
+    }
+    #staff-interest .photo-list img {
+        min-height: 159px;
+    }
+}
+@media (max-width: 767px) {
+    #staff-interest .photo-list img {
+        min-height: auto;
+    }
+}
+@media (max-width: 525px) {
+    #staff-interest .photo-list img {
+        min-height: auto;
+    }
+    #staff-interest .photo-panel {
+        width: 100%;
+    }
+    #staff-interest .photo-list .photo-panel:nth-last-of-type(-n+2) {
+        display: none;
+    }
+}

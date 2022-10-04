@@ -1,0 +1,91 @@
+/* Social Media Highlight */
+#socialmedia-highlight {
+    .highlight-title h2 {
+        margin: 0 0 3rem 0;
+        color: $white-text;
+        display: inline-block;
+    }
+
+    .leftBottom .container-fluid .pull-right .content, 
+    .leftTop .container-fluid .pull-right .content, 
+    .rightTop .container-fluid .pull-right .content, 
+    .rightBottom .container-fluid .pull-right .content {
+        color: $white-text;
+        display: table;
+        padding: 20px 30px;
+        max-width: 50%;
+        background: rgba(0, 0, 0, 0.875);
+    }
+
+    .content-body {
+        margin-top: 2rem;
+        line-height: 1.6;
+
+        .label {
+            padding: 2rem 0 0 0;
+            font-size: 100%;
+            color: #aaa;
+        }
+        a {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        .image-attribution {
+            font-size: small;
+            margin-top: 4rem;
+        }
+    }
+
+    .connect-button {
+        margin-top: 3rem;
+    }
+}
+
+
+/*                                  */
+/* Styling for specific collections */
+/*                                  */
+
+/* digital collections highlight */
+/*
+#digcol-highlight {
+    width: 100%;
+    min-height: 150px;
+    height: 600px;
+    background: url("https://library.bc.edu/images/sc_bg_02_med.jpg") no-repeat 50% 50% $very-dark-gray;
+    background-size: auto auto;
+    color: $white-text;
+    padding: 55px 0;
+    z-index: 2;
+    background-size: cover;
+
+    .container-fluid .pull-right .content {
+        max-width: 50%;
+    }
+}
+*/
+
+/* digital scholarship highlight */
+/*
+#ds-highlight {
+    display: inline-block;
+    width: 100%;
+    min-height: 150px;
+    height: 600px;
+    background: url("https://library.bc.edu/images/digitalscholashipbg-morales.jpg") no-repeat 100% 50% $very-dark-gray;
+    background-size: auto auto;
+    border-top: 1px solid $very-light-gray;
+    border-bottom: 1px solid $very-light-gray;
+    color: $white-text;
+    padding: 55px 0;
+    z-index: 2;
+    background-size: cover;
+}
+*/
+
+/* custom for DS morales project */
+/*
+#ds-highlight.rightBottom .container-fluid .pull-right .content {
+    background: rgba(0, 0, 0, 0.80) !important;
+}
+*/

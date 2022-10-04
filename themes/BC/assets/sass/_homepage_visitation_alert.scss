@@ -1,0 +1,74 @@
+#visitation-alert {
+    background-color: #f8c21c;
+    border-bottom: 1px solid #f8c21c;
+    border-radius: 8px;
+
+    #visitation-alert-wrapper {
+        padding: 1.25rem;
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        a.underline {
+            font-weight: 700;
+            color: #622a27;
+            text-decoration: none;
+            border-bottom: 1px solid #622a27;
+    
+            &:hover, &:focus {
+                color:blue;
+                border-bottom: 1px solid blue;
+            }
+        }
+    
+        .visitation-alert__heading {
+            h2 {
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 600;
+                padding: 0;
+                vertical-align: middle;
+            }
+    
+            .visitation-alert__date {
+                font-size: 12px;
+            }
+        }
+    
+        .visitation-alert__content {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    
+        .visitation-alert__link {
+            text-align: right;
+        }
+    
+        .visitation-alert__dismiss { 
+            text-align: right;
+    
+            button {
+                background: none!important;
+                border: none;
+                padding: 0!important;
+                font-family: arial, sans-serif;
+                color: #069;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    #visitation-alert {
+        #visitation-alert-wrapper {
+            .visitation-alert__heading {
+                h2 {
+                    padding-bottom: .75rem;
+                }
+            }
+        }
+    }
+}
