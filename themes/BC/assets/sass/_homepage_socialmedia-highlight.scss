@@ -80,51 +80,33 @@
     }
 }
 
+// TODO: clean up the following styles
+.content .btn.btn-default, #db-rg-hours .btn, #exhibit-highlight .btn {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #555;
+    /*text-transform: uppercase;*/
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 0px solid #ddd;
+    white-space: normal;
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+}
+ 
+.content .btn.btn-blue, #db-rg-hours .btn.btn-blue, #exhibit-highlight .btn.btn-blue {
+	color: #dddddd;
+    background: #204375;
+}
 
-/*                                  */
-/* Styling for specific collections */
-/*                                  */
-
-/* digital collections highlight */
-/*
-#digcol-highlight {
-    width: 100%;
-    min-height: 150px;
-    height: 600px;
-    background: url("https://library.bc.edu/images/sc_bg_02_med.jpg") no-repeat 50% 50% $very-dark-gray;
-    background-size: auto auto;
+.content .btn.btn-blue:hover, #db-rg-hours .btn.btn-blue:hover, #exhibit-highlight .btn.btn-blue:hover {
     color: $white-text;
-    padding: 55px 0;
-    z-index: 2;
-    background-size: cover;
-
-    .container-fluid .pull-right .content {
-        max-width: 50%;
-    }
+    background: #1d3c68;
 }
-*/
-
-/* digital scholarship highlight */
-/*
-#ds-highlight {
-    display: inline-block;
-    width: 100%;
-    min-height: 150px;
-    height: 600px;
-    background: url("https://library.bc.edu/images/digitalscholashipbg-morales.jpg") no-repeat 100% 50% $very-dark-gray;
-    background-size: auto auto;
-    border-top: 1px solid $very-light-gray;
-    border-bottom: 1px solid $very-light-gray;
-    color: $white-text;
-    padding: 55px 0;
-    z-index: 2;
-    background-size: cover;
-}
-*/
-
-/* custom for DS morales project */
-/*
-#ds-highlight.rightBottom .container-fluid .pull-right .content {
-    background: rgba(0, 0, 0, 0.80) !important;
-}
-*/

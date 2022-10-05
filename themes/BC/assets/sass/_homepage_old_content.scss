@@ -1,41 +1,9 @@
 @charset "utf-8";
 
 
-/*#db-rg-hours .list-group {
-	margin-bottom: 0px;
-}*/
-
-/* BUTTON STYLING */
-
-.content .btn.btn-default, #db-rg-hours .btn, #exhibit-highlight .btn {
-    padding: 12px;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    color: #555;
-    /*text-transform: uppercase;*/
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 0px solid #ddd;
-    white-space: normal;
-    transition: .2s;
-    -moz-transition: .2s;
-    -webkit-transition: .2s;
-}
- 
-.content .btn.btn-blue, #db-rg-hours .btn.btn-blue, #exhibit-highlight .btn.btn-blue {
-	color: #dddddd;
-    background: #204375;
-}
-
-.content .btn.btn-blue:hover, #db-rg-hours .btn.btn-blue:hover, #exhibit-highlight .btn.btn-blue:hover {
-    color: $white-text;
-    background: #1d3c68;
-}
+//
+// Exhibition highlight section
+//
 
 .row.nobottom {
 	padding-bottom: 0px;
@@ -44,8 +12,6 @@
 .row.notop {
 	padding-top: 0px;
 }
-
-/* HOMEPAGE EXHIBIT ROW STYLING */
 
 .homepagerefresh #exhibit-highlight {
 	display: inline-block;
@@ -120,7 +86,6 @@ a.current-exhibits-title {
 	}
 }
 
-/* EXHIBIT SLIDER OVERWRITES */
 #exhibit-highlight .carousel {
 	margin-bottom: 3em;
 	max-width: 75%;
@@ -137,7 +102,82 @@ a.current-exhibits-title {
 }
 
 
-/* MEDIA QUERIES */
+//
+// Digital Scholarship highlight section
+//
+
+#digcol-highlight {
+    width: 100%;
+    min-height: 150px;
+    height: 600px;
+    background: url("https://library.bc.edu/images/sc_bg_02_med.jpg") no-repeat 50% 50% $very-dark-gray;
+    background-size: auto auto;
+    color: $white-text;
+    padding: 55px 0;
+    z-index: 2;
+    background-size: cover;
+
+    .container-fluid .pull-right .content {
+        max-width: 50%;
+    }
+}
+
+#ds-highlight {
+    display: inline-block;
+    width: 100%;
+    min-height: 150px;
+    height: 600px;
+    background: url("https://library.bc.edu/images/digitalscholashipbg-morales.jpg") no-repeat 100% 50% $very-dark-gray;
+    background-size: auto auto;
+    border-top: 1px solid $very-light-gray;
+    border-bottom: 1px solid $very-light-gray;
+    color: $white-text;
+    padding: 55px 0;
+    z-index: 2;
+    background-size: cover;
+}
+
+/* custom for DS morales project */
+#ds-highlight.rightBottom .container-fluid .pull-right .content {
+    background: rgba(0, 0, 0, 0.80) !important;
+}
+
+#ds-highlight .content h3,
+#digcol-highlight .content h3 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-weight: 200;
+    line-height: 1.25;
+}
+
+#ds-highlight .content h3 a,
+#digcol-highlight .content h3 a {
+    color: $white-text;
+    border-bottom: 1px solid $white-body;
+}
+
+#ds-highlight .content h3 a:hover,
+#ds-highlight .content h3 a:focus,
+#digcol-highlight .content h3 a:hover,
+#digcol-highlight .content h3 a:focus {
+    color: $bc-primary-light-gold;
+    border-bottom: 1px solid $bc-primary-light-gold;
+    text-decoration: none;
+}
+
+
+//
+// Faculty Publication highlights section
+//
+
+#facpub h2 a {
+    font-size: 24px;
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+
+
+// Media queries
 @media (max-width: 767px) {
 	.exhibit-right {
 		display: none;
@@ -149,7 +189,6 @@ a.current-exhibits-title {
 		display: none;
 	}
 }
-
 
 @media (max-width: 480px) {
 	.carousel-indicators {

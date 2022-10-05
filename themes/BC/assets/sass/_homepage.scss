@@ -114,6 +114,8 @@
 /* Social Media Highlight section */
 @import 'homepage_socialmedia-highlight';
 
+/* Exhibitions & Digital Scholarship highlight & Faculty Publication highlight sections */
+/* @import 'homepage_old-content'; */
 
 /* Welcome Back Students alert */
 #welcome-back-students-container {
@@ -144,6 +146,26 @@
     }
 }
 
+// Hero image caption
+.caption-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2px 10px;
+    background-color: rgba(16, 14, 15, .85);
+    color: $white-text;
+    font-size: 12px;
+    font-weight: 200;
+
+    a {
+        color: $white-text;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
 
 @media (min-width: 768px) {
     #header {

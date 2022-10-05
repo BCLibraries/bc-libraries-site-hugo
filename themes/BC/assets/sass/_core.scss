@@ -37,35 +37,6 @@ a {
     height: auto;
 }
 
-#facpub h2 a {
-    font-size: 24px;
-    border-bottom: 1px solid;
-    text-decoration: none;
-}
-
-#ds-highlight .content h3,
-#digcol-highlight .content h3 {
-    margin: 0 0 20px 0;
-    padding: 0;
-    font-weight: 200;
-    line-height: 1.25;
-}
-
-#ds-highlight .content h3 a,
-#digcol-highlight .content h3 a {
-    color: $white-text;
-    border-bottom: 1px solid $white-body;
-}
-
-#ds-highlight .content h3 a:hover,
-#ds-highlight .content h3 a:focus,
-#digcol-highlight .content h3 a:hover,
-#digcol-highlight .content h3 a:focus {
-    color: $bc-primary-light-gold;
-    border-bottom: 1px solid $bc-primary-light-gold;
-    text-decoration: none;
-}
-
 /*  boostrap overrides  */
 //.row {
 //    padding-top: 1em;
@@ -104,28 +75,6 @@ a {
         overflow: visible;
         background-color: $white-body;
         padding: 4px;
-    }
-}
-
-
-// Image captions
-.caption-link {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 2px 10px;
-    background-color: rgba(16, 14, 15, .85);
-    color: $white-text;
-    font-size: 12px;
-    font-weight: 200;
-
-    a {
-        color: $white-text;
-
-        &:hover,
-        &:focus {
-            text-decoration: underline;
-        }
     }
 }
 
