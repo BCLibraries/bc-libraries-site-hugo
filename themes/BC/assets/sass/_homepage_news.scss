@@ -89,7 +89,12 @@
     width: 100%;
 }
 
-@media (max-width: 1199px) {
+
+@media ( max-width: 1199px ) {
+    #db-rg-hours h2 {
+        line-height: 1.3;
+    }
+
     .news-section-unsafe-html-embed {
         height: 303px;
     }
@@ -99,77 +104,14 @@
     .news-section-unsafe-html-embed {
         height: 230px;
     }
-}
 
-/*
-#db-rg-hours {
-    padding-top: 0rem;
-    padding-bottom: 2rem;
-}
-#news .news-content-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-#news .news-content-row:before,
-#news .news-content-row:after {
-    display:none!important;
-}
-#news .news-content {
-    display: flex; 
-}
-#news .news-content:before,
-#news .news-content:after {
-    display:none!important;
+    #news {
+        padding-bottom: 0em;
+    }
 
-#news .news-content a, .news-section-unsafe-html-story {
-    display: block;
-    color: inherit;
+    #news .more-news {
+        text-align: center;
+        margin-top: -1em;
+        /*margin-bottom: 2em;*/
+    }
 }
-.news-section-unsafe-html-story {
-    width: 100%;
-}
-.news-section-unsafe-html-embed {
-    height: 370px;
-    width: 100%;
-}
-#news .news-content a:hover,
-#news .news-content a:focus {
-    text-decoration: none;
-    color: inherit;
-}
-#news .news-content .news-section-text {
-    padding: 0 .25rem .25rem .25rem;
-    line-height: 1.6;
-}
-#news .news-content .news-section-text .news-section-date {
-    font-weight: 600;
-    margin: .5rem 0 .25rem 0;
-    color: #a25729;
-}
-#news .news-content .news-section-text .news-section-title {
-    font-weight: 400;
-    line-height: 1.5;
-    margin: .25rem 0;
-}
-#news .news-content.news-content-large .news-section-text .news-section-title {
-    font-size: 2rem;
-}
-#news .news-content a:hover .news-section-title,
-#news .news-content a:focus .news-section-title {
-    text-decoration: underline;
-}
-#news .news-content a:hover,
-#news .news-content a:focus {
-    opacity: .8;
-} 
-#news .news-content a:focus {
-    outline: 1px solid blue;
-    outline-offset: 0;
-}
-#news .news-content img {
-    width: 100%;
-}
-#db-rg-hours.container {
-    display: flex;
-}
-*/

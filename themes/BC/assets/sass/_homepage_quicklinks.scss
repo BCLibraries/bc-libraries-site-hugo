@@ -26,6 +26,18 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    #quick-links .quick-link-block {
+        height: 128px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #quick-links .quick-link-block {
+        height: 184px;
+    }
+}
+
 @media (max-width: 991px) {
     #quick-links.ql {
         height: auto;

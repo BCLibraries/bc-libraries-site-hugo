@@ -69,6 +69,20 @@
     }
 }
 
+#header {
+    /*background: #ccc url("https://library.bc.edu/images/hero01.jpg") 0 70%; /* CHANGE BACKGROUND SEASONALLY */
+    /*height: 380px;
+    background-size: cover;
+    padding-top: 0px;
+    position: relative;*/
+
+    padding-bottom: 4rem;
+    padding-top: 80px;
+    background-color: #467282;
+}
+
+/* Search bar component */
+@import 'homepage_search-bar';
 
 /* Services Highlight section */
 /*@import 'homepage_services-highlight';*/
@@ -130,6 +144,13 @@
     }
 }
 
+
+@media (min-width: 768px) {
+    #header {
+        padding-top: 80px;
+        height: 320px;
+    }
+}
 
 
 /*                                                                      */

@@ -6,6 +6,45 @@
         display: inline-block;
     }
 
+    .leftBottom,
+    .leftTop,
+    .rightTop,
+    .rightBottom {
+        position: relative;
+    }
+
+    .leftBottom .container-fluid .pull-right,
+    .leftTop .container-fluid .pull-right,
+    .rightTop .container-fluid .pull-right,
+    .rightBottom .container-fluid .pull-right {
+        position: absolute;
+    }
+
+    .leftTop .container-fluid .pull-right {
+        left: 0px;
+        top: 20px;
+    }
+
+    .rightTop .container-fluid .pull-right {
+        top: 20px;
+        right: 0px;
+    }
+
+    .leftBottom .container-fluid .pull-right {
+        left: 0px;
+        bottom: 20px;
+    }
+
+    .rightBottom .container-fluid .pull-right {
+        bottom: 20px;
+        right: 0px;
+    }
+
+    .rightTop .container-fluid .pull-right .content,
+    .rightBottom .container-fluid .pull-right .content {
+        float: right;
+    }
+
     .leftBottom .container-fluid .pull-right .content, 
     .leftTop .container-fluid .pull-right .content, 
     .rightTop .container-fluid .pull-right .content, 

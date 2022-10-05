@@ -534,6 +534,10 @@
     .library-boxes .panel-body .panel-heading .media .media-left {
         display: none;
     }
+
+    .navbar-brand {
+        display: none;
+    }
 }
 
 @media ( max-width: 991px ) and ( min-width: 768px ) {
@@ -547,6 +551,11 @@
 @media (min-width: 768px) {
     .megamenu-container #megamenu-refresh .navbar-default .accounts-link-mobile {
         display: none;
+    }
+
+    .navbar-nav {
+        float: right;
+        margin: 0;
     }
 }
 

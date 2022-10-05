@@ -1,0 +1,479 @@
+@charset "utf-8";
+
+html {
+    background-color: #501315;
+}
+
+body {
+    background: $white-body 0% 0%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: $black-text;
+    font-size: 15px;
+    padding: 0;
+    line-height: 1.75;
+
+    &.body-modal {
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+}
+
+a {
+    color: $bc-blue-link; /* BC link color */
+}
+
+
+/* top-level maroon bar */
+@import 'core_bc-header';
+
+/* Ask A Librarian component */
+@import 'core_ask-a-librarian';
+
+
+.container-fluid .pull-right {
+    height: auto;
+}
+
+#facpub h2 a {
+    font-size: 24px;
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+
+#ds-highlight .content h3,
+#digcol-highlight .content h3 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-weight: 200;
+    line-height: 1.25;
+}
+
+#ds-highlight .content h3 a,
+#digcol-highlight .content h3 a {
+    color: $white-text;
+    border-bottom: 1px solid $white-body;
+}
+
+#ds-highlight .content h3 a:hover,
+#ds-highlight .content h3 a:focus,
+#digcol-highlight .content h3 a:hover,
+#digcol-highlight .content h3 a:focus {
+    color: $bc-primary-light-gold;
+    border-bottom: 1px solid $bc-primary-light-gold;
+    text-decoration: none;
+}
+
+/*  boostrap overrides  */
+//.row {
+//    padding-top: 1em;
+//    padding-bottom: 1em;
+//}
+
+
+// Accessibility text
+.accessibility-text {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+
+// Skiplink
+#skiplink {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+
+    &:active,
+    &:focus,
+    &:hover {
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        background-color: $white-body;
+        padding: 4px;
+    }
+}
+
+
+// Image captions
+.caption-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2px 10px;
+    background-color: rgba(16, 14, 15, .85);
+    color: $white-text;
+    font-size: 12px;
+    font-weight: 200;
+
+    a {
+        color: $white-text;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+// LibAnswers widgets
+div#s-la-widget-5468 {
+    max-width: 800px;
+    margin: 16px auto;
+    font-family: "Open sans", sans-serif;
+}
+div#s-la-widget-5468 #s-la-askform-section-5494 {
+    display: none;
+}
+.megamenu-container .libraryh3lp > a.chat-link {
+    font-weight: 600;
+}
+
+
+// Blockquotes
+.blockquote {
+    padding: 0px;
+    position: relative;
+    font-family: "Utopia-italic";
+
+    &:before,
+    &:after {
+        position: absolute;
+        font-family: 'FontAwesome';
+        line-height: 1;
+        font-size: 60px;
+        color: rgba(0,0,0,0.08);
+    }
+
+    &:before {
+        top: -1rem;
+        content:"\f10d";
+    }
+
+    &:after {
+        right: 0;
+        top: 2rem;
+        content:"\f10e";
+    }
+
+    .quote {
+        padding: .5rem 1rem 0 1rem;
+        font-family: "Utopia-italic";
+        font-size: 19px;
+        line-height: 1.25;
+        text-align: center;
+    }
+
+    .quoted {
+        padding: 0 1rem;
+        font-style: italic;
+        text-align: right;
+        line-height: 1.2;
+    }
+}
+
+
+// Hours alert message that appears in the mega menu and footer
+.alert-hours {
+    margin-bottom:1rem;
+    padding: 1rem;
+}
+.alert-hours a, .alert-hours a:hover, #lib-footer .alert-hours a, #lib-footer .alert-hours a:hover {
+    color: darkslateblue;
+    font-weight: 700;
+}
+#lib-footer .alert-hours {
+    padding: .5rem 1rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+
+// Responsive videos
+.video-container {
+    position: relative;
+    max-width: 853px;
+    max-height: 480px;
+    margin: 0 auto;
+}
+
+@media ( max-width: 1199px ) {
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        max-width: 853px;
+        max-height: 480px;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* media query overrides */
+@media (max-width: 991px) {
+    #facpub img.bookcover {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .row.equal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-fluid .pull-right {
+        left: auto !important;
+        top: auto !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        position: absolute;
+    }
+
+    .container-fluid .pull-right .content {
+        padding: 15px 15px !important;
+        max-width: 100% !important;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        bottom: auto;
+        right: auto;
+        left: auto;
+    }
+
+    #scholarship .row {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .caption-link {
+        display: none;
+    }
+
+    #header {
+        /* CHANGE BACKGROUND SEASONALLY */
+        /*background-image: url("https://library.bc.edu/images/hero01-small2.jpg");
+        height: 322px;*/
+    }
+}
+
+@media (max-width: 480px) {
+    .col-xxs {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media print {
+    body {
+        font-size: large;
+    }
+
+    body:before {
+        content: "Boston College Libraries " !important;
+        font-size: 2em;
+        font-weight: normal;
+    }
+
+    a:after {
+        content:" (" attr(href) ") " !important;
+        font-size: 0.8em;
+        font-weight: normal;
+        word-wrap: break-word;
+    }
+
+    p {
+        page-break-inside: avoid;
+    }
+
+    .view-mode .s-lib-box .s-lib-box-title {
+        font-size: large;
+    }
+
+    #midlevelcontainer-refresh {
+        margin-top: 0 !important;
+    }
+
+    #bclib-header,
+    .megamenu-container,
+    iframe,
+    a[name=s-lg-guide-main],
+    #s-lg-guide-tabs,
+    #s-lib-scroll-top,
+    #s-lib-footer-login-link {
+        display: none !important;
+    }
+
+    .s-lg-guide-body [class*="col-"] {
+        float: left; 
+        width: 100%;
+    }
+
+    /*  homepage only styles */
+    #db-rg-hours h2,
+    #db-rg-hours h2 a,
+    #ds-highlight h3,
+    #ds-highlight h3 a,
+    #exhibit-highlight h2,
+    #exhibit-highlight h2 a,
+    #scholarship h2,
+    #scholarship h2 a,
+    #exhibit-highlight h2,
+    #exhibit-highlight h2 a,
+    #facpub h2,
+    #facpub h2 a,
+    #digcol-highlight h3,
+    #digcol-highlight h3 a {
+        font-size: 22px !important;
+        font-weight: normal !important;
+        letter-spacing: 1px !important;
+        color: $black-text !important;
+        text-decoration: none !important;
+        margin: 0 0 1em 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+    }
+
+    .mainhomepage .container,
+    .mainhomepage .container-fluid {
+        width: 100% !important;
+    }
+
+    .mainhomepage #header,
+    .mainhomepage #storybox {
+        display: none;
+    }
+
+    #db-rg-hours h2 {
+        margin: 0 !important;
+    }
+
+    #db-rg-hours h2:last-child {
+        padding-top: 1em !important;
+    }
+
+    #news {
+        display: none;
+    }
+
+    #quick-links {
+        border-top: 1px solid $very-light-gray;
+        border-bottom: 1px solid $very-light-gray;
+        padding: 1em 0;
+    }
+
+    #quick-links .quick-link-block {
+        text-align: left;
+        padding: .25em 0 !important;
+    }
+
+    #ds-highlight {
+        height: auto !important;
+        padding: 0 !important;
+        text-align: left !important;
+    }
+
+    #ds-highlight [class*="col-"] {
+        position: relative !important;
+        text-align: left !important;
+    }
+
+    #ds-highlight .content {
+        padding: 0;
+    }
+
+    .mainhomepage .embed-responsive {
+        display: none;
+    }
+
+    #scholarship {
+        text-align: left !important;
+    }
+
+    #exhibit-highlight .carousel-control,
+    #exhibit-highlight img.exhibit-poster,
+    #exhibit-highlight .carousel-indicators,
+    #exhibit-highlight .exhibit-right {
+        display: none;
+    }
+
+    #exhibit-highlight .exhibit-box {
+        padding: 0 !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+
+    #exhibit-highlight .exhibit-box .btn {
+        padding: 0;
+    }
+
+    #exhibit-highlight .carousel {
+        margin-bottom: 0 !important;
+    }
+
+    #exhibit-highlight .col-md-offset-2 {
+        margin-left: 0 !important;
+    }
+
+    #facpub {
+        text-align: left !important;
+    }
+
+    #facpub .more-link {
+        text-align: left !important;
+    }
+
+    #digcol-highlight {
+        height: auto !important;
+        padding: 0 !important;
+        border-top: 1px solid $very-light-gray;
+        border-bottom: 1px solid $very-light-gray;
+        text-align: left !important;
+    }
+
+    #digcol-highlight [class*="col-"] {
+        position: relative !important;
+    }
+
+    #digcol-highlight .content {
+        padding: 1.5em 0 0 0;
+    }
+}
+
+/* Hide beta bento feedback link */
+.tell-us {
+    display: none;
+}
