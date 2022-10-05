@@ -14,7 +14,7 @@
         </div>
     {{ else }}
     <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">                     
-        <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}">
+        <img src="{{ .Site.Params.imageBaseURL }}/{{ .Params.type }}/{{ .Params.imagethumb }}" alt="{{ .Params.imagealt }}" loading="lazy">
         <div class="news-section-text">
             {{/*<div class="news-section-date">{{ .Date.Format "Mon Jan 2, 2006" }}</div>*/}}
             <div class="news-section-title">{{ .Title | safeHTML }}</div>
