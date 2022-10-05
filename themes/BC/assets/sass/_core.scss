@@ -26,11 +26,20 @@ a {
 }
 
 
-/* top-level maroon bar */
+// Maroon bar
 @import 'core_bc-header';
 
-/* Ask A Librarian component */
+// Megamenu
+@import 'core_megamenu';
+
+// Ask A Librarian component
+@import 'core_notification';
+
+// Ask A Librarian component
 @import 'core_ask-a-librarian';
+
+// Footer
+@import 'core_footer';
 
 
 .container-fluid .pull-right {
