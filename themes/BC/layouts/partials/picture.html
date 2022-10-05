@@ -1,0 +1,25 @@
+{{/* Render a <picture> element with AVIF and WEBP options */}}
+
+{{/* Parameters  */}}
+{{/* base - the image URL after https://library.bc.edu/images/ and without the extension  */}}
+{{/* class - class name(s) to add to the <img> element */}}
+{{/* alt - alt text */}}
+{{/* ext - extension for base image (default is ".jpg") */}}
+{{/* lazy - true if image should be lazy-loaded */}}
+
+{{ $ext := cond (eq .ext nil) ".jpg" .ext }}
+<picture>
+
+    {{ if .avif}}
+    <source srcset="https://library.bc.edu/images/{{ .base }}.avif" type="image/avif">
+    {{ end }}
+    
+    {{ if .webp }}
+    <source srcset="https://library.bc.edu/images/{{ .base }}.webp" type="image/webp">
+    {{ end }}
+    
+    <img src="https://library.bc.edu/images/{{ .base }}{{ $ext }}" 
+    class="{{ .class }}"
+    alt="{{ .alt }}"
+    {{ if .lazy }} loading="lazy" {{end}}>
+</picture>

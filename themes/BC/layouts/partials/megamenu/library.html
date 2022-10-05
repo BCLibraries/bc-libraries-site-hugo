@@ -23,8 +23,8 @@
 {{/* Set library URL. If there is no url value set in the data, build it from the library code. */}}
 {{ $library_url := cond (eq .library.url nil) (printf "https://libguides.bc.edu/%s" .library.code) .library.url }}
 
-{{/* Set library image URL. If there is no url value set in the data, build it from the library code. */}}
-{{ $library_img := cond (eq .library.img nil) (printf "https://library.bc.edu/images/librarypane/megamenu_thumbnail_%s.png" .library.code) .library.img }}
+{{/* Base image name for building <picture> element. */}}
+{{ $base_image := printf "librarypane/megamenu_thumbnail_%s" .library.code }}
 
 <div class="col-sm-4 col-xs-4 library-box">
     <div class="lib-box lib-box-small panel panel-default">
@@ -33,7 +33,13 @@
                 <div class="media">
                     <div class="media-left">
                         <a href="{{ $library_url }}" class="lib-thumb">
-                            <img class="media-object" src="{{ $library_img }}" alt="{{ .library.name }}" loading="lazy">
+                            {{ partial "picture" (dict "ctx"   .
+                                                       "base"  $base_image
+                                                       "ext"   ".png"
+                                                       "alt"   .library.name 
+                                                       "class" ""
+                                                       "avif"  true
+                                                       "lazy"  true) }}
                         </a>
                     </div>
                     <div class="media-body">

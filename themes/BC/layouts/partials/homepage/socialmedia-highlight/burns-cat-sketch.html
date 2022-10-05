@@ -1,8 +1,14 @@
 <div class="leftBottom burns-cat-sketch">
-    <img src="https://libapps.s3.amazonaws.com/accounts/150597/images/OBrien_CatSsketch_960x540.jpg" 
-         class="burns-cat-sketch__image"
-         alt="pencil sketch of sleeping cat"
-         loading="lazy">
+
+    {{/* This is a big image, so use <picture> to reduce payload if possible */}}
+    {{ partial "picture" (dict "ctx"   .
+                               "base"  "homepage/socialmediahighlights/obrien-cat-sketch"
+                               "alt"   "pencil sketch of sleeping cat"
+                               "class" "burns-cat-sketch__image"
+                               "avif"  true
+                               "webp"  true
+                               "lazy"  true) }}
+
     <div class="container-fluid">
         <div class="row">
             <div class="burns-cat-sketch__info col-md-12 col-sm-12 col-xs-12 pull-right">
