@@ -13,6 +13,10 @@
 	padding-top: 0px;
 }
 
+#exhibit-highlight {
+    background-color: cyan;
+}
+
 .homepagerefresh #exhibit-highlight {
 	display: inline-block;
 	width: 100%;
@@ -106,6 +110,20 @@ a.current-exhibits-title {
 // Digital Scholarship highlight section
 //
 
+#scholarship {
+    text-align: center;
+
+    h2 {
+        margin: 0;
+        color: $bc-brand-maroon;
+        font-size: 20px;
+    }
+    h3 {
+        margin-top: 1.25em;
+        font-size: 18px;
+    }
+}
+
 #digcol-highlight {
     width: 100%;
     min-height: 150px;
@@ -170,10 +188,28 @@ a.current-exhibits-title {
 // Faculty Publication highlights section
 //
 
+#facpub {
+    background-color: $white-body;
+    padding-bottom: 40px;
+
+    h3 {
+        font-size: 18px;
+    }
+    .more-link {
+        text-align: right;
+    }
+}
+
 #facpub h2 a {
     font-size: 24px;
     border-bottom: 1px solid;
     text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    #facpub img.bookcover {
+        display: none !important;
+    }
 }
 
 

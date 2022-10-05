@@ -169,6 +169,8 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     margin: 0 auto;
 }
 
+
+// Media queries
 @media ( max-width: 1199px ) {
     .video-container {
         position: relative;
@@ -188,13 +190,6 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         left: 0;
         width: 100%;
         height: 100%;
-    }
-}
-
-/* media query overrides */
-@media (max-width: 991px) {
-    #facpub img.bookcover {
-        display: none !important;
     }
 }
 
