@@ -1,0 +1,300 @@
+/* footers */
+#lib-footer {
+    background-color: $bc-brand-maroon;
+    color: $white-text;
+    border-top: 4px $bc-brand-gold solid;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    z-index: 4;
+    position: relative;
+    padding-top: 1em;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        color: $white-text;
+
+        &:focus,
+        &:hover {
+            color: $bc-primary-light-gold;
+            text-decoration: none;
+        }
+    }
+    h4 {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white-text;
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin: 0 0 5px;
+
+        &.orgname {
+            font-size: 16px;
+            letter-spacing: 1.25px;
+            margin: 0 0 10px 0;
+        }
+    }
+    .address-wrap,
+    .hours-wrap {
+        float: left;
+    }
+    .onl-asterisk-notice {
+        font-size: 14px;
+        line-height: 1.5;
+        display: none;
+    }
+    .social-wrap {
+        float: right;
+    }
+    .lib-footer-links {
+        padding-top: 1em;
+
+        a {
+            border-right: 1px solid $white-body;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                border-right: 0;
+                padding-right: 0;
+            }
+        }
+    }
+    .phone-numbers {
+        padding-top: 1em;
+
+        .phone-label,
+        .phone-number {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .quick-links{
+        h4, ul {
+            text-align: center;
+        }
+    }
+    .hours-todays-date {
+        position: absolute;
+        top: -5px;
+        right: 15px;
+    }
+    .table-hours {
+        padding-bottom: .25rem;
+
+        table {
+            margin-bottom: .25rem;
+
+            &.table-bordered {
+                border-top: none;
+            }
+        }
+    }
+    .ihs-logo img {
+        height: 100px;
+        margin-top: 20px;
+    }
+}
+
+#lib-footer #socialmedia {
+    h4 {
+        text-align: center;
+    }
+    ul {
+        margin: 1.5em 0 1em 0;
+        padding: 0;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            padding: 0 3px 9px 3px;
+
+            a {
+                color: $bc-brand-maroon;
+                font-size: 16px;
+                border-radius: 50%;
+                border-color: $bc-primary-light-gold;
+                background: $bc-primary-light-gold;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                text-decoration: none!important;
+                display: block;
+                -webkit-transition: .2s;
+                font-family: 'FontAwesome';
+
+                &:hover,
+                &:focus {
+                    background-color: $white-body;
+                }
+                &#media_news:after {
+                    content: "\f09e";
+                }
+                &#media_facebook:after {
+                    content: "\f09a";
+                }
+                &#media_flickr:after {
+                    content: "\f16e";
+                }
+                &#media_twitter:after {
+                    content: "\f099";
+                }
+                &#media_youtube:after {
+                    content: "\f16a";
+                }
+                &#media_linkedin:after {
+                    content: "\f0e1";
+                }
+                &#media_instagram:after {
+                    content: "\f16d";
+                }
+            }
+        }
+    }
+    
+}
+
+#bc-footer {
+    background: $bc-primary-dark-red;
+    padding: 15px 0;
+    margin-top: 0px;
+    color: $white-text;
+    font-size: 10px;
+    line-height: 11px;
+
+    .copyright {
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: $light-gray;
+        margin-top: 20px;
+        text-align: right;
+    }
+
+    .bc-links {
+        text-align: right;
+        margin-top: 10px;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                font-size: 11px;
+                font-weight: 500;
+                letter-spacing: 0;
+                color: $white-text;
+                text-transform: uppercase;
+                padding-right: 20px;
+                border-right: solid 1px $white-body;
+                margin-right: 20px;
+                display: inline-block;
+
+                &:last-child {
+                    padding-right: 0;
+                    margin-right: 0;
+                    border-right: none;
+                }
+
+                a {
+                    font-size: 11px;
+                    font-weight: 500;
+                    letter-spacing: 0;
+                    color: $white-text;
+                    letter-spacing: 1px;
+
+                    &:hover,
+                    &:focus {
+                        color: $bc-primary-light-gold;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1201px) {
+    #lib-footer .address-wrap,
+    #lib-footer .hours-wrap,
+    #lib-footer .social-wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #lib-footer .hours-todays-date {
+        right: 0px;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+    #lib-footer .lib-footer-links a {
+        border-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        display: block;
+    }
+    #lib-footer .phone-numbers .phone-pair {
+        padding-top: 4px;
+    }
+    #bc-footer .copyright {
+        text-align: left;
+    }
+    #bc-footer .bc-links {
+        text-align: left;
+        padding-top: 20px;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    #lib-footer h4.orgname {
+        margin-top: inherit;
+    }
+    #lib-footer .hours-wrap {
+        margin-top: 3em;
+    }
+    #bc-footer .bc-links ul {
+        max-width: 275px;
+        margin: 0 auto;
+    }
+    #bc-footer .bc-links ul li {
+        margin: 0 10px 20px 0;
+    }
+    #bc-footer .copyright {
+        text-align: center;
+    }
+    #bc-footer .bc-links {
+        text-align: center;
+        padding-top: 20px;
+    }
+    #bc-footer .bc-img {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #bc-footer img.footer-logo {
+        max-width: 180px;
+    }
+    #bc-footer .bc-links ul li:nth-child(3) {
+        border: 0;
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
+
+@media print {
+    footer {display: none!important;}
+}
