@@ -1,6 +1,4 @@
 #top-columns {
-    /*background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/background-sample-3.jpg) no-repeat 00% 100%;
-    background-size: cover;*/
     background-color: $white-body;
     padding-bottom: 3rem;
 
@@ -13,7 +11,7 @@
         display: flex;
         flex-wrap: wrap;
 
-        /* Safari doesn't play well with floated elements and flex display */
+        // Safari doesn't play well with floated elements and flex display
         &:before,
         &:after {
             display:none!important;
@@ -24,7 +22,7 @@
             display: flex;
             flex-flow: column;
 
-            /* Safari doesn't play well with floated elements and flex display */
+            // Safari doesn't play well with floated elements and flex display
             &:before,
             &:after {
                 display:none!important;
@@ -32,13 +30,13 @@
         }
     }
 
-    /* TODO: Possibly unused */
+    // TODO: Possibly unused
     .column-combo {
         display: flex;
         flex-wrap: wrap;
         flex-flow: column;
 
-        /* Safari doesn't play well with floated elements and flex display */
+        // Safari doesn't play well with floated elements and flex display
         &:before,
         &:after {
             display:none!important;
@@ -62,66 +60,53 @@
     font-weight: 200;
 }
 
-/* TODO: Possibly unused */
-@media (max-width: 991px) {
-    #top-columns .column-combo {
-        display: block;
-    }
-}
-
 #header {
-    /*background: #ccc url("https://library.bc.edu/images/hero01.jpg") 0 70%; /* CHANGE BACKGROUND SEASONALLY */
-    /*height: 380px;
-    background-size: cover;
-    padding-top: 0px;
-    position: relative;*/
-
     padding-bottom: 4rem;
     padding-top: 80px;
     background-color: #467282;
 }
 
-/* Search bar component */
+// Search bar component
 @import 'homepage_search-bar';
 
-/* Services Highlight section */
-/*@import 'homepage_services-highlight';*/
+// Services Highlight section
+// @import 'homepage_services-highlight';
 
-/* Staff Interest - 2020 */
-/*@import 'homepage_staff-interest';*/
+// Staff Interest section - 2020
+// @import 'homepage_staff-interest';
 
-/* Ask A Librarian component */
+// Ask A Librarian component
 @import 'homepage_ask-a-librarian';
 
-/* Featured Tip component */
+// Featured Tip component
 @import 'homepage_featured-tip';
 
-/* Quick Links component */
+// Quick Links component
 @import 'homepage_quicklinks';
 
-/* Visitation/Vaccination alert box component */
+// Visitation/Vaccination alert box component
 @import 'homepage_visitation_alert';
 
-/* News section */
+// News section
 @import 'homepage_news';
 
-/* Featured Subject Specialists section */
+// Featured Subject Specialists section
 @import 'homepage_featured-subject-specialists';
 
-/* Explore Collections section */
+// Explore Collections section
 @import 'homepage_explore-collections';
 
-/* Social Media Highlight section */
+// Social Media Highlight section
 @import 'homepage_socialmedia-highlight';
 
-/* Exhibitions & Digital Scholarship highlight & Faculty Publication highlight sections */
-/* @import 'homepage_old-content'; */
+// Exhibitions & Digital Scholarship highlight & Faculty Publication highlight sections
+// @import 'homepage_old-content';
 
-/* Welcome Back Students alert */
+
+// Welcome Back Students alert
 #welcome-back-students-container {
     margin-top: 2rem;
 }
-
 #welcome-back-message-wrapper {
     font-size: 16px;
     background-color: #FBCD26;
@@ -135,9 +120,6 @@
         margin: 0;
     }
 }
-
-
-/* Welcome New Students alert */
 #welcome-new-students {
     margin-bottom: 4rem;
 
@@ -145,6 +127,7 @@
         font-size: large;
     }
 }
+
 
 // Hero image caption
 .caption-link {
@@ -164,6 +147,16 @@
         &:focus {
             text-decoration: underline;
         }
+    }
+}
+
+
+// Media queries
+
+// TODO: Possibly unused
+@media (max-width: 991px) {
+    #top-columns .column-combo {
+        display: block;
     }
 }
 

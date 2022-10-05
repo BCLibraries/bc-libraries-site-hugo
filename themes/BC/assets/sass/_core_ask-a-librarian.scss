@@ -73,6 +73,17 @@
     background-color: #31b0d5 !important;
 }
 
+
+.library-boxes .lib-box-small.panel {
+    border-radius: 4px;
+}
+
+/* Safari doesn't play well with floated elements and flex display */
+.library-boxes .lib-box-small.panel:before,
+.library-boxes .lib-box-small.panel:after {
+    display:none!important;
+}
+
 .lib-box .panel-body .media img {
     max-width: 141px !important;
 }

@@ -1,4 +1,4 @@
-/* override default styles for yamm menu */
+// Override default styles for yamm menu
 .yamm {
     .nav,
     .collapse,
@@ -21,7 +21,11 @@
     }
 }
 
-/* Mega Menu - structural styling */
+
+//
+// Megamenu - structural styling
+//
+
 .megamenu-container {
     background-color: rgba(16,14,15,.85);
     color: $black-text;
@@ -240,7 +244,10 @@
     }
 }
 
-/* Mega Menu - content styling */
+//
+// Megamenu - content styling
+//
+
 .megamenu-container {
     #megamenu-refresh {
         .navbar-default {
@@ -687,160 +694,16 @@
     }
 }
 
-/* TODO: the following should be placed in _refresh_clean.scss */
-.library-boxes .lib-box-small.panel {
-    border-radius: 4px;
-}
-/* Safari doesn't play well with floated elements and flex display */
-.library-boxes .lib-box-small.panel:before,
-.library-boxes .lib-box-small.panel:after {
-    display:none!important;
-}
 
-/* override custom LG style to zero-out row margins */
-#xxx .homepagerefresh #megamenu-refresh .row {
-    margin-left: -15px;
-    margin-right: -15px;
-}
+// Override custom LG style to zero-out row margins
+//.homepagerefresh #megamenu-refresh .row {
+//    margin-left: -15px;
+//    margin-right: -15px;
+//}
 
-/* TODO potentially unused? found in libhoursv2.js */
+// TODO potentially unused. Only found in libhoursv2.js
 .mini_hours_container,
 #oconnor_hours_container {
     font-size: 15px;
     margin-bottom: 4px;
 }
-
-/* TODO: unused? */
-/*
-.libraryinfo-content {
-     padding: 0 0px 0px 20px;
-     text-align: left;
-}
-.item-desktop {
-     display: inline-block;
-}
-.item-tablet {
-     display: none;
-}
-.get-help-menu .item-list {
-     padding: 0 0 0 25px;
-}
-#bapst_pane,
-#burns_pane,
-#erc_pane,
-#law_pane,
-#oconnor_pane,
-#oneill_pane,
-#swl_pane,
-#tml_pane {
-     width: 58%;
-     height: auto;
-     color: #666;
-     padding: 0;
-     display: none;
-     position: absolute;
-     right: 0;
-     top: 30px;
-}
-.item_pane img {
-     float: left;
-     margin-right: 10px;
-     padding: 0 0 75px 0;
-}
-.item_pane p {
-     line-height: inherit;
-     text-align: left;
-}
-.item_pane .address {
-     font-size: 11px;
-}
-.item_pane ul {
-     padding: 0px 0 5px 0;
-     margin: 0px;
-}
-.item_pane li {
-     list-style: none;
-}
-.pane_pic {
-     float: left;
-     width: 25%;
-     padding: 15px 10px;
-}
-.pane_pic img {
-     border: 2px solid $red;
-     width: 100%;
-     padding: 0;
-}
-.pane_info {
-     float: right;
-     width: 75%;
-     padding: 15px;
-}
-.get-help-menu .pane_info {
-     float: none;
-     width: 100%;
-     padding: 0 15px 0 15px;
-}
-.pane_info .h3style a {
-     padding: 0 35px 0 0;
-}
-.pane_info .h3style a:after {
-     content: none;
-}
-.pane_info .h4style {
-     padding: 0;
-}
-.megamenucalendar {
-     font-size: 15px;
-     height: 30px;
-     margin: 0 auto;
-     padding: 0px;
-     text-align: left;
-     width: 100%;
-}
-.megamenucalendar:before {
-     content: none;
-}
-.megamenucalendar:hover:before {
-     color: #32758f;
-}
-.megamenuphone {
-     font-size: 15px;
-     height: 30px;
-     margin: 0 auto;
-     padding: 0px;
-     text-align: left;
-     width: 100%;
-}
-.megamenuphone:before {
-     content: none;
-}
-.megamenuphone:hover:before {
-     color: #32758f;
-}
-.megamenuemail {
-     font-size: 15px;
-     height: 30px;
-     margin: 0 auto;
-     padding: 0;
-     text-align: left;
-     width: 100%;
-}
-.megamenuemail:before {
-     content: none;
-}
-.megamenuemail:hover:before {
-     color: #32758f;
-}
-.hamburger {
-     background: transparent;
-}
-.libhelp-link {
-     cursor: pointer;
-}
- #megamenu-refresh .navbar-nav > .open > a, 
- #megamenu-refresh .navbar-nav > .open > a:hover {
-     background: $dark-blue-green !important;
-     color: $white-text !important;
- }
-*/
