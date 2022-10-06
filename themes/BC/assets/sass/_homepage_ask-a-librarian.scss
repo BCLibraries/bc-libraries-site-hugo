@@ -35,7 +35,7 @@
                 display: flex;
                 flex-wrap: wrap;
 
-                /* Safari doesn't play well with floated elements and flex display */
+                // Safari doesn't play well with floated elements and flex display
                 &:before,
                 &:after {
                     display:none!important;
@@ -44,7 +44,7 @@
                 .aal-box-item {
                     display: flex;
 
-                    /* Safari doesn't play well with floated elements and flex display */
+                    // Safari doesn't play well with floated elements and flex display
                     &:before,
                     &:after {
                         display:none!important;

@@ -32,7 +32,7 @@ a {
 // Megamenu
 @import 'core_megamenu';
 
-// Ask A Librarian component
+// Notifications component
 @import 'core_notification';
 
 // Ask A Librarian component
@@ -193,6 +193,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     }
 }
 
+// TODO: Possibly unused
 @media (min-width: 768px) {
     .row.equal {
         display: flex;
@@ -225,6 +226,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         left: auto;
     }
 
+    // TODO: move this to _homepage_old_content.scss
     #scholarship .row {
         margin-left: 1em;
         margin-right: 1em;

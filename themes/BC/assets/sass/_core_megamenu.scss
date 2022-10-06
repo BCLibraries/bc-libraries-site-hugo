@@ -347,7 +347,9 @@
                         }
                     }
 
-                    /* BEGIN - Ask A Librarian panel styling */
+                    //
+                    // BEGIN - Ask A Librarian panel styling
+                    //
                     #mm-help-aal {
                         .aal-box-container {
                             padding-top: 0;
@@ -356,7 +358,7 @@
                             align-content: stretch;
                             flex-wrap: wrap;
 
-                            /* Safari doesn't play well with floated elements and flex display */
+                            // Safari doesn't play well with floated elements and flex display
                             &:before,
                             &:after {
                                 display:none!important;
@@ -408,9 +410,13 @@
                             }
                         }
                     }
-                    /* END - Ask A Librarian box styling */
+                    //
+                    // END - Ask A Librarian box styling
+                    //
 
-                    /* BEGIN - About panel styling */
+                    //
+                    // BEGIN - About panel styling
+                    //
                     #mm-help-about {
                         .row.library-boxes {
                             padding-top: 0rem;
@@ -420,7 +426,7 @@
                             flex-wrap: wrap;
                             margin-bottom: -2rem;
 
-                            /* Safari doesn't play well with floated elements and flex display */
+                            // Safari doesn't play well with floated elements and flex display
                             &:before,
                             &:after {
                                 display:none!important;
@@ -439,7 +445,7 @@
                                         height: 100%;
                                         display: block;
 
-                                        /* Safari doesn't play well with floated elements and flex display */
+                                        // Safari doesn't play well with floated elements and flex display
                                         &:before,
                                         &:after {
                                             display:none!important;
@@ -517,7 +523,9 @@
                             
                         }
                     }
-                    /* END - About panel styling */
+                    //
+                    // END - About panel styling
+                    //
                 }
             }
         }
