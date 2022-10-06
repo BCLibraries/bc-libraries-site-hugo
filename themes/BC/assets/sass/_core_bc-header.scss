@@ -17,34 +17,34 @@
     align-items: center;
     /* justify-content: center; */
 
-    &.container-fluid {
-        //padding-right: 15px;
-        //padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+    //&.container-fluid {
+    //    padding-right: 15px;
+    //    padding-left: 15px;
+    //    margin-right: auto;
+    //    margin-left: auto;
+    //}
 
-    .container {
-        //padding-right: 15px;
-        //padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        line-height: 1;
-    }
+    //.container {
+    //    padding-right: 15px;
+    //    padding-left: 15px;
+    //    margin-right: auto;
+    //    margin-left: auto;
+    //    line-height: 1;
+    //}
 
     .row {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        //padding-top: 0px;
+        //padding-bottom: 0px;
         //margin-right: -15px;
         //margin-left: -15px;
 
-        .col-md-12,
-        .col-md-6 {
-            position: relative;
-            min-height: 1px;
-            //padding-right: 15px;
-            //padding-left: 15px;
-        }
+        //.col-md-12,
+        //.col-md-6 {
+        //    position: relative;
+        //    min-height: 1px;
+        //    padding-right: 15px;
+        //    padding-left: 15px;
+        //}
 
         a {
             color: $white-text;
