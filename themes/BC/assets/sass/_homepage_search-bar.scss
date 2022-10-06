@@ -2,59 +2,53 @@
 #search-panel {
     background-color: $bc-brand-maroon;
     border-radius: 6px;
-    /*box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.2);*/
-    padding: 1.5rem;
-}
+    padding: 15px;
 
-#search-panel .fa-search {
-    padding-right: .5em;
-}
+    #search-links {
+        padding-top: 15px;
+        
+        a, a:visited {
+            color: white;
+            font-size: 18px;
+        }
+    }
 
-#search-panel #search-links {
-    padding-top: 0
-}
+    .input-group {
+        input.form-control,
+        button.btn.btn-default {
+            height: 50px;
+            font-size: 20px;
+        }
 
-#search-panel #search-links a, #search-panel #search-links a:visited {
-    color: white;
-    font-size: 18px;
-}
-
-#search-panel input.form-control, #search-panel button.btn.btn-default {
-    height: 50px;
-    font-size: 20px;
-}
-
-.online-only-label {
-    color: #f3f3f3;
-}
-
-span.online-only-label-text {
-    margin-left: .25em;
-    margin-right: .25em;
-}
-
-#online-only-checkbox {
-    margin-top: 6px;
-}
-
-label.checkbox-inline.online-only-label {
-    font-style: italic;
-    font-size: 16px;
-}
-
-button.whats-this, button.whats-this:active, button.whats-this:hover {
-    /*color: hsl(207, 59%, 85%); */
-    text-decoration: none;
-    /*background: none;*/
-    border: none;
-    cursor: help;
-}
-
-.whats-this-message {
-    padding: .25em .5em;
-    display: none;
-    font-size: .9em;
-    color: white;
+        .fa-search {
+            padding-right: .5em;
+        }
+    }
+    
+    .online-only-selector {
+        .online-only-label {
+            color: #f3f3f3;
+            font-style: italic;
+            font-size: 16px;
+    
+            span.online-only-label-text {
+                margin-left: .25em;
+                margin-right: .25em;
+            }
+    
+            #online-only-checkbox {
+                margin-top: 6px;
+            }
+        }
+    
+        button.whats-this, 
+        button.whats-this:active, 
+        button.whats-this:hover {
+            text-decoration: none;
+            border: none;
+            cursor: help;
+        }
+    }
 }
 
 @media (max-width: 767px) {

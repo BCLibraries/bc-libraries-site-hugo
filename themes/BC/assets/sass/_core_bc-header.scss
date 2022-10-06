@@ -136,12 +136,12 @@
         width: 100%;
     }
 
-    #bclib-header ul.bclib-header-links {
+    #bclib-header .row ul.bclib-header-links {
         font-size: 15px;
         line-height: 2;
     }
 
-    #bclib-header ul.bclib-header-links li {
+    #bclib-header .row ul.bclib-header-links li {
         margin: 0 10px;
     }
 }
@@ -157,7 +157,7 @@
         padding-bottom: 4px;
     }
 
-    #bclib-header ul.bclib-header-links {
+    #bclib-header .row ul.bclib-header-links {
         text-align: left;
         width: 100%;
     }

@@ -55,6 +55,15 @@
     }
 }
 
+@media (max-width: 1199px) {
+    .megamenu-container #megamenu-refresh .navbar-default .navbar-nav .dropdown-menu #mm-help-aal .aal-box-container .aal-box-wrapper .panel {
+        font-size: 12px;
+    }
+    .megamenu-container #megamenu-refresh .navbar-default .navbar-nav .dropdown-menu .library-box .panel .lib-name,
+    .megamenu-container #megamenu-refresh .navbar-default .navbar-nav .dropdown-menu .library-box .panel .lib-box-pair a {
+        font-size: 13px;
+    }
+}
 @media (max-width: 991px) {
     #aal-home {
         margin-top: 0;

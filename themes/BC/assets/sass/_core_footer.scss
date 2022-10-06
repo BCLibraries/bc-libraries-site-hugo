@@ -8,7 +8,7 @@
     font-weight: 300;
     z-index: 4;
     position: relative;
-    padding-top: 1em;
+    padding: 1em 0 .5rem 0;
 
     ul {
         list-style: none;
@@ -87,20 +87,22 @@
         top: -5px;
         right: 15px;
     }
-    .table-hours {
-        padding-bottom: .25rem;
-
-        table {
-            margin-bottom: .25rem;
-
-            &.table-bordered {
-                border-top: none;
-            }
-        }
-    }
     .ihs-logo img {
         height: 100px;
         margin-top: 20px;
+    }
+}
+
+// TODO: this is used in both the footer and megamenu
+.table-hours {
+    padding-bottom: .25rem;
+
+    table {
+        margin-bottom: .25rem;
+
+        &.table-bordered {
+            border-top: none;
+        }
     }
 }
 
