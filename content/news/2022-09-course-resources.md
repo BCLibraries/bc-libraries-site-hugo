@@ -1,5 +1,5 @@
 ---
-title: "2022-09-Course-Resources"
+title: "Course Resources"
 draft: false
 expired: false
 date: 2022-09-26T17:04:42-04:00
