@@ -2,7 +2,12 @@
     <div class="panel-body">
         <div class="row">
             <div class="col-md-3 col-sm-4">
-                <img class="featured-tip-image" src="https://library.bc.edu/images/homepage/featuredtip/newspaper-slideshow-240px.gif" alt="newspaper logos including New York Times, Washington Post, Financial Times, Wall Street Jorunal">
+                {{ partial "picture" (dict "ctx"   .
+                                           "base"  "homepage/featuredtip/newspaper-slideshow-240px"
+                                           "alt"   "collection of newspaper logos"
+                                           "class" "featured-tip-image"
+                                           "avif"  true
+                                           ) }}
             </div>
             <div class="col-md-9 col-sm-8">
                 <h3>Online newspaper subscriptions</h3>
