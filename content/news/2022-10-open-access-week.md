@@ -2,7 +2,7 @@
 title: "Open Access Week"
 draft: false
 expired: false
-date: 2022-10-14T13:21:29-04:00
+date: 2022-10-17T07:30:00-04:00
 year: "2022"
 slug: "2022-10-open-access-week"
 destination: "https://library.bc.edu/newsletter/?p=2322"
