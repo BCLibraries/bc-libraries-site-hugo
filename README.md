@@ -11,9 +11,10 @@ Use the `hugo new` command to add content, e.g.:
 ### News
 
 1. Upload the image thumbnail to the appropriate subdirectory of */var/www/html/images/news* on library.bc.edu.
-2. Create an AVIF file of the image on library:
+2. Create an AVIF and webp files of the image on library:
    ```bash
    npx avif image-filename.jpg
+   mogrigy -format webp image-filename.jpg
    ```
 3. Create the news item:
    ```bash
