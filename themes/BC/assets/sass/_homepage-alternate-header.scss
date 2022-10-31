@@ -1,8 +1,20 @@
+html body.alternate-header #header {
+    background: url("https://library.bc.edu/images/homepage/hero/gasson-autumn-1440px.jpg") no-repeat 0 15% #fff;
+    background-size: cover;
+
+}
+
+html.avif body.alternate-header #header {
+    background: url("https://library.bc.edu/images/homepage/hero/gasson-autumn-1440px.avif") no-repeat 0 15% #fff;
+    background-size: cover;
+}
+
+html.webp body.alternate-header #header {
+    background: url("https://library.bc.edu/images/homepage/hero/gasson-autumn-1440px.webp") no-repeat 0 15% #fff;
+    background-size: cover;
+}
+
 body.alternate-header {
-    #header {
-        background: url("https://library.bc.edu/images/homepage/hero/bc-spring-flowers-high-1440px.jpg") no-repeat 0 15% #fff;
-        background-size: cover;
-    }
     #services-highlight-container {
         border: 0;
     }
@@ -13,8 +25,8 @@ body.alternate-header {
 
 @media (min-width: 768px) {
     #header {
-        padding-top: 100px;
-        height: 340px;
+        padding-top: 120px;
+        height: 380px;
     }
 }
 
