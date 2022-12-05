@@ -3,7 +3,7 @@
 title: "See What Bc Libraries Staff Is Reading"
 
 # Set to true to only display in development
-draft: false
+draft: true
 
 # Has the story expired?
 expired: false
