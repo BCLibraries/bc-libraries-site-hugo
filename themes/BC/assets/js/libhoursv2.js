@@ -3,7 +3,7 @@
 $(document).ready(function(){
     // list of library names as keys
     // dom class name as values
-    var libs2 = {
+    var library_list = {
                 "O'Neill Library": ".lib-oneill",
                 "Bapst Library": ".lib-bapst",
                 "Burns Library": ".lib-burns",
@@ -13,7 +13,31 @@ $(document).ready(function(){
                 "Theology and Ministry Library": ".lib-tml"
                 };
 
+    // turn off/on showing department hours e.g., Gargan Hall
+    const SHOW_DEPARTMENTS = true;
+
+    // list of departments
+    var department_list = {
+        "Gargan Hall": ".lib-bapst-gargan"
+    }
+
     var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+    function showHours(location, lib_list){
+        var rendered = location.rendered;
+        if (location.rendered.length >= 1) {
+            rendered = "<span class='font-small'>" + rendered + "</span>";
+        }
+
+        if (location.name == "O'Neill Library" && location.rendered.includes('*')) {
+            $('.onl-asterisk-notice').show();
+        }
+
+        // libraries with an attached note to the hours will render
+        // the hours string, then a new line char, then the note string.
+        // we will replace the new line char with a semicolon.
+        $(lib_list[location.name]).html(rendered.replace("\n", " ; "));
+    }
 
     // grab each library's data from the output and place it where it needs to go
     function setHours(data){
@@ -26,28 +50,18 @@ $(document).ready(function(){
         $(".hours-todays-date").text(date);
 
         if ("locations" in data) {
-            //console.log(date);
             $.each(data["locations"], function(index, loc) {
                 var cat = loc.category;
                 var name = loc.name;
-                if ((cat == "library") && (name in libs2)) {
-                    //console.log(loc.name);
-                    //console.log("found " + name);
-                    var rendered = loc.rendered;
-                    if (loc.rendered.length >= 12) {
-                        //console.log("adding font-small class to output");
-                        rendered = "<span class='font-small'>" + rendered + "</span>";
-                    }
 
-                    if (loc.name == "O'Neill Library" && loc.rendered.includes('*')) {
-                        $('.onl-asterisk-notice').show();
-                    }
-                    // libraries with an attached note to the hours will render
-                    // the hours string, then a new line char, then the note string.
-                    // we will replace the new line char with a semicolon.
-                    $(libs2[name]).html(rendered.replace("\n", " ; "));
+                if ((cat == "library") && (name in library_list)) {
+                    showHours(loc, library_list);
+                } else if (SHOW_DEPARTMENTS && (cat == "department") && (name in department_list)) {
+                    showHours(loc, department_list);
                 }
             });
+        } else {
+            // TODO: Show some sort of error message
         }
     };
 
