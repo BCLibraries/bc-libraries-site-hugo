@@ -116,6 +116,10 @@
 }
 .table-hours table {
     margin-bottom: .25rem;
+
+    a {
+        cursor: pointer;
+    }
 }
 .table-hours .table-bordered {
     border-top: none;
