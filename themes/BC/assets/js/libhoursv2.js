@@ -76,7 +76,7 @@ $(document).ready(function(){
     function buildRow(hours, label, url) {
 
         const link = document.createElement("a");
-        link.setAttribute("a", url);
+        link.setAttribute("href", url);
         link.textContent = label;
 
         const label_cell = document.createElement("td");
