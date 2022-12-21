@@ -112,14 +112,6 @@
                 "url": "https://libguides.bc.edu/genderportal"
             },
             {
-                "id": "000000",
-                "site_id": "94",
-                "name": "Government Documents",
-                "ordering": "0",
-                "slug": "",
-                "url": "https://libguides.bc.edu/govdocs"
-            },
-            {
                 "id": "12911",
                 "site_id": "94",
                 "name": "Sociology & Anthropology",
@@ -521,7 +513,7 @@
     },
     {
         "name": "Elliott Hibbler",
-        "title": "Senior Scholarly Communications Librarian",
+        "title": "Head Librarian, Scholarly Communications",
         "department": "Research, Learning & Digital Scholarship",
         "active": true,
         "profile_id": "290377",
@@ -596,12 +588,20 @@
                 "url": "https://libguides.bc.edu/economicsportal"
             },
             {
-                "id": "201803",
+                "id": "000000",
                 "site_id": "94",
-                "name": "Sports Administration",
+                "name": "Government Documents",
                 "ordering": "0",
-                "slug": "subjects\/sports-administration",
-                "url": "https://libguides.bc.edu/sportseconomics"
+                "slug": "",
+                "url": "https://libguides.bc.edu/govdocs"
+            },
+            {
+                "id": "133507",
+                "site_id": "94",
+                "name": "International Studies",
+                "ordering": "0",
+                "slug": "subjects\/international-studies",
+                "url": "https://libguides.bc.edu/internationalstudies"
             },
             {
                 "id": "12908",
@@ -612,12 +612,12 @@
                 "url": "https://libguides.bc.edu/polisciportal"
             },
             {
-                "id": "133507",
+                "id": "201803",
                 "site_id": "94",
-                "name": "International Studies",
+                "name": "Sports Administration",
                 "ordering": "0",
-                "slug": "subjects\/international-studies",
-                "url": "https://libguides.bc.edu/internationalstudies"
+                "slug": "subjects\/sports-administration",
+                "url": "https://libguides.bc.edu/sportseconomics"
             }
         ]
     },
@@ -732,7 +732,7 @@
     },
     {
         "name": "Bee Lehman, Ph.D.",
-        "title": "Senior Liaison Librarian for History",
+        "title": "Digital Humanities Program Librarian",
         "department": "Collection Development & Research",
         "active": true,
         "profile_id": "216542",
@@ -758,14 +758,6 @@
                 "ordering": "0",
                 "slug": "subjects\/history",
                 "url": "https://libguides.bc.edu/history"
-            },
-            {
-                "id": "12879",
-                "site_id": "94",
-                "name": "Irish Studies",
-                "ordering": "0",
-                "slug": "subjects\/irish-studies",
-                "url": "https://libguides.bc.edu/irishportal"
             }
         ]
     },
@@ -879,10 +871,18 @@
             {
                 "id": "12885",
                 "site_id": "94",
-                "name": "Language & Literature in English",
+                "name": "English Language & Literature",
                 "ordering": "0",
                 "slug": "subjects\/english",
-                "url": "https://libguides.bc.edu/subjects/english"
+                "url": "https://libguides.bc.edu/englishportal"
+            },
+            {
+                "id": "12879",
+                "site_id": "94",
+                "name": "Irish Studies",
+                "ordering": "0",
+                "slug": "subjects\/irish-studies",
+                "url": "https://libguides.bc.edu/irishportal"
             }
         ]
     }
