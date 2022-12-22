@@ -46,9 +46,10 @@
 {{ $profile_background  := "triangles" }}
 
 {{/* look up librarian profile metadata by $featured_librarian.profile_id */}}
-{{ range where $all_librarians_data "id" "=" $featured_librarian.profile_id }}
+{{ $id_int := int $featured_librarian.profile_id }}
+{{ range where $all_librarians_data "id" "=" $id_int }}
     {{/* get profile ID */}}
-    {{ $profile_id = $featured_librarian.profile_id }}
+    {{ $profile_id = $id_int }}
 
     {{/* get first name */}}
     {{ $profile_first_name = .first_name }}
