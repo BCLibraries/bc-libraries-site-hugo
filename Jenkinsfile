@@ -60,7 +60,7 @@ pipeline {
                         
                         # Create a shortened version of GIT_URL for use in the build header
                         # We want everything before ".git"
-                        VAR_NAME=`echo ${GIT_URL%.git}`
+                        VAR_NAME=`echo ${GIT_URL%\.git}`
                         echo \$VAR_NAME
                     """)
                     env.GIT_URL_CLEAN = generate_clean_url.trim()
