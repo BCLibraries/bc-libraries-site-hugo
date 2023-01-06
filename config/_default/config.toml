@@ -28,3 +28,6 @@ rssLimit = 10
     imageBaseURL = "https://library.bc.edu/images"
 [markup.goldmark.renderer]
     unsafe= true
+[caches]
+    [caches.getjson]
+        maxAge = "1h"

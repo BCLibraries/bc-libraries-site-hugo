@@ -2,3 +2,6 @@
     showBuildHeader = false
     showFloatingHelpButton = true
     showBetaButton = true
+[caches]
+    [caches.getjson]
+        maxAge = "1m"
