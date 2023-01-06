@@ -41,67 +41,31 @@ pipeline {
                 
             }
         }
-        stage('Clone') {
-            steps {
-                // cleans workspace
-                //cleanWs()
-                
-                // Create build directory if it doesn't exist
-                echo "Using the build directory ${HUGO_WORKSPACE}"
-                sh 'mkdir -p build'
-                
-                // Clones the repository from the current branch name
-                dir('build') {
-                    script {
-                        Map scmVars = checkout([$class: 'GitSCM', branches: [[name: '*/*']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/BCLibraries/bc-libraries-site-hugo']]])
-                        echo "scmVars = ${scmVars}"
-                        env.GIT_BRANCH = scmVars.GIT_BRANCH
-                        env.GIT_COMMIT = scmVars.GIT_COMMIT
-                        env.GIT_URL    = scmVars.GIT_URL
-                    }
-                }
-                sh 'env | grep GIT_'
-            }
-        }
         stage('Generate env vars'){
             steps {
                 script {
                     // Jenkins gives us these git env vars
-                    //   env.GIT_BRANCH
-                    //   env.GIT_COMMIT
-                    //   env.GIT_URL
+                    //   GIT_COMMIT
+                    //   GIT_BRANCH
+                    //   GIT_URL
                     //
                     // We need to generate:
-                    //   env.GIT_SHORT_COMMIT
-                    //   env.GIT_SHORT_BRANCH
+                    //   env.GIT_URL_CLEAN
                     //   env.BUILD_DATE
                     
-                    def generate_git_short_commit = sh(returnStdout: true, script: """
+                    def generate_clean_url = sh(returnStdout: true, script: """
                         #!/bin/bash
                         set -e
                         set +x
                         
-                        # Create a shortened version of GIT_COMMIT for use in the build header
-                        # We want the first 8 chars
-                        VAR_NAME=`echo ${env.GIT_COMMIT} | cut -c1-8`
+                        # Create a shortened version of GIT_URL for use in the build header
+                        # We want everything before ".git"
+                        VAR_NAME=`echo ${GIT_URL%.git}`
                         echo \$VAR_NAME
                     """)
-                    env.GIT_SHORT_COMMIT = generate_git_short_commit.trim()
-                    echo "env.GIT_SHORT_COMMIT is ${env.GIT_SHORT_COMMIT}"
-                    
-                    def generate_short_branch = sh(returnStdout: true, script: """
-                        #!/bin/bash
-                        set -e
-                        set +x
-                        
-                        # Create a shortened version of GIT_BRANCH for use in the build header
-                        # We want everything after "origin/"
-                        VAR_NAME=`echo ${env.GIT_BRANCH} | cut -d'/' -f 2`
-                        echo \$VAR_NAME
-                    """)
-                    env.GIT_SHORT_BRANCH = generate_short_branch.trim()
-                    echo "env.GIT_SHORT_BRANCH is ${env.GIT_SHORT_BRANCH}"
-                    
+                    env.GIT_URL_CLEAN = generate_clean_url.trim()
+                    echo "env.GIT_URL_CLEAN is ${env.GIT_URL_CLEAN}"
+
                     def generate_build_date_iso = sh(returnStdout: true, script: """
                         #!/bin/bash
                         set -e
@@ -140,22 +104,22 @@ pipeline {
                         echo "Replacing BAMBOO_BUILD_TIME with ${env.BUILD_DATE}"
                         sed -i "s@BAMBOO_BUILD_TIME@${env.BUILD_DATE}@g" ${env.BUILD_HEADER_FILE}
                         
-                        echo "Replacing BAMBOO_GIT_URL with ${env.GIT_URL}"
-                        sed -i "s@BAMBOO_GIT_URL@${env.GIT_URL}@g" ${env.BUILD_HEADER_FILE}
+                        echo "Replacing BAMBOO_GIT_URL with ${GIT_URL_CLEAN}"
+                        sed -i "s@BAMBOO_GIT_URL@${GIT_URL_CLEAN}@g" ${env.BUILD_HEADER_FILE}
                         
-                        echo "Replacing BAMBOO_GIT_BRANCH_SHORT with ${env.GIT_SHORT_BRANCH}"
-                        sed -i "s@BAMBOO_GIT_BRANCH_SHORT@${env.GIT_SHORT_BRANCH}@g" ${env.BUILD_HEADER_FILE}
+                        echo "Replacing BAMBOO_GIT_BRANCH_SHORT with ${GIT_BRANCH}"
+                        sed -i "s@BAMBOO_GIT_BRANCH_SHORT@${GIT_BRANCH}@g" ${env.BUILD_HEADER_FILE}
                          
-                        echo "Replacing BAMBOO_GIT_COMMIT_SHORT with ${env.GIT_SHORT_COMMIT}"
-                        sed -i "s@BAMBOO_GIT_COMMIT_SHORT@${env.GIT_SHORT_COMMIT}@g" ${env.BUILD_HEADER_FILE}
+                        echo "Replacing BAMBOO_GIT_COMMIT_SHORT with ${GIT_COMMIT}"
+                        sed -i "s@BAMBOO_GIT_COMMIT_SHORT@${GIT_COMMIT}@g" ${env.BUILD_HEADER_FILE}
                          
-                        echo "Replacing BAMBOO_GIT_COMMIT with ${env.GIT_COMMIT}"
-                        sed -i "s@BAMBOO_GIT_COMMIT@${env.GIT_COMMIT}@g" ${env.BUILD_HEADER_FILE}
+                        echo "Replacing BAMBOO_GIT_COMMIT with ${GIT_COMMIT}"
+                        sed -i "s@BAMBOO_GIT_COMMIT@${GIT_COMMIT}@g" ${env.BUILD_HEADER_FILE}
                         
                         echo "Replacing BAMBOO_URL with ${JENKINS_URL}"
                         sed -i "s@BAMBOO_URL@${JENKINS_URL}@g" ${env.BUILD_HEADER_FILE}
                         
-                        echo "Replacing Bamboo link string  with Jenkins"
+                        echo "Replacing Bamboo link string with Jenkins"
                         sed -i "s@Bamboo@Jenkins@g" ${env.BUILD_HEADER_FILE}
                     """
                 }
@@ -163,7 +127,7 @@ pipeline {
         }
         stage('Build') {
             environment { 
-                HUGO_OUTPUT_DIR = "${HUGO_OUTPUT_ROOT_DIR}/${env.GIT_SHORT_BRANCH}"
+                HUGO_OUTPUT_DIR = "${HUGO_OUTPUT_ROOT_DIR}/${GIT_BRANCH}"
             }
             steps {
                 script {
