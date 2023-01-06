@@ -3,7 +3,7 @@
     <ul class="col-sm-12 col-md-10 col-md-offset-1 hours_menu_list">
         <li>
             <div class="hours-todays-date-container">
-                Library hours for <span class="hours-todays-date"></span>
+                Library hours for <span class="hours-todays-date">{{ now.Format "January 2, 2006"}}</span>
             </div>
             {{ partial "todays-library-hours.html" . }}
         </li>

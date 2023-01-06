@@ -1,3 +1,6 @@
+{{ $dataJSON := getJSON "https://api3.libcal.com/api_hours_today.php?iid=609&lid=0&format=json&system_time=0" }}
+
+
 <div class="table-hours">
 
     {{/*<div class="alert alert-info alert-hours" role="alert"><i class="fa fa-exclamation-circle"></i> </div>*/}}
@@ -11,38 +14,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td><a href="https://libguides.bc.edu/oneill/hours">O'Neill Library</a></td>
-                <td class="lib-hours lib-oneill"></td>
-            </tr>
-            <tr>
-                <td><a href="https://libguides.bc.edu/bapst/hours">Bapst Library</a></td>
-                <td class="lib-hours lib-bapst"></td>
-            </tr>
-            <tr>
-                <td><a href="https://libguides.bc.edu/bapst/hours">Bapst Library - Gargan Hall</a></td>
-                <td class="lib-hours lib-bapst-gargan"></td>
-            </tr>
-            <tr>
-                <td><a href="https://libguides.bc.edu/burns">Burns Library</a></td>
-                <td class="lib-hours lib-burns"></td>
-            </tr>
-            <tr>
-                <td><a href="https://libguides.bc.edu/erc/hours">Educational Resource Center</a></td>
-                <td class="lib-hours lib-erc"></td>
-            </tr>
-            <tr>
-                <td><a href="https://www.bc.edu/bc-web/schools/law/sites/students/library/using/hours.html">Law Library</a></td>
-                <td class="lib-hours lib-law"></td>
-            </tr>
-            <tr>
-                <td><a href="https://libguides.bc.edu/socialwork/hours">Social Work Library</a></td>
-                <td class="lib-hours lib-swl"></td>
-            </tr>
-            <tr>
-                <td><a href="https://libguides.bc.edu/tml/hours">Theology &amp; Ministry Library</a></td>
-                <td class="lib-hours lib-tml"></td>
-            </tr>
+            {{ range sort $dataJSON.locations "id" }}
+                {{ if eq .category "library" }}
+                <tr>
+                    <td><a href="{{ .url }}">{{ .name }}</a></td>
+                    <td class="lib-hours">{{ .rendered }}</td>
+                </tr>
+                {{ end }}
+            {{ end }}
         </tbody>
     </table>
     

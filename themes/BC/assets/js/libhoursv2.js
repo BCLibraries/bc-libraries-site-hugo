@@ -120,7 +120,6 @@ $(document).ready(function(){
         success: setHours,
         error: function(){
             console.error("could not retrieve hours!");
-            $(".table-hours tbody tr td:last-child").html("Error retrieving hours");
         },
     });
 });

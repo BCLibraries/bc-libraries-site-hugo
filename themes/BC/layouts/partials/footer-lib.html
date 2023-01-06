@@ -52,7 +52,7 @@
 
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hours-wrap">
                 <h4 class="hours"><a href="https://libguides.bc.edu/hours">Hours</a></h4>
-                <div class="hours-todays-date"></div>
+                <div class="hours-todays-date">{{ now.Format "January 2, 2006"}}</div>
                 {{ partial "todays-library-hours" . }}
             </div>
         </div>
