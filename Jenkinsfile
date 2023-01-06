@@ -7,6 +7,40 @@ pipeline {
     }
 
     stages {
+        stage("TEST: Display env vars"){
+            steps{
+                echo "These are default env vars"
+                echo "=========================="
+                echo "WORKSPACE          = ${WORKSPACE}"
+                echo "BUILD_ID           = ${BUILD_ID}"
+                echo "BUILD_NUMBER       = ${BUILD_NUMBER}"
+                echo "BUILD_TAG          = ${BUILD_TAG}"
+                echo "BUILD_URL          = ${BUILD_URL}"
+                echo "JENKINS_URL        = ${JENKINS_URL}"
+                echo "JOB_NAME           = ${JOB_NAME}"
+                echo "JOB_DISPLAY_URL    = ${JOB_DISPLAY_URL}"
+                echo "RUN_DISPLAY_URL    = ${RUN_DISPLAY_URL}"
+                echo "BUILD_DISPLAY_NAME = ${BUILD_DISPLAY_NAME}"
+                echo "JOB_BASE_NAME      = ${JOB_BASE_NAME}"
+                echo "BUILD_URL          = ${BUILD_URL}"
+                echo "JOB_URL            = ${JOB_URL}"
+                echo "=========================="
+                echo ""
+                echo "These are custom env vars"
+                echo "=========================="
+                echo "HUGO_WORKSPACE       = ${HUGO_WORKSPACE}"
+                echo "HUGO_BRANCH_BASE_URL = ${HUGO_BRANCH_BASE_URL}"
+                echo "=========================="
+                echo ""
+                echo "These are additional GIT env vars"
+                echo "=========================="
+                echo "GIT_COMMIT = ${GIT_COMMIT}"
+                echo "GIT_BRANCH = ${GIT_BRANCH}"
+                echo "GIT_URL    = ${GIT_URL}"
+                echo "=========================="
+                
+            }
+        }
         stage('Clone') {
             steps {
                 // cleans workspace
