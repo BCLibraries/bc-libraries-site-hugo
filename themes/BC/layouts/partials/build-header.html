@@ -5,7 +5,14 @@
 	ul#ci-list {list-style-type: none; margin: 0; padding: 0;}
 	ul#ci-list li {display: inline; list-style-type: none; padding-right: 10px; margin-right: 10px; border-right: 1px solid #ccc;}
 	ul#ci-list li:last-child {padding-right: 0; margin-right: 10px; border: none;}
-    ul#ci-list .build-git-commit a {width: 8ch; text-overflow: ellipsis;}
+    ul#ci-list .build-git-commit a {
+        width: 8ch;
+        text-overflow: clip;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: bottom;
+    }
 </style>
 
 <div id="build-header">
