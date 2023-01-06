@@ -49,7 +49,7 @@ pipeline {
         stage('Generate build header'){
             steps {
                 script {
-                    env.BUILD_HEADER_FILE="${WORKSPACE}/build/themes/BC/layouts/partials/build-header.html"
+                    env.BUILD_HEADER_FILE="${WORKSPACE}/themes/BC/layouts/partials/build-header.html"
                     echo "env.BUILD_HEADER_FILE is ${env.BUILD_HEADER_FILE}"
                     
                     sh """#!/bin/bash
