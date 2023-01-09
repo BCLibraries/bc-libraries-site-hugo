@@ -2,11 +2,10 @@ pipeline {
     agent  { label 'staging' }
     stages {
         stage('Generate build header'){
-            environment {
-                GIT_URL_CLEAN = sh(returnStdout: true, script:"echo ${GIT_URL} | rev | cut -d"." -f2- | rev").trim()
-            }
             steps {
                 script {
+                    GIT_URL_CLEAN = sh(returnStdout: true, script:"echo ${GIT_URL} | rev | cut -d"." -f2- | rev").trim()
+
                     env.BUILD_HEADER_FILE="${WORKSPACE}/themes/BC/layouts/partials/build-header.html"
                     echo "env.BUILD_HEADER_FILE is ${env.BUILD_HEADER_FILE}"
                     
