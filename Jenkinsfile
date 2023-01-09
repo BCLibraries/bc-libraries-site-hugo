@@ -2,8 +2,14 @@ pipeline {
     agent  { label 'staging' }
     stages {
         stage('Generate build header'){
+            environment {
+                FOO = GIT_URL.substring(0, GIT_URL.lastIndexOf('.'))
+
+            }
             steps {
                 script {
+                    echo "FOO is ${FOO}"
+                    
                     def generate_clean_url = sh(returnStdout: true, script: """
                         #!/bin/bash
                         set -e
