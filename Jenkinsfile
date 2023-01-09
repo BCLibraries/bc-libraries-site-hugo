@@ -1,13 +1,7 @@
 pipeline {
-    agent  { label 'libdev' }
-    
-    environment { 
-        HUGO_WORKSPACE = "${WORKSPACE}"
-        HUGO_BRANCH_BASE_URL = "${HUGO_STAGING_BRANCH_BASE_URL}"
-    }
-
+    agent  { label 'staging' }
     stages {
-        stage('Generate env vars'){
+        stage('Generate build header'){
             steps {
                 script {
                     // Jenkins gives us these git env vars
@@ -43,12 +37,7 @@ pipeline {
                     """)
                     env.BUILD_DATE = generate_build_date_iso.trim()
                     echo "env.BUILD_DATE is ${env.BUILD_DATE}"
-                }
-            }
-        }
-        stage('Generate build header'){
-            steps {
-                script {
+
                     env.BUILD_HEADER_FILE="${WORKSPACE}/themes/BC/layouts/partials/build-header.html"
                     echo "env.BUILD_HEADER_FILE is ${env.BUILD_HEADER_FILE}"
                     
@@ -94,6 +83,7 @@ pipeline {
         stage('Build') {
             environment { 
                 HUGO_OUTPUT_DIR = "${HUGO_OUTPUT_ROOT_DIR}/${GIT_BRANCH}"
+                HUGO_BRANCH_BASE_URL = "${HUGO_STAGING_BRANCH_BASE_URL}"
             }
             steps {
                 script {
@@ -109,7 +99,7 @@ pipeline {
                     //   -e : environment name (using "staging")
                     //   -b : base url (using "https://libdev.bc.edu/{branch_name}")
                     echo "Starting Hugo server..."
-                    sh "hugo -s ${HUGO_WORKSPACE} -d ${HUGO_OUTPUT_DIR} -e staging -b ${HUGO_BRANCH_BASE_URL}"
+                    sh "hugo -s ${WORKSPACE} -d ${HUGO_OUTPUT_DIR} -e staging -b ${HUGO_BRANCH_BASE_URL}"
                 }
             }
         }
