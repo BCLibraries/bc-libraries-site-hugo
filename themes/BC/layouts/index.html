@@ -50,12 +50,6 @@
                 }
             }
 
-            function listenForTypeahead() {
-                $('#search-panel').on('typeahead:selected', function (evt, data) {
-                    $('#search-panel form').submit();
-                });
-            }
-
             /* Rewrote makeQuickLinkBoxesClickable to use jQuery methods. */
             /* Fixes IE/Edge issue with forEach() not supporting nodeList */
 
@@ -82,7 +76,7 @@
 
             function linkToSearch(link_class, base_url, additional_search_param) {
                 $(link_class).click(function (e) {
-                    var term = $('#lib-search-box').val();
+                    var term = document.getElementById('lib-search-box').value;
                     if (term) {
                         base_url = base_url + '&query=any,contains,~~TERM~~';
                         if (additional_search_param) {
@@ -103,7 +97,6 @@
             }
 
             run_on_ready(smartLinkToSearch());
-            run_on_ready(listenForTypeahead);
             run_on_ready(makeQuickLinkBoxesClickable);
             run_on_ready(onlineOnlyPopover);
         })();
