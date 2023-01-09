@@ -3,31 +3,10 @@ pipeline {
     stages {
         stage('Generate build header'){
             environment {
-                GIT_URL_CLEAN = "${GIT_URL}.substring(0, removeString.length() - 4)"
+                GIT_URL_CLEAN = "${GIT_URL#*.git$}"
             }
             steps {
                 script {
-                    // Jenkins gives us these git env vars
-                    //   GIT_COMMIT
-                    //   GIT_BRANCH
-                    //   GIT_URL
-                    //
-                    // We need to generate:
-                    //   env.GIT_URL_CLEAN
-                    
-                    def generate_clean_url = sh(returnStdout: true, script: """
-                        #!/bin/bash
-                        set -e
-                        set +x
-                        
-                        # Create a shortened version of GIT_URL for use in the build header
-                        # We want everything before ".git"
-                        VAR_NAME=`echo ${GIT_URL} | rev | cut -d"." -f2-  | rev`
-                        echo \$VAR_NAME
-                    """)
-                    env.GIT_URL_CLEAN = generate_clean_url.trim()
-                    echo "env.GIT_URL_CLEAN is ${env.GIT_URL_CLEAN}"
-
                     env.BUILD_HEADER_FILE="${WORKSPACE}/themes/BC/layouts/partials/build-header.html"
                     echo "env.BUILD_HEADER_FILE is ${env.BUILD_HEADER_FILE}"
                     
