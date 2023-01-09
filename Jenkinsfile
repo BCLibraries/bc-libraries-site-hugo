@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Generate build header'){
             environment {
-                GIT_URL_CLEAN = sh(returnStdout: true, script:'${GIT_URL#*.git$}').trim()
+                GIT_URL_CLEAN = sh(returnStdout: true, script:"echo ${GIT_URL#*.git$}").trim()
             }
             steps {
                 script {
