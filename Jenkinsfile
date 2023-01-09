@@ -2,15 +2,8 @@ pipeline {
     agent  { label 'staging' }
     stages {
         stage('Generate build header'){
-            environment { 
-                def BUILD_DATE = sh(script: "echo `date +%Y-%m-%dT%H:%M:%S%z`", returnStdout: true).trim()
-                def GIT_URL_CLEAN = sh(script: "echo ${GIT_URL} | rev | cut -d"." -f2- | rev", returnStdout: true).trim()
-            }
             steps {
                 script {
-                    echo "BUILD_DATE is ${BUILD_DATE}"
-                    echo "GIT_URL_CLEAN is ${GIT_URL_CLEAN}"
-                    
                     // Jenkins gives us these git env vars
                     //   GIT_COMMIT
                     //   GIT_BRANCH
@@ -63,8 +56,8 @@ pipeline {
                         echo "Replacing BAMBOO_BUILD_NUMBER with ${BUILD_NUMBER}"
                         sed -i "s@BAMBOO_BUILD_NUMBER@${BUILD_NUMBER}@g" ${env.BUILD_HEADER_FILE}
                          
-                        echo "Replacing BAMBOO_BUILD_TIME with ${BUILD_DATE}"
-                        sed -i "s@BAMBOO_BUILD_TIME@${BUILD_DATE}@g" ${env.BUILD_HEADER_FILE}
+                        echo "Replacing BAMBOO_BUILD_TIME with ${BUILD_TIMESTAMP}"
+                        sed -i "s@BAMBOO_BUILD_TIME@${BUILD_TIMESTAMP}@g" ${env.BUILD_HEADER_FILE}
                         
                         echo "Replacing BAMBOO_GIT_URL with ${GIT_URL_CLEAN}"
                         sed -i "s@BAMBOO_GIT_URL@${GIT_URL_CLEAN}@g" ${env.BUILD_HEADER_FILE}
