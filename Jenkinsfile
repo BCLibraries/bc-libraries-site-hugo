@@ -2,6 +2,9 @@ pipeline {
     agent  { label 'staging' }
     stages {
         stage('Generate build header'){
+            environment {
+                GIT_URL_CLEAN = "${GIT_URL}.substring(0, removeString.length() - 4)"
+            }
             steps {
                 script {
                     // Jenkins gives us these git env vars
@@ -11,7 +14,6 @@ pipeline {
                     //
                     // We need to generate:
                     //   env.GIT_URL_CLEAN
-                    //   env.BUILD_DATE
                     
                     def generate_clean_url = sh(returnStdout: true, script: """
                         #!/bin/bash
@@ -25,18 +27,6 @@ pipeline {
                     """)
                     env.GIT_URL_CLEAN = generate_clean_url.trim()
                     echo "env.GIT_URL_CLEAN is ${env.GIT_URL_CLEAN}"
-
-                    def generate_build_date_iso = sh(returnStdout: true, script: """
-                        #!/bin/bash
-                        set -e
-                        set +x
-                        
-                        # Get current date
-                        VAR_NAME=`date +"%Y-%m-%dT%H:%M:%S%z"`
-                        echo \$VAR_NAME
-                    """)
-                    env.BUILD_DATE = generate_build_date_iso.trim()
-                    echo "env.BUILD_DATE is ${env.BUILD_DATE}"
 
                     env.BUILD_HEADER_FILE="${WORKSPACE}/themes/BC/layouts/partials/build-header.html"
                     echo "env.BUILD_HEADER_FILE is ${env.BUILD_HEADER_FILE}"
