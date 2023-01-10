@@ -49,7 +49,7 @@ pipeline {
         }
         stage('Build') {
             environment { 
-                HUGO_OUTPUT_DIR = "${HUGO_OUTPUT_ROOT_DIR}/${GIT_BRANCH}"
+                HUGO_OUTPUT_DIR = "${HUGO_STAGING_OUTPUT_ROOT_DIR}/${GIT_BRANCH}"
                 HUGO_BRANCH_BASE_URL = "${HUGO_STAGING_BRANCH_BASE_URL}"
             }
             steps {
