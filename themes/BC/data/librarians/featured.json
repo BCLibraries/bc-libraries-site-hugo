@@ -559,69 +559,6 @@
         ]
     },
     {
-        "name": "Jason Hall",
-        "title": "Liaison Librarian",
-        "department": "Collection Development & Research",
-        "active": true,
-        "profile_id": "273235",
-        "featured_background": "",
-        "featured_background_source": "",
-        "featured_background_caption": "",
-        "featured_background_type": "waves",
-        "featured_guides": [
-            {
-                "guide_name": "Economics Portal",
-                "guide_link": "https://libguides.bc.edu/economicsportal"
-            },
-            {
-                "guide_name": "Sports Economics and Administration",
-                "guide_link": "https://libguides.bc.edu/sportseconomics"
-            }
-        ],
-        "subjects": [
-            {
-                "id": "12904",
-                "site_id": "94",
-                "name": "Economics",
-                "ordering": "0",
-                "slug": "subjects\/economics",
-                "url": "https://libguides.bc.edu/economicsportal"
-            },
-            {
-                "id": "000000",
-                "site_id": "94",
-                "name": "Government Documents",
-                "ordering": "0",
-                "slug": "",
-                "url": "https://libguides.bc.edu/govdocs"
-            },
-            {
-                "id": "133507",
-                "site_id": "94",
-                "name": "International Studies",
-                "ordering": "0",
-                "slug": "subjects\/international-studies",
-                "url": "https://libguides.bc.edu/internationalstudies"
-            },
-            {
-                "id": "12908",
-                "site_id": "94",
-                "name": "Political Science & Government",
-                "ordering": "0",
-                "slug": "subjects\/political-science-government",
-                "url": "https://libguides.bc.edu/polisciportal"
-            },
-            {
-                "id": "201803",
-                "site_id": "94",
-                "name": "Sports Administration",
-                "ordering": "0",
-                "slug": "subjects\/sports-administration",
-                "url": "https://libguides.bc.edu/sportseconomics"
-            }
-        ]
-    },
-    {
         "name": "Margaret Cohen",
         "title": "Head, Educational Initiatives & Research Services",
         "department": "Educational Initiatives & Research Services",
