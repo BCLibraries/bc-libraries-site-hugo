@@ -1,6 +1,6 @@
 ---
 # Article title
-title: "See What Bc Libraries Staff Is Reading"
+title: "See What BC Libraries Staff Is Reading"
 
 # Set to true to only display in development
 draft: false
