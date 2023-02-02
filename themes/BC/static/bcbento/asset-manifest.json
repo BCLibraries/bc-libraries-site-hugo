@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "../theme/bcbento/static/js/main.5edb27b1.js",
+    "main.js": "../theme/bcbento/static/js/main.aaf92a7a.js",
     "index.html": "../theme/bcbento/index.html",
     "static/media/icon_archives.svg": "../theme/bcbento/static/media/icon_archives.9b4cb17afa3de9f4613f71cd6db7f355.svg",
-    "main.5edb27b1.js.map": "../theme/bcbento/static/js/main.5edb27b1.js.map"
+    "main.aaf92a7a.js.map": "../theme/bcbento/static/js/main.aaf92a7a.js.map"
   },
   "entrypoints": [
-    "static/js/main.5edb27b1.js"
+    "static/js/main.aaf92a7a.js"
   ]
 }
