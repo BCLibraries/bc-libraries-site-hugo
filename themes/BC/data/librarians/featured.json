@@ -1,7 +1,7 @@
 [
     {
         "name": "Chris Strauber",
-        "title": "Senior Research Librarian/Bibliographer",
+        "title": "Senior Liaison Librarian",
         "department": "Collection Development & Research",
         "active": true,
         "profile_id": "145218",
@@ -26,41 +26,65 @@
         "subjects": [
             {
                 "id": "12882",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Classical Studies",
-                "ordering": "0",
+                "slug_id": "144963",
                 "slug": "subjects\/classical-studies",
-                "url": "https://libguides.bc.edu/classicalportal"
+                "url": "https://libguides.bc.edu/chemistryportal"
+            },
+            {
+                "id": "212950",
+                "parent_id": "0",
+                "name": "Government Documents",
+                "slug_id": "2549429",
+                "slug": "subject\/govdocs",
+                "url": "https://libguides.bc.edu/govdocs"
+            },
+            {
+                "id": "133507",
+                "parent_id": "0",
+                "name": "International Studies",
+                "slug_id": "1294981",
+                "slug": "subjects\/international-studies",
+                "url": "https://libguides.bc.edu/internationalstudies"
+            },
+            {
+                "id": "29240",
+                "parent_id": "0",
+                "name": "Islamic Civilization & Societies",
+                "slug_id": "148589",
+                "slug": "subjects\/islamic-civilization-societies",
+                "url": "https://libguides.bc.edu/islamicportal"
             },
             {
                 "id": "12889",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Philosophy",
-                "ordering": "0",
+                "slug_id": "145014",
                 "slug": "subjects\/philosophy",
                 "url": "https://libguides.bc.edu/philosophyportal"
             },
             {
-                "id": "12892",
-                "site_id": "94",
-                "name": "Theology",
-                "ordering": "0",
-                "slug": "subjects\/theology",
-                "url": "https://libguides.bc.edu/theologyportal"
+                "id": "12908",
+                "parent_id": "0",
+                "name": "Political Science & Government",
+                "slug_id": "145016",
+                "slug": "subjects\/political-science-government",
+                "url": "https://libguides.bc.edu/polisciportal"
             },
             {
-                "id": "29240",
-                "site_id": "94",
-                "name": "Islamic Civilization & Societies",
-                "ordering": "0",
-                "slug": "subjects\/islamic-civilization-societies",
-                "url": "https://libguides.bc.edu/islamicportal"
+                "id": "12892",
+                "parent_id": "0",
+                "name": "Theology",
+                "slug_id": "145025",
+                "slug": "subjects\/theology",
+                "url": "https://libguides.bc.edu/theologyportal"
             }
         ]
     },
     {
         "name": "Leslie Homzie",
-        "title": "Senior Research Librarian/Bibliographer",
+        "title": "Senior Liaison Librarian",
         "department": "Collection Development & Research",
         "active": true,
         "profile_id": "10678",
@@ -89,33 +113,33 @@
         "subjects": [
             {
                 "id": "12902",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Communication",
-                "ordering": "0",
+                "slug_id": "144965",
                 "slug": "subjects\/communication",
                 "url": "https://libguides.bc.edu/communicationportal"
             },
             {
                 "id": "201799",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Criminal & Social Justice",
-                "ordering": "0",
+                "slug_id": "2320846",
                 "slug": "subjects\/criminal-social-justice",
                 "url": "https://libguides.bc.edu/"
             },
             {
                 "id": "12906",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Gender Studies",
-                "ordering": "0",
+                "slug_id": "144981",
                 "slug": "subjects\/gender-studies",
                 "url": "https://libguides.bc.edu/genderportal"
             },
             {
                 "id": "12911",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Sociology & Anthropology",
-                "ordering": "0",
+                "slug_id": "145022",
                 "slug": "subjects\/sociology-anthropology",
                 "url": "https://libguides.bc.edu/sociologyportal"
             }
@@ -123,7 +147,7 @@
     },
     {
         "name": "Enid Karr",
-        "title": "Senior Research Librarian/Bibliographer",
+        "title": "Senior Liaison Librarian",
         "department": "Collection Development & Research",
         "active": true,
         "profile_id": "10692",
@@ -148,33 +172,33 @@
         "subjects": [
             {
                 "id": "12893",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Biology",
-                "ordering": "0",
+                "slug_id": "144958",
                 "slug": "subjects\/biology",
                 "url": "https://libguides.bc.edu/biology"
             },
             {
                 "id": "12896",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Earth & Environmental Sciences",
-                "ordering": "0",
+                "slug_id": "144976",
                 "slug": "subjects\/earth-environmental-sciences",
                 "url": "https://libguides.bc.edu/geology"
             },
             {
                 "id": "30938",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Environmental Studies",
-                "ordering": "0",
+                "slug_id": "165259",
                 "slug": "subjects\/environmental-studies",
                 "url": "https://libguides.bc.edu/enviro-studiesportal"
             },
             {
                 "id": "12913",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Science",
-                "ordering": "0",
+                "slug_id": "145019",
                 "slug": "subjects\/science",
                 "url": "https://libguides.bc.edu/subjects/science"
             }
@@ -211,33 +235,33 @@
         "subjects": [
             {
                 "id": "12900",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "African & African Diaspora Studies",
-                "ordering": "0",
+                "slug_id": "144932",
                 "slug": "subjects\/african-african-diaspora-studies",
                 "url": "https://libguides.bc.edu/subjects/african-african-diaspora-studies"
             },
             {
                 "id": "12884",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "German Language & Literature",
-                "ordering": "0",
+                "slug_id": "144983",
                 "slug": "subjects\/german-language-literature",
                 "url": "https://libguides.bc.edu/germanportal"
             },
             {
                 "id": "12880",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Latin American Studies",
-                "ordering": "0",
+                "slug_id": "144988",
                 "slug": "subjects\/latin-american-studies",
                 "url": "https://libguides.bc.edu/subjects/latin-american-studies"
             },
             {
                 "id": "12890",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Romance Languages & Literatures",
-                "ordering": "0",
+                "slug_id": "145018",
                 "slug": "subjects\/romance-languages-literatures",
                 "url": "https://libguides.bc.edu/subjects/romance-languages-literatures"
             }
@@ -245,7 +269,7 @@
     },
     {
         "name": "Nina Bogdanovsky",
-        "title": "Senior Research Librarian/Bibliographer",
+        "title": "Senior Liaison Librarian",
         "department": "Collection Development & Research",
         "active": true,
         "profile_id": "10675",
@@ -270,57 +294,57 @@
         "subjects": [
             {
                 "id": "12881",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Art & Architecture",
-                "ordering": "0",
+                "slug_id": "144937",
                 "slug": "subjects\/art-architecture",
                 "url": "https://libguides.bc.edu/artportal"
             },
             {
                 "id": "12883",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Film Studies",
-                "ordering": "0",
+                "slug_id": "144979",
                 "slug": "subjects\/film",
                 "url": "https://libguides.bc.edu/filmportal"
             },
             {
                 "id": "30939",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Jewish Studies",
-                "ordering": "0",
+                "slug_id": "165258",
                 "slug": "subjects\/jewish-studies",
                 "url": "https://libguides.bc.edu/jewishstudiesportal"
             },
             {
                 "id": "12887",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Linguistics",
-                "ordering": "0",
+                "slug_id": "144991",
                 "slug": "subjects\/linguistics",
                 "url": "https://libguides.bc.edu/linguisticsportal"
             },
             {
                 "id": "12888",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Music",
-                "ordering": "0",
+                "slug_id": "145012",
                 "slug": "subjects\/music",
                 "url": "https://libguides.bc.edu/musicportal"
             },
             {
                 "id": "12915",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Slavic and Eastern Languages and Literatures",
-                "ordering": "0",
+                "slug_id": "145020",
                 "slug": "subjects\/slavic-eastern-languages",
                 "url": "https://libguides.bc.edu/slavicportal"
             },
             {
                 "id": "12891",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Theatre & Dance",
-                "ordering": "0",
+                "slug_id": "145024",
                 "slug": "subjects\/theatre-dance",
                 "url": "https://libguides.bc.edu/theatreanddanceportal"
             }
@@ -328,7 +352,7 @@
     },
     {
         "name": "Adam Williams",
-        "title": "Senior Reference Librarian/Bibliographer",
+        "title": "Senior Liaison Librarian",
         "department": "Social Work Library",
         "active": true,
         "profile_id": "80821",
@@ -357,17 +381,17 @@
         "subjects": [
             {
                 "id": "12909",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Psychology",
-                "ordering": "0",
+                "slug_id": "145017",
                 "slug": "subjects\/psychology",
                 "url": "https://libguides.bc.edu/psychologyportal"
             },
             {
                 "id": "12910",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Social Work",
-                "ordering": "0",
+                "slug_id": "145021",
                 "slug": "subjects\/social-work",
                 "url": "https://libguides.bc.edu/socialworkportal"
             }
@@ -375,7 +399,7 @@
     },
     {
         "name": "Nancy Curtis",
-        "title": "Senior Liaison Librarian",
+        "title": "Senior Liaison Librarian for Chemistry & Physics",
         "department": "Collection Development & Research",
         "active": true,
         "profile_id": "264616",
@@ -400,17 +424,17 @@
         "subjects": [
             {
                 "id": "12894",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Chemistry",
-                "ordering": "0",
+                "slug_id": "144962",
                 "slug": "subjects\/chemistry",
                 "url": "https://libguides.bc.edu/chemistryportal"
             },
             {
                 "id": "12898",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Physics",
-                "ordering": "0",
+                "slug_id": "145015",
                 "slug": "subjects\/physics",
                 "url": "https://libguides.bc.edu/physicsportal"
             }
@@ -443,33 +467,41 @@
         "subjects": [
             {
                 "id": "12895",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Computer Science",
-                "ordering": "0",
+                "slug_id": "144969",
                 "slug": "subjects\/computer-science",
-                "url": "https://libguides.bc.edu/compscience"
+                "url": "https://libguides.bc.edu/computerscienceportal"
+            },
+            {
+                "id": "12904",
+                "parent_id": "0",
+                "name": "Economics",
+                "slug_id": "144977",
+                "slug": "subjects\/economics",
+                "url": "https://libguides.bc.edu/economicsportal"
             },
             {
                 "id": "204263",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Engineering",
-                "ordering": "0",
+                "slug_id": "2365973",
                 "slug": "subjects\/engineering",
                 "url": "https://libguides.bc.edu/engineering"
             },
             {
                 "id": "12897",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Mathematics",
-                "ordering": "0",
+                "slug_id": "144992",
                 "slug": "subjects\/mathematics",
-                "url": "https://libguides.bc.edu/mathematics"
+                "url": "https://libguides.bc.edu/mathematicsportal"
             }
         ]
     },
     {
         "name": "Jennifer Butler Moran",
-        "title": "Senior Research Librarian/Bibliographer",
+        "title": "Senior Liaison Librarian",
         "department": "Theology & Ministry Library",
         "active": true,
         "profile_id": "180153",
@@ -494,27 +526,26 @@
         "subjects": [
             {
                 "id": "201800",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Cybersecurity",
-                "ordering": "0",
+                "slug_id": "2320849",
                 "slug": "subjects\/cybersecurity",
                 "url": "https://libguides.bc.edu/cybersecurity"
             },
             {
                 "id": "12892",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Theology",
-                "ordering": "0",
+                "slug_id": "145025",
                 "slug": "subjects\/theology",
                 "url": "https://libguides.bc.edu/theologyportal"
             }
-
         ]
     },
     {
         "name": "Elliott Hibbler",
-        "title": "Head Librarian, Scholarly Communications",
-        "department": "Research, Learning & Digital Scholarship",
+        "title": "Head, Scholarly Communications",
+        "department": "Scholarly Communications",
         "active": true,
         "profile_id": "290377",
         "featured_background": "",
@@ -542,17 +573,17 @@
         "subjects": [
             {
                 "id": "000000",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Copyright",
-                "ordering": "0",
+                "slug_id": "0",
                 "slug": "subjects\/copyright",
                 "url": "https://libguides.bc.edu/copyright"
             },
             {
                 "id": "000000",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Law Collection (O'Neill Library)",
-                "ordering": "0",
+                "slug_id": "0",
                 "slug": "",
                 "url": "https://libguides.bc.edu/lawportal"
             }
@@ -560,7 +591,7 @@
     },
     {
         "name": "Margaret Cohen",
-        "title": "Head, Educational Initiatives & Research Services",
+        "title": "Associate University Librarian, Research Services & Educational Initiatives",
         "department": "Educational Initiatives & Research Services",
         "active": true,
         "profile_id": "10677",
@@ -585,9 +616,9 @@
         "subjects": [
             {
                 "id": "12905",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Education",
-                "ordering": "0",
+                "slug_id": "144978",
                 "slug": "subjects\/education",
                 "url": "https://libguides.bc.edu/educationportal"
             }
@@ -620,18 +651,18 @@
         "subjects": [
             {
                 "id": "201802",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Healthcare Administration",
-                "ordering": "0",
+                "slug_id": "2320852",
                 "slug": "subjects\/healthcare-administration",
                 "url": "https://libguides.bc.edu/healthcareadmin"
             },
             {
-                "id": "201802",
-                "site_id": "94",
+                "id": "000000",
+                "parent_id": "0",
                 "name": "Online Learning support",
-                "ordering": "0",
-                "slug": "subjects\/online-learning-support",
+                "slug_id": "0",
+                "slug": "",
                 "url": "https://libguides.bc.edu/onlinecoursesupport"
             }
         ]
@@ -659,48 +690,17 @@
         "subjects": [
             {
                 "id": "12879",
-                "site_id": "94",
-                "name": "Irish Studies - Music",
-                "ordering": "0",
+                "parent_id": "0",
+                "name": "Irish Music",
+                "slug_id": "144985",
                 "slug": "subjects\/irish-studies",
                 "url": "https://libguides.bc.edu/irishmusic"
             }
         ]
     },
     {
-        "name": "Bee Lehman, Ph.D.",
-        "title": "Digital Humanities Program Librarian",
-        "department": "Collection Development & Research",
-        "active": true,
-        "profile_id": "216542",
-        "featured_background": "",
-        "featured_background_source": "",
-        "featured_background_caption": "",
-        "featured_background_type": "constellation",
-        "featured_guides": [
-            {
-                "guide_name": "History Research",
-                "guide_link": "https://libguides.bc.edu/history"
-            },
-            {
-                "guide_name": "Irish Studies Portal",
-                "guide_link": "https://libguides.bc.edu/irishportal"
-            }
-        ],
-        "subjects": [
-            {
-                "id": "7886",
-                "site_id": "94",
-                "name": "History",
-                "ordering": "0",
-                "slug": "subjects\/history",
-                "url": "https://libguides.bc.edu/history"
-            }
-        ]
-    },
-    {
         "name": "Wanda Anderson",
-        "title": "Senior Research Librarian/ Bibliographer",
+        "title": "Senior Liaison Librarian",
         "department": "Collection Development & Research",
         "active": true,
         "profile_id": "65380",
@@ -725,9 +725,9 @@
         "subjects": [
             {
                 "id": "12899",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Nursing & Health Sciences",
-                "ordering": "0",
+                "slug_id": "145013",
                 "slug": "subjects\/nursing-health-sciences",
                 "url": "https://libguides.bc.edu/nursingportal"
             }
@@ -735,7 +735,7 @@
     },
     {
         "name": "Doug Olsen",
-        "title": "Senior Liaison Librarian",
+        "title": "Senior Liaison Librarian for CSOM",
         "department": "Collection Development & Research",
         "active": true,
         "profile_id": "307390",
@@ -760,17 +760,17 @@
         "subjects": [
             {
                 "id": "12901",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Business",
-                "ordering": "0",
+                "slug_id": "144961",
                 "slug": "subjects\/business",
                 "url": "https://libguides.bc.edu/managementportal"
             },
             {
                 "id": "201801",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Finance",
-                "ordering": "0",
+                "slug_id": "2320851",
                 "slug": "subjects\/finance",
                 "url": "https://libguides.bc.edu/finance"
             }
@@ -799,25 +799,25 @@
         "subjects": [
             {
                 "id": "12916",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Asian Studies",
-                "ordering": "0",
+                "slug_id": "143247",
                 "slug": "subjects\/asian-studies",
                 "url": "https://libguides.bc.edu/asianstudiesportal"
             },
             {
                 "id": "12885",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "English Language & Literature",
-                "ordering": "0",
+                "slug_id": "144986",
                 "slug": "subjects\/english",
                 "url": "https://libguides.bc.edu/englishportal"
             },
             {
                 "id": "12879",
-                "site_id": "94",
+                "parent_id": "0",
                 "name": "Irish Studies",
-                "ordering": "0",
+                "slug_id": "144985",
                 "slug": "subjects\/irish-studies",
                 "url": "https://libguides.bc.edu/irishportal"
             }
