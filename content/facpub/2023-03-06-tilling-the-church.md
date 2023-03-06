@@ -6,7 +6,7 @@ draft: false
 by: ""
 authorfirstname: "Richard"
 authorlastname: "Lennan"
-authorposition: ""
+authorposition: "Professor of Systematic Theology<br/>Professor Ordinarius<br/>Chair, Ecclesiastical Faculty"
 secondauthor: ""
 secondposition: ""
 thirdauthor: ""
