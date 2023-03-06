@@ -20,7 +20,7 @@ showbooklocation: true
 bookcover: "2023/tilling-the-church.jpg"
 imagealt: ""
 supplementalmaterial: "2023/tilling-the-church-further-reading.pdf"
-supplementalmateriallabel: "Further reading"
+supplementalmateriallabel: "For Further Reading/Study"
 showsupplementalmaterials: true
 oneoff: false
 type: "facpub"
