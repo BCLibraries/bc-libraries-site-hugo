@@ -27,7 +27,7 @@
             {{ range first 1 (where (where .Site.RegularPages ".Params.type" "facpub") ".Params.oneoff" false) }}
             <div class="youtube">
                 <div id="titleauthor">
-                    <h3 id="main-heading"><a href="{{ .Permalink }}">{{ .Title | safeHTML }}</a></h3>
+                    <h3 id="main-heading"><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a></h3>
                     {{ partial "facpub/author-summary.html" . }}
                 </div>
 
@@ -48,7 +48,7 @@
                 <div class="col-sm-6 fph_content_right">
                     <div class="media">
                         <div class="media-left">
-                            <a href="{{ .Permalink }}"><img class="media-object" src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.bookcover }}" alt=""></a>
+                            <a href="{{ .RelPermalink }}"><img class="media-object" src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.bookcover }}" alt=""></a>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading"><strong>{{ .Params.authorfirstname }} {{ .Params.authorlastname }}</strong></h4>
@@ -70,7 +70,7 @@
             </div>
             
             <div class="row">
-                <a href="{{ .Permalink }}" class="view-interview">View interview and more</a>
+                <a href="{{ .RelPermalink }}" class="view-interview">View interview and more</a>
             </div>
             {{ end }}
         </div>
