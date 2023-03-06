@@ -44,7 +44,7 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">{{ .Params.authorfirstname }} {{ .Params.authorlastname }}</h4>
-                            <p><em>{{ .Params.authorposition }}</em></p>
+                            <p><em>{{ .Params.authorposition | safeHTML }}</em></p>
                             
                             {{ if .Params.secondauthor }}
                             <p>{{ .Params.secondauthor }}<br /><em>{{ .Params.secondposition }}</em></p>
