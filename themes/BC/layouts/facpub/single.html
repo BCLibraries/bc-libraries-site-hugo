@@ -58,6 +58,9 @@
                     {{ if eq .Params.showsamplepages true }}
                     <p class="{{ .Params.showsamplepages }}"><a href="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.samplepages }}" class="sample">View sample pages</a></p>
                     {{ end }}
+                    {{ if eq .Params.showsupplementalmaterials true }}
+                    <p class="{{ .Params.showsupplementalmaterials }}"><a href="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.supplementalmaterial }}" class="sample">{{ .Params.supplementalmateriallabel }}</a></p>
+                    {{ end }}
                     {{ if eq .Params.showbooklocation true }}
                     <p class="{{ .Params.showbooklocation }}"><a href="{{ .Params.booklocation }}" class="location">Find this item</a></p>
                     {{ end }}
