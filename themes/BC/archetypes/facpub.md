@@ -19,6 +19,9 @@ booklocation: ""
 showbooklocation: true
 bookcover: ""
 imagealt: ""
+supplementalmaterial: ""
+supplementalmateriallabel: ""
+showsupplementalmaterials: false
 oneoff: false
 type: "facpub"
 ---
