@@ -1,12 +1,12 @@
     <div class="archive-item col-sm-6">
         <div class="media">
             <div class="media-left">
-                <a href="{{ .Permalink }}">
+                <a href="{{ .RelPermalink }}">
                     <img class="media-object" src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.bookcover }}" alt="">
                 </a>
             </div>
             <div class="media-body">
-                <a href="{{ .Permalink }}" class="archive-item-title"><em>{{ .Title | safeHTML }}</em></a>
+                <a href="{{ .RelPermalink }}" class="archive-item-title"><em>{{ .Title | safeHTML }}</em></a>
                 <div class="archive-item-authors">
                     {{ partial "facpub/author-summary.html" . }}
                 </div>
