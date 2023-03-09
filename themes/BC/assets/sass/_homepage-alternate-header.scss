@@ -1,7 +1,6 @@
-html body.alternate-header #header {
+html.fallback body.alternate-header #header {
     background: url("https://library.bc.edu/images/homepage/hero/bapst-in-snow-1440px.jpg") no-repeat 0 90% #fff;
     background-size: cover;
-
 }
 
 html.avif body.alternate-header #header {
