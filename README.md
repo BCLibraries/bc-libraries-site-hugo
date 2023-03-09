@@ -4,23 +4,28 @@ The Hugo files for the BC Libraries site.
 
 The site is built using [Hugo](https://gohugo.io/getting-started/installing/). Be sure to use the extended version with Sass/SCSS support.
 
+## Uploading images
+Use the *bin/upload-image* script to upload images to the image directory on library, resize them, and make derivative
+forms in modern image formats (avif and WebP).
+
+```bash
+./bin/upload-image -u florinb -i otter.jpg -o sample-images/animals
+```
+
+See the script's help page for a full list of options.
+
 ## Adding content
 
 Use the `hugo new` command to add content, e.g.:
 
 ### News
 
-1. Upload the image thumbnail to the appropriate subdirectory of */var/www/html/images/news* on library.bc.edu.
-2. Create an AVIF and webp files of the image on library:
-   ```bash
-   npx avif image-filename.jpg
-   mogrify -format webp image-filename.jpg
-   ```
-3. Create the news item:
+1. Upload the image thumbnail using the *bin/upload-image* script.
+2. Create the news item:
    ```bash
    hugo new news/2022-10-headline-in-slug-form.md
     ```
-4. Fill in the news metadata, using a previous story as the model.
+3. Fill in the news metadata, using a previous story as the model.
 ### Faculty publication highlights
 
 ```bash

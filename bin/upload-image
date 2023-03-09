@@ -1,0 +1,193 @@
+#!/usr/bin/env bash
+
+usage() {
+  cat << EOF # remove the space between << and EOF, this is due to web plugin issue
+Usage: $0 [ -m max dimensions ] -u library_bc_edu_username -i image_file -o output_path
+
+Uploads images to library.bc.edu and performs necessary processing
+
+Available options:
+
+    -u           Username on library.bc.edu; e.g. florinb
+    -i           Input image file; e.g. otter.jpg
+    -t           Image type; used to determine dimensions and output directories
+                 Valid options: 
+                    - news
+                    - hero
+    -o           Output directory in library.bc.edu:/opt/images; e.g. sample-images/otters
+                 If the directory does not exist on library it will be created.
+                 (required if a type is not set)
+    -m,          Max dimensions of output image; e.g. 600x400 (opt)
+                 Images will only be resized if one dimension is larger than the value,
+                 and aspect ratio will be maintained. Images without this option are not 
+                 resized             
+    -h           Print this help and exit (opt)
+
+Example: $0 -m 600x400 -u florinb -i otter.jpg -o sample-images/animals
+
+EOF
+  exit
+}
+
+# Something bad has happened. Exit.
+exit_abnormal() {
+  usage
+  exit 1
+}
+
+# Setup text color codes
+setup_colors() {
+  if [[ -t 2 ]] && [[ "${TERM-}" != "dumb" ]]; then
+    NOFORMAT='\033[0m' RED='\033[0;31m' GREEN='\033[0;32m' ORANGE='\033[0;33m' BLUE='\033[0;34m' PURPLE='\033[0;35m' CYAN='\033[0;36m' YELLOW='\033[1;33m'
+  else
+    NOFORMAT='' RED='' GREEN='' ORANGE='' BLUE='' PURPLE='' CYAN='' YELLOW=''
+  fi
+}
+
+# Print a message to the screen, possibly with color
+msg() {
+  echo >&2 -e "${1-}"
+}
+
+# Print an error and exit
+error_out() {
+  msg "${RED}Error: ${1-}${NOFORMAT}"
+  exit_abnormal
+}
+
+# Does the needle exist in the haystack?
+exists_in_list() {
+    haystack=$1
+    needle=$2
+    [[ "$haystack" =~ ( |^)$needle( |$) ]]
+}
+
+setup_colors
+
+# Default values for
+imagedir_on_library="/opt/images"   # Path to images directory on library.bc.edu
+username=""                         # Username on library.bc.edu to login as
+maxdim=""                           # Maximum dimensions of the image.
+outpath=""                          # The output full path to create on library in the images directory
+type="none"                         # The type of image (e.g. news)
+full_input_path=""                  # The full input jpeg filepath (e.g. ~/Desktop/otter/jpg)
+input_file=""                       # The input filename (e.g. otter.jpg)
+img_extension=""                    # The image extension (e.g. jpg)
+input_file_without_extension=""     # The input filename without the extension (e.g. otter)
+
+# Get options.
+while getopts ":hm:u:i:o:t:" options; do
+  case "${options}" in
+    h)                                    # Print usage and exit
+        usage
+        exit 0
+        ;;                    # 
+    m)                                    # Set maximum dimensions
+      maxdim=${OPTARG}  
+      re_is_valid_dim='^[0-9]{1,4}x[0-9]{1,4}$'
+      if ! [[ $maxdim =~ $re_is_valid_dim ]] ; then 
+        error_out "${maxdim} is not a valid dimensions string"
+      fi                
+      ;;
+    u)                                    # Set library.bc.edu username
+      username=${OPTARG}                  
+      re_is_valid_username='^[a-z_]([a-z0-9_-]{0,31}|[a-z0-9_-]{0,30}\$)$'
+      if ! [[ $username =~ $re_is_valid_username ]] ; then 
+        error_out "${username} is not a valid library.bc.edu username"
+      fi
+      ;;
+    i)                                    # Set the input filename and path
+      full_input_path=${OPTARG}                         
+      input_file=$(basename -- "$full_input_path")
+      img_extension="${input_file##*.}"  
+      input_file_without_extension="${input_file%.*}"
+      ;;
+    o)                                    # Set output path
+      outpath=${OPTARG}                  
+      ;;
+    t)                                    # Set type
+      type=${OPTARG}
+      ;;
+    :)                                    # If expected argument omitted:
+      error_out "-${OPTARG} requires an argument"
+      ;;
+    *)                                    # If unknown (any other) option:
+      exit_abnormal                       
+      ;;
+  esac
+done
+
+# Load defaults for types
+if [[ $type = "news" ]]; then
+  dated_subdir=`date +"%Y-%m"`
+  outpath="news/${dated_subdir}"
+  maxdim="600x400"
+fi
+
+if [[ $type = "hero" ]]; then
+  outpath="homepage/hero"
+  maxdim="1440x1440"
+fi
+
+# Check for errors
+if ! exists_in_list "none news hero" $type ; then
+  error_out "${type} is not a valid type"
+fi
+
+if [[ $username = "" ]]; then
+  error_out "library.bc.edu username must not be blank"
+fi
+
+if [[ $outpath = "" ]]; then
+  error_out "must specify an output path or a valid image type"
+fi
+
+if [[ $full_input_path = "" ]]; then
+  error_out "input file must not be blank"
+fi
+
+if [[ ! -f $full_input_path ]] ; then
+  error_out "${full_input_path} does not exist"
+fi
+
+target_dir="${imagedir_on_library}/${outpath}"
+remote_user="${username}@library.bc.edu"
+remote_file="${target_dir}/${input_file}"
+
+# Make sure all directories exist then upload the file.
+msg "${YELLOW}Uploading file to library.bc.edu:${target_dir}${NOFORMAT}"
+ssh $remote_user mkdir -p "${target_dir}"
+rsync -v --perms $full_input_path $remote_user:$target_dir
+
+# Resize the image if the max dimensions option is set. The image
+# will be resized to the smallest set dimension without changing 
+# the aspect ratio. For example, a 900x600 image resized with
+# -m 600x200 will be resized to 300x200.
+if [[ ! $maxdim = "" ]] ; then 
+    msg "${YELLOW}Resizing $remote_file with maximum bounds $maxdim${NOFORMAT}"
+    
+    # Resizing is destructive, so make a backup of the image before converting
+    backup_img="${target_dir}/${input_file_without_extension}--original.${img_extension}"
+    ssh $remote_user cp $remote_file $backup_img
+    ssh $remote_user convert -verbose $remote_file -resize $maxdim\\\>  $remote_file
+fi
+
+# Build an avif file with the same filename but a new extension
+# e.g. otter.jpg => otter.png
+msg "${YELLOW}Building AVIF${NOFORMAT}" 
+ssh $remote_user npx avif --verbose --input $remote_file
+
+# Build a WebP file with the same filename but a new extension
+# e.g. otter.jpg => otter.webp
+msg "${YELLOW}Building WebP${NOFORMAT}"
+ssh $remote_user mogrify -verbose -format webp $remote_file
+
+# Make sure permissions are set correctly.
+msg "${YELLOW}Update remote permissions${NOFORMAT}"
+ssh $remote_user find $target_dir -type d -exec chmod 775 {} \\\;
+ssh $remote_user find $target_dir -type f -exec chmod 664 {} \\\;
+
+msg "${YELLOW}Created remote files in ${imagedir_on_library}${NOFORMAT}"
+msg "  ${outpath}/${input_file_without_extension}.jpg (https://library.bc.edu/images/${outpath}/${input_file_without_extension}.jpg)"
+msg "  ${outpath}/${input_file_without_extension}.avif (https://library.bc.edu/images/${outpath}/${input_file_without_extension}.avif)"
+msg "  ${outpath}/${input_file_without_extension}.webp (https://library.bc.edu/images/${outpath}/${input_file_without_extension}.webp)"
