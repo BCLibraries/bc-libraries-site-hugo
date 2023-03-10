@@ -23,7 +23,18 @@ Available options:
                  resized             
     -h           Print this help and exit (opt)
 
-Example: $0 -m 600x400 -u florinb -i otter.jpg -o sample-images/animals
+Necessary processing includes creating derivative images in modern formats (avif and WebP)
+and possible containing the image to a set of maximum dimensions. Accepted input formats 
+are jpeg/GIF/png. Other formats (e.g. PDFs) can be uploaded, but they won't be processed 
+into derivatives.
+
+Examples:  Upload otter.jpg to /opt/images/sample-images/animals/otter.jpg and limit the width
+           to 600px and height to 400px
+           $0 -m 600x400 -u florinb -i otter.jpg -o sample-images/animals
+
+           Upload baldwin.png to /opt/news/2023-03/baldwin.png and resize to match news image
+           dimensions
+           $0 -t news -u florinb -i baldwin.png
 
 EOF
   exit
@@ -159,6 +170,14 @@ msg "${YELLOW}Uploading file to library.bc.edu:${target_dir}${NOFORMAT}"
 ssh $remote_user mkdir -p "${target_dir}"
 rsync -v --perms $full_input_path $remote_user:$target_dir
 
+# If the image is a PDF, exit here.
+lowercase_img_extension=$(echo "$img_extension" | tr '[:upper:]' '[:lower:]')
+if ! exists_in_list "gif jpg jpeg png" $lowercase_img_extension ; then
+  msg "${YELLOW}Created remote files in ${imagedir_on_library}${NOFORMAT}"
+  msg "  ${remote_file} (https://library.bc.edu/images/${outpath}/${input_file})"
+  exit 0
+fi
+
 # Resize the image if the max dimensions option is set. The image
 # will be resized to the smallest set dimension without changing 
 # the aspect ratio. For example, a 900x600 image resized with
@@ -187,7 +206,7 @@ msg "${YELLOW}Update remote permissions${NOFORMAT}"
 ssh $remote_user find $target_dir -type d -exec chmod 775 {} \\\;
 ssh $remote_user find $target_dir -type f -exec chmod 664 {} \\\;
 
-msg "${YELLOW}Created remote files in ${imagedir_on_library}${NOFORMAT}"
-msg "  ${outpath}/${input_file_without_extension}.jpg (https://library.bc.edu/images/${outpath}/${input_file_without_extension}.jpg)"
+msg "${YELLOW}Created remote files in ${imagedir_on_library}/${NOFORMAT}"
+msg "  ${outpath}/${input_file_without_extension}.${img_extension} (https://library.bc.edu/images/${outpath}/${input_file_without_extension}.${img_extension})"
 msg "  ${outpath}/${input_file_without_extension}.avif (https://library.bc.edu/images/${outpath}/${input_file_without_extension}.avif)"
 msg "  ${outpath}/${input_file_without_extension}.webp (https://library.bc.edu/images/${outpath}/${input_file_without_extension}.webp)"

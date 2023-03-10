@@ -20,7 +20,10 @@ Use the `hugo new` command to add content, e.g.:
 
 ### News
 
-1. Upload the image thumbnail using the *bin/upload-image* script.
+1. Upload the image in jpeg or png format as a news photo using the *bin/upload-image* script:
+   ```bash
+   ./bin/upload-image -t news /path/to/image.jpg
+   ```
 2. Create the news item:
    ```bash
    hugo new news/2022-10-headline-in-slug-form.md
