@@ -1,137 +1,116 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Directories in theme.
-THEME_DIR=$(dirname "$0")/../themes/BC
-BENTO_THEME_DIR=${THEME_DIR}/static/bcbento
-STATIC_THEME_DIR=${BENTO_THEME_DIR}/static
-JS_THEME_DIR=${STATIC_THEME_DIR}/js
-MEDIA_THEME_DIR=${STATIC_THEME_DIR}/media
+usage() {
+  cat <<EOF
+Usage: $0 [ -b branch_name ] path_to_client_project_di
 
-# The Hugo layout file for the search page.
-SEARCH_LAYOUT=${THEME_DIR}/layouts/search/search.html.html
+Deploys bento application from its build directory to the Web site
 
-#Options
-BUILD=false
-BRANCH="master"
+Options:
 
-# Arguments
-path_to_client=
+    -b branch-name            Perform a fresh build from git branch
+    -h                        Print this help and exit (opt)
 
-function main() {
-  validate_theme_files
-  get_options "$@"
+Example: $0 /Users/florinb/projects/bcbento_client
 
-  if [ "$BUILD" = true ]; then
-    build_client
-  fi
-  clean_old_files
-  copy_build_files
-  update_search_layout
+EOF
+  exit
 }
 
-# Something went wrong.
-function error_exit() {
-  RED='\033[0;31m'
-  NC='\033[0m' # No Color
-  printf "${RED}ERROR: $1${NC}\n" 1>&2
+# Something bad has happened. Exit.
+exit_abnormal() {
+  usage
   exit 1
 }
 
-# Show application usage.
-function show_usage() {
-  NC='\033[0m' # No Color
-  YELLOW='\033[1;33m'
-  echo -e "${YELLOW}Usage${NC}:
-  deploy-bento [options] path_to_client
+# Setup text color codes
+setup_colors() {
+  if [[ -t 2 ]] && [[ "${TERM-}" != "dumb" ]]; then
+    NOFORMAT='\033[0m' RED='\033[0;31m' GREEN='\033[0;32m' ORANGE='\033[0;33m' BLUE='\033[0;34m' PURPLE='\033[0;35m' CYAN='\033[0;36m' YELLOW='\033[1;33m'
+  else
+    NOFORMAT='' RED='' GREEN='' ORANGE='' BLUE='' PURPLE='' CYAN='' YELLOW=''
+  fi
+}
 
-${YELLOW}Options${NC}:
-  -h                        Display this help message.
-  -b branch-name            Perform a fresh build from git branch   
-"
+# Print a message to the screen, possibly with color
+msg() {
+  echo >&2 -e "${1-}"
+}
+
+# Print an error and exit
+error_out() {
+  msg "${RED}Error: ${1-}${NOFORMAT}"
+  exit_abnormal
 }
 
 # Make sure all the paths in the Hugo theme exist
 function validate_theme_files() {
+  msg "${YELLOW}Validating theme directories${NOFORMAT}"
+
   # Die if theme directories and files aren't where they are supposed to be.
-  if [ ! -d "$BENTO_THEME_DIR" ]; then
-    error_exit "$BENTO_THEME_DIR: Bento directory not found in theme"
+  if [ ! -d "$bento_theme_dir" ]; then
+    error_out "...bento directory not found in theme ${bento_theme_dir}"
   fi
 
-  if [ ! -d "$STATIC_THEME_DIR" ]; then
-    error_exit "$STATIC_THEME_DIR: Bento static directory not found in theme"
+  if [ ! -d "$static_theme_dir" ]; then
+    error_out "...bento static directory not found in theme ${static_theme_dir}"
   fi
 
-  if [ ! -f "$SEARCH_LAYOUT" ]; then
-    error_exit "$SEARCH_LAYOUT: Search layout not found in theme"
-  fi
-}
-
-function get_options() {
-  local OPTIND
-  while getopts ":hb:" opt; do
-    case ${opt} in
-    h)
-      show_usage
-      exit 0
-      ;;
-    b)
-      BUILD=true
-      BRANCH=$OPTARG
-      ;;
-    \?)
-      error_exit "Invalid Option: -$OPTARG" 1>&2
-      ;;
-    esac
-  done
-  shift $((OPTIND - 1))
-
-  path_to_client=$1
-  if [ ! -d "$path_to_client" ]; then
-    error_exit "${path_to_client}: No such directory"
+  if [ ! -f "$search_layout" ]; then
+    error_out "...search layout not found in theme ${search_layout}"
   fi
 }
 
 # Build a new deployment of the client.
 function build_client() {
-  pushd "$path_to_client" || error_exit "$path_to_client: Could not cd to client"
+  msg "${YELLOW}Building client${NOFORMAT}"
+
+  pushd "$path_to_client" || error_out "...could not cd to client at $path_to_client"
+  
   current_branch=$(git rev-parse --abbrev-ref HEAD)
-  git checkout "$BRANCH" || error_exit "Couldn't checkout client branch $BRANCH"
-  yarn build || error_exit "Couldn't build client"
+  git checkout "$branch" || error_out "...couldn't checkout client branch $branch"
+  yarn build || error_out "...couldn't build client"
   git checkout "$current_branch"
   popd || return
 }
 
 # Remove any old files.
 function clean_old_files() {
-  echo "Remove old js dir..."
-  rm -r "${JS_THEME_DIR}" || error_exit "$JS_THEME_DIR: Couldn't delete js directory"
+  msg "${YELLOW}Cleaning old files${NOFORMAT}"
 
-  echo "Remove stray javascript and json..."
-  for f in "${BENTO_THEME_DIR}"/*js*; do
+  msg "...removing old js dir"
+  rm -r "${js_theme_dir}" || error_out "...couldn't delete JS directory $js_theme_dir"
+
+  msg "...removing stran javascript and JSON"
+  for f in "${bento_theme_dir}"/*js*; do
     if [ -f "$f" ]; then
-      rm "$f" || error_exit " $f: Couldn't delete"
+      rm "$f" || error_out "...couldn't delete ${f}"
     fi
   done
 }
 
 # Copy in the fresh files.
 function copy_build_files() {
-  echo "Copy over new js directory..."
-  cp -r "${path_to_client}"/build/static/js "${STATIC_THEME_DIR}" || error_exit "Couldn't copy js directory"
+  msg "${YELLOW}Copying build files${NOFORMAT}"
+  
+  msg "...copying over new js directory"
+  cp -r "${path_to_client}"/build/static/js "${static_theme_dir}" || error_out "...couldn't copy js directory"
+  
+  msg "...copying over new media directory"
+  cp -r "${path_to_client}"/build/static/media "${static_theme_dir}" || error_out "...couldn't copy media directory"
 
-  cp -r "${path_to_client}"/build/static/media "${STATIC_THEME_DIR}" || error_exit "Couldn't copy media directory"
-
-  echo "Copy over new stray javascript and json..."
-  cp "${path_to_client}"/build/*js* "${BENTO_THEME_DIR}" || error_exit "Couldn't copy stray js"
+  msg "...copying over new stray javascript and json"
+  cp "${path_to_client}"/build/*js* "${bento_theme_dir}" || error_out "...couldn't copy stray js"
 }
 
 # Update the Hugo search layout document to reflect the new javascript files.
 function update_search_layout() {
 
-  echo "Update search layout..."
+  msg "${YELLOW}Updating search layout${NOFORMAT}"
+
   build_index_path=${path_to_client}/build/index.html
   if [ ! -f "$build_index_path" ]; then
-    error_exit "${build_index_path}: Build index.html not found"
+    error_out "...build index.html not found in ${build_index_path}"
   fi
 
   # Each new version of the application javascript has a unique fingerprint
@@ -144,11 +123,61 @@ function update_search_layout() {
   [[ "$build_index" =~ $pattern ]]
   main_fingerprint=${BASH_REMATCH[1]}
   if [ -z "$main_fingerprint" ]; then
-   error_exit "Could not find main javascript fingerprint in index.html"
+   error_out "...could not find main javascript fingerprint in index.html"
   fi
 
-
-  sed -i '' -e "s/main\.[^/]*\.js/main.$main_fingerprint.js/" "$SEARCH_LAYOUT"
+  msg "...replacing old js fingerprint with ${main_fingerprint}"
+  sed -i '' -e "s/main\.[^/]*\.js/main.$main_fingerprint.js/" "$search_layout"
 }
 
-main "$@"
+# Directories in theme.
+theme_dir=$(dirname "$0")/../themes/BC
+bento_theme_dir=${theme_dir}/static/bcbento
+static_theme_dir=${bento_theme_dir}/static
+js_theme_dir=${static_theme_dir}/js
+media_theme_dir=${static_theme_dir}/media
+
+# The Hugo layout file for the search page.
+search_layout=${theme_dir}/layouts/search/search.html.html
+
+#Options
+build=false
+branch="master"
+
+# Arguments
+path_to_client=
+
+setup_colors
+
+#  Start the program
+validate_theme_files
+
+while getopts ":hb:" opt; do
+  case ${opt} in
+  h)
+    usage
+    exit 0
+    ;;
+  b)
+    build=true
+    branch=$OPTARG
+    ;;
+  \?)
+    error_out "Invalid Option: -$OPTARG" 1>&2
+    ;;
+  esac
+  shift $((OPTIND - 1))
+done
+
+path_to_client=$1
+if [ ! -d "$path_to_client" ]; then
+  error_out "Could not find bento client dir ${path_to_client}"
+fi
+
+if [ "$build" = true ]; then
+  build_client
+fi
+
+clean_old_files
+copy_build_files
+update_search_layout

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 usage() {
-  cat << EOF # remove the space between << and EOF, this is due to web plugin issue
-Usage: $0 [ -m max dimensions ] -u library_bc_edu_username -i image_file -o output_path
+  cat <<EOF
+Usage: $0 [ -m width_x_height ] -u library_bc_edu_username -i image_file -o output_path
 
 Uploads images to library.bc.edu and performs necessary processing
 
