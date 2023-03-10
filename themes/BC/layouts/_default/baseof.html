@@ -15,6 +15,7 @@
         {{ partial "library-help-button.html" . }}
         {{ end }}
 
+        <header>
         {{/* add Bamboo build header */}}
         {{ if eq .Site.Params.showbuildheader true }}
         {{ partial "build-header.html" . }}
@@ -22,15 +23,18 @@
 
         {{/* add maroon bar to header */}}
         {{ partial "bclib-header.html" . }}
+        </header>
 
         {{/* add mega menu to header */}}
         {{ partial "megamenu/megamenu.html" . }}
 
         <h1 class="sr-only sr-only-focusable">{{ .Title }}</h1>
 
+        <main>
         {{ block "header" . }}{{ end}}
         
         {{ block "main" . }}{{ end }}
+        </main>
 
         {{ partial "footer.html" . }}
 
