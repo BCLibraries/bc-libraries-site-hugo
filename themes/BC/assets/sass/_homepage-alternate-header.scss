@@ -1,14 +1,14 @@
-html.fallback body.alternate-header #header {
+html.fallback body.alternate-header #hero-box {
     background: url("https://library.bc.edu/images/homepage/hero/bapst-in-snow-1440px.jpg") no-repeat 0 90% #fff;
     background-size: cover;
 }
 
-html.avif body.alternate-header #header {
+html.avif body.alternate-header #hero-box {
     background: url("https://library.bc.edu/images/homepage/hero/bapst-in-snow-1440px.avif") no-repeat 0 85% #fff;
     background-size: cover;
 }
 
-html.webp body.alternate-header #header {
+html.webp body.alternate-header #hero-box {
     background: url("https://library.bc.edu/images/homepage/hero/bapst-in-snow-1440px.webp") no-repeat 0 85% #fff;
     background-size: cover;
 }
@@ -23,14 +23,14 @@ body.alternate-header {
 }
 
 @media (min-width: 768px) {
-    #header {
+    #hero-box {
         padding-top: 120px;
         height: 380px;
     }
 }
 
 @media (max-width: 767px) {
-    #header {
+    #hero-box {
         padding-top: 85px;
         /*height: 320px;*/
         height: 320px;

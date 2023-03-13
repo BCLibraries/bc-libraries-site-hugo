@@ -259,7 +259,7 @@ a {
 /* content sections */
 
 /* header */
-#header {
+#hero-box {
     /*background: #ccc url("https://library.bc.edu/images/hero01.jpg") 0 70%; /* CHANGE BACKGROUND SEASONALLY */
     /*height: 380px;
     background-size: cover;
@@ -722,7 +722,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         padding-right: 0;
     }
 
-    /*#header {
+    /*#hero-box {
         background-position: 100% 40%;
     }*/
 
@@ -746,7 +746,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 }
 
 @media (min-width: 768px) {
-    #header {
+    #hero-box {
         padding-top: 80px;
         height: 320px;
     }
@@ -819,7 +819,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         display: inline-block;
     }
 
-    #header {
+    #hero-box {
         /* CHANGE BACKGROUND SEASONALLY */
         /*background-image: url("https://library.bc.edu/images/hero01-small2.jpg");
         height: 322px;*/
@@ -974,7 +974,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         width: 100% !important;
     }
 
-    .mainhomepage #header,
+    .mainhomepage #hero-box,
     .mainhomepage #storybox {
         display: none;
     }
