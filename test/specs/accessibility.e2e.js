@@ -8,7 +8,7 @@ const axeOptions = {
 
 const pagesToTest = [
     { description: "home page", url: "" },
-    { description: "search result", url: "/search?any=otters", waitTime: 5 }, // wait 5 seconds for results to load
+    { description: "search result", url: "/search?any=otters", waitTime: 10 }, // wait 5 seconds for results to load
     { description: "sample faculty publication highlight", url: "/facpub/2023/03/tilling-the-church/" },
     { description: "sample exhibit page", url: "/exhibits/2020/02/alfred-manessier/" },
 ]
