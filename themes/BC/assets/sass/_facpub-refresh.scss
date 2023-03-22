@@ -33,6 +33,14 @@
     text-decoration: none;
 }
 
+.breadcrumb {
+    background-color: $white-body;
+    
+    &>.active {
+        color: $wcagaa-compliant-gray-text;
+    }
+}
+
 /* INDIVIDUAL PAGES */
 
 .facpub_wrap .breadcrumb {
