@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+. $(dirname -- "$0")/_/husky.sh
+
+# The specification files directory
+spec_dir=$(dirname -- "$0")/../test/specs
+
+git_branch=$(git rev-parse --abbrev-ref HEAD)
+if [ "$git_branch" = "master" ]; then
+  # If on the master branch, run all tests including a11y tests.
+  echo "running all e2e tests"
+  wdio run ./wdio.conf.js
+else
+  # Otherwise, just make sure nothing broke.
+  echo "running homepage and search tests"
+  wdio run ./wdio.conf.js --spec "${spec_dir}/home.e2e.js" --spec "${spec_dir}/search.e2e.js"
+fi
