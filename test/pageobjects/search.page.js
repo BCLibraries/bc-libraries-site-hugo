@@ -28,6 +28,26 @@ class SearchPage extends Page {
         await this.searchInput.setValue(searchTerm);
         await this.submitButton.click();
     }
+
+    searchURL(term) {
+        return `search?any=${term}`;
+    }
+
+    // Choosing a random search term helps ensure we test a variety of pages.
+    get randomSearchURL() {
+        const searchTerms = [
+            "otters",
+            "rabbits",
+            "american history",
+            "harry potter",
+            "psycinfo",
+            "new york times",
+            "bible",
+            "loeb classical library"
+        ];
+        const searchTerm = searchTerms[Math.floor(Math.random() * searchTerms.length)];
+        return this.searchURL(searchTerm);
+    }
 }
 
 module.exports = new SearchPage();
