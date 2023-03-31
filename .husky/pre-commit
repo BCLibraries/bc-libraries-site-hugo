@@ -1,16 +1,64 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+
+# Run husky
 . $(dirname -- "$0")/_/husky.sh
 
-# The specification files directory
-spec_dir=$(dirname -- "$0")/../test/specs
+# The current Git branch
+branch="$(git rev-parse --abbrev-ref HEAD)"
 
-git_branch=$(git rev-parse --abbrev-ref HEAD)
-if [ "$git_branch" = "master" ]; then
-  # If on the master branch, run all tests including a11y tests.
-  echo "running all e2e tests"
-  wdio run ./wdio.conf.js
-else
-  # Otherwise, just make sure nothing broke.
-  echo "running homepage and search tests"
-  wdio run ./wdio.conf.js --spec "${spec_dir}/home.e2e.js" --spec "${spec_dir}/search.e2e.js"
+# Test suite names
+all_suite="all"
+accessibility_suite="accessibility"
+homepage_suite="homepage"
+search_suite="search"
+facpub_suite="facpub"
+news_suite="news"
+exhibits_suite="exhibits"
+
+# Get changed files which match the pattern.
+changed_files=$(git diff HEAD --name-only --no-color)
+changed_files_list=($changed_files)
+
+# Determine what suites to run
+suites_to_run=()
+if [[ "$branch" = "master" ]]; then
+  suites_to_run+=("${accessibility_suite}")
 fi
+
+# Iterate through the changed file list and add
+# suites where appropriate
+for i in "${changed_files_list[@]}"; do
+  if [[ $i == *"facpub"* ]]; then
+    suites_to_run+=("${facpub_suite}")
+  elif [[ $i == *"news"* ]]; then
+    suites_to_run+=("${news_suite}")
+  elif [[ $i == *"search"* ]]; then
+    suites_to_run+=("${search_suite}")
+  elif [[ $i == *"bento"* ]]; then
+    suites_to_run+=("${search_suite}")
+  elif [[ $i == *"exhibit"* ]]; then
+    suites_to_run+=("${exhibits_suite}")
+  elif [[ $i == *"home" ]]; then
+    suites_to_run+=("${homepage_suite}")
+  elif [[ $i == *"scss"* ]]; then
+    suites_to_run+=("${all_suite}")
+  elif [[ $i == *"partials"* ]]; then
+    suites_to_run+=("${all_suite}")
+  elif [[ $i == *"layouts/index.html"* ]]; then
+    suites_to_run+=("${all_suite}")
+  elif [[ $i == *"assets/js" ]]; then
+    suites_to_run+=("${all_suite}")
+  fi
+done
+
+# Build the --suite flag list for the wdio command.
+unique_suites_to_run=($(for suite in "${suites_to_run[@]}"; do echo "${suite}"; done | sort -u))
+suites_flags=""
+for suite in "${unique_suites_to_run[@]}"; do
+  suites_flags+="--suite ${suite} "
+done
+
+# Run the suites.
+npx wdio "${suites_flags}" ./wdio.conf.js
+
+exit 1 # BLOCK COMMIT FOR TESTING

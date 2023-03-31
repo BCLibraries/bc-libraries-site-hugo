@@ -1,5 +1,7 @@
 const SearchPage = require('../pageobjects/search.page')
 
+console.log('RUNNING SEARCH SPEC')
+
 describe('the search function', () => {
     it('should correctly display a local result best bet', async () => {
         await SearchPage.open()
