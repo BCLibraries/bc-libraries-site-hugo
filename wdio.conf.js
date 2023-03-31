@@ -25,6 +25,28 @@ exports.config = {
     specs: [
         './test/specs/**/*.js'
     ],
+    suites: {
+        facpub: [
+            './test/specs/facpub.e2e.js'
+        ],
+        news: [],
+        exhibits: [],
+        search: [
+            './test/specs/search.e2e.js'
+        ],
+        home: [
+            './test/specs/home.e2e.js'
+        ],
+        test: [
+            './test/specs/search.e2e.js',
+            './test/specs/home.e2e.js'
+        ],
+        all: [
+            './test/specs/search.e2e.js',
+            './test/specs/home.e2e.js',
+            './test/specs/facpub.e2e.js'
+        ]
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -113,12 +135,12 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['devtools'],
-    
-    
+
+
     // Use DevTools instead
     automationProtocol: 'devtools',
 
-    
+
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -139,15 +161,14 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'spec'
     reporters: [
-        
+
         // Our default is the 'spec' reporter
         ['spec',
 
             // spec reporter options
-            { showPreface: false }
+            {showPreface: false}
         ]
     ],
-
 
 
     //
@@ -298,10 +319,10 @@ exports.config = {
     // onComplete: function(exitCode, config, capabilities, results) {
     // },
     /**
-    * Gets executed when a refresh happens.
-    * @param {String} oldSessionId session ID of the old session
-    * @param {String} newSessionId session ID of the new session
-    */
+     * Gets executed when a refresh happens.
+     * @param {String} oldSessionId session ID of the old session
+     * @param {String} newSessionId session ID of the new session
+     */
     // onReload: function(oldSessionId, newSessionId) {
     // }
 }

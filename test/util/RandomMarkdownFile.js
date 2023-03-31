@@ -141,7 +141,7 @@ function readMarkdownMetadata(markdownFilePath) {
     const [key, value] = line.split(':')
       .map((part) => part.trim());
     // If the line is not empty add the key-value pair to the metadata object.
-    if (key) {
+    if (key && value) {
       // Remove surrounding quotes from strings.
       acc[key] = value.replace(/^["'](.*)["']$/, '$1');
     }
