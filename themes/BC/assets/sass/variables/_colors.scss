@@ -1,4 +1,4 @@
-/* BOSTON COLLEGE COLORS */ 
+/* BOSTON COLLEGE COLORS */
 
 /* See https://www.bc.edu/bc-web/styles/bc-web-style-guide/color.html */
 
@@ -12,7 +12,7 @@ $bc-primary-dark-red: #501315;
 $bc-primary-light-gold: #dccaa0;
 
 /* Secondary palette */
-$bc-secondary-light-sage: #c5cfac; 
+$bc-secondary-light-sage: #c5cfac;
 $bc-secondary-bright-sage: #dde392;
 
 /* LOCAL COLORS */
@@ -20,8 +20,6 @@ $pitch_black: #000;
 
 $very-dark-gray: #101010;
 $dark-gray: #313131;
-$wcagaaa-compliant-gray-text: #595959;
-$wcagaa-compliant-gray-text: #757575;
 $light-gray: #b7b7b7;
 $very-light-gray: #dadada;
 $just-barely-gray: #eaeaea;
@@ -32,6 +30,12 @@ $dark-blue-green: #05506D;
 /* Text colors */
 $white-text: #fff;
 $black-text: $pitch_black;
+$wcagaaa-compliant-gray-text: #595959;
+$wcagaa-compliant-gray-text: #757575;
+
+/* Link colors */
+$bc-link-color: #2f7ab9;
+$wcgaa-link-against-very-light-gray: saturate(darken($bc-link-color, 9%), 9%);
 
 /* Body colors (borders, backgrounds, etc) */
 $white-body: #fff;

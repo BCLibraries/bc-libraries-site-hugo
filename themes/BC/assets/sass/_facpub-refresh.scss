@@ -1,7 +1,13 @@
 /* FACULTY PUBLICATION HIGHLIGHT STYLES */
 
-#titleauthor h3, #titleauthor h4 {
+#titleauthor h2, #titleauthor h3 {
     margin: 5px 0 10px 0;
+}
+
+.facpub_wrap {
+    h3 {
+        font-size: 18px;
+    }
 }
 
 .facpub_wrap .article_page {
@@ -15,7 +21,7 @@
 }
 
 .fph_header {
-  background: url("https://library.bc.edu/images/facpub/fph_header.jpg") no-repeat scroll center center $black-body !important; 
+  background: url("https://library.bc.edu/images/facpub/fph_header.jpg") no-repeat scroll center center $black-body !important;
   min-height: 200px !important;
   height: 200px !important;
 }
@@ -35,7 +41,7 @@
 
 .breadcrumb {
     background-color: $white-body;
-    
+
     &>.active {
         color: $wcagaa-compliant-gray-text;
     }
@@ -57,7 +63,8 @@
     text-align: left;
     margin: 0 0 15px 0;
 }
-.facpub_wrap #titleauthor h3 {
+.facpub_wrap #titleauthor h2 {
+    font-size: 24px;
     color: $red;
 }
 
@@ -145,6 +152,9 @@
     text-align: center;
     border-top: 1px solid $very-light-gray;
     background: $very-light-gray;
+    a {
+        color: $wcgaa-link-against-very-light-gray;
+    }
 }
 
 .facpub_wrap .row {
@@ -277,14 +287,22 @@
 }
 
 .archive-item {
-    min-height:145px; 
-    border-top: 1px solid $very-light-gray; 
-    border-bottom: 1px solid $very-light-gray; 
-    margin: .75rem 0 0 0; 
+    min-height:145px;
+    border-top: 1px solid $very-light-gray;
+    border-bottom: 1px solid $very-light-gray;
+    margin: .75rem 0 0 0;
     padding: 1.5rem 0 .5rem 0;
     line-height: 1.25;
     overflow: default;
     margin-top: -1px;
+
+    a:hover {
+        text-decoration: none;
+
+        .archive-item-title {
+            text-decoration: underline;
+        }
+    }
 }
 
 .archive-item-title {
@@ -293,6 +311,16 @@
 
 .archive-item-authors {
     padding-top: .25rem;
+    color: $black-text;
+    text-decoration: none;
+}
+
+a:hover .media {
+
+}
+
+a:hover .archive-item-authors {
+  text-decoration: none;
 }
 
 .archive-item img {
@@ -358,7 +386,7 @@
     .facpub_wrap .article_content .fph_content_right p {
         width: 100%;
     }
-  
+
     .view-interview {
         display: none;
     }

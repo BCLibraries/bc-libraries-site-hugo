@@ -36,10 +36,8 @@ class SearchPage extends Page {
     // Choosing a random search term helps ensure we test a variety of pages.
     get randomSearchURL() {
         const searchTerms = [
-            "otters",
-            "rabbits",
-            "american history",
-            "harry potter",
+            "kanopy",
+            "history",
             "psycinfo",
             "new york times",
             "bible",
