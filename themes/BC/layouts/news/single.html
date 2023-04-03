@@ -21,7 +21,7 @@
 <div class="container news-container">
     {{ partial "news/breadcrumbs.html" . }}
     <div class="article_page">
-        <h3 id="main-heading">{{ .Title | safeHTML }}</h3>
+        <h2 id="main-heading">{{ .Title | safeHTML }}</h2>
         <em>{{ .Date.Format "Mon, Jan 2, 2006" }}</em>
         <div class="article_content">
             {{ .Content }}
