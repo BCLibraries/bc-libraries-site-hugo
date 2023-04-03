@@ -26,8 +26,12 @@ rssLimit = 10
     showFloatingHelpButton = true
     showBetaButton = true
     imageBaseURL = "https://library.bc.edu/images"
-[markup.goldmark.renderer]
-    unsafe= true
 [caches]
     [caches.getjson]
         maxAge = "1h"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      linkify = false
+    [markup.goldmark.renderer]
+        unsafe= true
