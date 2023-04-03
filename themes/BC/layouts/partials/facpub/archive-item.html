@@ -1,15 +1,19 @@
-    <div class="archive-item col-sm-6">
+<div class="archive-item col-sm-6">
+    <a href="{{ .RelPermalink }}">
         <div class="media">
             <div class="media-left">
-                <a href="{{ .RelPermalink }}">
-                    <img class="media-object" src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.bookcover }}" alt="">
-                </a>
+
+                {{/* No alt text, since title next to link (see https://www.liba11y.org/howto/better-images) */}}
+                <img class="media-object" src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.bookcover }}"
+                     alt="">
+
             </div>
             <div class="media-body">
-                <a href="{{ .RelPermalink }}" class="archive-item-title"><em>{{ .Title | safeHTML }}</em></a>
+                <div class="archive-item-title"><em>{{ .Title | safeHTML }}</em></div>
                 <div class="archive-item-authors">
                     {{ partial "facpub/author-summary.html" . }}
                 </div>
             </div>
         </div>
-    </div>
+    </a>
+</div>

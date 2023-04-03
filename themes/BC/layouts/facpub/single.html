@@ -22,12 +22,12 @@
     <div class="article_page">
         <div class="youtube">
             <div id="titleauthor">
-                <h3 id="main-heading">{{ .Title | safeHTML }}</h3>
+                <h2 id="main-heading">{{ .Title | safeHTML }}</h2>
                 {{ partial "facpub/author-summary.html" . }}
             </div>
 
             <div class="video-container">
-                <iframe width="640" height="360" src="{{ .Params.youtube }}" frameborder="0" allowfullscreen></iframe>
+                <iframe width="640" height="360" src="{{ .Params.youtube }}" frameborder="0" allowfullscreen title="{{ .Title }}"></iframe>
             </div>
         </div>
 
@@ -43,9 +43,9 @@
                             <img class="media-object" src="{{ .Site.Params.imageBaseURL }}/{{ .Section }}/{{ .Params.bookcover }}" alt="">
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">{{ .Params.authorfirstname }} {{ .Params.authorlastname }}</h4>
+                            <h3 class="media-heading">{{ .Params.authorfirstname }} {{ .Params.authorlastname }}</h3>
                             <p><em>{{ .Params.authorposition | safeHTML }}</em></p>
-                            
+
                             {{ if .Params.secondauthor }}
                             <p>{{ .Params.secondauthor }}<br /><em>{{ .Params.secondposition }}</em></p>
                             {{ end }}
