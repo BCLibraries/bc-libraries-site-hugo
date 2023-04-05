@@ -9,6 +9,10 @@ class HomePage extends Page {
     get searchInput () {
         return $('#lib-search-box');
     }
+
+    get heroBox() {
+        return $('#hero-box');
+    }
 }
 
 module.exports = new HomePage();
