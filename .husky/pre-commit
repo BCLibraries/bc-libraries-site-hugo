@@ -60,5 +60,3 @@ done
 
 # Run the suites.
 npx wdio "${suites_flags}" ./wdio.conf.js
-
-exit 1 # BLOCK COMMIT FOR TESTING
