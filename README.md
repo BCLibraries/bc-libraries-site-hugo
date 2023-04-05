@@ -18,7 +18,10 @@ The Hugo files for the BC Libraries site.
     cd bc-libraries-site-hugo
     npm install
     ```
-
+2. Setup git hooks (optional).
+    ```bash
+    npx husky install
+    ```
 ## Building the site
 
 The site is built using [Hugo](https://gohugo.io/getting-started/installing/). Be sure to use the extended version with Sass/SCSS support.
