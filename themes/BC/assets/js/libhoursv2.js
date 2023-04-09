@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
     // turn off/on showing department hours e.g., Gargan Hall
-    const SHOW_DEPARTMENTS = false;
+    const SHOW_DEPARTMENTS = true;
 
     // jQuery selector for the boxes containing the hours
     const HOURS_TABLE_SELECTOR = '.table-hours table tbody';
@@ -37,7 +37,7 @@ $(document).ready(function(){
         // create a <tbody> that will hold the hours
         const new_tbody = document.createElement('tbody');
 
-        // scroll through the locations we want to show, find them in the data, and 
+        // scroll through the locations we want to show, find them in the data, and
         // render them
         locations_to_show.forEach(loc_to_show => {
 
@@ -51,7 +51,7 @@ $(document).ready(function(){
 
             // get the data for this location from the hash
             const location_data = location_map[loc_to_show.id];
-            
+
             if (location_data.name == "O'Neill Library" && location_data.rendered.includes('*')) {
                 $('.onl-asterisk-notice').show();
             }

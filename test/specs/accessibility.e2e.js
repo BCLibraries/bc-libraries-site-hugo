@@ -38,6 +38,7 @@ const pagesToTest = [
 ];
 
 pagesToTest.forEach((page) => {
+  console.log(`Accessibility testing ${page.url}`)
   const waitTime = page.waitTime ? page.waitTime : 0;
   runA11yTest(page.description, page.url, waitTime);
 });
