@@ -1,6 +1,6 @@
 ---
 # Article title
-title: "An Erc Animalium"
+title: "An ERC Animalium"
 
 # Set to true to only display in development
 draft: false
