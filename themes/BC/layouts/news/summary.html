@@ -1,26 +1,21 @@
-<article class="post col-xs-12 col-sm-6 col-md-4">
-    {{ if .Params.Destination }}
-        {{ .Scratch.Set "dest" .Params.Destination }}
-    {{ else }}
-        {{ .Scratch.Set "dest" .Permalink }}
-    {{ end }}
+{{ $has_destination := isset .Params "Destination" -}}
+{{ $link_target := cond $has_destination .Params.Destination .Permalink -}}
 
-    {{ if .Params.Imagethumb }}
-        {{ .Scratch.Set "img" "/news/" }}
-        {{ .Scratch.Add "img"  .Params.Imagethumb }}
-        {{ .Scratch.Set "imgalt" .Params.imagealt }}
-    {{ else }}
-        {{ .Scratch.Set "img" "/generic_news.png" }}
-        {{ .Scratch.Set "imgalt" "News icon" }}
-    {{ end }}
+{{ $img := "/generic_news.png" -}}
+{{ $alt_text := "News icon" -}}
+{{ if .Params.Imagethumb -}}
+    {{ $img = print "/news/" .Params.Imagethumb -}}
+    {{ $alt_text = .Params.imagealt -}}
+{{ end -}}
 
-    <a href='{{ .Scratch.Get "dest" }}'>
-        
+<article class="post">
+    <a href='{{ $link_target }}'>
+
         {{/* The <noscript/> tag is for loading attribute polyfill, used
             for img lazy-loading support in browsers without the loading
             attribute. */}}
         <noscript class="loading-lazy">
-            <img src='{{ .Site.Params.imageBaseURL }}/{{ .Scratch.Get "img" }}' alt='{{ .Scratch.Get "imgalt" }}' loading="lazy" />
+            <img src='{{ .Site.Params.imageBaseURL }}/{{ $img }}' alt='{{ .Scratch.Get "imgalt" }}' loading="lazy"/>
         </noscript>
 
         <div class="news-section-text">

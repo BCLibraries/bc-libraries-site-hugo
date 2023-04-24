@@ -3,27 +3,25 @@
 {{ define "hero-box" }}{{ end }}
 
 {{ define "pagestyles" }}
-    {{ $news_styles := resources.Get "css/news.css" }}
-    <link rel="stylesheet" href="{{ $news_styles.RelPermalink }}">
 {{ end }}
 
 {{ define "main" }}
 
-<div class="container news-container">
-    
-    {{ partial "news/breadcrumbs.html" . }}
+    <div class="container news-container">
 
-    <h2 id="main-heading" class="page-title">{{ .Title }} Archive</h2>
+        {{ partial "news/breadcrumbs.html" . }}
 
-    {{/* Loop over recent years and show news stories. */}}
-    {{ $News := . }}
-    {{ range slice "2022" "2021" "2020" "2019" "2018" "2017" }}
-    <h3>{{ . }}</h3>
-    <div class="news-archives row">
-        {{ range where $News.Pages ".Params.year" . }}
-        {{ .Render "summary"}}
-        {{ end }}
+        <h2 id="main-heading" class="page-title">{{ .Title }} Archive</h2>
+
+        <div class="news-archives">
+            {{ range (.Paginate (.Data.Pages.GroupByDate "2006 January") 24).PageGroups  }}
+                {{ range .Pages }}
+                    {{ .Render "summary"}}
+                {{ end }}
+            {{ end }}
+        </div>
+
+        {{ template "_internal/pagination.html" . }}
+
     </div>
-    {{ end }}
-</div>
 {{end}}
