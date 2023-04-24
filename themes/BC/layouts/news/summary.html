@@ -1,5 +1,7 @@
-{{ $has_destination := isset .Params "Destination" -}}
-{{ $link_target := cond $has_destination .Params.Destination .Permalink -}}
+{{ $link_target := .Permalink -}}
+{{ if .Params.Destination -}}
+    {{ $link_target = .Params.Destination -}}
+{{ end -}}
 
 {{ $img := "/generic_news.png" -}}
 {{ $alt_text := "News icon" -}}
