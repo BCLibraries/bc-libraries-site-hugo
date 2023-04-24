@@ -7,7 +7,7 @@ year: "2017"
 slug: "news-facpub-savage"
 destination: "/facpub/2017/01/savage-irish/"
 aliases: ["/facpub/2017/Jan/savage-irish/"]
-imagethumb: "2017-03/savage-thumbs.png"
+imagethumb: "2017-03/savage-thumbs.jpg"
 imagealt: "Photo of Robert Savage during his interview"
 type: "news"
 ---

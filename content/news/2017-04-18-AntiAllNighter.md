@@ -5,7 +5,7 @@ expired: true
 date: 2017-04-19T01:01:00-04:00
 year: "2017"
 slug: "news-all-nighter-s17"
-imagethumb: "2017-04/allnighter-thumbs.png"
+imagethumb: "2017-04/allnighter-thumbs.jpg"
 imagealt: "A stylized imaged of a person meditating"
 type: "news"
 ---

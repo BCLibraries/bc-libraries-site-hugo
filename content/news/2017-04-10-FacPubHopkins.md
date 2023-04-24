@@ -6,7 +6,7 @@ date: 2017-04-11T01:02:00-04:00
 year: "2017"
 slug: "news-facpub-hopkins"
 destination: "http://bit.ly/2oY6D7E"
-imagethumb: "2017-04/hopkins-thumbs.png"
+imagethumb: "2017-04/hopkins-thumbs.jpg"
 imagealt: "Dave Hopkins during his interview"
 type: "news"
 ---

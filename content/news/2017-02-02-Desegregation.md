@@ -6,7 +6,7 @@ date: 2017-02-02T01:01:00-04:00
 year: "2017"
 slug: "desegregation-boston-schools"
 destination: "http://libguides.bc.edu/c.php?g=618126&p=4301248"
-imagethumb: "2017-02/desegregation-thumbs.png"
+imagethumb: "2017-02/desegregation-thumbs.jpg"
 imagealt: "Photo of school buses bringing desegregated children to school"
 type: "news"
 ---

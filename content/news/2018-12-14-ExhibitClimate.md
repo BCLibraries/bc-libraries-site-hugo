@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-climate-change-humanities"
 destination: "/exhibits/2018/12/climate-change-humanities"
 aliases: ["/exhibits/2018/Dec/climate-change-humanities"]
-imagethumb: "2018-12/climate-thumb.png"
+imagethumb: "2018-12/climate-thumb.jpg"
 imagealt: "A view of the Earth from the moon"
 type: "news"
 ---

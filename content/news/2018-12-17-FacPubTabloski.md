@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-tabloski-redefining-retirement"
 destination: "/facpub/2018/10/tabloski-redefining/"
 aliases: ["/facpub/2018/Oct/tabloski-redefining/"]
-imagethumb: "2018-12/tab-thumb.png"
+imagethumb: "2018-12/tab-thumb.jpg"
 imagealt: "Professor Tabloski during her interview"
 type: "news"
 ---

@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-stop-making-sense"
 destination: "/exhibits/2018/01/stop-making-sense/"
 aliases: ["/exhibits/2018/Jan/stop-making-sense/"]
-imagethumb: "2018-01/sense-thumbs.png"
+imagethumb: "2018-01/sense-thumbs.jpg"
 imagealt: "Stop Making Sense sketchy painting"
 type: "news"
 ---

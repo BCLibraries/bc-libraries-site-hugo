@@ -6,7 +6,7 @@ date: 2017-04-11T01:03:00-04:00
 year: "2017"
 slug: "news-endangered-data"
 destination: "http://libcal.bc.edu/event/3255937"
-imagethumb: "2017-04/data-thumbs.png"
+imagethumb: "2017-04/data-thumbs.jpg"
 imagealt: "Endangered Data Week logo and poster"
 type: "news"
 ---

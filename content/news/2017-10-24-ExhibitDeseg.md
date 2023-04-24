@@ -6,7 +6,7 @@ date: 2017-10-24T01:01:00-04:00
 year: "2017"
 slug: "exhibt-deseg-bos-sch"
 destination: "http://bit.ly/2h3JNt0"
-imagethumb: "2017-10/deseg-thumbs.png"
+imagethumb: "2017-10/deseg-thumbs.jpg"
 imagealt: "exhibit poster"
 type: "news"
 ---

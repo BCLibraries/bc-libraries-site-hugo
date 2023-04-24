@@ -5,7 +5,7 @@ expired: true
 date: 2020-06-03T00:00:46-05:00
 year: "2020"
 slug: "statement-on-racism"
-imagethumb: "2020/05-covidvideo.png"
+imagethumb: "2020/05-covidvideo.jpg"
 type: "news"
 ---
 

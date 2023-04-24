@@ -7,7 +7,7 @@ year: "2019"
 slug: "facpub-casalini"
 destination: "/facpub/2019/04/casalini-jesuit/"
 aliases: ["/facpub/2019/Apr/casalini-jesuit/"]
-imagethumb: "2019-04/casa-thumb.png"
+imagethumb: "2019-04/casa-thumb.jpg"
 imagealt: "Professor Casalini during his interview"
 type: "news"
 ---

@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-rowan"
 destination: "/facpub/2018/08/technology-and-engagement/"
 aliases: ["/facpub/2018/Aug/technology-and-engagement/"]
-imagethumb: "2018-11/rowan-thumb.png"
+imagethumb: "2018-11/rowan-thumb.jpg"
 imagealt: "Professor Rowan during her interview"
 type: "news"
 ---

@@ -6,7 +6,7 @@ date: 2020-03-19T00:00:46-05:00
 year: "2020"
 slug: "answer-wall-online"
 destination: "https://library.bc.edu/answerwall"
-imagethumb: "2020/03-answerwall.png"
+imagethumb: "2020/03-answerwall.jpg"
 type: "news"
 ---
 

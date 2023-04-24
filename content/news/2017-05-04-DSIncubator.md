@@ -6,7 +6,7 @@ date: 2017-05-04T01:03:00-04:00
 year: "2017"
 slug: "news-ds-incubator-s17"
 destination: "http://bit.ly/bc-dsi"
-imagethumb: "2017-05/incu-thumbs.png"
+imagethumb: "2017-05/incu-thumbs.jpg"
 imagealt: "Applications due May 26, click to apply online"
 type: "news"
 ---

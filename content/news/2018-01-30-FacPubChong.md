@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-sammy-chong"
 destination: "/facpub/2018/01/chong-here/"
 aliases: ["/facpub/2018/Jan/chong-here/"]
-imagethumb: "2018-01/chong-thumbs.png"
+imagethumb: "2018-01/chong-thumbs.jpg"
 imagealt: "Professor Chong during his interview"
 type: "news"
 ---

@@ -6,7 +6,7 @@ date: 2020-05-15T00:00:46-05:00
 year: "2020"
 slug: "covid-story-archive"
 destination: "https://libguides.bc.edu/burns/donate/covid19archive"
-imagethumb: "2020/05-tellus.png"
+imagethumb: "2020/05-tellus.jpg"
 type: "news"
 ---
 

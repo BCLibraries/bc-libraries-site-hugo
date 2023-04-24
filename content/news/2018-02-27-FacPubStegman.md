@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-stegman"
 destination: "/facpub/2018/02/stegman-written/"
 aliases: ["/facpub/2018/Feb/stegman-written/"]
-imagethumb: "2018-02/steg-thumbs.png"
+imagethumb: "2018-02/steg-thumbs.jpg"
 imagealt: "Father Stegman during his interview"
 type: "news"
 ---

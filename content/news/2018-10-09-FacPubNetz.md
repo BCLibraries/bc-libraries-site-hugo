@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-netzler"
 destination: "/facpub/2018/07/netzer-coptic/"
 aliases: ["/facpub/2018/Jul/netzer-coptic/"]
-imagethumb: "2018-10/netz-thumb.png"
+imagethumb: "2018-10/netz-thumb.jpg"
 imagealt: "Professor Netzer during her interview"
 type: "news"
 ---

@@ -6,7 +6,7 @@ date: 2017-10-02T01:01:00-04:00
 year: "2017"
 slug: "ojs-inte-vol8"
 destination: "http://bit.ly/2yRL51n"
-imagethumb: "2017-10/int-thumbs.png"
+imagethumb: "2017-10/int-thumbs.jpg"
 imagealt: "Integritas, a publication of the Boston College Roundtable Advancing the Mission of Catholic Higher Education"
 type: "news"
 ---

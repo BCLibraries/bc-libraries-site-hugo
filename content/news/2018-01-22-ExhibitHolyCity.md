@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-holy-city"
 destination: "/exhibits/2018/01/holy-city-art-love/"
 aliases: ["/exhibits/2018/Jan/holy-city-art-love/"]
-imagethumb: "2018-01/holy-thumbs.png"
+imagethumb: "2018-01/holy-thumbs.jpg"
 imagealt: "Photo, Blessed Are the Peace Makers by Jacqueline Johnson"
 type: "news"
 ---

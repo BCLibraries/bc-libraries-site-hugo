@@ -6,7 +6,7 @@ date: 2017-12-13T01:01:00-04:00
 year: "2017"
 slug: "therapy-dogs-dec-f17"
 destination: "https://libguides.bc.edu/therapy-dogs-dec-f17"
-imagethumb: "2017-12/dog-thumb.png"
+imagethumb: "2017-12/dog-thumb.jpg"
 imagealt: "A dog"
 type: "news"
 ---

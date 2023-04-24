@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-weiskott"
 destination: "/facpub/2018/01/weiskott-english/"
 aliases: ["/facpub/2018/Jan/weiskott-english/"]
-imagethumb: "2018-02/weiskott-thumbs.png"
+imagethumb: "2018-02/weiskott-thumbs.jpg"
 imagealt: "Eric Weiskott during his interview"
 type: "news"
 ---

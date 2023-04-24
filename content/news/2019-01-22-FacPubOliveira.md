@@ -7,7 +7,7 @@ year: "2019"
 slug: "facpub-oliveira-motherhood"
 destination: "/facpub/2018/11/oliveira-motherhood/"
 aliases: ["/facpub/2018/Nov/oliveira-motherhood/"]
-imagethumb: "2019-01/oli-thumb.png"
+imagethumb: "2019-01/oli-thumb.jpg"
 imagealt: "Professor Tabloski during her interview"
 type: "news"
 ---

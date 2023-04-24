@@ -6,7 +6,7 @@ date: 2017-03-13T01:01:00-04:00
 year: "2017"
 slug: "facpub-news-mullis"
 destination: "http://bit.ly/facpubmullis"
-imagethumb: "2017-03/mullis-thumbs.png"
+imagethumb: "2017-03/mullis-thumbs.jpg"
 imagealt: "Professor Mullis during her interview"
 type: "news"
 ---

@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-fashion"
 destination: "/exhibits/2018/02/fashion-and-fitting/"
 aliases: ["/exhibits/2018/Feb/fashion-and-fitting/"]
-imagethumb: "2018-02/fashion-thumbs.png"
+imagethumb: "2018-02/fashion-thumbs.jpg"
 imagealt: "exhibit poster"
 type: "news"
 ---

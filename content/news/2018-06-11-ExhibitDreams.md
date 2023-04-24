@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-roycrofters"
 destination: "/exhibits/2018/06/roycrofters/"
 aliases: ["/exhibits/2018/Jun/roycrofters/"]
-imagethumb: "2018-06/dreams-thumb.png"
+imagethumb: "2018-06/dreams-thumb.jpg"
 imagealt: "an ornate exhibit poster"
 type: "news"
 ---

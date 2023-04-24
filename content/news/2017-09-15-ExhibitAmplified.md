@@ -7,7 +7,7 @@ year: "2017"
 slug: "news-amp-heart"
 destination: "/exhibits/2017/09/exhibit-amp-heart/"
 aliases: ["/exhibits/2017/Sep/exhibit-amp-heart/"]
-imagethumb: "2017-09/heart-thumbs.png"
+imagethumb: "2017-09/heart-thumbs.jpg"
 imagealt: "A color painting from Professor Freiberg"
 type: "news"
 ---

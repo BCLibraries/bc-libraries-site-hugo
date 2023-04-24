@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-herz"
 destination: "/facpub/2018/07/herz-eat/"
 aliases: ["/facpub/2018/Jul/herz-eat/"]
-imagethumb: "2018-09/herz-thumb.png"
+imagethumb: "2018-09/herz-thumb.jpg"
 imagealt: "Professor Herz during her interview"
 type: "news"
 ---

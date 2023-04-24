@@ -7,7 +7,7 @@ year: "2017"
 slug: "facpub-austen"
 destination: "/facpub/2017/01/austen-here/"
 aliases: ["/facpub/2017/Jan/austen-here/"]
-imagethumb: "2017-02/austen-thumbs.png"
+imagethumb: "2017-02/austen-thumbs.jpg"
 imagealt: "Professor Austen during his interview"
 type: "news"
 ---

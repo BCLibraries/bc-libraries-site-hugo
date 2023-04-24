@@ -6,7 +6,7 @@ date: 2020-03-18T00:50:46-05:00
 year: "2020"
 slug: "bc-coronavirus-s20"
 destination: "https://www.bc.edu/content/bc-web/sites/updates/coronavirus.html"
-imagethumb: "2020/03-covid2-thumb.png"
+imagethumb: "2020/03-covid2-thumb.jpg"
 imagealt: ""
 type: "news"
 ---

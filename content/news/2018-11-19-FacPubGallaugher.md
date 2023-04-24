@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-gallaugher"
 destination: "/facpub/2018/10/gallaugher-learn/"
 aliases: ["/facpub/2018/Oct/gallaugher-learn/"]
-imagethumb: "2018-11/gall-thumb.png"
+imagethumb: "2018-11/gall-thumb.jpg"
 imagealt: "Professor Gallaugher during his interview"
 type: "news"
 ---

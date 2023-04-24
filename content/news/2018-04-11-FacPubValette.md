@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-valette"
 destination: "/facpub/2018/04/valette-navajo/"
 aliases: ["/facpub/2018/Apr/valette-navajo/"]
-imagethumb: "2018-04/valette-thumb.png"
+imagethumb: "2018-04/valette-thumb.jpg"
 imagealt: "Professor Valette during her interview"
 type: "news"
 ---

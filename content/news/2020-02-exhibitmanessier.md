@@ -6,7 +6,7 @@ date: 2020-02-12T09:50:30-05:00
 year: "2020"
 slug: "exhibit-manessier"
 destination: "http://bowdencollections.com/manessier.html"
-imagethumb: "2020/02-manessier-thumb.png"
+imagethumb: "2020/02-manessier-thumb.jpg"
 imagealt: ""
 type: "news"
 ---

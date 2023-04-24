@@ -7,7 +7,7 @@ year: "2017"
 slug: "exhibit-rafael"
 destination: "/exhibits/2017/01/rafael-soriano/"
 aliases: ["/exhibits/2017/Jan/rafael-soriano/"]
-imagethumb: "2017-01/rafael-thumbs.png"
+imagethumb: "2017-01/rafael-thumbs.jpg"
 imagealt: "Photo of Rafael Soriano"
 type: "news"
 ---

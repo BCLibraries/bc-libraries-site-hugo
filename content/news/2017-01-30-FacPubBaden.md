@@ -7,7 +7,7 @@ year: "2017"
 slug: "facpub-karl-baden"
 destination: "/facpub/2017/01/baden-american/"
 aliases: ["/facpub/2017/Jan/baden-american/"]
-imagethumb: "2017-01/baden-thumbs.png"
+imagethumb: "2017-01/baden-thumbs.jpg"
 imagealt: "Karl Baden during his interview"
 type: "news"
 ---

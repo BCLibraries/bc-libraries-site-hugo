@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-blake"
 destination: "/facpub/2018/03/blake-film/"
 aliases: ["/facpub/2018/Mar/blake-film/"]
-imagethumb: "2018-03/blake-thumbs.png"
+imagethumb: "2018-03/blake-thumbs.jpg"
 imagealt: "Father Blake during his interview"
 type: "news"
 ---

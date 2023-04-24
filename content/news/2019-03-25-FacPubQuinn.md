@@ -7,7 +7,7 @@ year: "2019"
 slug: "facpub-quinn-various"
 destination: "/facpub/2019/02/quinn-challenges/"
 aliases: ["/facpub/2019/Feb/quinn-challenges/"]
-imagethumb: "2019-03/quinn-thumb.png"
+imagethumb: "2019-03/quinn-thumb.jpg"
 imagealt: "Dr. Quinn during his interview"
 type: "news"
 ---

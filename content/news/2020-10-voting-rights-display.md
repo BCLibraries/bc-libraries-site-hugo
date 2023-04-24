@@ -6,7 +6,7 @@ date: 2020-10-06T01:00:46-05:00
 year: "2020"
 slug: "2020-10-voting-rights-display.md"
 destination: "https://libguides.bc.edu/virtual-book-display/voting-rights"
-imagethumb: "2020-10/voting-rights-display.png"
+imagethumb: "2020-10/voting-rights-display.jpg"
 type: "news"
 ---
 

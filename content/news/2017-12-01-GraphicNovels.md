@@ -6,7 +6,7 @@ date: 2017-12-01T01:01:00-04:00
 year: "2017"
 slug: "check-out-our-comics"
 destination: "https://libguides.bc.edu/popcollection"
-imagethumb: "2017-12/graphic-thumb.png"
+imagethumb: "2017-12/graphic-thumb.jpg"
 imagealt: "A superhero proclaiming \"we need more graphic novels!\""
 type: "news"
 ---

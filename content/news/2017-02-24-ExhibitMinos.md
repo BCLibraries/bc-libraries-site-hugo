@@ -7,7 +7,7 @@ year: "2017"
 slug: "news-exhibit-minos"
 destination: "/exhibits/2017/02/exhibit-minos/"
 aliases: ["/exhibits/2017/Feb/exhibit-minos/"]
-imagethumb: "2017-02/minos-thumbs.png"
+imagethumb: "2017-02/minos-thumbs.jpg"
 imagealt: "A graphite drawing of a minotour"
 type: "news"
 ---

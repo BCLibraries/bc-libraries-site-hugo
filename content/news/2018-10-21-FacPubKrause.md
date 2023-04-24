@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-krause"
 destination: "/facpub/2018/08/krause-crawford/"
 aliases: ["/facpub/2018/Aug/krause-crawford/"]
-imagethumb: "2018-10/krause-thumb.png"
+imagethumb: "2018-10/krause-thumb.jpg"
 imagealt: "Professor Krause during his interview"
 type: "news"
 ---

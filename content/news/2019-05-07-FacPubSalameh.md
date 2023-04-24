@@ -7,7 +7,7 @@ year: "2019"
 slug: "facpub-salameh"
 destination: "/facpub/2019/04/salameh-lebanon/"
 aliases: ["/facpub/2019/Apr/salameh-lebanon/"]
-imagethumb: "2019-05/salameh-thumb.png"
+imagethumb: "2019-05/salameh-thumb.jpg"
 imagealt: "Professor Salameh during his interview"
 type: "news"
 ---

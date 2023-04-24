@@ -7,7 +7,7 @@ year: "2017"
 slug: "exhibit-art-club-f17"
 destination: "/exhibits/2017/10/art-club-f17"
 aliases: ["/exhibits/2017/Oct/art-club-f17"]
-imagethumb: "2017-10/art-thumbs.png"
+imagethumb: "2017-10/art-thumbs.jpg"
 imagealt: "Art Club poster"
 type: "news"
 ---

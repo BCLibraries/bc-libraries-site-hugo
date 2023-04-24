@@ -7,7 +7,7 @@ year: "2017"
 slug: "facpub-sien"
 destination: "/facpub/2017/09/sienkiewicz-other/"
 aliases: ["/facpub/2017/Sep/sienkiewicz-other/"]
-imagethumb: "2017-09/sien-thumbs.png"
+imagethumb: "2017-09/sien-thumbs.jpg"
 imagealt: "A photo of Professor Sienkiewicz during his interview"
 type: "news"
 ---

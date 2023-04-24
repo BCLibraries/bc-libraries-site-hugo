@@ -6,7 +6,7 @@ date: 2021-10-25T16:21:04-04:00
 year: "2021"
 slug: "2021-10/international-open-access-week"
 destination: "https://library.bc.edu/newsletter/?p=1852"
-imagethumb: "2021-10/fiscal-year-funding-graph.png"
+imagethumb: "2021-10/fiscal-year-funding-graph.jpg"
 imagealt: ""
 type: "news"
 ---

@@ -7,7 +7,7 @@ year: "2017"
 slug: "facpub-cronin-dearing"
 destination: "/facpub/2017/09/dearing-cronin/"
 aliases: ["/facpub/2017/Sep/dearing-cronin/"]
-imagethumb: "2017-11/dear-thumb.png"
+imagethumb: "2017-11/dear-thumb.jpg"
 imagealt: "A photo of Dr. Cronin & Prof. Dearing during their interview"
 type: "news"
 ---

@@ -6,7 +6,7 @@ date: 2017-03-08T01:01:00-04:00
 year: "2017"
 slug: "exhibit-white-rose"
 destination: "http://bit.ly/tml-whiterose"
-imagethumb: "2017-03/rose-thumbs.png"
+imagethumb: "2017-03/rose-thumbs.jpg"
 imagealt: "Scattered literature across a stone path"
 type: "news"
 ---

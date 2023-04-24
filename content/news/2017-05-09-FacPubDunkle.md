@@ -7,7 +7,7 @@ year: "2017"
 slug: "news-facpub-dunkle"
 destination: "/facpub/2017/04/dunkle-enchantment/"
 aliases: ["/facpub/2017/Apr/dunkle-enchantment/"]
-imagethumb: "2017-05/dunkle-thumbs.png"
+imagethumb: "2017-05/dunkle-thumbs.jpg"
 imagealt: "Professor Dunkle during his interview"
 type: "news"
 ---

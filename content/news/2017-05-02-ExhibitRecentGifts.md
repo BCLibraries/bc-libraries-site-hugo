@@ -6,7 +6,7 @@ date: 2017-05-02T01:01:00-04:00
 year: "2017"
 slug: "exhibit-recent-gifts"
 destination: "http://bit.ly/backwallrecentgifts"
-imagethumb: "2017-05/gifts-thumbs.png"
+imagethumb: "2017-05/gifts-thumbs.jpg"
 imagealt: "golden and green poster for Recent Gifts exhibit"
 type: "news"
 ---

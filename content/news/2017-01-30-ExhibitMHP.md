@@ -7,7 +7,7 @@ year: "2017"
 slug: "exhibit-righting-wrongs"
 destination: "/exhibits/2017/01/righting-historical-wrongs/"
 aliases: ["/exhibits/2017/Jan/righting-historical-wrongs/"]
-imagethumb: "2017-01/righting-thumbs.png"
+imagethumb: "2017-01/righting-thumbs.jpg"
 imagealt: "A fist of solidarity"
 type: "news"
 ---

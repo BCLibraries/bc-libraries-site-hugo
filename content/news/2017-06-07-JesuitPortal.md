@@ -5,7 +5,7 @@ expired: false
 date: 2017-06-07T01:01:00-04:00
 year: "2017"
 slug: "news-jesuit-portal"
-imagethumb: "2017-06/jesuit-thumb.png"
+imagethumb: "2017-06/jesuit-thumb.jpg"
 imagealt: "Jesuit Logo"
 type: "news"
 ---

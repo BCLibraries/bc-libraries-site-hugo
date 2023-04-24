@@ -7,7 +7,7 @@ year: "2018"
 slug: "news-facpub-noone"
 destination: "/facpub/2018/07/noone-listening/"
 aliases: ["/facpub/2018/Jul/noone-listening/"]
-imagethumb: "2018-09/noone-thumb.png"
+imagethumb: "2018-09/noone-thumb.jpg"
 imagealt: "A photo of Professor Noone during their interview"
 type: "news"
 ---

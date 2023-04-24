@@ -7,7 +7,7 @@ year: "2017"
 slug: "exhibit-earthproject"
 destination: "/exhibits/2017/02/earthproject/"
 aliases: ["/exhibits/2017/Feb/earthproject/"]
-imagethumb: "2017-03/eart-thumbs.png"
+imagethumb: "2017-03/eart-thumbs.jpg"
 imagealt: "O'Neill Level One Gellery Exhibit: eARTh Project, March 2017"
 type: "news"
 ---

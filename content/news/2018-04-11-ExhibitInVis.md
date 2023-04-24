@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-med-invis"
 destination: "/exhibits/2018/04/medical-invisible/"
 aliases: ["/exhibits/2018/Apr/medical-invisible/"]
-imagethumb: "2018-04/invis-thumb.png"
+imagethumb: "2018-04/invis-thumb.jpg"
 imagealt: "A flexing arm with a bandage on it"
 type: "news"
 ---

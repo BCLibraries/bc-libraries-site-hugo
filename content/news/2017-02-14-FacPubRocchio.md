@@ -7,7 +7,7 @@ year: "2017"
 slug: "facpub-rocchio"
 destination: "/facpub/2017/01/rocchio-christianity/"
 aliases: ["/facpub/2017/Jan/rocchio-christianity/"]
-imagethumb: "2017-02/rocchio-thumbs.png"
+imagethumb: "2017-02/rocchio-thumbs.jpg"
 imagealt: "Professor Rocchio during his interview"
 type: "news"
 ---

@@ -6,7 +6,7 @@ date: 2019-02-04T01:59:00-04:00
 year: "2019"
 slug: "exhibit-tml-seeking"
 destination: "https://libguides.bc.edu/seeking_shelter_exhibit"
-imagethumb: "2019-01/seek_thumb.png"
+imagethumb: "2019-01/seek_thumb.jpg"
 imagealt: "Handcuffed hands"
 type: "news"
 ---

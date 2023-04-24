@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-delightful"
 destination: "/exhibits/2018/09/delightful/"
 aliases: ["/exhibits/2018/Sep/delightful/"]
-imagethumb: "2018-10/delight-thumb.png"
+imagethumb: "2018-10/delight-thumb.jpg"
 imagealt: "A colorful illustration"
 type: "news"
 ---

@@ -7,7 +7,7 @@ year: "2019"
 slug: "exhibit-romance-books"
 destination: "/exhibits/2019/01/romance-of-books/"
 aliases: ["/exhibits/2019/Jan/romance-of-books/"]
-imagethumb: "2019-01/romance-thumb.png"
+imagethumb: "2019-01/romance-thumb.jpg"
 imagealt: "A row of books"
 type: "news"
 ---

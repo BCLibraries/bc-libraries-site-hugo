@@ -6,7 +6,7 @@ date: 2017-04-05T01:01:00-04:00
 year: "2017"
 slug: "ask-the-answerwall"
 destination: "http://libguides.bc.edu//answerwall"
-imagethumb: "2017-02/eight-thumbs.png"
+imagethumb: "2017-02/eight-thumbs.jpg"
 imagealt: "A Magic Eight Ball"
 type: "news"
 ---

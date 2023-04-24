@@ -6,7 +6,7 @@ date: 2018-08-16T01:01:00-04:00
 year: "2018"
 slug: "student-employment-f18"
 destination: "https://libguides.bc.edu/student-employment"
-imagethumb: "2018-08/studentjob-thumb.png"
+imagethumb: "2018-08/studentjob-thumb.jpg"
 imagealt: "Gasson Hall in Bapst Library"
 type: "news"
 ---

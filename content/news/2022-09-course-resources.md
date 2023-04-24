@@ -6,7 +6,7 @@ date: 2022-09-26T17:04:42-04:00
 year: "2022"
 slug: "2022-09/course-resources"
 destination: "https://library.bc.edu/newsletter/?p=2275"
-imagethumb: "2022-09/course-resources.png"
+imagethumb: "2022-09/course-resources.jpg"
 imagealt: "course resources menu in Canvas"
 type: "news"
 ---

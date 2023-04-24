@@ -7,7 +7,7 @@ year: "2017"
 slug: "exhibit-welcome-to-bc"
 destination: "/exhibits/2017/08/welcome-to-bc/"
 aliases: ["/exhibits/2017/Aug/welcome-to-bc/"]
-imagethumb: "2017-08/welcome-thumbs.png"
+imagethumb: "2017-08/welcome-thumbs.jpg"
 imagealt: "A collage of students from the 1980s and 1990s"
 type: "news"
 ---

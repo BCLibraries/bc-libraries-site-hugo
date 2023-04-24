@@ -6,7 +6,7 @@ date: 2018-02-08T01:01:00-04:00
 year: "2018"
 slug: "ryan-public-reading"
 destination: "https://libguides.bc.edu/burns-events/donalryan"
-imagethumb: "2018-02/ryan-thumb.png"
+imagethumb: "2018-02/ryan-thumb.jpg"
 imagealt: "Donal Ryan, photo by Anthony Woods ​"
 type: "news"
 ---

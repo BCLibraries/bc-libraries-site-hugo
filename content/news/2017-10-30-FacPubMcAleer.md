@@ -7,7 +7,7 @@ year: "2017"
 slug: "facpub-mcaleer"
 destination: "/facpub/2017/09/mcaleer-positive/"
 aliases: ["/facpub/2017/Sep/mcaleer-positive/"]
-imagethumb: "2017-10/mcaleer-thumbs.png"
+imagethumb: "2017-10/mcaleer-thumbs.jpg"
 imagealt: "A photo of Andrew McAleer during his interview"
 type: "news"
 ---

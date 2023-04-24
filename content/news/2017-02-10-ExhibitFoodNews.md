@@ -7,7 +7,7 @@ year: "2017"
 slug: "news-exhibit-food"
 destination: "/exhibits/2017/02/food-and-community/"
 aliases: ["/exhibits/2017/Feb/food-and-community/"]
-imagethumb: "2017-02/food-thumbs.png"
+imagethumb: "2017-02/food-thumbs.jpg"
 imagealt: "Drawing of dinner setting, reads Food and Community"
 type: "news"
 ---

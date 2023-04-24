@@ -6,7 +6,7 @@ date: 2019-10-29T11:14:42-04:00
 year: "2019"
 slug: "savedate-profhonig"
 destination: "https://ds.bc.edu/2019-fall-events/"
-imagethumb: "2019-10/honig-thumb.png"
+imagethumb: "2019-10/honig-thumb.jpg"
 imagealt: ""
 type: "news"
 ---

@@ -7,7 +7,7 @@ year: "2017"
 slug: "facpub-fragasso"
 destination: "/facpub/2017/09/fragasso-twenty/"
 aliases: ["/facpub/2017/Sep/fragasso-twenty/"]
-imagethumb: "2017-09/frag-thumbs.png"
+imagethumb: "2017-09/frag-thumbs.jpg"
 imagealt: "Phil Fragasso speaking about his book"
 type: "news"
 ---

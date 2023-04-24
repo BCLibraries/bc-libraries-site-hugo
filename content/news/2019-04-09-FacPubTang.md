@@ -7,7 +7,7 @@ year: "2019"
 slug: "facpub-tang"
 destination: "/facpub/2019/03/tang-televising/"
 aliases: ["/facpub/2019/Mar/tang-televising/"]
-imagethumb: "2019-04/tang-thumb.png"
+imagethumb: "2019-04/tang-thumb.jpg"
 imagealt: "Professor Tang mid-interview"
 type: "news"
 ---

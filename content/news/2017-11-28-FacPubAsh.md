@@ -7,7 +7,7 @@ year: "2017"
 slug: "facpub-ash-news"
 destination: "/facpub/2017/09/ash-gross/"
 aliases: ["/facpub/2017/Sep/ash-gross/"]
-imagethumb: "2017-11/ash-thumb.png"
+imagethumb: "2017-11/ash-thumb.jpg"
 imagealt: "Professors Avner Ash & Robert Gross during their interview"
 type: "news"
 ---

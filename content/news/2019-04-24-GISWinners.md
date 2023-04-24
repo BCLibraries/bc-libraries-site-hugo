@@ -7,7 +7,7 @@ year: "2019"
 slug: "gis-contest-s19"
 destination: "/news/2019/04/gis-contest-s19/"
 aliases: ["/news/2019/Apr/gis-contest-s19/"]
-imagethumb: "2016-02/gis-thumbs.png"
+imagethumb: "2016-02/gis-thumbs.jpg"
 imagealt: "An image of an old map reading Got GIS?"
 type: "news"
 ---

@@ -6,7 +6,7 @@ date: 2019-10-10T15:26:35-04:00
 year: "2019"
 slug: "exhibit-golden"
 destination: "https://library.bc.edu/burns-exhibits/rex-stout"
-imagethumb: "2019-10/golden-thumb.png"
+imagethumb: "2019-10/golden-thumb.jpg"
 imagealt: "Golden Spiders and Black Orchids"
 type: "news"
 ---

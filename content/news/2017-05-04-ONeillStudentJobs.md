@@ -6,7 +6,7 @@ date: 2017-05-04T01:02:00-04:00
 year: "2017"
 slug: "news-spring17-oneill-jobs"
 destination: "http://libguides.bc.edu/employment/students/oneill-form"
-imagethumb: "2017-05/oneill-thumbs.png"
+imagethumb: "2017-05/oneill-thumbs.jpg"
 imagealt: "O'Neill library"
 type: "news"
 ---

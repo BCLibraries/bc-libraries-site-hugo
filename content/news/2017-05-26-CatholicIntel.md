@@ -6,7 +6,7 @@ date: 2017-05-26T01:01:00-04:00
 year: "2017"
 slug: "news-catholic-intellectual-tradition"
 destination: "http://dlib.bc.edu/islandora/object/bc-ir:101053"
-imagethumb: "2017-05/cath-thumbs.png"
+imagethumb: "2017-05/cath-thumbs.jpg"
 imagealt: "A stained glass window"
 type: "news"
 ---

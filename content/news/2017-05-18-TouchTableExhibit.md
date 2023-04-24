@@ -6,7 +6,7 @@ date: 2017-05-18T01:01:00-04:00
 year: "2017"
 slug: "oneill-burns-touchtable-s17"
 destination: "https://ds.bc.edu/portfolio/for-here-all-are-one-boston-college-buildings-community/"
-imagethumb: "2017-05/touch-thumbs.png"
+imagethumb: "2017-05/touch-thumbs.jpg"
 imagealt: "Sepia toned photograph of Burns library"
 type: "news"
 ---

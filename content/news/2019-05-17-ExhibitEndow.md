@@ -7,7 +7,7 @@ year: "2019"
 slug: "exhibit-recent-acquisitions-2019"
 destination: "/exhibits/2019/05/recent-acquisitions-2019/"
 aliases: ["/exhibits/2019/May/recent-acquisitions-2019/"]
-imagethumb: "2019-05/endo-thumb.png"
+imagethumb: "2019-05/endo-thumb.jpg"
 imagealt: "An ornate, blue and silver poster"
 type: "news"
 ---

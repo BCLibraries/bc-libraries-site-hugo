@@ -6,7 +6,7 @@ date: 2019-09-10T16:52:08-04:00
 year: "2019"
 slug: "facpub-fong"
 destination: "https://library.bc.edu/facpub/2019/Jul/grand-challenges/"
-imagethumb: "2019-09/fong-thumb.png"
+imagethumb: "2019-09/fong-thumb.jpg"
 imagealt: "Professor during their interview"
 type: "news"
 ---

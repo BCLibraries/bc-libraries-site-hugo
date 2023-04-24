@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-smith-stangis"
 destination: "/facpub/2018/01/smith-21-century/"
 aliases: ["/facpub/2018/Jan/smith-21-century/"]
-imagethumb: "2018-01/smith-thumbs.png"
+imagethumb: "2018-01/smith-thumbs.jpg"
 imagealt: "Professor Smith during her interview"
 type: "news"
 ---

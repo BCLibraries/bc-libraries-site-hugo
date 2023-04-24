@@ -6,7 +6,7 @@ date: 2017-09-05T01:01:00-04:00
 year: "2017"
 slug: "reeves-diaries"
 destination: "http://bit.ly/ReevesFamilyDiaries"
-imagethumb: "2017-09/reeves-thumbs.png"
+imagethumb: "2017-09/reeves-thumbs.jpg"
 imagealt: "An image of one of the scanned journal pages"
 type: "news"
 ---

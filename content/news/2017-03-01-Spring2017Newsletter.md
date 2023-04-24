@@ -6,7 +6,7 @@ date: 2017-03-01T01:04:00-04:00
 year: "2017"
 slug: "spring2017-newsletter"
 destination: "http://bit.ly/NewsitemSpring2017Newsletter"
-imagethumb: "2017-03/newsletter-thumbs.png"
+imagethumb: "2017-03/newsletter-thumbs.jpg"
 imagealt: "Boston College Libraries Newsletter"
 type: "news"
 ---

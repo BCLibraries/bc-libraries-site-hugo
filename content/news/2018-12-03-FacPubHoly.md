@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-holy-spirit-setting"
 destination: "/facpub/2018/10/holy-spirit-bctm/"
 aliases: ["/facpub/2018/Oct/holy-spirit-bctm/"]
-imagethumb: "2018-12/hss-thumb.png"
+imagethumb: "2018-12/hss-thumb.jpg"
 imagealt: "Professor Gallaugher during his interview"
 type: "news"
 ---

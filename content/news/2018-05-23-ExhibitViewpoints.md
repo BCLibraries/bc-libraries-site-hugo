@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-viewpoints"
 destination: "/exhibits/2018/05/viewpoints/"
 aliases: ["/exhibits/2018/May/viewpoints/"]
-imagethumb: "2018-05/view-thumb.png"
+imagethumb: "2018-05/view-thumb.jpg"
 imagealt: "poste rreads viewpoints"
 type: "news"
 ---

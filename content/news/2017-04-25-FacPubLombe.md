@@ -7,7 +7,7 @@ year: "2017"
 slug: "news-facpub-lombe"
 destination: "/facpub/2017/02/lombe-chrildren"
 aliases: ["/facpub/2017/Feb/lombe-chrildren"]
-imagethumb: "2017-04/lombe-thumbs.png"
+imagethumb: "2017-04/lombe-thumbs.jpg"
 imagealt: "Professor Lombe during her interview"
 type: "news"
 ---

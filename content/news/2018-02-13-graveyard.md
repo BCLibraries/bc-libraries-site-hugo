@@ -6,7 +6,7 @@ date: 2018-02-13T01:01:00-04:00
 year: "2018"
 slug: "in-his-own-grave"
 destination: "https://wp.me/pZMf2-3NB"
-imagethumb: "2018-02/undertaker-thumbs.png"
+imagethumb: "2018-02/undertaker-thumbs.jpg"
 imagealt: "An old hand written ledger"
 type: "news"
 ---

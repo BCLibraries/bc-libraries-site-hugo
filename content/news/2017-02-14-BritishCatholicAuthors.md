@@ -7,7 +7,7 @@ year: "2017"
 slug: "exhibit-reading-room-authors"
 destination: "/exhibits/2017/01/british-catholic-authors/"
 aliases: ["/exhibits/2017/Jan/british-catholic-authors/"]
-imagethumb: "2017-02/brit-thumbs.png"
+imagethumb: "2017-02/brit-thumbs.jpg"
 imagealt: "An old pen and ink illustration of a shocked man reading a book"
 type: "news"
 ---

@@ -6,7 +6,7 @@ date: 2019-10-02T10:23:55-04:00
 year: "2019"
 slug: "trial-db-f19"
 destination: "https://libguides.bc.edu/az.php"
-imagethumb: "2019-10/db-thumb.png"
+imagethumb: "2019-10/db-thumb.jpg"
 imagealt: "Decorative image"
 type: "news"
 ---

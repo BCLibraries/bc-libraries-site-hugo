@@ -7,7 +7,7 @@ year: "2017"
 slug: "news-exhibit-iew-f17"
 destination: "/exhibits/2017/11/iew-f17/"
 aliases: ["/exhibits/2017/Nov/iew-f17/"]
-imagethumb: "2017-11/iew-thumb.png"
+imagethumb: "2017-11/iew-thumb.jpg"
 imagealt: "exhibit poster"
 type: "news"
 ---

@@ -6,7 +6,7 @@ date: 2020-09-30T10:54:05-04:00
 year: "2020"
 slug: "black-at-boston-college"
 destination: "https://libguides.bc.edu/blackatbostoncollege"
-imagethumb: "2020-09/blackatbc.png"
+imagethumb: "2020-09/blackatbc.jpg"
 imagealt: "exhibit promotional cover"
 type: "news"
 ---

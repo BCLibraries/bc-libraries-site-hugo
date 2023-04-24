@@ -7,7 +7,7 @@ year: "2019"
 slug: "exhibit-pray-for"
 destination: "/exhibits/2019/06/pray-for-us"
 aliases: ["/exhibits/2019/Jun/pray-for-us"]
-imagethumb: "2019-06/pray-thumb.png"
+imagethumb: "2019-06/pray-thumb.jpg"
 imagealt: "Illustration of a monk praying"
 type: "news"
 ---

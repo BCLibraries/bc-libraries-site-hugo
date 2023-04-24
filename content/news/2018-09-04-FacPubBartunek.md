@@ -7,7 +7,7 @@ year: "2018"
 slug: "news-facpub-bartunek"
 destination: "/facpub/2018/04/bartunek-academic/"
 aliases: ["/facpub/2018/Apr/bartunek-academic/"]
-imagethumb: "2018-09/bart-thumb.png"
+imagethumb: "2018-09/bart-thumb.jpg"
 imagealt: "A photo of Professor Bartunek during her interview"
 type: "news"
 ---

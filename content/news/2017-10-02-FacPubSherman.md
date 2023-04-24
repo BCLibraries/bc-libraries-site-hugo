@@ -7,7 +7,7 @@ year: "2017"
 slug: "facpub-news-sherman"
 destination: "/facpub/2017/09/sherman-what/"
 aliases: ["/facpub/2017/Sep/sherman-what/"]
-imagethumb: "2017-10/sherm-thumbs.png"
+imagethumb: "2017-10/sherm-thumbs.jpg"
 imagealt: "Mary Sherman holds up her book during her interview"
 type: "news"
 ---

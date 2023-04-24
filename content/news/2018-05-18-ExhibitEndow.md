@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-recent-acquisitions"
 destination: "/exhibits/2018/05/recent-acquisitions/"
 aliases: ["/exhibits/2018/May/recent-acquisitions/"]
-imagethumb: "2018-05/endowment-thumb.png"
+imagethumb: "2018-05/endowment-thumb.jpg"
 imagealt: "An ornate, red and gold poster"
 type: "news"
 ---

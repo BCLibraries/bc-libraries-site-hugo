@@ -6,7 +6,7 @@ date: 2018-08-29T01:01:00-04:00
 year: "2018"
 slug: "what-study-animal"
 destination: "https://libguides.bc.edu/animal"
-imagethumb: "2018-08/animal-thumb.png"
+imagethumb: "2018-08/animal-thumb.jpg"
 imagealt: "A fluffy dog wearing a hat and reading a book"
 type: "news"
 ---

@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-tml-10"
 destination: "/exhibits/2018/11/tml-turns-10/"
 aliases: ["/exhibits/2018/Nov/tml-turns-10/"]
-imagethumb: "2018-11/tml-thumb.png"
+imagethumb: "2018-11/tml-thumb.jpg"
 imagealt: "exhibit poster"
 type: "news"
 ---

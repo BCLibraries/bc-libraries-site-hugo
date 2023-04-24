@@ -6,7 +6,7 @@ date: 2017-10-11T01:02:00-04:00
 year: "2017"
 slug: "studies-spirit-jes-f17"
 destination: "http://bit.ly/2g0XTdR"
-imagethumb: "2017-10/ssj-thumbs.png"
+imagethumb: "2017-10/ssj-thumbs.jpg"
 imagealt: "Studies in the Spirituality of Jesuits' logo"
 type: "news"
 ---

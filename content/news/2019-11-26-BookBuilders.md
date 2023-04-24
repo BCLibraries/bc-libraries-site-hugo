@@ -6,7 +6,7 @@ date: 2019-11-26T10:25:32-05:00
 year: "2019"
 slug: "ds-bb-f19"
 destination: "https://ds.bc.edu/scholarship-opportunity-bookbuilders-of-boston-2020/"
-imagethumb: "2019-11/book-thumb.png"
+imagethumb: "2019-11/book-thumb.jpg"
 imagealt: ""
 type: "news"
 ---

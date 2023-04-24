@@ -7,7 +7,7 @@ year: "2017"
 slug: "exhibit-read-right"
 destination: "/exhibits/burns/"
 aliases: ["/exhibits/burns/"]
-imagethumb: "2017-10/burns-thumb.png"
+imagethumb: "2017-10/burns-thumb.jpg"
 imagealt: "graphic showing both exhibit posters"
 type: "news"
 ---

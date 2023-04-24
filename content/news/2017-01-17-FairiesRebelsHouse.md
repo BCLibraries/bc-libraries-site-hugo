@@ -6,7 +6,7 @@ date: 2017-01-17T02:02:00-04:00
 year: "2017"
 slug: "fairies-rebels-house"
 destination: "http://libguides.bc.edu/c.php?g=44217&p=4221244"
-imagethumb: "2017-01/fairies-thumbs.png"
+imagethumb: "2017-01/fairies-thumbs.jpg"
 imagealt: "Old publication titled the Women of Ireland"
 type: "news"
 ---

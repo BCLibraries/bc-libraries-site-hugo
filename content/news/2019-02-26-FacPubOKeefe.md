@@ -7,7 +7,7 @@ year: "2019"
 slug: "facpub-okeefe"
 destination: "/facpub/2019/02/okeefe-navigating/"
 aliases: ["/facpub/2019/Feb/okeefe-navigating/"]
-imagethumb: "2019-02/okeefe-thumb.png"
+imagethumb: "2019-02/okeefe-thumb.jpg"
 imagealt: "Theresa O'Keefe during her interview"
 type: "news"
 ---

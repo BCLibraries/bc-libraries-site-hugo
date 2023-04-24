@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-bapst-save"
 destination: "/exhibits/2018/09/save-the-date/"
 aliases: ["/exhibits/2018/Sep/save-the-date/"]
-imagethumb: "2018-09/save-thumb.png"
+imagethumb: "2018-09/save-thumb.jpg"
 imagealt: "image description"
 type: "news"
 ---

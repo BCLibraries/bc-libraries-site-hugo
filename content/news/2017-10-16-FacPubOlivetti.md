@@ -7,7 +7,7 @@ year: "2017"
 slug: "facpub-olivetti-expanding"
 destination: "/facpub/2017/09/olivetti-dynamics/"
 aliases: ["/facpub/2017/Sep/olivetti-dynamics/"]
-imagethumb: "2017-10/olivetti-thumbs.png"
+imagethumb: "2017-10/olivetti-thumbs.jpg"
 imagealt: "A photo of Dr. Olivetti during her interview"
 type: "news"
 ---

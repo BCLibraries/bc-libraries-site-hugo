@@ -6,7 +6,7 @@ date: 2019-10-15T15:36:50-04:00
 year: "2019"
 slug: "facpub-kearney"
 destination: "https://library.bc.edu/facpub/2019/Oct/kearney-anatheism/"
-imagethumb: "2019-10/kearney-thumb.png"
+imagethumb: "2019-10/kearney-thumb.jpg"
 imagealt: "Professor during their interview"
 type: "news"
 ---

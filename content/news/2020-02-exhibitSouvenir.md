@@ -6,7 +6,7 @@ date: 2020-02-04T11:18:22-05:00
 year: "2020"
 slug: "exhibit-souvenirs"
 destination: "https://library.bc.edu/burns-exhibits/souvenirs/"
-imagethumb: "2020/02-souv.png"
+imagethumb: "2020/02-souv.jpg"
 imagealt: ""
 type: "news"
 ---

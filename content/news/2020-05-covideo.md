@@ -6,7 +6,7 @@ date: 2020-05-26T00:00:46-05:00
 year: "2020"
 slug: "covid-story-video"
 destination: "https://youtu.be/LCGMoNFGohk"
-imagethumb: "2020/05-covidvideo.png"
+imagethumb: "2020/05-covidvideo.jpg"
 type: "news"
 ---
 

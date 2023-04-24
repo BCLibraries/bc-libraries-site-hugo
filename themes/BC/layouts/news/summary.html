@@ -15,7 +15,16 @@
             for img lazy-loading support in browsers without the loading
             attribute. */}}
         <noscript class="loading-lazy">
-            <img src='{{ .Site.Params.imageBaseURL }}/{{ $img }}' alt='{{ .Scratch.Get "imgalt" }}' loading="lazy"/>
+            {{ $imageName :=  path.BaseName .Params.imagethumb }}
+            {{ $imageDir := path.Dir .Params.imagethumb }}
+            {{ $fullImagePath := print .Params.type "/" $imageDir "/" $imageName }}
+            {{ partial "picture" (dict "ctx"   .
+            "base"  $fullImagePath
+            "alt"   .Params.imagealt
+            "class" ""
+            "avif"  true
+            "webp"  true
+            "lazy"  true) }}
         </noscript>
 
         <div class="news-section-text">

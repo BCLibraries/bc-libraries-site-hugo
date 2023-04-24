@@ -7,7 +7,7 @@ year: "2017"
 slug: "facpub-bartlett"
 destination: "/facpub/2016/11/bartlett-sophistry/"
 aliases: ["/facpub/2016/Nov/bartlett-sophistry/"]
-imagethumb: "2017-01/bartlett-thumb.png"
+imagethumb: "2017-01/bartlett-thumb.jpg"
 imagealt: "Robert Bartlett during his interview"
 type: "news"
 ---

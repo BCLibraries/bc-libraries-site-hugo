@@ -7,7 +7,7 @@ year: "2019"
 slug: "facpub-kane-tech"
 destination: "/facpub/2019/04/kane-tech/"
 aliases: ["/facpub/2019/Apr/kane-tech/"]
-imagethumb: "2019-05/kane-thumb.png"
+imagethumb: "2019-05/kane-thumb.jpg"
 imagealt: "professor kane during his interview"
 type: "news"
 ---

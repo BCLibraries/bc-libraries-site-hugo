@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-art-dig-tech-s18"
 destination: "/exhibits/2018/05/art-dig-tech-s18"
 aliases: ["/exhibits/2018/May/art-dig-tech-s18"]
-imagethumb: "2018-05/artdig-thumb.png"
+imagethumb: "2018-05/artdig-thumb.jpg"
 imagealt: "Poster for the Art and Digital Technology exhibit"
 type: "news"
 ---

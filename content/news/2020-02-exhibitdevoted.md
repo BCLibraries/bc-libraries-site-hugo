@@ -6,7 +6,7 @@ date: 2020-03-01T10:23:14-05:00
 year: "2020"
 slug: "exhibit-guiney"
 destination: "https://library.bc.edu/burns-exhibits/guiney/"
-imagethumb: "2020/02-exhibitdevote.png"
+imagethumb: "2020/02-exhibitdevote.jpg"
 imagealt: ""
 type: "news"
 ---

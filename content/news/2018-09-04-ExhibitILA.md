@@ -7,7 +7,7 @@ year: "2018"
 slug: "news-exhibit-ila"
 destination: "/exhibits/2018/09/ila-grants/"
 aliases: ["/exhibits/2018/Sep/ila-grants/"]
-imagethumb: "2018-09/ila-thumb.png"
+imagethumb: "2018-09/ila-thumb.jpg"
 imagealt: "a stack of promotional posters"
 type: "news"
 ---

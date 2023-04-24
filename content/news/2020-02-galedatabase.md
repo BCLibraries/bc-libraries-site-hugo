@@ -6,7 +6,7 @@ date: 2020-02-03T01:00:24-05:00
 year: "2020"
 slug: "dbtrial-gale-primary"
 destination: "https://infotrac.gale.com/itweb/mlin_m_bostcoll?db=MOME&id=trial"
-imagethumb: "2020/02-gale-thumb.png"
+imagethumb: "2020/02-gale-thumb.jpg"
 imagealt: ""
 type: "news"
 ---

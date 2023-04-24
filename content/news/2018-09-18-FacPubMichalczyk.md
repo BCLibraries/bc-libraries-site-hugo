@@ -7,7 +7,7 @@ year: "2018"
 slug: "facpub-michalczyk"
 destination: "/facpub/2018/05/michalczyk-law/"
 aliases: ["/facpub/2018/May/michalczyk-law/"]
-imagethumb: "2018-09/mich-thumb.png"
+imagethumb: "2018-09/mich-thumb.jpg"
 imagealt: "Professor Michalczyk during his interview"
 type: "news"
 ---

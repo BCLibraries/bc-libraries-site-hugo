@@ -7,7 +7,7 @@ year: "2019"
 slug: "exhibit-ghost"
 destination: "/exhibits/2019/05/ghost-campus/"
 aliases: ["/exhibits/2019/May/ghost-campus/"]
-imagethumb: "2019-05/ghost-thumb.png"
+imagethumb: "2019-05/ghost-thumb.jpg"
 imagealt: "Sepia tone photo"
 type: "news"
 ---

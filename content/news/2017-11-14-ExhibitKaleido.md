@@ -7,7 +7,7 @@ year: "2017"
 slug: "exhibit-kaleido-f17"
 destination: "/exhibits/2017/11/iew-2017-photos/"
 aliases: ["/exhibits/2017/Nov/iew-2017-photos/"]
-imagethumb: "2017-11/iewlobby-thumb.png"
+imagethumb: "2017-11/iewlobby-thumb.jpg"
 imagealt: "Thumbnail of the exhibit poster"
 type: "news"
 ---

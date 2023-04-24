@@ -7,7 +7,7 @@ year: "2019"
 slug: "exhibit-burns-genius"
 destination: "/exhibits/2019/01/genius-genre/"
 aliases: ["/exhibits/2019/Jan/genius-genre/"]
-imagethumb: "2019-02/obrien-thumb.png"
+imagethumb: "2019-02/obrien-thumb.jpg"
 imagealt: "Cover of the book the Third Policeman"
 type: "news"
 ---

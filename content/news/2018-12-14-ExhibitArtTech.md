@@ -7,7 +7,7 @@ year: "2018"
 slug: "lvl1-art-dig-tech"
 destination: "/exhibits/2018/12/art-dig-tech-f18"
 aliases: ["/exhibits/2018/Dec/art-dig-tech-f18"]
-imagethumb: "2018-12/artdig-thumb.png"
+imagethumb: "2018-12/artdig-thumb.jpg"
 imagealt: "Exhibit poster"
 type: "news"
 ---

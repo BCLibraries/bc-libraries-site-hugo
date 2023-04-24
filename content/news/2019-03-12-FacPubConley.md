@@ -7,7 +7,7 @@ year: "2019"
 slug: "facpub-conley-lily"
 destination: "/facpub/2019/02/conley-lily/"
 aliases: ["/facpub/2019/Feb/conley-lily/"]
-imagethumb: "2019-03/conley-thumb.png"
+imagethumb: "2019-03/conley-thumb.jpg"
 imagealt: "Professor Alston Conley holding a book"
 type: "news"
 ---

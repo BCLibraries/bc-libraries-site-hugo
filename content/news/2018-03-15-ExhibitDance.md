@@ -7,7 +7,7 @@ year: "2018"
 slug: "exhibit-lvl1-dance"
 destination: "/exhibits/2018/03/dance-ensemble-s18/"
 aliases: ["/exhibits/2018/Mar/dance-ensemble-s18/"]
-imagethumb: "2018-03/dance-thumb.png"
+imagethumb: "2018-03/dance-thumb.jpg"
 imagealt: "A photograph of the dancers performing"
 type: "news"
 ---
