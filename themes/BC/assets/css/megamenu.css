@@ -1,7 +1,7 @@
 /*!
  * Yamm!3 - Yet another megamenu for Bootstrap 3
  * http://geedmo.github.com/yamm3
- * 
+ *
  * @geedmo - Licensed under the MIT license
  */
 .homepagerefresh .yamm .nav,
@@ -186,7 +186,7 @@
     /* hide My Accounts in mobile menu */
     .homepagerefresh #megamenu-refresh li.accounts-link {
         display: none;
-    } 
+    }
     .homepagerefresh .h3style {
         margin-bottom: 5px;
     }
@@ -851,7 +851,7 @@
 }
 
 #mm-help-aal .aal-box .fa {
-    margin-left: 0px; 
+    margin-left: 0px;
     font-weight:600;
 }
 
@@ -898,61 +898,6 @@
         padding-left: 0;
         line-height: 1.25;
     }
-}
-
-/* Image sprites for library thumbnails */
-.libsprite {
-    background: url('/img/librarypane/libthumb-spritesheet.jpg') no-repeat;
-    display: block;
-    border: 2px solid #990000;
-}
-
-.libsprite-librarythumbnails_bapst {
-    width: 150px;
-    height: 150px;
-    background-position: -5px -5px;
-}
-
-.libsprite-librarythumbnails_burns {
-    width: 150px;
-    height: 150px;
-    background-position: -165px -5px;
-}
-
- .libsprite-librarythumbnails_ed {
-    width: 150px;
-    height: 150px;
-    background-position: -5px -165px;
-}
-
-.libsprite-librarythumbnails_law {
-    width: 150px;
-    height: 150px;
-    background-position: -165px -165px;
-}
-
-.libsprite-librarythumbnails_oconnor {
-    width: 150px;
-    height: 150px;
-    background-position: -325px -5px;
-}
-
-.homepagerefresh .libsprite-librarythumbnails_oneill {
-    width: 150px;
-    height: 150px;
-    background-position: -325px -165px;
-}
-
- .libsprite-librarythumbnails_swl {
-    width: 150px;
-    height: 150px;
-    background-position: -5px -325px;
-}
-
-.libsprite-librarythumbnails_tml {
-    width: 150px;
-    height: 150px;
-    background-position: -165px -325px;
 }
 
 /* About menu redesign TEST */
