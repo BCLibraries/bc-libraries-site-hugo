@@ -268,7 +268,6 @@ th {
 .mainhomepage hr {
     border-color: $very-light-gray;
     border-image: none;
-    border-right: 0 none;
     border-style: solid none none;
     border-width: 2px 0 0;
     margin-bottom: 15px;
@@ -845,8 +844,6 @@ body.body-modal {
     position:fixed;
     width: 100%;
     overflow: hidden;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 #bcl-feedback #feedback_wrapper {

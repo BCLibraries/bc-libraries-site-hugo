@@ -1,7 +1,7 @@
 /*!
  * Yamm!3 - Yet another megamenu for Bootstrap 3
  * http://geedmo.github.com/yamm3
- * 
+ *
  * @geedmo - Licensed under the MIT license
  */
  .yamm .nav,
@@ -23,9 +23,9 @@
    left: 0;
    right: 0;
  }
- 
- 
- 
+
+
+
  /* Mega Menu */
 
  /* override custom LG style to zero-out row margins */
@@ -44,7 +44,7 @@
      font-weight: 200;
      padding-left: 17px;
  }
- 
+
  #megamenu-refresh .navbar-default {
      background-color: inherit;
      border: none;
@@ -102,8 +102,8 @@
      /*color: $black-text;
      background-color: $bc-brand-gold;*/
  }
- 
- 
+
+
  /* mega menu style copied from style.css */
  .h3style {
      color: $dark-blue-green;
@@ -122,7 +122,7 @@
      padding: 0;
      text-transform: none;
  }
- 
+
  #megamenu-refresh .accounts-link-mobile {
      padding: 8px 16px;
      margin: 12px;
@@ -133,31 +133,31 @@
      color: $white-text;
      border-radius: 4px;
  }
- 
+
  #megamenu-refresh .navbar-nav > li > a:focus {
      background: $dark-blue-green !important;
      color: $white-text;
      outline: 0;
  }
- 
+
  #megamenu-refresh .navbar-nav > li > a:hover {
      background: $dark-blue-green !important;
      color: $white-text;
      outline: 0;
  }
- 
+
  #megamenu-refresh .navbar-nav > .open > a, #megamenu-refresh .navbar-nav > .open > a:hover {
      background: $dark-blue-green !important;
      color: $white-text !important;
  }
- 
+
  #megamenu-refresh .navbar-nav > li > .dropdown-menu {
      /*border: 1px solid $very-light-gray;*/
      border-top: none;
      border-radius: 0;
      margin-top: 0;
  }
- 
+
  /*#megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
      border-top: 3px solid $dark-blue-green;
  }*/
@@ -172,7 +172,7 @@
          /*border-top: 3px solid $dark-blue-green;*/
      }
  }
- 
+
  /* center mega menu nav only for tablet-sized screens: 991px thru 768px; */
  @media ( max-width: 991px ) and ( min-width: 768px ) {
      #megamenu-refresh .navbar-nav {
@@ -181,18 +181,18 @@
          margin: 0 auto;
      }
  }
- 
+
  @media (min-width: 768px) {
      #megamenu-refresh .accounts-link-mobile {
          display: none;
      }
  }
- 
+
  @media ( max-width: 767px ) {
      /* hide My Accounts in mobile menu */
      #megamenu-refresh li.accounts-link {
          display: none;
-     } 
+     }
      .h3style {
          margin-bottom: 5px;
      }
@@ -211,7 +211,7 @@
          z-index: 1000;
      }
  }
- 
+
  .dropdown-menu {
      background-clip: padding-box;
      background-color: $white-body;
@@ -230,9 +230,9 @@
      top: 100%;
      z-index: 1000;
  }
- 
+
  /* CUSTOM MENU STYLING */
- 
+
  /*#megamenu-refresh {
      width: 1200px;
      height: 100px;
@@ -260,19 +260,17 @@
  #megamenu-refresh .hours-todays-date {
      font-weight: 600;
  }
- 
+
  #megamenu-refresh .onl-asterisk-notice {
      display: none
  }
- 
- 
+
+
  .menu_list, .ask_list {
      list-style: none outside none;
-     padding: 0px;
-     margin: 0 0px;
      border-right: 1px solid $very-light-gray;
      border-left: 1px solid $very-light-gray;
-     margin-left:-1px;
+     margin: 0 0px 0 -1px;
      padding: 0 25px;
  }
  .menu_list:first-child, .ask_list:first-child {
@@ -305,15 +303,15 @@
          font-size: 18px;
      }
  }
- 
+
  .libhelp-link {
      cursor: pointer;
  }
- 
+
  .end {
      border: 0px;
  }
- 
+
  .yamm .dropdown-menu li > a {
      display: block;
      padding: 5px 5px 5px 5px;
@@ -325,7 +323,7 @@
      outline: none;
      color: #666;
  }
- 
+
  .yamm .dropdown-menu li > a p.tuck {
      font-weight: 200;
      font-size: 12px;
@@ -355,7 +353,7 @@
          padding: 10px;
      }
  }
- 
+
  .yamm .dropdown-menu li > a:hover,
  .yamm .dropdown-menu li > a:focus,
  .yamm .dropdown-menu li > .h4style a:hover,
@@ -364,7 +362,7 @@
      text-decoration: none;
      background: #E0E0E0;
  }
- 
+
  .bottom_row {
      /*background: $very-light-gray;*/
      border-top: 1px solid $very-light-gray;
@@ -388,7 +386,7 @@
          text-align: center;
      }
  }
- 
+
  .more a {
      /*background: #d6d6d6;
      display: block;
@@ -396,14 +394,14 @@
      width: 100%;
      border-bottom: 2px solid #c2c2c2;*/
  }
- 
+
  .more a:hover {
      text-decoration: none;
      background: #a3a3a3;
      border-bottom: 2px solid #999;
      color: $white-text;
  }
- 
+
  .more a:after {
      /*font-family: 'icomoon';
      content: "\e655";
@@ -416,14 +414,14 @@
      font-weight: normal;*/
      content: none;
  }
- 
+
  .more a:hover:after {
      color: $white-text;
  }
- 
- 
- 
- 
+
+
+
+
  .hamburger {
      background: transparent;
  }
@@ -459,7 +457,7 @@
      width: 22px;
      margin: 0 auto;
  }*/
- 
+
  #megamenu-refresh .navbar-default .navbar-toggle .icon-close {
      color: $white-text;
      font-size: 30px;
@@ -480,16 +478,16 @@
  #megamenu-refresh .navbar-default .navbar-toggle.collapsed .icon-close {
      display: none;
  }
- 
- 
- 
+
+
+
  /* LIBRARY INFO DROP DOWN */
- 
+
  .libraryinfo-content {
      padding: 0 0px 0px 20px;
      text-align: left;
  }
- 
+
  .item-list {
      list-style: none outside none;
      margin: 0;
@@ -497,15 +495,15 @@
      position: relative;
      border-right: 5px solid $very-light-gray;
  }
- 
+
  .item-desktop {
      display: inline-block;
  }
- 
+
  .item-tablet {
      display: none;
  }
- 
+
  @media ( max-width: 1199px ) {
      .item-desktop {
          display: none;
@@ -514,31 +512,31 @@
      display: inline-block;
      }
  }
- 
+
  @media ( max-width: 767px ) {
      .item-list {
          display: none;
      }
  }
- 
+
  .get-help-menu .item-list {
      padding: 0 0 0 25px;
  }
- 
+
  .yamm .dropdown-menu li .item-list > li > a:hover,
  .yamm .dropdown-menu li .item-list > li > a:hover {
      background: $very-light-gray;
      color: $red;
      text-decoration: none;
  }
- 
+
  .item-list .selected a {
      color: $red !important;
      font-weight: normal !important;
      text-decoration: none;
      background: $very-light-gray;
  }
- 
+
  #bapst_pane,
  #burns_pane,
  #erc_pane,
@@ -581,19 +579,19 @@
          float: left;
      }
  }
- 
+
  .item_pane img {
      float: left;
      margin-right: 10px;
      padding: 0 0 75px 0;
  }
- 
+
  @media ( max-width: 767px ) {
      .item_pane img {
          display: none;
      }
  }
- 
+
  #h4mobile {
      display: none;
  }
@@ -607,7 +605,7 @@
          border-top: 1px solid #666;
      }
  }
- 
+
  @media ( max-width: 767px ) {
      .yamm .dropdown-menu li > .h4style  {
          margin: 0 !important;
@@ -617,7 +615,7 @@
          padding: 10px;
      }
  }
- 
+
  @media ( max-width: 767px ) {
      #ref_pane,
      #faq_pane,
@@ -631,77 +629,77 @@
          text-align: center;
      }
  }
- 
- 
+
+
  /* NEW LIBARY PANE CODE */
- 
+
  .item_pane p {
      line-height: inherit;
      text-align: left;
  }
- 
+
  @media ( max-width: 767px ) {
      .item_pane p {
          line-height: 1;
          text-align: center;
      }
  }
- 
+
  .item_pane .address {
      font-size: 11px;
  }
- 
+
  .item_pane ul {
      padding: 0px 0 5px 0;
      margin: 0px;
  }
- 
+
  .item_pane li {
      list-style: none;
  }
- 
+
  .pane_pic {
      float: left;
      width: 25%;
      padding: 15px 10px;
  }
- 
+
  @media ( max-width: 767px ) {
      .pane_pic {
          display: none;
      }
  }
- 
+
  .pane_pic img {
      border: 2px solid $red;
      width: 100%;
      padding: 0;
  }
- 
+
  .pane_info {
      float: right;
      width: 75%;
      padding: 15px;
  }
- 
+
  .get-help-menu .pane_info {
      float: none;
      width: 100%;
      padding: 0 15px 0 15px;
  }
- 
+
  @media ( max-width: 1200px ) {
      .pane_info {
          width: 72%;
      }
  }
- 
+
  @media ( max-width: 991px ) {
      .pane_info {
          width: 65%;
      }
  }
- 
+
  @media ( max-width: 767px ) {
      .pane_info {
          float: none;
@@ -711,11 +709,11 @@
          text-align: left;
      }
  }
- 
+
  .pane_info .h3style a {
      padding: 0 35px 0 0;
  }
- 
+
  .pane_info .h3style a:after {
      /*font-family: 'icomoon';
      content: "\e682";
@@ -724,19 +722,19 @@
      text-decoration: none;*/
      content: none;
  }
- 
- 
+
+
  .pane_info .h4style {
      padding: 0;
  }
- 
+
  @media ( max-width: 767px ) {
      .pane_info p {
          text-align: left;
          line-height: inherit;
      }
  }
- 
+
  .megamenucalendar {
      font-size: 15px;
      height: 30px;
@@ -745,7 +743,7 @@
      text-align: left;
      width: 100%;
  }
- 
+
  .megamenucalendar:before {
      /*font-family: "icomoon";
      content: "\e648";
@@ -757,7 +755,7 @@
  .megamenucalendar:hover:before {
      color: #32758f;
  }
- 
+
  .megamenuphone {
      font-size: 15px;
      height: 30px;
@@ -766,7 +764,7 @@
      text-align: left;
      width: 100%;
  }
- 
+
  .megamenuphone:before {
      /*font-family: "icomoon";
      content: "\e67d";
@@ -778,7 +776,7 @@
  .megamenuphone:hover:before {
      color: #32758f;
  }
- 
+
  .megamenuemail {
      font-size: 15px;
      height: 30px;
@@ -787,7 +785,7 @@
      text-align: left;
      width: 100%;
  }
- 
+
  .megamenuemail:before {
      /*font-family: "icomoon";
      content: "\e67c";
@@ -817,7 +815,7 @@
      font-size: 15px;
      margin-bottom: 4px;
  }
- 
+
   /* ASK A LIBRARIAN STYLES */
   #mm-help-aal .aal-box-container {
     padding-top: 0;
@@ -837,11 +835,11 @@
      color: #666;
      height: 100%;
  }
- 
+
  #mm-help-aal .panel-body {
      padding: 0;
  }
- 
+
  #mm-help-aal .panel-body .media-left {
      padding: 0;
  }
@@ -849,11 +847,11 @@
  #mm-help-aal .aal-box-wrapper {
      margin-bottom: 1rem;
  }
- 
+
  #mm-help-aal .aal-box {
      font-size: inherit;
  }
- 
+
  #mm-help-aal .aal-box .h4style {
      color: $dark-blue-green;
      font-size: 16px;
@@ -863,18 +861,18 @@
      text-transform: none;
      line-height: 1;
  }
- 
+
  #mm-help-aal .aal-box .fa {
-     margin-left: 0px; 
+     margin-left: 0px;
      font-weight:600;
  }
- 
+
  #mm-help-aal .aal-box p {
      padding: 0;
      margin: 0;
      line-height: 1.4;
  }
- 
+
  #mm-help-aal .aal-box a.aal-icon {
      font-size:35px!important;
      color: $white-text;
@@ -882,17 +880,17 @@
      line-height: 1;
      width: 55px;
  }
- 
+
  #mm-help-aal .aal-box a.aal-icon i {
      padding: 10px;
      width: 100%;
      color: $white-text;
  }
- 
+
  #mm-help-aal .aal-box h4 {
      font-weight: 600;
  }
- 
+
  @media ( max-width: 767px ) {
      #mm-help-aal .row:last-child {
          padding-top: 0;
@@ -903,7 +901,7 @@
          height: auto;
      }
  }
- 
+
  @media ( max-width: 424px ) {
      #mm-help-aal .aal-box .panel-body .media .media-left a.aal-icon {
          display: none;
@@ -913,56 +911,56 @@
          line-height: 1.25;
      }
  }
- 
+
  /* Image sprites for library thumbnails */
  /*.libsprite {
      background: url('https://library.bc.edu/images/librarypane/libthumb-spritesheet.jpg') no-repeat;
      display: block;
      border: 2px solid $red;
  }
- 
+
  .libsprite-librarythumbnails_bapst {
      width: 150px;
      height: 150px;
      background-position: -5px -5px;
  }
- 
+
  .libsprite-librarythumbnails_burns {
      width: 150px;
      height: 150px;
      background-position: -165px -5px;
  }
- 
+
   .libsprite-librarythumbnails_ed {
      width: 150px;
      height: 150px;
      background-position: -5px -165px;
  }
- 
+
  .libsprite-librarythumbnails_law {
      width: 150px;
      height: 150px;
      background-position: -165px -165px;
  }
- 
+
  .libsprite-librarythumbnails_oconnor {
      width: 150px;
      height: 150px;
      background-position: -325px -5px;
  }
- 
+
  .libsprite-librarythumbnails_oneill {
      width: 150px;
      height: 150px;
      background-position: -325px -165px;
  }
- 
+
   .libsprite-librarythumbnails_swl {
      width: 150px;
      height: 150px;
      background-position: -5px -325px;
  }
- 
+
  .libsprite-librarythumbnails_tml {
      width: 150px;
      height: 150px;
@@ -1056,9 +1054,9 @@
 .library-boxes .panel-body,
 .library-boxes .panel-body .panel-heading,
 .library-boxes .panel-body .panel-heading .media,
-.library-boxes .panel-body .panel-heading .media .media-left, 
+.library-boxes .panel-body .panel-heading .media .media-left,
 .library-boxes .panel-body .panel-heading .media .media-right,
-.library-boxes .panel-body .panel-heading .media .media-body, 
+.library-boxes .panel-body .panel-heading .media .media-body,
 .library-boxes .panel-body .panel-heading .media .media-body .media-body-inner {
     height: 100%;
     display: block;
