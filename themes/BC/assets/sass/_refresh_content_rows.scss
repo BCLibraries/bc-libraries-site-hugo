@@ -16,7 +16,7 @@
     /*text-transform: uppercase;*/
     border-radius: 0;
     background-clip: padding-box;
-    border: 0px solid #ddd;
+    border: 0 solid #ddd;
     white-space: normal;
     transition: .2s;
 }
@@ -32,11 +32,11 @@
 }
 
 .row.nobottom {
-	padding-bottom: 0px;
+	padding-bottom: 0;
 }
 
 .row.notop {
-	padding-top: 0px;
+	padding-top: 0;
 }
 
 /* HOMEPAGE EXHIBIT ROW STYLING */
@@ -45,7 +45,7 @@
 	display: inline-block;
 	width: 100%;
 	min-height: 150px;
-	background: url("https://library.bc.edu/images/exhibits/banner_default2.jpg") no-repeat 0% 100% $very-dark-gray;
+	background: url("https://library.bc.edu/images/exhibits/banner_default2.jpg") no-repeat 0 100% $very-dark-gray;
 	border-top: 1px solid $very-light-gray;
 	border-bottom: 1px solid $very-light-gray;
 	color: $white-text;
@@ -116,7 +116,6 @@ a.current-exhibits-title {
 
 /* EXHIBIT SLIDER OVERWRITES */
 #exhibit-highlight .carousel {
-	margin-bottom: 3em;
 	max-width: 75%;
 	margin: auto;
 }

@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: $white-body 0% 0%;
+    background: $white-body 0 0%;
     font-family: 'Open Sans', Arial, sans-serif;
     color: $black-text;
     font-size: 15px;
@@ -78,7 +78,7 @@ a {
 /* top level maroon bar */
 #bclib-header {
     box-sizing: border-box;
-    background: $bc-brand-maroon no-repeat 100% 0%;
+    background: $bc-brand-maroon no-repeat 100% 0;
     border-bottom: 1px solid $bc-primary-light-gold;
     color: $white-text;
     height: 38px;
@@ -135,8 +135,8 @@ a {
 }
 
 #bclib-header .row {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
     margin-right: -15px;
     margin-left: -15px;
 }
@@ -180,11 +180,11 @@ a {
 }
 
 #bclib-header ul.bclib-header-links li:first-child {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 #bclib-header ul.bclib-header-links li:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 #bclib-header ul.bclib-header-links li .fa {
@@ -264,7 +264,7 @@ a {
 }
 
 #header-top-row {
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .caption-link {
@@ -375,23 +375,23 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
 }
 
 .leftTop .container-fluid .pull-right {
-    left: 0px;
+    left: 0;
     top: 20px;
 }
 
 .rightTop .container-fluid .pull-right {
     top: 20px;
-    right: 0px;
+    right: 0;
 }
 
 .leftBottom .container-fluid .pull-right {
-    left: 0px;
+    left: 0;
     bottom: 20px;
 }
 
 .rightBottom .container-fluid .pull-right {
     bottom: 20px;
-    right: 0px;
+    right: 0;
 }
 
 .leftBottom .container-fluid .pull-right .content,
@@ -437,8 +437,6 @@ body.body-modal {
     position: fixed;
     width: 100%;
     overflow: hidden;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 #bcl-feedback #feedback_wrapper {
@@ -592,7 +590,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 }
 
 .blockquote {
-    padding: 0px;
+    padding: 0;
     position: relative;
     font-family: "Utopia-italic";
 }
@@ -717,7 +715,7 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     }*/
 
     #news {
-        padding-bottom: 0em;
+        padding-bottom: 0;
     }
 
     #facpub img.bookcover {

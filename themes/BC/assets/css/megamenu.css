@@ -1,7 +1,7 @@
 /*!
  * Yamm!3 - Yet another megamenu for Bootstrap 3
  * http://geedmo.github.com/yamm3
- * 
+ *
  * @geedmo - Licensed under the MIT license
  */
 .homepagerefresh .yamm .nav,
@@ -29,7 +29,7 @@
 /* Mega Menu */
 
 .homepagerefresh #megamenu-refresh .navbar-default .navbar-brand {
-    text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85);
+    text-shadow: 0 2px 6px rgba(0, 0, 0,0.85);
     color: #fff;
     font-size: 18px;
     font-style: italic;
@@ -57,7 +57,7 @@
     z-index: 10000;
 }
 .homepagerefresh .megamenu-container .nav a.menu-option {
-    text-shadow: 0px 2px 6px rgba(0, 0, 0,0.85);
+    text-shadow: 0 2px 6px rgba(0, 0, 0,0.85);
     color: #fff;
     font-size: 20px;
     font-weight: 200;
@@ -186,7 +186,7 @@
     /* hide My Accounts in mobile menu */
     .homepagerefresh #megamenu-refresh li.accounts-link {
         display: none;
-    } 
+    }
     .homepagerefresh .h3style {
         margin-bottom: 5px;
     }
@@ -194,7 +194,7 @@
         margin-bottom: 15px;
     }
     .homepagerefresh #megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
-        border-top: 0px;
+        border-top: 0;
         border-bottom: 2px dashed #ccc;
         margin-bottom: 1.5rem;
     }
@@ -262,8 +262,8 @@
 
 .homepagerefresh .menu_list, .ask_list {
     list-style: none outside none;
-    padding: 0px;
-    margin: 0 0px;
+    padding: 0;
+    margin: 0 0;
     border-right: 1px solid #DADADA;
     border-left: 1px solid #DADADA;
     margin-left:-1px;
@@ -301,7 +301,7 @@
 }
 
 .homepagerefresh .end {
-    border: 0px;
+    border: 0;
 }
 
 .homepagerefresh .yamm .dropdown-menu li > a {
@@ -338,7 +338,7 @@
     .homepagerefresh .yamm .dropdown-menu li > .h4style  {
         margin: 0 !important;
         font-size: 18px;
-        padding: 0px;
+        padding: 0;
     }
     .homepagerefresh .yamm .dropdown-menu li > .h4style a {
         font-size: 18px;
@@ -363,7 +363,7 @@
 }
 @media ( max-width: 767px ) {
     .homepagerefresh .bottom_row {
-            margin: 10px 0 0px 0;
+            margin: 10px 0 0 0;
     }
 }
 .homepagerefresh .more {
@@ -476,7 +476,7 @@
 /* LIBRARY INFO DROP DOWN */
 
 .homepagerefresh .libraryinfo-content {
-    padding: 0 0px 0px 20px;
+    padding: 0 0 0 20px;
     text-align: left;
 }
 
@@ -642,8 +642,8 @@
 }
 
 .homepagerefresh .item_pane ul {
-    padding: 0px 0 5px 0;
-    margin: 0px;
+    padding: 0 0 5px 0;
+    margin: 0;
 }
 
 .homepagerefresh .item_pane li {
@@ -696,7 +696,7 @@
     .homepagerefresh .pane_info {
         float: none;
         width: 95%;
-        padding: 0px;
+        padding: 0;
         margin: 0 auto;
         text-align: left;
     }
@@ -731,7 +731,7 @@
     font-size: 15px;
     height: 30px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 0;
     text-align: left;
     width: 100%;
 }
@@ -752,7 +752,7 @@
     font-size: 15px;
     height: 30px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 0;
     text-align: left;
     width: 100%;
 }
@@ -851,7 +851,7 @@
 }
 
 #mm-help-aal .aal-box .fa {
-    margin-left: 0px; 
+    margin-left: 0;
     font-weight:600;
 }
 
@@ -900,64 +900,9 @@
     }
 }
 
-/* Image sprites for library thumbnails */
-.libsprite {
-    background: url('/img/librarypane/libthumb-spritesheet.jpg') no-repeat;
-    display: block;
-    border: 2px solid #990000;
-}
-
-.libsprite-librarythumbnails_bapst {
-    width: 150px;
-    height: 150px;
-    background-position: -5px -5px;
-}
-
-.libsprite-librarythumbnails_burns {
-    width: 150px;
-    height: 150px;
-    background-position: -165px -5px;
-}
-
- .libsprite-librarythumbnails_ed {
-    width: 150px;
-    height: 150px;
-    background-position: -5px -165px;
-}
-
-.libsprite-librarythumbnails_law {
-    width: 150px;
-    height: 150px;
-    background-position: -165px -165px;
-}
-
-.libsprite-librarythumbnails_oconnor {
-    width: 150px;
-    height: 150px;
-    background-position: -325px -5px;
-}
-
-.homepagerefresh .libsprite-librarythumbnails_oneill {
-    width: 150px;
-    height: 150px;
-    background-position: -325px -165px;
-}
-
- .libsprite-librarythumbnails_swl {
-    width: 150px;
-    height: 150px;
-    background-position: -5px -325px;
-}
-
-.libsprite-librarythumbnails_tml {
-    width: 150px;
-    height: 150px;
-    background-position: -165px -325px;
-}
-
 /* About menu redesign TEST */
 #mm-help-about .row {
-    padding-top: 0rem;
+    padding-top: 0;
     padding-bottom: 1.5rem;
     display: flex;
     align-content: stretch;
@@ -970,7 +915,7 @@
 }
 
 #mm-help-about .panel-body .media img {
-    max-width: 0px!important;
+    max-width: 0 !important;
 }
 
 #mm-help-about .panel-heading {
