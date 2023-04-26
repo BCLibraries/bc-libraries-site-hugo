@@ -97,11 +97,9 @@
     height:30px;
     line-height: 30px;
     text-align: center;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     text-decoration: none!important;
     display: block;
-    -webkit-transition: .2s;
+    transition: .2s;
 }
 #lib-footer #socialmedia ul li a:hover,
 #lib-footer #socialmedia ul li a:focus {

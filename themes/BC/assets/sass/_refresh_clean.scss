@@ -82,15 +82,7 @@ a {
     border-bottom: 1px solid $bc-primary-light-gold;
     color: $white-text;
     height: 38px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     /* justify-content: center; */
 }
@@ -429,8 +421,6 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
     z-index: 99999;
     display: none;
     opacity: 0;
-    -webkit-transition: opacity 100ms ease-in;
-    -moz-transition: opacity 100ms ease-in;
     transition: opacity 100ms ease-in;
     pointer-events: none;
     overflow: auto;

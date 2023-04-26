@@ -243,7 +243,7 @@
     display:none!important;
 }
 #news .news-content {
-    display: flex; 
+    display: flex;
 }
 /* Safari doesn't play well with floated elements and flex display */
 #news .news-content:before,
@@ -295,7 +295,7 @@
 #news .news-content a:hover,
 #news .news-content a:focus {
     opacity: .8;
-} 
+}
 
 #news .news-content a:focus {
     outline: 1px solid blue;
@@ -601,13 +601,13 @@
             color: #622a27;
             text-decoration: none;
             border-bottom: 1px solid #622a27;
-    
+
             &:hover, &:focus {
                 color:blue;
                 border-bottom: 1px solid blue;
             }
         }
-    
+
         .visitation-alert__heading {
             h2 {
                 font-size: 16px;
@@ -616,24 +616,24 @@
                 padding: 0;
                 vertical-align: middle;
             }
-    
+
             .visitation-alert__date {
                 font-size: 12px;
             }
         }
-    
+
         .visitation-alert__content {
             font-size: 16px;
             line-height: 18px;
         }
-    
+
         .visitation-alert__link {
             text-align: right;
         }
-    
-        .visitation-alert__dismiss { 
+
+        .visitation-alert__dismiss {
             text-align: right;
-    
+
             button {
                 background: none!important;
                 border: none;
@@ -652,7 +652,7 @@
         min-height: 392px;
         position: relative;
     }
-    
+
     .overlay-img {
         max-height: 350px;
         overflow: hidden;
@@ -712,7 +712,7 @@
 
 @media (max-width: 767px) {
     #featured-tip-wrapper.resource-highlights {
-        margin-bottom: 2rem;      
+        margin-bottom: 2rem;
     }
 }
 
@@ -764,7 +764,6 @@
     display: block;
 }
 #explore-collections .collections-box a img {
-    -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
     opacity: .85;
     display: block;
@@ -828,9 +827,9 @@
     color: $white-text;
     display: inline-block;
 }
-#socialmedia-highlight .leftBottom .container-fluid .pull-right .content, 
-#socialmedia-highlight .leftTop .container-fluid .pull-right .content, 
-#socialmedia-highlight .rightTop .container-fluid .pull-right .content, 
+#socialmedia-highlight .leftBottom .container-fluid .pull-right .content,
+#socialmedia-highlight .leftTop .container-fluid .pull-right .content,
+#socialmedia-highlight .rightTop .container-fluid .pull-right .content,
 #socialmedia-highlight .rightBottom .container-fluid .pull-right .content {
     color: $white-text;
     display: table;

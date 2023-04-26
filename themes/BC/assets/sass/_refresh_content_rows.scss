@@ -15,16 +15,12 @@
     color: #555;
     /*text-transform: uppercase;*/
     border-radius: 0;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 0px solid #ddd;
     white-space: normal;
     transition: .2s;
-    -moz-transition: .2s;
-    -webkit-transition: .2s;
 }
- 
+
 .content .btn.btn-blue, #db-rg-hours .btn.btn-blue, #exhibit-highlight .btn.btn-blue {
 	color: #dddddd;
     background: #204375;
