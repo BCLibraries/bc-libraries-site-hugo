@@ -50,10 +50,7 @@
         font-size: larger;
     }
     .librarian-profile {
-        border-top-left-radius: 50% 50%;
-        border-top-right-radius: 50% 50%;
-        border-bottom-right-radius: 50% 50%;
-        border-bottom-left-radius: 50% 50%;
+        border-radius: 50% 50%;
         max-width: 220px;
         width: 100%;
         border: 3px solid $black-body;
@@ -73,11 +70,11 @@
         padding: 0;
         list-style-type: none;
     }
-    
+
     .featured-librarian-expert-at-list li {
         display:inline;
     }
-    
+
 }
 
 .bg-img {

@@ -289,11 +289,10 @@
     min-height:145px;
     border-top: 1px solid $very-light-gray;
     border-bottom: 1px solid $very-light-gray;
-    margin: .75rem 0 0 0;
     padding: 1.5rem 0 .5rem 0;
     line-height: 1.25;
     overflow: initial;
-    margin-top: -1px;
+    margin: -1px 0 0;
 
     a:hover {
         text-decoration: none;
