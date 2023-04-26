@@ -59,7 +59,7 @@ b, strong {
     font-weight: bold;
 }
 
-i, italics {
+i {
     font-style: italic;
 }
 
@@ -657,7 +657,7 @@ th {
     background: $bc-brand-gold;
     height: 30px;
     margin: 0;
-    box-shadow: 0;
+    box-shadow: none;
 }
 
 #s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a:hover,
