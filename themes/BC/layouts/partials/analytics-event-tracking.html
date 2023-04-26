@@ -1,33 +1,47 @@
 <script>
 $(function () {
     var $all_anchors = $('a');
+
+    //
+    // Megamenu hover events
+    //
+
     $('#megamenu-refresh ul.nav li.dropdown').mouseenter(function() {
         var myText = $(this).find("a.menu-option").text();
-        //ga('send', 'event', 'megamenu',      'hover',       myText.trim());
-        //ga('send', 'event', [eventCategory], [eventAction], [eventLabel], [eventValue]);
         gtag('event', 'hover', {'event_category': 'megamenu', 'event_label': myText.trim()});
         _paq.push(['trackEvent', 'megamenu', 'hover', myText.trim()]);
     });
+
     $("ul.item-desktop li a").mouseenter(function(){
         var myPane = $(this).html();
-        //gtag('send', 'event', 'librarypanes', 'hover', myPane);
         gtag('event', 'hover', {'event_category': 'librarypanes', 'event_label': myPane});
         _paq.push(['trackEvent', 'librarypanes', 'hover', myPane]);
     });
 
     //
-    // HOMEPAGE only GA event triggers
+    // Ask Us click event
     //
+
+    $("a.askuswidget").click(function(e){
+        var src = window.location.href;
+        gtag('event', 'click', {'event_category': 'chat-widget', 'event_label': src});
+        _paq.push(['trackEvent', 'chat-widget', 'click', src]);
+    });
+
+    //
+    // Homepage click events
+    //
+
     // send 'outbound' event for all link clicks
     $all_anchors.not('.askuswidget, .search-link, .accessibility-text').click(function(e) {
         var url = $(this).attr("href");
         /* Bug fix to stop screen jump when clicking carousel controls */
         if (url.indexOf('#') !== 0) {
-            //gtag("send", "event", "outbound", "click", url);
             gtag('event', 'click', {'event_category': 'outbound', 'event_label': url});
             _paq.push(['trackEvent', 'outbound', 'click', url]);
         }
     });
+
     // send 'homepage' event for all link clicks and include sections
     // ignore news carousel and mega menu top-level links
     $all_anchors.not(".askuswidget, .carousel-control, li.dropdown > a.menu-option, .accessibility-text").click(function(e){
@@ -40,55 +54,9 @@ $(function () {
                 dataID = "[undefined]"
             }
         }
-        //gtag('send', 'event', 'homepage', dataID, url);
         gtag('event', dataID, {'event_category': 'homepage', 'event_label': url});
+        gtag('event', 'click', {'event_category': 'homepage', 'event_label': url, 'homepage_section': dataID});
         _paq.push(['trackEvent', 'homepage', dataID, url]);
-    });
-    // send 'exhibits-nav' event for carosel nav clicks
-    // -   left and right nav buttons
-    $("a.carousel-control").click(function(e){
-        var nav = $(this).attr("data-slide");
-        if (typeof nav === "undefined") {
-            nav = "[undefined]";
-        }
-        //gtag('send', 'event', 'exhibits-nav', 'click', nav);
-        gtag('event', 'click', {'event_category': 'exhibits-nav', 'event_label': nav});
-        _paq.push(['trackEvent', 'exhibits-nav', 'click', nav]);
-    });
-    // -   dot indicators
-    $("ol.carousel-indicators li").click(function(e){
-        var slide = $(this).attr("data-slide-to");
-        if (typeof slide === "undefined") {
-            slide = "[undefined]";
-        }
-        //gtag('send', 'event', 'exhibits-nav', 'click', 'indicator', slide);
-        gtag('event', 'click', {'event_category': 'exhibits-nav', 'event_label': indicator, 'value': slide});
-        _paq.push(['trackEvent', 'exhibits-nav', 'click', indicator, slide]);
-    });
-    // send 'story-nav' event for story selector clicks
-    /*$("#storybox .story-selectors img.selector").click(function(e){
-        var src = $(this).attr("src");
-        //gtag('send', 'event', 'story-nav', 'click', src);
-        gtag('event', 'click', {'event_category': 'story-nav', 'event_label': src});
-    });*/
-    
-    //
-    // catch Ask Us fixed button clicks
-    //
-    $("a.askuswidget").click(function(e){
-        var src = window.location.href;
-        //gtag('send', 'event', 'chat-widget', 'click', src);
-        gtag('event', 'click', {'event_category': 'chat-widget', 'event_label': src});
-        _paq.push(['trackEvent', 'chat-widget', 'click', src]);
-    });
-
-    //
-    // catch covid notice button open/close clicks
-    //
-    $("button.covid-button").click(function(e){
-        var buttonID = $(this).attr("id");
-        gtag('event', 'click', {'event_category': 'covid-notice', 'event_label': buttonID});
-        _paq.push(['trackEvent', 'covid-notice', 'click', buttonID]);
     });
 });
 </script>
