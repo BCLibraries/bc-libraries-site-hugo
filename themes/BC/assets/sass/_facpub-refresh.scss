@@ -16,7 +16,7 @@
 
 .facpub_wrap {
     width: 1080px;
-    margin: 0px auto 0;
+    margin: 0 auto 0;
     background: $white-body;
 }
 
@@ -59,7 +59,7 @@
 .facpub_wrap #titleauthor {
     font-size: 20px;
     line-height: 1;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-align: left;
     margin: 0 0 15px 0;
 }
@@ -74,7 +74,7 @@
     border-bottom: 1px solid $very-light-gray;
     color: $black-text;
     display: block;
-    margin: 0px 0 10px;
+    margin: 0 0 10px;
     overflow: hidden;
     padding: 20px;
     text-align: center;
@@ -82,15 +82,15 @@
 
 .facpub_wrap #content_container {
     width: 100%;
-    border-top: 0px;
-    border-bottom: 0px;
-    margin: 0px 0 0;
+    border-top: 0;
+    border-bottom: 0;
+    margin: 0 0 0;
     display: block;
 }
 
 .facpub_wrap .article_content {
     width: 100%;
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 .facpub_wrap .article_content .fph_content_left {
@@ -121,7 +121,7 @@
 }
 
 .facpub_wrap .article_content .fph_content_right img {
-    margin: 0px 10px 10px 0px;
+    margin: 0 10px 10px 0;
     padding: 1px;
     width: 125px;
     height: auto;
@@ -158,8 +158,8 @@
 }
 
 .facpub_wrap .row {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
     padding: 0;
 }
 
@@ -169,16 +169,16 @@
 .latest-highlight {
     width: 100%;
     display: block;
-    margin: 0px 0 10px 0;
+    margin: 0 0 10px 0;
     overflow: hidden;
-    padding: 0px 0 25px 0;
+    padding: 0 0 25px 0;
     position: relative;
     height: auto;
     border-bottom: 1px solid $very-light-gray;
 }
 
 .latest-highlight h2 {
-    margin: 0px 0 20px 0;
+    margin: 0 0 20px 0;
 }
 
 .latest-highlight .fph_content_left {
@@ -205,13 +205,13 @@
 .facpub .latest-highlight #titleauthor {
     font-size: 15px;
     line-height: 1;
-    padding: 0px;
+    padding: 0;
 }
 
 .view-interview {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
 }
 
 .view-interview:after {
@@ -367,8 +367,8 @@ a:hover .archive-item-authors {
 
     .facpub_wrap .article_content .fph_content_left,  .latest-highlight .fph_content_left {
         float: none;
-        border-right: 0px solid $very-light-gray;
-        border-bottom: 0px solid $very-light-gray;
+        border-right: 0 solid $very-light-gray;
+        border-bottom: 0 solid $very-light-gray;
         padding: 0 5px;
         width: 100%;
         height: auto;
@@ -390,7 +390,7 @@ a:hover .archive-item-authors {
         display: none;
     }
     .old_facpub:nth-child(2n+1) {
-        border-right: 0px solid $very-light-gray;
+        border-right: 0 solid $very-light-gray;
     }
     .old_facpub:nth-last-child(2) {
         border-bottom: 1px solid $very-light-gray;

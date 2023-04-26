@@ -35,7 +35,7 @@ html {
 
 @media ( max-width: 1199px ) {
     .latest_exhibit {
-        padding: 0px 0 0;
+        padding: 0 0 0;
     }
 }
 
@@ -70,7 +70,7 @@ html {
 #exhibit .latest_exhibit .left ul li {
     list-style: none outside none;
     margin: 0;
-    padding: 0px 0 10px;
+    padding: 0 0 10px;
 }
 
 /* li for digitial exhibits wraps around to two lines */
@@ -87,7 +87,7 @@ html {
 #exhibit .latest_exhibit .left .target {
     color: #666;
     border-bottom: 1px solid $red;
-    padding: 0 0 0 0px;
+    padding: 0;
     margin: 0 0 10px;
 }
 
@@ -121,7 +121,7 @@ html {
 #exhibit .latest_exhibit .holder {
     display: inline-block;
     position: relative;
-    margin: 0px 0px 30px 0;
+    margin: 0 0 30px 0;
     padding: 0;
     width: 375px;
     height: auto;
@@ -131,7 +131,7 @@ html {
     #exhibit .latest_exhibit .holder {
         display: inline-block;
         position: relative;
-        margin: 0px 0px 15px 0;
+        margin: 0 0 15px 0;
         padding: 0;
         width: 40%;
         height: auto;
@@ -142,7 +142,7 @@ html {
       #exhibit .latest_exhibit .holder {
         display: inline-block;
         position: relative;
-        margin: 0px auto 30px;
+        margin: 0 auto 30px;
         padding: 0;
         width: 100%;
         height: auto;
@@ -208,10 +208,10 @@ html {
 }
 
 #exhibit .latest_exhibit .holder .frame .info {
-    bottom: 0px;
+    bottom: 0;
     position: absolute;
     width: 100%;
-    background: rgba(255, 255, 255, 0.8) none repeat scroll 0px 0px;
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
     min-height: 65px;
     padding: 10px 5px 5px;
     border-top: 1px solid $dark-blue-green;
@@ -232,7 +232,7 @@ html {
 
 #exhibit .latest_exhibit .holder .frame:hover .info .title {
     color: #32758F;
-}  
+}
 
 #exhibit .above_footer {
     clear: both;
@@ -247,7 +247,7 @@ html {
     width: 100vw;
     min-height: 150px;
     height: 290px;
-    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0% 100% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0 100% $very-dark-gray;
     border-top: 1px solid $very-light-gray;
     border-bottom: 1px solid $very-light-gray;
     color: $white-text;
@@ -263,7 +263,7 @@ html {
     width: 100%;
     min-height: 150px;
     height: auto;
-    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0% 100% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0 100% $very-dark-gray;
     border-top: 1px solid $very-light-gray;
     border-bottom: 1px solid $very-light-gray;
     color: $white-text;
@@ -309,7 +309,7 @@ html {
         max-width: 100%;
         padding: 0 20px;
     }
-}  
+}
 
 @media ( max-width: 768px ) {
     .blackband .bandcenter, .exhibit_page .blackband .bandcenter {
@@ -320,35 +320,35 @@ html {
 }
 
 #exhibit .burns, .exhibit_page .burns {
-    background: url("https://library.bc.edu/images/exhibits/banner_burns.jpg") no-repeat 50% 0% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_burns.jpg") no-repeat 50% 0 $very-dark-gray;
 }
 
 #exhibit .tml, .exhibit_page .tml {
-    background: url("https://library.bc.edu/images/exhibits/banner_tml.jpg") no-repeat 50% 0% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_tml.jpg") no-repeat 50% 0 $very-dark-gray;
 }
 
 #exhibit .lvl1, .exhibit_page .lvl1 {
-    background: url("https://library.bc.edu/images/exhibits/banner_lvl1.jpg") no-repeat 50% 0% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_lvl1.jpg") no-repeat 50% 0 $very-dark-gray;
 }
 
 #exhibit .lvl3, .exhibit_page .lvl3 {
-    background: url("https://library.bc.edu/images/exhibits/banner_lvl3.jpg") no-repeat 50% 0% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_lvl3.jpg") no-repeat 50% 0 $very-dark-gray;
 }
 
 #exhibit .reading, .exhibit_page .reading {
-    background: url("https://library.bc.edu/images/exhibits/banner_reading.jpg") no-repeat 50% 0% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_reading.jpg") no-repeat 50% 0 $very-dark-gray;
 }
 
 #exhibit .backwall, .exhibit_page .backwall {
-    background: url("https://library.bc.edu/images/exhibits/banner_backwall.jpg") no-repeat 50% 0% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_backwall.jpg") no-repeat 50% 0 $very-dark-gray;
 }
 
 #exhibit .lobby, .exhibit_page .lobby {
-    background: url("https://library.bc.edu/images/exhibits/banner_oneill.jpg") no-repeat 50% 0% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_oneill.jpg") no-repeat 50% 0 $very-dark-gray;
 }
 
 #exhibit .stokes, .exhibit_page .stokes {
-    background: url("https://library.bc.edu/images/exhibits/banner_stokes.jpg") no-repeat 50% 0% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_stokes.jpg") no-repeat 50% 0 $very-dark-gray;
 }
 
 /*#exhibit .tiponeill, .exhibit_page .tiponeill {
@@ -356,15 +356,15 @@ html {
 }*/
 
 #exhibit .bapst, .exhibit_page .bapst, #exhibit .bapstarchive, .exhibit_page .bapstarchive  {
-    background: url("https://library.bc.edu/images/exhibits/banner_bapst.jpg") no-repeat 50% 0% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_bapst.jpg") no-repeat 50% 0 $very-dark-gray;
 }
 
 #exhibit .virtual, .exhibit_page .virtual {
-    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0% 100% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0 100% $very-dark-gray;
 }
 
 #exhibit .tip, .exhibit_page .tip {
-    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0% 100% $very-dark-gray;
+    background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0 100% $very-dark-gray;
 }
 
 .blackband a {
@@ -386,24 +386,24 @@ html {
 @media ( max-width: 1199px ) {
     #exhibit.archives .latest_exhibit .holder:nth-child(odd) {
        float: right;
-       margin: 0 0px 25px 0;
+       margin: 0 0 25px 0;
     }
 
     #exhibit.archives .latest_exhibit .holder:nth-child(even) {
         float: left;
-        margin: 0 0px 25px 0;
+        margin: 0 0 25px 0;
     }
 }
 
 @media ( max-width: 768px ) {
     #exhibit.archives .latest_exhibit .holder:nth-child(odd) {
        float: none;
-       margin: 0 0px 25px 0;
+       margin: 0 0 25px 0;
     }
 
     #exhibit.archives .latest_exhibit .holder:nth-child(even) {
         float: none;
-        margin: 0 0px 25px 0;
+        margin: 0 0 25px 0;
     }
 }
 
@@ -415,7 +415,7 @@ html {
 #exhibit.archives .latest_exhibit .holder {
     display: inline-block;
     position: relative;
-    margin: 0px 0px 50px 0;
+    margin: 0 0 50px 0;
     padding: 0;
     width: 250px;
     height: auto;
@@ -431,7 +431,7 @@ html {
 
 @media ( max-width: 1199px ) {
     #exhibit.archives .latest_exhibit .holder {
-        margin: 0px 0px 25px 0;
+        margin: 0 0 25px 0;
         padding: 0;
         width: 45%;
         height: auto;
@@ -448,7 +448,7 @@ html {
         padding-top: 60px;
     }
     #exhibit.archives .latest_exhibit .holder {
-        margin: 0px 0px 25px 0;
+        margin: 0 0 25px 0;
         padding: 0;
         width: 100%;
         height: auto;
@@ -468,10 +468,10 @@ html {
 }
 
 #exhibit.archives .latest_exhibit .holder .frame .info {
-    bottom: 0px;
+    bottom: 0;
     position: absolute;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9) none repeat scroll 0px 0px;
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
     min-height: 55px;
     padding: 5px;
 }
@@ -491,7 +491,7 @@ html {
 
 #exhibit.archives .latest_exhibit .holder .frame:hover .info .title {
     color: #32758F;
-}  
+}
 
 
 /* INDIVIDUAL EXHIBIT PAGE STYLES */
@@ -504,7 +504,7 @@ html {
 .exhibit_page .exhibittitle {
     width: 75%;
     min-height: 120px;
-    padding: 10px 5px 0px;
+    padding: 10px 5px 0;
     margin: 0 auto 25px;
     display: block;
     background: $white-body;
@@ -530,7 +530,7 @@ html {
 
 .exhibit_page .article_content, .exhibit_page .article_content_two {
     width: 90%;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .article_content .poster, .article_content_two .poster {
@@ -554,14 +554,14 @@ html {
 
 @media ( max-width: 1199px ) {
     #individualpage {
-    padding: 0px 0 25px;
+    padding: 0 0 25px;
     z-index: 3;
 }
 
 .exhibit_page .exhibittitle {
     width: 100%;
     min-height: 120px;
-    padding: 10px 5px 0px;
+    padding: 10px 5px 0;
     margin: 0 auto 25px;
     display: block;
     background: $white-body;
@@ -589,17 +589,17 @@ html {
 
 .default .article_content .poster, .left .article_content .poster  {
     float: left;
-    margin: 0px 25px 10px 0px;
+    margin: 0 25px 10px 0;
     max-width: 50%;
 }
 
 .default .article_content .text, .left .article_content .text  {
-    padding: 0 95px 0 0px;
+    padding: 0 95px 0 0;
 }
 
 .right .article_content .poster {
     float: right;
-    margin: 0px 0px 10px 25px;
+    margin: 0 0 10px 25px;
     max-width: 50%;
 }
 
@@ -639,7 +639,7 @@ html {
 
 .middle_down .article_content_two {
     display: block;
-}  
+}
 
 .middle_down .article_content {
     display: none;
@@ -647,7 +647,7 @@ html {
 
 .middle_down .article_content_two .poster {
     float: none;
-    margin: 0 auto 0px;
+    margin: 0 auto 0;
     max-width: 875px;
     width: 50%;
 }
@@ -659,14 +659,14 @@ html {
 }
 
 @media ( max-width: 1199px ) {
-    
+
     .default .article_content .poster, .right .article_content .poster, .left .article_content .poster  {
         float: right;
-        margin: 0px 0px 10px 25px;
+        margin: 0 0 10px 25px;
         max-width: 35%;
     }
     .default .article_content .text,  .right .article_content .text, .left .article_content .text {
-        padding: 0 0px 0 0px;
+        padding: 0 0 0 0;
     }
 
     .middle_top .article_content .poster {

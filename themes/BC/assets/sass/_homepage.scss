@@ -139,8 +139,8 @@
 }
 
 #aal-home {
-    margin-top: 0rem;
-    padding-bottom: 0rem;
+    margin-top: 0;
+    padding-bottom: 0;
     background-color: $white-body;
 }
 #aal-home .aal-box-small a.aal-icon {
@@ -225,7 +225,7 @@
 
 #db-rg-hours {
     /*border-top: solid 9px $bc-primary-light-gold;*/
-    padding-top: 0rem;
+    padding-top: 0;
     padding-bottom: 2rem;
 }
 #news {
@@ -346,16 +346,16 @@
 }
 
 .ql .list-group {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     list-style: none;
     font-size: 16px;
 }
 
 .ql .list-group-item {
     background-color: transparent;
-    border: 0px solid $white-body;
+    border: 0 solid $white-body;
     padding: 10px 5px;
-    border-radius: 0px;
+    border-radius: 0;
     color: $black-text;
 }
 

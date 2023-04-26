@@ -213,15 +213,15 @@ th {
 }
 
 #guidetitle {
-    padding: 0 0 0 0px;
-    margin: 0px 0 20px 0;
+    padding: 0 0 0 0;
+    margin: 0 0 20px 0;
 }
 
 #guidetitle h1 {
     font-size: 30px;
     /*text-transform: uppercase;*/
-    padding: 0px;
-    margin:  0px;
+    padding: 0;
+    margin:  0;
     display: inline-block;
 }
 
@@ -250,19 +250,19 @@ th {
 }
 
 #s-lg-guide-tabs-title-bar {
-    padding: 0px;
+    padding: 0;
     margin: 0 0 15px 0;
 }
 
 .view-mode #s-lg-guide-tabs-title-bar {
-    padding: 0px;
-    margin: 0 0 0px 0;
-    border-top: 0px;
+    padding: 0;
+    margin: 0 0 0 0;
+    border-top: 0;
 }
 
 .pad-top-med
 /* THIS OVERWRITES A DIV THAT DOES NOT APPEAR, BUT STILL CAUSES PADDING ISSUES.*/       {
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .mainhomepage hr {
@@ -271,13 +271,13 @@ th {
     border-style: solid none none;
     border-width: 2px 0 0;
     margin-bottom: 15px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 /* CONTENT  */ /* LIBGUIDES - KEEP */
 
 #content_container /*USED IN HOMEPAGE & LIBGUIDES */ {
-    margin: 0px;
+    margin: 0;
     padding: 0;
     width: 1170px;
     display: inline-block;
@@ -394,14 +394,14 @@ th {
 
 #s-lg-add-page-icon
 /*I GUESS THIS IS TOO, NOT SURE*/       {
-    margin: 0px;
+    margin: 0;
     display: inline;
     font-size: 12px;
 }
 
 #s-lg-admin-tab-add /* THIS IS THE + SIGN TO ADD A NEW PAGE */       {
     padding: 4px;
-    margin: 0px;
+    margin: 0;
     border: 2px solid $bc-brand-gold;
 }
 
@@ -429,7 +429,7 @@ th {
 
 .pager li > a, .pager li > span /* OVERWRITES PREVIOUS/NEXT BUTTON STYLES*/      {
     background-color: transparent;
-    border: 0px;
+    border: 0;
     border-radius: 0;
     display: inline-block;
     padding: 0;
@@ -450,8 +450,8 @@ th {
 
 @media ( max-width: 768px ) {
     .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     }
 }
 
@@ -472,15 +472,15 @@ th {
 
 #s-lg-box-top
 /* TOP BOX, IF IN USE */       {
-    margin: 0px;
+    margin: 0;
     padding: 0 10px;
 }
 
 .s-lib-box
 /*THE INNER BOX ITSELF, WITH BORDERS, MARGIN, PADDING, SHADOW, * MORE */       {
     box-shadow: none;
-    border: 0px;
-    margin: 0px;
+    border: 0;
+    margin: 0;
     color: #151515;
 }
 
@@ -502,7 +502,7 @@ th {
     font-weight: normal;*/
     line-height: 1.15;
     /*margin: 15px 0 5px;*/
-    padding: 0px;
+    padding: 0;
     /*text-transform: uppercase;*/
     background: none;
 }
@@ -524,7 +524,7 @@ th {
 /* HACKED SIDE NAVIGATION  */
 
 #s-lg-guide-tabs .nav-tabs {
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 
 @media ( max-width: 768px ) {
@@ -622,9 +622,9 @@ th {
 #s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */      {
     background-clip: padding-box;
     background-color: transparent;
-    border: 0px;
-    border-radius: 0px;
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     display: none;
     float: left;
     font-size: 14px;
@@ -649,14 +649,14 @@ th {
     color: $red;
     display: block;
     width: 100%;
-    padding: 5px 0px;
+    padding: 5px 0;
     white-space: nowrap;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
     background: $bc-brand-gold;
     height: 30px;
-    margin: 0px;
+    margin: 0;
     box-shadow: 0;
 }
 
@@ -742,7 +742,7 @@ nav select {
 .column-container-inner {padding:20px 10px 20px 20px}
 .column-container .column {padding:0; background-color:#eee;}
 .column .inner {min-height:172px; padding:0 10px 10px 0;}
-.column .column-content {padding:0px; min-height: inherit; margin-bottom:0px;}
+.column .column-content {padding:0; min-height: inherit; margin-bottom:0;}
 .column .inner.first {}
 .column .inner.last {}
 .inner .text {padding:20px 0 0 16px; font-size:18px; line-height:24px;}
@@ -798,7 +798,7 @@ nav select {
 }
 
 .searchbox-container .sb-search {
-    right: 0px;
+    right: 0;
 }
 
 .searchbox-container input.sb-search-input {
@@ -1066,7 +1066,7 @@ h5 {font-weight:600;}*/
 
 /* Custom block header styling */
 .view-mode .s-lib-box .s-lib-box-title,
-.edit-mode .s-lib-box .s-lib-box-title {margin-top:0em; text-transform: none; border-bottom: 1px solid $very-light-gray; color: $black-text;}
+.edit-mode .s-lib-box .s-lib-box-title {margin-top:0; text-transform: none; border-bottom: 1px solid $very-light-gray; color: $black-text;}
 .edit-mode .s-lib-box .s-lib-box-title {font-size:18px; padding-bottom: 4px; margin-bottom: 8px;}
 .view-mode .s-lib-box .s-lib-box-title {font-size: 24px; font-weight: 200; margin: 0 0 .5rem 0; padding: .25rem 0 .5rem 0;}
 /* END Custom block header styling */
@@ -1114,7 +1114,7 @@ footer h4 {margin:0 0 5px!important;}
         width:20%!important;
     }
    .s-lib-profile-div.s-lib-profile-name {
-        margin-bottom:0px!important;
+        margin-bottom:0 !important;
     }
     .s-lib-profile-div.s-lib-profile-email {
        margin: 2em 0!important;
@@ -1153,7 +1153,7 @@ footer h4 {margin:0 0 5px!important;}
     padding-bottom: .75rem;
     transform: rotate(90deg);
     transform-origin: top left;
-    box-shadow: rgb(0,0,0) 0px 0px 5px;
+    box-shadow: rgb(0,0,0) 0 0 5px;
     background-image: none;
     text-shadow: none;
     background-color: #337ab7!important;

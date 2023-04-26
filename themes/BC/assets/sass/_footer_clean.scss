@@ -136,7 +136,7 @@
 #bc-footer {
     background: $bc-primary-dark-red;
     padding: 15px 0;
-    margin-top: 0px;
+    margin-top: 0;
     color: $white-text;
     font-size: 10px;
     line-height: 11px;
@@ -235,7 +235,7 @@
         padding-right: 0;
     }
     #lib-footer .hours-todays-date {
-        right: 0px;
+        right: 0;
     }
 }
 
