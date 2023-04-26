@@ -70,10 +70,10 @@ h1 {
     padding: 0;
 }
 
-.h2style, h2, 
-.h3style, h3, 
+.h2style, h2,
+.h3style, h3,
 .h4style, h4,
-.h5style, h5, 
+.h5style, h5,
 .h6style, h6 {
     margin: 2.25rem 0 .25rem;
     padding: 0;
@@ -159,7 +159,7 @@ th {
 }
 
 /* THIS HIDES THE FONT AND FONT SIZE BUTTONS IN SPRINGSHARE'S EDITOR */
-#cke_s-lg-editor-content .cke_combo__font, 
+#cke_s-lg-editor-content .cke_combo__font,
 #cke_s-lg-editor-content .cke_combo__fontsize {
     display: none;
 }
@@ -1039,7 +1039,7 @@ h5 {font-weight:600;}*/
     border-bottom: none;
 }
 
-.col-md-12:first-of-type, 
+.col-md-12:first-of-type,
 .col-md-3:first-of-type,
 .col-md-4:first-of-type,
 .col-md-6:first-of-type {padding-left: 15px;}
@@ -1154,11 +1154,7 @@ footer h4 {margin:0 0 5px!important;}
     font-size: 19.5px;
     height: auto;
     padding-bottom: .75rem;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    -webkit-transform-origin: top left;
-    -ms-transform-origin: top left;
     transform-origin: top left;
     box-shadow: rgb(0,0,0) 0px 0px 5px;
     background-image: none;
@@ -1195,7 +1191,7 @@ footer h4 {margin:0 0 5px!important;}
         top:25%;
     }
     /* reposition scroll-to-top button */
-    #s-lib-scroll-top { 
+    #s-lib-scroll-top {
         bottom: 25%;
     }
 }
