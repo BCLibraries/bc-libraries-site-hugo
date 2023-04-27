@@ -1,29 +1,23 @@
-<div class="container-fluid" id="db-rg-hours">
-    <div class="container ql-news">
-        <div class="" id="news" data-tag="ga-tag">
-            <h2>News &amp; Events</h2>
+<div class="container ql-news" id="news" data-tag="ga-tag">
+    <h2>News &amp; Events</h2>
 
-            <div class="">
-                <div class="row news-content-row">
-                    {{/* convoluted nested where clause... */}}
-                    {{/* checks for:
+    <div class="row news-content-row">
+        {{/* convoluted nested where clause... */}}
+        {{/* checks for:
                         1) article has a thumbnail
                         2) article is not expired
                         3) article has a "news" type
                     */}}
-                    {{ range first 2 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news") }}
-                        {{ partial "homepage/news/big-story.html" . }}
-                    {{ end }}
-                </div>
-            
-                <div class="row news-content-row">
-                    {{ range first 4 (after 2 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news")) }}
-                        {{ partial "homepage/news/little-story.html" . }}
-                    {{ end }}
-                </div>
-            </div>
-
-            <div class="more-news"><a href="{{ .Site.BaseURL }}news">Browse all News &amp; Events</a> &rangle;</div>
-        </div>
+        {{ range first 2 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news") }}
+            {{ partial "homepage/news/big-story.html" . }}
+        {{ end }}
     </div>
+
+    <div class="row news-content-row">
+        {{ range first 4 (after 2 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news")) }}
+            {{ partial "homepage/news/little-story.html" . }}
+        {{ end }}
+    </div>
+
+    <div class="more-news"><a href="{{ .Site.BaseURL }}news">Browse all News &amp; Events</a> &rangle;</div>
 </div>

@@ -637,9 +637,6 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 }
 
 @media ( max-width: 1199px ) {
-    #db-rg-hours h2 {
-        line-height: 1.3;
-    }
 
     #bcl-feedback #feedback_wrapper {
         width: 90%;
@@ -931,8 +928,6 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     }
 
     /*  homepage only styles */
-    #db-rg-hours h2,
-    #db-rg-hours h2 a,
     #ds-highlight h3,
     #ds-highlight h3 a,
     #exhibit-highlight h2,
@@ -963,14 +958,6 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     .mainhomepage #hero-box,
     .mainhomepage #storybox {
         display: none;
-    }
-
-    #db-rg-hours h2 {
-        margin: 0 !important;
-    }
-
-    #db-rg-hours h2:last-child {
-        padding-top: 1em !important;
     }
 
     #news {

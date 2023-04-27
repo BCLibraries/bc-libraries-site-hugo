@@ -2,7 +2,7 @@
 
 /* BUTTON STYLING */
 
-.content .btn.btn-default, #db-rg-hours .btn, #exhibit-highlight .btn {
+.content .btn.btn-default, #exhibit-highlight .btn {
     padding: 12px;
     font-size: 14px;
     line-height: 18px;
@@ -15,12 +15,12 @@
     transition: .2s;
 }
 
-.content .btn.btn-blue, #db-rg-hours .btn.btn-blue, #exhibit-highlight .btn.btn-blue {
+.content .btn.btn-blue, #exhibit-highlight .btn.btn-blue {
 	color: #dddddd;
     background: #204375;
 }
 
-.content .btn.btn-blue:hover, #db-rg-hours .btn.btn-blue:hover, #exhibit-highlight .btn.btn-blue:hover {
+.content .btn.btn-blue:hover, #exhibit-highlight .btn.btn-blue:hover {
     color: $white-text;
     background: #1d3c68;
 }

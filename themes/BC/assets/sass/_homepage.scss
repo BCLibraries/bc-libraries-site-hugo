@@ -216,8 +216,7 @@
 
 /* News */
 
-#db-rg-hours {
-    padding-top: 0;
+.ql-news {
     padding-bottom: 2rem;
 }
 #news .news-content-row {
@@ -296,10 +295,6 @@
 .browse-more-link {
     padding-top: 1rem;
     font-size: larger;
-}
-
-#db-rg-hours.container {
-    display: flex;
 }
 
 .homepagerefresh #news .more-news,
