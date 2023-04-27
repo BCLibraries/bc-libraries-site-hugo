@@ -3,11 +3,8 @@
 /*                                       */
 
 #top-columns {
-    /*background: url(https://libapps.s3.amazonaws.com/accounts/3908/images/background-sample-3.jpg) no-repeat 00% 100%;
-    background-size: cover;*/
     background-color: $white-body;
     padding-bottom: 3rem;
-    /*padding-top: 2rem;*/
 }
 #top-columns .row {
     padding-top:0;
@@ -60,9 +57,6 @@
     #quicklink-container {
         width: 100%;
     }
-    /*#aal-home-container {
-        display: none;
-    }*/
 }
 
 
@@ -72,7 +66,6 @@
 }
 
 #scholarship h2 {
-    /*text-transform: uppercase;*/
     margin: 0;
     color: $bc-brand-maroon;
     font-size: 20px;
@@ -224,12 +217,8 @@
 /* News */
 
 #db-rg-hours {
-    /*border-top: solid 9px $bc-primary-light-gold;*/
     padding-top: 0;
     padding-bottom: 2rem;
-}
-#news {
-    /*margin: 0;*/
 }
 #news .news-content-row {
     display: flex;
@@ -300,7 +289,6 @@
     outline-offset: 0;
 }
 #news .news-content img {
-    /*max-height: 100%;*/
     width: 100%;
 }
 
@@ -309,16 +297,8 @@
     padding-top: 1rem;
     font-size: larger;
 }
-.row.ql-news {
-    /*position: relative;
-    display: block;
-    height: auto;
-    min-width: 375px;*/
-}
 
 #db-rg-hours.container {
-    /*padding: 0;
-    position: relative;*/
     display: flex;
 }
 
@@ -341,7 +321,6 @@
 
 .ql {
     height: 100%;
-    /*background-color: #d7d7d7;*/
     padding-bottom:10px;
 }
 
@@ -467,10 +446,6 @@
     color: $black-text;
     padding: 0 0 1rem 0;
     margin: 0;
-}
-
-#featured-tip-wrapper-inner {
-    /*background-color: $white-body;*/
 }
 
 #featured-tip-wrapper .panel {
@@ -736,8 +711,6 @@
 
 #explore-collections {
     height: auto;
-    /*background: #204375;*/
-    /*background: #0873ae;*/
     background: $white-body;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -765,7 +738,6 @@
     transition: all 0.7s ease;
     opacity: .85;
     display: block;
-    /*min-height: 240px;*/
 }
 
 #explore-collections .collections-box a:hover,
@@ -866,7 +838,6 @@
 @media (max-width: 991px) {
     .ql {
         height: auto;
-        /*text-align: center;*/
         margin-bottom: 20px;
     }
     .ql li {

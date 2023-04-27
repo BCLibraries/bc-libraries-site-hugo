@@ -364,9 +364,7 @@
  }
 
  .bottom_row {
-     /*background: $very-light-gray;*/
      border-top: 1px solid $very-light-gray;
-     /*margin: 0px;*/
      padding: 10px 0 10px;
  }
  @media ( max-width: 767px ) {
@@ -387,14 +385,6 @@
      }
  }
 
- .more a {
-     /*background: #d6d6d6;
-     display: block;
-     padding: 15px 25px;
-     width: 100%;
-     border-bottom: 2px solid #c2c2c2;*/
- }
-
  .more a:hover {
      text-decoration: none;
      background: #a3a3a3;
@@ -403,15 +393,6 @@
  }
 
  .more a:after {
-     /*font-family: 'icomoon';
-     content: "\e655";
-     color: #a3a3a3;
-     display: block;
-     float: right;
-     font-size: 15px;
-     line-height: 1;
-     padding: 5px 0 0 10px;
-     font-weight: normal;*/
      content: none;
  }
 
@@ -426,16 +407,6 @@
      background: transparent;
  }
  #megamenu-refresh .navbar-toggle {
-     /*background-color: $red;
-     background-image: none;
-     border: 1px solid rgba(0, 0, 0, 0);
-     border-radius: 0;
-     float: right;
-     margin: 115px 0px 0;
-     padding: 13px;
-     position: relative;
-     border-color: $bc-primary-light-gold;
-     width: 100%;*/
      background-color: transparent;
      border: none;
      position: relative;
@@ -443,20 +414,6 @@
      height: 42px;
      padding: 0;
  }
- /*@media (min-width: 767px) {
-     #megamenu-refresh .navbar-toggle {
-         display: none;
-     }
- }
- .navbar-toggle .icon-bar {
-     background: none repeat scroll 0 0 $white-body;
-     border-radius: 1px 1px 1px 1px;
-     color: $black-text;
-     display: block;
-     height: 2px;
-     width: 22px;
-     margin: 0 auto;
- }*/
 
  #megamenu-refresh .navbar-default .navbar-toggle .icon-close {
      color: $white-text;
@@ -715,11 +672,6 @@
  }
 
  .pane_info .h3style a:after {
-     /*font-family: 'icomoon';
-     content: "\e682";
-     padding: 0 0  0 5px;
-     display: inline-block;
-     text-decoration: none;*/
      content: none;
  }
 
@@ -745,11 +697,6 @@
  }
 
  .megamenucalendar:before {
-     /*font-family: "icomoon";
-     content: "\e648";
-     color: $dark-blue-green;
-     float: left;
-     padding: 0 10px 0 0;*/
      content: none;
  }
  .megamenucalendar:hover:before {
@@ -766,11 +713,6 @@
  }
 
  .megamenuphone:before {
-     /*font-family: "icomoon";
-     content: "\e67d";
-     color: $dark-blue-green;
-     float: left;
-     padding: 0 10px 0 0;*/
      content: none;
  }
  .megamenuphone:hover:before {
@@ -787,11 +729,6 @@
  }
 
  .megamenuemail:before {
-     /*font-family: "icomoon";
-     content: "\e67c";
-     color: $dark-blue-green;
-     float: left;
-     padding: 0 10px 0 0;*/
      content: none;
  }
  .megamenuemail:hover:before {
@@ -912,61 +849,6 @@
      }
  }
 
- /* Image sprites for library thumbnails */
- /*.libsprite {
-     background: url('https://library.bc.edu/images/librarypane/libthumb-spritesheet.jpg') no-repeat;
-     display: block;
-     border: 2px solid $red;
- }
-
- .libsprite-librarythumbnails_bapst {
-     width: 150px;
-     height: 150px;
-     background-position: -5px -5px;
- }
-
- .libsprite-librarythumbnails_burns {
-     width: 150px;
-     height: 150px;
-     background-position: -165px -5px;
- }
-
-  .libsprite-librarythumbnails_ed {
-     width: 150px;
-     height: 150px;
-     background-position: -5px -165px;
- }
-
- .libsprite-librarythumbnails_law {
-     width: 150px;
-     height: 150px;
-     background-position: -165px -165px;
- }
-
- .libsprite-librarythumbnails_oconnor {
-     width: 150px;
-     height: 150px;
-     background-position: -325px -5px;
- }
-
- .libsprite-librarythumbnails_oneill {
-     width: 150px;
-     height: 150px;
-     background-position: -325px -165px;
- }
-
-  .libsprite-librarythumbnails_swl {
-     width: 150px;
-     height: 150px;
-     background-position: -5px -325px;
- }
-
- .libsprite-librarythumbnails_tml {
-     width: 150px;
-     height: 150px;
-     background-position: -165px -325px;
- }*/
-
 /* About menu redesign TEST */
 #mm-help-about .row {
     padding-top: 0;
@@ -986,20 +868,12 @@
 }
 
 #mm-help-about .panel-body .media img {
-    /*max-width: 0px!important;*/
     max-width: 120px!important;
-    /*height: 100%;*/
 }
 
 #mm-help-about .panel-heading {
     padding: 0;
     margin: 0;
-}
-
-#mm-help-about .panel-heading .media img {
-    /*width: 100%;
-    height: 100px;*/
-    /*opacity: .85;*/
 }
 
 .library-boxes {
@@ -1021,16 +895,10 @@
     outline-offset: -2px;
 }
 
-/*.library-box .media img:focus,
-.library-box .media img:hover {
-    opacity: .99!important;
-}*/
-
 .library-boxes .lib-box-small.panel {
-    /*display: flex;
-    flex-direction: column;*/
     border-radius: 4px;
 }
+
 /* Safari doesn't play well with floated elements and flex display */
 .library-boxes .lib-box-small.panel:before,
 .library-boxes .lib-box-small.panel:after {
@@ -1038,11 +906,7 @@
 }
 
 .library-boxes .panel-body {
-    /*flex-grow: 1;
-    display: flex;
-    flex-direction: column;*/
     padding: 5px 5px 8px 5px;
-    /*padding: 5px 5px 5px 0;*/
 }
 
 .library-boxes .panel-heading {
@@ -1081,10 +945,7 @@
 .library-boxes .panel-body:after {
     display:none!important;
 }
-/*.library-boxes .lib-box-pair {
-    flex-grow: 1;
-    display: flex;
-}*/
+
 /* Safari doesn't play well with floated elements and flex display */
 .library-boxes .lib-box-pair:before,
 .library-boxes .lib-box-pair:after {
@@ -1102,15 +963,9 @@
     .library-box {
         padding: 5px;
     }
-    /*#mm-help-about .panel-heading .media img {
-        height: 90px;
-    }*/
 }
 
 @media ( max-width: 991px ) {
-    /*#mm-help-about .panel-heading .media img {
-        height: 67px;
-    }*/
     .library-boxes .panel-body .panel-heading .media .media-left {
         display: none;
     }

@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-
-/*#db-rg-hours .list-group {
-	margin-bottom: 0px;
-}*/
-
 /* BUTTON STYLING */
 
 .content .btn.btn-default, #db-rg-hours .btn, #exhibit-highlight .btn {
@@ -13,7 +8,6 @@
     line-height: 18px;
     text-align: center;
     color: #555;
-    /*text-transform: uppercase;*/
     border-radius: 0;
     background-clip: padding-box;
     border: 0 solid #ddd;
@@ -56,16 +50,13 @@
 
 #exhibit-highlight h2 {
 	font-weight: 600;
-	/*text-transform: uppercase;*/
 	color: $white-text;
-	/*font-size: 16px;*/
     letter-spacing: 2px;
 	margin: .5em 0 1em 0;
 }
 
 .exhibit-box {
 	background: rgba(255,255,255,0.75);
-	/*max-width: 75%;*/
 	height: 300px;
 	margin: auto;
 	padding: 20px;
@@ -80,7 +71,6 @@ a.current-exhibits-title {
 	font-size: 20px;
     line-height: 22px;
     font-weight: 400;
-    /*text-transform: uppercase;*/
 }
 
 .exhibit-box .exhibit-left {
