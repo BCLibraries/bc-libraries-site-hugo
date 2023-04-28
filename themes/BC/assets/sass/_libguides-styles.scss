@@ -1,4 +1,7 @@
 @charset "utf-8";
+
+/** These styles are used in LibGuides/LibAnswers/LibCal but not on library.bc.edu */
+
 /* CSS Document */
 
 /* IMPORTANT NOTES
@@ -464,6 +467,12 @@ th {
 .row /*THIS SHOULD CONTROL THE ENTIRE ROW OF COLUMNS, MARGIN-TOP IS NEW. LEFT, RIGHT WERE TO KEEP IN LINE W/ SPRINGSHARE */
 {
     margin: 0;
+}
+
+/* override custom LG style to zero-out row margins */
+.homepagerefresh #megamenu-refresh .row, #bclib-header .row {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 #s-lg-box-top

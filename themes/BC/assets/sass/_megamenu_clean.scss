@@ -24,20 +24,9 @@
    right: 0;
  }
 
-
-
- /* Mega Menu */
-
- /* override custom LG style to zero-out row margins */
- .homepagerefresh #megamenu-refresh .row {
-     margin-left: -15px;
-     margin-right: -15px;
- }
-
  #megamenu-refresh .navbar-default .navbar-brand {
      text-shadow: 0 2px 6px rgba(0, 0, 0,0.85);
      color: $white-text;
-     font-size: 18px;
      font-style: italic;
      letter-spacing: 1.5px;
      text-transform: uppercase;
@@ -51,16 +40,11 @@
  }
  #megamenu-refresh .navbar {
      margin-bottom: 0;
-     border-bottom: none;
-     border-radius: 0;
  }
  .megamenu-container {
      background-color: rgba(16,14,15,.85);
-     color: $black-text;
-     /*margin-top: -1px;*/
      position: absolute;
      width: 100%;
-     z-index: 10000;
  }
  .megamenu-container .nav a.menu-option {
      text-shadow: 0 2px 6px rgba(0, 0, 0,0.85);
@@ -99,8 +83,6 @@
      text-shadow: none;
      color: $white-text;
      background-color: #534741;
-     /*color: $black-text;
-     background-color: $bc-brand-gold;*/
  }
 
 
@@ -112,7 +94,6 @@
      font-weight: normal;
      margin: 5px 0 10px 0;
      padding: 0;
-     /*text-transform: uppercase;*/
  }
  .h4style {
      color: $dark-blue-green;
@@ -152,24 +133,17 @@
  }
 
  #megamenu-refresh .navbar-nav > li > .dropdown-menu {
-     /*border: 1px solid $very-light-gray;*/
      border-top: none;
      border-radius: 0;
      margin-top: 0;
  }
 
- /*#megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
-     border-top: 3px solid $dark-blue-green;
- }*/
  @media ( max-width: 1199px ) {
      #megamenu-refresh .navbar-nav > li > .dropdown-menu {
          border: 0;
          border-radius: 0;
          margin-top: 0;
          font-size: 12px;
-     }
-     #megamenu-refresh .navbar-nav > li > .dropdown-menu > li:nth-child(1) {
-         /*border-top: 3px solid $dark-blue-green;*/
      }
  }
 
@@ -218,7 +192,6 @@
      border: 1px solid rgba(0, 0, 0, 0.15);
      border-radius: 4px 4px 4px 4px;
      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-     /* display: none; */
      float: left;
      font-size: 14px;
      left: 0;
@@ -232,23 +205,6 @@
  }
 
  /* CUSTOM MENU STYLING */
-
- /*#megamenu-refresh {
-     width: 1200px;
-     height: 100px;
-     margin: 0px auto;
-     padding: 0;
-     background: $white-body;
- }
- @media ( max-width: 1199px ) {
-     #megamenu-refresh {
-         width: 100%;
-         height: 95px;
-         margin: 0px auto;
-         background: $white-body;
-         display: inline-block;
-     }
- }*/
  @media ( max-width: 767px ) {
      #megamenu-refresh {
          display: block;
@@ -288,13 +244,6 @@
  }
  @media ( max-width: 767px ) {
      .menu_list, .ask_list {
-         /*list-style: none outside none;
-         padding: 0px;
-         margin: 0 0 10px 0;
-         border-right: 1px solid $very-light-gray;
-         padding: 0px;
-         float: none;
-         width: 100%;*/
          text-align: center;
          border: none;
      }
