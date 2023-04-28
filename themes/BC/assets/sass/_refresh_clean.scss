@@ -478,42 +478,6 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     font-size: 15px;
 }
 
-.blockquote {
-    padding: 0;
-    position: relative;
-    font-family: "Utopia-italic";
-}
-.blockquote:before,
-.blockquote:after {
-    position: absolute;
-    font-family: 'FontAwesome';
-    line-height: 1;
-    font-size: 60px;
-    color: rgba(0,0,0,0.08);
-}
-.blockquote:before {
-    top: -1rem;
-    content:"\f10d";
-}
-.blockquote:after {
-    right: 0;
-    top: 2rem;
-    content:"\f10e";
-}
-.blockquote .quote {
-    padding: .5rem 1rem 0 1rem;
-    font-family: "Utopia-italic";
-    font-size: 19px;
-    line-height: 1.25;
-    text-align: center;
-}
-.blockquote .quoted {
-    padding: 0 1rem;
-    font-style: italic;
-    text-align: right;
-    line-height: 1.2;
-}
-
 #lib-footer .alert-hours {
     padding: .5rem 1rem;
     font-weight: 400;
