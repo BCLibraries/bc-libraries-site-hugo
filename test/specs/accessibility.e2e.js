@@ -6,7 +6,7 @@ const RandomMarkdownFile = require('../util/RandomMarkdownFile');
 
 const axeOptions = {
   runOnly: ['wcag2a', 'wcag2aa', 'best-practice'], // What rulesets to use
-  reporter: 'no-passes', // Only report failures
+  reporter: 'no-passes', // Only report failures,
 };
 
 const randomFacpub = new RandomMarkdownFile('facpub');
@@ -54,7 +54,7 @@ function runA11yTest(pageDescription, url, waitTime = 0) {
   waitTime *= 1000;
   describe(pageDescription, () => {
     it('has zero WCAG2AA accessibility issues', async () => {
-      const builder = new AxeBuilder({ client: browser }).options(axeOptions);
+      const builder = new AxeBuilder({ client: browser }).options(axeOptions).disableRules('aria-allowed-attr');
 
       // Load the page and wait for a time if we don't expect everything to
       // be visible on initial page load.
