@@ -1,15 +1,9 @@
 @charset "utf-8";
 
-html {
-    background-color: #501315;
-}
-
 body {
-    background: $white-body 0 0%;
     font-family: 'Open Sans', Arial, sans-serif;
     color: $black-text;
     font-size: 15px;
-    padding: 0;
     line-height: 1.75;
 }
 
@@ -77,14 +71,11 @@ a {
 
 /* top level maroon bar */
 #bclib-header {
-    box-sizing: border-box;
     background: $bc-brand-maroon no-repeat 100% 0;
     border-bottom: 1px solid $bc-primary-light-gold;
-    color: $white-text;
     height: 38px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 
 #skiplink {
@@ -111,59 +102,27 @@ a {
 
 #bclib-header a {
     color: $white-text;
-}
 
-#bclib-header a:hover,
-#bclib-header a:focus {
-    color: $bc-primary-light-gold;
-    text-decoration: none;
-}
-
-#bclib-header.container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#bclib-header .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    line-height: 1;
+    &:hover, &a:focus {
+        color: $bc-primary-light-gold;
+        text-decoration: none;
+    }
 }
 
 #bclib-header .row {
     padding-top: 0;
     padding-bottom: 0;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
-#bclib-header .col-md-12,
-#bclib-header .col-md-6 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-#bclib-header a.bclib-header-logo img.logo-small {
-    padding-top: 4px;
-}
-
+/* Hide text behind logo in LibGuides/Answers/Cal etc. */
 #bclib-header a.bclib-header-logo p {
     background: none;
     display: none;
 }
 
 #bclib-header ul.bclib-header-links {
-    list-style: none;
     text-align: right;
     margin: 0;
-    padding: 0;
-    font-weight: 400;
     text-transform: uppercase;
     /* we want height = 30px */
     /*    15 * 2      = 30   */
@@ -176,68 +135,11 @@ a {
 
 #bclib-header ul.bclib-header-links li {
     display: inline;
-    margin: 0 10px;
-}
+    margin: 0 0 0 20px;
 
-#bclib-header ul.bclib-header-links li:first-child {
-    margin-left: 0;
-}
-
-#bclib-header ul.bclib-header-links li:last-child {
-    margin-right: 0;
-}
-
-#bclib-header ul.bclib-header-links li .fa {
-    font-size: 14px;
-}
-
-#bclib-header #bclib-header-form,
-#bclib-header input#bclib-header-search,
-#bclib-header .input-group-btn .btn {
-    height: 28px;
-}
-
-#bclib-header #bclib-header-form {
-}
-
-#bclib-header #bclib-header-form form {
-    display: flex;
-}
-/* Safari doesn't play well with floated elements and flex display */
-#bclib-header #bclib-header-form form:before,
-#bclib-header #bclib-header-form form:after {
-    display:none!important;
-}
-#bclib-header input#bclib-header-search {
-    font-size: 14px;
-    color: $black-text;
-    /*padding: 2px 0 2px 4px;*/
-    border-right: 0;
-    border-radius: 0;
-}
-
-#bclib-header .input-group-btn .btn {
-    padding: 0 8px;
-    border-radius: 0
-}
-
-/*#bclib-header a.ignatius {
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    background: url("https://library.bc.edu/images/ignatius.png") 0 0;
-    background-size: cover;
-    float: right;
-}*/
-
-#megamenu-refresh a.ignatius {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background: url("https://library.bc.edu/images/ignatius.png") 0 0;
-    background-size: cover;
-    /*float: left;*/
-    margin: -10px 10px 0 0;
+    .fa {
+        font-size: 14px;
+    }
 }
 
 /* end top level maroon bar */
@@ -252,12 +154,6 @@ a {
 
 /* header */
 #hero-box {
-    /*background: #ccc url("https://library.bc.edu/images/hero01.jpg") 0 70%; /* CHANGE BACKGROUND SEASONALLY */
-    /*height: 380px;
-    background-size: cover;
-    padding-top: 0px;
-    position: relative;*/
-
     padding-bottom: 4rem;
     padding-top: 80px;
     background-color: #467282;
@@ -298,7 +194,6 @@ a {
 #search-panel {
     background-color: $bc-brand-maroon;
     border-radius: 6px;
-    /*box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.2);*/
 }
 
 #search-panel .fa-search {
@@ -317,10 +212,6 @@ a {
 #search-panel input.form-control, #search-panel button.btn.btn-default {
     height: 50px;
     font-size: 20px;
-}
-
-#search-panel button.btn.btn-default {
-    /*margin-top: -1px;*/
 }
 
 .online-only-label {
@@ -342,9 +233,7 @@ label.checkbox-inline.online-only-label {
 }
 
 button.whats-this, button.whats-this:active, button.whats-this:hover {
-    /*color: hsl(207, 59%, 85%); */
     text-decoration: none;
-    /*background: none;*/
     border: none;
     cursor: help;
 }
@@ -667,7 +556,6 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 }
 
 /* Landscape tablets and medium desktops */
-/*@media (min-width: 992px) {*/
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     #quick-links .quick-link-block {
         height: 184px;
@@ -676,22 +564,12 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
-    /*@media screen and (max-width: 991px) and (min-width: 768px) { */
-    #bclib-header {
-        /*height: auto;*/
-    }
-
-    #bclib-header .container {
-        /*padding-bottom: 2px;*/
-    }
-
     #bclib-header .col-sm-12 {
         width: 100%;
     }
 
     #bclib-header ul.bclib-header-links {
         text-align: right;
-        /*margin-bottom: .2rem;*/
     }
 
     #bclib-header ul.bclib-header-links li:first-child {
@@ -707,10 +585,6 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
         padding-right: 0;
     }
 
-    /*#hero-box {
-        background-position: 100% 40%;
-    }*/
-
     #news {
         padding-bottom: 0;
     }
@@ -722,7 +596,6 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     #news .more-news {
         text-align: center;
         margin-top: -1em;
-        /*margin-bottom: 2em;*/
     }
 
     .navbar-brand {
@@ -739,10 +612,6 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-    #bclib-header {
-        /*height: auto;*/
-    }
-
     #bclib-header > .container {
         width: 100%;
     }
@@ -800,12 +669,6 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
 
     #search-panel #search-links div {
         display: inline-block;
-    }
-
-    #hero-box {
-        /* CHANGE BACKGROUND SEASONALLY */
-        /*background-image: url("https://library.bc.edu/images/hero01-small2.jpg");
-        height: 322px;*/
     }
 }
 
@@ -1046,9 +909,4 @@ div#s-la-widget-5468 #s-la-askform-section-5494 {
     #digcol-highlight .content {
         padding: 1.5em 0 0 0;
     }
-}
-
-/* Hide beta bento feedback link */
-.tell-us {
-    display: none;
 }

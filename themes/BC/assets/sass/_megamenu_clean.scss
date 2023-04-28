@@ -322,6 +322,10 @@
      word-break: normal;
      outline: none;
      color: #666;
+
+   &.grayed:hover {
+       background: $white-body;
+   }
  }
 
  .yamm .dropdown-menu li > a p.tuck {
