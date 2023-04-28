@@ -1,159 +1,157 @@
 <!-- EXPLORE COLLECTIONS START -->
-<div class="" id="explore-collections" data-tag="ga-tag">
-    <div class="container-fluid">
-        <div class="container">
-            <h2>Explore Our Collections</h2>
+<div id="explore-collections" class="container" data-tag="ga-tag">
+    <h2>Explore Our Collections</h2>
+    <div class="row collections-box-container">
 
-            <div class="row collections-box-container">
-
-                <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
-                    <a href="https://moralesmassbook.bc.edu/">
-                        <div class="collection digital-scholarship morales-mass">
-                            <div class="collection-description">
-                                <div class="collection-department">
-                                    Digital Scholarship
-                                </div>
-                                <div class="collection-name">
-                                    Morales Mass Book
-                                </div>
-                            </div>
-                            <div class="collection-image">
-                                {{ partial "picture" (dict "ctx"   .
-                                                           "base"  "homepage/collections/digitalscholashipbg-morales-thumbnail-360x240"
-                                                           "alt"   ""
-                                                           "class" ""
-                                                           "avif"  true
-                                                           "webp"  true
-                                                           "lazy"  true) }}
-                            </div>
+        <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
+            <a href="https://moralesmassbook.bc.edu/">
+                <div class="collection digital-scholarship morales-mass">
+                    <div class="collection-description">
+                        <div class="collection-department">
+                            Digital Scholarship
                         </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
-                    <a href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&inst=BCL&collectionId=81517036590001021">
-                        <div class="collection digital-collections japanese-prints">
-                            <div class="collection-description">
-                                <div class="collection-department">
-                                    Digital Collections
-                                </div>
-                                <div class="collection-name">
-                                    Japanese prints collection
-                                </div>
-                            </div>
-                            <div class="collection-image">
-                                {{ partial "picture" (dict "ctx"   .
-                                "base"  "homepage/collections/special-collections-japanese-prints-2-thumbnail-360x240"
-                                "alt"   ""
-                                "class" ""
-                                "avif"  true
-                                "webp"  true
-                                "lazy"  true) }}
-                            </div>
+                        <div class="collection-name">
+                            Morales Mass Book
                         </div>
-                    </a>
+                    </div>
+                    <div class="collection-image">
+                        {{ partial "picture" (dict "ctx"   .
+                        "base"  "homepage/collections/digitalscholashipbg-morales-thumbnail-360x240"
+                        "alt"   ""
+                        "class" ""
+                        "avif"  true
+                        "webp"  true
+                        "lazy"  true) }}
+                    </div>
                 </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
-                    <a href="https://jesuitonlinebibliography.bc.edu/">
-                        <div class="collection digital-scholarship jesuit-online-bib">
-                            <div class="collection-description">
-                                <div class="collection-department">
-                                    Digital Scholarship
-                                </div>
-                                <div class="collection-name">
-                                    Jesuit Online Bibliography
-                                </div>
-                            </div>
-                            <div class="collection-image">
-                                {{ partial "picture" (dict "ctx"   .
-                                "base"  "homepage/collections/digital-scholarship-jesuit-online-bibliography-thumbnail-360x240"
-                                "alt"   ""
-                                "class" ""
-                                "avif"  true
-                                "webp"  true
-                                "lazy"  true) }}
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
-                    <a href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&collectionId=81517121150001021">
-                        <div class="collection digital-collections tip-oneill">
-                            <div class="collection-description">
-                                <div class="collection-department">
-                                    Digital Collections
-                                </div>
-                                <div class="collection-name">
-                                    Thomas P. "Tip" O'Neill, Jr., Photographs (1953-1987)
-                                </div>
-                            </div>
-                            <div class="collection-image">
-                                {{ partial "picture" (dict "ctx"   .
-                                "base"  "homepage/collections/special-collections-tip-oneill-bowling-thumbnail-360x240"
-                                "alt"   ""
-                                "class" ""
-                                "avif"  true
-                                "webp"  true
-                                "lazy"  true) }}
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
-                    <a href="https://dlib.bc.edu/">
-                        <div class="collection escholarship theses">
-                            <div class="collection-description">
-                                <div class="collection-department">
-                                    eScholarship@BC
-                                </div>
-                                <div class="collection-name">
-                                    Theses and Dissertations
-                                </div>
-                            </div>
-                            <div class="collection-image">
-                                {{ partial "picture" (dict "ctx"   .
-                                "base"  "homepage/collections/escholarship-background-thumbnail-360x240"
-                                "alt"   ""
-                                "class" ""
-                                "avif"  true
-                                "webp"  true
-                                "lazy"  true) }}
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
-                    <a href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&collectionId=81517037740001021">
-                        <div class="collection digital-collections athletics">
-                            <div class="collection-description">
-                                <div class="collection-department">
-                                    Digital Collections
-                                </div>
-                                <div class="collection-name">
-                                    Boston College athletic photographs, 1889-2013
-                                </div>
-                            </div>
-                            <div class="collection-image">
-                                {{ partial "picture" (dict "ctx"   .
-                                "base"  "homepage/collections/special-collections-althletics-doug-flutie-thumbnail-360x240"
-                                "alt"   ""
-                                "class" ""
-                                "avif"  true
-                                "webp"  true
-                                "lazy"  true) }}
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-12 browse-more-link"><a href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&inst=BCL">Browse all Digital Collections</a> / <a href="https://ds.bc.edu">Browse all Digital Scholarship</a> &rangle;</div>
-
-            </div>
+            </a>
         </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
+            <a href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&inst=BCL&collectionId=81517036590001021">
+                <div class="collection digital-collections japanese-prints">
+                    <div class="collection-description">
+                        <div class="collection-department">
+                            Digital Collections
+                        </div>
+                        <div class="collection-name">
+                            Japanese prints collection
+                        </div>
+                    </div>
+                    <div class="collection-image">
+                        {{ partial "picture" (dict "ctx"   .
+                        "base"  "homepage/collections/special-collections-japanese-prints-2-thumbnail-360x240"
+                        "alt"   ""
+                        "class" ""
+                        "avif"  true
+                        "webp"  true
+                        "lazy"  true) }}
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
+            <a href="https://jesuitonlinebibliography.bc.edu/">
+                <div class="collection digital-scholarship jesuit-online-bib">
+                    <div class="collection-description">
+                        <div class="collection-department">
+                            Digital Scholarship
+                        </div>
+                        <div class="collection-name">
+                            Jesuit Online Bibliography
+                        </div>
+                    </div>
+                    <div class="collection-image">
+                        {{ partial "picture" (dict "ctx"   .
+                        "base"  "homepage/collections/digital-scholarship-jesuit-online-bibliography-thumbnail-360x240"
+                        "alt"   ""
+                        "class" ""
+                        "avif"  true
+                        "webp"  true
+                        "lazy"  true) }}
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
+            <a href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&collectionId=81517121150001021">
+                <div class="collection digital-collections tip-oneill">
+                    <div class="collection-description">
+                        <div class="collection-department">
+                            Digital Collections
+                        </div>
+                        <div class="collection-name">
+                            Thomas P. "Tip" O'Neill, Jr., Photographs (1953-1987)
+                        </div>
+                    </div>
+                    <div class="collection-image">
+                        {{ partial "picture" (dict "ctx"   .
+                        "base"  "homepage/collections/special-collections-tip-oneill-bowling-thumbnail-360x240"
+                        "alt"   ""
+                        "class" ""
+                        "avif"  true
+                        "webp"  true
+                        "lazy"  true) }}
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
+            <a href="https://dlib.bc.edu/">
+                <div class="collection escholarship theses">
+                    <div class="collection-description">
+                        <div class="collection-department">
+                            eScholarship@BC
+                        </div>
+                        <div class="collection-name">
+                            Theses and Dissertations
+                        </div>
+                    </div>
+                    <div class="collection-image">
+                        {{ partial "picture" (dict "ctx"   .
+                        "base"  "homepage/collections/escholarship-background-thumbnail-360x240"
+                        "alt"   ""
+                        "class" ""
+                        "avif"  true
+                        "webp"  true
+                        "lazy"  true) }}
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-6 collections-box">
+            <a href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&collectionId=81517037740001021">
+                <div class="collection digital-collections athletics">
+                    <div class="collection-description">
+                        <div class="collection-department">
+                            Digital Collections
+                        </div>
+                        <div class="collection-name">
+                            Boston College athletic photographs, 1889-2013
+                        </div>
+                    </div>
+                    <div class="collection-image">
+                        {{ partial "picture" (dict "ctx"   .
+                        "base"  "homepage/collections/special-collections-althletics-doug-flutie-thumbnail-360x240"
+                        "alt"   ""
+                        "class" ""
+                        "avif"  true
+                        "webp"  true
+                        "lazy"  true) }}
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-12 browse-more-link"><a
+                    href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=bclib_new&inst=BCL">Browse
+                all Digital Collections</a> / <a href="https://ds.bc.edu">Browse all Digital Scholarship</a> &rangle;
+        </div>
+
     </div>
 </div>
 <!-- EXPLORE COLLECTIONS END -->
