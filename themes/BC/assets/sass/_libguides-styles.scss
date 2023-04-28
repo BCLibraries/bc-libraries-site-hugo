@@ -43,6 +43,11 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }*/
 
+/* LibGuides adds 15px of padding on all sides. */
+body {
+    padding: 0;
+}
+
 a:hover, a:active, a:focus, .ui-widget-content a:active {
     color: $red;
     text-decoration: underline;
