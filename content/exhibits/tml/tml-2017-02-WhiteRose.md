@@ -32,4 +32,4 @@ Members of the panel are <strong>Dr. John Michalczyk, Dr. Bernhard Knorn, S.J., 
 
 Boston College students, faculty, and staff as well as the greater Boston Community are warmly invited to experience the exhibition to learn about the individuals of the White Rose, their paths to resistance, actions, and persecution by the Nazi regime.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OndJutvVyFA" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" title="Theology and Ministry Library: White Rose" src="https://www.youtube.com/embed/OndJutvVyFA" frameborder="0" allowfullscreen></iframe>

@@ -22,7 +22,7 @@ University Librarian, Boston College
 
 Although the following statement has my name attached to it, the document is a collaboration between our EDI Working Group,  our LEAG (Organizational Culture) group, and senior library management.</div>
 
-#### Resources
+### Resources
 
 * [From #BlackLivesMatter to Black Liberation](https://bc-primo.hosted.exlibrisgroup.com/permalink/f/l6ucgu/ALMA-BC21458828850001021)
 * [Freedom is a Constant Struggle](https://bc-primo.hosted.exlibrisgroup.com/permalink/f/l6ucgu/ALMA-BC51468955120001021)
