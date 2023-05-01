@@ -6,11 +6,10 @@
 {{ $megamenu_js := resources.Get "js/megamenu.js" }}
 {{ $notice_js := resources.Get "js/downtime-notices.js" }}
 {{ $libhours_js := resources.Get "js/libhoursv2.js" }}
-{{ $feedback_form_js := resources.Get "js/feedback-form.js" }}
 {{ $loading_attribute_js := resources.Get "js/loading-attribute-polyfill.js" }}
 
 {{/* Bundle all the scripts */}}
-{{ $all_scripts := slice $bootstrap_hover_dropdown_js $jquery_hoverintent_js $megamenu_js $notice_js $libhours_js $feedback_form_js $loading_attribute_js }}
+{{ $all_scripts := slice $bootstrap_hover_dropdown_js $jquery_hoverintent_js $megamenu_js $notice_js $libhours_js $loading_attribute_js }}
 {{ $bundled_scripts := $all_scripts | resources.Concat "js/site-scripts.js" }}
 
 {{/* Minify and fingerprint the bundled scripts */}}
