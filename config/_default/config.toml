@@ -1,6 +1,6 @@
 baseURL = "https://library.bc.edu"
 languageCode = "en-us"
-title = "Libraries"
+title = "Boston College Libraries"
 theme = "BC"
 summaryLength = 10
 relativeURLs = true
