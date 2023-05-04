@@ -6,9 +6,9 @@ describe('the search function', () => {
     it('should correctly display a local result best bet', async () => {
         await SearchPage.open()
         await expect(SearchPage.searchInput).toBeExisting()
-        await SearchPage.search('boston globe')
+        await SearchPage.search('new york times')
         await expect(SearchPage.bestBetTitleLink).toBeExisting()
-        await expect(SearchPage.bestBetTitleLink).toHaveTextContaining('Boston Globe')
+        await expect(SearchPage.bestBetTitleLink).toHaveTextContaining('New York Times')
     })
 
     it('should show Browzine best bet when available', async () => {
