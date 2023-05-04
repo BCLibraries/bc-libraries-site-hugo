@@ -9,12 +9,12 @@
 {{/* feature a specfic subject specialist by adding the index integer from the featured.json list. list index begins at 0. */}}
 {{/* $featured_librarian := index $featured_librarians 10 */}}
 
-{{/* 
-    BEGIN Define template variables 
+{{/*
+    BEGIN Define template variables
 */}}
 
 {{/* Load librarian info from LibGuides API. This data is looked up
-    once and cached. To clear the cache, start Hugo with --ignoreCache 
+    once and cached. To clear the cache, start Hugo with --ignoreCache
     set or delete the cache files: rm -r $TMPDIR/hugo_cache/ */}}
 {{ $all_librarians_data := getJSON "https://lgapi-us.libapps.com/1.1/accounts?site_id=94&key=a8d4316f3140239e36f101209d9f1b36&expand[]=subjects&expand[]=profile" }}
 
@@ -70,8 +70,8 @@
     {{ $profile_url = .profile.url }}
 {{ end }}
 
-{{/* 
-    END Define template variables 
+{{/*
+    END Define template variables
 */}}
 
 <!-- FEATURED SUBJECT SPECIALIST START -->
@@ -96,10 +96,25 @@
                             <div class="col-md-12 col-sm-12">
                                 <h3 class="featured-librarian">{{ $profile_first_name }} is an expert at:</h3>
                                 <div class="featured-librarian-expert-at-list">
+
+                                    {{/* List ouf the librarian's subjects */}}
                                     <ul class="featured-librarian-guides" role="list">
-                                    {{ range $featured_librarian.subjects }}
-                                        <li><a href="{{ .url }}" target="_blank">{{ .name }}</a></li> 
-                                    {{ end }}
+
+                                        {{/* If they have multiple subjects, the last one should be proceeded by "and".
+                                         If they have three or more subjects, we need to add commas as well. */}}
+                                        {{ $num_subjects := len $featured_librarian.subjects }}
+                                        {{ $needs_commas := gt $num_subjects 2 }}
+                                        {{ $needs_and := gt $num_subjects 1 }}
+                                        {{ $last_index := sub $num_subjects 1 }}
+                                        {{ $second_to_last_index := sub $last_index 1 }}
+                                        {{ range $index, $value := $featured_librarian.subjects }}
+                                        <li>
+                                            {{ $add_comma := and $needs_commas (lt $index $last_index)  }}
+                                            {{ $add_and := and $needs_and (eq $index $second_to_last_index) }}
+                                            <a href="{{ .url }}" target="_blank">{{ .name }}</a>{{ if $add_comma }},{{ end }}
+                                            {{ if $add_and }}and{{ end }}
+                                        </li>
+                                        {{ end }}
                                     </ul>
                                 </div>
                             </div>
@@ -117,7 +132,7 @@
                             {{ end }}
 
                             <div class="col-md-12 col-sm-12 bottom-text">
-                                <p>We have many <a href="https://libguides.bc.edu/research_guides">guides for your research</a>.  Not sure where to begin? <a href="https://libguides.bc.edu/ask-a-librarian">Ask Us</a>.</p>                                    
+                                <p>We have many <a href="https://libguides.bc.edu/research_guides">guides for your research</a>.  Not sure where to begin? <a href="https://libguides.bc.edu/ask-a-librarian">Ask Us</a>.</p>
                             </div>
                         </div>
 
@@ -125,7 +140,7 @@
                             <p><a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Browse all our expert subject specialists</a> &rangle;</p>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -146,11 +161,3 @@
     }
 </style>
 {{ end }}
-
-<script>
-    $(document).ready(function(){
-        // add commas to list of subjects
-        $(".featured-librarian-expert-at-list ul li").not(":last-child").append(", ");
-        $(".featured-librarian-expert-at-list ul li:last-child").not(":first-child").prepend("and ");
-    });
-</script>
