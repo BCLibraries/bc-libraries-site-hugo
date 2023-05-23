@@ -8,13 +8,13 @@ $(function () {
 
     $('#megamenu-refresh ul.nav li.dropdown').mouseenter(function() {
         var myText = $(this).find("a.menu-option").text();
-        gtag('event', 'hover', {'event_category': 'megamenu', 'event_label': myText.trim()});
+        //gtag('event', 'megamenu_hover', {'event_category': 'megamenu', 'event_label': myText.trim()});
         _paq.push(['trackEvent', 'megamenu', 'hover', myText.trim()]);
     });
 
     $("ul.item-desktop li a").mouseenter(function(){
         var myPane = $(this).html();
-        gtag('event', 'hover', {'event_category': 'librarypanes', 'event_label': myPane});
+        //gtag('event', 'megamenu_hover', {'event_category': 'librarypanes', 'event_label': myPane});
         _paq.push(['trackEvent', 'librarypanes', 'hover', myPane]);
     });
 
@@ -24,7 +24,8 @@ $(function () {
 
     $("a.askuswidget").click(function(e){
         var src = window.location.href;
-        gtag('event', 'click', {'event_category': 'chat-widget', 'event_label': src});
+        // Moved over to GTM
+        // gtag('event', 'chatwidget_click', {'event_category': 'chat-widget', 'event_label': src});
         _paq.push(['trackEvent', 'chat-widget', 'click', src]);
     });
 
@@ -37,7 +38,8 @@ $(function () {
         var url = $(this).attr("href");
         /* Bug fix to stop screen jump when clicking carousel controls */
         if (url.indexOf('#') !== 0) {
-            gtag('event', 'click', {'event_category': 'outbound', 'event_label': url});
+            // GA4 supports outbound click events by default
+            //gtag('event', 'outbound_click', {'event_category': 'outbound', 'event_label': url});
             _paq.push(['trackEvent', 'outbound', 'click', url]);
         }
     });
@@ -54,8 +56,8 @@ $(function () {
                 dataID = "[undefined]"
             }
         }
-        gtag('event', dataID, {'event_category': 'homepage', 'event_label': url});
-        gtag('event', 'click', {'event_category': 'homepage', 'event_label': url, 'homepage_section': dataID});
+        //gtag('event', dataID, {'event_category': 'homepage', 'event_label': url});
+        gtag('event', 'homepage_outbound', {'event_category': 'homepage', 'event_label': url, 'homepage_section': dataID});
         _paq.push(['trackEvent', 'homepage', dataID, url]);
     });
 });
