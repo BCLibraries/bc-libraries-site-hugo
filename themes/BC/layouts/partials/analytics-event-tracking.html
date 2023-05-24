@@ -17,7 +17,7 @@ $(function () {
         _paq.push(['trackEvent', 'megamenu', 'hover', menuItemLabel]);
     });
 
-    $("#megamenu-refresh ul.nav .library-box .lib-box .panel").mouseenter(function(){
+    $("#megamenu-refresh ul.nav .library-box .lib-box .panel-body").mouseenter(function(){
         var menuItemPaneLabel = $(this).find("a.lib-name").html();
         //gtag('event', 'megamenu_hover', {'event_category': 'librarypanes', 'event_label': menuItemPaneLabel});
         dataLayer.push({
