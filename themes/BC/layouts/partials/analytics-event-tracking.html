@@ -17,8 +17,8 @@ $(function () {
         _paq.push(['trackEvent', 'megamenu', 'hover', menuItemLabel]);
     });
 
-    $("ul.item-desktop li a").mouseenter(function(){
-        var menuItemPaneLabel = $(this).html();
+    $("#megamenu-refresh ul.nav .library-box .lib-box .panel").mouseenter(function(){
+        var menuItemPaneLabel = $(this).find("a.lib-name").html();
         //gtag('event', 'megamenu_hover', {'event_category': 'librarypanes', 'event_label': menuItemPaneLabel});
         dataLayer.push({
             'event': 'megamenu_hover',
