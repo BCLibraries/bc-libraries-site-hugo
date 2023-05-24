@@ -8,7 +8,7 @@ $(function () {
 
     $('#megamenu-refresh ul.nav li.dropdown').mouseenter(function() {
         var menuItemLabel = $(this).find("a.menu-option").text().trim();
-        //gtag('event', 'megamenu_hover', {'event_category': 'megamenu', 'event_label': menuItemLabel});
+        // send custom event to GTM
         dataLayer.push({
             'event': 'megamenu_hover',
             'category': 'menu_item',
@@ -19,7 +19,7 @@ $(function () {
 
     $("#megamenu-refresh ul.nav .library-box .lib-box .panel-body").mouseenter(function(){
         var menuItemPaneLabel = $(this).find("a.lib-name").html();
-        //gtag('event', 'megamenu_hover', {'event_category': 'librarypanes', 'event_label': menuItemPaneLabel});
+        // send custom event to GTM
         dataLayer.push({
             'event': 'megamenu_hover',
             'category': 'library_pane',
@@ -34,8 +34,6 @@ $(function () {
 
     $("a.askuswidget").click(function(e){
         var src = window.location.href;
-        // Moved over to GTM
-        // gtag('event', 'chatwidget_click', {'event_category': 'chat-widget', 'event_label': src});
         _paq.push(['trackEvent', 'chat-widget', 'click', src]);
     });
 
@@ -48,8 +46,6 @@ $(function () {
         var url = $(this).attr("href");
         /* Bug fix to stop screen jump when clicking carousel controls */
         if (url.indexOf('#') !== 0) {
-            // GA4 supports outbound click events by default
-            //gtag('event', 'outbound_click', {'event_category': 'outbound', 'event_label': url});
             _paq.push(['trackEvent', 'outbound', 'click', url]);
         }
     });
@@ -66,8 +62,13 @@ $(function () {
                 dataID = "[undefined]"
             }
         }
-        //gtag('event', dataID, {'event_category': 'homepage', 'event_label': url});
-        //gtag('event', 'homepage_outbound', {'event_category': 'homepage', 'event_label': url, 'homepage_section': dataID});
+
+        // send custom event to GTM
+        dataLayer.push({
+            'event': 'homepage_click',
+            'section': dataID,
+            'outbound_url': url
+        });
         _paq.push(['trackEvent', 'homepage', dataID, url]);
     });
 });
