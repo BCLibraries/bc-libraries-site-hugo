@@ -36,32 +36,42 @@ $(function () {
     });
 
     //
-    // Homepage click events
+    //  Other click events
     //
 
-    // ignore ask us and jump-to links
-    var $all_anchors = $('body.mainhomepage a').not(".askuswidget, .accessibility-text");
-
-    // send custom event for all homepage clicks and include sections
-    $all_anchors.click(function(e){
-        var $this = $(this);
-        var url = $this.attr("href");
-        var dataID = "[unknown]";
-        var dataTag = $this.parents("[data-tag=ga-tag]");
-        if (dataTag && dataTag.length) {
-            dataID = dataTag.attr("id");
-            if (typeof dataID === 'undefined') {
-                dataID = "[undefined]"
+    function addClickEvents(jqObj, label){
+        jqObj.click(function(e){
+            var $this = $(this);
+            var url = $this.attr("href");
+            var dataID = "[none]";
+            var dataTag = $this.parents("[data-tag=ga-tag]");
+            if (dataTag && dataTag.length) {
+                dataID = dataTag.attr("id");
+                if (typeof dataID === 'undefined') {
+                    dataID = "[undefined]"
+                }
             }
-        }
-
-        // send custom event to GTM
-        dataLayer.push({
-            'event': 'homepage_click',
-            'section': dataID,
-            'outbound_url': url
+    
+            // send custom event to GTM
+            dataLayer.push({
+                'event': label,
+                'section': dataID,
+                'outbound_url': url
+            });
+            _paq.push(['trackEvent', label, dataID, url]);
         });
-        _paq.push(['trackEvent', 'homepage', dataID, url]);
-    });
+    }
+
+    var homepage_anchors   = $('body.mainhomepage a').not(".askuswidget, .accessibility-text");
+    var lib_footer_anchors = $('#lib-footer a');
+    var bc_footer_anchors  = $('#bc-footer a');
+    var bc_header_anchors  = $('#bclib-header a');
+    var megamenu_anchors   = $('#megamenu a');
+
+    addClickEvents(homepage_anchors, "click_homepage");
+    addClickEvents(lib_footer_anchors, "click_footer_bc");
+    addClickEvents(bc_footer_anchors, "click_footer_lib");
+    addClickEvents(bc_header_anchors, "click_header_bc");
+    addClickEvents(megamenu_anchors, "click_megamenu");
 });
 </script>
