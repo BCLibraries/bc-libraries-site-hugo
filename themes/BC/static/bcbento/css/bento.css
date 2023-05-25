@@ -261,10 +261,13 @@
     cursor: pointer;
     height: 140px;
     margin-bottom: 1em;
+    min-width: 200px;
+    background-color: #333;
+    border-radius: 5px;
 }
 
 .online-video-thumb__screenshot {
-    max-width: 100%;
+    width: 100%;
     max-height: 140px;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 5px;
