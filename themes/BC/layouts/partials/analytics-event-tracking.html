@@ -1,7 +1,5 @@
 <script>
 $(function () {
-    var $all_anchors = $('a');
-
     //
     // Megamenu hover events
     //
@@ -41,21 +39,15 @@ $(function () {
     // Homepage click events
     //
 
-    // send 'outbound' event for all link clicks
-    $all_anchors.not('.askuswidget, .search-link, .accessibility-text').click(function(e) {
-        var url = $(this).attr("href");
-        /* Bug fix to stop screen jump when clicking carousel controls */
-        if (url.indexOf('#') !== 0) {
-            _paq.push(['trackEvent', 'outbound', 'click', url]);
-        }
-    });
+    // ignore ask us and jump-to links
+    var $all_anchors = $('body.mainhomepage a').not(".askuswidget, .accessibility-text");
 
-    // send 'homepage' event for all link clicks and include sections
-    // ignore news carousel and mega menu top-level links
-    $all_anchors.not(".askuswidget, .carousel-control, li.dropdown > a.menu-option, .accessibility-text").click(function(e){
-        var url = $(this).attr("href");                
-        var dataTag = $(this).parents("[data-tag=ga-tag]");
-        var dataID = "-";
+    // send custom event for all homepage clicks and include sections
+    $all_anchors.click(function(e){
+        var $this = $(this);
+        var url = $this.attr("href");
+        var dataID = "[unknown]";
+        var dataTag = $this.parents("[data-tag=ga-tag]");
         if (dataTag && dataTag.length) {
             dataID = dataTag.attr("id");
             if (typeof dataID === 'undefined') {
