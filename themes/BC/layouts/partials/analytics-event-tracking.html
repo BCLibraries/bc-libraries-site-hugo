@@ -1,6 +1,10 @@
 <script>
 $(function () {
+    // Get a clean version of the page title
     var page_title_clean = $(document).find("title").text().replace(" | Boston College Libraries", "").replace(" - Libraries at Boston College", "");
+
+    // Determine if this is the homepage
+    var is_homepage_bool = $('body.mainhomepage').length > 0;
 
     //
     // Megamenu hover events
@@ -12,7 +16,8 @@ $(function () {
         dataLayer.push({
             'event': 'hover_menu_item',
             'menu_item_label': menuItemLabel,
-            'page_title_clean': page_title_clean
+            'page_title_clean': page_title_clean,
+            'is_homepage': is_homepage_bool
         });
         _paq.push(['trackEvent', 'megamenu', 'hover', menuItemLabel]);
     });
@@ -23,7 +28,8 @@ $(function () {
         dataLayer.push({
             'event': 'hover_menu_libpane',
             'menu_libpane_label': menuItemPaneLabel,
-            'page_title_clean': page_title_clean
+            'page_title_clean': page_title_clean,
+            'is_homepage': is_homepage_bool
         });
         _paq.push(['trackEvent', 'librarypanes', 'hover', menuItemPaneLabel]);
     });
@@ -59,19 +65,23 @@ $(function () {
                 'event': label,
                 'page_section': dataID,
                 'outbound_url': url,
-                'page_title_clean': page_title_clean
+                'page_title_clean': page_title_clean,
+                'is_homepage': is_homepage_bool,
             });
             _paq.push(['trackEvent', label, dataID, url]);
         });
     }
 
-    var homepage_anchors   = $('body.mainhomepage a').not(".askuswidget, .accessibility-text");
+    if (is_homepage_bool) {
+        var homepage_anchors = $('body.mainhomepage a').not(".askuswidget, .accessibility-text");
+        addClickEvents(homepage_anchors, "click_homepage");
+    }
+    
     var lib_footer_anchors = $('#lib-footer a');
     var bc_footer_anchors  = $('#bc-footer a');
     var bc_header_anchors  = $('#bclib-header a');
     var megamenu_anchors   = $('#megamenu a');
 
-    addClickEvents(homepage_anchors, "click_homepage");
     addClickEvents(lib_footer_anchors, "click_footer");
     addClickEvents(bc_footer_anchors, "click_footer");
     addClickEvents(bc_header_anchors, "click_header");
