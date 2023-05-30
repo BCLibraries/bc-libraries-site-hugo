@@ -11,7 +11,8 @@ $(function () {
         // send custom event to GTM
         dataLayer.push({
             'event': 'hover_menu_item',
-            'menu_item_label': menuItemLabel
+            'menu_item_label': menuItemLabel,
+            'page_title_clean': page_title_clean
         });
         _paq.push(['trackEvent', 'megamenu', 'hover', menuItemLabel]);
     });
@@ -21,7 +22,8 @@ $(function () {
         // send custom event to GTM
         dataLayer.push({
             'event': 'hover_menu_libpane',
-            'menu_libpane_label': menuItemPaneLabel
+            'menu_libpane_label': menuItemPaneLabel,
+            'page_title_clean': page_title_clean
         });
         _paq.push(['trackEvent', 'librarypanes', 'hover', menuItemPaneLabel]);
     });
@@ -56,7 +58,8 @@ $(function () {
             dataLayer.push({
                 'event': label,
                 'homepage_section': dataID,
-                'outbound_url': url
+                'outbound_url': url,
+                'page_title_clean': page_title_clean
             });
             _paq.push(['trackEvent', label, dataID, url]);
         });
