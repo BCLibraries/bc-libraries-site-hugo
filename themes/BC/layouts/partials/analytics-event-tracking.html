@@ -11,7 +11,6 @@ $(function () {
         // send custom event to GTM
         dataLayer.push({
             'event': 'hover_menu_item',
-            'category': 'menu_item',
             'menu_item_label': menuItemLabel
         });
         _paq.push(['trackEvent', 'megamenu', 'hover', menuItemLabel]);
@@ -22,7 +21,6 @@ $(function () {
         // send custom event to GTM
         dataLayer.push({
             'event': 'hover_menu_libpane',
-            'category': 'libpane',
             'menu_libpane_label': menuItemPaneLabel
         });
         _paq.push(['trackEvent', 'librarypanes', 'hover', menuItemPaneLabel]);
