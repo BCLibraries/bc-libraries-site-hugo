@@ -10,9 +10,9 @@ $(function () {
         var menuItemLabel = $(this).find("a.menu-option").text().trim();
         // send custom event to GTM
         dataLayer.push({
-            'event': 'megamenu_hover',
+            'event': 'hover_menu_item',
             'category': 'menu_item',
-            'label': menuItemLabel
+            'menu_item_label': menuItemLabel
         });
         _paq.push(['trackEvent', 'megamenu', 'hover', menuItemLabel]);
     });
@@ -21,9 +21,9 @@ $(function () {
         var menuItemPaneLabel = $(this).find("a.lib-name").html();
         // send custom event to GTM
         dataLayer.push({
-            'event': 'megamenu_hover',
-            'category': 'library_pane',
-            'label': menuItemPaneLabel
+            'event': 'hover_menu_libpane',
+            'category': 'libpane',
+            'menu_libpane_label': menuItemPaneLabel
         });
         _paq.push(['trackEvent', 'librarypanes', 'hover', menuItemPaneLabel]);
     });
@@ -57,7 +57,7 @@ $(function () {
             // send custom event to GTM
             dataLayer.push({
                 'event': label,
-                'section': dataID,
+                'homepage_section': dataID,
                 'outbound_url': url
             });
             _paq.push(['trackEvent', label, dataID, url]);
