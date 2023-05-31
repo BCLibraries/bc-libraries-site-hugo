@@ -25,6 +25,7 @@ rssLimit = 10
     showBuildHeader = false
     showFloatingHelpButton = true
     showBetaButton = true
+    gtag = false
     imageBaseURL = "https://library.bc.edu/images"
 [caches]
     [caches.getjson]

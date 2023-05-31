@@ -2,3 +2,4 @@
     showBuildHeader = false
     showFloatingHelpButton = true
     showBetaButton = true
+    gtag = false
