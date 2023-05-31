@@ -2,6 +2,7 @@
     showBuildHeader = false
     showFloatingHelpButton = true
     showBetaButton = true
+    gtag = "GTM-TXSPVQ5"
 [caches]
     [caches.getjson]
         maxAge = "1m"

@@ -1,21 +1,37 @@
 <script>
 $(function () {
-    var $all_anchors = $('a');
+    // Get a clean version of the page title
+    var page_title_clean = $(document).find("title").text().replace(" | Boston College Libraries", "").replace(" - Libraries at Boston College", "");
+
+    // Determine if this is the homepage
+    var is_homepage_bool = $('#main-body.homepage').length > 0;
 
     //
     // Megamenu hover events
     //
 
     $('#megamenu-refresh ul.nav li.dropdown').mouseenter(function() {
-        var myText = $(this).find("a.menu-option").text();
-        gtag('event', 'hover', {'event_category': 'megamenu', 'event_label': myText.trim()});
-        _paq.push(['trackEvent', 'megamenu', 'hover', myText.trim()]);
+        var menuItemLabel = $(this).find("a.menu-option").text().trim();
+        // send custom event to GTM
+        dataLayer.push({
+            'event': 'hover_menu_item',
+            'menu_item_label': menuItemLabel,
+            'page_title_clean': page_title_clean,
+            'is_homepage': is_homepage_bool
+        });
+        _paq.push(['trackEvent', 'megamenu', 'hover', menuItemLabel]);
     });
 
-    $("ul.item-desktop li a").mouseenter(function(){
-        var myPane = $(this).html();
-        gtag('event', 'hover', {'event_category': 'librarypanes', 'event_label': myPane});
-        _paq.push(['trackEvent', 'librarypanes', 'hover', myPane]);
+    $("#megamenu-refresh ul.nav .library-box .lib-box .panel-body").mouseenter(function(){
+        var menuItemPaneLabel = $(this).find("a.lib-name").html();
+        // send custom event to GTM
+        dataLayer.push({
+            'event': 'hover_menu_libpane',
+            'menu_libpane_label': menuItemPaneLabel,
+            'page_title_clean': page_title_clean,
+            'is_homepage': is_homepage_bool
+        });
+        _paq.push(['trackEvent', 'librarypanes', 'hover', menuItemPaneLabel]);
     });
 
     //
@@ -24,39 +40,50 @@ $(function () {
 
     $("a.askuswidget").click(function(e){
         var src = window.location.href;
-        gtag('event', 'click', {'event_category': 'chat-widget', 'event_label': src});
         _paq.push(['trackEvent', 'chat-widget', 'click', src]);
     });
 
     //
-    // Homepage click events
+    //  Other click events
     //
 
-    // send 'outbound' event for all link clicks
-    $all_anchors.not('.askuswidget, .search-link, .accessibility-text').click(function(e) {
-        var url = $(this).attr("href");
-        /* Bug fix to stop screen jump when clicking carousel controls */
-        if (url.indexOf('#') !== 0) {
-            gtag('event', 'click', {'event_category': 'outbound', 'event_label': url});
-            _paq.push(['trackEvent', 'outbound', 'click', url]);
-        }
-    });
-
-    // send 'homepage' event for all link clicks and include sections
-    // ignore news carousel and mega menu top-level links
-    $all_anchors.not(".askuswidget, .carousel-control, li.dropdown > a.menu-option, .accessibility-text").click(function(e){
-        var url = $(this).attr("href");                
-        var dataTag = $(this).parents("[data-tag=ga-tag]");
-        var dataID = "-";
-        if (dataTag && dataTag.length) {
-            dataID = dataTag.attr("id");
-            if (typeof dataID === 'undefined') {
-                dataID = "[undefined]"
+    function addClickEvents(jqObj, label){
+        jqObj.click(function(e){
+            var $this = $(this);
+            var url = $this.attr("href");
+            var dataID = "[none]";
+            var dataTag = $this.parents("[data-tag=ga-tag]");
+            if (dataTag && dataTag.length) {
+                dataID = dataTag.attr("id");
+                if (typeof dataID === 'undefined') {
+                    dataID = "[undefined]"
+                }
             }
-        }
-        gtag('event', dataID, {'event_category': 'homepage', 'event_label': url});
-        gtag('event', 'click', {'event_category': 'homepage', 'event_label': url, 'homepage_section': dataID});
-        _paq.push(['trackEvent', 'homepage', dataID, url]);
-    });
+            // send custom event to GTM
+            dataLayer.push({
+                'event': label,
+                'page_section': dataID,
+                'outbound_url': url,
+                'page_title_clean': page_title_clean,
+                'is_homepage': is_homepage_bool,
+            });
+            _paq.push(['trackEvent', label, dataID, url]);
+        });
+    }
+
+    if (is_homepage_bool) {
+        var homepage_anchors = $('body.mainhomepage a').not(".askuswidget, .accessibility-text");
+        addClickEvents(homepage_anchors, "click_homepage");
+    }
+    
+    var lib_footer_anchors = $('#lib-footer a');
+    var bc_footer_anchors  = $('#bc-footer a');
+    var bc_header_anchors  = $('#bclib-header a');
+    var megamenu_anchors   = $('#megamenu a');
+
+    addClickEvents(lib_footer_anchors, "click_footer");
+    addClickEvents(bc_footer_anchors, "click_footer");
+    addClickEvents(bc_header_anchors, "click_header");
+    addClickEvents(megamenu_anchors, "click_header");
 });
 </script>

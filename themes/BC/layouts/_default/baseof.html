@@ -8,6 +8,13 @@
         {{ block "pagestyles" . }}{{ end }}
     </head>
     <body id="index" class="s-lg-guide-body mainhomepage alternate-header homepagerefresh">
+        {{ if (and (.Site.Params.gtag) (ne .Site.Params.gtag false)) }}
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.gtag }}"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        {{ end }}
+
         <a id="skiplink" href="#main-heading" class="accessibility-text">Skip to main content</a>
 
         <header>
