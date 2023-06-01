@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
     // turn off/on showing department hours e.g., Gargan Hall
-    const SHOW_DEPARTMENTS = true;
+    const SHOW_DEPARTMENTS = false;
 
     // jQuery selector for the boxes containing the hours
     const HOURS_TABLE_SELECTOR = '.table-hours table tbody';
