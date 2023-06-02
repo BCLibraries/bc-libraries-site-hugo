@@ -1,0 +1,27 @@
+{{ if eq .Site.Params.showbuildheader true }}
+<style>
+    #build-header {padding: 3px 10px; text-align: right;}
+    #build-header code {background-color:inherit; color: inherit;}
+    ul#ci-list {list-style-type: none; margin: 0; padding: 0;}
+    ul#ci-list li {display: inline; list-style-type: none; padding-right: 10px; margin-right: 10px; border-right: 1px solid #ccc;}
+    ul#ci-list li:last-child {padding-right: 0; margin-right: 10px; border: none;}
+    ul#ci-list .build-git-commit a {
+        width: 8ch;
+        text-overflow: clip;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+</style>
+
+<div id="build-header">
+    <ul id="ci-list">
+        <li class="build-time"><span class="build-label">Build Time</span>: <code>JENKINS_BUILD_TIME</code></li>
+        <li class="build-number"><span class="build-label">Build number</span>: <a href="JENKINS_URL/browse/JENKINS_JOB_NAME-JENKINS_BUILD_NUMBER" target="_blank">JENKINS_JOB_NAME-JENKINS_BUILD_NUMBER</a></li>
+        <li class="build-git-branch"><span class="build-label">Git Branch</span>: <a href="JENKINS_GIT_URL/tree/JENKINS_GIT_BRANCH_SHORT" target="_blank">JENKINS_GIT_BRANCH_SHORT</a></li>
+        <li class="build-git-commit"><span class="build-label">Git Commit</span>: <code><a href="JENKINS_GIT_URL/commit/JENKINS_GIT_COMMIT" target="_blank">JENKINS_GIT_COMMIT_SHORT</a></code></li>
+        <li class="build-jenkins"><a href="JENKINS_URL" target="_blank">Jenkins</a></li>
+    </ul>
+</div>
+{{ end }}
