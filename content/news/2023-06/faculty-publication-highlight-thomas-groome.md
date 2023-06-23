@@ -30,4 +30,4 @@ imagealt: ""
 type: "news"
 ---
 
-"In *What Makes Education Catholic: Spiritual Foundations*, Thomas Groome discusses the history of Catholic education and how its rich theological foundations can give shape to its future."
+In *What Makes Education Catholic: Spiritual Foundations*, Thomas Groome discusses the history of Catholic education and how its rich theological foundations can give shape to its future.
