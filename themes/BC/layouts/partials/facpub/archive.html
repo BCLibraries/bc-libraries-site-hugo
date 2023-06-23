@@ -1,6 +1,17 @@
 <div class="facpub_archives">
     <h2>Past Highlights</h2>
 
+    <!-- START 2023 ARCHIVES -->
+    <div class="yearlyblock row">
+        <h3>2023 Highlights</h3>
+
+        <div class="row">
+            {{ range (where (where (where .Site.RegularPages ".Params.type" "facpub") ".Params.year" "2023") ".Params.oneoff" false) }}
+            {{ partial "facpub/archive-item.html" . }}
+            {{ end }}
+        </div>
+    </div>
+
     <!-- START 2022 ARCHIVES -->
     <div class="yearlyblock row">
         <h3>2022 Highlights</h3>
