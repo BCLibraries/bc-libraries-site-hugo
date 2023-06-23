@@ -1,7 +1,7 @@
 ---
 date: 2023-06-23T09:29:43-04:00
 year: "2023"
-title: "What Makes Education Catholic"
+title: "What Makes Education Catholic: Spiritual Foundations"
 draft: false
 by: ""
 authorfirstname: "Thomas"
