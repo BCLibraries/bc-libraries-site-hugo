@@ -187,6 +187,14 @@
                 "url": "https://libguides.bc.edu/geology"
             },
             {
+                "id": "204263",
+                "parent_id": "0",
+                "name": "Engineering",
+                "slug_id": "2365973",
+                "slug": "subjects\/engineering",
+                "url": "https://libguides.bc.edu/engineering"
+            },
+            {
                 "id": "30938",
                 "parent_id": "0",
                 "name": "Environmental Studies",
@@ -441,20 +449,16 @@
         ]
     },
     {
-        "name": "Sarah Barbrow",
-        "title": "Senior Liaison Librarian for Engineering, Computer Science and Math",
+        "name": "Stephen Sturgeon",
+        "title": "Head Librarian, Collections",
         "department": "Collection Development & Research",
         "active": true,
-        "profile_id": "287686",
+        "profile_id": "115563",
         "featured_background": "",
         "featured_background_source": "",
         "featured_background_caption": "",
         "featured_background_type": "sun-tornado",
         "featured_guides": [
-            {
-                "guide_name": "Engineering",
-                "guide_link": "https://libguides.bc.edu/engineering"
-            },
             {
                 "guide_name": "Computer Science/IT",
                 "guide_link": "https://libguides.bc.edu/compscience"
@@ -472,22 +476,6 @@
                 "slug_id": "144969",
                 "slug": "subjects\/computer-science",
                 "url": "https://libguides.bc.edu/computerscienceportal"
-            },
-            {
-                "id": "12904",
-                "parent_id": "0",
-                "name": "Economics",
-                "slug_id": "144977",
-                "slug": "subjects\/economics",
-                "url": "https://libguides.bc.edu/economicsportal"
-            },
-            {
-                "id": "204263",
-                "parent_id": "0",
-                "name": "Engineering",
-                "slug_id": "2365973",
-                "slug": "subjects\/engineering",
-                "url": "https://libguides.bc.edu/engineering"
             },
             {
                 "id": "12897",
@@ -765,6 +753,14 @@
                 "slug_id": "144961",
                 "slug": "subjects\/business",
                 "url": "https://libguides.bc.edu/managementportal"
+            },
+            {
+                "id": "12904",
+                "parent_id": "0",
+                "name": "Economics",
+                "slug_id": "144977",
+                "slug": "subjects\/economics",
+                "url": "https://libguides.bc.edu/economicsportal"
             },
             {
                 "id": "201801",
