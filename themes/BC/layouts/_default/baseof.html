@@ -8,6 +8,10 @@
         {{ block "pagestyles" . }}{{ end }}
     </head>
     <body id="index" class="s-lg-guide-body mainhomepage alternate-header homepagerefresh">
+
+        {{/* temporary alert box on all hugo pages */}}
+        {{ partial "partials/alert-message.html" . }}
+
         {{ if (and (.Site.Params.gtag) (ne .Site.Params.gtag false)) }}
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.gtag }}"
