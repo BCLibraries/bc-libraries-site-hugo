@@ -30,4 +30,4 @@ imagealt: ""
 type: "news"
 ---
 
-In *Disability Ethics and Preferential Justice: A Catholic Perspective*, Mary Jo Iozzio offers a theological reflection on disability.
+In her book, Mary Jo Iozzio offers a theological reflection on disability, drawing on liberation theology within Catholic social teaching to discuss how individuals and the Christian church can work to be more inclusive.
