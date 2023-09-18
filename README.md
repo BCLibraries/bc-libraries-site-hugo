@@ -43,11 +43,13 @@ Use the `hugo new` command to add content, e.g.:
    hugo new news/2022-10-headline-in-slug-form.md
     ```
 4. Fill in the news metadata, using a previous story as the model.
+
 ### Faculty publication highlights
 
 ```bash
 hugo new facpub/2022-05-10-facpub-name.md
 ```
+
 ### Exhibits
 
 ```bash
