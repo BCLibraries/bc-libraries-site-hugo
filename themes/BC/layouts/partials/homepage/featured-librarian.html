@@ -64,7 +64,12 @@
     {{ $profile_background = $featured_librarian.featured_background_type }}
 
     {{/* get profile image */}}
-    {{ $profile_image = .profile.image.url }}
+    {{ $profile_image_test := .profile.image.url }}
+    {{ if not $profile_image_test }}
+        {{ $profile_image = "https://libapps.s3.amazonaws.com/apps/common/images/profile.jpg" }}
+    {{ else }}
+        {{ $profile_image = $profile_image_test }}
+    {{ end }}
 
     {{/* get profile url */}}
     {{ $profile_url = .profile.url }}
