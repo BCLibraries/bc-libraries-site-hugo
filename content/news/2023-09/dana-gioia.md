@@ -9,7 +9,7 @@ draft: false
 expired: false
 
 # Date to publish. 
-date: 2023-09-22T12:03:56-04:00
+date: 2023-09-22T12:00:56-04:00
 
 # The story's year.
 year: "2023"
