@@ -204,10 +204,6 @@
                 "guide_link": "https://libguides.bc.edu/french"
             },
             {
-                "guide_name": "Hispanic Studies",
-                "guide_link": "https://libguides.bc.edu/hispanicstudies"
-            },
-            {
                 "guide_name": "Italian Language and Literature",
                 "guide_link": "https://libguides.bc.edu/italian"
             },
@@ -218,28 +214,12 @@
         ],
         "subjects": [
             {
-                "id": "12900",
-                "parent_id": "0",
-                "name": "African & African Diaspora Studies",
-                "slug_id": "144932",
-                "slug": "subjects\/african-african-diaspora-studies",
-                "url": "https://libguides.bc.edu/subjects/african-african-diaspora-studies"
-            },
-            {
                 "id": "12884",
                 "parent_id": "0",
                 "name": "German Language & Literature",
                 "slug_id": "144983",
                 "slug": "subjects\/german-language-literature",
                 "url": "https://libguides.bc.edu/germanportal"
-            },
-            {
-                "id": "12880",
-                "parent_id": "0",
-                "name": "Latin American Studies",
-                "slug_id": "144988",
-                "slug": "subjects\/latin-american-studies",
-                "url": "https://libguides.bc.edu/subjects/latin-american-studies"
             },
             {
                 "id": "12890",
@@ -733,14 +713,6 @@
                 "slug_id": "144986",
                 "slug": "subjects\/english",
                 "url": "https://libguides.bc.edu/englishportal"
-            },
-            {
-                "id": "12879",
-                "parent_id": "0",
-                "name": "Irish Studies",
-                "slug_id": "144985",
-                "slug": "subjects\/irish-studies",
-                "url": "https://libguides.bc.edu/irishportal"
             }
         ]
     },
@@ -851,6 +823,69 @@
                 "slug_id": "145016",
                 "slug": "subjects\/political-science-government",
                 "url": "https://libguides.bc.edu/polisciportal"
+            }
+        ]
+    },
+    {
+        "name": "Erin Kate Scheopner",
+        "title": "Senior Liaison for History & Irish Studies",
+        "department": "Collection Development & Research",
+        "active": true,
+        "profile_id": "358438",
+        "featured_background": "",
+        "featured_background_source": "",
+        "featured_background_caption": "",
+        "featured_background_type": "constellation",
+        "featured_guides": [
+            {
+                "guide_name": "African & African Diaspora Studies",
+                "guide_link": "https://libguides.bc.edu/africanstudies"
+            },
+            {
+                "guide_name": "History",
+                "guide_link": "https://libguides.bc.edu/history"
+            },
+            {
+                "guide_name": "Irish Studies",
+                "guide_link": "https://libguides.bc.edu/irishportal"
+            },
+            {
+                "guide_name": "Latin American Studies",
+                "guide_link": "https://libguides.bc.edu/latam"
+            }
+        ],
+        "subjects": [
+            {
+                "id": "12900",
+                "parent_id": "0",
+                "name": "African & African Diaspora Studies",
+                "slug_id": "144932",
+                "slug": "subjects\/african-african-diaspora-studies",
+                "url": "https://libguides.bc.edu/subjects/african-african-diaspora-studies"
+            },
+            {
+                "id": "7886",
+                "parent_id": "0",
+                "name": "History",
+                "slug_id": "46611",
+                "slug": "subjects\/history",
+                "url": "https://libguides.bc.edu/subjects/history"
+            },
+            {
+                "id": "12879",
+                "parent_id": "0",
+                "name": "Irish Studies",
+                "slug_id": "144985",
+                "slug": "subjects\/irish-studies",
+                "url": "https://libguides.bc.edu/irishportal"
+            },
+            {
+                "id": "12880",
+                "parent_id": "0",
+                "name": "Latin American Studies",
+                "slug_id": "144988",
+                "slug": "subjects\/latin-american-studies",
+                "url": "https://libguides.bc.edu/subjects/latin-american-studies"
             }
         ]
     }
