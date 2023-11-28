@@ -495,37 +495,6 @@
         ]
     },
     {
-        "name": "Jessica Hinson-Williams",
-        "title": "Head Librarian of the Educational Resource Center",
-        "department": "Educational Resource Center",
-        "active": false,
-        "profile_id": "216706",
-        "featured_background": "",
-        "featured_background_source": "",
-        "featured_background_caption": "",
-        "featured_background_type": "envelope",
-        "featured_guides": [
-            {
-                "guide_name": "Education",
-                "guide_link": "https://libguides.bc.edu/educationportal"
-            },
-            {
-                "guide_name": "Children's Literature",
-                "guide_link": "https://libguides.bc.edu/childrenslit"
-            }
-        ],
-        "subjects": [
-            {
-                "id": "12905",
-                "parent_id": "0",
-                "name": "Education K-12 curriculum",
-                "slug_id": "144978",
-                "slug": "subjects\/education-k12",
-                "url": "https://libguides.bc.edu/subjects/education-k12"
-            }
-        ]
-    },
-    {
         "name": "Theresa Lyman",
         "title": "Online Learning Librarian",
         "department": "Educational Initiatives & Research Services",
