@@ -18,7 +18,7 @@ year: "2023"
 slug: "2023-09-red-shoe-night"
 
 # Where the article will link to when clicked
-destination: "https://libguides.bc.edu/burns/visit/events#red-shoe"
+destination: "https://events.bc.edu/event/red_shoe_night_celebrating_dominican-american_poet_rhina_espaillat"
 
 # Path to image, relative to https://library.bc.edu/images/news
 imagethumb: "2023-09/red-shoe-night.jpg"
