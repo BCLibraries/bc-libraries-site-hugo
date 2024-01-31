@@ -2,6 +2,10 @@
   .best-bet-result {
     a {
       color: $wcgaa-link-against-very-light-gray;
+
+      &.btn {
+        color: white;
+      }
     }
   }
 }
