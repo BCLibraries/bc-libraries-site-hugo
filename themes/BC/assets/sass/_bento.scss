@@ -8,4 +8,22 @@
       }
     }
   }
+
+  .article-result-item__type, .catalog-result-item__type {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #595959;
+  }
+
+  .article-result-item__peer_reviewed {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #595959;
+    display: flex;
+  }
+
+  .article-result-item__open-access-logo {
+    height: 16px;
+    margin-right: .5em;
+  }
 }

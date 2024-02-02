@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.js": "../theme/bcbento/static/js/main.6ebab1d0.js",
+    "main.css": "../theme/bcbento/static/css/main.5528d2f5.css",
+    "main.js": "../theme/bcbento/static/js/main.f9e8a04b.js",
     "index.html": "../theme/bcbento/index.html",
     "static/media/icon_archives.svg": "../theme/bcbento/static/media/icon_archives.9b4cb17afa3de9f4613f71cd6db7f355.svg",
-    "main.6ebab1d0.js.map": "../theme/bcbento/static/js/main.6ebab1d0.js.map"
+    "main.5528d2f5.css.map": "../theme/bcbento/static/css/main.5528d2f5.css.map",
+    "main.f9e8a04b.js.map": "../theme/bcbento/static/js/main.f9e8a04b.js.map"
   },
   "entrypoints": [
-    "static/js/main.6ebab1d0.js"
+    "static/css/main.5528d2f5.css",
+    "static/js/main.f9e8a04b.js"
   ]
 }
