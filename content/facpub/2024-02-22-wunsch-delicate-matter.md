@@ -6,7 +6,7 @@ draft: false
 by: ""
 authorfirstname: "Oliver"
 authorlastname: "Wunsch"
-authorposition: "Assistant Professor, Art, Art History, and Film Department"
+authorposition: "Assistant Professor<br/>Art, Art History, and Film Department"
 secondauthor: ""
 secondposition: ""
 thirdauthor: ""
