@@ -1,5 +1,5 @@
 ---
-date: 2024-02-21T12:27:31-05:00
+date: 2024-03-06T12:27:31-05:00
 year: "2024"
 title: "Sense of the Possible: An Introduction to Theology and Imagination"
 draft: false
