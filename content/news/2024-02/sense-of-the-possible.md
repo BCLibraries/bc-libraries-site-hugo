@@ -18,7 +18,7 @@ year: "2024"
 slug: "2024-02-sense-of-the-possible"
 
 # Where the article will link to when clicked
-destination: "/facpub/2024/02/sense-of-the-possible/"
+destination: "/facpub/2024/03/sense-of-the-possible/"
 
 # Path to image, relative to https://library.bc.edu/images/news
 imagethumb: "2024-02/Keefe-Perry-Sense-of-the-Possible-headshot-600x400.jpg"
