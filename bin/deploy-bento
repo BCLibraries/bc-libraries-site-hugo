@@ -3,12 +3,8 @@
 # Directories in theme.
 THEME_DIR=$(dirname "$0")/../themes/BC
 BENTO_THEME_DIR=${THEME_DIR}/static/bcbento
-STATIC_THEME_DIR=${BENTO_THEME_DIR}/static
-JS_THEME_DIR=${STATIC_THEME_DIR}/js
-MEDIA_THEME_DIR=${STATIC_THEME_DIR}/media
-
-# The Hugo layout file for the search page.
-SEARCH_LAYOUT=${THEME_DIR}/layouts/search/search.html.html
+ASSETS_TARGET_DIR=${BENTO_THEME_DIR}/assets
+MANIFEST_TARGET_FILE=${THEME_DIR}/data/search/manifest.json
 
 #Options
 BUILD=false
@@ -26,7 +22,6 @@ function main() {
   fi
   clean_old_files
   copy_build_files
-  update_search_layout
 }
 
 # Something went wrong.
@@ -54,15 +49,7 @@ ${YELLOW}Options${NC}:
 function validate_theme_files() {
   # Die if theme directories and files aren't where they are supposed to be.
   if [ ! -d "$BENTO_THEME_DIR" ]; then
-    error_exit "$BENTO_THEME_DIR: Bento directory not found in theme"
-  fi
-
-  if [ ! -d "$STATIC_THEME_DIR" ]; then
-    error_exit "$STATIC_THEME_DIR: Bento static directory not found in theme"
-  fi
-
-  if [ ! -f "$SEARCH_LAYOUT" ]; then
-    error_exit "$SEARCH_LAYOUT: Search layout not found in theme"
+    error_exit "$BENTO_THEME_DIR: Bento directory not found in theme: ${BENTO_THEME_DIR}"
   fi
 }
 
@@ -103,52 +90,20 @@ function build_client() {
 
 # Remove any old files.
 function clean_old_files() {
-  echo "Remove old js dir..."
-  #rm -r "${JS_THEME_DIR}" || error_exit "$JS_THEME_DIR: Couldn't delete js directory"
+  echo "Remove old assets dir..."
+  rm -r "${ASSETS_TARGET_DIR}" || error_exit "Couldn't delete assets directory: ${ASSETS_TARGET_DIR}"
 
-  echo "Remove stray javascript and json..."
-  for f in "${BENTO_THEME_DIR}"/*js*; do
-    if [ -f "$f" ]; then
-      rm "$f" || error_exit " $f: Couldn't delete"
-    fi
-  done
+  echo "Remove old manifest.json"
+  rm -r "${MANIFEST_TARGET_FILE}" || error_exit "Couldn't delete manifest file: ${MANIFEST_TARGET_FILE}"
 }
 
 # Copy in the fresh files.
 function copy_build_files() {
   echo "Copy over new js directory..."
-  cp -r "${path_to_client}"/build/static/js "${STATIC_THEME_DIR}" || error_exit "Couldn't copy js directory"
+  cp -r "${path_to_client}"/dist/assets "${ASSETS_TARGET_DIR}" || error_exit "Couldn't copy assets dir"
 
-  cp -r "${path_to_client}"/build/static/media "${STATIC_THEME_DIR}" || error_exit "Couldn't copy media directory"
-
-  echo "Copy over new stray javascript and json..."
-  cp "${path_to_client}"/build/*js* "${BENTO_THEME_DIR}" || error_exit "Couldn't copy stray js"
+  cp -r "${path_to_client}"/dist/.vite/manifest.json "${MANIFEST_TARGET_FILE}" || error_exit "Couldn't copy manifest"
 }
 
-# Update the Hugo search layout document to reflect the new javascript files.
-function update_search_layout() {
-
-  echo "Update search layout..."
-  build_index_path=${path_to_client}/build/index.html
-  if [ ! -f "$build_index_path" ]; then
-    error_exit "${build_index_path}: Build index.html not found"
-  fi
-
-  # Each new version of the application javascript has a unique fingerprint
-  # in the filename (e.g. main.1f0329df.js). Find that file in the built
-  # index.html file and use it to fill in the value in the search page
-  # layout.
-  build_index=$(cat "${build_index_path}")
-  pattern='\/main.([^/]*).js'
-
-  [[ "$build_index" =~ $pattern ]]
-  main_fingerprint=${BASH_REMATCH[1]}
-  if [ -z "$main_fingerprint" ]; then
-   error_exit "Could not find main javascript fingerprint in index.html"
-  fi
-
-
-  sed -i '' -e "s/main\.[^/]*\.js/main.$main_fingerprint.js/" "$SEARCH_LAYOUT"
-}
 
 main "$@"

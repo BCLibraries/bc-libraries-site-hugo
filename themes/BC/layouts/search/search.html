@@ -1,0 +1,28 @@
+{{ define "title" }}Search{{ end }}
+
+{{ define "pagestyles" }}
+    {{/* Look in the client manfiest.json file (rendered by vite) to
+         find the URL of the current version's JavaScript file. */}}
+    {{ $client_manifest := .Site.Data.search.manifest }}
+    {{ $index_data := index $client_manifest "index.html" }}
+    {{ $js_file := $index_data.file }}
+    <script>
+        if (document.location.href.indexOf('proxy.bc.edu') > -1) {
+            document.location.href = '{{ relref . "/search"}}?' + window.location.search;
+        }
+    </script>
+    <script type="module" crossorigin src="{{ relref . "/"}}bcbento/{{ $js_file }}"></script>
+    <link rel="stylesheet" href="{{ relref . "/"}}bcbento/css/bento.css?v=2019103101">
+{{ end }}
+
+{{ define "main" }}
+<div id="main-body" class="container">
+    <noscript style="position: absolute; top: 8em">
+        <p>The Boston College Libraries search page requires JavaScript.</p>
+    </noscript>
+    <div id="root"></div>
+</div>
+{{ end }}
+
+{{ define "pagescripts" }}
+{{ end }}
