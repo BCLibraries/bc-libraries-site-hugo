@@ -13,7 +13,7 @@ $(document).ready(function(){
         new Location("501", "O'Neill Library", "https://libguides.bc.edu/oneill/hours", "library"),
         new Location("505", "Bapst Library", "https://libguides.bc.edu/bapst/hours", "library"),
         new Location("506", "Bapst Library - Gargan Hall", "https://libguides.bc.edu/bapst/hours", "department"),
-        new Location("507", "Burns Library", "https://libguides.bc.edu/burns", "library"),
+        new Location("507", "Burns Library", "https://libguides.bc.edu/burns/hours", "library"),
         new Location("508", "Educational Resource Center", "https://libguides.bc.edu/erc/hours", "library"),
         new Location("509", "Law Library", "https://www.bc.edu/bc-web/schools/law/sites/students/library/using/hours.html", "library"),
         new Location("510", "Social Work Library", "https://libguides.bc.edu/socialwork/hours", "library"),
@@ -52,7 +52,7 @@ $(document).ready(function(){
             // get the data for this location from the hash
             const location_data = location_map[loc_to_show.id];
 
-            if (location_data.name == "O'Neill Library" && location_data.rendered.includes('*')) {
+            if (location_data.name === "O'Neill Library" && location_data.rendered.includes('*')) {
                 $('.onl-asterisk-notice').show();
             }
 
@@ -61,7 +61,7 @@ $(document).ready(function(){
             // we will replace the new line char with a semicolon.
             const hours = location_data.rendered.replace("\n", " ; ");
 
-            const new_tr = buildRow(hours, loc_to_show.label, loc_to_show.url);
+            const new_tr = buildRow(hours, loc_to_show.label, location_data.url);
             new_tbody.appendChild(new_tr)
         });
 
@@ -70,7 +70,7 @@ $(document).ready(function(){
             const new_tbody_clone = new_tbody.cloneNode(true);
             old_tbody.parentNode.replaceChild(new_tbody_clone, old_tbody);
         });
-    };
+    }
 
     // build one row of the months table
     function buildRow(hours, label, url) {
@@ -93,10 +93,10 @@ $(document).ready(function(){
         return row;
     }
 
-    function Location(id, label, url, category) {
+    function Location(id, label, default_url, category) {
         this.id = id;
         this.label = label;
-        this.url = url;
+        this.url = default_url;
         this.category = category;
     }
 
