@@ -4,6 +4,17 @@
   padding-top: 50px;
 }
 
+.news-section-image-attribution {
+  height: 1.25em;
+  text-align: right;
+  font-size: .8em;
+  color: #DCDCDC;
+  position: relative;
+  float: right;
+  top: -1.6em;
+  padding: 0 .5em;
+}
+
 .news-archives {
   display: flex;
   flex-wrap: wrap;
@@ -31,10 +42,6 @@
   .news-archives .post {
     width: 30%;
   }
-}
-
-.news-archives .post a {
-  display: block;
 }
 
 .news-archives .post img {
@@ -70,8 +77,8 @@
 }
 
 .news-archives .post a {
-  text-decoration: none;
-  color: #000;
+  text-decoration: inherit;
+  color: inherit;
 }
 
 .news-archives .post a:focus {

@@ -34,6 +34,10 @@ imagethumb: "{{ $this_year }}-{{ $this_month }}/path-to-image-01.jpg"
 # Alt text for image
 imagealt: ""
 
+# Uncomment to provide an attribution for the photo
+# attribution_text: "Photo by <PERSON WHO TOOK PHOTO>"
+# attribution_url: "https://www.flickr.com/photos/url-of-photo/555555.jpg"
+
 # Type
 type: "news"
 ---

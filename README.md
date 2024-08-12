@@ -40,7 +40,7 @@ Use the `hugo new` command to add content, e.g.:
    ```
 3. Create the news item:
    ```bash
-   hugo new news/2022-10-headline-in-slug-form.md
+   hugo new news/2024-10/headline-in-slug-form.md
     ```
 4. Fill in the news metadata, using a previous story as the model.
 

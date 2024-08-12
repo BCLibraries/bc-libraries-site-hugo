@@ -25,9 +25,13 @@
                    "avif"  true
                    "webp"  true
                    "lazy"  true) }}
+        <div class="news-section-image-attribution">
+            {{ if .Params.attribution_text -}}
+            {{ .Params.attribution_text | safeHTML }}
+            {{ end -}}
+        </div>
         
         <div class="news-section-text">
-            {{/*<div class="news-section-date">{{ .Date.Format "Mon Jan 2, 2006" }}</div>*/}}
             <div class="news-section-title">{{ .Title | safeHTML }}</div>
             <div class="news-section-content-blurb">{{ .Content }}</div>
         </div>
