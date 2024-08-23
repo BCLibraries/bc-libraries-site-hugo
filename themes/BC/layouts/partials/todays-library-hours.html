@@ -1,8 +1,12 @@
-{{ $dataJSON := getJSON "https://api3.libcal.com/api_hours_today.php?iid=609&lid=0&format=json&system_time=0" }}
-
+{{ $dataJSON := dict }}
+{{ $u := "https://library.bc.edu/bc-hours/api_hours_today.php?iid=609&lid=0&format=json&system_time=0" }}
+    {{ with resources.GetRemote $u }}
+        {{ with .Err }}
+            {{ errorf "%s" . }}
+        {{ else }}
+            {{ $dataJSON = . | transform.Unmarshal }}
 
 <div class="table-hours">
-
     {{/*<div class="alert alert-info alert-hours" role="alert"><i class="fa fa-exclamation-circle"></i> </div>*/}}
 
     <table class="table table-condensed table-bordered">
@@ -27,3 +31,7 @@
     
     <div class="onl-asterisk-notice">(*) The O'Neill Library first floor will remain open for use until 2:00 am.</div>
 </div>
+{{ end }}
+{{ else }}
+    {{ errorf "Unable to get remote resource %q" $u }}
+{{ end }}
