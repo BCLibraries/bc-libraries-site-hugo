@@ -1,6 +1,6 @@
 /* FETCH LIBRARY HOURS */
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     // turn off/on showing department hours e.g., Gargan Hall
     const SHOW_DEPARTMENTS = false;
@@ -12,19 +12,21 @@ $(document).ready(function(){
     const locations_to_show = [
         new Location("501", "O'Neill Library", "https://libguides.bc.edu/oneill/hours", "library", "onl"),
         new Location("505", "Bapst Library", "https://libguides.bc.edu/bapst/hours", "library", "bapst"),
-        new Location("506", "Bapst Library - Gargan Hall", "https://libguides.bc.edu/bapst/hours", "department", "gargan" ),
+        new Location("506", "Bapst Library - Gargan Hall", "https://libguides.bc.edu/bapst/hours", "department", "gargan"),
         new Location("507", "Burns Library", "https://libguides.bc.edu/burns/hours", "library", "burns"),
         new Location("508", "Educational Resource Center", "https://libguides.bc.edu/erc/hours", "library", "erc"),
-        new Location("509", "Law Library", "https://www.bc.edu/bc-web/schools/law/sites/students/library/using/hours.html", "library","law"),
+        new Location("509", "Law Library", "https://www.bc.edu/bc-web/schools/law/sites/students/library/using/hours.html", "library", "law"),
         new Location("510", "Social Work Library", "https://libguides.bc.edu/socialwork/hours", "library", "swl"),
         new Location("511", "Theology & Ministry Library", "https://libguides.bc.edu/tml/hours", "library", "tml")
-    ].filter(loc => { return SHOW_DEPARTMENTS || loc.category !== 'department' });
+    ].filter(loc => {
+        return SHOW_DEPARTMENTS || loc.category !== 'department'
+    });
 
     // grab each library's data from the output and place it where it needs to go
-    function setHours(data){
+    function setHours(data) {
 
         // no locations? for now, just die early.
-        if (! 'locations' in data) {
+        if (!'locations' in data) {
             return;
         }
 
@@ -42,7 +44,7 @@ $(document).ready(function(){
         locations_to_show.forEach(loc_to_show => {
 
             // skip locations that aren't in the data
-            if (! location_map[loc_to_show.id]) {
+            if (!location_map[loc_to_show.id]) {
                 console.error(`Hours for ${loc_to_show.label} (${loc_to_show.id}) were not retrieved`);
                 const error_tr = buildRow('Error retrieving hours', loc_to_show.label, loc_to_show.url);
                 new_tbody.appendChild(error_tr)
@@ -139,26 +141,31 @@ $(document).ready(function(){
         this.code = code;
     }
 
+
+    /**
+     * Fetch the hours and update them
+     *
+     * @return {Promise<void>}
+     */
+    async function getHours() {
+        const url = "https://library.bc.edu/bc-hours/api_hours_today.php";
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Response status: ${response.status}`);
+            }
+            const locations = await response.json();
+            setHours(locations);
+        } catch (error) {
+            console.error(error.message);
+        }
+    }
+
     // set today's date
-    const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const today = new Date();
     const month = months[today.getMonth()];
     const date = month + " " + today.getDate() + ", " + today.getFullYear();
     $(".hours-todays-date").text(date);
-
-    // call to the hours api
-    $.ajax({
-        type: "GET",
-        url: "https://library.bc.edu/bc-hours/api_hours_today.php",
-        jsonp: "callback",
-        dataType: "jsonp",
-        cache: true,
-        contentType: "application/javascript",
-        data: {l: '0'},
-        headers: {'Cache-Control': 'max-age=60'},
-        success: setHours,
-        error: function(){
-            console.error("could not retrieve hours!");
-        },
-    });
+    getHours().then();
 });
