@@ -10,14 +10,14 @@ $(document).ready(function(){
 
     // the locations we want, in order
     const locations_to_show = [
-        new Location("501", "O'Neill Library", "https://libguides.bc.edu/oneill/hours", "library"),
-        new Location("505", "Bapst Library", "https://libguides.bc.edu/bapst/hours", "library"),
-        new Location("506", "Bapst Library - Gargan Hall", "https://libguides.bc.edu/bapst/hours", "department"),
-        new Location("507", "Burns Library", "https://libguides.bc.edu/burns/hours", "library"),
-        new Location("508", "Educational Resource Center", "https://libguides.bc.edu/erc/hours", "library"),
-        new Location("509", "Law Library", "https://www.bc.edu/bc-web/schools/law/sites/students/library/using/hours.html", "library"),
-        new Location("510", "Social Work Library", "https://libguides.bc.edu/socialwork/hours", "library"),
-        new Location("511", "Theology & Ministry Library", "https://libguides.bc.edu/tml/hours", "library")
+        new Location("501", "O'Neill Library", "https://libguides.bc.edu/oneill/hours", "library", "onl"),
+        new Location("505", "Bapst Library", "https://libguides.bc.edu/bapst/hours", "library", "bapst"),
+        new Location("506", "Bapst Library - Gargan Hall", "https://libguides.bc.edu/bapst/hours", "department", "gargan" ),
+        new Location("507", "Burns Library", "https://libguides.bc.edu/burns/hours", "library", "burns"),
+        new Location("508", "Educational Resource Center", "https://libguides.bc.edu/erc/hours", "library", "erc"),
+        new Location("509", "Law Library", "https://www.bc.edu/bc-web/schools/law/sites/students/library/using/hours.html", "library","law"),
+        new Location("510", "Social Work Library", "https://libguides.bc.edu/socialwork/hours", "library", "swl"),
+        new Location("511", "Theology & Ministry Library", "https://libguides.bc.edu/tml/hours", "library", "tml")
     ].filter(loc => { return SHOW_DEPARTMENTS || loc.category !== 'department' });
 
     // grab each library's data from the output and place it where it needs to go
@@ -61,8 +61,12 @@ $(document).ready(function(){
             // we will replace the new line char with a semicolon.
             const hours = location_data.rendered.replace("\n", " ; ");
 
+            // Add a row to the hours table
             const new_tr = buildRow(hours, loc_to_show.label, location_data.url);
-            new_tbody.appendChild(new_tr)
+            new_tbody.appendChild(new_tr);
+
+            // Insert the hours into any other places it needs to appear on the page.
+            replaceHours(loc_to_show.code, hours);
         });
 
         // clone the new <tbody> into the hours tables
@@ -72,7 +76,31 @@ $(document).ready(function(){
         });
     }
 
-    // build one row of the months table
+    /**
+     * Replace hours text in an element
+     *
+     * Looks for cells with classes "lib-<code>"—where <code> is the library's code—and
+     * replaces them with today's hours.
+     *
+     * @param {string} lib_code
+     * @param {string} hours
+     */
+    function replaceHours(lib_code, hours) {
+        const to_replace = `todays-hours-lib-${lib_code}`;
+        const matches = document.getElementsByClassName(to_replace);
+        for (let match of matches) {
+            match.innerHTML = hours;
+        }
+    }
+
+    /**
+     * Build one row of the hours table
+     *
+     * @param {string} hours
+     * @param {string} label
+     * @param {string} url
+     * @return {HTMLTableRowElement}
+     */
     function buildRow(hours, label, url) {
 
         const link = document.createElement("a");
@@ -93,11 +121,22 @@ $(document).ready(function(){
         return row;
     }
 
-    function Location(id, label, default_url, category) {
-        this.id = id;
+    /**
+     * A single location
+     *
+     * @param {string} libcal_id
+     * @param {string} label
+     * @param {string} default_url
+     * @param {string} category library or department?
+     * @param {string} code the letter-code for the library
+     * @constructor
+     */
+    function Location(libcal_id, label, default_url, category, code) {
+        this.id = libcal_id;
         this.label = label;
         this.url = default_url;
         this.category = category;
+        this.code = code;
     }
 
     // set today's date
@@ -110,7 +149,7 @@ $(document).ready(function(){
     // call to the hours api
     $.ajax({
         type: "GET",
-        url: "//api3.libcal.com/api_hours_today.php?iid=609&lid=0&format=json&system_time=0",
+        url: "https://library.bc.edu/bc-hours/api_hours_today.php",
         jsonp: "callback",
         dataType: "jsonp",
         cache: true,
