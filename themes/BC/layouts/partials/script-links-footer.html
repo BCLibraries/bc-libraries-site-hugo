@@ -37,6 +37,18 @@
                 alert("Sorry, library chat is inactive at the moment. Try again later, or use another method to contact a library staff member.");
             }
         });
+
+        // Show the asterisk in the hours notification if there is an asterisk in the hours.
+        const notices = document.getElementsByClassName("onl-asterisk-notice");
+        const libdata_nodes = document.getElementsByClassName("lib-hours");
+        for (const item of libdata_nodes) {
+            if (item.innerHTML.includes('*')) {
+                for (const notice of notices) {
+                    notice.classList.add('visible');
+                }
+            }
+            //break;
+        }
     });
 </script>
 

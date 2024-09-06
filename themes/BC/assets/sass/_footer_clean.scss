@@ -41,11 +41,16 @@
     float: left;
 }
 
+/* Show this notice if one of the hours has an asterisk */
 #lib-footer .onl-asterisk-notice {
     font-size: 14px;
     line-height: 1.5;
-    display: none;
+    display: none
 }
+#lib-footer .onl-asterisk-notice.visible {
+    display: block;
+}
+
 
 #lib-footer .social-wrap {
     float: right;
