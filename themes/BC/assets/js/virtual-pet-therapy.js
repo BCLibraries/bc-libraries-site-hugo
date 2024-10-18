@@ -1,3 +1,10 @@
+/**
+ * Displays a random pet photo with an encouraging message
+ *
+ * During the COVID closures, we had a "pet therapy" page with photos of staff pets.
+ * One of five random pets was displayed on each homepage load with a link to the
+ * Pet Therapy page. This script chose that pet and displayed it.
+ */
 document.addEventListener('DOMContentLoaded', function () {
     const virtual_pet_holder = document.querySelector('.virtual-pet');
     const pet = randomPet();
