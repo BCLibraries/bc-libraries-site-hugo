@@ -21,10 +21,10 @@ slug: "why-do-people-read-for-pleasure"
 destination: "https://library.bc.edu/newsletter/why-do-people-read-for-pleasure"
 
 # Path to image, relative to https://library.bc.edu/images/news
-imagethumb: "2024-11/baked-goods-and-book-talks.png"
+imagethumb: "2024-11/reading-02.jpg"
 
 # Alt text for image
-imagealt: ""
+imagealt: "man reclining on couch reading with book cover concealing his face"
 
 # Uncomment to provide an attribution for the photo
 # attribution_text: "Photo by <PERSON WHO TOOK PHOTO>"
