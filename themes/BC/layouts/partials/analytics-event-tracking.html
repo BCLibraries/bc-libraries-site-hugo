@@ -35,12 +35,21 @@ $(function () {
     });
 
     //
-    // Ask Us click event
+    // Chat With Us button click event
     //
 
     $("a.askuswidget").click(function(e){
         var src = window.location.href;
         _paq.push(['trackEvent', 'chat-widget', 'click', src]);
+    });
+
+    //
+    // Chat With Us Megamenu click event
+    //
+
+    $("a.askuswidget-mm").click(function(e){
+        var src = window.location.href;
+        _paq.push(['trackEvent', 'chat-widget-mm', 'click', src]);
     });
 
     //
@@ -72,7 +81,7 @@ $(function () {
     }
 
     if (is_homepage_bool) {
-        var homepage_anchors = $('body.mainhomepage a').not(".askuswidget, .accessibility-text");
+        var homepage_anchors = $('body.mainhomepage a').not(".askuswidget, .askuswidget-mm, .accessibility-text");
         addClickEvents(homepage_anchors, "click_homepage");
     }
     
