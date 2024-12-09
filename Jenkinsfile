@@ -1,3 +1,13 @@
+def STATUS_COLOR_MAP = [
+    'FAILURE' : 'danger',
+    'UNSTABLE': 'danger',
+    'SUCCESS' : 'good'
+]
+def STATUS_EMOJI_MAP = [
+    'FAILURE' : ':x:',
+    'UNSTABLE': ':warning:',
+    'SUCCESS' : ':white_check_mark:'
+]
 pipeline {
     agent  { label 'staging' }
     stages {
@@ -68,6 +78,20 @@ pipeline {
                     echo "Starting Hugo server..."
                     sh "hugo -s ${WORKSPACE} -d ${HUGO_OUTPUT_DIR} -e staging -b ${HUGO_BRANCH_BASE_URL}"
                 }
+            }
+        }
+    },
+    post {
+        always {
+            echo 'Slack Notifications'
+            script {
+                def color = STATUS_COLOR_MAP[currentBuild.currentResult] ?: 'warning'
+                def icon  = STATUS_EMOJI_MAP[currentBuild.currentResult] ?: ':red_circle:'
+                slackSend (
+                    color: color,
+                    channel: "${SLACK_NOTIFICATIONS_CHANNEL_DEFAULT}",
+                    message: "${icon} *${currentBuild.currentResult}* Job ${env.JOB_NAME} | Build ${env.BUILD_NUMBER}\nGit branch ${GIT_BRANCH} | commit ${GIT_COMMIT}\nBuild details: ${env.BUILD_URL}"
+                )
             }
         }
     }
