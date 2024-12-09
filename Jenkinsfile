@@ -10,12 +10,15 @@ def STATUS_EMOJI_MAP = [
 ]
 pipeline {
     agent  { label 'staging' }
+    environment {
+        GIT_COMMIT_SHORT = "${GIT_COMMIT[0..7]}"
+        GIT_URL_CLEAN = GIT_URL.substring(0, GIT_URL.lastIndexOf('.'))
+        GIT_BRANCH_URL = "${GIT_URL_CLEAN}/tree/${GIT_BRANCH}"
+        GIT_COMMIT_URL = "${GIT_URL_CLEAN}/commit/${GIT_COMMIT}"
+        BUILD_HEADER_FILE="${WORKSPACE}/themes/BC/layouts/partials/build-header.html"
+    }
     stages {
         stage('Generate build header'){
-            environment {
-                GIT_URL_CLEAN = GIT_URL.substring(0, GIT_URL.lastIndexOf('.'))
-                BUILD_HEADER_FILE="${WORKSPACE}/themes/BC/layouts/partials/build-header.html"
-            }
             steps {
                 script {
                     sh """#!/bin/bash
@@ -83,15 +86,13 @@ pipeline {
     }
     post {
         always {
-            echo 'Slack Notifications'
             script {
                 def color = STATUS_COLOR_MAP[currentBuild.currentResult] ?: 'warning'
                 def icon  = STATUS_EMOJI_MAP[currentBuild.currentResult] ?: ':red_circle:'
                 slackSend (
                     color: color,
-                    iconEmoji: icon,
                     channel: "${SLACK_NOTIFICATIONS_CHANNEL_DEFAULT}",
-                    message: "*${currentBuild.currentResult}* Job ${env.JOB_NAME} | Build ${env.BUILD_NUMBER}\nGit branch ${GIT_BRANCH} | commit ${GIT_COMMIT}\nBuild details: ${env.BUILD_URL}"
+                    message: "${icon} *${currentBuild.currentResult}* <${env.BUILD_URL}|${env.JOB_NAME} #${env.BUILD_NUMBER}>\nGit <${GIT_BRANCH_URL}|${GIT_BRANCH}> commit <${GIT_COMMIT_URL}|${GIT_COMMIT_SHORT}>"
                 )
             }
         }
