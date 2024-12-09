@@ -89,8 +89,9 @@ pipeline {
                 def icon  = STATUS_EMOJI_MAP[currentBuild.currentResult] ?: ':red_circle:'
                 slackSend (
                     color: color,
+                    iconEmoji: icon,
                     channel: "${SLACK_NOTIFICATIONS_CHANNEL_DEFAULT}",
-                    message: "${icon} *${currentBuild.currentResult}* Job ${env.JOB_NAME} | Build ${env.BUILD_NUMBER}\nGit branch ${GIT_BRANCH} | commit ${GIT_COMMIT}\nBuild details: ${env.BUILD_URL}"
+                    message: "*${currentBuild.currentResult}* Job ${env.JOB_NAME} | Build ${env.BUILD_NUMBER}\nGit branch ${GIT_BRANCH} | commit ${GIT_COMMIT}\nBuild details: ${env.BUILD_URL}"
                 )
             }
         }
