@@ -105,6 +105,9 @@ pipeline {
                 def icon  = STATUS_EMOJI_MAP[currentBuild.currentResult] ?: ':red_circle:'
                 blocks = [
                     [
+                        "type": "divider"
+                    ],
+                    [
                         "type": "header",
                         "text": [
                             "type": "plain_text",
@@ -148,14 +151,9 @@ pipeline {
                                     "text": ":page_facing_up: Build Logs",
                                     "emoji": true
                                 ],
-                                "value": "Jenkins Build Logs",
+                                "style": "primary",
                                 "url": "${env.BUILD_URL}"
-                            ]
-                        ]
-                    ],
-                    [
-                        "type": "actions",
-                        "elements": [
+                            ],
                             [
                                 "type": "button",
                                 "text": [
@@ -163,7 +161,7 @@ pipeline {
                                     "text": ":link: Staging server URL",
                                     "emoji": true
                                 ],
-                                "value": "Staging server URL",
+                                "style": "primary",
                                 "url": "${HUGO_BRANCH_BASE_URL}hugo/${env.GIT_BRANCH}"
                             ]
                         ]
@@ -172,11 +170,10 @@ pipeline {
                         "type": "divider"
                     ],
                     [
-                        "type": "header",
+                        "type": "section",
                         "text": [
-                            "type": "plain_text",
-                            "text": "Git Metadata",
-                            "emoji": true
+                            "type": "mrkdwn",
+                            "text": "> *Git Metadata*"
                         ]
                     ],
                     [
@@ -198,6 +195,9 @@ pipeline {
                             "type": "mrkdwn",
                             "text": "*Most recent commit message:*\n${env.GIT_COMMIT_MSG}"
                         ]
+                    ],
+                    [
+                        "type": "divider"
                     ]
                 ]
                 slackSend (
