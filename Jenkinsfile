@@ -173,7 +173,7 @@ pipeline {
                         "type": "section",
                         "text": [
                             "type": "mrkdwn",
-                            "text": "> *Git Metadata*"
+                            "text": "*Git Metadata*"
                         ]
                     ],
                     [
@@ -193,7 +193,7 @@ pipeline {
                         "type": "section",
                         "text": [
                             "type": "mrkdwn",
-                            "text": "*Most recent commit message:*\n${env.GIT_COMMIT_MSG}"
+                            "text": "*Most recent commit message:*\n> ${env.GIT_COMMIT_MSG}"
                         ]
                     ],
                     [
