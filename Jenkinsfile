@@ -11,10 +11,10 @@ def STATUS_EMOJI_MAP = [
 pipeline {
     agent  { label 'staging' }
     environment {
-        env.GIT_COMMIT_SHORT = "${env.GIT_COMMIT[0..7]}"
-        env.GIT_URL_CLEAN = env.GIT_URL.substring(0, env.GIT_URL.lastIndexOf('.'))
-        env.GIT_BRANCH_URL = "${env.GIT_URL_CLEAN}/tree/${env.GIT_BRANCH}"
-        env.GIT_COMMIT_URL = "${env.GIT_URL_CLEAN}/commit/${env.GIT_COMMIT}"
+        GIT_COMMIT_SHORT = "${env.GIT_COMMIT[0..7]}"
+        GIT_URL_CLEAN = env.GIT_URL.substring(0, env.GIT_URL.lastIndexOf('.'))
+        GIT_BRANCH_URL = "${env.GIT_URL_CLEAN}/tree/${env.GIT_BRANCH}"
+        GIT_COMMIT_URL = "${env.GIT_URL_CLEAN}/commit/${env.GIT_COMMIT}"
 
         BUILD_HEADER_FILE="${WORKSPACE}/themes/BC/layouts/partials/build-header.html"
     }
