@@ -134,7 +134,7 @@ pipeline {
                             ],
                             [
                                 "type": "mrkdwn",
-                                "text": "*Build number:*\n#${env.JOB_NAME}"
+                                "text": "*Build number:*\n#${env.BUILD_NUMBER}"
                             ]
                         ]
                     ],
@@ -175,7 +175,7 @@ pipeline {
                         "type": "header",
                         "text": [
                             "type": "plain_text",
-                            "text": "Build Status",
+                            "text": "Git Metadata",
                             "emoji": true
                         ]
                     ],
@@ -200,11 +200,9 @@ pipeline {
                         ]
                     ]
                 ]
-                // http://your-jenkins-server/blue/organizations/jenkins/${JOB_NAME}/detail/${JOB_NAME}/${BUILD_NUMBER}/pipeline
                 slackSend (
                     color: color,
                     channel: "${SLACK_NOTIFICATIONS_CHANNEL_DEFAULT}",
-                    //message: "*===STAGING===*\n${icon} *${currentBuild.currentResult}* <${env.BUILD_URL}|${env.JOB_NAME} #${env.BUILD_NUMBER}>\nGit\n    branch: <${env.GIT_BRANCH_URL}|${env.GIT_BRANCH}>\n    commit: <${env.GIT_COMMIT_URL}|${env.GIT_COMMIT_SHORT}>\n    message: ${env.GIT_COMMIT_MSG}\nStaging URL: <${HUGO_BRANCH_BASE_URL}hugo/${env.GIT_BRANCH}>"
                     blocks: blocks
                 )
             }
