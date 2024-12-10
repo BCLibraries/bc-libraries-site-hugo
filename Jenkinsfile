@@ -11,16 +11,31 @@ def STATUS_EMOJI_MAP = [
 pipeline {
     agent  { label 'staging' }
     environment {
-        GIT_COMMIT_SHORT = "${GIT_COMMIT[0..7]}"
-        GIT_URL_CLEAN = GIT_URL.substring(0, GIT_URL.lastIndexOf('.'))
-        GIT_BRANCH_URL = "${GIT_URL_CLEAN}/tree/${GIT_BRANCH}"
-        GIT_COMMIT_URL = "${GIT_URL_CLEAN}/commit/${GIT_COMMIT}"
+        env.GIT_COMMIT_SHORT = "${env.GIT_COMMIT[0..7]}"
+        env.GIT_URL_CLEAN = env.GIT_URL.substring(0, env.GIT_URL.lastIndexOf('.'))
+        env.GIT_BRANCH_URL = "${env.GIT_URL_CLEAN}/tree/${env.GIT_BRANCH}"
+        env.GIT_COMMIT_URL = "${env.GIT_URL_CLEAN}/commit/${env.GIT_COMMIT}"
+
         BUILD_HEADER_FILE="${WORKSPACE}/themes/BC/layouts/partials/build-header.html"
     }
     stages {
-        stage('Generate build header'){
+        stage('Generate build header') {
             steps {
                 script {
+                    // Get most recent commit message
+                    echo "Fetching the most recent commit message"
+                    env.GIT_COMMIT_MSG = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
+                    echo "env.GIT_COMMIT_MSG = ${env.GIT_COMMIT_MSG}"
+
+                    echo "List of used GIT_ vars:"
+                    echo "env.GIT_BRANCH       = ${env.GIT_BRANCH}"
+                    echo "env.GIT_COMMIT       = ${env.GIT_COMMIT}"
+                    echo "env.GIT_COMMIT_SHORT = ${env.GIT_COMMIT_SHORT}"
+                    echo "env.GIT_URL_CLEAN    = ${env.GIT_URL_CLEAN}"
+                    echo "env.GIT_BRANCH_URL   = ${env.GIT_BRANCH_URL}"
+                    echo "env.GIT_COMMIT_URL   = ${env.GIT_COMMIT_URL}"
+
+                    echo "Generate build header file"
                     sh """#!/bin/bash
                         # Update hardcoded variables in build header section
                         #
@@ -77,7 +92,7 @@ pipeline {
                     //   -s : where to read in files
                     //   -d : where to ouput generated files
                     //   -e : environment name (using "staging")
-                    //   -b : base url (using "https://libdev.bc.edu/{branch_name}")
+                    //   -b : base url (using "https://libdev.bc.edu/")
                     echo "Starting Hugo server..."
                     sh "hugo -s ${WORKSPACE} -d ${HUGO_OUTPUT_DIR} -e staging -b ${HUGO_BRANCH_BASE_URL}"
                 }
@@ -92,7 +107,7 @@ pipeline {
                 slackSend (
                     color: color,
                     channel: "${SLACK_NOTIFICATIONS_CHANNEL_DEFAULT}",
-                    message: "${icon} *${currentBuild.currentResult}* <${env.BUILD_URL}|${env.JOB_NAME} #${env.BUILD_NUMBER}>\nGit <${GIT_BRANCH_URL}|${GIT_BRANCH}> commit <${GIT_COMMIT_URL}|${GIT_COMMIT_SHORT}>"
+                    message: "*===STAGING===*\n${icon} *${currentBuild.currentResult}* <${env.BUILD_URL}|${env.JOB_NAME} #${env.BUILD_NUMBER}>\nGit\n    branch: <${env.GIT_BRANCH_URL}|${env.GIT_BRANCH}>\n    commit: <${env.GIT_COMMIT_URL}|${env.GIT_COMMIT_SHORT}>\n    message: ${env.GIT_COMMIT_MSG}\nStaging URL: <${HUGO_BRANCH_BASE_URL}/hugo/${env.GIT_BRANCH}>"
                 )
             }
         }
