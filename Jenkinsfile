@@ -103,10 +103,109 @@ pipeline {
             script {
                 def color = STATUS_COLOR_MAP[currentBuild.currentResult] ?: 'warning'
                 def icon  = STATUS_EMOJI_MAP[currentBuild.currentResult] ?: ':red_circle:'
+                blocks = [
+                    [
+                        "type": "header",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "Build Status",
+                            "emoji": true
+                        }
+                    ],
+                    [
+                        "type": "section",
+                        "fields": [
+                            {
+                                "type": "mrkdwn",
+                                "text": "*Environment:*\nSTAGING"
+                            },
+                            {
+                                "type": "mrkdwn",
+                                "text": "*Status:*\n${icon} *${currentBuild.currentResult}*"
+                            }
+                        ]
+                    ],
+                    [
+                        "type": "section",
+                        "fields": [
+                            {
+                                "type": "mrkdwn",
+                                "text": "*Branch:*\n<${env.GIT_BRANCH_URL}|${env.GIT_BRANCH}>"
+                            },
+                            {
+                                "type": "mrkdwn",
+                                "text": "*Build number:*\n#${env.JOB_NAME}"
+                            }
+                        ]
+                    ],
+                    [
+                        "type": "actions",
+                        "elements": [
+                            {
+                                "type": "button",
+                                "text": {
+                                    "type": "plain_text",
+                                    "text": ":page_facing_up: Build Logs",
+                                    "emoji": true
+                                },
+                                "value": "Jenkins Build Logs",
+                                "url": "${env.BUILD_URL}"
+                            }
+                        ]
+                    ],
+                    [
+                        "type": "actions",
+                        "elements": [
+                            {
+                                "type": "button",
+                                "text": {
+                                    "type": "plain_text",
+                                    "text": ":link: Staging server URL",
+                                    "emoji": true
+                                },
+                                "value": "Staging server URL",
+                                "url": "${HUGO_BRANCH_BASE_URL}hugo/${env.GIT_BRANCH}"
+                            }
+                        ]
+                    ],
+                    [
+                        "type": "divider"
+                    ],
+                    [
+                        "type": "header",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "Build Status",
+                            "emoji": true
+                        }
+                    ],
+                    [
+                        "type": "section",
+                        "fields": [
+                            {
+                                "type": "mrkdwn",
+                                "text": "*Branch:*\n<${env.GIT_BRANCH_URL}|${env.GIT_BRANCH}>"
+                            },
+                            {
+                                "type": "mrkdwn",
+                                "text": "*Commit:*\n<${env.GIT_COMMIT_URL}|${env.GIT_COMMIT_SHORT}>"
+                            }
+                        ]
+                    ],
+                    [
+                        "type": "section",
+                        "text": {
+                            "type": "mrkdwn",
+                            "text": "*Most recent commit message:*\n${env.GIT_COMMIT_MSG}"
+                        }
+                    ]
+                ]
+                // http://your-jenkins-server/blue/organizations/jenkins/${JOB_NAME}/detail/${JOB_NAME}/${BUILD_NUMBER}/pipeline
                 slackSend (
                     color: color,
                     channel: "${SLACK_NOTIFICATIONS_CHANNEL_DEFAULT}",
-                    message: "*===STAGING===*\n${icon} *${currentBuild.currentResult}* <${env.BUILD_URL}|${env.JOB_NAME} #${env.BUILD_NUMBER}>\nGit\n    branch: <${env.GIT_BRANCH_URL}|${env.GIT_BRANCH}>\n    commit: <${env.GIT_COMMIT_URL}|${env.GIT_COMMIT_SHORT}>\n    message: ${env.GIT_COMMIT_MSG}\nStaging URL: <${HUGO_BRANCH_BASE_URL}/hugo/${env.GIT_BRANCH}>"
+                    //message: "*===STAGING===*\n${icon} *${currentBuild.currentResult}* <${env.BUILD_URL}|${env.JOB_NAME} #${env.BUILD_NUMBER}>\nGit\n    branch: <${env.GIT_BRANCH_URL}|${env.GIT_BRANCH}>\n    commit: <${env.GIT_COMMIT_URL}|${env.GIT_COMMIT_SHORT}>\n    message: ${env.GIT_COMMIT_MSG}\nStaging URL: <${HUGO_BRANCH_BASE_URL}hugo/${env.GIT_BRANCH}>"
+                    blocks: blocks
                 )
             }
         }
