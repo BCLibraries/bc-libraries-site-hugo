@@ -118,7 +118,7 @@ pipeline {
                         "fields": [
                             [
                                 "type": "mrkdwn",
-                                "text": "*Status:*\n${icon} ${currentBuild.currentResult}"
+                                "text": "*Status:*\n${currentBuild.currentResult}"
                             ],
                             [
                                 "type": "mrkdwn",
