@@ -17,6 +17,9 @@ pipeline {
         GIT_COMMIT_URL = "${env.GIT_URL_CLEAN}/commit/${env.GIT_COMMIT}"
 
         BUILD_HEADER_FILE="${WORKSPACE}/themes/BC/layouts/partials/build-header.html"
+
+        HUGO_OUTPUT_DIR = "${HUGO_STAGING_OUTPUT_ROOT_DIR}/${GIT_BRANCH}"
+        HUGO_BRANCH_BASE_URL = "${HUGO_STAGING_BRANCH_BASE_URL}"
     }
     stages {
         stage('Generate build header') {
@@ -24,7 +27,7 @@ pipeline {
                 script {
                     // Get most recent commit message
                     echo "Fetching the most recent commit message"
-                    env.GIT_COMMIT_MSG = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
+                    env.GIT_COMMIT_MSG = sh(returnStdout: true, script: "git log -n 1 --pretty=%B ${env.GIT_COMMIT}").trim()
                     echo "env.GIT_COMMIT_MSG = ${env.GIT_COMMIT_MSG}"
 
                     echo "List of used GIT_ vars:"
@@ -76,10 +79,6 @@ pipeline {
             }
         }
         stage('Build') {
-            environment { 
-                HUGO_OUTPUT_DIR = "${HUGO_STAGING_OUTPUT_ROOT_DIR}/${GIT_BRANCH}"
-                HUGO_BRANCH_BASE_URL = "${HUGO_STAGING_BRANCH_BASE_URL}"
-            }
             steps {
                 script {
                     // Create output directory for this branch if it doesn't exist
