@@ -37,6 +37,7 @@ pipeline {
                     echo "env.GIT_URL_CLEAN    = ${env.GIT_URL_CLEAN}"
                     echo "env.GIT_BRANCH_URL   = ${env.GIT_BRANCH_URL}"
                     echo "env.GIT_COMMIT_URL   = ${env.GIT_COMMIT_URL}"
+                    echo "env.CHANGE_AUTHOR_DISPLAY_NAME = ${CHANGE_AUTHOR_DISPLAY_NAME}"
 
                     echo "Generate build header file"
                     sh """#!/bin/bash
@@ -105,13 +106,10 @@ pipeline {
                 def icon  = STATUS_EMOJI_MAP[currentBuild.currentResult] ?: ':red_circle:'
                 blocks = [
                     [
-                        "type": "divider"
-                    ],
-                    [
                         "type": "header",
                         "text": [
                             "type": "plain_text",
-                            "text": "Build Status",
+                            "text": "${icon} [STAGING] Build Status",
                             "emoji": true
                         ]
                     ],
@@ -120,11 +118,11 @@ pipeline {
                         "fields": [
                             [
                                 "type": "mrkdwn",
-                                "text": "*Environment:*\nSTAGING"
+                                "text": "*Status:*\n${icon} ${currentBuild.currentResult}"
                             ],
                             [
                                 "type": "mrkdwn",
-                                "text": "*Status:*\n${icon} *${currentBuild.currentResult}*"
+                                "text": "*Environment:*\nSTAGING"
                             ]
                         ]
                     ],
@@ -142,13 +140,33 @@ pipeline {
                         ]
                     ],
                     [
+                        "type": "section",
+                        "fields": [
+                            [
+                                "type": "mrkdwn",
+                                "text": "*Commit:*\n<${env.GIT_COMMIT_URL}|${env.GIT_COMMIT_SHORT}>"
+                            ],
+                            [
+                                "type": "mrkdwn",
+                                "text": "*Author:*\n${env.CHANGE_AUTHOR_DISPLAY_NAME}"
+                            ],
+                        ]
+                    ],
+                    [
+                        "type": "section",
+                        "text": [
+                            "type": "mrkdwn",
+                            "text": "*Commit message:*\n> ${env.GIT_COMMIT_MSG}"
+                        ]
+                    ],
+                    [
                         "type": "actions",
                         "elements": [
                             [
                                 "type": "button",
                                 "text": [
                                     "type": "plain_text",
-                                    "text": ":page_facing_up: Build Logs",
+                                    "text": ":page_facing_up: Jenkins build logs",
                                     "emoji": true
                                 ],
                                 "style": "primary",
@@ -158,42 +176,12 @@ pipeline {
                                 "type": "button",
                                 "text": [
                                     "type": "plain_text",
-                                    "text": ":link: Staging server URL",
+                                    "text": ":link: Staging server view",
                                     "emoji": true
                                 ],
                                 "style": "primary",
                                 "url": "${HUGO_BRANCH_BASE_URL}hugo/${env.GIT_BRANCH}"
                             ]
-                        ]
-                    ],
-                    [
-                        "type": "divider"
-                    ],
-                    [
-                        "type": "section",
-                        "text": [
-                            "type": "mrkdwn",
-                            "text": "*Git Metadata*"
-                        ]
-                    ],
-                    [
-                        "type": "section",
-                        "fields": [
-                            [
-                                "type": "mrkdwn",
-                                "text": "*Branch:*\n<${env.GIT_BRANCH_URL}|${env.GIT_BRANCH}>"
-                            ],
-                            [
-                                "type": "mrkdwn",
-                                "text": "*Commit:*\n<${env.GIT_COMMIT_URL}|${env.GIT_COMMIT_SHORT}>"
-                            ]
-                        ]
-                    ],
-                    [
-                        "type": "section",
-                        "text": [
-                            "type": "mrkdwn",
-                            "text": "*Most recent commit message:*\n> ${env.GIT_COMMIT_MSG}"
                         ]
                     ],
                     [
