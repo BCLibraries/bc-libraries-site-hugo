@@ -106,66 +106,66 @@ pipeline {
                 blocks = [
                     [
                         "type": "header",
-                        "text": {
+                        "text": [
                             "type": "plain_text",
                             "text": "Build Status",
                             "emoji": true
-                        }
-                    ],
-                    [
-                        "type": "section",
-                        "fields": [
-                            {
-                                "type": "mrkdwn",
-                                "text": "*Environment:*\nSTAGING"
-                            },
-                            {
-                                "type": "mrkdwn",
-                                "text": "*Status:*\n${icon} *${currentBuild.currentResult}*"
-                            }
                         ]
                     ],
                     [
                         "type": "section",
                         "fields": [
-                            {
+                            [
+                                "type": "mrkdwn",
+                                "text": "*Environment:*\nSTAGING"
+                            ],
+                            [
+                                "type": "mrkdwn",
+                                "text": "*Status:*\n${icon} *${currentBuild.currentResult}*"
+                            ]
+                        ]
+                    ],
+                    [
+                        "type": "section",
+                        "fields": [
+                            [
                                 "type": "mrkdwn",
                                 "text": "*Branch:*\n<${env.GIT_BRANCH_URL}|${env.GIT_BRANCH}>"
-                            },
-                            {
+                            ],
+                            [
                                 "type": "mrkdwn",
                                 "text": "*Build number:*\n#${env.JOB_NAME}"
-                            }
+                            ]
                         ]
                     ],
                     [
                         "type": "actions",
                         "elements": [
-                            {
+                            [
                                 "type": "button",
-                                "text": {
+                                "text": [
                                     "type": "plain_text",
                                     "text": ":page_facing_up: Build Logs",
                                     "emoji": true
-                                },
+                                ],
                                 "value": "Jenkins Build Logs",
                                 "url": "${env.BUILD_URL}"
-                            }
+                            ]
                         ]
                     ],
                     [
                         "type": "actions",
                         "elements": [
-                            {
+                            [
                                 "type": "button",
-                                "text": {
+                                "text": [
                                     "type": "plain_text",
                                     "text": ":link: Staging server URL",
                                     "emoji": true
-                                },
+                                ],
                                 "value": "Staging server URL",
                                 "url": "${HUGO_BRANCH_BASE_URL}hugo/${env.GIT_BRANCH}"
-                            }
+                            ]
                         ]
                     ],
                     [
@@ -173,31 +173,31 @@ pipeline {
                     ],
                     [
                         "type": "header",
-                        "text": {
+                        "text": [
                             "type": "plain_text",
                             "text": "Build Status",
                             "emoji": true
-                        }
-                    ],
-                    [
-                        "type": "section",
-                        "fields": [
-                            {
-                                "type": "mrkdwn",
-                                "text": "*Branch:*\n<${env.GIT_BRANCH_URL}|${env.GIT_BRANCH}>"
-                            },
-                            {
-                                "type": "mrkdwn",
-                                "text": "*Commit:*\n<${env.GIT_COMMIT_URL}|${env.GIT_COMMIT_SHORT}>"
-                            }
                         ]
                     ],
                     [
                         "type": "section",
-                        "text": {
+                        "fields": [
+                            [
+                                "type": "mrkdwn",
+                                "text": "*Branch:*\n<${env.GIT_BRANCH_URL}|${env.GIT_BRANCH}>"
+                            ],
+                            [
+                                "type": "mrkdwn",
+                                "text": "*Commit:*\n<${env.GIT_COMMIT_URL}|${env.GIT_COMMIT_SHORT}>"
+                            ]
+                        ]
+                    ],
+                    [
+                        "type": "section",
+                        "text": [
                             "type": "mrkdwn",
                             "text": "*Most recent commit message:*\n${env.GIT_COMMIT_MSG}"
-                        }
+                        ]
                     ]
                 ]
                 // http://your-jenkins-server/blue/organizations/jenkins/${JOB_NAME}/detail/${JOB_NAME}/${BUILD_NUMBER}/pipeline
