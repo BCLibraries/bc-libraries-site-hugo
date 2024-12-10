@@ -37,7 +37,7 @@ pipeline {
                     echo "env.GIT_URL_CLEAN    = ${env.GIT_URL_CLEAN}"
                     echo "env.GIT_BRANCH_URL   = ${env.GIT_BRANCH_URL}"
                     echo "env.GIT_COMMIT_URL   = ${env.GIT_COMMIT_URL}"
-                    echo "env.CHANGE_AUTHOR_DISPLAY_NAME = ${CHANGE_AUTHOR_DISPLAY_NAME}"
+                    echo "env.GIT_AUTHOR_NAME  = ${env.GIT_AUTHOR_NAME}"
 
                     echo "Generate build header file"
                     sh """#!/bin/bash
@@ -148,7 +148,7 @@ pipeline {
                             ],
                             [
                                 "type": "mrkdwn",
-                                "text": "*Author:*\n${env.CHANGE_AUTHOR_DISPLAY_NAME}"
+                                "text": "*Author:*\n${env.GIT_AUTHOR_NAME}"
                             ],
                         ]
                     ],
