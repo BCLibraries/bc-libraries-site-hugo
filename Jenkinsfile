@@ -176,7 +176,7 @@ pipeline {
                                 "type": "button",
                                 "text": [
                                     "type": "plain_text",
-                                    "text": ":link: Staging server view",
+                                    "text": ":desktop_computer: View on staging server",
                                     "emoji": true
                                 ],
                                 "style": "primary",
