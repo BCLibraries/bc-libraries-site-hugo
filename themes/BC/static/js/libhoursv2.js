@@ -17,7 +17,7 @@ $(document).ready(function () {
         new Location("508", "Educational Resource Center", "https://libguides.bc.edu/erc/hours", "library", "erc"),
         new Location("509", "Law Library", "https://www.bc.edu/bc-web/schools/law/sites/students/library/using/hours.html", "library", "law"),
         new Location("510", "Social Work Library", "https://libguides.bc.edu/socialwork/hours", "library", "swl"),
-        new Location("511", "Theology & Ministry Library", "https://libguides.bc.edu/tml/hours", "library", "tml")
+        new Location("511", "Theology and Ministry Library", "https://libguides.bc.edu/tml/hours", "library", "tml")
     ].filter(loc => {
         return SHOW_DEPARTMENTS || loc.category !== 'department'
     });
