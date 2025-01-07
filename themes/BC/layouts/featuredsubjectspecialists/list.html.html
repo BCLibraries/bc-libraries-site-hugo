@@ -26,7 +26,19 @@
     {{/* Load librarian info from LibGuides API. This data is looked up
         once and cached. To clear the cache, start Hugo with --ignoreCache 
         set or delete the cache files: rm -r $TMPDIR/hugo_cache/ */}}
-    {{ $all_librarians_data := getJSON "https://lgapi-us.libapps.com/1.1/accounts?site_id=94&key=a8d4316f3140239e36f101209d9f1b36&expand[]=subjects&expand[]=profile" }}
+    {{ $all_librarians_data := dict }}
+    {{ $url := "https://lgapi-us.libapps.com/1.1/accounts?site_id=94&key=a8d4316f3140239e36f101209d9f1b36&expand[]=subjects&expand[]=profile" }}
+    {{ with resources.GetRemote $url }}
+        {{ with .Err }}
+            {{/* errorf "%s" . */}}
+            <script>console.error("There was an error loading librarian content from LibApps: {{ $url }}");</script>
+        {{ else }}
+            {{ $all_librarians_data = . | transform.Unmarshal }}
+        {{ end }}
+    {{ else }}
+        {{/* errorf "Unable to get remote resource %q" $url */}}
+        <script>console.error("Unable to get remote resource: {{ $url }}");</script>
+    {{ end }}
     
     {{/* Assign a default background image if one is not set in the librarian_name.json file */}}
     {{ $background := "https://library.bc.edu/images/homepage/featuredlibrarian/defaultbackground-1200x675.jpg" }}

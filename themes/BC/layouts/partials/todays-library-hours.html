@@ -1,5 +1,16 @@
-{{ $dataJSON := getJSON "https://library.bc.edu/bc-hours/api_hours_today.php" }}
-
+{{ $dataJSON := dict }}
+{{ $url := "https://library.bc.edu/bc-hours/api_hours_today.php" }}
+{{ with resources.GetRemote $url }}
+  {{ with .Err }}
+    {{/* errorf "%s" . */}}
+    <script>console.error("There was an error loading hours content from LibApps: {{ $url }}");</script>
+  {{ else }}
+    {{ $dataJSON = . | transform.Unmarshal }}
+  {{ end }}
+{{ else }}
+  {{/* errorf "Unable to get remote resource %q" $url */}}
+  <script>console.error("Unable to get remote resource: {{ $url }}");</script>
+{{ end }}
 
 <div class="table-hours">
 
