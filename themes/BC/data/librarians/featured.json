@@ -57,6 +57,14 @@
                 "url": "https://libguides.bc.edu/philosophyportal"
             },
             {
+                "id": "12890",
+                "parent_id": "0",
+                "name": "Romance Languages & Literatures",
+                "slug_id": "145018",
+                "slug": "subjects\/romance-languages-literatures",
+                "url": "https://libguides.bc.edu/subjects/romance-languages-literatures"
+            },
+            {
                 "id": "12892",
                 "parent_id": "0",
                 "name": "Theology",
@@ -130,49 +138,6 @@
         ]
     },
     {
-        "name": "Larry Busenbark",
-        "title": "Metadata Specialist/Bibliographer",
-        "department": "Metadata Creation & Management",
-        "active": true,
-        "profile_id": "10701",
-        "featured_background": "",
-        "featured_background_source": "",
-        "featured_background_caption": "",
-        "featured_background_type": "sierpinski",
-        "featured_guides": [
-            {
-                "guide_name": "French Language and Literature",
-                "guide_link": "https://libguides.bc.edu/french"
-            },
-            {
-                "guide_name": "Italian Language and Literature",
-                "guide_link": "https://libguides.bc.edu/italian"
-            },
-            {
-                "guide_name": "German Studies Portal",
-                "guide_link": "https://libguides.bc.edu/germanportal"
-            }
-        ],
-        "subjects": [
-            {
-                "id": "12884",
-                "parent_id": "0",
-                "name": "German Language & Literature",
-                "slug_id": "144983",
-                "slug": "subjects\/german-language-literature",
-                "url": "https://libguides.bc.edu/germanportal"
-            },
-            {
-                "id": "12890",
-                "parent_id": "0",
-                "name": "Romance Languages & Literatures",
-                "slug_id": "145018",
-                "slug": "subjects\/romance-languages-literatures",
-                "url": "https://libguides.bc.edu/subjects/romance-languages-literatures"
-            }
-        ]
-    },
-    {
         "name": "Nina Bogdanovsky",
         "title": "Senior Liaison Librarian",
         "department": "Collection Development & Research",
@@ -212,6 +177,14 @@
                 "slug_id": "144979",
                 "slug": "subjects\/film",
                 "url": "https://libguides.bc.edu/filmportal"
+            },
+            {
+                "id": "12884",
+                "parent_id": "0",
+                "name": "German Language & Literature",
+                "slug_id": "144983",
+                "slug": "subjects\/german-language-literature",
+                "url": "https://libguides.bc.edu/germanportal"
             },
             {
                 "id": "30939",
