@@ -764,7 +764,7 @@
      line-height: 1.4;
  }
 
- #mm-help-aal .aal-box a.aal-icon {
+ #mm-help-aal .aal-box .aal-icon {
      font-size:35px!important;
      color: $white-text;
      display: block;
@@ -772,10 +772,11 @@
      width: 55px;
  }
 
- #mm-help-aal .aal-box a.aal-icon i {
+ #mm-help-aal .aal-box .aal-icon i {
      padding: 10px;
      width: 100%;
      color: $white-text;
+     font-weight: 400;
  }
 
  #mm-help-aal .aal-box h4 {
@@ -824,6 +825,30 @@
 #mm-help-about .panel-body .media img {
     max-width: 120px!important;
 }
+
+#mm-help-aal .panel-body .media a {
+    text-decoration: none;
+    color: #666;
+}
+
+#mm-help-aal .panel-body .media a .media-right .h4style {
+    color:#3076AB;
+}
+
+#mm-help-aal .panel-body .media a:hover .media-right .h4style,
+#mm-help-aal .panel-body .media a:focus .media-right .h4style {
+    text-decoration: underline;
+}
+
+/*
+#mm-help-aal .panel-body .media a .aal-icon {
+    background-color: #31b0d5 !important;
+}
+
+#mm-help-aal .panel-body .media a:hover .aal-icon {
+    transition: background-color .4s ease-in-out;
+}
+*/
 
 #mm-help-about .panel-heading {
     padding: 0;
