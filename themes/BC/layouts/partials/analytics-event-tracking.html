@@ -1,74 +1,101 @@
 <script>
 $(function () {
-    // Get a clean version of the page title
-    var page_title_clean = $(document).find("title").text().replace(" | Boston College Libraries", "").replace(" - Libraries at Boston College", "");
+    /** 
+     * Get a clean version of the page title that excludes the title suffix
+     * @type {string} 
+     */
+    let page_title_clean = $(document).find("title").text().replace(" | Boston College Libraries", "").replace(" - Libraries at Boston College", "");
 
-    // Determine if this is the homepage
-    var is_homepage_bool = $('#main-body.homepage').length > 0;
+    /** 
+     * Determine if this is the homepage
+     * @type {boolean} 
+     */
+    let is_homepage_bool = $('#main-body.homepage').length > 0;
 
-    //
-    // Megamenu hover events
-    //
-
+    // Trigger an event when the user enters the megamenu
     $('#megamenu-refresh ul.nav li.dropdown').mouseenter(function() {
-        var menuItemLabel = $(this).find("a.menu-option").text().trim();
-        // send custom event to GTM
+        /** 
+         * Get the menu item label
+         * @type {string} 
+         */
+        let menuItemLabel = $(this).find("a.menu-option").text().trim();
+
+        // Send GTM event 
         dataLayer.push({
             'event': 'hover_menu_item',
             'menu_item_label': menuItemLabel,
             'page_title_clean': page_title_clean,
             'is_homepage': is_homepage_bool
         });
+        // Send Matomo event
         _paq.push(['trackEvent', 'megamenu', 'hover', menuItemLabel]);
     });
 
+    // Trigger an event when the user enters the library box (in About) in the mega menu
     $("#megamenu-refresh ul.nav .library-box .lib-box .panel-body").mouseenter(function(){
-        var menuItemPaneLabel = $(this).find("a.lib-name").html();
-        // send custom event to GTM
+        /** 
+         * Get the container label of the mega menu library pane
+         * @type {string} 
+         */
+        let menuItemPaneLabel = $(this).find("a.lib-name").html();
+
+        // Send GTM event
         dataLayer.push({
             'event': 'hover_menu_libpane',
             'menu_libpane_label': menuItemPaneLabel,
             'page_title_clean': page_title_clean,
             'is_homepage': is_homepage_bool
         });
+        // Send Matomo event
         _paq.push(['trackEvent', 'librarypanes', 'hover', menuItemPaneLabel]);
     });
 
-    //
-    // Chat With Us button click event
-    //
-
+    // Trigger an event when the user clicks the floating Chat With Us button
     $("a.askuswidget").click(function(e){
-        var src = window.location.href;
+        /** 
+         * Get the page URL
+         * @type {string} 
+         */
+        let src = window.location.href;
         _paq.push(['trackEvent', 'chat-widget', 'click', src]);
+        console.log("triggered: chat-widget");
     });
 
-    //
-    // Chat With Us Megamenu click event
-    //
-
+    // Trigger an event when the user clicks the Chat With Us button in the mega menu
     $("a.askuswidget-mm").click(function(e){
-        var src = window.location.href;
+        /** 
+         * Get the page URL
+         * @type {string} 
+         */
+        let src = window.location.href;
         _paq.push(['trackEvent', 'chat-widget-mm', 'click', src]);
+        console.log("triggered: chat-widget-mm");
     });
 
-    //
-    //  Other click events
-    //
-
+    /**
+     * Generate custom click events.
+     * @param {jQuery} jqObj The jQuery object to attach a click event.
+     * @param {string} label The event's label.
+     * @return {void}
+     */
     function addClickEvents(jqObj, label){
         jqObj.click(function(e){
-            var $this = $(this);
-            var url = $this.attr("href");
-            var dataID = "[none]";
-            var dataTag = $this.parents("[data-tag=ga-tag]");
+            let 
+                /** @type {object} */ $this = $(this),
+                /** @type {string} */ url = $this.attr("href"),
+                /** @type {string} */ dataID = "[none]",
+                /** @type {jQuery} */ dataTag = $this.parents("[data-tag=ga-tag]");
+
+            // Check if there is a 'data-tag' element in the parent DOM 
+            // that has a value of 'ga-tag'
             if (dataTag && dataTag.length) {
                 dataID = dataTag.attr("id");
                 if (typeof dataID === 'undefined') {
                     dataID = "[undefined]"
                 }
             }
-            // send custom event to GTM
+
+            // Send GTM event
             dataLayer.push({
                 'event': label,
                 'page_section': dataID,
@@ -76,20 +103,32 @@ $(function () {
                 'page_title_clean': page_title_clean,
                 'is_homepage': is_homepage_bool,
             });
+            // Send Matomo event
             _paq.push(['trackEvent', label, dataID, url]);
+
+            console.log("triggered: " + label + " from " + dataID);
         });
     }
 
+    // Send a special event just for links on the homepage
     if (is_homepage_bool) {
-        var homepage_anchors = $('body.mainhomepage a').not(".askuswidget, .askuswidget-mm, .accessibility-text");
+        /**
+         * Find jQuery elements that exist in the body of the page,
+         * but are not the Ask Us widget or the skip link.
+         * @type {jQuery}
+         */
+        let homepage_anchors = $('body.mainhomepage a').not(".askuswidget, .askuswidget-mm, .accessibility-text");
         addClickEvents(homepage_anchors, "click_homepage");
     }
     
-    var lib_footer_anchors = $('#lib-footer a');
-    var bc_footer_anchors  = $('#bc-footer a');
-    var bc_header_anchors  = $('#bclib-header a');
-    var megamenu_anchors   = $('#megamenu a');
+    // Get jQuery objects for various sections of the page
+    let 
+    /** @type {jQuery} */ lib_footer_anchors = $('#lib-footer a'),
+    /** @type {jQuery} */ bc_footer_anchors  = $('#bc-footer a'),
+    /** @type {jQuery} */ bc_header_anchors  = $('#bclib-header a'),
+    /** @type {jQuery} */ megamenu_anchors   = $('#megamenu a').not(".askuswidget-mm");
 
+    // Call addClickEvents() for various page sections
     addClickEvents(lib_footer_anchors, "click_footer");
     addClickEvents(bc_footer_anchors, "click_footer");
     addClickEvents(bc_header_anchors, "click_header");
