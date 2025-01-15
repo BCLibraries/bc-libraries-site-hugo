@@ -50,27 +50,44 @@ $(function () {
         _paq.push(['trackEvent', 'librarypanes', 'hover', menuItemPaneLabel]);
     });
 
-    // Trigger an event when the user clicks the floating Chat With Us button
-    $("a.askuswidget").click(function(e){
-        /** 
-         * Get the page URL
-         * @type {string} 
-         */
-        let src = window.location.href;
-        _paq.push(['trackEvent', 'chat-widget', 'click', src]);
-        console.log("triggered: chat-widget");
-    });
+    /**
+     * Generate custom click events for Chat With Us widgets.
+     * @param {jQuery} jqObj The jQuery object to attach a click event.
+     * @param {string} label The event's label.
+     * @return {void}
+     */
+    function addClickEventChatWithUs(jqObj, label) {
+        jqObj.click(function(e){
+            /** 
+             * Get the page URL
+             * @type {string} 
+            */
+            let src = window.location.href;
 
-    // Trigger an event when the user clicks the Chat With Us button in the mega menu
-    $("a.askuswidget-mm").click(function(e){
-        /** 
-         * Get the page URL
-         * @type {string} 
-         */
-        let src = window.location.href;
-        _paq.push(['trackEvent', 'chat-widget-mm', 'click', src]);
-        console.log("triggered: chat-widget-mm");
-    });
+            // Send GTM event
+            dataLayer.push({
+                'event': label,
+                'page_title_clean': page_title_clean,
+                'is_homepage': is_homepage_bool,
+            });
+
+            // Send Matomo event
+            _paq.push(['trackEvent', label, 'click', src]);
+
+            console.log("triggered: " + label);
+        });
+    }
+
+    // Get jQuery objects for various Chat With Us widgets
+    let 
+    /** @type {jQuery} */ aal_mm = $('a.askuswidget-mm'),
+    /** @type {jQuery} */ aal_home = $('a.askuswidget-home'),
+    /** @type {jQuery} */ aal_float = $('a.askuswidget');
+
+    // Call addClickEvents() for the three Chat With Us widgets
+    addClickEventChatWithUs(aal_mm, "chat-widget-mm");
+    addClickEventChatWithUs(aal_home, "chat-widget-home");
+    addClickEventChatWithUs(aal_float, "chat-widget");
 
     /**
      * Generate custom click events.
@@ -103,6 +120,7 @@ $(function () {
                 'page_title_clean': page_title_clean,
                 'is_homepage': is_homepage_bool,
             });
+
             // Send Matomo event
             _paq.push(['trackEvent', label, dataID, url]);
 
