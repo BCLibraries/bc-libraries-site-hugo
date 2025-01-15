@@ -770,6 +770,7 @@
      display: block;
      line-height: 1;
      width: 55px;
+     border-radius: 8px;
  }
 
  #mm-help-aal .aal-box .aal-icon i {
@@ -826,29 +827,69 @@
     max-width: 120px!important;
 }
 
-#mm-help-aal .panel-body .media a {
-    text-decoration: none;
-    color: #666;
+#mm-help-aal a.aal-panel-wrapper {
+    display: block;
 }
 
-#mm-help-aal .panel-body .media a .media-right .h4style {
+#mm-help-aal a.aal-panel-wrapper:hover,
+#mm-help-aal a.aal-panel-wrapper:focus {
+    text-decoration: none;
+    outline: 2px solid blue;
+}
+
+#mm-help-aal .panel-body .media {
+    text-decoration: none;
+    color: #666;
+    display: block;
+}
+
+#mm-help-aal a.aal-panel-wrapper .h4style {
     color:#3076AB;
 }
 
-#mm-help-aal .panel-body .media a:hover .media-right .h4style,
-#mm-help-aal .panel-body .media a:focus .media-right .h4style {
-    text-decoration: underline;
+#mm-help-aal a.aal-panel-wrapper .aal-icon {
+    transition: background-color .4s ease-in-out;
+}
+
+#mm-help-aal a.aal-panel-wrapper .chat-icon-link.aal-icon, 
+#mm-help-aal a.aal-panel-wrapper #chat-icon-link.aal-icon {
+    background-color: $bc-brand-gold;
+}
+
+#mm-help-aal a.aal-panel-wrapper .email-icon-link.aal-icon, 
+#mm-help-aal a.aal-panel-wrapper #email-icon-link.aal-icon {
+    background-color: #a25729;
+}
+
+#mm-help-aal a.aal-panel-wrapper .meet-icon-link.aal-icon,
+#mm-help-aal a.aal-panel-wrapper #meet-icon-link.aal-icon  {
+    background-color: #204375;
+}
+
+#mm-help-aal a.aal-panel-wrapper .visit-icon-link.aal-icon,
+#mm-help-aal a.aal-panel-wrapper #visit-icon-link.aal-icon {
+    background-color: $bc-primary-light-gold;
+}
+
+#mm-help-aal a.aal-panel-wrapper:hover .chat-icon-link.aal-icon,
+#mm-help-aal a.aal-panel-wrapper:hover .email-icon-link.aal-icon,
+#mm-help-aal a.aal-panel-wrapper:hover .meet-icon-link.aal-icon,
+#mm-help-aal a.aal-panel-wrapper:hover .visit-icon-link.aal-icon,
+#mm-help-aal a.aal-panel-wrapper:hover #visit-icon-link.aal-icon,
+#mm-help-aal a.aal-panel-wrapper:focus .chat-icon-link.aal-icon,
+#mm-help-aal a.aal-panel-wrapper:focus .email-icon-link.aal-icon,
+#mm-help-aal a.aal-panel-wrapper:focus .meet-icon-link.aal-icon,
+#mm-help-aal a.aal-panel-wrapper:focus .visit-icon-link.aal-icon,
+#mm-help-aal a.aal-panel-wrapper:focus #visit-icon-link.aal-icon {
+    background-color: #31b0d5;
 }
 
 /*
-#mm-help-aal .panel-body .media a .aal-icon {
-    background-color: #31b0d5 !important;
-}
-
-#mm-help-aal .panel-body .media a:hover .aal-icon {
+#mm-help-aal a:hover .panel-body .media.aal-icon {
     transition: background-color .4s ease-in-out;
 }
 */
+
 
 #mm-help-about .panel-heading {
     padding: 0;
