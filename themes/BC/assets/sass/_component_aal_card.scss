@@ -7,6 +7,15 @@
     .aal-box-container {
         .aal-box-wrapper {
             padding-bottom: 0rem;
+
+            .media-description {
+                .media-description-full {
+                    display: none;
+                }
+                .media-description-abbreviated {
+                    display: block!important;
+                }
+            }
         }
     }
 }
