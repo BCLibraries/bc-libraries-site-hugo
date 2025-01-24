@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: $black-text;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+a {
+    color: #2f7ab9; /* BC link color */
+}
+
+.accessibility-text {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.alert-hours {
+    margin-bottom:1rem;
+    padding: 1rem;
+}
+
+#skiplink {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+
+    &:active,
+    &:focus,
+    &:hover {
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        background-color: $white-body;
+        padding: 4px;
+    }
+}
+
+.caption-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2px 10px;
+    background-color: rgba(16, 14, 15, .85);
+    color: $white-text;
+    font-size: 12px;
+    font-weight: 200;
+
+    a {
+        color: $white-text;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Landscape phones and portrait tablets
+@media (max-width: 767px) {
+    .caption-link {
+        display: none;
+    }
+}

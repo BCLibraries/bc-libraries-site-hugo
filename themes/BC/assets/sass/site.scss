@@ -1,17 +1,48 @@
 // Styles used on library.bc.edu.
 @import 'variables/colors';
 
-@import 'refresh_clean';
-@import 'megamenu_clean';
-@import '_component_aal_card';
-@import 'footer_clean';
-@import 'refresh_content_rows';
-@import 'notification';
+// Core styles
+@import 'core';
+@import 'core_notifications';
+@import 'core_bootstrap_override';
+@import 'core_refresh';
+@import 'core_header_bc';
+@import 'core_megamenu';
+@import 'core_footer_bc';
+@import 'core_footer_lib';
+@import 'component_aal_card';
+@import 'original_refresh_content_rows';
+
+// Unused core styling
+// @import 'component_potpourri';
+
+// Homepage styles
 @import 'homepage';
-@import 'homepage-alternate-header';
-@import 'beta-button';
-@import 'exhibit-refresh';
-@import 'facpub-refresh';
-@import 'social-media-highlight';
-@import 'bento';
-@import 'news';
+@import 'homepage_alternate_header';
+@import 'homepage_quicklinks';
+@import 'homepage_featured_tip';
+@import 'homepage_featured_subject_specialists';
+@import 'homepage_news';
+@import 'homepage_explore_collections';
+@import 'homepage_highlight';
+@import 'homepage_highlight_socialmedia';
+@import 'homepage_component_burns_cat_sketch';
+
+// Unused homepage content styling
+// @import 'homepage_virtual_pet_therapy';
+// @import 'homepage_services_at_bc';
+// @import 'homepage_exhibits';
+// @import 'homepage_highlight_digital_scholarship';
+// @import 'homepage_highlight_digital_collection';
+// @import 'homepage_facultypublication';
+// @import 'homepage_beta_button';
+// @import 'homepage_potpourri';
+
+// Page styles
+@import 'page_bento';
+@import 'page_exhibits';
+@import 'page_news';
+@import 'original_exhibit-refresh';
+@import 'original_facpub-refresh';
+
+@import 'print';

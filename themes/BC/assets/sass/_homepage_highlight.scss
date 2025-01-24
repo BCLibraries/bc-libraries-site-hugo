@@ -1,0 +1,49 @@
+.leftBottom,
+.leftTop,
+.rightTop,
+.rightBottom {
+    position: relative;
+}
+
+.leftBottom .container-fluid .pull-right,
+.leftTop .container-fluid .pull-right,
+.rightTop .container-fluid .pull-right,
+.rightBottom .container-fluid .pull-right {
+    position: absolute;
+}
+
+.leftTop .container-fluid .pull-right {
+    left: 0;
+    top: 20px;
+}
+
+.rightTop .container-fluid .pull-right {
+    top: 20px;
+    right: 0;
+}
+
+.leftBottom .container-fluid .pull-right {
+    left: 0;
+    bottom: 20px;
+}
+
+.rightBottom .container-fluid .pull-right {
+    bottom: 20px;
+    right: 0;
+}
+
+.leftBottom .container-fluid .pull-right .content,
+.leftTop .container-fluid .pull-right .content,
+.rightTop .container-fluid .pull-right .content,
+.rightBottom .container-fluid .pull-right .content {
+    color: $white-text;
+    display: table;
+    padding: 40px 40px;
+    max-width: 60%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.rightTop .container-fluid .pull-right .content,
+.rightBottom .container-fluid .pull-right .content {
+    float: right;
+}

@@ -1,0 +1,49 @@
+
+// Burns cat sketch highlight
+#socialmedia-highlight .burns-cat-sketch {
+    font-size: 16px;
+    width: 100%;
+    min-height: 150px;
+    height: 600px;
+}
+
+.burns-cat-sketch__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -250px;
+    height: 900px;
+}
+
+@media (max-width: 1199px) {
+    #socialmedia-highlight .burns-cat-sketch {
+        height: 550px;
+    }
+
+    .burns-cat-sketch__image {
+        object-position: 0;
+        height: 550px;
+    }
+}
+@media (max-width: 1023px) {
+    #socialmedia-highlight .burns-cat-sketch {
+        height: 500px;
+    }
+
+    .burns-cat-sketch__image {
+        height: 500px;
+    }
+}
+@media (max-width: 767px) {
+    #socialmedia-highlight .burns-cat-sketch {
+        height: 700px;
+    }
+    .burns-cat-sketch__image {
+        object-fit: contain;
+        height: 200px;
+        padding: 0 1em;
+        clear: both;
+    }
+    #socialmedia-highlight .burns-cat-sketch__info {
+        position: relative;
+    }
+}

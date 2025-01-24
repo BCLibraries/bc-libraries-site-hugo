@@ -1,0 +1,221 @@
+// Welcome Back Students
+#welcome-back-students-container {
+    margin-top: 2rem;
+}
+
+#welcome-back-message-wrapper {
+    font-size: 16px;
+    background-color: #FBCD26;
+    color: $black-text;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#welcome-back-message-wrapper h2 {
+    color:$black-text;
+    padding: 0 0 1rem 0;
+    margin: 0;
+}
+
+// Welcome new students
+#welcome-new-students {
+    margin-bottom: 4rem;
+}
+
+#welcome-new-students .intro {
+    font-size: large;
+}
+
+// Visitation/Vaccination alert box
+#visitation-alert {
+    background-color: #f8c21c;
+    border-bottom: 1px solid #f8c21c;
+    border-radius: 8px;
+
+    #visitation-alert-wrapper {
+        padding: 1.25rem;
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        a.underline {
+            font-weight: 700;
+            color: #622a27;
+            text-decoration: none;
+            border-bottom: 1px solid #622a27;
+
+            &:hover, &:focus {
+                color:blue;
+                border-bottom: 1px solid blue;
+            }
+        }
+
+        .visitation-alert__heading {
+            h2 {
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 600;
+                padding: 0;
+                vertical-align: middle;
+            }
+
+            .visitation-alert__date {
+                font-size: 12px;
+            }
+        }
+
+        .visitation-alert__content {
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        .visitation-alert__link {
+            text-align: right;
+        }
+
+        .visitation-alert__dismiss {
+            text-align: right;
+
+            button {
+                background: none!important;
+                border: none;
+                padding: 0!important;
+                font-family: arial, sans-serif;
+                color: #069;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// At A Glance
+#at-a-glance-container {
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+#at-a-glance-container i {
+    padding-right: .5rem;
+    font-size: 22px;
+}
+#at-a-glance-container i#container {
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+#at-a-glance-container i#nested {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 200%;
+    color: rgba(217, 83, 79, 0.7);
+}
+
+#at-a-glance .at-a-glance-alert {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+#at-a-glance .alert {
+    padding: 8px 2px 8px 12px;
+    margin-bottom: 0;
+}
+
+
+#staff-interest {
+    background-color: $white-body;
+    position: relative;
+    padding-bottom: 1rem;
+}
+#staff-interest .photo-list {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+#staff-interest .photo-panel img {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    min-height: 159px;
+}
+#staff-interest .photo-panel .caption {
+    padding: .5rem;
+    font-style: italic;
+    text-align: right;
+}
+#staff-interest .blockquote {
+    margin: 2rem 0;
+}
+
+// Scholarship at BC
+#scholarship {
+    text-align: center;
+}
+
+#scholarship h2 {
+    margin: 0;
+    color: $bc-brand-maroon;
+    font-size: 20px;
+}
+
+#scholarship h3 {
+    margin-top: 1.25em;
+    font-size: 18px;
+}
+
+@media (min-width: 1200px) {
+    #staff-interest .photo-list .photo-panel:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    #staff-interest .photo-list img {
+        min-height: 126px;
+    }
+}
+
+@media (max-width: 991px) {
+    #staff-interest {
+        margin-top: 3rem;
+    }
+    #staff-interest .photo-list img {
+        min-height: 159px;
+    }
+}
+@media (max-width: 767px) {
+    #staff-interest .photo-list img {
+        min-height: auto;
+    }
+}
+@media (max-width: 525px) {
+    #staff-interest .photo-list img {
+        min-height: auto;
+    }
+    #staff-interest .photo-panel {
+        width: 100%;
+    }
+    #staff-interest .photo-list .photo-panel:nth-last-of-type(-n+2) {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    #visitation-alert {
+        #visitation-alert-wrapper {
+            .visitation-alert__heading {
+                h2 {
+                    padding-bottom: .75rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #at-a-glance-container {
+        width: 100%;
+    }
+ }

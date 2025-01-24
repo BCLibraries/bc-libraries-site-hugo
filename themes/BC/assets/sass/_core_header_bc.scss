@@ -1,0 +1,132 @@
+#bclib-header {
+    background: $bc-brand-maroon no-repeat 100% 0;
+    border-bottom: 1px solid $bc-primary-light-gold;
+    height: 38px;
+    display: flex;
+    align-items: center;
+
+    a {
+        color: $white-text;
+    
+        &:hover, &a:focus {
+            color: $bc-primary-light-gold;
+            text-decoration: none;
+        }
+    }
+
+    .row {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    ul.bclib-header-links {
+        text-align: right;
+        margin: 0;
+        text-transform: uppercase;
+        /* we want height = 30px */
+        /*    15 * 2      = 30   */
+        /*    14 * 2.143 ~= 30   */
+        /*    13 * 2.308 ~= 30   */
+        /*    12 * 2.5    = 30   */
+        font-size: 14px;
+        line-height: 2.143;
+
+        li {
+            display: inline;
+            margin: 0 0 0 20px;
+        
+            .fa {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// Landscape tablets and all desktops
+@media screen and (min-width: 992px) {
+    #bclib-header .input-wrapper {
+        padding-right: 0;
+    }
+}
+
+// Portrait tablets and small desktops
+@media (max-width: 991px) {
+    #bclib-header {
+        .col-sm-12 {
+            width: 100%;
+        }
+
+        ul.bclib-header-links {
+            text-align: right;
+
+            li {
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .header-right {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+// Landscape phones and portrait tablets
+@media (max-width: 767px) {
+    #bclib-header > .container {
+        width: 100%;
+    }
+
+    #bclib-header ul.bclib-header-links {
+        font-size: 15px;
+        line-height: 2;
+
+        li {
+            margin: 0 10px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #bclib-header {
+        .link-wrapper,
+        .input-wrapper {
+            width: 100%;
+        }
+
+        .input-wrapper .pull-right {
+            float: none !important;
+            padding: 4px 0 6px 0;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #bclib-header {
+        height: auto;
+
+        .container {
+            width: 100%;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        ul.bclib-header-links {
+            text-align: left;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    #bclib-header .link-wrapper .fa-commenting-o,
+    #bclib-header .link-wrapper .fa-user {
+        display: none;
+    }
+}

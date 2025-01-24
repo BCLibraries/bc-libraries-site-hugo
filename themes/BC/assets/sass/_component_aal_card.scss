@@ -1,4 +1,57 @@
 // Styling specific for AAL boxes on homepage
+#aal-home-container {
+    h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .aal-box-small {
+        font-size: 16px;
+    }
+}
+
+#aal-home {
+    margin-top: 0;
+    padding-bottom: 0;
+    background-color: $white-body;
+
+    .aal-box-small a.aal-icon {
+        font-size: 25px!important;
+        width: 50px;
+    }
+
+    .aal-box a.aal-icon i {
+        padding: 12px 15px 13px 11px;
+    }
+
+    .chat-link {
+        min-height: 2.75rem;
+    }
+}
+
+/*
+.aal-boxes-horizontal-layout .aal-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Safari doesn't play well with floated elements and flex display
+.aal-boxes-horizontal-layout .aal-boxes::before,
+.aal-boxes-horizontal-layout .aal-boxes::after {
+    display:none!important;
+}
+
+.aal-boxes-horizontal-layout .aal-box-item {
+    display: flex;
+}
+
+// Safari doesn't play well with floated elements and flex display
+.aal-boxes-horizontal-layout .aal-box-item::before,
+.aal-boxes-horizontal-layout .aal-box-item::after {
+    display:none!important;
+}
+*/
+
 .aal-boxes-horizontal-layout {
     display: flex;
     align-content: stretch;
@@ -149,6 +202,12 @@
                 background-color: $bc-primary-light-gold;
             }
         }
+    }
+}
+
+@media (max-width: 991px) {
+    #aal-home {
+        margin-top: 0;
     }
 }
 

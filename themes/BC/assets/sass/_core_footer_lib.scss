@@ -1,0 +1,265 @@
+#lib-footer {
+    background-color: $bc-brand-maroon;
+    color: $white-text;
+    border-top: 4px $bc-brand-gold solid;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    z-index: 4;
+    position: relative;
+    padding-top: 1em;
+
+    a {
+        color: $white-text;
+
+        &:hover,
+        &:focus {
+            color: $bc-primary-light-gold;
+            text-decoration: none;
+        }
+    }
+
+    h4 {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white-text;
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin: 0 0 5px;
+
+        &.orgname {
+            font-size: 16px;
+            letter-spacing: 1.25px;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .address-wrap,
+    .hours-wrap {
+        float: left;
+    }
+
+    // Show this notice if one of the hours has an asterisk
+    .onl-asterisk-notice {
+        font-size: 14px;
+        line-height: 1.5;
+        display: none;
+
+        &.visible {
+            display: block;
+        }
+    }
+
+    .social-wrap {
+        float: right;
+    }
+
+    .lib-footer-links {
+        padding-top: 1em;
+
+        a {
+            border-right: 1px solid $white-body;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                border-right: 0;
+                padding-right: 0;
+            }
+        }
+    } 
+
+    .phone-numbers {
+        padding-top: 1em;
+
+        .phone-label,
+        .phone-number {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .quick-links {
+        h4 {
+            text-align: center;
+        }
+
+        ul {
+            text-align: center;
+        }
+    } 
+
+    #socialmedia {
+        h4 {
+            text-align: center;
+        }
+
+        ul {
+            margin: 1.5em 0 1em 0;
+            padding: 0;
+            text-align: center;
+
+            li {
+                display: inline-block;
+                padding: 0 3px 9px 3px;
+
+                a {
+                    color: $bc-brand-maroon;
+                    font-size: 16px;
+                    border-radius: 50%;
+                    border-color: $bc-primary-light-gold;
+                    background: $bc-primary-light-gold;
+                    width: 30px;
+                    height:30px;
+                    line-height: 30px;
+                    text-align: center;
+                    text-decoration: none!important;
+                    display: block;
+                    transition: .2s;
+
+                    &:hover,
+                    &:focus {
+                        background-color: $white-body;
+                    }
+                }
+            }
+        }
+    }
+
+    .hours-todays-date {
+        position: absolute;
+        top: -5px;
+        right: 15px;
+    }
+
+    .table-hours {
+        padding-bottom: .25rem;
+
+        table {
+            margin-bottom: .25rem;
+        
+            a {
+                cursor: pointer;
+            }
+        }
+
+        .table-bordered {
+            border-top: none;
+        }
+    }
+
+    .ihs-logo img {
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    .alert-hours {
+        padding: .5rem 1rem;
+        font-weight: 400;
+        margin-bottom: .5rem;
+
+        a {
+            color: darkslateblue;
+            font-weight: 700;
+
+            &:hover {
+                color: darkslateblue;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+// Social media icons
+#media_news:after {
+    font-family: 'FontAwesome';
+    content: "\f09e";
+}
+
+#media_facebook:after {
+    font-family: 'FontAwesome';
+    content: "\f09a";
+}
+
+#media_flickr:after {
+    font-family: 'FontAwesome';
+    content: "\f16e";
+}
+
+#media_twitter:after {
+    font-family: 'FontAwesome';
+    content: "\f099";
+}
+
+#media_youtube:after {
+    font-family: 'FontAwesome';
+    content: "\f16a";
+}
+
+#media_linkedin:after {
+    font-family: 'FontAwesome';
+    content: "\f0e1";
+}
+
+#media_instagram:after {
+    font-family: 'FontAwesome';
+    content: "\f16d";
+}
+
+@media (min-width: 1201px) {
+    #lib-footer {
+        .address-wrap,
+        .hours-wrap,
+        .social-wrap {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .hours-todays-date {
+            right: 0;
+        }
+    }
+}
+
+// Portrait tablets and small desktops
+@media (max-width: 991px) {
+    #lib-footer {
+        .lib-footer-links a {
+            border-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            display: block;
+        }
+
+        .phone-numbers .phone-pair {
+            padding-top: 4px;
+        }
+    }
+}
+
+// Landscape phones and portrait tablets
+@media (max-width: 767px) {
+    #lib-footer {
+        h4.orgname {
+            margin-top: inherit;
+        }
+        .hours-wrap {
+            margin-top: 3em;
+        }
+    }
+}
+
+@media print {
+    footer {display: none!important;}
+}

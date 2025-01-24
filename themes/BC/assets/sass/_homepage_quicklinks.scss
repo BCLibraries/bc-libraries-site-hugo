@@ -1,0 +1,57 @@
+.ql-news .ql h2 {
+    text-align: center;
+    border-bottom: 1px solid $white-body;
+}
+
+.ql {
+    height: 100%;
+    padding-bottom:10px;
+
+    .list-group {
+        margin-bottom: 0;
+        list-style: none;
+        font-size: 16px;
+
+        .list-group-item {
+            background-color: transparent;
+            border: 0 solid $white-body;
+            padding: 1.25rem .5rem;
+            border-radius: 0;
+            color: $black-text;
+
+            .fa-lg {
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .ql {
+        height: auto;
+        margin-bottom: 20px;
+
+        li {
+            display: block;
+            font-size: larger;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .ql .list-group {
+        font-size: large;
+    }
+}
+
+@media (max-width: 500px) {
+    .ql .list-group {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    #quicklink-container {
+        width: 100%;
+    }
+}

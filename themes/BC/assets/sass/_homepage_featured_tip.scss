@@ -1,0 +1,193 @@
+#featured-tip-container {
+    margin-top: 2rem;
+}
+
+#featured-tip-wrapper {
+    font-size: 16px;
+    background-color: $bc-secondary-bright-sage;
+    color: $black-text;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#featured-tip-wrapper h2 {
+    color: $black-text;
+    padding: 0 0 1rem 0;
+    margin: 0;
+}
+
+#featured-tip-wrapper .panel {
+    color: $black-text;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+#featured-tip-wrapper .panel-body {
+    padding: .75rem;
+
+}
+#featured-tip-wrapper hr {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    line-height: 1px;
+}
+
+#featured-tip-wrapper .caption {
+    font-size: 10px;
+    text-align: right;
+}
+
+#featured-tip-wrapper .panel a {
+    font-weight: 600;
+}
+
+#featured-tip-wrapper h3 {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    line-height: 1.25;
+}
+
+#featured-tip-wrapper img {
+    padding: 3px;
+    width: 100%;
+}
+
+#featured-tip-wrapper .intro {
+    margin: 0;
+}
+
+#featured-tip-wrapper .outro {
+    text-align: right;
+    margin: 0;
+}
+
+#featured-tip-wrapper .outro.left{
+    text-align: left;
+}
+
+#featured-tip-wrapper .outro a {
+    color: $black-text;
+    text-decoration: none;
+    border-bottom: 1px solid $black-body;
+    line-height: 1;
+}
+
+#featured-tip-wrapper .outro a:hover,
+#featured-tip-wrapper .outro a:focus {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+#featured-tip-wrapper .outro strong {
+    font-weight:600;
+}
+
+#featured-tip-wrapper .related-topics {
+    font-size: smaller;
+}
+
+#featured-tip-wrapper {
+    .flexbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        .flex-element {
+            display: flex;
+            flex-grow: 1;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #featured-tip-wrapper {
+        .flexbox {
+            flex-direction: column;
+        }
+    }
+}
+
+/* highlight services for students */
+#featured-tip-wrapper.resource-highlights {
+    .featured-tip-element {
+        min-height: 392px;
+        position: relative;
+    }
+
+    .overlay-img {
+        max-height: 350px;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+
+    a.panel-overlay {
+        display: block;
+
+        &:hover, &:focus {
+            outline: 2px solid blue;
+            border-radius: 2px;
+            text-decoration: underline;
+        }
+    }
+
+    .overlay-text h3 {
+        position: absolute;
+        top: 30px;
+        right: 34px;
+        text-align: right;
+        font-size: 28px;
+        font-weight: 400;
+        padding: 1rem;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.75);
+        text-shadow: 0 2px 6px #000;
+    }
+}
+
+@media (max-width: 1199px) {
+    #featured-tip-wrapper.resource-highlights {
+        .featured-tip-element {
+            min-height: 331px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    #featured-tip-wrapper.resource-highlights {
+        margin-bottom: 3rem;
+
+        .featured-tip-element {
+            min-height: auto;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #featured-tip-wrapper.resource-highlights {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    #featured-tip-wrapper.resource-highlights {
+        .overlay-text h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    #featured-tip-wrapper.resource-highlights {
+        .overlay-text h3 {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .featured-tip-element .panel img.featured-tip-image {
+        display: none;
+    }
+}

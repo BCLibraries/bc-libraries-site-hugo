@@ -1,0 +1,19 @@
+// Digital Scholarship highlight
+#ds-highlight {
+    display: inline-block;
+    width: 100%;
+    min-height: 150px;
+    height: 600px;
+    background: url("https://library.bc.edu/images/digitalscholashipbg-morales.jpg") no-repeat 100% 50% $very-dark-gray;
+    border-top: 1px solid $very-light-gray;
+    border-bottom: 1px solid $very-light-gray;
+    color: $white-text;
+    padding: 55px 0;
+    z-index: 2;
+    background-size: cover;
+}
+
+// Custom for DS morales project
+#ds-highlight.rightBottom .container-fluid .pull-right .content {
+    background: rgba(0, 0, 0, 0.80) !important;
+}

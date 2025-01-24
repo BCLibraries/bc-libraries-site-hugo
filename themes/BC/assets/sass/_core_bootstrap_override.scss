@@ -1,0 +1,21 @@
+//  Boostrap overrides
+.row {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+    .row.equal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-xxs {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+}

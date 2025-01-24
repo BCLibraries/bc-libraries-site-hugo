@@ -1,0 +1,15 @@
+/* digital collections highlight */
+#digcol-highlight {
+    width: 100%;
+    min-height: 150px;
+    height: 600px;
+    background: url("https://library.bc.edu/images/sc_bg_02_med.jpg") no-repeat 50% 50% $very-dark-gray;
+    color: $white-text;
+    padding: 55px 0;
+    z-index: 2;
+    background-size: cover;
+}
+
+#digcol-highlight .container-fluid .pull-right .content {
+    max-width: 50%;
+}
