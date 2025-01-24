@@ -5,13 +5,11 @@
 @import 'core';
 @import 'core_notifications';
 @import 'core_bootstrap_override';
-@import 'core_refresh';
 @import 'core_header_bc';
 @import 'core_megamenu';
 @import 'core_footer_bc';
 @import 'core_footer_lib';
 @import 'component_aal_card';
-@import 'original_refresh_content_rows';
 
 // Unused core styling
 // @import 'component_potpourri';
@@ -42,7 +40,13 @@
 @import 'page_bento';
 @import 'page_exhibits';
 @import 'page_news';
+
+// Clean out these page styles
 @import 'original_exhibit-refresh';
 @import 'original_facpub-refresh';
+
+// Style overrides
+@import 'core_refresh';
+@import 'core_refresh_content';
 
 @import 'print';
