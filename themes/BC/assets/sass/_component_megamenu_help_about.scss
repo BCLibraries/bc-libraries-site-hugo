@@ -1,0 +1,142 @@
+#mm-help-about {
+    .row {
+        padding-top: 0;
+        padding-bottom: 1.5rem;
+        display: flex;
+        align-content: stretch;
+        flex-wrap: wrap;
+
+        // Safari doesn't play well with floated elements and flex display
+        &:before,
+        &:after {
+            display:none!important;
+        }
+    }
+
+    .library-boxes {
+        margin-bottom: -2rem;
+    
+        .lib-box-small {
+            .panel {
+                border-radius: 4px;
+    
+                // Safari doesn't play well with floated elements and flex display
+                &:before,
+                &:after {
+                    display:none!important;
+                }
+            }
+        }
+    
+        .library-box {
+            margin-bottom: 2rem;
+            font-size: 13px;
+    
+            .panel {
+                margin-bottom: 0;
+                height: 100%;
+        
+                .panel-body {
+                    padding: 5px 5px 8px 5px;
+                    //height: 100%;
+                    //display: block;
+    
+                    // Safari doesn't play well with floated elements and flex display 
+                    &:before,
+                    &:after {
+                        display:none!important;
+                    }
+    
+                    .panel-heading {
+                        padding: 0;
+                        margin: 0;
+                        border: 0;
+                        background-color: #f8f8f8; // fix for LibAnswers
+                        background-image: none;      // fix for LibAnswers
+                        //height: 100%;
+                        //display: block;
+        
+                        .media {
+                            display: flex;
+                            flex-direction: row;
+                            //height: 100%;
+                            //display: block;  
+    
+                            .media-left {
+                                //height: 100%;
+                                //display: block;
+    
+                                a.lib-thumb {
+                                    // .library-box .media a.lib-thumb:hover
+                                    &:focus,
+                                    &:hover {
+                                        outline: 2px solid blue!important;
+                                        outline-offset: -2px;
+                                    }
+                                }
+                            }
+    
+                            .media-body {
+                                //height: 100%;
+                                //display: block;
+    
+                                .media-body-inner {
+                                    display: flex;
+                                    flex-direction: column;
+                                    //height: 100%;
+                                    //display: block;
+
+                                    a.lib-name {
+                                        font-weight: 600;
+                                    }
+                                }
+    
+                                .lib-box-pair {
+                                    margin-top: auto;
+    
+                                    // Safari doesn't play well with floated elements and flex display
+                                    &:before,
+                                    &:after {
+                                        display:none!important;
+                                    }
+    
+                                    .lib-box-pair-label {
+                                        display: none;
+                                    }
+    
+                                    .lib-box-pair-value {
+                                        font-weight: 600;
+                                        align-self: flex-end;
+                                    }
+                                }
+                            }
+    
+                            img {
+                                max-width: 120px!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 767px ) {
+    .library-boxes {
+        .library-box {
+            .panel {
+                .panel-body {
+                    .panel-heading {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    #mm-help-aal > .h4style {
+        text-align: center;
+        font-size: 18px;
+    }
+}

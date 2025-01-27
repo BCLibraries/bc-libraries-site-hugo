@@ -1,0 +1,280 @@
+.ask_list {
+    list-style: none outside none;
+    border-right: 1px solid $very-light-gray;
+    border-left: 1px solid $very-light-gray;
+    margin: 0 0 0 -1px;
+    padding: 0 25px;
+}
+
+.ask_list:first-child {
+    border-left: none;
+    margin-left: 0;
+}
+
+.libraryinfo-content {
+    padding: 0 0 0 20px;
+    text-align: left;
+}
+
+.item-desktop {
+    display: inline-block;
+}
+
+.item-tablet {
+    display: none;
+}
+
+.item-list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 10px 0 0 25px;
+    position: relative;
+    border-right: 5px solid $very-light-gray;
+}
+
+.get-help-menu .item-list {
+    padding: 0 0 0 25px;
+}
+
+.dropdown-menu li .item-list > li > a:hover,
+.dropdown-menu li .item-list > li > a:hover {
+    background: $very-light-gray;
+    color: $red;
+    text-decoration: none;
+}
+
+.item-list .selected a {
+    color: $red !important;
+    font-weight: normal !important;
+    text-decoration: none;
+    background: $very-light-gray;
+}
+
+#bapst_pane,
+#burns_pane,
+#erc_pane,
+#law_pane,
+#oconnor_pane,
+#oneill_pane,
+#swl_pane,
+#tml_pane {
+    width: 58%;
+    height: auto;
+    color: #666;
+    padding: 0;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+.item_pane img {
+    float: left;
+    margin-right: 10px;
+    padding: 0 0 75px 0;
+}
+
+#h4mobile {
+    display: none;
+}
+
+.item_pane p {
+    line-height: inherit;
+    text-align: left;
+}
+
+.item_pane .address {
+    font-size: 11px;
+}
+
+.item_pane ul {
+    padding: 0 0 5px 0;
+    margin: 0;
+}
+
+.item_pane li {
+    list-style: none;
+}
+
+.pane_pic {
+    float: left;
+    width: 25%;
+    padding: 15px 10px;
+}
+
+.pane_pic img {
+    border: 2px solid $red;
+    width: 100%;
+    padding: 0;
+}
+
+.pane_info {
+    float: right;
+    width: 75%;
+    padding: 15px;
+}
+
+.get-help-menu .pane_info {
+    float: none;
+    width: 100%;
+    padding: 0 15px 0 15px;
+}
+
+.pane_info .h3style a {
+    padding: 0 35px 0 0;
+}
+
+.pane_info .h3style a:after {
+    content: none;
+}
+
+.pane_info .h4style {
+    padding: 0;
+}
+
+.megamenucalendar {
+    font-size: 15px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.megamenucalendar:before {
+    content: none;
+}
+
+.megamenucalendar:hover:before {
+    color: #32758f;
+}
+
+.megamenuphone {
+    font-size: 15px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.megamenuphone:before {
+    content: none;
+}
+
+.megamenuphone:hover:before {
+    color: #32758f;
+}
+.megamenuemail {
+    font-size: 15px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.megamenuemail:before {
+    content: none;
+}
+
+.megamenuemail:hover:before {
+    color: #32758f;
+}
+
+.mini_hours_container,
+#oconnor_hours_container {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.library-boxes .panel-body .panel-heading .media .media-right {
+    height: 100%;
+    display: block;
+}
+
+@media ( max-width: 767px ) {
+    #h4mobile {
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px  0 0 0;
+        width: 100%;
+        border-top: 1px solid #666;
+    }
+    .pane_info {
+        float: none;
+        width: 95%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .pane_info p {
+        text-align: left;
+        line-height: inherit;
+    }
+
+    #ref_pane,
+    #faq_pane,
+    #text_pane,
+    #chat_pane,
+    #email_pane,
+    #call_pane {
+        display: inline-block !important;
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .pane_pic {
+        display: none;
+    }
+
+    .item_pane p {
+        line-height: 1;
+        text-align: center;
+    }
+
+    .item_pane img {
+        display: none;
+    }
+    
+    .more {
+        float: none;
+        margin: 0 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #bapst_pane,
+    #burns_pane,
+    #erc_pane,
+    #law_pane,
+    #oconnor_pane,
+    #oneill_pane,
+    #swl_pane,
+    #tml_pane {
+        width: 100%;
+        height: auto;
+        color: #666;
+        padding: 0;
+        margin: 0 0 10px 0;
+        display: inline-block !important;
+        position: relative;
+        border-bottom: 1px solid;
+    }
+
+    .pane_info .col-sm-6 {
+        width: 50%;
+        float: left;
+    }
+
+    .item-list {
+        display: none;
+    }
+
+    .megamenu-container li.accounts-link {
+        display: none;
+    }
+}
