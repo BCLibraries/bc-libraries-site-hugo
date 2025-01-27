@@ -3,73 +3,83 @@
     background: $white-body;
     padding-top: 2rem;
     padding-bottom: 2rem;
-}
-#explore-collections h2 {
-    color: $black-text;
-}
-#explore-collections .row {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-#explore-collections .collections-box-container {
-    margin-top: 2rem;
-}
-#explore-collections .collections-box {
-    margin: 0 0 2.5rem 0;
-    position: relative;
-}
 
-#explore-collections .collections-box a {
-    display: block;
-}
-#explore-collections .collections-box a img {
-    transition: all 0.7s ease;
-    opacity: .85;
-    display: block;
-}
+    h2 {
+        color: $black-text;
+    }
 
-#explore-collections .collections-box a:hover,
-#explore-collections .collections-box a:focus {
-    text-decoration:none;
-}
+    .row {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
-#explore-collections .collections-box a:hover img,
-#explore-collections .collections-box a:focus img {
-   opacity:1;
-}
+    .collections-box-container {
+        margin-top: 2rem;
 
-/* set the header color based on department class */
-#explore-collections .collection-description {
-    padding: 1.25rem 1rem 1.25rem 1.25rem;
-    background-color: #B35F23;
-    color: $white-text;
-}
-#explore-collections .digital-scholarship .collection-description {
-    background-color: #204375;
-}
-#explore-collections .escholarship .collection-description {
-    background-color: #B35F23
-}
-#explore-collections .digital-collections .collection-description {
-    background-color: #467282;
-}
+        .collections-box {
+            margin: 0 0 2.5rem 0;
+            position: relative;
 
-#explore-collections .collection-department,
-#explore-collections .collection-name {
-    color: $white-text;
-    line-height: 1.2;
-}
-#explore-collections .collection-department {
-    font-size: 15px;
-    font-weight: 600;
-    padding-bottom: .5rem;
-}
-#explore-collections .collection-name {
-    font-size: 18px;
-    min-height: 4.75rem;
-}
-#explore-collections .collection-image img {
-    width: 100%;
+            a {
+                display: block;
+
+                img {
+                    transition: all 0.7s ease;
+                    opacity: .85;
+                    display: block;
+                }
+
+                &:hover,
+                &:focus {
+                    text-decoration:none;
+
+                    img {
+                        opacity:1;
+                     }
+                }
+            }
+        }
+    }
+
+    // Set the header color based on department class
+    .collection-description {
+        padding: 1.25rem 1rem 1.25rem 1.25rem;
+        background-color: #B35F23;
+        color: $white-text;
+    }
+
+    .digital-scholarship .collection-description {
+        background-color: #204375;
+    }
+
+    .escholarship .collection-description {
+        background-color: #B35F23
+    }
+
+    .digital-collections .collection-description {
+        background-color: #467282;
+    }
+
+    .collection-department,
+    .collection-name {
+        color: $white-text;
+        line-height: 1.2;
+    }
+
+    .collection-department {
+        font-size: 15px;
+        font-weight: 600;
+        padding-bottom: .5rem;
+    }
+
+    .collection-name {
+        font-size: 18px;
+        min-height: 4.75rem;
+    }
+
+    .collection-image img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 425px) {

@@ -6,17 +6,21 @@
 @import 'core_notifications';
 @import 'core_bootstrap_override';
 @import 'core_header_bc';
+@import 'component_yamm3';
 @import 'core_megamenu';
 @import 'core_footer_bc';
 @import 'core_footer_lib';
 @import 'component_aal_card';
+@import 'component_aal_override';
 
 // Unused core styling
+//
 // @import 'component_potpourri';
 
 // Homepage styles
 @import 'homepage';
 @import 'homepage_alternate_header';
+@import 'homepage_search_panel';
 @import 'homepage_quicklinks';
 @import 'homepage_featured_tip';
 @import 'homepage_featured_subject_specialists';
@@ -27,6 +31,7 @@
 @import 'homepage_component_burns_cat_sketch';
 
 // Unused homepage content styling
+//
 // @import 'homepage_virtual_pet_therapy';
 // @import 'homepage_services_at_bc';
 // @import 'homepage_exhibits';
@@ -45,8 +50,9 @@
 @import 'original_exhibit-refresh';
 @import 'original_facpub-refresh';
 
-// Style overrides
-@import 'core_refresh';
-@import 'core_refresh_content';
+// Style overrides -- contents migrated into respective files
+//
+// @import 'core_refresh';
+// @import 'core_refresh_content';
 
 @import 'print';

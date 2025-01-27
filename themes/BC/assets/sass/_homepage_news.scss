@@ -1,81 +1,84 @@
-.ql-news {
-    padding-bottom: 2rem;
+#news {
+    &.ql-news {
+        padding-bottom: 2rem;
+    }
+
+    .news-content-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .news-content {
+        a {
+            color: inherit;
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                color: inherit;
+                opacity: .8;
+                outline: 1px solid blue;
+                outline-offset: 0;
+
+                .news-section-title {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .news-section-text {
+            padding: 0 .25rem .25rem .25rem;
+            line-height: 1.6;
+
+            .news-section-date {
+                font-weight: 600;
+                margin: .5rem 0 .25rem 0;
+                color: #a25729;
+            }
+
+            .news-section-title {
+                font-weight: 400;
+                line-height: 1.5;
+                margin: .25rem 0;
+            }
+        }
+
+        &.news-content-large {
+            .news-section-text {
+                .news-section-title {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    // Safari doesn't play well with floated elements and flex display
+    .news-content-row:before,
+    .news-content-row:after,
+    .news-content:before,
+    .news-content:after {
+        display:none!important;
+    }
+
+    .more-news {
+        text-align: right;
+        padding-top: 1rem;
+        font-size: larger;
+    }
 }
 
 .news-section-unsafe-html-story {
     width: 100%;
-}
-
-.news-section-unsafe-html-embed {
-    height: 370px;
-    width: 100%;
-}
-
-#news .news-content-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-// Safari doesn't play well with floated elements and flex display
-#news .news-content-row:before,
-#news .news-content-row:after {
-    display:none!important;
-}
-
-// Safari doesn't play well with floated elements and flex display
-#news .news-content:before,
-#news .news-content:after {
-    display:none!important;
-}
-#news .news-content a, .news-section-unsafe-html-story {
     color: inherit;
-}
 
-#news .news-content a:hover,
-#news .news-content a:focus {
-    text-decoration: none;
-    color: inherit;
-}
-#news .news-content .news-section-text {
-    padding: 0 .25rem .25rem .25rem;
-    line-height: 1.6;
-}
-#news .news-content .news-section-text .news-section-date {
-    font-weight: 600;
-    margin: .5rem 0 .25rem 0;
-    color: #a25729;
-}
-#news .news-content .news-section-text .news-section-title {
-    font-weight: 400;
-    line-height: 1.5;
-    margin: .25rem 0;
-}
-#news .news-content.news-content-large .news-section-text .news-section-title {
-    font-size: 2rem;
-}
-
-#news .news-content a:hover .news-section-title,
-#news .news-content a:focus .news-section-title {
-    text-decoration: underline;
-}
-
-#news .news-content a:hover,
-#news .news-content a:focus {
-    opacity: .8;
-}
-
-#news .news-content a:focus {
-    outline: 1px solid blue;
-    outline-offset: 0;
-}
-#news .news-content img {
-    width: 100%;
-}
-
-#news .more-news,
-.browse-more-link {
-    padding-top: 1rem;
-    font-size: larger;
+    .news-section-unsafe-html-embed {
+        height: 370px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -84,8 +87,22 @@
     }
 }
 
+// Portrait tablets and small desktops
 @media (max-width: 991px) {
     .news-section-unsafe-html-embed {
         height: 230px;
+    }
+
+    #news {
+        padding-bottom: 0;
+
+        .more-news {
+            text-align: center;
+            margin-top: -1em;
+        }
+
+        .news-content {
+            margin: 0 auto 2em auto;
+        }
     }
 }

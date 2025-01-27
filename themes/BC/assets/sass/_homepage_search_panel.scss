@@ -1,0 +1,75 @@
+#search-panel {
+    background-color: $bc-brand-maroon;
+    border-radius: 6px;
+
+    .fa-search {
+        padding-right: .5em;
+    }
+
+    #search-links {
+        padding-top: 0;
+
+        a,
+        a:visited {
+            color: white;
+            font-size: 18px;
+        }
+    }
+
+    .online-only-label {
+        color: #f3f3f3;
+    }
+
+    input.form-control,
+    button.btn.btn-default {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    span.online-only-label-text {
+        margin-left: .25em;
+        margin-right: .25em;
+    }
+    
+    #online-only-checkbox {
+        margin-top: 6px;
+    }
+    
+    label.checkbox-inline.online-only-label {
+        font-style: italic;
+        font-size: 16px;
+    }
+    
+    button.whats-this, 
+    button.whats-this:active, 
+    button.whats-this:hover {
+        text-decoration: none;
+        border: none;
+        cursor: help;
+    }
+    
+    .whats-this-message {
+        padding: .25em .5em;
+        display: none;
+        font-size: .9em;
+        color: white;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    #search-panel button.btn.btn-default .search-button-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+
+    #search-panel #search-links div {
+        display: inline-block;
+    }
+}

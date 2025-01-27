@@ -47,18 +47,57 @@
     }
 }
 
+.homepage h2,
+.homepage h3 {
+    font-weight: 200;
+}
+
+#hero-box {
+    padding-bottom: 4rem;
+    padding-top: 80px;
+    background-color: #467282;
+}
+
+.browse-more-link {
+    padding-top: 1rem;
+    font-size: larger;
+    text-align: right;
+}
+
+.content .btn {
+    &.btn-default {
+        padding: 12px;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #555;
+        border-radius: 0;
+        background-clip: padding-box;
+        border: 0 solid #ddd;
+        white-space: normal;
+        transition: .2s;
+    }
+
+    &.btn-blue {
+        color: #dddddd;
+        background: #204375;
+
+        &:hover {
+            color: $white-text;
+            background: #1d3c68;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     #top-columns .column-combo {
         display: block;
     }
 }
 
-.homepagerefresh #news .more-news,
-.browse-more-link {
-    text-align: right;
-}
-
-.homepage h2,
-.homepage h3 {
-    font-weight: 200;
+@media (min-width: 768px) {
+    #hero-box {
+        padding-top: 80px;
+        height: 320px;
+    }
 }

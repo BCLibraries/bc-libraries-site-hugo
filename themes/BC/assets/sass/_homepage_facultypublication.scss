@@ -1,12 +1,25 @@
 #facpub {
     background-color: $white-body;
     padding-bottom: 40px;
+
+    h2 a {
+        font-size: 24px;
+        border-bottom: 1px solid;
+        text-decoration: none;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .more-link {
+        text-align: right;
+    }
 }
 
-#facpub h3 {
-    font-size: 18px;
-}
-
-#facpub .more-link {
-    text-align: right;
+// Portrait tablets and small desktops
+@media (max-width: 991px) {
+    #facpub img.bookcover {
+        display: none !important;
+    }
 }

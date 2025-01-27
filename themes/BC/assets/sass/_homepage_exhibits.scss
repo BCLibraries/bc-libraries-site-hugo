@@ -1,3 +1,132 @@
 #exhibit-highlight {
     background-color: cyan;
+    display: inline-block;
+    width: 100%;
+    min-height: 150px;
+    background: url("https://library.bc.edu/images/exhibits/banner_default2.jpg") no-repeat 0 100% $very-dark-gray;
+    border-top: 1px solid $very-light-gray;
+    border-bottom: 1px solid $very-light-gray;
+    color: $white-text;
+    z-index: 2;
+    background-size: cover;
+    padding-bottom: 4rem;
+
+    h2 {
+        font-weight: 600;
+        color: $white-text;
+        letter-spacing: 2px;
+        margin: .5em 0 1em 0;
+    }
+
+    a.current-exhibits-title {
+        color: $black-text !important;
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .exhibit-box {
+        background: rgba(255,255,255,0.75);
+        height: 300px;
+        margin: auto;
+        padding: 20px;
+
+        .row {
+            height: 100%;
+        }
+
+        .exhibit-left {
+            height: 100%;
+
+            p {
+                color: $black-text;
+                text-align: left;
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 200;
+            }
+        }
+
+        .exhibit-right {
+            text-align: right;
+            height: 100%;
+        }
+    }
+
+    .exhibit-poster {
+        max-width: 100%;
+        max-height: 100%;
+        border: 1px solid $black-body;
+    }
+
+    .carousel {
+        max-width: 75%;
+        margin: auto;
+
+        .carousel-control {
+            &.left,
+            &.right {
+                background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%) !important;
+            }
+
+            &.left {
+                left:-15%;
+            }
+
+            &.right {
+                right:-15%;
+            }
+        }
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #555;
+        border-radius: 0;
+        background-clip: padding-box;
+        border: 0 solid #ddd;
+        white-space: normal;
+        transition: .2s;
+    
+        &.btn-blue {
+            color: #dddddd;
+            background: #204375;
+    
+            &:hover {
+                color: $white-text;
+                background: #1d3c68;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .exhibit-box .exhibit-left {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .exhibit-box .exhibit-right {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .more-exhibits-button {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-indicators {
+        display: none;
+    }
+
+    .exhibit-blurb {
+        display: none;
+    }
 }

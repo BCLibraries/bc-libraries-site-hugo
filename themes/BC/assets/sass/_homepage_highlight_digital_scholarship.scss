@@ -1,4 +1,3 @@
-// Digital Scholarship highlight
 #ds-highlight {
     display: inline-block;
     width: 100%;
@@ -11,9 +10,28 @@
     padding: 55px 0;
     z-index: 2;
     background-size: cover;
+
+    .content h3 {
+        margin: 0 0 20px 0;
+        padding: 0;
+        font-weight: 200;
+        line-height: 1.25;
+
+        a {
+            color: $white-text;
+            border-bottom: 1px solid $white-body;
+
+            &:hover,
+            &:focus {
+                color: $bc-primary-light-gold;
+                border-bottom: 1px solid $bc-primary-light-gold;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
-// Custom for DS morales project
+// Custom for DS Morales project
 #ds-highlight.rightBottom .container-fluid .pull-right .content {
     background: rgba(0, 0, 0, 0.80) !important;
 }

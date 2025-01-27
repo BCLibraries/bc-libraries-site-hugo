@@ -123,7 +123,6 @@
     margin-bottom: 0;
 }
 
-
 #staff-interest {
     background-color: $white-body;
     position: relative;
@@ -163,6 +162,10 @@
 #scholarship h3 {
     margin-top: 1.25em;
     font-size: 18px;
+}
+
+#header-top-row {
+    padding-top: 0;
 }
 
 @media (min-width: 1200px) {
@@ -218,4 +221,25 @@
     #at-a-glance-container {
         width: 100%;
     }
- }
+}
+
+ @media ( max-width: 1199px ) {
+    #bcl-feedback #feedback_wrapper {
+        width: 90%;
+        display: inline-block;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        right: 0;
+        transform: translate(0px, 0%);
+        margin: 40px auto 20px auto;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    #scholarship .row {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}

@@ -38,6 +38,19 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    #quick-links .quick-link-block {
+        height: 128px;
+    }
+}
+
+// Landscape tablets and medium desktops
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #quick-links .quick-link-block {
+        height: 184px;
+    }
+}
+
 @media (min-width: 992px) {
     .ql .list-group {
         font-size: large;
