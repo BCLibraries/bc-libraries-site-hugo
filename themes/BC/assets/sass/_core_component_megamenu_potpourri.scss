@@ -193,6 +193,41 @@
     display: block;
 }
 
+@media ( max-width: 1200px ) {
+    .pane_info {
+        width: 72%;
+    }
+}
+
+@media ( max-width: 1199px ) {
+    .item-desktop {
+        display: none;
+    }
+    .item-tablet {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .megamenuphone:before,
+    .megamenuemail:before,
+    .megamenucalendar:before {
+        content: none;
+        padding: 0;
+    }
+    .megamenuphone .fa-phone,
+    .megamenuemail .fa-envelope,
+    .megamenucalendar .fa-calendar {
+        display: none;
+    }
+}
+
+@media ( max-width: 991px ) {
+    .pane_info {
+        width: 65%;
+    }
+}
+
 @media ( max-width: 767px ) {
     #h4mobile {
         display: inline-block;

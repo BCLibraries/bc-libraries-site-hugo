@@ -122,13 +122,45 @@
     }
 }
 
+@media ( max-width: 1199px ) {
+    #mm-help-about {
+        .library-boxes {
+            .library-box {
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media ( max-width: 991px ) {
+    #mm-help-about {
+        .library-boxes {
+            .library-box {
+                .panel {
+                    .panel-body {
+                        .panel-heading {
+                            .media {
+                                .media-left {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media ( max-width: 767px ) {
-    .library-boxes {
-        .library-box {
-            .panel {
-                .panel-body {
-                    .panel-heading {
-                        display: none;
+    #mm-help-about {
+        .library-boxes {
+            .library-box {
+                .panel {
+                    .panel-body {
+                        .panel-heading {
+                            display: none;
+                        }
                     }
                 }
             }
