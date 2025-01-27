@@ -6,18 +6,18 @@
 @import 'core_notifications';
 @import 'core_bootstrap_override';
 @import 'core_header_bc';
-@import 'component_yamm3';
+@import 'core_component_yamm3';
 @import 'core_megamenu';
 @import 'core_footer_bc';
 @import 'core_footer_lib';
-@import 'component_aal_card';
-@import 'component_aal_override';
-@import 'component_megamenu_help_about';
+@import 'core_component_aal_card';
+@import 'core_component_aal_override';
+@import 'core_component_megamenu_help_about';
 
 // Unused core styling
 //
-// @import 'component_potpourri';
-// @import 'component_megamenu_potourri';
+// @import 'core_potpourri';
+// @import 'core_component_megamenu_potourri';
 
 // Homepage styles
 @import 'homepage';
