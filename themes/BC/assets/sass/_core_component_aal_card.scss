@@ -116,6 +116,7 @@
 
                 &.aal-box {
                     font-size: inherit;
+                    min-height: 9rem;
 
                     .h4style {
                         color: $dark-blue-green;
@@ -221,6 +222,7 @@
             padding: .75rem;
             margin-bottom: 1rem;
             height: auto;
+            //min-height: 0;
         }
     }
 
@@ -231,6 +233,19 @@
 
                 &:last-child {
                     margin-bottom: 0rem;
+                }
+            }
+        }
+    }
+
+    // .aal-box-wrapper a.aal-panel-wrapper .panel.aal-box
+    .aal-box-container {
+        .aal-box-wrapper {
+            a.aal-panel-wrapper{
+                .panel {
+                    &.aal-box {
+                        min-height: 0;
+                    }
                 }
             }
         }

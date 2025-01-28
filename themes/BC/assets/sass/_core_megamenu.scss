@@ -1,3 +1,7 @@
+.yamm .yamm-content {
+    padding: 0rem 2.15rem .5rem 2.15rem;
+ }
+
 .megamenu-container {
     margin: 0;
     padding: 0;
@@ -127,7 +131,7 @@
                 .dropdown {
                     a.menu-option:focus,
                     a.menu-option:hover,
-                    .open a.menu-option {
+                    &.open a.menu-option {
                         text-shadow: none;
                         color: $white-text;
                         background-color: #534741;
@@ -147,19 +151,20 @@
                     .dropdown-menu {
                         background-clip: padding-box;
                         background-color: $white-body;
-                        border: 1px solid rgba(0, 0, 0, 0.15);
-                        border-radius: 4px 4px 4px 4px;
+                        //border: 3px solid rgba(0, 0, 0, 0.15);
+                        border-radius: 0 0 4px 4px;
                         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-                        float: left;
+                        //float: left;
                         font-size: 14px;
                         left: 0;
                         list-style: none outside none;
-                        margin: 2px 0 0;
+                        //margin: 2px 0 0;
                         min-width: 160px;
                         padding: 0;
                         position: absolute;
                         top: 100%;
                         z-index: 1000;
+                        margin: 0;
 
                         li {
                             // .dropdown-menu li > a
@@ -220,16 +225,30 @@
                             }
                         }
 
-                        .menu_list {
-                            list-style: none outside none;
-                            border-right: 1px solid $very-light-gray;
-                            border-left: 1px solid $very-light-gray;
-                            margin: 0 0 0 -1px;
-                            padding: 0 25px;
+                        .menu-list-container {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
 
-                            &:first-child {
-                                border-left: none;
-                                margin-left: 0;
+                            .menu_list {
+                                list-style: none outside none;
+                                border-right: 1px solid $very-light-gray;
+                                //border-left: 1px solid $very-light-gray;
+                                //margin: 0 0 0 -1px;
+                                margin: 0;
+                                padding: 0 25px;
+    
+                                /*
+                                &:first-child {
+                                    border-left: none;
+                                    margin-left: 0;
+                                }
+                                */
+    
+                                &:last-child {
+                                    border-right: none;
+                                    //margin-right: 0;
+                                }
                             }
                         }
                     } // <ul> .dropdown-menu
@@ -265,9 +284,11 @@
         cursor: pointer;
     }
    
+    /*
     .end {
         border: 0;
     }
+    */
 
     .bottom_row {
         border-top: 1px solid $very-light-gray;
@@ -378,7 +399,10 @@
                 box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 
                 .nav.navbar-nav {
-                   // .navbar-nav > li > .dropdown-menu
+                    float:left;
+                    width: 100%;
+
+                    // .navbar-nav > li > .dropdown-menu
                     & > li {
                         & > .dropdown-menu {
                             border: 0;
@@ -414,21 +438,28 @@
                                     // .dropdown-menu li > .h4style a
                                     a {
                                         font-size: 18px;
-                                        padding: 10px;
+                                        padding: 10px 0;
                                     }
                                 }
                             }
 
-                            ul.menu_list {
-                                margin-bottom: 15px;
-                                text-align: center;
-                                border: none;
-                            }
-                        } // .dropdown-menu
-                    } // .dropdown
-                } // .nav
-            } // .navbar-collapse
-        } // .navbar
+                            .menu-list-container {
+                                .menu_list {
+                                    //margin-bottom: 15px;
+                                    //text-align: center;
+                                    //border: none;
+                                    padding-bottom: 1rem;
+
+                                    &:nth-child(2) {
+                                        border: none;
+                                    }
+                                } // <div> .menu-list
+                            } // <div> .menu-list-container
+                        } // <ul> .dropdown-menu
+                    } // <li> .dropdown
+                } // <ul> .nav
+            } // <div> .navbar-collapse
+        } // <nav> .navbar
 
         .bottom_row {
             margin: 10px 0 0 0;

@@ -38,6 +38,7 @@
         
                 .panel-body {
                     padding: 5px 5px 8px 5px;
+                    line-height: 1.5;
                     //height: 100%;
                     //display: block;
     
@@ -126,7 +127,7 @@
     #mm-help-about {
         .library-boxes {
             .library-box {
-                padding: 5px;
+                //padding: 5px;
             }
         }
     }
@@ -153,22 +154,25 @@
 }
 
 @media ( max-width: 767px ) {
+    /*
     #mm-help-about {
         .library-boxes {
             .library-box {
                 .panel {
                     .panel-body {
                         .panel-heading {
-                            display: none;
+                            // display: none;
                         }
                     }
                 }
             }
         }
     }
+    */
 
-    #mm-help-aal > .h4style {
-        text-align: center;
+    #mm-help-aal > .h4style,
+    #mm-help-about > .h4style {
+        // text-align: center;
         font-size: 18px;
     }
 }

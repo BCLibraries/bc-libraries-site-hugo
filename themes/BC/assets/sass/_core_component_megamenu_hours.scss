@@ -1,0 +1,11 @@
+#mm-menu-hours {
+    .menu-list-container {
+        flex-direction: column;
+
+        .table-hours {
+            table {
+                border-top: none;
+            }
+        }
+    }
+}
