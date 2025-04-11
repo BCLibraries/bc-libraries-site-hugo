@@ -22,7 +22,60 @@
     li.resource p.resource-description {
         padding: 0;
     }
+    #toc {
+        margin: .5rem 0;
+        border: 1px solid gray;
+        padding: 1rem;
+        border-radius: .5rem;
+        font-size: larger;
+        font-weight: 400;
+    }
 </style>
+
+<script>
+    function find_first_instance(collection, letter) {
+        for (let i = 0; i < collection.length; i++) {
+            let resource_name = collection[i].innerText;
+            if (letter.toLowerCase() == resource_name[0].toLowerCase()) {
+                // console.log(`Found a resource starting with the letter '${letter}': ${resource_name}`)
+                return collection[i];
+            }
+        }
+
+        return null;
+    }
+
+    function fill_in_toc(collection, toc_id) {
+        const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+        const toc = document.getElementById("toc");
+
+        let letter = "A"
+        let matched_resource = find_first_instance(collection, letter);
+        console.log(matched_resource);
+
+        //if (matched_resource != null) {
+        //    let url = matched_resource.href;
+        //}
+
+        let url = matched_resource.href;
+
+        var element = document.createElement(letter);
+        element.setAttribute("href", `#${letter}`);
+        element.innerHTML = "A";
+
+        toc.appendChild(element);
+    }
+
+    document.addEventListener("DOMContentLoaded", function(){
+        const collection = document.getElementsByClassName("resource-link");
+        console.log(collection.length);
+
+        // TODO: check if collection has length > 0
+
+        // fill_in_toc(collection, "toc");
+    });
+</script>
 {{ end }}
 
 {{ define "main" }}
@@ -34,6 +87,8 @@
 
         {{ with resources.Get $path }}
             <p>This list is automatically generated and should only be referenced when the <a href="https://libguides.bc.edu/az.php">official A-Z database list</a> is unavailable.</p>
+
+            <div id="toc"></div>
             {{ $opts := dict "delimiter" "," }}
             {{ $data = . | transform.Unmarshal $opts }}
             <ul>
@@ -47,7 +102,7 @@
                 {{ if eq $uses_proxy "Yes"}}
                     {{ $url = printf "%s%s" $proxy_url $url }}
                 {{ end }}
-                <li class="resource"><a href="{{ $url }}" target="_blank">{{ $name }}</a> <i class="fa fa-fw fa-external-link " aria-label="This link opens in a new window" title="This link opens in a new window"></i><p class="resource-description">{{ $description }}</p></li>
+                <li class="resource"><a class="resource-link" href="{{ $url }}" target="_blank">{{ $name }}</a> <i class="fa fa-fw fa-external-link " aria-label="This link opens in a new window" title="This link opens in a new window"></i><p class="resource-description">{{ $description }}</p></li>
             {{ end }}
             </ul>
         {{ else }}
