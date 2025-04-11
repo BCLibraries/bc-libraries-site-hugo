@@ -1,37 +1,59 @@
-{{ define "title" }}Search{{ end }}
+{{ define "title" }}Database list{{ end }}
 
 {{ define "hero-box" }}{{ end }}
 
 {{ define "pagestyles" }}
+<style>
+    main > .container {
+        padding-top: 6rem;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    ul li.resource {
+        padding: 1rem 0 .25rem 0; 
+        border-bottom: 1px solid #ececec;
+    }
+    li.resource a {
+        font-size: larger; 
+        font-weight: 600;
+    }
+    li.resource p.resource-description {
+        padding: 0;
+    }
+</style>
 {{ end }}
 
 {{ define "main" }}
-{{ $data := dict }}
-{{ $path := "az_database_list.csv" }}
-<div class="container">
+    {{ $data := dict }}
+    {{ $path := "az_database_list.csv" }}
+    {{ $proxy_url := "https://go.openathens.net/redirector/bc.edu?url=" }}
+    <div class="container">
+        <h2 id="main-heading" class="page-title">A-Z database list</h2>
 
-    {{ partial "news/breadcrumbs.html" . }}
+        {{ with resources.Get $path }}
+            <p>This list is automatically generated and should only be referenced when the <a href="https://libguides.bc.edu/az.php">official A-Z database list</a> is unavailable.</p>
+            {{ $opts := dict "delimiter" "," }}
+            {{ $data = . | transform.Unmarshal $opts }}
+            <ul>
+            {{ range after 1 $data }}
+                {{ $name := index . 1 }}
+                {{ $url := index . 3 }}
+                {{ $description := index . 2 }}
+                {{ $uses_proxy := index . 9 }}
 
-    <h2 id="main-heading" class="page-title">{{ .Title }}</h2>
-
-    {{ with resources.Get $path }}
-
-
-    {{ $opts := dict "delimiter" "," }}
-    {{ $data = . | transform.Unmarshal $opts }}
-    <ul>
-    {{ range $data }}
-    {{ $name := index . 1 }}
-    {{ $url := index . 3 }}
-        <li><a href="{{ $url }}">{{ $name }}</a></li>
-    {{ end }}
-    </ul>
-    {{ else }}
-    {{ errorf "Unable to get page resource %q" $path }}
-
-    {{ end }}
-
-</div>
+                {{/* Check if this resource requires a proxy prefix */}}
+                {{ if eq $uses_proxy "Yes"}}
+                    {{ $url = printf "%s%s" $proxy_url $url }}
+                {{ end }}
+                <li class="resource"><a href="{{ $url }}" target="_blank">{{ $name }}</a> <i class="fa fa-fw fa-external-link " aria-label="This link opens in a new window" title="This link opens in a new window"></i><p class="resource-description">{{ $description }}</p></li>
+            {{ end }}
+            </ul>
+        {{ else }}
+            {{ errorf "Unable to get page resource %q" $path }}
+        {{ end }}
+    </div>
 {{ end }}
 
 {{ define "pagescripts" }}
