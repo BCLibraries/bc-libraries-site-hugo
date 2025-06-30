@@ -913,6 +913,15 @@
     align-self: flex-end;
 }
 
+.library-boxes .lib-box-heading {
+  margin-bottom: 0;
+}
+
+.lib-box .fa-map-marker {
+  color: $bc-brand-maroon;
+}
+
+
 @media ( max-width: 1199px ) {
     .library-box {
         padding: 5px;
