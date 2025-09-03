@@ -116,6 +116,16 @@
 }
 .table-hours {
     padding-bottom: .25rem;
+
+    .twenty-four-hours-notice {
+        margin-left: 1em;
+        margin-bottom: 4px;
+        background-color: #204375;
+    }
+}
+
+footer .table-hours .twenty-four-hours-notice {
+     margin-bottom: 1px;
 }
 .table-hours table {
     margin-bottom: .25rem;

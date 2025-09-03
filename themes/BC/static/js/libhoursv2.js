@@ -54,10 +54,6 @@ $(document).ready(function () {
             // get the data for this location from the hash
             const location_data = location_map[loc_to_show.id];
 
-            if (location_data.name === "O'Neill Library" && location_data.rendered.includes('*')) {
-                $('.onl-asterisk-notice').show();
-            }
-
             // libraries with an attached note to the hours will render
             // the hours string, then a new line char, then the note string.
             // we will replace the new line char with a semicolon.
@@ -114,7 +110,15 @@ $(document).ready(function () {
 
         const hours_cell = document.createElement("td");
         hours_cell.classList.add("lib-hours");
-        hours_cell.textContent = hours;
+        hours_cell.textContent = hours.replace('(*)', '');
+
+        if (hours.includes('*')) {
+            hours_cell.textContent = '7:00am - 2:00am';
+            const twenty_four_hour_notice = document.createElement('span');
+            twenty_four_hour_notice.className = 'badge badge-primary twenty-four-hours-notice';
+            twenty_four_hour_notice.textContent = 'Level One Open 24 Hours';
+            hours_cell.appendChild(twenty_four_hour_notice);
+        }
 
         const row = document.createElement("tr");
         row.append(label_cell);
