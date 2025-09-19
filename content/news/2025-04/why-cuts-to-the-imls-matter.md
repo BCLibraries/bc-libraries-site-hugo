@@ -38,9 +38,9 @@ imagealt: "four children holding a banner that reads Nooksack Indian Tribe Libra
 
 # Uncomment to provide an attribution for the photo
 
-# attribution_text: "Photo by <PERSON WHO TOOK PHOTO>"
+attribution_text: "Photo credit: Nooksack Library, Deming Washington"
 
-# attribution_url: "https://www.flickr.com/photos/url-of-photo/555555.jpg"
+attribution_url: "https://nooksacktribe.org/departments/education/nooksack-tribal-library/"
 
 # Type
 
