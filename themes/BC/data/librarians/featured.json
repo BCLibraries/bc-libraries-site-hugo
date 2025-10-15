@@ -460,37 +460,6 @@
         ]
     },
     {
-        "name": "Elizabeth Sweeney",
-        "title": "Irish Music Librarian",
-        "department": "Burns Library",
-        "active": true,
-        "profile_id": "10686",
-        "featured_background": "",
-        "featured_background_source": "",
-        "featured_background_caption": "",
-        "featured_background_type": "spectrum",
-        "featured_guides": [
-            {
-                "guide_name": "Irish Music",
-                "guide_link": "https://libguides.bc.edu/irishmusic"
-            },
-            {
-                "guide_name": "Séamus Connolly Papers (Irish Music)",
-                "guide_link": "https://libguides.bc.edu/seamusconnolly"
-            }
-        ],
-        "subjects": [
-            {
-                "id": "12879",
-                "parent_id": "0",
-                "name": "Irish Music",
-                "slug_id": "144985",
-                "slug": "subjects\/irish-studies",
-                "url": "https://libguides.bc.edu/irishmusic"
-            }
-        ]
-    },
-    {
         "name": "Doug Olsen",
         "title": "Senior Liaison Librarian for CSOM",
         "department": "Collection Development & Research",
