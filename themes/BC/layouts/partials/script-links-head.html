@@ -1,6 +1,19 @@
+{{/* Javascripts used on all pages */}}
+
+{{/* Local scripts */}}
+{{ $jquery_js := resources.Get "js/jquery-3.6.4.min.js" }}
+{{ $bootstrap_js := resources.Get "js/bootstrap.min.js" }}
+
+{{/* Bundle all the scripts */}}
+{{ $all_scripts := slice $jquery_js $bootstrap_js }}
+{{ $bundled_scripts := $all_scripts | resources.Concat "js/site-scripts-head.js" }}
+
+{{/* Minify and fingerprint the bundled scripts */}}
+{{ $minified_scripts := $bundled_scripts | minify }}
+{{ $fingerprinted_scripts := $minified_scripts | fingerprint }}
+
     {{/* External sripts. Consider moving local. */}}
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ $fingerprinted_scripts.RelPermalink }}"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
