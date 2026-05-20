@@ -5,9 +5,10 @@
 {{ $jquery_hoverintent_js := resources.Get "js/jquery.hoverIntent.minified.js" }}
 {{ $megamenu_js := resources.Get "js/megamenu.js" }}
 {{ $notice_js := resources.Get "js/downtime-notices.js" }}
+{{ $search_js := resources.Get "js/search.js" }}
 
 {{/* Bundle all the scripts */}}
-{{ $all_scripts := slice $bootstrap_hover_dropdown_js $jquery_hoverintent_js $megamenu_js $notice_js }}
+{{ $all_scripts := slice $bootstrap_hover_dropdown_js $jquery_hoverintent_js $megamenu_js $notice_js $search_js }}
 {{ $bundled_scripts := $all_scripts | resources.Concat "js/site-scripts.js" }}
 
 {{/* Minify and fingerprint the bundled scripts */}}
