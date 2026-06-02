@@ -40,8 +40,6 @@ $(document).ready(function () {
     // grab each library's data from the output and place it where it needs to go
     function setHours(data) {
 
-        console.log(allNightStatus);
-
         // no locations? for now, just die early.
         if (!'locations' in data) {
             return;
@@ -124,6 +122,10 @@ $(document).ready(function () {
 
         const label_cell = document.createElement("td");
         label_cell.append(link);
+        if (label === 'Bapst Library') {
+            const innerHtml = '<div class="gargan-hall-notice">Gargan Hall may be closed for Student Registation sessions — <a href="https://libguides.bc.edu/bapst/hours">details</a></div>';
+            label_cell.innerHTML = `${label_cell.innerHTML} ${innerHtml}`;
+        }
 
         const hours_cell = document.createElement("td");
         hours_cell.classList.add("lib-hours");
@@ -189,7 +191,6 @@ $(document).ready(function () {
      */
     function getTodaysTwentyfourHourStatus(localWeekday, localHour) {
 
-        console.log(localHour);
         const open24Hours = 'Level One Open 24 Hours';
         const openUntilTwoAM = 'Level One Open Until 2:00am';
 
