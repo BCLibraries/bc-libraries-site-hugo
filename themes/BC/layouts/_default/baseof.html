@@ -12,6 +12,10 @@
         {{/* temporary alert box on all hugo pages */}}
         {{/* partial "partials/alert-message.html" . */}}
 
+        {{/* new site beta message */}}
+        {{ partial "partials/beta-notice.html" . }}
+
+
         {{ if (and (.Site.Params.gtag) (ne .Site.Params.gtag false)) }}
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.gtag }}"
