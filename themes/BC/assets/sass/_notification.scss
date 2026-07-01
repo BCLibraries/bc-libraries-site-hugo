@@ -85,7 +85,7 @@ $beta-notice-background: hsl(195, 53%, 94%);
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center;
-  height: 75px;
+  min-height: 75px;
   gap: 1rem;
 
   &__box {
