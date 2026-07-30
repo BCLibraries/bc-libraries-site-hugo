@@ -82,7 +82,7 @@ $beta-notice-border: rgba(30, 107, 133, .5);
 $beta-notice-background: hsl(195, 53%, 94%);
 
 .beta-notice {
-  display: flex;
+  display: none;
   justify-content: center; /* Centers horizontally */
   align-items: center;
   min-height: 75px;
