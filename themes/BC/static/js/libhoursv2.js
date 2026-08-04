@@ -22,6 +22,21 @@ $(document).ready(function () {
         return SHOW_DEPARTMENTS || loc.category !== 'department'
     });
 
+    // set today's date
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const today = new Date();
+    const options = {
+        hour12: false,
+        weekday: "long",
+        hour: "numeric"
+    };
+    const dateTimeFormat = new Intl.DateTimeFormat("en-US", options);
+    const [dayOfWeek, comma, hour] = dateTimeFormat.formatToParts(today);
+    const allNightStatus = getTodaysTwentyfourHourStatus(dayOfWeek, hour);
+    const oneillHours = getOneillHours(dayOfWeek, hour);
+    const month = months[today.getMonth()];
+    const date = month + " " + today.getDate() + ", " + today.getFullYear();
+
     // grab each library's data from the output and place it where it needs to go
     function setHours(data) {
 
@@ -53,10 +68,6 @@ $(document).ready(function () {
 
             // get the data for this location from the hash
             const location_data = location_map[loc_to_show.id];
-
-            if (location_data.name === "O'Neill Library" && location_data.rendered.includes('*')) {
-                $('.onl-asterisk-notice').show();
-            }
 
             // libraries with an attached note to the hours will render
             // the hours string, then a new line char, then the note string.
@@ -111,10 +122,22 @@ $(document).ready(function () {
 
         const label_cell = document.createElement("td");
         label_cell.append(link);
+        if (label === 'Bapst Library') {
+            const innerHtml = '<div class="gargan-hall-notice">Gargan Hall may be closed for Student Registation sessions — <a href="https://libguides.bc.edu/bapst/hours">details</a></div>';
+            label_cell.innerHTML = `${label_cell.innerHTML} ${innerHtml}`;
+        }
 
         const hours_cell = document.createElement("td");
         hours_cell.classList.add("lib-hours");
-        hours_cell.textContent = hours;
+        hours_cell.textContent = hours.replace('(*)', '');
+
+        if (hours.includes('Open 24 Hours')) {
+            hours_cell.textContent = oneillHours;
+            const twenty_four_hour_notice = document.createElement('span');
+            twenty_four_hour_notice.className = 'badge badge-primary twenty-four-hours-notice';
+            twenty_four_hour_notice.textContent = allNightStatus;
+            hours_cell.appendChild(twenty_four_hour_notice);
+        }
 
         const row = document.createElement("tr");
         row.append(label_cell);
@@ -161,11 +184,75 @@ $(document).ready(function () {
         }
     }
 
-    // set today's date
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    const today = new Date();
-    const month = months[today.getMonth()];
-    const date = month + " " + today.getDate() + ", " + today.getFullYear();
+    /**
+     *
+     * @param {DateTimeFormatPart} localWeekday
+     * @param {DateTimeFormatPart} localHour
+     */
+    function getTodaysTwentyfourHourStatus(localWeekday, localHour) {
+
+        const open24Hours = 'Level One Open 24 Hours';
+        const openUntilTwoAM = 'Level One Open Until 2:00am';
+
+        switch (dayOfWeek.value) {
+            case 'Monday':
+            case 'Tuesday':
+            case 'Wednesday':
+            case 'Thursday':
+                return open24Hours;
+            case 'Friday':
+                if (localHour.value < 7) {
+                    return open24Hours;
+                } else {
+                    return openUntilTwoAM;
+                }
+            case 'Saturday':
+                return openUntilTwoAM;
+            case 'Sunday':
+                if (localHour.value < 7) {
+                    return openUntilTwoAM;
+                } else {
+                    return open24Hours;
+                }
+        }
+
+        // Between Monday @ 7am and Friday @ 7am - 7:00a - 2:00a, Level One Open 24 hours
+        // Between Friday @ 7am and Saturday @ 9am -  7:00a - 10:00p, Level One Open Until 2am
+        // Between Saturday @ 9am and Sunday @ 9am - 9:00a - 10:00p, Level One Open Until 2am
+        // Between Sunday @ 9am and Monday @ 7am - 9:00a - 10:00p, Level One Open 24 hours
+    }
+
+    function getOneillHours(localWeekday, localHour) {
+
+        const weekdayHours = '7:00am - 2:00am';
+        const fridayHours = '7:00am - 10:00pm';
+        const saturdayHours = '9:00am - 10:00pm';
+        const sundayHours = '9:00am - 2:00am';
+
+        switch (dayOfWeek.value) {
+            case 'Monday':
+            case 'Tuesday':
+            case 'Wednesday':
+            case 'Thursday':
+                return weekdayHours;
+            case 'Friday':
+                if (localHour.value < 7) {
+                    return weekdayHours;
+                } else {
+                    return fridayHours;
+                }
+            case 'Saturday':
+                return saturdayHours;
+            case 'Sunday':
+                return sundayHours
+        }
+
+        // Between Monday @ 7am and Friday @ 7am - 7:00a - 2:00a, Level One Open 24 hours
+        // Between Friday @ 7am and Saturday @ 9am -  7:00a - 10:00p, Level One Open Until 2am
+        // Between Saturday @ 9am and Sunday @ 9am - 9:00a - 10:00p, Level One Open Until 2am
+        // Between Sunday @ 9am and Monday @ 7am - 9:00a - 10:00p, Level One Open 24 hours
+    }
+
     $(".hours-todays-date").text(date);
     getHours().then();
 });

@@ -1,40 +1,42 @@
 {{ $dataJSON := dict }}
 {{ $url := "https://library.bc.edu/bc-hours/api_hours_today.php" }}
 {{ with resources.GetRemote $url }}
-  {{ with .Err }}
-    {{/* errorf "%s" . */}}
-    <script>console.error("There was an error loading hours content from LibApps: {{ $url }}");</script>
-  {{ else }}
-    {{ $dataJSON = . | transform.Unmarshal }}
-  {{ end }}
+{{ with .Err }}
+{{/* errorf "%s" . */}}
+<script>console.error('There was an error loading hours content from LibApps: {{ $url }}');</script>
 {{ else }}
-  {{/* errorf "Unable to get remote resource %q" $url */}}
-  <script>console.error("Unable to get remote resource: {{ $url }}");</script>
+{{ $dataJSON = . | transform.Unmarshal }}
+{{ end }}
+{{ else }}
+{{/* errorf "Unable to get remote resource %q" $url */}}
+<script>console.error('Unable to get remote resource: {{ $url }}');</script>
 {{ end }}
 
 <div class="table-hours">
 
-    {{/*<div class="alert alert-info alert-hours" role="alert"><i class="fa fa-exclamation-circle"></i> </div>*/}}
+  {{/*
+  <div class="alert alert-info alert-hours" role="alert"><i class="fa fa-exclamation-circle"></i></div>
+  */}}
 
-    <table class="table table-condensed table-bordered">
-        <caption class="accessibility-text">Today's Library Hours</caption>
-        <thead class="accessibility-text">
-        <tr>
-            <th>Library</th>
-            <th>Hours</th>
-        </tr>
-        </thead>
-        <tbody>
-        {{ range sort $dataJSON.locations "id" }}
-        {{ if eq .category "library" }}
-        <tr>
-            <td><a href="{{ .url }}">{{ .name }}</a></td>
-            <td class="lib-hours lib-hours-{{ .lid }}">{{ .rendered }}</td>
-        </tr>
-        {{ end }}
-        {{ end }}
-        </tbody>
-    </table>
-
-    <div class="onl-asterisk-notice">(*) The O'Neill Library first floor will remain open for use until 2:00 am.</div>
+  <table class="table table-condensed table-bordered">
+    <caption class="accessibility-text">Today's Library Hours</caption>
+    <thead class="accessibility-text">
+    <tr>
+      <th>Library</th>
+      <th>Hours</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{ range sort $dataJSON.locations "id" }}
+    {{ if eq .category "library" }}
+    <tr>
+      <td><a href="{{ .url }}">{{ .name }}</a></td>
+      <td class="lib-hours lib-hours-{{ .lid }}">{{ .rendered }}</td>
+    </tr>
+    {{ end }}
+    {{ end }}
+    </tbody>
+  </table>
+  <div class="lib-hours__id-requirement-notice">Access to libraries requires a BC ID from 10 pm to 6 am</div>
+  <div class="onl-asterisk-notice">(*) The O'Neill Library first floor will remain open for use until 2:00 am.</div>
 </div>

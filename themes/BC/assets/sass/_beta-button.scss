@@ -1,0 +1,38 @@
+$button_color: #DEE3DF;
+$button_hover_color: #CED4D0;
+
+#beta-container {
+  position: relative;
+}
+
+#library-beta-button {
+  position: absolute;
+  top: -1.8em;
+  display: none;
+  @media (max-width: 992px) {
+    position: relative;
+    margin-top: -1em
+  }
+
+  @media(max-width: 768px) {
+    position:static;
+    margin-top: 0;
+  }
+
+  margin: 0;
+  padding: 1rem;
+  background: #efefef;
+  border: 2px solid #003957;
+  border-radius: 4px;
+  box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  @media (min-width: 993px) {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 80%;
+  }
+}
+
+#library-beta-button a {
+  font-weight: 600;
+}

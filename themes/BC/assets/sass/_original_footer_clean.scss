@@ -9,6 +9,13 @@
     z-index: 4;
     position: relative;
     padding-top: 1em;
+
+
+    .lib-hours__id-requirement-notice {
+        color: #eee;
+        font-weight: 600;
+    }
+
 }
 #lib-footer ul {
     list-style: none;
@@ -47,10 +54,6 @@
     line-height: 1.5;
     display: none
 }
-#lib-footer .onl-asterisk-notice.visible {
-    display: block;
-}
-
 
 #lib-footer .social-wrap {
     float: right;
@@ -116,6 +119,16 @@
 }
 .table-hours {
     padding-bottom: .25rem;
+
+    .twenty-four-hours-notice {
+        margin-left: 1em;
+        margin-bottom: 4px;
+        background-color: #204375;
+    }
+}
+
+footer .table-hours .twenty-four-hours-notice {
+     margin-bottom: 1px;
 }
 .table-hours table {
     margin-bottom: .25rem;

@@ -1,12 +1,15 @@
 {{/* Stylesheets used by all pages */}}
 
 {{/* External stylesheets */}}
-{{/* Consider moving these local minimized downloads and reliance on
-    external sites. */}}
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/bcbento/css/app.css"/>
+{{ $google_fonts_style := resources.Get "css/google-fonts.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $google_fonts_style.RelPermalink }}">
+
+{{/* CSS from dists (bootstrap, fonts, etc) */}}
+{{ $bootstrap_style := resources.Get "css/bootstrap.min.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $bootstrap_style.RelPermalink }}">
+
+{{ $fontawesome_style := resources.Get "css/font-awesome.min.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $fontawesome_style.RelPermalink }}">
 
 {{/* To add a new stylesheet to the homepage, @include it in homepage.scss */}}
 

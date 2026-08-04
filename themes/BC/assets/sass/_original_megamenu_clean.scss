@@ -203,6 +203,12 @@
      position: absolute;
      top: 100%;
      z-index: 1000;
+
+     .lib-hours__id-requirement-notice {
+         font-weight: 400;
+         color: #0e0e0e;
+         margin-top: .5em;
+     }
  }
 
  /* CUSTOM MENU STYLING */
@@ -816,6 +822,15 @@
     font-weight: 600;
     align-self: flex-end;
 }
+
+.library-boxes .lib-box-heading {
+  margin-bottom: 0;
+}
+
+.lib-box .fa-map-marker {
+  color: $bc-brand-maroon;
+}
+
 
 @media ( max-width: 1199px ) {
     .library-box {

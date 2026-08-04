@@ -31,7 +31,7 @@
         <div class="panel-body">
             <div class="panel-heading">
                 <div class="media">
-                    <div class="media-left">
+                    <div class="media-left" style="display: flex">
                         <a href="{{ $library_url }}" class="lib-thumb">
                             {{ partial "picture" (dict "ctx"   .
                                                        "base"  $base_image
@@ -46,12 +46,16 @@
                     <div class="media-body">
                         <div class="media-body-inner">
                             <h3 class="media-heading accessibility-text">{{ .library.name }}</h3>
-                            <p><a class="lib-name" href="{{ $library_url }}">{{ .library.name }}</a></br/>{{ .library.brief_description }}</p>
+                            <p class="lib-box-heading"><a class="lib-name" href="{{ $library_url }}">{{ .library.name }}</a></br/>{{ .library.brief_description }}</p>
+
+                            {{ if .library.map }}
+                               <div><a href="{{ .library.map }}">Map <i class="fa fa-map-marker" aria-hidden="true"></i></a></div>
+                            {{ end }}
 
                             {{/* Contact info */}}
                             {{ if (eq .library.contact_type "phone") }}
                                 {{ range first 1 .library.phone }}
-                                    <div class="lib-box-pair">
+                            <div class="lib-box-pair">
                                         <span class="lib-box-pair-label">{{ .description }}:</span> <span class="lib-box-pair-value"><a href="tel:{{ .compressed }}">{{ .number }}</a></span>
                                     </div>
                                 {{ end }}

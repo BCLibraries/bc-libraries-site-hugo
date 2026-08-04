@@ -4,6 +4,7 @@
         "name": "Bapst Library",
         "brief_description": "Art and architecture",
         "contact_type": "phone",
+        "map": "https://libcal.bc.edu/maps/location?id=22850&mode=",
         "phone": [
             {
                 "number": "617-552-3200",
@@ -17,6 +18,7 @@
         "name": "Burns Library",
         "brief_description": "Special collections",
         "contact_type": "phone",
+        "map": "https://libcal.bc.edu/maps/location?id=22850&mode=",
         "phone": [
             {
                 "number": "617-552-4861",
@@ -24,12 +26,13 @@
                 "description": "Reference"
             }
         ]
-    },    
+    },
     "erc": {
         "code": "erc",
         "name": "Educational Resource Center",
         "brief_description": "Curriculum collection",
         "contact_type": "phone",
+        "map": "https://libcal.bc.edu/maps/location?id=22851&mode=",
         "phone": [
             {
                 "number": "617-552-4920",
@@ -57,6 +60,7 @@
         "name": "Law Library",
         "brief_description": "Legal research & scholarship",
         "contact_type": "phone",
+        "map": "https://lawlibstudyrooms.bc.edu/maps/location?id=762&mode=",
         "phone": [
             {
                 "number": "617-552-4434",
@@ -83,6 +87,7 @@
         "name": "O'Neill Library",
         "brief_description": "Main library",
         "contact_type": "phone",
+        "map": "https://libcal.bc.edu/maps/location/oneill?&mode=",
         "phone": [
             {
                 "number": "617-552-4472",
@@ -96,6 +101,7 @@
         "name": "Social Work Library",
         "brief_description": "Social services collection",
         "contact_type": "phone",
+        "map": "https://libcal.bc.edu/maps/location/sxphqws?&mode=",
         "phone": [
             {
                 "number": "617-552-0109",
@@ -110,6 +116,7 @@
         "name": "Theology & Ministry Library",
         "brief_description": "Theology & biblical studies",
         "contact_type": "phone",
+        "map": "https://libcal.bc.edu/maps/location?id=22849&mode=",
         "phone": [
             {
                 "number": "617-552-6553",
