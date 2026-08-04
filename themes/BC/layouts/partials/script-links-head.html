@@ -1,8 +1,9 @@
 {{/* Javascripts used on all pages */}}
 
 {{/* Local scripts */}}
-{{ $jquery_js := resources.Get "js/jquery-3.6.4.min.js" }}
-{{ $bootstrap_js := resources.Get "js/bootstrap.min.js" }}
+{{/* Pin versions to what LibGuides uses */}}
+{{ $jquery_js := resources.Get "js/jquery-3.7.1.min.js" }}
+{{ $bootstrap_js := resources.Get "js/bootstrap-5.3.5.min.js" }}
 
 {{/* Bundle all the scripts */}}
 {{ $all_scripts := slice $jquery_js $bootstrap_js }}

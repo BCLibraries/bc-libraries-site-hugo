@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{ $google_fonts_style.RelPermalink }}">
 
 {{/* CSS from dists (bootstrap, fonts, etc) */}}
-{{ $bootstrap_style := resources.Get "css/bootstrap.min.css" | fingerprint }}
+{{ $bootstrap_style := resources.Get "css/bootstrap-5.3.5.min.css" | fingerprint }}
 <link rel="stylesheet" href="{{ $bootstrap_style.RelPermalink }}">
 
 {{ $fontawesome_style := resources.Get "css/font-awesome.min.css" | fingerprint }}
