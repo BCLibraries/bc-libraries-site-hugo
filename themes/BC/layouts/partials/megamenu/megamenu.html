@@ -1,27 +1,22 @@
 <!-- MENU BEGINS HERE -->
 <div class="megamenu-container">
-    <div id="megamenu-refresh" class="container">
+    <div id="megamenu" class="container-xxl">
         <!-- BEGIN NAVBAR -->
-        <nav class="navbar yamm navbar-default" aria-label="Primary navigation">
-            <div id="navbar-collapse-1" class="container-fluid-skip">
-                <div class="navbar-header">
-                    <a href="https://libguides.bc.edu/my-accounts" class="accounts-link-mobile"><span class="fa fa-user" aria-hidden="true"></span> My Accounts</a>
+        <nav class="navbar navbar-expand-md" aria-label="Primary navigation">
+            <div class="container-fluid p-0 m-0">
+                <span class="navbar-brand d-none d-lg-block">Value Beyond Discovery</span>
 
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="accessibility-text">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-close"><span class="fa fa-times" aria-hidden="true"></span><span class="accessibility-text">Close navigation</span></span>
-                    </button>
+                <a href="https://libguides.bc.edu/my-accounts" class="accounts-link-mobile me-auto d-block d-md-none" role="button"><span class="fa fa-user" aria-hidden="true"></span> My Accounts</a>
 
-                    <div class="navbar-brand">Value Beyond Discovery</div>
+                <button class="navbar-toggler collapsed d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <!--span class="navbar-toggler-icon d-none"></span-->
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
 
-                </div>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    
-                    <ul class="nav navbar-nav" id="megamenu" data-tag="ga-tag">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto ms-lg-auto me-lg-0" data-tag="ga-tag">
 
                         {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "find" "menu_title" "Find" ) }}
 
@@ -35,11 +30,10 @@
                         
                         {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "myaccounts" "menu_title" "My Accounts" ) }}
 
-                    </ul>
+                    </ul> <!-- navbar-nav -->
                 
-                </div>
-
-            </div>
+                </div> <!-- navbar-collapse -->
+            </div> <!-- container-fluid -->
         </nav>
         <!-- END NAVBAR -->
     </div>

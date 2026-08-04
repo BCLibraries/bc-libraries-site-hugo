@@ -3,14 +3,11 @@
 {{ $partial_path := printf "megamenu/%s.html" .menu_partial }}
 {{ $menu_id := printf "mm-%s-header" .menu_partial }}
 
-<li class="dropdown yamm-fw">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-option" >{{ .menu_title }}</a>
-    <ul class="dropdown-menu">
-        <li>
-            <!-- Content container to add padding -->
-            <div class="yamm-content">
-                {{ partial $partial_path .context }}
-            </div>
-        </li>
-    </ul>
-</li>
+<li class="nav-item dropdown dropdown-hover" id="nav-item-menu-{{ .menu_partial }}">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ .menu_title }}</a>
+    <div class="dropdown-menu">
+        <div class="container-fluid">
+            {{ partial $partial_path .context }}
+        </div> <!-- container-fluid -->
+    </div> <!-- dropdown-menu -->
+</li> <!-- nav-item | dropdown -->

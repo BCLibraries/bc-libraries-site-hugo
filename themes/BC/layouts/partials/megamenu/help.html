@@ -1,154 +1,164 @@
+<!-- BEGIN Help menu dropdown -->
+
 <div class="row">
-    <div class="col-sm-9" id="mm-help-aal">
-        <div class="h4style"><a href="https://libguides.bc.edu/ask-a-librarian" id="mm-ask-a-librarian">Ask A
-                Librarian</a></div>
+    <!-- Ask A Librarian -->
+    <div class="col-12 col-sm-8 col-md-9 menu-list pb-4 pb-sm-0" id="mm-help-aal">
+        <a href="https://libguides.bc.edu/ask-a-librarian" id="mm-ask-a-librarian" class="menu-header">Ask A Librarian</a>
+        <div class="aal-box-container">
+            <div class="row row-cols-1 row-cols-md-2 gx-3 gy-3">
 
-        <div class="aal-box-container row">
-            <div class="col-sm-6 col-xs-12 aal-box-wrapper">
-                <div class="panel panel-default aal-box chat-box">
-                    <div class="panel-body">
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#" class="aal-icon chat-icon-link"><i class="fa fa-comment fa-fw"
-                                        aria-hidden="true"></i>
-                                    <div class="accessibility-text">Chat With Us</div>
-                                </a>
-                            </div>
-                            <div class="media-right">
-                                <div class="libraryh3lp" jid="cs-bostoncoll@chat.libraryh3lp.com"
-                                    style="display: none;"><a href="#" class="askuswidget-mm" 
-                                        onclick="window.open('https://libraryh3lp.com/chat/cs-bostoncoll@chat.libraryh3lp.com?skin=29500&amp;title=Boston+College&amp;sounds=1', 'chat', 'resizable=1,width=320,height=300'); return false;"
-                                        style="cursor: pointer;">
-                                        <div class="h4style">Chat with us</div>
-                                    </a></div>
-                                <div class="libraryh3lp" jid="ajcu-consortium@chat.libraryh3lp.com"
-                                    style="display: none;"><a href="#" class="askuswidget-mm" 
-                                        onclick="window.open('https://libraryh3lp.com/chat/ajcu-consortium@chat.libraryh3lp.com?skin=29500&amp;title=Boston+College/AJCU+Librarians&amp;profile=cs-bostoncoll', 'chat', 'resizable=1,width=320,height=300'); return false;"
-                                        style="cursor: pointer;">
-                                        <div class="h4style">Chat with us</div>
-                                    </a></div>
-                                <div class="libraryh3lp" jid="ajcu-chatstaff@chat.libraryh3lp.com"
-                                    style="display: none;"><a href="#" class="askuswidget-mm" 
-                                        onclick="window.open('https://libraryh3lp.com/chat/ajcu-chatstaff@chat.libraryh3lp.com?skin=29500&amp;title=ChatStaff+Librarians&amp;profile=cs-bostoncoll', 'chat', 'resizable=1,width=320,height=300'); return false;"
-                                        style="cursor: pointer;">
-                                        <div class="h4style">Chat with us</div>
-                                    </a></div>
-                                <p>Ask a question 24/7 and a librarian from BC or another institution
-                                    will help you.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <!-- Chat With Us card -->
+                <div class="col aal-box-wrapper">
+                    
+                    <!-- cs-bostoncoll@chat.libraryh3lp.com --> 
+                    <div class="libraryh3lp" jid="cs-bostoncoll@chat.libraryh3lp.com" style="display: block;">
+                        <a class="card-link-wrapper" href="#" onclick="window.open('https://libraryh3lp.com/chat/cs-bostoncoll@chat.libraryh3lp.com?skin=29500&amp;title=Boston+College&amp;sounds=1', 'chat', 'resizable=1,width=320,height=300'); return false;" style="cursor: pointer;">
+                            <div class="aal-box card">
+                                <div class="row g-2 flex-grow-1">
+                                    <div class="col-auto aal-icon-wrapper">
+                                        <div class="aal-icon aal-icon-chat"><i class="fa fa-comment fa-fw" aria-hidden="true"></i>
+                                            <div class="accessibility-text">Chat with Us</div>
+                                        </div>
+                                    </div>
+                                    <div class="col aal-metadata">
+                                        <div class="card-body">
+                                            <p class="card-title">Chat with us</p>
+                                            <p class="card-text">Ask a question 24/7 and a librarian from BC or another institution will help you.</p>
+                                        </div> <!-- card-body -->
+                                    </div> <!-- aal-metadata -->
+                                </div> <!-- row -->
+                            </div> <!-- card -->
+                        </a> <!-- card-link-wrapper -->
+                    </div> <!-- libraryh3lp; cs-bostoncoll -->
 
-            <div class="col-sm-6 col-xs-12 aal-box-wrapper">
-                <div class="panel panel-default aal-box">
-                    <div class="panel-body">
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="https://libguides.bc.edu/ask-a-librarian/email-us"
-                                    class="aal-icon email-icon-link"><i class="fa fa-envelope fa-fw"
-                                        aria-hidden="true"></i>
-                                    <div class="accessibility-text">Email Us</div>
-                                </a>
-                            </div>
-                            <div class="media-right">
-                                <div class="h4style"><a href="https://libguides.bc.edu/ask-a-librarian/email-us">Email
-                                        us</a></div>
-                                <p>Send us a question and we'll get back to you within a day.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <!-- ajcu-consortium@chat.libraryh3lp.com --> 
+                    <div class="libraryh3lp" jid="ajcu-consortium@chat.libraryh3lp.com" style="display: none;">
+                        <a class="card-link-wrapper" href="#" onclick="window.open('https://libraryh3lp.com/chat/ajcu-consortium@chat.libraryh3lp.com?skin=29500&amp;title=Boston+College/AJCU+Librarians&amp;profile=cs-bostoncoll', 'chat', 'resizable=1,width=320,height=300'); return false;" style="cursor: pointer;">
+                            <div class="aal-box card">
+                                <div class="row g-2 flex-grow-1">
+                                    <div class="col-auto aal-icon-wrapper">
+                                        <div class="aal-icon aal-icon-chat"><i class="fa fa-comment fa-fw" aria-hidden="true"></i>
+                                            <div class="accessibility-text">Chat with Us</div>
+                                        </div>
+                                    </div>
+                                    <div class="col aal-metadata">
+                                        <div class="card-body">
+                                            <p class="card-title">Chat with us</p>
+                                            <p class="card-text">Ask a question 24/7 and a librarian from BC or another institution will help you.</p>
+                                        </div> <!-- card-body -->
+                                    </div> <!-- aal-metadata -->
+                                </div> <!-- row -->
+                            </div> <!-- card -->
+                        </a> <!-- card-link-wrapper -->
+                    </div> <!-- libraryh3lp; ajcu-consortium -->
 
-            <div class="col-sm-6 col-xs-12 aal-box-wrapper">
-                <div class="panel panel-default aal-box">
-                    <div class="panel-body">
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians"
-                                    class="aal-icon meet-icon-link"><i class="fa fa-user fa-fw" aria-hidden="true"></i>
-                                    <div class="accessibility-text">Meet With Us</div>
-                                </a>
-                            </div>
-                            <div class="media-right">
-                                <div class="h4style"><a
-                                        href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Meet
-                                        with us</a></div>
-                                <p>Request an appointment in person or online with a subject librarian.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <!-- ajcu-chatstaff@chat.libraryh3lp.com --> 
+                    <div class="libraryh3lp" jid="ajcu-chatstaff@chat.libraryh3lp.com" style="display: none;">
+                        <a class="card-link-wrapper" href="#" onclick="window.open('https://libraryh3lp.com/chat/ajcu-chatstaff@chat.libraryh3lp.com?skin=29500&amp;title=ChatStaff+Librarians&amp;profile=cs-bostoncoll', 'chat', 'resizable=1,width=320,height=300'); return false;" style="cursor: pointer;">
+                            <div class="aal-box card">
+                                <div class="row g-2 flex-grow-1">
+                                    <div class="col-auto aal-icon-wrapper">
+                                        <div class="aal-icon aal-icon-chat"><i class="fa fa-comment fa-fw" aria-hidden="true"></i>
+                                            <div class="accessibility-text">Chat with Us</div>
+                                        </div>
+                                    </div>
+                                    <div class="col aal-metadata">
+                                        <div class="card-body">
+                                            <p class="card-title">Chat with us</p>
+                                            <p class="card-text">Ask a question 24/7 and a librarian from BC or another institution will help you.</p>
+                                        </div> <!-- card-body -->
+                                    </div> <!-- aal-metadata -->
+                                </div> <!-- row -->
+                            </div> <!-- card -->
+                        </a> <!-- card-link-wrapper -->
+                    </div> <!-- libraryh3lp; ajcu-chatstaff -->
+                </div> <!-- aal-box-wrapper -->
 
-            <div class="col-sm-6 col-xs-12 aal-box-wrapper">
-                <div class="panel panel-default aal-box">
-                    <div class="panel-body">
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="https://libguides.bc.edu/ask-a-librarian/locations" id="visit-icon-link"
-                                    class="aal-icon"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i>
-                                    <div class="accessibility-text">Visit Us</div>
-                                </a>
-                            </div>
-                            <div class="media-right">
-                                <div class="h4style"><a href="https://libguides.bc.edu/ask-a-librarian/locations">Visit
-                                        us</a></div>
-                                <p>Visit our library locations.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <ul class="col-sm-3 menu_list end">
-        <li>
-            <div class="h4style"><a href="https://libguides.bc.edu/research-help" id="mm-help-research">Research
-                    Help</a></div>
-        </li>
-        <li><a href="https://libguides.bc.edu/research_guides" id="mm-help-subjects">Research Guides</a>
-        </li>
-        <li><a href="https://libguides.bc.edu/subjects/course-guides" id="mm-help-course">Course
-                Guides</a></li>
-        <li><a href="https://libguides.bc.edu/subjects/general" id="mm-help-howto">How to... (General
-                Guides)</a></li>
-        <li><a href="https://libguides.bc.edu/core-skills-videos" id="mm-help-coreskills">Core Skills
-                video tutorials</a></li>
-        <li><a href="https://libguides.bc.edu/ask-a-librarian/contact" id="mm-help-subject-librarians">Subject
-                Librarians</a></li>
+                <!-- Email Us card -->
+                <div class="col aal-box-wrapper">
+                    <a class="card-link-wrapper" href="https://libguides.bc.edu/ask-a-librarian/email-us">
+                        <div class="aal-box card">
+                            <div class="row g-2 flex-grow-1">
+                                <div class="col-auto aal-icon-wrapper">
+                                    <div class="aal-icon aal-icon-email"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
+                                        <div class="accessibility-text">Email Us</div>
+                                    </div>
+                                </div>
+                                <div class="col aal-metadata">
+                                    <div class="card-body">
+                                        <p class="card-title">Email us</p>
+                                        <p class="card-text">Send us a question and we'll get back to you within a day.</p>
+                                    </div> <!-- card-body -->
+                                </div> <!-- aal-metadata -->
+                            </div> <!-- row -->
+                        </div> <!-- card -->
+                    </a> <!-- card-link-wrapper -->
+                </div> <!-- aal-box-wrapper -->
+
+                <!-- Meet With Us card -->
+                <div class="col aal-box-wrapper">
+                    <a class="card-link-wrapper" href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">
+                        <div class="aal-box card">
+                            <div class="row g-2 flex-grow-1">
+                                <div class="col-auto aal-icon-wrapper">
+                                    <div class="aal-icon aal-icon-meet"><i class="fa fa-user fa-fw" aria-hidden="true"></i>
+                                        <div class="accessibility-text">Meet With Us</div>
+                                    </div>
+                                </div>
+                                <div class="col aal-metadata">
+                                    <div class="card-body">
+                                        <p class="card-title">Meet With us</p>
+                                        <p class="card-text">Request an appointment in person or online with a subject librarian.</p>
+                                    </div> <!-- card-body -->
+                                </div> <!-- aal-metadata -->
+                            </div> <!-- row -->
+                        </div> <!-- card -->
+                    </a> <!-- card-link-wrapper -->
+                </div> <!-- aal-box-wrapper -->
+
+                <!-- Visit Us card -->
+                <div class="col aal-box-wrapper">
+                    <a class="card-link-wrapper" href="https://libguides.bc.edu/ask-a-librarian/locations">
+                        <div class="aal-box card">
+                            <div class="row g-2 flex-grow-1">
+                                <div class="col-auto aal-icon-wrapper">
+                                    <div id="aal-icon-visit" class="aal-icon-visit aal-icon"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i>
+                                        <div class="accessibility-text">Visit Us</div>
+                                    </div>
+                                </div>
+                                <div class="col aal-metadata">
+                                    <div class="card-body">
+                                        <p class="card-title">Visit us</p>
+                                        <p class="card-text">Visit our library locations.</p>
+                                    </div> <!-- card-body -->
+                                </div> <!-- aal-metadata -->
+                            </div> <!-- row -->
+                        </div> <!-- card -->
+                    </a> <!-- card-link-wrapper -->
+                </div> <!-- aal-box-wrapper -->
+
+            </div> <!-- row -->
+        </div> <!-- aal-box-container -->
+    </div> <!-- menu-list -->
+
+    <!-- Research Help -->
+    <ul class="col-12 col-sm-4 col-md-3 menu-list">
+        <li><a href="https://libguides.bc.edu/research-help" id="mm-help-research" class="menu-header">Research Help</a></li>
+        <li><a href="https://libguides.bc.edu/research_guides" id="mm-help-subjects">Research Guides</a></li>
+        <li><a href="https://libguides.bc.edu/subjects/course-guides" id="mm-help-course">Course Guides</a></li>
+        <li><a href="https://libguides.bc.edu/subjects/general" id="mm-help-howto">How to... (General Guides)</a></li>
+        <li><a href="https://libguides.bc.edu/core-skills-videos" id="mm-help-coreskills">Core Skills video tutorials</a></li>
+        <li><a href="https://libguides.bc.edu/ask-a-librarian/contact" id="mm-help-subject-librarians">Subject Librarians</a></li>
         <li><a href="https://answers.bc.edu" id="mm-help-faq">FAQ</a></li>
-    </ul>
-</div>
-<div class="row bottom_row">
+    </ul> <!-- menu-list -->
+</div> <!-- row -->
+
+<div class="row find-more-link">
     <div class="more">
         <a href="https://libguides.bc.edu/ask-a-librarian" id="mm-help-all">All Help
             <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
         </a>
     </div>
-</div>
+</div> <!-- row -->
 
-<!-- This script handles the showing/hiding of all of the libraryH3lp divs. -->
-<script type="text/javascript">
-    $(document).ready(function () {
-        (function () {
-            var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
-            x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?multi,poll";
-            var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
-        })();
-
-        $(".chat-icon-link").click(function (e) {
-            e.preventDefault();
-            var active = $(".aal-box .libraryh3lp > a").filter(":visible");
-            if (active && active.length) {
-                active.first().click();
-            } else {
-                console.log("can't locate active libraryh3lp element!");
-                alert("Sorry, library chat is inactive at the moment. Try again later, or use another method to contact a library staff member.");
-            }
-        });
-    });
-</script>
+<!-- END Help menu dropdown -->

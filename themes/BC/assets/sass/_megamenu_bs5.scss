@@ -1,0 +1,262 @@
+.megamenu-container {
+    background-color: rgba(16,14,15,.85);
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+#megamenu {
+    .navbar {
+        padding: 0;
+        margin: 0;
+
+        .nav-item.dropdown {
+            position: static;
+        }
+    }
+
+    .navbar-brand,
+    .nav-link {
+        color: $white-text;
+    }
+
+    .navbar-brand {
+        text-shadow: 0 2px 6px rgba(0, 0, 0,0.85);
+        font-style: italic;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-weight: 200;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-hover>.dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-top: none;
+        box-shadow: 0rem 1.5rem 2.25rem .125rem #c5bfb0; // #c5bfb0
+    }
+
+    .dropdown-toggle {
+        &:after {
+            content: none; // hide arrow icon
+        }
+    }
+
+    // Add custom navbar toggler icon and transition
+    // See https://www.youtube.com/watch?v=_MrShB9fh7U
+    .navbar-toggler {
+        // background-color: white;
+        width: 1.25rem; // 20px
+        height: 1.25rem; // 20px
+        position: relative;
+        border: 0;
+        transition: .5s ease-in-out;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &:focus,
+        &:active {
+            outline: none;
+            box-shadow: none;
+            border: 0;
+            position: relative;
+        }
+
+        span {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .toggler-icon {
+            display: block;
+            position: absolute;
+            height: .1875rem; // 3px
+            width: 100%;
+            background: $white-body;
+            border-radius: 1px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+
+            // When menu is expanded
+            &.top-bar {
+                margin-top: 0px;
+                transform: rotate(135deg);
+            }
+
+            &.middle-bar {
+                margin-top: 0px;
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+
+            &.bottom-bar {
+                margin-top: 0px;
+                transform: rotate(-135deg);
+            }
+        }
+
+        // When menu is collapsed
+        &.collapsed {
+            .toggler-icon {
+                &.top-bar {
+                    margin-top: -1.25rem; // -20px
+                    transform: rotate(0deg);
+                }
+    
+                &.middle-bar {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                }
+    
+                &.bottom-bar {
+                    margin-top: 1.25rem; // 20px
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        .menu-list {
+            list-style: none;
+            padding: 0 1rem; // 0 16px
+    
+            border-right: 1px solid $very-light-gray; // #dadada
+    
+            &:last-child {
+                border-right: none;
+                padding-right: 0;
+            }
+    
+            li {
+                padding: 0;
+                margin: 0;
+    
+                a {
+                    padding: .375rem .25rem; // 6px 4px
+                    margin: 0;
+                    color: #666666; // #666666
+                    word-break: normal;
+                    display: inline-block;
+                    width: 100%;
+    
+                    &:hover,
+                    &:focus {
+                        color: $pitch_black; // #000000
+                    }
+    
+                    &.menu-header {
+                        color: $bc-link-color; // #2f7ab9
+                    }
+    
+                    .tuck {
+                        font-size: small;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .menu-header {
+            font-weight: 700;
+            padding: .375rem .25rem; // 6px 4px
+            display: block; 
+        }
+    
+        .menu-text {
+            padding: 0 .25rem .5rem .25rem; // 0 4px 6px 4px
+        }
+
+        .find-more-link {
+            border-top: 1px solid $very-light-gray; // #dadada
+            padding-top: 1rem; // 16px
+            margin-top: 1rem; // 16px
+            text-align: end;
+            font-weight: 700;
+    
+            a {
+                padding: .25rem; // 4px
+            }
+        }
+
+        .occupancy-link {
+            text-align: right;
+            margin-top: .75rem; // 12px
+        }
+    
+        .hours-todays-date {
+            font-weight: 600;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $bc-link-color; // #2f7ab9
+
+        &:hover,
+        &:focus {
+            // remove maroon hover-over color for links
+            text-decoration: none;
+            background: #e0e0e0; // #e0e0e0
+        }
+
+        &.nav-link {
+            font-size: 20px;
+            line-height: 1;
+            font-weight: 200;
+            padding: .9375rem; // 15px
+
+            &:hover,
+            &:focus,
+            &.show {
+                background: #05506D; // #05506D
+                outline: 0;
+            }
+        }
+
+        &.accounts-link-mobile {
+            padding: .5rem 1rem; // 8px 16px
+            margin: .75rem 0; // 12px 0 
+            font-size: 18px;
+            line-height: 1;
+            background-color: #204375; // #204375
+            color: $white-text;
+            border-radius: .25rem; // 4px
+        }
+    }
+
+    .table-hours {
+        table {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Medium viewport
+@media (max-width: 768px) {
+    #megamenu .dropdown .menu-list:nth-child( even ) {
+        border: none;
+    }
+
+    #megamenu #nav-item-menu-accounts.dropdown .menu-list {
+        border: none;
+    }
+}
+
+// Extra small viewport <576px
+@media (max-width: 575px) {
+    #megamenu .dropdown .menu-list {
+        border: none;
+    }
+}

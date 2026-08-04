@@ -1,20 +1,65 @@
+<!-- BEGIN Hours menu dropdown -->
+
 <div class="row">
-    <!-- All hours -->
-    <ul class="col-sm-12 col-md-10 col-md-offset-1 hours_menu_list">
-        <li>
-            <div class="hours-todays-date-container">
-                Library hours for <span class="hours-todays-date">{{ now.Format "January 2, 2006"}}</span>
+    <div class="col-12 col-lg-10 offset-0 offset-lg-1">
+        <div class="hours-todays-date-container">Library hours for <span class="hours-todays-date"></span></div>
+            <div class="table-hours">
+                <!--div class="alert alert-info alert-hours" role="alert"><i class="fa fa-exclamation-circle"></i> </div-->
+                <table class="table table-condensed table-bordered">
+                    <caption class="accessibility-text">Today's Library Hours</caption>
+                    <thead class="accessibility-text">
+                        <tr>
+                            <th>Library</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://libguides.bc.edu/oneill/hours">O'Neill Library</a></td>
+                            <td class="lib-hours lib-oneill"></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://libguides.bc.edu/bapst/hours">Bapst Library</a></td>
+                            <td class="lib-hours lib-bapst"></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://libguides.bc.edu/burns">Burns Library</a></td>
+                            <td class="lib-hours lib-burns"></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://libguides.bc.edu/erc/hours">Educational Resource Center</a></td>
+                            <td class="lib-hours lib-erc"></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.bc.edu/bc-web/schools/law/sites/students/library/using/hours.html">Law Library</a></td>
+                            <td class="lib-hours lib-law"></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://libguides.bc.edu/socialwork/hours">Social Work Library</a></td>
+                            <td class="lib-hours lib-swl"></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://libguides.bc.edu/tml/hours">Theology &amp; Ministry Library</a></td>
+                            <td class="lib-hours lib-tml"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="onl-asterisk-notice">(*) The O'Neill Library first floor will remain open for use until 2:00 am.</div>
             </div>
-            {{ partial "todays-library-hours.html" . }}
-        </li>
-    </ul>
-    <div class="col-sm-12 col-md-10 col-md-offset-1 hours_menu_list occupancy-link">
-        <a href="https://app.safespace.io/api/display/live-occupancy/f7b3db8a?view=percent"><i class="fa fa-users" aria-hidden="true"></i> How crowded is O'Neill right now?</a>
+        </div> <!-- library-hours-container -->
+
+        <div class="col-12 col-lg-10 offset-0 offset-lg-1 occupancy-link">
+            <a href="https://app.safespace.io/api/display/live-occupancy/f7b3db8a?view=percent"><i class="fa fa-users" aria-hidden="true"></i> How crowded is O'Neill right now?</a>
+        </div> <!-- occupancy-link -->
     </div>
-</div>
-<div class="row bottom_row">
+</div> <!-- row -->
+
+<div class="row find-more-link">
     <div class="more">
-        <a href="https://libguides.bc.edu/hours">See all hours</a>
-        <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i> 
+        <a href="https://libguides.bc.edu/hours" id="mm-more-see-all-hours">See all hours 
+            <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+        </a>
     </div>
-</div>
+</div> <!-- row -->
+
+<!-- END Hours menu dropdown -->
