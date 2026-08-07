@@ -1,16 +1,72 @@
-// Styles used on library.bc.edu.
+// Styles used on library.bc.edu
 @import 'variables/colors';
 
-@import 'refresh_clean';
-@import 'megamenu_clean';
-@import 'footer_clean';
-@import 'refresh_content_rows';
-@import 'notification';
+// Original stylesheets
+//
+// @import 'original_refresh_clean';
+// @import 'original_homepage';
+// @import 'original_homepage_alternate_header';
+// @import 'original_notification';
+// @import 'original_megamenu_clean';
+// @import 'original_services_highlight';
+// @import 'original_refresh_content_rows';
+// @import 'original_social_media_highlight';
+// @import 'original_featured_subject_specialists';
+// @import 'original_footer_clean';
+// @import 'original_virtual_pet_therapy';
+
+// Original page stylesheets
+//
+// @import 'original_news';
+// @import 'original_facpub_refresh';
+// @import 'original_exhibit_refresh';
+
+// Core stylesheets
+//
+@import 'core';
+@import 'core_bootstrap_override';
+@import 'core_component_hours';
+@import 'core_component_aal_card';
+@import 'core_component_aal_override';
+@import 'core_component_megamenu_yamm';
+@import 'core_notifications';
+@import 'core_header_bc';
+@import 'core_megamenu';
+@import 'core_footer_bc';
+@import 'core_footer_lib';
+
+// Homepage stylesheets
+//
 @import 'homepage';
-@import 'homepage-alternate-header';
-@import 'beta-button';
-@import 'exhibit-refresh';
-@import 'facpub-refresh';
-@import 'social-media-highlight';
-@import 'bento';
-@import 'news';
+@import 'homepage_alternate_header';
+@import 'homepage_search_panel';
+@import 'homepage_quicklinks';
+@import 'homepage_ask_a_librarian';
+@import 'homepage_featured_tip';
+@import 'homepage_news';
+@import 'homepage_featured_subject_specialists';
+@import 'homepage_explore_collections';
+@import 'homepage_content_highlight';
+@import 'homepage_content_highlight_social_media';
+
+// Unused/deprecated stylesheets
+//
+// @import 'core_potourri';
+// @import 'homepage_potourri';
+// @import 'homepage_faculty_publication';
+// @import 'homepage_exhibits_highlight';
+// @import 'homepage_content_highlight_digital_collection';
+// @import 'homepage_content_highlight_digital_scholarship';
+// @import 'homepage_services_at_bc';
+// @import 'homepage_virtual_pet_therapy';
+
+// Page stylesheets
+//
+@import 'page_bento';
+@import 'page_faculty_publication';
+@import 'page_exhibits';
+@import 'page_news';
+
+// Print stylesheet
+//
+@import 'print';
