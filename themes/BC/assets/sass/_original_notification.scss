@@ -1,3 +1,4 @@
+/* _core_notifications
 #downtime-notification {
   z-index: 101;
   top: 0;
@@ -13,7 +14,9 @@
 #close {
   display: none;
 }
+*/
 
+/* _core_potourri
 .covid-notice {
   z-index: 101;
   background: #fde073;
@@ -77,13 +80,15 @@
   margin: 2em 0;
   padding: 2em 0;
 }
+*/
 
+/* _core_notifications
 $beta-notice-border: rgba(30, 107, 133, .5);
 $beta-notice-background: hsl(195, 53%, 94%);
 
 .beta-notice {
   display: none;
-  justify-content: center; /* Centers horizontally */
+  justify-content: center; // Centers horizontally
   align-items: center;
   min-height: 75px;
   gap: 1rem;
@@ -96,15 +101,15 @@ $beta-notice-background: hsl(195, 53%, 94%);
     padding: 1rem 1.5rem;
     margin: 1rem;
     display: flex;
-    justify-content: center; /* Centers horizontally */
+    justify-content: center; // Centers horizontally
     align-items: center;
     gap: 1rem;
   }
 
   &__vertical-bar {
-    width: 4px; /* The thickness of the line */
-    height: 26px; /* The height of the line */
-    background-color: $beta-notice-border; /* The color of the line */
+    width: 4px;  // The thickness of the line
+    height: 26px;  // The height of the line
+    background-color: $beta-notice-border; // The color of the line
     border: 2px solid $beta-notice-border;
     border-radius: 2px;
     margin: 0 auto;
@@ -129,3 +134,4 @@ $beta-notice-background: hsl(195, 53%, 94%);
     }
   }
 }
+*/

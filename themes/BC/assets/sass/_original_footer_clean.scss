@@ -1,4 +1,5 @@
 /* footers */
+/* _core_footr_lib
 #lib-footer {
     background-color: $bc-brand-maroon;
     color: $white-text;
@@ -48,7 +49,7 @@
     float: left;
 }
 
-/* Show this notice if one of the hours has an asterisk */
+// Show this notice if one of the hours has an asterisk
 #lib-footer .onl-asterisk-notice {
     font-size: 14px;
     line-height: 1.5;
@@ -149,8 +150,10 @@ footer .table-hours .twenty-four-hours-notice {
     height: 100px;
     margin-top: 20px;
 }
+*/
 
 
+/* _core_footer_bc
 #bc-footer {
     background: $bc-primary-dark-red;
     padding: 15px 0;
@@ -205,10 +208,12 @@ footer .table-hours .twenty-four-hours-notice {
     margin-top: 20px;
     text-align: right;
 }
+*/
 
 /*                      */
 /* taken from style.css */
 /*                      */
+/* _core_footer_lib
 #media_news:after {
     font-family: 'FontAwesome';
     content: "\f09e";
@@ -256,9 +261,11 @@ footer .table-hours .twenty-four-hours-notice {
         right: 0;
     }
 }
+*/
 
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
+    /* core_footer_lib
     #lib-footer .lib-footer-links a {
         border-right: 0;
         padding-left: 0;
@@ -268,6 +275,9 @@ footer .table-hours .twenty-four-hours-notice {
     #lib-footer .phone-numbers .phone-pair {
         padding-top: 4px;
     }
+    */
+
+    /* core_footer_bc
     #bc-footer .copyright {
         text-align: left;
     }
@@ -275,16 +285,21 @@ footer .table-hours .twenty-four-hours-notice {
         text-align: left;
         padding-top: 20px;
     }
+    */
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    /* core_footer_lib
     #lib-footer h4.orgname {
         margin-top: inherit;
     }
     #lib-footer .hours-wrap {
         margin-top: 3em;
     }
+    */
+
+    /* core_footer_bc
     #bc-footer .bc-links ul {
         max-width: 275px;
         margin: 0 auto;
@@ -311,8 +326,11 @@ footer .table-hours .twenty-four-hours-notice {
         margin-right: 0;
         padding-right: 0;
     }
+    */
 }
 
+/* _print
 @media print {
     footer {display: none!important;}
 }
+*/

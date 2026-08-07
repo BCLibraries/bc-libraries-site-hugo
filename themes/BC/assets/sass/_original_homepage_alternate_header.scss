@@ -1,0 +1,38 @@
+/* _homepage_alternate_header
+html.fallback body.alternate-header #hero-box {
+    background: url("https://library.bc.edu/images/homepage/hero/gasson-in-spring-01-1440px.jpg") no-repeat 0 85% #fff;
+    background-size: cover;
+}
+
+html.avif body.alternate-header #hero-box {
+    background: url("https://library.bc.edu/images/homepage/hero/gasson-in-spring-01-1440px.avif") no-repeat 0 85% #fff;
+    background-size: cover;
+}
+
+html.webp body.alternate-header #hero-box {
+    background: url("https://library.bc.edu/images/homepage/hero/gasson-in-spring-01-1440px.webp") no-repeat 0 85% #fff;
+    background-size: cover;
+}
+
+body.alternate-header {
+    #services-highlight-container {
+        border: 0;
+    }
+    #search-panel {
+        border: 2px solid rgba(0, 0, 0, .25);
+    }
+}
+
+@media (min-width: 768px) {
+    #hero-box {
+        padding-top: 120px;
+        height: 380px;
+    }
+}
+
+@media (max-width: 767px) {
+    #hero-box {
+        padding-top: 85px;
+    }
+}
+*/

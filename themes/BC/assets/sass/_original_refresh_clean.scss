@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* _core
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     color: $black-text;
@@ -25,18 +26,25 @@ body {
     font-size: .9em;
     margin-left: 0;
 }
+*/
 
 /* links */
+/* _core
 a {
-    color: #2f7ab9; /* BC link color */
+    color: #2f7ab9; // BC link color
 }
+*/
 
+/* _homepage_facultypublication
 #facpub h2 a {
     font-size: 24px;
     border-bottom: 1px solid;
     text-decoration: none;
 }
+*/
 
+/* _homepage_content_hightlight_digital_collection, 
+   _homepage_content_hightlight_digital_scholarship
 #ds-highlight .content h3,
 #digcol-highlight .content h3 {
     margin: 0 0 20px 0;
@@ -59,9 +67,11 @@ a {
     border-bottom: 1px solid $bc-primary-light-gold;
     text-decoration: none;
 }
+*/
 
 
 /*  boostrap overrides  */
+/* _core_bootstrap_overrides
 .row {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -73,8 +83,10 @@ a {
         flex-wrap: wrap;
     }
 }
+*/
 
 /* top level maroon bar */
+/* _core_header_bc
 #bclib-header {
     background: $bc-brand-maroon no-repeat 100% 0;
     border-bottom: 1px solid $bc-primary-light-gold;
@@ -82,7 +94,9 @@ a {
     display: flex;
     align-items: center;
 }
+*/
 
+/* _core
 #skiplink {
     position: absolute;
     top: -1000px;
@@ -104,7 +118,9 @@ a {
     background-color: $white-body;
     padding: 4px;
 }
+*/
 
+/* _core_header_bc
 #bclib-header a {
     color: $white-text;
 
@@ -123,11 +139,11 @@ a {
     text-align: right;
     margin: 0;
     text-transform: uppercase;
-    /* we want height = 30px */
-    /*    15 * 2      = 30   */
-    /*    14 * 2.143 ~= 30   */
-    /*    13 * 2.308 ~= 30   */
-    /*    12 * 2.5    = 30   */
+    // we want height = 30px
+    //    15 * 2      = 30
+    //    14 * 2.143 ~= 30
+    //    13 * 2.308 ~= 30
+    //    12 * 2.5    = 30
     font-size: 14px;
     line-height: 2.143;
 }
@@ -140,28 +156,34 @@ a {
         font-size: 14px;
     }
 }
-
+*/
 /* end top level maroon bar */
 
-
+/* _core_megamenu
 .megamenu-container {
     margin: 0;
     padding: 0;
 }
+*/
 
 /* content sections */
 
 /* header */
+/* _homepage
 #hero-box {
     padding-bottom: 4rem;
     padding-top: 80px;
     background-color: #467282;
 }
+*/
 
+/* _core_potpourri
 #header-top-row {
     padding-top: 0;
 }
+*/
 
+/* _core
 .caption-link {
     position: absolute;
     bottom: 0;
@@ -181,15 +203,19 @@ a {
 .caption-link a:focus {
     text-decoration: underline;
 }
+*/
 
+/* _core_megamenu
 @media (min-width: 768px) {
     .navbar-nav {
         float: right;
         margin: 0;
     }
 }
+*/
 
 /* Search panel */
+/* _homepage_search_panel
 #search-panel {
     background-color: $bc-brand-maroon;
     border-radius: 6px;
@@ -243,11 +269,15 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
     font-size: .9em;
     color: white;
 }
+*/
 
+/* _core_bootstrap_overrides
 .container-fluid .pull-right {
     height: auto;
 }
+*/
 
+/* _homepage_content_hightlight
 .leftBottom,
 .leftTop,
 .rightTop,
@@ -297,12 +327,14 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
 .rightBottom .container-fluid .pull-right .content {
     float: right;
 }
+*/
 
+/* _core_component_aal_override
 .megamenu-container .libraryh3lp > a.chat-link {
     font-weight: 600;
 }
 
-/* Ask A Librian box styles */
+// Ask A Librian box styles
 .aal-box,
 .lib-box {
     background-color: #f8f8f8;
@@ -332,7 +364,7 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
 }
 
 .aal-box a {
-    /* darken to better contrast against light-gray background */
+    // darken to better contrast against light-gray background
     color: #3076AB;
 }
 
@@ -380,7 +412,7 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
     max-width: 141px !important;
 }
 
-/* Ask A Librarian small boxes */
+// Ask A Librarian small boxes
 .lib-box-small .panel-body .media img {
     max-width: 100px !important;
 }
@@ -406,18 +438,24 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
 .lib-box-small .panel h3 {
     font-size: 15px;
 }
+*/
 
+/* _core_footer_lib
 #lib-footer .alert-hours {
     padding: .5rem 1rem;
     font-weight: 400;
     margin-bottom: .5rem;
 }
+*/
 
+/* _core
 .alert-hours a, .alert-hours a:hover, #lib-footer .alert-hours a, #lib-footer .alert-hours a:hover {
     color: darkslateblue;
     font-weight: 700;
 }
+*/
 
+/* _core_potpourri
 @media ( max-width: 1199px ) {
 
     #bcl-feedback #feedback_wrapper {
@@ -431,32 +469,39 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
         margin: 40px auto 20px auto;
     }
 }
+*/
 
 
 /* media query overrides */
-
+/* _homepage_quicklinks
 @media screen and (min-width: 1200px) {
     #quick-links .quick-link-block {
         height: 128px;
     }
 }
+*/
 
 /* Landscape tablets and all desktops */
+/* _core_header_bc
 @media screen and (min-width: 992px) {
     #bclib-header .input-wrapper {
         padding-right: 0;
     }
 }
+*/
 
 /* Landscape tablets and medium desktops */
+/* _homepage_quicklinks
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     #quick-links .quick-link-block {
         height: 184px;
     }
 }
+*/
 
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
+    /* _core_header_bc
     #bclib-header .col-sm-12 {
         width: 100%;
     }
@@ -477,34 +522,46 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
         padding-left: 0;
         padding-right: 0;
     }
+    */
 
+    /* _homepage_news
     #news {
         padding-bottom: 0;
     }
+    */
 
+    /* _homepage_facultypublication
     #facpub img.bookcover {
         display: none !important;
     }
+    */
 
+    /* _homepage_news
     #news .more-news {
         text-align: center;
         margin-top: -1em;
     }
+    */
 
+    /* _core_megamenu
     .navbar-brand {
         display: none;
     }
+    */
 }
 
+/* _homepage
 @media (min-width: 768px) {
     #hero-box {
         padding-top: 80px;
         height: 320px;
     }
 }
+*/
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    /* _core_header_bc
     #bclib-header > .container {
         width: 100%;
     }
@@ -517,7 +574,9 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
     #bclib-header ul.bclib-header-links li {
         margin: 0 10px;
     }
+    */
 
+    /* _core_bootstrap_overrides
     .container-fluid .pull-right {
         left: auto !important;
         top: auto !important;
@@ -539,12 +598,16 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
         right: auto;
         left: auto;
     }
+    */
 
+    /* _homepage_potourii
     #scholarship .row {
         margin-left: 1em;
         margin-right: 1em;
     }
+    */
 
+    /* _homepage_search_panel
     #search-panel button.btn.btn-default .search-button-text {
         position: absolute;
         width: 1px;
@@ -555,17 +618,23 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
         clip: rect(0, 0, 0, 0);
         border: 0;
     }
+    */
 
+    /* _core
     .caption-link {
         display: none;
     }
+    */
 
+    /* _homepage_search_panel
     #search-panel #search-links div {
         display: inline-block;
     }
+    */
 }
 
 /* Specific to the bc-lib header */
+/* _core_header_bc
 @media (max-width: 600px) {
     #bclib-header .link-wrapper,
     #bclib-header .input-wrapper {
@@ -577,8 +646,11 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
         padding: 4px 0 6px 0;
     }
 }
+*/
 
+/* _core_bootstrap_override, _core_header_bc
 @media (max-width: 480px) {
+    // _core_bootstrap_overrides
     .col-xxs {
         display: block;
         float: none;
@@ -586,6 +658,7 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
         margin: 0;
     }
 
+    // _core_header_bc
     #bclib-header {
         height: auto;
     }
@@ -601,8 +674,10 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
         width: 100%;
     }
 }
+*/
 
 /* Ask A Librarian specific */
+/* _core_component_aal_override
 @media (max-width: 424px) {
     .aal-box .panel-body .media img,
     .aal-box-small .panel-body .media img,
@@ -617,16 +692,20 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
         font-size: 50px !important;
     }
 }
+*/
 
 /* Specific to the bc-lib header */
+/* _core_header_bc
 @media (max-width: 400px) {
     #bclib-header .link-wrapper .fa-commenting-o,
     #bclib-header .link-wrapper .fa-user {
         display: none;
     }
 }
+*/
 
 /* Ask A Librarian specific */
+/* _core_component_aal_override
 @media (max-width: 374px) {
     .aal-box a.aal-icon,
     .aal-box-small a.aal-icon,
@@ -637,7 +716,9 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
         display: none;
     }
 }
+*/
 
+/* _print
 @media print {
     body {
         font-size: large;
@@ -683,7 +764,7 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
         width: 100%;
     }
 
-    /*  homepage only styles */
+    //  homepage only styles
     #ds-highlight h3,
     #ds-highlight h3 a,
     #exhibit-highlight h2,
@@ -803,3 +884,4 @@ button.whats-this, button.whats-this:active, button.whats-this:hover {
         padding: 1.5em 0 0 0;
     }
 }
+*/

@@ -1,9 +1,27 @@
-// Styles used on libguides.bc.edu.
+// Styles used on libguides.bc.edu
 @import 'variables/colors';
 
-@import 'refresh_clean';
-// @import 'megamenu_clean';
-@import 'megamenu_bs5';
-@import 'footer_clean';
-@import 'libguides-styles';
-@import 'notification';
+// Original stylesheets
+//
+// @import 'original_refresh_clean';
+// @import 'original_megamenu_clean';
+// @import 'original_footer_clean';
+// @import 'original_notification';
+
+// Core stylesheets
+//
+@import 'core';
+@import 'core_bootstrap_override';
+@import 'core_component_hours';
+@import 'core_component_aal_card';
+@import 'core_component_aal_override';
+@import 'core_component_megamenu_yamm';
+@import 'core_notifications';
+@import 'core_header_bc';
+@import 'core_megamenu';
+@import 'core_footer_bc';
+@import 'core_footer_lib';
+
+// LibGuides stylesheets
+//
+@import 'original_libguides_styles';

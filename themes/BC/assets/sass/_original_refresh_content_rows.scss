@@ -2,6 +2,7 @@
 
 /* BUTTON STYLING */
 
+/* _homepage, _homepage_exhibits
 .content .btn.btn-default, #exhibit-highlight .btn {
     padding: 12px;
     font-size: 14px;
@@ -24,7 +25,9 @@
     color: $white-text;
     background: #1d3c68;
 }
+*/
 
+/* _core_potpourri
 .row.nobottom {
 	padding-bottom: 0;
 }
@@ -32,9 +35,11 @@
 .row.notop {
 	padding-top: 0;
 }
+*/
 
 /* HOMEPAGE EXHIBIT ROW STYLING */
 
+/* _homepage_exhibits
 .homepagerefresh #exhibit-highlight {
 	display: inline-block;
 	width: 100%;
@@ -94,17 +99,24 @@ a.current-exhibits-title {
 	max-height: 100%;
 	border: 1px solid $black-body;
 }
+*/
 
+/* _homepage_news, _homepage_exhibits
 @media (max-width: 991px) {
+    // _homepage_news
 	#news .news-content {
 		margin: 0 auto 2em auto;
 	}
+
+    // _homepage_exhibits
 	.exhibit-box .exhibit-left {
 		text-align: left;
 	}
 }
+*/
 
 /* EXHIBIT SLIDER OVERWRITES */
+/* _homepage_exhibits
 #exhibit-highlight .carousel {
 	max-width: 75%;
 	margin: auto;
@@ -118,9 +130,10 @@ a.current-exhibits-title {
 #exhibit-highlight .carousel-control.right {
 	right:-15%;
 }
-
+*/
 
 /* MEDIA QUERIES */
+/* _homepage_exhibits
 @media (max-width: 767px) {
 	.exhibit-right {
 		display: none;
@@ -143,5 +156,6 @@ a.current-exhibits-title {
 		display: none;
 	}
 }
+*/
 
 /* FOUND TEMPLATE HERE: http://www.bc.edu/bc-web/academics.html */
