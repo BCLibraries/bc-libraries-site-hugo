@@ -1,42 +1,74 @@
-/* BOSTON COLLEGE COLORS */
+// BOSTON COLLEGE COLORS
+// See https://www.bc.edu/content/bc-web/restricted/branding.html (BC login required)
 
-/* See https://www.bc.edu/bc-web/styles/bc-web-style-guide/color.html */
-
-/* BC Brand colors */
+// BC Brand colors - rename
 $bc-brand-maroon: #8a100b;
 $bc-brand-gold: #b29d6c;
 $bc-brand-gray: #726158;
+$bc-brand-library-blue: #204375;
 
-/* Primary palette */
+// Primary palette - rename
 $bc-primary-dark-red: #501315;
 $bc-primary-light-gold: #dccaa0;
 
-/* Secondary palette */
+// Secondary palette - rename
 $bc-secondary-light-sage: #c5cfac;
 $bc-secondary-bright-sage: #dde392;
 
-/* LOCAL COLORS */
-$pitch_black: #000;
+// Primary palette - official
+$bc-color-maroon: #8a100b;
+$bc-color-gold: #b29d6c;
+$bc-color-black: #000000;
+$bc-color-warm-gray: #726158;
 
+// Secondary palette - official
+$bc-color-dark-maroon: #501315;
+$bc-color-yellow-gold: #dda93e;
+$bc-color-burnt-orange: #ac6d37;
+$bc-color-red: #b30000;
+$bc-color-dark-blue: #003957;
+$bc-color-dark-slate-blue: #467181;
+$bc-color-light-warm-gray: #c5bfb0;
+$bc-color-light-slate-blue: #adbabc;
+
+// Expanded color palette - official
+$bc-color-dark-green: #5d694a;
+$bc-color-leaf-green: #818e56;
+$bc-color-peacock-green: #004f5a;
+$bc-color-sage-green: #929b90;
+$bc-color-dark-warm-gray: #685c53;
+$bc-color-dark-gold: #83663f;
+$bc-color-medium-gold: #b99c72;
+$bc-color-light-gold: #dccaa0;
+$bc-color-light-sage-green: #b2c0b9;
+$bc-color-cream: #e8ddbf;
+$bc-color-pale-sage-green: #f5f2e3;
+$bc-color-pale-warm-gray: #efefef;
+
+// LOCAL COLORS
+$pitch_black: #000000;
 $very-dark-gray: #101010;
 $dark-gray: #313131;
+$more-medium-gray: #666666;
+$medium-gray: #e0e0e0;
 $light-gray: #b7b7b7;
 $very-light-gray: #dadada;
 $just-barely-gray: #eaeaea;
-
+$very-very-light-gray: #fafafa;
 $red: #990000;
 $dark-blue-green: #05506D;
+$aal-icon-blue: #31b0d5;
 
-/* Text colors */
+// Text colors
 $white-text: #fff;
 $black-text: $pitch_black;
 $wcagaaa-compliant-gray-text: #595959;
 $wcagaa-compliant-gray-text: #757575;
 
-/* Link colors */
+// Link colors
 $bc-link-color: #2f7ab9;
 $wcgaa-link-against-very-light-gray: saturate(darken($bc-link-color, 9%), 9%);
 
-/* Body colors (borders, backgrounds, etc) */
-$white-body: #fff;
+// Body colors (borders, backgrounds, etc)
+$white-body: #ffffff;
 $black-body: $pitch_black;
