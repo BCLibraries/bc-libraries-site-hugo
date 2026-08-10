@@ -1,0 +1,69 @@
+//  Boostrap overrides
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1170px; // original: 1320px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1170px; // original: 1140px
+    }
+}
+
+.row {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    &.nobottom {
+        padding-bottom: 0;
+    }
+
+    &.notop {
+        padding-top: 0;
+    }
+}
+
+.container-fluid .pull-right {
+    height: auto;
+}
+
+// Landscape phones and portrait tablets
+@media (max-width: 767px) {
+    .row.equal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container-fluid .pull-right {
+        left: auto !important;
+        top: auto !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: none !important;
+        position: absolute;
+
+        .content {
+            padding: 15px 15px !important;
+            max-width: 100% !important;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            bottom: auto;
+            right: auto;
+            left: auto;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .col-xxs {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+}

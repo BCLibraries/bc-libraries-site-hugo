@@ -24,49 +24,49 @@
 // Core stylesheets
 //
 @import 'core_bs5';
-@import 'core_bootstrap_override';
+@import 'core_bs5_bootstrap_override';
 @import 'core_bs5_component_hours';
-@import 'core_component_aal_card';
-@import 'core_component_aal_override';
-@import 'core_component_megamenu_yamm';
-@import 'core_notifications';
-@import 'core_header_bc';
+@import 'core_bs5_component_aal_card';
+@import 'core_bs5_component_aal_override';
+@import 'core_bs5_component_megamenu_yamm';
+@import 'core_bs5_notifications';
+@import 'core_bs5_header_bc';
 @import 'core_bs5_megamenu';
-@import 'core_footer_bc';
-@import 'core_footer_lib';
+@import 'core_bs5_footer_bc';
+@import 'core_bs5_footer_lib';
 
 // Homepage stylesheets
 //
-@import 'homepage';
-@import 'homepage_alternate_header';
-@import 'homepage_search_panel';
-@import 'homepage_quicklinks';
-@import 'homepage_ask_a_librarian';
-@import 'homepage_featured_tip';
-@import 'homepage_news';
-@import 'homepage_featured_subject_specialists';
-@import 'homepage_explore_collections';
-@import 'homepage_content_highlight';
-@import 'homepage_content_highlight_social_media';
+@import 'homepage_bs5';
+@import 'homepage_bs5_alternate_header';
+@import 'homepage_bs5_search_panel';
+@import 'homepage_bs5_quicklinks';
+@import 'homepage_bs5_ask_a_librarian';
+@import 'homepage_bs5_featured_tip';
+@import 'homepage_bs5_news';
+@import 'homepage_bs5_featured_subject_specialists';
+@import 'homepage_bs5_explore_collections';
+@import 'homepage_bs5_content_highlight';
+@import 'homepage_bs5_content_highlight_social_media';
 
 // Unused/deprecated stylesheets
 //
-// @import 'core_potourri';
-// @import 'homepage_potourri';
-// @import 'homepage_faculty_publication';
-// @import 'homepage_exhibits_highlight';
-// @import 'homepage_content_highlight_digital_collection';
-// @import 'homepage_content_highlight_digital_scholarship';
-// @import 'homepage_services_at_bc';
-// @import 'homepage_virtual_pet_therapy';
+// @import 'core_bs5_potourri';
+// @import 'homepage_bs5_potourri';
+// @import 'homepage_bs5_faculty_publication';
+// @import 'homepage_bs5_exhibits_highlight';
+// @import 'homepage_bs5_content_highlight_digital_collection';
+// @import 'homepage_bs5_content_highlight_digital_scholarship';
+// @import 'homepage_bs5_services_at_bc';
+// @import 'homepage_bs5_virtual_pet_therapy';
 
 // Page stylesheets
 //
-@import 'page_bento';
-@import 'page_faculty_publication';
-@import 'page_exhibits';
-@import 'page_news';
+@import 'page_bs5_bento';
+@import 'page_bs5_faculty_publication';
+@import 'page_bs5_exhibits';
+@import 'page_bs5_news';
 
 // Print stylesheet
 //
-@import 'print';
+@import 'print_bs5';

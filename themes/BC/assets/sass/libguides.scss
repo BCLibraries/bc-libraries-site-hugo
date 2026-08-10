@@ -10,17 +10,17 @@
 
 // Core stylesheets
 //
-@import 'core';
-@import 'core_bootstrap_override';
-@import 'core_component_hours';
-@import 'core_component_aal_card';
-@import 'core_component_aal_override';
-@import 'core_component_megamenu_yamm';
-@import 'core_notifications';
-@import 'core_header_bc';
-@import 'core_megamenu';
-@import 'core_footer_bc';
-@import 'core_footer_lib';
+@import 'core_bs5';
+@import 'core_bs5_bootstrap_override';
+@import 'core_bs5_component_hours';
+@import 'core_bs5_component_aal_card';
+@import 'core_bs5_component_aal_override';
+@import 'core_bs5_component_megamenu_yamm';
+@import 'core_bs5_notifications';
+@import 'core_bs5_header_bc';
+@import 'core_bs5_megamenu';
+@import 'core_bs5_footer_bc';
+@import 'core_bs5_footer_lib';
 
 // LibGuides stylesheets
 //

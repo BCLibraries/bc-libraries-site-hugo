@@ -1,0 +1,67 @@
+#downtime-notification {
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fde073;
+    text-align: center;
+    overflow: hidden;
+    padding: 1em 2em;
+    box-shadow: 0 0 5px black;
+}
+
+#close {
+    display: none;
+}
+
+$beta-notice-border: rgba(30, 107, 133, .5);
+$beta-notice-background: hsl(195, 53%, 94%);
+
+.beta-notice {
+    display: none;
+    justify-content: center; // Centers horizontally
+    align-items: center;
+    min-height: 75px;
+    gap: 1rem;
+
+    &__box {
+        max-width: 1140px;
+        background-color: $beta-notice-background;
+        border-radius: 5px;
+        border: 2px dashed $beta-notice-border;
+        padding: 1rem 1.5rem;
+        margin: 1rem;
+        display: flex;
+        justify-content: center; // Centers horizontally
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__vertical-bar {
+        width: 4px; // The thickness of the line
+        height: 26px; // The height of the line
+        background-color: $beta-notice-border; // The color of the line
+        border: 2px solid $beta-notice-border;
+        border-radius: 2px;
+        margin: 0 auto;
+    }
+
+    &__icon {
+        height: 30px;
+
+        svg {
+            height: 30px;
+        }
+    }
+
+    p {
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+
+        a {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+}
