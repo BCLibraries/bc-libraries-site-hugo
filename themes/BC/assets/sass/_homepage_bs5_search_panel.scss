@@ -1,6 +1,12 @@
 #search-panel {
     background-color: $bc-brand-maroon;
     border-radius: 6px;
+    padding: 1rem .25rem;
+
+    > .row {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 #search-panel .fa-search {
@@ -8,7 +14,8 @@
 }
 
 #search-panel #search-links {
-    padding-top: 0
+    padding-top: 1rem;
+    justify-content: center;
 }
 
 #search-panel #search-links a, #search-panel #search-links a:visited {
@@ -19,6 +26,21 @@
 #search-panel input.form-control, #search-panel button.btn.btn-default {
     height: 50px;
     font-size: 20px;
+    background-color: #fff;
+}
+
+#search-panel input.form-control {
+    border: none;
+}
+
+#search-panel button.btn.btn-default {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 1px solid #ccc;
+
+    &:hover, &:focus {
+        background-color: #e0e0e0;
+    }
 }
 
 .online-only-label {
