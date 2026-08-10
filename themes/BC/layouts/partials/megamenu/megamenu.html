@@ -1,41 +1,43 @@
 <!-- MENU BEGINS HERE -->
 <div class="megamenu-container">
     <div id="megamenu" class="container">
-        <!-- BEGIN NAVBAR -->
-        <nav class="navbar navbar-expand-md" aria-label="Primary navigation">
-            <div class="container-fluid p-0 m-0">
-                <span class="navbar-brand d-none d-lg-block">Value Beyond Discovery</span>
+        <div class="row">
+            <!-- BEGIN NAVBAR -->
+            <nav class="navbar navbar-expand-md" aria-label="Primary navigation">
+                <div class="container-fluid p-0 m-0">
+                    <span class="navbar-brand d-none d-lg-block">Value Beyond Discovery</span>
 
-                <a href="https://libguides.bc.edu/my-accounts" class="accounts-link-mobile me-auto d-block d-md-none" role="button"><span class="fa fa-user" aria-hidden="true"></span> My Accounts</a>
+                    <a href="https://libguides.bc.edu/my-accounts" class="accounts-link-mobile me-auto d-block d-md-none" role="button"><span class="fa fa-user" aria-hidden="true"></span> My Accounts</a>
 
-                <button class="navbar-toggler collapsed d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <!--span class="navbar-toggler-icon d-none"></span-->
-                    <span class="toggler-icon top-bar"></span>
-                    <span class="toggler-icon middle-bar"></span>
-                    <span class="toggler-icon bottom-bar"></span>
-                </button>
+                    <button class="navbar-toggler collapsed d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <!--span class="navbar-toggler-icon d-none"></span-->
+                        <span class="toggler-icon top-bar"></span>
+                        <span class="toggler-icon middle-bar"></span>
+                        <span class="toggler-icon bottom-bar"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav mx-auto ms-lg-auto me-lg-0" data-tag="ga-tag">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav mx-auto ms-lg-auto me-lg-0" data-tag="ga-tag">
 
-                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "find" "menu_title" "Find" ) }}
+                            {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "find" "menu_title" "Find" ) }}
 
-                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "services" "menu_title" "Services" ) }}
+                            {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "services" "menu_title" "Services" ) }}
 
-                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "help" "menu_title" "Get Help" ) }}
+                            {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "help" "menu_title" "Get Help" ) }}
 
-                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "about" "menu_title" "About" ) }}
+                            {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "about" "menu_title" "About" ) }}
 
-                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "hours" "menu_title" "Hours" ) }}
-                        
-                        {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "myaccounts" "menu_title" "My Accounts" ) }}
+                            {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "hours" "menu_title" "Hours" ) }}
+                            
+                            {{ partial "megamenu/menu-page" (dict "context" . "menu_partial" "myaccounts" "menu_title" "My Accounts" ) }}
 
-                    </ul> <!-- navbar-nav -->
-                
-                </div> <!-- navbar-collapse -->
-            </div> <!-- container-fluid -->
-        </nav>
-        <!-- END NAVBAR -->
+                        </ul> <!-- navbar-nav -->
+                    
+                    </div> <!-- navbar-collapse -->
+                </div> <!-- container-fluid -->
+            </nav>
+            <!-- END NAVBAR -->
+        </div>
     </div>
 </div>
 <!-- END MEGAMENU -->
