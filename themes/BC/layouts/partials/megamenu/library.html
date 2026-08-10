@@ -26,49 +26,46 @@
 {{/* Base image name for building <picture> element. */}}
 {{ $base_image := printf "librarypane/megamenu_thumbnail_%s" .library.code }}
 
-<div class="col-sm-4 col-xs-4 library-box">
-    <div class="lib-box lib-box-small panel panel-default">
-        <div class="panel-body">
-            <div class="panel-heading">
-                <div class="media">
-                    <div class="media-left" style="display: flex">
-                        <a href="{{ $library_url }}" class="lib-thumb">
-                            {{ partial "picture" (dict "ctx"   .
-                                                       "base"  $base_image
-                                                       "ext"   ".png"
-                                                       "alt"   .library.name 
-                                                       "class" ""
-                                                       "avif"  true
-                                                       "webp"  true
-                                                       "lazy"  true) }}
+<div class="col library-box-wrapper">
+    <div class="library-box card">
+        <div class="row g-0 flex-grow-1">
+            <div class="col-5 d-none d-lg-block library-image">
+                <a href="{{ $library_url }}" class="library-card-link">
+                    {{ partial "picture" (dict "ctx"   .
+                                                "base"  $base_image
+                                                "ext"   ".png"
+                                                "alt"   .library.name 
+                                                "class" ""
+                                                "avif"  true
+                                                "webp"  true
+                                                "lazy"  true) }}
+                </a>
+            </div>
+            <div class="col-12 col-lg-7 library-metadata">
+                <div class="card-body">
+                    <div class="media-body-inner">
+                        <h3 class="media-heading accessibility-text">{{ .library.name }}</h3>
+                        <a class="library-card-link" href="{{ $library_url }}">
+                            <p class="card-title">{{ .library.name }}</p>
                         </a>
+                        <p class="card-text library-box-description">{{ .library.brief_description }}</p>
+
+                        {{ if .library.map }}
+                            <p class="card-text"><a href="{{ .library.map }}">Map <i class="fa fa-map-marker" aria-hidden="true"></i></a></p>
+                        {{ end }}
                     </div>
-                    <div class="media-body">
-                        <div class="media-body-inner">
-                            <h3 class="media-heading accessibility-text">{{ .library.name }}</h3>
-                            <p class="lib-box-heading"><a class="lib-name" href="{{ $library_url }}">{{ .library.name }}</a></br/>{{ .library.brief_description }}</p>
-
-                            {{ if .library.map }}
-                               <div><a href="{{ .library.map }}">Map <i class="fa fa-map-marker" aria-hidden="true"></i></a></div>
-                            {{ end }}
-
-                            {{/* Contact info */}}
-                            {{ if (eq .library.contact_type "phone") }}
-                                {{ range first 1 .library.phone }}
-                            <div class="lib-box-pair">
-                                        <span class="lib-box-pair-label">{{ .description }}:</span> <span class="lib-box-pair-value"><a href="tel:{{ .compressed }}">{{ .number }}</a></span>
-                                    </div>
-                                {{ end }}
-                            {{ else if (eq .library.contact_type "email") }}
-                                {{ range first 1 .library.email }}
-                                    <div class="lib-box-pair">
-                                        <span class="lib-box-pair-label"></span> <span class="lib-box-pair-value">Contact <a href="mailto:{{ .address }}">{{ .label }}</a></span>
-                                    </div>
-                                {{ end }}
-                            {{ end }}
-
-                        </div>
-                    </div>
+                </div>
+                <div class="card-footer">
+                    {{/* Contact info */}}
+                    {{ if (eq .library.contact_type "phone") }}
+                        {{ range first 1 .library.phone }}
+                            <a href="tel:{{ .compressed }}">{{ .number }}</a>
+                        {{ end }}
+                    {{ else if (eq .library.contact_type "email") }}
+                        {{ range first 1 .library.email }}
+                            Contact <a href="mailto:{{ .address }}">{{ .label }}</a>
+                        {{ end }}
+                    {{ end }}
                 </div>
             </div>
         </div>
