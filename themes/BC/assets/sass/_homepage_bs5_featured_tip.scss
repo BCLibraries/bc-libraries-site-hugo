@@ -6,7 +6,7 @@
     font-size: 16px;
     background-color: $bc-secondary-bright-sage;
     color: $black-text;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 8px;
 }
 
@@ -21,6 +21,7 @@
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     border: 1px solid rgba(0,0,0,0.1);
+    background-color: $white-body;
 }
 #featured-tip-wrapper .panel-body {
     padding: .75rem;
@@ -41,6 +42,12 @@
 
 #featured-tip-wrapper .panel a {
     font-weight: 600;
+
+    &.btn {
+        font-weight: 400;
+        font-size: 12px;
+        padding: 2px;
+    }
 }
 
 #featured-tip-wrapper h3 {
