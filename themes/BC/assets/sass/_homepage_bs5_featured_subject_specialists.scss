@@ -42,13 +42,18 @@
         border-radius: 8px;
         height: 100%;
         border: 1px solid rgba(0, 0, 0, .1);
+        padding: 1rem;
     }
     .combo-boxes-footer p {
         border-top: 1px solid #ccc;
-        padding: 1rem 0;
-        margin-top: 2rem;
+        padding: 1rem 0 0 0;
+        // margin-top: 1rem;
         text-align: right;
         font-size: larger;
+    }
+    .librarian-profile-link-image {
+        display: flex;
+        justify-content: center;
     }
     .librarian-profile {
         border-radius: 50% 50%;
@@ -61,7 +66,7 @@
     }
     .librarian-title {
         font-weight: 200;
-        margin-bottom: 3rem;
+        // margin-bottom: 3rem;
     }
     .bottom-text {
         margin: 1.5rem 0 0 0;

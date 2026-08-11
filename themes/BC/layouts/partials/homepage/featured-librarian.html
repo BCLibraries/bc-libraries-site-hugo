@@ -96,79 +96,80 @@
     <div class="container">
         <div class="row">
             <div class="combo-boxes">
-                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 combo-box-xxx" >
+                <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-10 offset-1 col-xs-12 combo-box-xxx" >
                     <div class="combo-box-inner">
-                        <div class="col-md-12">
-                            <h2>Featured Subject Specialist</h2>
-                            <a class="librarian-profile-link" href="{{ $profile_url }}"><h3 class="librarian-name">{{ $profile_full_name }}</h3></a>
-                            <h4 class="librarian-title">{{ $profile_title }}</h4>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <a class="librarian-profile-link" href="{{ $profile_url }}">
-                                <img class="librarian-profile" src="{{ $profile_image }}" alt="{{ $featured_librarian.name }} profile" loading="lazy">
-                            </a>
-                        </div>
-                        <div class="col-md-8 col-sm-8 col-xs-12">
-                            {{ if $featured_librarian.subjects }}
-                            <div class="col-md-12 col-sm-12">
-                                <h3 class="featured-librarian">{{ $profile_first_name }} is an expert at:</h3>
-                                <div class="featured-librarian-expert-at-list">
+                        <div class="row d-flex gy-4">
+                            <div class="col-md-12">
+                                <h2>Featured Subject Specialist</h2>
+                                <a class="librarian-profile-link-name" href="{{ $profile_url }}"><h3 class="librarian-name">{{ $profile_full_name }}</h3></a>
+                                <h4 class="librarian-title">{{ $profile_title }}</h4>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <a class="librarian-profile-link-image" href="{{ $profile_url }}">
+                                    <img class="librarian-profile" src="{{ $profile_image }}" alt="{{ $featured_librarian.name }} profile" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="col-md-8 col-12">
+                                {{ if $featured_librarian.subjects }}
+                                <div class="col-md-12 col-12">
+                                    <h3 class="featured-librarian">{{ $profile_first_name }} is an expert at:</h3>
+                                    <div class="featured-librarian-expert-at-list">
 
-                                    {{/* List ouf the librarian's subjects */}}
+                                        {{/* List ouf the librarian's subjects */}}
+                                        <ul class="featured-librarian-guides" role="list">
+
+                                            {{/* If they have multiple subjects, the last one should be proceeded by "and".
+                                            If they have three or more subjects, we need to add commas as well. */}}
+                                            {{ $num_subjects := len $featured_librarian.subjects }}
+                                            {{ $needs_commas := gt $num_subjects 2 }}
+                                            {{ $needs_and := gt $num_subjects 1 }}
+                                            {{ $last_index := sub $num_subjects 1 }}
+                                            {{ $second_to_last_index := sub $last_index 1 }}
+                                            {{ range $index, $value := $featured_librarian.subjects }}
+                                            <li>
+                                                {{ $add_comma := and $needs_commas (lt $index $last_index)  }}
+                                                {{ $add_and := and $needs_and (eq $index $second_to_last_index) }}
+                                                <a href="{{ .url }}" target="_blank">{{ .name }}</a>{{ if $add_comma }},{{ end }}
+                                                {{ if $add_and }}and{{ end }}
+                                            </li>
+                                            {{ end }}
+                                        </ul>
+                                    </div>
+                                </div>
+                                {{ end }}
+
+                                {{ if $featured_librarian.featured_guides }}
+                                <div class="col-md-12 col-12">
+                                    <h3 class="featured-librarian">Featured Guides:</h3>
                                     <ul class="featured-librarian-guides" role="list">
-
-                                        {{/* If they have multiple subjects, the last one should be proceeded by "and".
-                                         If they have three or more subjects, we need to add commas as well. */}}
-                                        {{ $num_subjects := len $featured_librarian.subjects }}
-                                        {{ $needs_commas := gt $num_subjects 2 }}
-                                        {{ $needs_and := gt $num_subjects 1 }}
-                                        {{ $last_index := sub $num_subjects 1 }}
-                                        {{ $second_to_last_index := sub $last_index 1 }}
-                                        {{ range $index, $value := $featured_librarian.subjects }}
-                                        <li>
-                                            {{ $add_comma := and $needs_commas (lt $index $last_index)  }}
-                                            {{ $add_and := and $needs_and (eq $index $second_to_last_index) }}
-                                            <a href="{{ .url }}" target="_blank">{{ .name }}</a>{{ if $add_comma }},{{ end }}
-                                            {{ if $add_and }}and{{ end }}
-                                        </li>
-                                        {{ end }}
+                                    {{ range $featured_librarian.featured_guides }}
+                                        <li><a href="{{ .guide_link }}" target="_blank">{{ .guide_name }}</a></li>
+                                    {{ end }}
                                     </ul>
                                 </div>
-                            </div>
-                            {{ end }}
-
-                            {{ if $featured_librarian.featured_guides }}
-                            <div class="col-md-12 col-sm-12">
-                                <h3 class="featured-librarian">Featured Guides:</h3>
-                                <ul class="featured-librarian-guides" role="list">
-                                {{ range $featured_librarian.featured_guides }}
-                                    <li><a href="{{ .guide_link }}" target="_blank">{{ .guide_name }}</a></li>
                                 {{ end }}
-                                </ul>
+
+                                <div class="col-md-12 col-12 bottom-text">
+                                    <p>We have many <a href="https://libguides.bc.edu/research_guides">guides for your research</a>.  Not sure where to begin? <a href="https://libguides.bc.edu/ask-a-librarian">Ask Us</a>.</p>
+                                </div>
                             </div>
-                            {{ end }}
 
-                            <div class="col-md-12 col-sm-12 bottom-text">
-                                <p>We have many <a href="https://libguides.bc.edu/research_guides">guides for your research</a>.  Not sure where to begin? <a href="https://libguides.bc.edu/ask-a-librarian">Ask Us</a>.</p>
+                            <div class="col-md-12 col-12 col-xs-12 combo-boxes-footer">
+                                <p><a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Browse all our expert subject specialists</a> &rangle;</p>
                             </div>
-                        </div>
-
-                        <div class="col-md-12 col-sm-12 col-xs-12 combo-boxes-footer">
-                            <p><a href="https://libguides.bc.edu/ask-a-librarian/subject-librarians">Browse all our expert subject specialists</a> &rangle;</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+                        </div> <!-- end row -->
+                    </div> <!-- end combo-box-inner -->
+                </div> <!-- end combo-box-xxx -->
+            </div> <!-- end combo-boxes -->
+        </div> <!-- end row -->
 
         {{ if not (eq $caption "") }}
         <div class="caption-link">
             {{ $caption }}
         </div>
         {{ end }}
-    </div>
-</div>
+    </div> <!-- end container -->
+</div> <!-- end container-fluid -->
 <!-- FEATURED LIBRARIAN END -->
 
 {{ if $featured_librarian.featured_background }}
