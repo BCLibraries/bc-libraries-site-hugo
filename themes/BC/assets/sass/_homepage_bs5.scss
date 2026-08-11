@@ -1,6 +1,6 @@
 #top-columns {
     background-color: $white-body;
-    padding-bottom: 3rem;
+    // padding-bottom: 3rem;
 
     .row {
         padding-top:0;
@@ -50,6 +50,7 @@
 .homepage h2,
 .homepage h3 {
     font-weight: 200;
+    // margin-top: 2rem;
 }
 
 #hero-box {
@@ -62,6 +63,10 @@
     padding-top: 1rem;
     font-size: larger;
     text-align: right;
+}
+
+.homepage-section {
+    margin-top: 2rem;
 }
 
 .content .btn {
