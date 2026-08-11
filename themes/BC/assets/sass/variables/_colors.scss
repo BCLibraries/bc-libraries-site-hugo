@@ -66,7 +66,8 @@ $wcagaaa-compliant-gray-text: #595959;
 $wcagaa-compliant-gray-text: #757575;
 
 // Link colors
-$bc-link-color: #2f7ab9;
+$bc-link-color: #245c8a; // original: #2f7ab9
+$bc-link-color-hover: #23527c;
 $wcgaa-link-against-very-light-gray: saturate(darken($bc-link-color, 9%), 9%);
 
 // Body colors (borders, backgrounds, etc)
