@@ -12,6 +12,24 @@
     }
 }
 
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1170px; // original: 960px
+    }
+}
+
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 1170px; // original: 720px
+    }
+}
+
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 1170px; // original: 540px
+    }
+}
+
 .row {
     // padding-top: 1em;
     // padding-bottom: 1em;
