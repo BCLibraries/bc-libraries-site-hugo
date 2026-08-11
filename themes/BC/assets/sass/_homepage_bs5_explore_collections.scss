@@ -43,6 +43,7 @@
     padding: 1.25rem 1rem 1.25rem 1.25rem;
     background-color: #B35F23;
     color: $white-text;
+    height: 7rem;
 }
 #explore-collections .digital-scholarship .collection-description {
     background-color: #204375;
@@ -60,19 +61,23 @@
     line-height: 1.2;
 }
 #explore-collections .collection-department {
-    font-size: 15px;
+    font-size: 1.125rem;
     font-weight: 600;
     padding-bottom: .5rem;
 }
 #explore-collections .collection-name {
     font-size: 18px;
-    min-height: 4.75rem;
+    // min-height: 4.75rem;
 }
 #explore-collections .collection-image img {
     width: 100%;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
+    #explore-collections .collection-description {
+        height: 7rem;
+    }
+
     #explore-collections .collections-box {
         width: 100%;
     }
