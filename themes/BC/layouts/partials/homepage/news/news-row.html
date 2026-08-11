@@ -1,7 +1,7 @@
 <div class="container ql-news homepage-section" id="news" data-tag="ga-tag">
     <h2>News &amp; Events</h2>
 
-    <div class="row news-content-row">
+    <div class="row news-content-row pb-md-4 pb-0">
         {{/* convoluted nested where clause... */}}
         {{/* checks for:
                         1) article has a thumbnail
@@ -13,7 +13,7 @@
         {{ end }}
     </div>
 
-    <div class="row news-content-row">
+    <div class="row news-content-row pb-md-2 pb-4">
         {{ range first 4 (after 2 (where (where (where .Site.RegularPages ".Params.imagethumb" "!=" nil) ".Params.expired" false) ".Params.type" "news")) }}
             {{ partial "homepage/news/little-story.html" . }}
         {{ end }}

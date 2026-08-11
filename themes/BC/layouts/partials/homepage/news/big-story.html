@@ -1,4 +1,4 @@
-<section class="col-xs-12 col-sm-6 col-md-6 news-content news-content-large">
+<section class="col-xs-12 col-12 col-md-6 pb-md-0 pb-4 news-content news-content-large">
     {{ if .Params.unsafeHTML }}
         <div class="news-section-unsafe-html-story">
             <div class="news-section-unsafe-html-embed">
@@ -14,23 +14,23 @@
         </div>
     {{ else }}
     <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">
-
         {{ $imageName :=  path.BaseName .Params.imagethumb }}
         {{ $imageDir := path.Dir .Params.imagethumb }}
         {{ $fullImagePath := print .Params.type "/" $imageDir "/" $imageName }}
-        {{ partial "picture" (dict "ctx"   .
-                   "base"  $fullImagePath
-                   "alt"   .Params.imagealt
-                   "class" ""
-                   "avif"  true
-                   "webp"  true
-                   "lazy"  true) }}
-        <div class="news-section-image-attribution">
+        <div class="news-section-image-container">
+            {{ partial "picture" (dict "ctx"   .
+                    "base"  $fullImagePath
+                    "alt"   .Params.imagealt
+                    "class" ""
+                    "avif"  true
+                    "webp"  true
+                    "lazy"  true) }}
             {{ if .Params.attribution_text -}}
-            {{ .Params.attribution_text | safeHTML }}
-            {{ end -}}
+            <div class="news-section-image-attribution">
+                {{ .Params.attribution_text | safeHTML }}
+            </div>
         </div>
-        
+        {{ end -}}
         <div class="news-section-text">
             <div class="news-section-title">{{ .Title | safeHTML }}</div>
             <div class="news-section-content-blurb">{{ .Content }}</div>

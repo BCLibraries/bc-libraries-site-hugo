@@ -1,6 +1,11 @@
 #news .news-content-row {
     display: flex;
     flex-wrap: wrap;
+
+    a {
+        display: block;
+        position: relative;
+    }
 }
 // Safari doesn't play well with floated elements and flex display
 #news .news-content-row:before,
@@ -26,13 +31,32 @@
     width: 100%;
 }
 
+.news-section-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.news-section-image-attribution {
+    height: 1.6em;
+    text-align: right;
+    font-size: .8em;
+    color: #DCDCDC;
+    position: absolute;
+    // float: right;
+    bottom: 0;
+    right: 0;
+    padding: 0 .5em;
+    background: rgba(34, 34, 34, 0.9);
+}
+
 #news .news-content a:hover,
 #news .news-content a:focus {
     text-decoration: none;
     color: inherit;
 }
 #news .news-content .news-section-text {
-    padding: 0 .25rem .25rem .25rem;
+    padding: 0 .25rem 0 .25rem;
     line-height: 1.6;
 }
 #news .news-content .news-section-text .news-section-date {
@@ -46,7 +70,7 @@
     margin: .25rem 0;
 }
 #news .news-content.news-content-large .news-section-text .news-section-title {
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 #news .news-content a:hover .news-section-title,
@@ -89,9 +113,9 @@
         margin-top: -1em;
     }
 
-	#news .news-content {
+	/*#news .news-content {
 		margin: 0 auto 2em auto;
-	}
+	}*/
 
     .news-section-unsafe-html-embed {
         height: 230px;
