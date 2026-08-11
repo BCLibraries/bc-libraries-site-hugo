@@ -9,7 +9,7 @@
 
 .ql {
     height: 100%;
-    padding-bottom:10px;
+    // padding-bottom:10px;
 }
 
 .ql .list-group {
@@ -21,7 +21,7 @@
 .ql .list-group-item {
     background-color: transparent;
     border: 0 solid $white-body;
-    padding: 1.25rem .5rem;
+    padding: 1.25rem 0 1.25rem 1rem;
     border-radius: 0;
     color: $black-text;
 }
@@ -33,7 +33,7 @@
 @media (max-width: 991px) {
     .ql {
         height: auto;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
     }
     .ql li {
         display: block;
