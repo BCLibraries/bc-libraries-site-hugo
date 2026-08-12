@@ -1,26 +1,29 @@
 #bclib-header {
     background: $bc-brand-maroon no-repeat 100% 0;
     border-bottom: 1px solid $bc-primary-light-gold;
-    height: 38px;
+    height: 2.375rem; // 38px
     display: flex;
     align-items: center;
 
     a {
         color: $white-text;
     
-        &:hover, &a:focus {
+        &:hover, &:focus {
             color: $bc-primary-light-gold;
             text-decoration: none;
         }
     }
 
-    .row {
+    /*.row {
         padding-top: 0;
         padding-bottom: 0;
-    }
+    }*/
 
     ul.bclib-header-links {
-        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        // text-align: right;
         margin: 0;
         text-transform: uppercase;
         // we want height = 30px
@@ -33,7 +36,7 @@
 
         li {
             display: inline;
-            margin: 0 0 0 20px;
+            // margin: 0 0 0 20px;
         
             .fa {
                 font-size: 14px;
@@ -44,20 +47,20 @@
 
 // Landscape tablets and all desktops
 @media screen and (min-width: 992px) {
-    #bclib-header .input-wrapper {
+    /*#bclib-header .input-wrapper {
         padding-right: 0;
-    }
+    }*/
 }
 
 // Portrait tablets and small desktops
 @media (max-width: 991px) {
-    #bclib-header {
+    /*#bclib-header {
         .col-sm-12 {
             width: 100%;
         }
 
         ul.bclib-header-links {
-            text-align: right;
+            // text-align: right;
 
             li {
                 &:first-child {
@@ -74,27 +77,27 @@
             padding-left: 0;
             padding-right: 0;
         }
-    }
+    }*/
 }
 
 // Landscape phones and portrait tablets
 @media (max-width: 767px) {
-    #bclib-header > .container {
+    /*#bclib-header > .container {
         width: 100%;
-    }
+    }*/
 
     #bclib-header ul.bclib-header-links {
         font-size: 15px;
         line-height: 2;
 
-        li {
+        /*li {
             margin: 0 10px;
-        }
+        }*/
     }
 }
 
 @media (max-width: 600px) {
-    #bclib-header {
+    /*#bclib-header {
         .link-wrapper,
         .input-wrapper {
             width: 100%;
@@ -104,19 +107,19 @@
             float: none !important;
             padding: 4px 0 6px 0;
         }
-    }
+    }*/
 }
 
 @media (max-width: 575px) {
-    #bclib-header {
+    /*#bclib-header {
         .header-container {
             padding-top: 0.2666rem;
             padding-bottom: 0.25rem;
         }
-        /*ul.bclib-header-links {
+        ul.bclib-header-links {
             text-align: left;
-        }*/
-    }
+        }
+    }*/
 }
 
 @media (max-width: 480px) {
@@ -124,21 +127,22 @@
         height: auto;
 
         .container {
-            width: 100%;
-            padding-top: 4px;
-            padding-bottom: 4px;
+            //width: 100%;
+            padding-top: .25rem;
+            padding-bottom: .25rem;
         }
 
         ul.bclib-header-links {
-            text-align: left;
-            width: 100%;
+            //text-align: left;
+            //width: 100%;
+            justify-content: flex-start;
         }
     }
 }
 
 @media (max-width: 400px) {
-    #bclib-header .link-wrapper .fa-commenting-o,
+    /*#bclib-header .link-wrapper .fa-commenting-o,
     #bclib-header .link-wrapper .fa-user {
         display: none;
-    }
+    }*/
 }
