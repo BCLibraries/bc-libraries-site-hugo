@@ -43,31 +43,29 @@
             </div>
             <div class="col-12 col-lg-7 library-metadata">
                 <div class="card-body">
-                    <div class="media-body-inner">
-                        <h3 class="media-heading accessibility-text">{{ .library.name }}</h3>
-                        <a class="library-card-link" href="{{ $library_url }}">
-                            <p class="card-title">{{ .library.name }}</p>
-                        </a>
-                        <p class="card-text library-box-description">{{ .library.brief_description }}</p>
-
-                        {{ if .library.map }}
-                            <p class="card-text"><a href="{{ .library.map }}">Map <i class="fa fa-map-marker" aria-hidden="true"></i></a></p>
-                        {{ end }}
-                    </div>
+                    <a class="library-card-link card-link" href="{{ $library_url }}">
+                        <p class="card-title">{{ .library.name }}</p>
+                    </a>
+                    <p class="card-text library-box-description">{{ .library.brief_description }}</p>
                 </div>
                 <div class="card-footer">
                     {{/* Contact info */}}
-                    {{ if (eq .library.contact_type "phone") }}
-                        {{ range first 1 .library.phone }}
-                            <a href="tel:{{ .compressed }}">{{ .number }}</a>
+                    <div class="library-card-footer-links">
+                        {{ if (eq .library.contact_type "phone") }}
+                            {{ range first 1 .library.phone }}
+                                <a class="card-link" href="tel:{{ .compressed }}">{{ .number }}</a>
+                            {{ end }}
+                        {{ else if (eq .library.contact_type "email") }}
+                            {{ range first 1 .library.email }}
+                                <div class="d-flex justify-content-start">Contact&nbsp;<a class="card-link" href="mailto:{{ .address }}">{{ .label }}</a></div>
+                            {{ end }}
                         {{ end }}
-                    {{ else if (eq .library.contact_type "email") }}
-                        {{ range first 1 .library.email }}
-                            Contact <a href="mailto:{{ .address }}">{{ .label }}</a>
+                        {{ if .library.map }}
+                            <a class="card-link library-card-map" href="{{ .library.map }}">Map <i class="fa fa-map-marker" aria-hidden="true"></i></a>
                         {{ end }}
-                    {{ end }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                    </div> <!-- library-card-footer-links -->
+                </div> <!-- card-footer -->
+            </div> <!-- library-metadata -->
+        </div> <!-- row -->
+    </div> <!-- library-box -->
+</div> <!-- library-box-wrapper -->

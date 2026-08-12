@@ -1,15 +1,15 @@
 .card {
     height: 100%;
-    font-size: 15px;
-    padding: .5rem;
+    // font-size: 15px;
+    padding: .5rem; // 8px
 
     a {
         text-decoration: none;
     }
 
-    > .row {
+    /*> .row {
         padding: 0;
-    }
+    }*/
 
     .card-body {
         padding: 0;
@@ -17,7 +17,7 @@
         font-size: 1rem;
 
         .card-title {
-            padding: 0 0 .25rem 0;
+            padding: 0 0 .25rem 0; // 0 0 4px 0
             line-height: 1.25;
             margin: -0.125rem 0 0 0; // remove top margin added by line-height
             font-weight: 700;
@@ -30,7 +30,7 @@
     }
 
     .card-footer {
-        padding: .25rem 0 0 0;
+        padding: .25rem 0 0 0; // 4px 0 0 0
         margin: 0;
         background-color: transparent;
         border: none;
@@ -40,7 +40,7 @@
 
 .library-box-wrapper {
     .library-box {
-        min-height: 7rem;
+        min-height: 7rem; // 112px
         background-color: $very-very-light-gray;
 
         a {
@@ -55,14 +55,14 @@
         }
 
         .library-image {
-            padding: 0 .5rem 0 0;
+            padding: 0 .5rem 0 0; // 0 8px 0 0
             margin: 0;
 
             a {
                 display: block;
                 height: 100%;
                 overflow: hidden;
-                border-radius: .375rem 0 0 .375rem;
+                border-radius: .375rem 0 0 .375rem; // 6px 0 0 6px
 
                 &:hover,
                 &:focus {
@@ -78,8 +78,31 @@
         }
 
         .library-metadata {
+            font-size: smaller;
             display: flex;
             flex-direction: column;
+
+            .library-card-footer-links {
+                display: flex;
+                // gap: .5rem; // 8px
+                justify-content: space-between;
+
+                // Override Bootstrap 5 default margin for multiple card-links
+                .card-link+.card-link {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .library-card-footer-links {
+        flex-wrap: wrap;
+
+        .card-link {
+            margin-top: 1rem;
+            width: 100%;
         }
     }
 }
@@ -92,10 +115,10 @@
             height: 100%;
 
             .card {
-                background-color: $very-very-light-gray; // #fafafa
+                background-color: $very-very-light-gray;
 
                 .card-text {
-                    color: $more-medium-gray; // #666666
+                    color: $more-medium-gray;
                 }
             }
 
@@ -107,30 +130,30 @@
                 }
 
                 .aal-icon {
-                    background-color: $aal-icon-blue; // #31b0d5
+                    background-color: $aal-icon-blue;
                 }
             }
 
-            .aal-box {
+            /*.aal-box {
                 .aal-icon-wrapper {
                     margin-right: .5rem;
                 }
-            }
+            }*/
         }
     }
 }
 
 .aal-icon {
-    font-size: 35px;
+    font-size: 2.25rem; // 36px
     color: $white-text;
     display: block;
     line-height: 1;
-    width: 55px;
-    border-radius: .375rem;
+    width: 3.5rem; // 56px
+    border-radius: .375rem; // 6px
     transition: background-color .4s ease-in-out;
 
     i {
-        padding: 10px;
+        padding: .625rem; // 10px
         width: 100%;
         color: $white-text;
         font-weight: 400;
