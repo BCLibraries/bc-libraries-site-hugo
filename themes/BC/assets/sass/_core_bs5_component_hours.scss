@@ -24,6 +24,7 @@
 .onl-asterisk-notice {
     font-size: 14px;
     line-height: 1.5;
+    font-weight: 400;
     display: none;
 
     &.visible {
@@ -32,8 +33,14 @@
 }
 
 .lib-hours__id-requirement-notice {
-    color: #eee;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.gargan-hall-notice {
+    font-size: .9em;
+    margin-left: 0;
 }
 
 .alert-hours {

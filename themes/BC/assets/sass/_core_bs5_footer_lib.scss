@@ -19,6 +19,11 @@
         }
     }
 
+    .table-hours table tbody tr td {
+        background-color: $bc-brand-maroon;
+        color: $white-text;
+    }
+
     h4 {
         font-weight: 700;
         text-transform: uppercase;
