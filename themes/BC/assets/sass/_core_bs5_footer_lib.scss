@@ -7,7 +7,7 @@
     font-weight: 300;
     z-index: 4;
     position: relative;
-    padding-top: 1em;
+    // padding-top: 1em;
 
     a {
         color: $white-text;
@@ -47,12 +47,13 @@
 
     .address-wrap,
     .hours-wrap {
-        float: left;
+        // float: left;
+        position: relative;
     }
 
-    .social-wrap {
+    /*.social-wrap {
         float: right;
-    }
+    }*/
 
     .lib-footer-links {
         padding-top: 1em;
