@@ -4,13 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchPanels = document.querySelectorAll('#search-panel');
 
     searchPanels.forEach(searchPanel => {
-        const booksLink = searchPanel.querySelector('.nde-book-search-link');
-        const articlesLink = searchPanel.querySelector('.nde-article-search-link');
-        const journalsLink = searchPanel.querySelector('.nde-journal-search-link');
+
+        // The text input
         const queryInputElement = searchPanel.querySelector('input#lib-search-box');
-        booksLink.addEventListener('click', handleLinkClick);
-        articlesLink.addEventListener('click', handleLinkClick);
-        journalsLink.addEventListener('click', handleLinkClick);
+
+        // Find the links and add a click handler to them.
+        const searchLinkSelector = [
+            '.nde-book-search-link',
+            '.nde-article-search-link',
+            '.nde-journal-search-link'
+        ].join(',');
+        const searchLinks = searchPanel.querySelectorAll(searchLinkSelector)
+        searchLinks.forEach(link => link.addEventListener('click', handleLinkClick));
 
         /**
          * Add the search string to a clicked link
