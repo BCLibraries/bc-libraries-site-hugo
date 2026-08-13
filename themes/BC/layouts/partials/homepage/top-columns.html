@@ -1,59 +1,54 @@
+{{/*
 <div class="container-fluid" id="services-highlight-container">
-    {{/*
     <div class="container">
         <div class="row">
             {{ partial "homepage/top-column/services-highlight.html" . }}
         </div>
-    </div>
-    */}}    
+    </div>  
 </div>
+*/}}
 
-<div class="container-fluid" id="top-columns">
-    <div class="container">
-        <div class="column-items">
-            <div class="row">
-                {{/* BEGIN left column */}}
-                    <div class="col-lg-3 col-md-12 col-12 col-xs-12 homepage-section" id="quicklink-container">
-                        {{ partial "homepage/top-column/quicklinks.html" . }}
-                    </div>
-
-                    <div class="col-lg-9 col-md-12 col-12 col-xs-12 homepage-section" id="aal-home-container">
-                        {{/* featured tips box */}}
-                        <div id="quicklink-container">
-                            {{ partial "homepage/top-column/featured-tips/landing.html" . }}
-                        </div>
-
-                        <div id="aal-home-container" class="homepage-section">
-                            {{ partial "homepage/top-column/ask-a-librarian.html" . }}
-                        </div>
-                        
-                    </div>
-                {{/* END left column */}}
-
-            {{/* BEGIN right column */}}
-                {{/*<div class="col-md-9 col-8 col-xs-12" id="at-a-glance-container">
-                    {{ partial "homepage/top-column/at-a-glance.html" . }}
-                </div>*/}}
-
-                {{/*<div class="col-md-9 col-12 col-xs-12" id="featured-tip-container">
-                    {{ partial "homepage/top-column/highlights/virtual-services-highlight.html" . }}
-                </div>*/}}
-
-                {{/* large welcome-back message */}}
-                {{/*
-                <div class="col-md-9 col-12 col-xs-12" id="welcome-back-students-container">
-                    {{ partial "homepage/top-column/alerts/welcome-back-students.html" . }}
-                </div>
-                */}}
-
-                {{/* alert box for swapping out featured tips */}}
-                {{/*
-                <div class="col-md-9 col-12 col-xs-12" id="featured-tip-container">
-                    {{ partial "homepage/top-column/alerts/special-oneill-hours-exams-upcoming.html" . }}
-                </div>
-                */}}
-            {{/* END right column */}}
+<div class="container pt-4" id="top-columns">
+    <div class="row">
+        {{/* BEGIN left column */}}
+            <div class="col-lg-3 col-md-12 col-12 col-xs-12 pb-sm-0 pb-4 gxzzz-0" id="quicklink-container">
+                {{ partial "homepage/top-column/quicklinks.html" . }}
             </div>
-        </div>      
+
+            <div class="col-lg-9 col-md-12 col-12 col-xs-12 gxzzz-0" id="aal-home-container">
+                {{/* featured tips box */}}
+                <div id="quicklink-container" class="pb-4">
+                    {{ partial "homepage/top-column/featured-tips/landing.html" . }}
+                </div>
+
+                <div id="aal-home-container" class="">
+                    {{ partial "homepage/top-column/ask-a-librarian.html" . }}
+                </div>
+            </div>
+        {{/* END left column */}}
+
+    {{/* BEGIN right column */}}
+        {{/*<div class="col-md-9 col-8 col-xs-12" id="at-a-glance-container">
+            {{ partial "homepage/top-column/at-a-glance.html" . }}
+        </div>*/}}
+
+        {{/*<div class="col-md-9 col-12 col-xs-12" id="featured-tip-container">
+            {{ partial "homepage/top-column/highlights/virtual-services-highlight.html" . }}
+        </div>*/}}
+
+        {{/* large welcome-back message */}}
+        {{/*
+        <div class="col-md-9 col-12 col-xs-12" id="welcome-back-students-container">
+            {{ partial "homepage/top-column/alerts/welcome-back-students.html" . }}
+        </div>
+        */}}
+
+        {{/* alert box for swapping out featured tips */}}
+        {{/*
+        <div class="col-md-9 col-12 col-xs-12" id="featured-tip-container">
+            {{ partial "homepage/top-column/alerts/special-oneill-hours-exams-upcoming.html" . }}
+        </div>
+        */}}
+    {{/* END right column */}}
     </div>
 </div>
