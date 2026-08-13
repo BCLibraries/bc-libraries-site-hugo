@@ -27,17 +27,20 @@ pipeline {
                 script {
                     // Get most recent commit message
                     echo "Fetching the most recent commit message"
-                    env.GIT_COMMIT_MSG = sh(returnStdout: true, script: "git log -n 1 --pretty=%B ${env.GIT_COMMIT}").trim()
+                    env.GIT_COMMIT_MSG = sh (script: "git log -1 --pretty=%B ${scmVars.GIT_COMMIT}", returnStdout: true).trim()
+                    env.GIT_AUTHOR_NAME = sh (script: "git show -s --pretty=%an", returnStdout: true).trim()
                     echo "env.GIT_COMMIT_MSG = ${env.GIT_COMMIT_MSG}"
+                    echo "env.GIT_AUTHOR_NAME = ${env.GIT_AUTHOR_NAME}"
 
-                    echo "List of used GIT_ vars:"
-                    echo "env.GIT_BRANCH       = ${env.GIT_BRANCH}"
-                    echo "env.GIT_COMMIT       = ${env.GIT_COMMIT}"
+                    echo "GIT variables:"
+                    echo "scmVars.GIT_BRANCH   = ${scmVars.GIT_BRANCH}"
+                    echo "env.GIT_BRANCH_NAME  = ${env.GIT_BRANCH_NAME}"
+                    echo "scmVars.GIT_COMMIT   = ${scmVars.GIT_COMMIT}"
                     echo "env.GIT_COMMIT_SHORT = ${env.GIT_COMMIT_SHORT}"
-                    echo "env.GIT_URL_CLEAN    = ${env.GIT_URL_CLEAN}"
+                    echo "scmVars.GIT_URL      = ${scmVars.GIT_URL}"
+                    echo "env.GET_URL_PROPER   = ${env.GET_URL_PROPER}"
                     echo "env.GIT_BRANCH_URL   = ${env.GIT_BRANCH_URL}"
                     echo "env.GIT_COMMIT_URL   = ${env.GIT_COMMIT_URL}"
-                    echo "env.GIT_AUTHOR_NAME  = ${env.GIT_AUTHOR_NAME}"
 
                     echo "Generate build header file"
                     sh """#!/bin/bash
