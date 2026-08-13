@@ -366,6 +366,24 @@
     display:none!important;
 }
 
+/* Location and Hours */
+
+#location-hours-container {
+    h2 {
+        margin-top: 0;
+    }
+
+    .panel {
+        background-color: #f8f8f8;
+
+        .panel-body {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
 /* At A Glance */
 
 #at-a-glance-container {
