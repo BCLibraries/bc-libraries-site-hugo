@@ -12,11 +12,6 @@
 
 <article class="post">
     <a href='{{ $link_target }}'>
-
-        {{/* The <noscript/> tag is for loading attribute polyfill, used
-            for img lazy-loading support in browsers without the loading
-            attribute. */}}
-        <noscript class="loading-lazy">
             {{ $imageName :=  path.BaseName .Params.imagethumb }}
             {{ $imageDir := path.Dir .Params.imagethumb }}
             {{ $fullImagePath := print .Params.type "/" $imageDir "/" $imageName }}
@@ -27,7 +22,6 @@
             "avif"  true
             "webp"  true
             "lazy"  true) }}
-        </noscript>
         <div class="news-section-image-attribution">
             {{ if .Params.attribution_text -}}
             {{ .Params.attribution_text | safeHTML }}
