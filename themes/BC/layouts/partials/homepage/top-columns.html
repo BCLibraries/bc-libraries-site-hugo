@@ -20,6 +20,10 @@
             {{/* END left column */}}
 
             {{/* BEGIN right column */}}
+                <div class="col-md-9 col-sm-12 col-xs-12" id="aal-home-container">
+                    {{ partial "homepage/top-column/ask-a-librarian.html" . }}
+                </div>
+
                 {{/*<div class="col-md-9 col-sm-8 col-xs-12" id="at-a-glance-container">
                     {{ partial "homepage/top-column/at-a-glance.html" . }}
                 </div>*/}}
@@ -36,9 +40,11 @@
                 */}}
 
                 {{/* featured tips box */}}
+                {{/*
                 <div class="col-md-9 col-sm-12 col-xs-12" id="featured-tip-container">
                     {{ partial "homepage/top-column/featured-tips/landing.html" . }}
                 </div>
+                */}}
 
                 {{/* alert box for swapping out featured tips */}}
                 {{/*
@@ -46,14 +52,6 @@
                     {{ partial "homepage/top-column/alerts/special-oneill-hours-exams-upcoming.html" . }}
                 </div>
                 */}}
-
-                <div class="col-md-9 col-sm-12 col-xs-12" id="aal-home-container">
-                    {{ partial "homepage/top-column/ask-a-librarian.html" . }}
-                </div>
-
-                
-                
-
             {{/* END right column */}}
             </div>
         </div>      
