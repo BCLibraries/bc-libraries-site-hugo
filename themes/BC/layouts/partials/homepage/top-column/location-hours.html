@@ -24,8 +24,8 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <a class="lib-hours__name" href="{{ .url }}">{{ .name }} ></a></td>
-                            <div class="lib-hours__status">Now {{/* .times.status */}}</div>
-                            <div class="lib-hours lib-hours__hours lib-hours-{{ .lid }}">{{ .rendered }}</div>
+                            <div class="lib-hours__status current-status-lib-{{ .lid }}">&nbsp;</div>
+                            <div class="lib-hours lib-hours__hours lib-hours-{{ .lid }} lib-{{ .lid }} todays-hours-lib-{{ .lid }}">&nbsp;</div>
                         </div>
                     </div>
                 </div>

@@ -2,6 +2,17 @@
 /* BEGIN top-columns section on homepage */
 /*                                       */
 
+/* homepage locations and hours */
+.lib-hours__status-open i {
+    color: #5D694A;
+    fill: #5D694A;
+}
+
+.lib-hours__status-closed i {
+    color: #B30000;
+    fill: #B30000;
+}
+
 #top-columns {
     background-color: $white-body;
     padding-bottom: 3rem;

@@ -80,6 +80,12 @@ $(document).ready(function () {
 
             // Insert the hours into any other places it needs to appear on the page.
             replaceHours(loc_to_show.code, hours);
+
+            // Replace using Location.id
+            replaceHours(loc_to_show.id, hours);
+
+            // Update the location status into any other places it needs to appear on the page.
+            updateLocationStatus(loc_to_show.id, location_data.times.status);
         });
 
         // clone the new <tbody> into the hours tables
@@ -103,6 +109,40 @@ $(document).ready(function () {
         const matches = document.getElementsByClassName(to_replace);
         for (let match of matches) {
             match.innerHTML = hours;
+        }
+    }
+
+    /**
+     * Update location status in an element
+     *
+     * Looks for cells with classes "current-status-lib-<id>"—where <id> is the library's id—and
+     * replaces them with the current status.
+     *
+     * @param {string} lib_id
+     * @param {string} status
+     */
+    function updateLocationStatus(lib_id, status) {
+        if (!status) {
+            console.error(`No status found for ${lib_id}`);
+            return;
+        }
+
+        const status_lower = status.toLowerCase();
+        const status_capitalized = status_lower.charAt(0).toUpperCase() + status_lower.slice(1);
+        const status_open = '<i class="fa fa-check-square" aria-hidden="true"></i> ';
+        const status_closed = '<i class="fa fa-minus-circle" aria-hidden="true"></i> ';
+        const status_unknown = ' ';
+        const status_icons = {
+            'open': status_open,
+            'closed': status_closed
+        };
+        const status_icon = status_icons[status_lower] || status_unknown;
+
+        const to_replace = `current-status-lib-${lib_id}`;
+        const matches = document.getElementsByClassName(to_replace);
+        for (let match of matches) {
+            match.classList.add(`lib-hours__status-${status_lower}`);
+            match.innerHTML = `${status_icon} Now ${status_capitalized}`;
         }
     }
 
