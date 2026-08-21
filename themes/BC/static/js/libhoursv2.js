@@ -105,10 +105,14 @@ $(document).ready(function () {
      * @param {string} hours
      */
     function replaceHours(lib_code, hours) {
+        if (!hours) {
+            hours = "N/A";
+        }
         const to_replace = `todays-hours-lib-${lib_code}`;
         const matches = document.getElementsByClassName(to_replace);
+        const hours_icon = '<i class="fa fa-clock-o" aria-hidden="true"></i> ';
         for (let match of matches) {
-            match.innerHTML = hours;
+            match.innerHTML = `${hours_icon} ${hours}`;
         }
     }
 
