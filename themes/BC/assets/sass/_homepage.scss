@@ -15,7 +15,7 @@
 
 #top-columns {
     background-color: $white-body;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
 }
 #top-columns .row {
     padding-top:0;
@@ -324,7 +324,7 @@
 
 .ql {
     height: 100%;
-    padding-bottom:10px;
+    padding-bottom:0px;
 }
 
 .ql .list-group {
@@ -877,6 +877,12 @@
 }
 
 /* media queries */
+@media (min-width: 1200px) {
+    #top-columns {
+        padding-bottom: 2rem;
+    }
+}
+
 @media (max-width: 1199px) {
     .news-section-unsafe-html-embed {
         height: 303px;
@@ -900,6 +906,7 @@
 @media (min-width: 992px) {
     .ql .list-group {
         font-size: large;
+        float: none;
     }
 }
 @media (max-width: 767px) {
