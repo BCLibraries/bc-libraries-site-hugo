@@ -15,7 +15,7 @@
 
 #top-columns {
     background-color: $white-body;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 #top-columns .row {
     padding-top:0;
@@ -380,6 +380,8 @@
 /* Location and Hours */
 
 #location-hours-container {
+    margin-top: 1rem;
+
     h2 {
         margin-top: 0;
     }
