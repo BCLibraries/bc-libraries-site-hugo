@@ -413,17 +413,24 @@
                     line-height: normal;
                     gap: 10px;
                     font-size: 16px;
+                    justify-content: space-between;
 
                     &::before, &::after {
                         position: absolute;
                         content: "";
                     }
 
-                    .lib-hours__status,
-                    .lib-hours__hours {
+                    .lib-hours__content {
                         display: flex;
-                        align-items: center;
+                        flex-direction: column;
                         gap: 10px;
+
+                        .lib-hours__status,
+                        .lib-hours__hours {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        }
                     }
                 }
             }
