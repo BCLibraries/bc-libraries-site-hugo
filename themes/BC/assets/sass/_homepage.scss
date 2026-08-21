@@ -418,6 +418,13 @@
                         position: absolute;
                         content: "";
                     }
+
+                    .lib-hours__status,
+                    .lib-hours__hours {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
                 }
             }
         }
