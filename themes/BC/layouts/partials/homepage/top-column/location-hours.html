@@ -16,11 +16,11 @@
     
     <h2>Locations and Today's Hours</h2>
 
-    <div class="row">
+    <div class="row panel-container">
 
         {{ range sort $dataJSON.locations "id" }}
             {{ if eq .category "library" }}
-                <div class="col-md-4 col-sm-4">
+                <div class="col-md-4 col-sm-4 col-xs-6 col-xxs panel-wrapper" id="panel-wrapper-id-{{ .lid }}">
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <a class="lib-hours__name" href="{{ .url }}">{{ .name }} ></a></td>

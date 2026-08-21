@@ -384,13 +384,34 @@
         margin-top: 0;
     }
 
-    .panel {
-        background-color: #f8f8f8;
+    .panel-container {
+        display: flex;
+        flex-wrap: wrap;
 
-        .panel-body {
-            padding: 10px;
+        .panel-wrapper {
             display: flex;
-            flex-direction: column;
+            flex-flow: column;
+
+            .panel {
+                display: flex;
+                flex-grow: 1;
+                //font-size: 14px;
+                background-color: #f8f8f8;
+                box-shadow: 0 2px 4px 0 rgba(221, 221, 221, 0.25);
+
+                .panel-body {
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    line-height: normal;
+                    gap: 10px;
+
+                    &::before, &::after {
+                        position: absolute;
+                        content: "";
+                    }
+                }
+            }
         }
     }
 }
