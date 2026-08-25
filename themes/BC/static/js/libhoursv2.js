@@ -1,6 +1,8 @@
 /* FETCH LIBRARY HOURS */
 
 $(document).ready(function () {
+    // the time the page was loaded
+    const LOAD_TIME = moment().format();
 
     // turn off/on showing department hours e.g., Gargan Hall
     const SHOW_DEPARTMENTS = false;
@@ -292,6 +294,55 @@ $(document).ready(function () {
         // Between Sunday @ 9am and Monday @ 7am - 9:00a - 10:00p, Level One Open 24 hours
     }
 
+    /**
+     * Displays the elapsed time since the page was loaded.
+     * Updates the text content every minute.
+     */
+    function showElapsedTime() {
+        const now = moment();
+        const elapsed = moment.duration(now.diff(LOAD_TIME));
+        let elapsed_time = elapsed.asSeconds();
+        let time_measurement = '';
+
+        // Clear the previous elapsed time text content before updating
+        const matches = document.getElementsByClassName('lib-hours__elapsed_time');
+        for (let match of matches) {
+            match.innerHTML = "";
+        }
+
+        if (elapsed_time < 60) {
+            return; // Don't show elapsed time if less than a minute
+        } else if (elapsed_time >= 60 && elapsed_time < 3600) { // Between 1 minute and 1 hour
+            const elapsed_minutes = Math.floor(elapsed_time / 60);
+            elapsed_time = elapsed_minutes;
+            if (elapsed_time === 1) {
+                time_measurement = 'minute';
+            } else {
+                time_measurement = 'minutes';
+            }
+        } else { // 1 hour or more
+            const elapsed_hours = Math.floor(elapsed_time / 3600);
+            elapsed_time = elapsed_hours;
+            if (elapsed_time === 1) {
+                time_measurement = 'hour';
+            } else {
+                time_measurement = 'hours';
+            }
+        }
+        
+        // Update the elapsed time text content
+        for (let match of matches) {
+            match.textContent = `Last refreshed ${elapsed_time} ${time_measurement} ago`;
+        }
+        
+        console.log(`Last refreshed ${elapsed_time} ${time_measurement} ago`);
+    }
+
     $(".hours-todays-date").text(date);
     getHours().then();
+    showElapsedTime();
+
+    setInterval(() => {
+        showElapsedTime();
+    }, 60000); // 1 minute in milliseconds
 });

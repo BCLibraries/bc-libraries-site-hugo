@@ -3,9 +3,10 @@
 {{/* Local scripts */}}
 {{ $jquery_js := resources.Get "js/jquery-3.6.4.min.js" }}
 {{ $bootstrap_js := resources.Get "js/bootstrap.min.js" }}
+{{ $moment_js := resources.Get "js/moment.min.js" }}
 
 {{/* Bundle all the scripts */}}
-{{ $all_scripts := slice $jquery_js $bootstrap_js }}
+{{ $all_scripts := slice $jquery_js $bootstrap_js $moment_js }}
 {{ $bundled_scripts := $all_scripts | resources.Concat "js/site-scripts-head.js" }}
 
 {{/* Minify and fingerprint the bundled scripts */}}
