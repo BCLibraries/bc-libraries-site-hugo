@@ -306,9 +306,9 @@ $(document).ready(function () {
 
         // Clear the previous elapsed time text content before updating
         const matches = document.getElementsByClassName('lib-hours__elapsed_time');
-        for (let match of matches) {
+        /*for (let match of matches) {
             match.innerHTML = "";
-        }
+        }*/
 
         if (elapsed_time < 60) {
             return; // Don't show elapsed time if less than a minute
@@ -332,15 +332,12 @@ $(document).ready(function () {
         
         // Update the elapsed time text content
         for (let match of matches) {
-            match.textContent = `Last refreshed ${elapsed_time} ${time_measurement} ago`;
+            match.textContent = `Location data fetched: ${elapsed_time} ${time_measurement} ago`;
         }
-        
-        console.log(`Last refreshed ${elapsed_time} ${time_measurement} ago`);
     }
 
     $(".hours-todays-date").text(date);
     getHours().then();
-    showElapsedTime();
 
     setInterval(() => {
         showElapsedTime();

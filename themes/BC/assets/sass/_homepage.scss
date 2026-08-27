@@ -391,6 +391,12 @@
         display: none;
     }
 
+    .lib-hours__elapsed_time {
+        margin-top: -1.5rem;
+        font-size: 14px;
+        text-align: right;
+    }
+
     .panel-container {
         display: flex;
         flex-wrap: wrap;
