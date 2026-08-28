@@ -163,10 +163,6 @@ $(document).ready(function () {
 
         const label_cell = document.createElement("td");
         label_cell.append(link);
-        if (label === 'Bapst Library') {
-            const innerHtml = '<div class="gargan-hall-notice">Gargan Hall may be closed for Student Registation sessions — <a href="https://libguides.bc.edu/bapst/hours">details</a></div>';
-            label_cell.innerHTML = `${label_cell.innerHTML} ${innerHtml}`;
-        }
 
         const hours_cell = document.createElement("td");
         hours_cell.classList.add("lib-hours");
