@@ -2,9 +2,20 @@
 /* BEGIN top-columns section on homepage */
 /*                                       */
 
+/* homepage locations and hours */
+.lib-hours__status-open i {
+    color: #5D694A;
+    fill: #5D694A;
+}
+
+.lib-hours__status-closed i {
+    color: #B30000;
+    fill: #B30000;
+}
+
 #top-columns {
     background-color: $white-body;
-    padding-bottom: 3rem;
+    padding-bottom: 0rem;
 }
 #top-columns .row {
     padding-top:0;
@@ -313,7 +324,7 @@
 
 .ql {
     height: 100%;
-    padding-bottom:10px;
+    padding-bottom:0px;
 }
 
 .ql .list-group {
@@ -325,7 +336,7 @@
 .ql .list-group-item {
     background-color: transparent;
     border: 0 solid $white-body;
-    padding: 1.25rem .5rem;
+    padding: 1.5rem .5rem;
     border-radius: 0;
     color: $black-text;
 }
@@ -364,6 +375,73 @@
 .aal-boxes-horizontal-layout .aal-box-item::before,
 .aal-boxes-horizontal-layout .aal-box-item::after {
     display:none!important;
+}
+
+/* Location and Hours */
+
+#location-hours-container {
+    margin-top: 1rem;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    // Hide Law Library hours for aesthetic reasons
+    #panel-wrapper-id-509 {
+        display: none;
+    }
+
+    .lib-hours__elapsed_time {
+        margin-top: -1.5rem;
+        font-size: 14px;
+        text-align: right;
+    }
+
+    .panel-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .panel-wrapper {
+            display: flex;
+            flex-flow: column;
+
+            .panel {
+                display: flex;
+                flex-grow: 1;
+                //font-size: 14px;
+                background-color: #f8f8f8;
+                box-shadow: 0 2px 4px 0 rgba(221, 221, 221, 0.25);
+
+                .panel-body {
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    line-height: normal;
+                    gap: 10px;
+                    font-size: 16px;
+                    justify-content: space-between;
+
+                    &::before, &::after {
+                        position: absolute;
+                        content: "";
+                    }
+
+                    .lib-hours__content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .lib-hours__status,
+                        .lib-hours__hours {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* At A Glance */
@@ -820,6 +898,12 @@
 }
 
 /* media queries */
+@media (min-width: 1200px) {
+    #top-columns {
+        padding-bottom: 2rem;
+    }
+}
+
 @media (max-width: 1199px) {
     .news-section-unsafe-html-embed {
         height: 303px;
@@ -843,6 +927,7 @@
 @media (min-width: 992px) {
     .ql .list-group {
         font-size: large;
+        float: none;
     }
 }
 @media (max-width: 767px) {
