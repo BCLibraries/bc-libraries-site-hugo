@@ -27,7 +27,8 @@ pipeline {
                 script {
                     // Get most recent commit message
                     echo "Fetching the most recent commit message"
-                    env.GIT_COMMIT_MSG = sh(returnStdout: true, script: "git log -n 1 --pretty=%B ${env.GIT_COMMIT}").trim()
+                    env.GIT_COMMIT_MSG = sh (script: "git log -1 --pretty=%B ${env.GIT_COMMIT}", returnStdout: true).trim()
+                    env.GIT_AUTHOR_NAME = sh (script: "git show -s --pretty=%an", returnStdout: true).trim()
                     echo "env.GIT_COMMIT_MSG = ${env.GIT_COMMIT_MSG}"
 
                     echo "List of used GIT_ vars:"
