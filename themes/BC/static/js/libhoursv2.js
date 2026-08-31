@@ -1,6 +1,8 @@
 /* FETCH LIBRARY HOURS */
 
 $(document).ready(function () {
+    // the time the page was loaded
+    const LOAD_TIME = moment().format();
 
     // turn off/on showing department hours e.g., Gargan Hall
     const SHOW_DEPARTMENTS = false;
@@ -80,6 +82,12 @@ $(document).ready(function () {
 
             // Insert the hours into any other places it needs to appear on the page.
             replaceHours(loc_to_show.code, hours);
+
+            // Replace using Location.id
+            replaceHours(loc_to_show.id, hours);
+
+            // Update the location status into any other places it needs to appear on the page.
+            updateLocationStatus(loc_to_show.id, location_data.currently_open);
         });
 
         // clone the new <tbody> into the hours tables
@@ -99,10 +107,43 @@ $(document).ready(function () {
      * @param {string} hours
      */
     function replaceHours(lib_code, hours) {
+        if (!hours) {
+            hours = "N/A";
+        }
         const to_replace = `todays-hours-lib-${lib_code}`;
         const matches = document.getElementsByClassName(to_replace);
+        const hours_icon = '<i class="fa fa-clock-o" aria-hidden="true"></i> ';
         for (let match of matches) {
-            match.innerHTML = hours;
+            match.innerHTML = `${hours_icon} ${hours}`;
+        }
+    }
+
+    /**
+     * Update location status in an element
+     *
+     * Looks for cells with classes "current-status-lib-<id>"—where <id> is the library's id—and
+     * replaces them with the current status.
+     *
+     * @param {string} lib_id
+     * @param {boolean} currently_open_status
+     */
+    function updateLocationStatus(lib_id, currently_open_status) {
+        // Convert the boolean status into a string for display
+        const status_text = currently_open_status ? 'open' : 'closed';
+
+        const status_capitalized = status_text.charAt(0).toUpperCase() + status_text.slice(1);
+        const status_unknown = ' ';
+        const status_icons = {
+            'open': '<i class="fa fa-check-square" aria-hidden="true"></i> ',
+            'closed': '<i class="fa fa-minus-circle" aria-hidden="true"></i> '
+        };
+        const status_icon = status_icons[status_text] || status_unknown;
+
+        const to_replace = `current-status-lib-${lib_id}`;
+        const matches = document.getElementsByClassName(to_replace);
+        for (let match of matches) {
+            match.classList.add(`lib-hours__status-${status_text}`);
+            match.innerHTML = `${status_icon} Now ${status_capitalized}`;
         }
     }
 
@@ -122,10 +163,6 @@ $(document).ready(function () {
 
         const label_cell = document.createElement("td");
         label_cell.append(link);
-        if (label === 'Bapst Library') {
-            const innerHtml = '<div class="gargan-hall-notice">Gargan Hall may be closed for Student Registation sessions — <a href="https://libguides.bc.edu/bapst/hours">details</a></div>';
-            label_cell.innerHTML = `${label_cell.innerHTML} ${innerHtml}`;
-        }
 
         const hours_cell = document.createElement("td");
         hours_cell.classList.add("lib-hours");
@@ -253,6 +290,52 @@ $(document).ready(function () {
         // Between Sunday @ 9am and Monday @ 7am - 9:00a - 10:00p, Level One Open 24 hours
     }
 
+    /**
+     * Displays the elapsed time since the page was loaded.
+     * Updates the text content every minute.
+     */
+    function showElapsedTime() {
+        const now = moment();
+        const elapsed = moment.duration(now.diff(LOAD_TIME));
+        let elapsed_time = elapsed.asSeconds();
+        let time_measurement = '';
+
+        // Clear the previous elapsed time text content before updating
+        const matches = document.getElementsByClassName('lib-hours__elapsed_time');
+        /*for (let match of matches) {
+            match.innerHTML = "";
+        }*/
+
+        if (elapsed_time < 60) {
+            return; // Don't show elapsed time if less than a minute
+        } else if (elapsed_time >= 60 && elapsed_time < 3600) { // Between 1 minute and 1 hour
+            const elapsed_minutes = Math.floor(elapsed_time / 60);
+            elapsed_time = elapsed_minutes;
+            if (elapsed_time === 1) {
+                time_measurement = 'minute';
+            } else {
+                time_measurement = 'minutes';
+            }
+        } else { // 1 hour or more
+            const elapsed_hours = Math.floor(elapsed_time / 3600);
+            elapsed_time = elapsed_hours;
+            if (elapsed_time === 1) {
+                time_measurement = 'hour';
+            } else {
+                time_measurement = 'hours';
+            }
+        }
+        
+        // Update the elapsed time text content
+        for (let match of matches) {
+            match.textContent = `Location data fetched: ${elapsed_time} ${time_measurement} ago`;
+        }
+    }
+
     $(".hours-todays-date").text(date);
     getHours().then();
+
+    setInterval(() => {
+        showElapsedTime();
+    }, 60000); // 1 minute in milliseconds
 });

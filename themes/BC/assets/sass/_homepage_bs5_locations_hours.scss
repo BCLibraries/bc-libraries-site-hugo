@@ -1,0 +1,73 @@
+.lib-hours__status-open i {
+    color: #5D694A;
+    fill: #5D694A;
+}
+
+.lib-hours__status-closed i {
+    color: #B30000;
+    fill: #B30000;
+}
+
+#location-hours-container {
+    // padding-top: 2rem;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    // Hide Law Library hours for aesthetic reasons
+    #card-wrapper-id-509 {
+        display: none;
+    }
+
+    .lib-hours__elapsed_time {
+        // margin-top: .5rem;
+        font-size: 14px;
+        text-align: right;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .card-wrapper {
+            display: flex;
+            flex-flow: column;
+
+            .card {
+                display: flex;
+                flex-grow: 1;
+                //font-size: 14px;
+                background-color: #f8f8f8;
+                box-shadow: 0 2px 4px 0 rgba(221, 221, 221, 0.25);
+
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    line-height: normal;
+                    gap: .625rem; // 10px
+                    font-size: 16px;
+                    justify-content: space-between;
+
+                    &::before, &::after {
+                        position: absolute;
+                        content: "";
+                    }
+
+                    .lib-hours__content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .625rem; // 10px
+
+                        .lib-hours__status,
+                        .lib-hours__hours {
+                            display: flex;
+                            align-items: center;
+                            gap: .625rem; // 10px
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

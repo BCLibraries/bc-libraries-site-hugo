@@ -1,0 +1,42 @@
+{{ $dataJSON := dict }}
+{{ $url := "https://library.bc.edu/bc-hours/api_hours_today.php" }}
+{{ with resources.GetRemote $url }}
+    {{ with .Err }}
+        {{/* errorf "%s" . */}}
+        <script>console.error('There was an error loading hours content from LibApps: {{ $url }}');</script>
+    {{ else }}
+        {{ $dataJSON = . | transform.Unmarshal }}
+    {{ end }}
+{{ else }}
+    {{/* errorf "Unable to get remote resource %q" $url */}}
+    <script>console.error('Unable to get remote resource: {{ $url }}');</script>
+{{ end }}
+
+<div class="column-sub-item" id="location-hours" data-tag="ga-tag">
+    
+    <h2>Locations and Today's Hours</h2>
+
+    <p class="lib-hours__id-requirement-notice">Access to libraries requires a BC ID from from 10 pm to 7 am.</p>
+
+    <div class="row card-container g-4">
+
+        {{ range sort $dataJSON.locations "id" }}
+            {{ if eq .category "library" }}
+                <div class="col-md-4 col-12 card-wrapper" id="card-wrapper-id-{{ .lid }}">
+                    <div class="card">
+                        <div class="card-body">
+                            <a class="lib-hours__name" href="{{ .url }}">{{ .name }}&nbsp;></a></td>
+                            <div class="lib-hours__content">
+                                <div class="lib-hours__status current-status-lib-{{ .lid }}">&nbsp;</div>
+                                <div class="lib-hours lib-hours__hours lib-hours-{{ .lid }} lib-{{ .lid }} todays-hours-lib-{{ .lid }}">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+    </div>
+    <div class="row">
+        <div class="col-12 mt-1 lib-hours__elapsed_time">&nbsp;</div>
+    </div>
+</div>
