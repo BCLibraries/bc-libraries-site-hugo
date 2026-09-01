@@ -188,7 +188,7 @@
         }
     
         .menu-text {
-            padding: 0 .25rem .5rem .25rem; // 0 4px 6px 4px
+            padding: .125rem 0 .5rem 0; // 2px 0 8px 0
         }
 
         .find-more-link {
@@ -264,11 +264,7 @@
 
 // Medium viewport
 @media (max-width: 768px) {
-    #megamenu .dropdown .menu-list:nth-child( even ) {
-        border: none;
-    }
-
-    #megamenu #nav-item-menu-accounts.dropdown .menu-list {
+    #megamenu .dropdown:not(#nav-item-menu-about) .menu-list {
         border: none;
     }
 }
