@@ -22,7 +22,7 @@
 
         {{ range sort $dataJSON.locations "id" }}
             {{ if eq .category "library" }}
-                <div class="col-md-4 col-12 card-wrapper" id="card-wrapper-id-{{ .lid }}">
+                <div class="col-md-4 col-sm-6 col-12 card-wrapper" id="card-wrapper-id-{{ .lid }}">
                     <div class="card">
                         <div class="card-body">
                             <a class="lib-hours__name" href="{{ .url }}">{{ .name }}&nbsp;></a></td>
