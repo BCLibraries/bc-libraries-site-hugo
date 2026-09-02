@@ -41,7 +41,7 @@
     }
 
     .dropdown-hover>.dropdown-menu {
-        position: absolute;
+        // position: absolute;
         top: 100%;
         left: 0;
         border-top: none;
@@ -264,8 +264,17 @@
 
 // Medium viewport
 @media (max-width: 767px) {
+    #megamenu .navbar-collapse {
+        padding-bottom: 1rem; // 16px
+    }
+
     #megamenu .dropdown:not(#nav-item-menu-about) .menu-list {
         border: none;
+    }
+
+    #megamenu .dropdown-hover>.dropdown-menu {
+        box-shadow: none;
+        border-radius: 0;
     }
 
     #nav-item-menu-myaccounts {
