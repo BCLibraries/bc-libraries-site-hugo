@@ -11,11 +11,13 @@
 
     a {
         color: $white-text;
+        border-bottom: 1px dotted #d6706c;
 
         &:hover,
         &:focus {
             color: $bc-primary-light-gold;
             text-decoration: none;
+            border-bottom: 1px solid #d6706c;
         }
     }
 
@@ -138,9 +140,16 @@
         right: 15px;
     }
 
-    .ihs-logo img {
-        height: 100px;
-        margin-top: 20px;
+    .ihs-logo {
+        img {
+            height: 100px;
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            border: none;
+        }
     }
 }
 

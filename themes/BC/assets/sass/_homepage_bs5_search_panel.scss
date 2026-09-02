@@ -21,6 +21,12 @@
 #search-panel #search-links a, #search-panel #search-links a:visited {
     color: white;
     font-size: 18px;
+    border-bottom: 1px dotted #fff;
+}
+
+#search-panel #search-links a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
 }
 
 #search-panel input.form-control, #search-panel button.btn.btn-default {
