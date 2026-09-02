@@ -263,9 +263,13 @@
 }
 
 // Medium viewport
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #megamenu .dropdown:not(#nav-item-menu-about) .menu-list {
         border: none;
+    }
+
+    #nav-item-menu-myaccounts {
+        display: none;
     }
 }
 
