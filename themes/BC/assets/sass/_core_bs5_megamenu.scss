@@ -229,6 +229,7 @@
             line-height: 1;
             font-weight: 200;
             padding: .9375rem; // 15px
+            z-index: 1001;
 
             &:hover,
             &:focus,
@@ -279,6 +280,11 @@
 
     #nav-item-menu-myaccounts {
         display: none;
+    }
+
+    #megamenu a.nav-link.show {
+        position: sticky;
+        top: 0;
     }
 }
 
