@@ -1,17 +1,17 @@
 <div class="container pt-4" id="top-columns">
     <div class="row">
         {{/* BEGIN left column */}}
-        <div class="col-lg-3 col-md-12 col-12 pb-sm-0 pb-4" id="quicklink-container">
+        <div class="col-lg-3 col-md-12 col-12" id="quicklink-container">
             {{ partial "homepage/top-column/quicklinks.html" . }}
         </div>
         {{/* END left column */}}
 
         {{/* BEGIN right column */}}
-        <div class="col-lg-9 col-md-12 col-12 pt-5 pt-lg-0 pt-md-5" id="aal-home-container">
-            <div id="aal-home-container" class="">
+        <div class="col-lg-9 col-md-12 col-12 pt-4 pt-lg-0 pt-md-4" id="aal-home-container">
+            <div id="aal-home-container" class="pb-3">
                 {{ partial "homepage/top-column/ask-a-librarian.html" . }}
             </div>
-            <div id="location-hours-container" class="pt-5">
+            <div id="location-hours-container" class="pt-3">
                 {{/* BEGIN location-hours */}}
                 {{ partial "homepage/top-column/location-hours.html" . }}
             </div>
