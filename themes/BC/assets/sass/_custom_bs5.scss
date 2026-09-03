@@ -17,6 +17,18 @@
 $enable-gradients: true;
 $enable-shadows: true;
 
+// Add in a spacing for 2rem, e.g. pt-5 is now paddint-top: 2rem, instead of 3rem
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2, // Originally 3
+  6: $spacer * 3,  // Create new spacer value for 3rem, e.g. pt-6 is now padding-top: 3rem
+);
+
 // Include functions first
 @import "../bootstrap/scss/functions";
 
