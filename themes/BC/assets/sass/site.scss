@@ -2,7 +2,7 @@
 @import 'variables/colors';
 
 // Include all our customized Bootstrap v5.3.5 SCSS
-@import 'custom_bs5';
+@import 'bootstrap_base';
 
 // Original stylesheets
 //
@@ -32,7 +32,6 @@
 // @import 'core/component_aal_card';
 // @import 'core/component_aal_override';
 @import 'core/component_card';
-@import 'core/component_megamenu_yamm';
 @import 'core/notifications';
 @import 'core/header_bc';
 @import 'core/megamenu';
