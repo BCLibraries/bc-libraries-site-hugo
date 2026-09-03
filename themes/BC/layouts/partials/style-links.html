@@ -4,9 +4,10 @@
 {{ $google_fonts_style := resources.Get "css/google-fonts.css" | fingerprint }}
 <link rel="stylesheet" href="{{ $google_fonts_style.RelPermalink }}">
 
+{{/* We now include Bootstrap SCSS from source and include it in the compiled site.css */}}
 {{/* CSS from dists (bootstrap, fonts, etc) */}}
-{{ $bootstrap_style := resources.Get "css/bootstrap-5.3.5.min.css" | fingerprint }}
-<link rel="stylesheet" href="{{ $bootstrap_style.RelPermalink }}">
+{{/* $bootstrap_style := resources.Get "css/bootstrap-5.3.5.min.css" | fingerprint */}}
+{{/* <link rel="stylesheet" href="{{ $bootstrap_style.RelPermalink }}"> */}}
 
 {{ $fontawesome_style := resources.Get "css/font-awesome.min.css" | fingerprint }}
 <link rel="stylesheet" href="{{ $fontawesome_style.RelPermalink }}">
