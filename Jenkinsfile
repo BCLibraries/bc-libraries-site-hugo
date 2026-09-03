@@ -95,7 +95,7 @@ pipeline {
                     //   -e : environment name (using "staging")
                     //   -b : base url (using "https://libdev.bc.edu/")
                     echo "Starting Hugo server..."
-                    sh "hugo -s ${WORKSPACE} -d ${HUGO_OUTPUT_DIR} -e staging -b ${HUGO_BRANCH_BASE_URL}"
+                    sh "hugo-140 -s ${WORKSPACE} -d ${HUGO_OUTPUT_DIR} -e staging -b ${HUGO_BRANCH_BASE_URL}"
                 }
             }
         }
