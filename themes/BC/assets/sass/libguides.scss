@@ -10,18 +10,18 @@
 
 // Core stylesheets
 //
-@import 'core_bs5';
-@import 'core_bs5_bootstrap_override';
-@import 'core_bs5_component_hours';
-@import 'core_bs5_component_aal_card';
-@import 'core_bs5_component_aal_override';
-@import 'core_bs5_component_card';
-@import 'core_bs5_component_megamenu_yamm';
-@import 'core_bs5_notifications';
-@import 'core_bs5_header_bc';
-@import 'core_bs5_megamenu';
-@import 'core_bs5_footer_bc';
-@import 'core_bs5_footer_lib';
+@import 'core/core';
+@import 'core/bootstrap_override';
+@import 'core/component_hours';
+@import 'core/component_aal_card';
+@import 'core/component_aal_override';
+@import 'core/component_card';
+@import 'core/component_megamenu_yamm';
+@import 'core/notifications';
+@import 'core/header_bc';
+@import 'core/megamenu';
+@import 'core/footer_bc';
+@import 'core/footer_lib';
 
 // LibGuides stylesheets
 //
