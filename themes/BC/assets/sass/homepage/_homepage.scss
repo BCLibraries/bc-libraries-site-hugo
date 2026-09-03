@@ -1,3 +1,6 @@
+@use 'variables/colors' as *;
+@use 'bootstrap_base' as *;
+
 #top-columns {
     background-color: $white-body;
     padding-bottom: 0rem;
@@ -95,13 +98,13 @@
     }
 }
 
-@media (max-width: 991px) {
+@include media-breakpoint-down(lg) {
     #top-columns .column-combo {
         display: block;
     }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
     #hero-box {
         padding-top: 80px;
         height: 320px;

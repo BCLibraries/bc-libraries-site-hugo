@@ -1,3 +1,5 @@
+@use 'bootstrap_base' as *;
+
 html.fallback body.alternate-header #hero-box {
     background: url("https://library.bc.edu/images/homepage/hero/gasson-in-spring-01-1440px.jpg") no-repeat 0 85% #fff;
     background-size: cover;
@@ -22,14 +24,14 @@ body.alternate-header {
     }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
     #hero-box {
         padding-top: 145px;
         height: 380px;
     }
 }
 
-@media (max-width: 767px) {
+@include media-breakpoint-down(md) {
     #hero-box {
         padding-top: 85px;
     }

@@ -15,7 +15,12 @@
 {{/* To add a new stylesheet to the homepage, @include it in homepage.scss */}}
 
 {{/* Options for SCSS builder */}}
-{{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true ) }}
+{{ $options := dict
+    "transpiler" "dartsass"
+    "outputStyle" "compressed" 
+    "enableSourceMap" true
+    "silenceDeprecations" (slice "import" "global-builtin" "color-functions" "if-function")
+}}
 
 {{/* Build the CSS asset */}}
 {{ $style := resources.Get "sass/site.scss" | css.Sass $options | fingerprint }}

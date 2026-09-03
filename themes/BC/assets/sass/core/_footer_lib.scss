@@ -1,3 +1,5 @@
+@use 'variables/colors' as *;
+
 #lib-footer {
     background-color: $bc-brand-maroon;
     color: $white-text;

@@ -1,69 +1,12 @@
-// Styles used on library.bc.edu
-@import 'variables/colors';
+@charset "utf-8";
 
-// Include all our customized Bootstrap v5.3.5 SCSS
-@import 'bootstrap_base';
+@use 'variables/colors';
 
-// Original stylesheets
-//
-// @import 'original_refresh_clean';
-// @import 'original_homepage';
-// @import 'original_homepage_alternate_header';
-// @import 'original_notification';
-// @import 'original_megamenu_clean';
-// @import 'original_services_highlight';
-// @import 'original_refresh_content_rows';
-// @import 'original_social_media_highlight';
-// @import 'original_featured_subject_specialists';
-// @import 'original_footer_clean';
-// @import 'original_virtual_pet_therapy';
+@use 'bootstrap_base';
 
-// Original page stylesheets
-//
-// @import 'original_news';
-// @import 'original_facpub_refresh';
-// @import 'original_exhibit_refresh';
+@use 'core';
 
-// Core stylesheets
-//
-@import 'core/core';
-@import 'core/bootstrap_override';
-@import 'core/component_hours';
-@import 'core/component_card';
-@import 'core/notifications';
-@import 'core/header_bc';
-@import 'core/megamenu';
-@import 'core/footer_bc';
-@import 'core/footer_lib';
-
-// Homepage stylesheets
-//
-@import 'homepage/homepage';
-@import 'homepage/alternate_header';
-@import 'homepage/search_panel';
-@import 'homepage/quicklinks';
-@import 'homepage/ask_a_librarian';
-@import 'homepage/locations_hours';
-@import 'homepage/news';
-
-// Unused/deprecated stylesheets
-//
-// @import 'core/potourri';
-// @import 'core/component_aal_card';
-// @import 'core/component_aal_override';
-// @import 'core/component_megamenu_yamm';
-// @import 'homepage/potourri';
-// @import 'homepage/featured_tip';
-// @import 'homepage/featured_subject_specialists';
-// @import 'homepage/explore_collections';
-// @import 'homepage/content_highlight';
-// @import 'homepage/content_highlight_social_media';
-// @import 'homepage/faculty_publication';
-// @import 'homepage/exhibits_highlight';
-// @import 'homepage/content_highlight_digital_collection';
-// @import 'homepage/content_highlight_digital_scholarship';
-// @import 'homepage/services_at_bc';
-// @import 'homepage/virtual_pet_therapy';
+@use 'homepage';
 
 // Page stylesheets
 //
