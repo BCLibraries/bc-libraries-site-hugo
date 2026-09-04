@@ -1,6 +1,11 @@
 @use 'variables/colors' as *;
 @use 'bootstrap_base' as *;
 
+#top-columns {
+    display: flex;
+
+}
+
 .homepage h2,
 .homepage h3 {
     font-weight: 200;

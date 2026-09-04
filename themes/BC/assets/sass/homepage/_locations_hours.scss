@@ -15,6 +15,10 @@
         margin-top: 0;
     }
 
+    i.fa {
+        padding-top: .125rem;
+    }
+
     // Hide Law Library hours for aesthetic reasons
     #card-wrapper-id-509 {
         display: none;
@@ -62,7 +66,8 @@
                         .lib-hours__status,
                         .lib-hours__hours {
                             display: flex;
-                            align-items: center;
+                            align-items: flex-start;
+                            line-height: 1.25;
                             gap: .625rem; // 10px
                         }
                     }
