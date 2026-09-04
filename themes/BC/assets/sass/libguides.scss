@@ -5,16 +5,20 @@
 //
 @import 'core/core';
 @import 'core/bootstrap_override';
-@import 'core/component_hours';
-@import 'core/component_aal_card';
-@import 'core/component_aal_override';
 @import 'core/component_card';
-@import 'core/component_megamenu_yamm';
+@import 'core/component_aal_card';
+@import 'core/component_library_card';
+@import 'core/component_hours';
 @import 'core/notifications';
 @import 'core/header_bc';
 @import 'core/megamenu';
 @import 'core/footer_bc';
 @import 'core/footer_lib';
+
+// Unused/deprecated stylesheets
+//
+// @import 'core/component_aal_card_old';
+// @import 'core/component_megamenu_yamm';
 
 // LibGuides stylesheets
 //

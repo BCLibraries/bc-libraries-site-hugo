@@ -1,0 +1,408 @@
+// Styling specific for AAL boxes on homepage
+/*#aal-home-container {
+    h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .aal-box-small {
+        font-size: 16px;
+    }
+}*/
+
+/*#aal-home {
+    margin-top: 0;
+    padding-bottom: 0;
+    background-color: $white-body;
+
+    .aal-box-small a.aal-icon {
+        font-size: 25px!important;
+        width: 50px;
+    }
+
+    .aal-box a.aal-icon i {
+        padding: 12px 15px 13px 11px;
+    }
+
+    .chat-link {
+        min-height: 2.75rem;
+    }
+}*/
+
+/*
+.aal-boxes-horizontal-layout .aal-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Safari doesn't play well with floated elements and flex display
+.aal-boxes-horizontal-layout .aal-boxes::before,
+.aal-boxes-horizontal-layout .aal-boxes::after {
+    display:none!important;
+}
+
+.aal-boxes-horizontal-layout .aal-box-item {
+    display: flex;
+}
+
+// Safari doesn't play well with floated elements and flex display
+.aal-boxes-horizontal-layout .aal-box-item::before,
+.aal-boxes-horizontal-layout .aal-box-item::after {
+    display:none!important;
+}
+*/
+
+.aal-boxes-horizontal-layout {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+
+    .aal-box-container {
+        .aal-box-wrapper {
+            padding-bottom: 0rem;
+
+            .media-description {
+                .media-description-full {
+                    display: none;
+                }
+                .media-description-abbreviated {
+                    display: block!important;
+                }
+            }
+        }
+    }
+}
+
+// Styling for AAL boxes
+.aal-box-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+
+    &:before,
+    &:after {
+        display:none!important;
+    }
+
+    .aal-box-wrapper {
+        // padding-bottom: 1rem;
+        // height: 100%;
+
+        a.aal-panel-wrapper {
+            display: block;
+            height: 100%;
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                outline: 2px solid blue;
+
+                .chat-icon-link.aal-icon,
+                .email-icon-link.aal-icon,
+                .meet-icon-link.aal-icon,
+                .visit-icon-link.aal-icon,
+                #visit-icon-link.aal-icon {
+                    background-color: #31b0d5;
+                }
+            }
+
+            .panel {
+                padding: .75rem .5rem .75rem .75rem;
+                margin-bottom: 0;
+                color: #666;
+                height: 100%;
+
+                &.aal-box {
+                    font-size: inherit;
+                    min-height: 9rem;
+
+                    .h4style {
+                        color: $dark-blue-green;
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin: 0 0 .25rem 0!important;
+                        padding: 0;
+                        text-transform: none;
+                        line-height: 1;
+                    }
+
+                    p {
+                        padding: 0;
+                        margin: 0;
+                        line-height: 1.4;
+                    }
+
+                    h4 {
+                        font-weight: 600;
+                    }
+
+                    .aal-icon {
+                        font-size:35px!important;
+                        color: $white-text;
+                        display: block;
+                        line-height: 1;
+                        width: 55px;
+                        border-radius: 8px;
+
+                        i {
+                            padding: 10px;
+                            width: 100%;
+                            color: $white-text;
+                            font-weight: 400;
+
+                            &.fa {
+                                margin-left: 0;
+                                font-weight:600;
+                            }
+                        }
+                    }
+                }
+
+                .panel-body {
+                    padding: 0;
+
+                    .media {
+                       text-decoration: none;
+                       color: #666;
+                       display: block;
+                    }
+
+                    .media-left {
+                       padding: 0;
+                    }
+                }
+            }
+
+            .h4style {
+                color:#3076AB;
+            }
+
+            .aal-icon {
+                transition: background-color .4s ease-in-out;
+            }
+
+            .chat-icon-link.aal-icon,
+            #chat-icon-link.aal-icon {
+                background-color: $bc-brand-gold;
+            }
+
+            .email-icon-link.aal-icon,
+            #email-icon-link.aal-icon {
+                background-color: #a25729;
+            }
+
+            .meet-icon-link.aal-icon,
+            #meet-icon-link.aal-icon  {
+                background-color: #204375;
+            }
+
+            .visit-icon-link.aal-icon,
+            #visit-icon-link.aal-icon {
+                background-color: $bc-primary-light-gold;
+            }
+        }
+    }
+}
+
+/*@media (max-width: 991px) {
+    #aal-home {
+        margin-top: 0;
+    }
+}*/
+
+@media ( max-width: 767px ) {
+    #mm-help-aal {
+        .row:last-child {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .panel {
+            padding: .75rem;
+            margin-bottom: 1rem;
+            height: auto;
+            //min-height: 0;
+        }
+    }
+
+    .aal-boxes-horizontal-layout {
+        .aal-box-container {
+            div[class^="col-md-"] {
+                margin-bottom: 1rem;
+
+                &:last-child {
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+    }
+
+    // .aal-box-wrapper a.aal-panel-wrapper .panel.aal-box
+    .aal-box-container {
+        .aal-box-wrapper {
+            a.aal-panel-wrapper{
+                .panel {
+                    &.aal-box {
+                        min-height: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*@media ( max-width: 424px ) {
+    #mm-help-aal {
+        .aal-icon {
+            display: none;
+        }
+
+        .media-right {
+            padding-left: 0;
+            line-height: 1.25;
+        }
+    }
+}*/
+
+/* content sections */
+
+.megamenu-container .libraryh3lp > a.chat-link {
+    font-weight: 600;
+}
+
+/* Ask A Librian box styles */
+.aal-box,
+.lib-box {
+    background-color: #f8f8f8;
+    font-size: 16px;
+}
+
+.lib-box .panel-body .media a.lib-thumb {
+    display: block;
+}
+
+.aal-box p:last-child,
+.lib-box p:last-child {
+    margin-bottom: 0;
+}
+
+.aal-box .fa {
+    // margin-left: 2px;
+    font-weight: 600;
+}
+
+.aal-box h3,
+.aal-box .panel h3,
+.lib-box h3,
+.lib-box .panel h3 {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.aal-box a {
+    /* darken to better contrast against light-gray background */
+    color: #3076AB;
+}
+
+.aal-box a.aal-icon {
+    font-size: 100px !important;
+    color: $white-text;
+    display: block;
+    // vertical-align: top;
+    line-height: 1;
+    width: 141px;
+}
+
+.aal-box a.aal-icon i {
+    padding: 20px;
+    width: 100%;
+}
+
+.aal-box .chat-icon-link.aal-icon, .aal-box #chat-icon-link.aal-icon {
+    background-color: $bc-brand-gold;
+}
+
+.aal-box .email-icon-link.aal-icon, .aal-box #email-icon-link.aal-icon {
+    background-color: #a25729;
+}
+
+.aal-box .meet-icon-link.aal-icon, .aal-box #meet-icon-link.aal-icon  {
+    background-color: #204375;
+}
+
+.aal-box #visit-icon-link.aal-icon {
+    background-color: $bc-primary-light-gold;
+}
+
+.aal-box #faq-icon-link.aal-icon {
+    background-color: #07625d;
+}
+
+.aal-box .aal-icon:focus,
+.aal-box .aal-icon:active,
+.aal-box .aal-icon:hover {
+    background-color: #31b0d5 !important;
+}
+
+.lib-box .panel-body .media img {
+    max-width: 141px !important;
+}
+
+/* Ask A Librarian small boxes */
+.lib-box-small .panel-body .media img {
+    max-width: 100px !important;
+}
+
+.aal-box-small,
+.lib-box-small {
+    font-size: inherit;
+}
+
+.aal-box-small .panel-body,
+.lib-box-small .panel-body {
+    padding: 10px 5px 10px 10px;
+}
+
+.aal-box-small a.aal-icon {
+    font-size: 60px !important;
+    width: 100px;
+}
+
+.aal-box-small h3,
+.aal-box-small .panel h3,
+.lib-box-small h3,
+.lib-box-small .panel h3 {
+    font-size: 15px;
+}
+
+/* media query overrides */
+
+/* Ask A Librarian specific */
+@media (max-width: 424px) {
+    .aal-box .panel-body .media img,
+    .aal-box-small .panel-body .media img,
+    .lib-box .panel-body .media img,
+    .lib-box-small .panel-body .media img {
+        max-width: 90px !important;
+    }
+
+    .aal-box a.aal-icon,
+    .aal-box-small a.aal-icon {
+        width: 90px !important;
+        font-size: 50px !important;
+    }
+}
+
+/* Ask A Librarian specific */
+@media (max-width: 374px) {
+    .aal-box a.aal-icon,
+    .aal-box-small a.aal-icon,
+    .aal-box .panel-body .media img,
+    .aal-box-small .panel-body .media img,
+    .lib-box .panel-body .media img,
+    .lib-box-small .panel-body .media img {
+        display: none;
+    }
+}

@@ -2,7 +2,6 @@
 
 .card {
     height: 100%;
-    // font-size: 15px;
     padding: .5rem; // 8px
 
     a {
@@ -13,10 +12,6 @@
             text-decoration: underline;
         }
     }
-
-    /*> .row {
-        padding: 0;
-    }*/
 
     .card-body {
         padding: 0;
@@ -42,143 +37,5 @@
         background-color: transparent;
         border: none;
         line-height: 1;
-    }
-}
-
-.library-box-wrapper {
-    .library-box {
-        min-height: 7rem; // 112px
-        background-color: $very-very-light-gray;
-
-        a {
-            &.library-card-link {
-                display: block;
-
-                &:hover,
-                &:focus {
-                    background: transparent;
-                }
-            }
-        }
-
-        .library-image {
-            padding: 0 .5rem 0 0; // 0 8px 0 0
-            margin: 0;
-
-            a {
-                display: block;
-                height: 100%;
-                overflow: hidden;
-                border-radius: .375rem 0 0 .375rem; // 6px 0 0 6px
-
-                &:hover,
-                &:focus {
-                    outline: 2px solid blue;
-                    outline-offset: 0px;
-                }
-            }
-
-            img {
-                height: 100%;
-                margin-left: calc((100% - 205px) / 2); // center image by calculating length extending outside parent container
-            }
-        }
-
-        .library-metadata {
-            font-size: smaller;
-            display: flex;
-            flex-direction: column;
-
-            .library-card-footer-links {
-                display: flex;
-                // gap: .5rem; // 8px
-                justify-content: space-between;
-
-                // Override Bootstrap 5 default margin for multiple card-links
-                .card-link+.card-link {
-                    margin-left: 0;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 425px) {
-    .library-card-footer-links {
-        flex-wrap: wrap;
-
-        .card-link {
-            margin-top: 1rem;
-            width: 100%;
-        }
-    }
-}
-
-.aal-box-wrapper {
-    a {
-        &.card-link-wrapper {
-            text-decoration: none;
-            display: block;
-            height: 100%;
-
-            .card {
-                background-color: $very-very-light-gray;
-
-                .card-text {
-                    color: $more-medium-gray;
-                }
-            }
-
-            &:hover,
-            &:focus {
-                .card {
-                    border: 1px solid blue;
-                    outline: 1px solid blue;
-                }
-
-                .aal-icon {
-                    background-color: $aal-icon-blue;
-                }
-            }
-
-            /*.aal-box {
-                .aal-icon-wrapper {
-                    margin-right: .5rem;
-                }
-            }*/
-        }
-    }
-}
-
-.aal-icon {
-    font-size: 2.25rem; // 36px
-    color: $white-text;
-    display: block;
-    line-height: 1;
-    width: 3.5rem; // 56px
-    border-radius: .375rem; // 6px
-    transition: background-color .4s ease-in-out;
-
-    i {
-        padding: .625rem; // 10px
-        width: 100%;
-        color: $white-text;
-        font-weight: 400;
-    }
-
-    &.aal-icon-email {
-        background-color: #a25729;
-    }
-
-    &.aal-icon-chat {
-        background-color: $bc-brand-gold; // #b29d6c
-    }
-
-    &.aal-icon-meet {
-        background-color: $bc-brand-library-blue; // #204375
-    }
-
-    &.aal-icon-visit {
-        background-color: $bc-primary-light-gold; // #dccaa0
     }
 }

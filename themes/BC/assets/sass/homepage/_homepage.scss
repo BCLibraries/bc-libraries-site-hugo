@@ -1,55 +1,6 @@
 @use 'variables/colors' as *;
 @use 'bootstrap_base' as *;
 
-#top-columns {
-    background-color: $white-body;
-    padding-bottom: 0rem;
-
-    .row {
-        padding-top:0;
-        padding-bottom:0;
-    }
-
-    .column-items {
-        display: flex;
-        flex-wrap: wrap;
-
-        // Safari doesn't play well with floated elements and flex display
-        &:before,
-        &:after {
-            display:none!important;
-        }
-
-        .column-item {
-            display: flex;
-            flex-flow: column;
-
-            // Safari doesn't play well with floated elements and flex display
-            &:before,
-            &:after {
-                display:none!important;
-            }
-        }
-    }
-
-    .column-combo {
-        display: flex;
-        flex-wrap: wrap;
-        flex-flow: column;
-
-        // Safari doesn't play well with floated elements and flex display
-        &:before,
-        &:after {
-            display:none!important;
-        }
-    }
-
-    .column-sub-item {
-        flex-wrap: wrap;
-        flex:1;
-    }
-}
-
 .homepage h2,
 .homepage h3 {
     font-weight: 200;
@@ -58,20 +9,11 @@
 }
 
 #hero-box {
-    padding-bottom: 4rem;
-    padding-top: 80px;
-    background-color: #467282;
+    padding-bottom: 4rem; // 64px
+    padding-top: 8rem; // 80px
+    background-color: $bc-primary-light-gold;
+    // height: 10rem; // 320px
 }
-
-.browse-more-link {
-    padding-top: 1rem;
-    font-size: larger;
-    text-align: right;
-}
-
-/*.homepage-section {
-    margin-top: 1.5rem;
-}*/
 
 .content .btn {
     &.btn-default {
@@ -98,15 +40,9 @@
     }
 }
 
-@include media-breakpoint-down(lg) {
-    #top-columns .column-combo {
-        display: block;
-    }
-}
-
 @include media-breakpoint-up(md) {
     #hero-box {
-        padding-top: 80px;
-        height: 320px;
+        // padding-top: 80px;
+        height: 10rem; // 320px
     }
 }

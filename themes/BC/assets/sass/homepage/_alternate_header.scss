@@ -24,15 +24,19 @@ body.alternate-header {
     }
 }
 
+#hero-box {
+    padding-top: 7rem; // 112px
+}
+
 @include media-breakpoint-up(md) {
     #hero-box {
-        padding-top: 145px;
-        height: 380px;
+        padding-top: 9rem; // 144px
+        height: 24rem; // 384px
     }
 }
 
-@include media-breakpoint-down(md) {
+/*@include media-breakpoint-down(md) {
     #hero-box {
-        padding-top: 85px;
+        padding-top: 7rem; // 112px
     }
-}
+}*/
