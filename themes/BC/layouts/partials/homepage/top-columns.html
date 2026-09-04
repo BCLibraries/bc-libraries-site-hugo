@@ -11,6 +11,15 @@
             <div id="aal-home-container" class="pt-4 pt-lg-0 pt-md-0 pt-sm-4">
                 {{ partial "homepage/top-column/ask-a-librarian.html" . }}
             </div>
+            {{/* Display this container only on large screens */}}
+            <div id="location-hours-container" class="pt-5 d-none d-lg-flex d-md-none">
+                {{/* BEGIN location-hours */}}
+                {{ partial "homepage/top-column/location-hours.html" . }}
+            </div>
+        </div>
+
+        {{/* Hide this container on large screens and show otherwise */}}
+        <div class="d-flex d-lg-none col-12">
             <div id="location-hours-container" class="pt-5">
                 {{/* BEGIN location-hours */}}
                 {{ partial "homepage/top-column/location-hours.html" . }}
