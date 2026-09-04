@@ -14,6 +14,7 @@
         </div>
     {{ else }}
     <a href="{{ if .Params.destination }}{{ .Params.destination }}{{ else }}{{ .Permalink }}{{ end }}" id="{{ .Params.slug }}">
+
         {{ $imageName :=  path.BaseName .Params.imagethumb }}
         {{ $imageDir := path.Dir .Params.imagethumb }}
         {{ $fullImagePath := print .Params.type "/" $imageDir "/" $imageName }}
@@ -29,8 +30,9 @@
             <div class="news-section-image-attribution">
                 {{ .Params.attribution_text | safeHTML }}
             </div>
+            {{ end -}}
         </div>
-        {{ end -}}
+    
         <div class="news-section-text">
             <div class="news-section-title">{{ .Title | safeHTML }}</div>
             <div class="news-section-content-blurb">{{ .Content }}</div>
