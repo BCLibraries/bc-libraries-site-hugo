@@ -261,10 +261,10 @@ $(document).ready(function () {
 
     function getOneillHours(localWeekday, localHour) {
 
-        const weekdayHours = '7:00am - 2:00am';
-        const fridayHours = '7:00am - 10:00pm';
-        const saturdayHours = '9:00am - 10:00pm';
-        const sundayHours = '9:00am - 2:00am';
+        const weekdayHours = '7am - 2am';
+        const fridayHours = '7am - 10pm';
+        const saturdayHours = '9am - 10pm';
+        const sundayHours = '9am - 2am';
 
         switch (dayOfWeek.value) {
             case 'Monday':
