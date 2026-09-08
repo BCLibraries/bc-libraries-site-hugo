@@ -168,7 +168,7 @@ $(document).ready(function () {
         hours_cell.classList.add("lib-hours");
         hours_cell.textContent = hours.replace('(*)', '');
 
-        if (hours.includes('Open 24 Hours')) {
+        if (hours.includes('7am - 12am') || hours.includes('12am - 12am')) {
             hours_cell.textContent = oneillHours;
             const twenty_four_hour_notice = document.createElement('span');
             twenty_four_hour_notice.className = 'badge badge-primary twenty-four-hours-notice';
@@ -325,7 +325,7 @@ $(document).ready(function () {
                 time_measurement = 'hours';
             }
         }
-        
+
         // Update the elapsed time text content
         for (let match of matches) {
             match.textContent = `Location data fetched: ${elapsed_time} ${time_measurement} ago`;
