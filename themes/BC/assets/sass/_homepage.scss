@@ -437,6 +437,10 @@
                             align-items: center;
                             gap: 10px;
                         }
+
+                        .lib-hours__status {
+                            display: none;
+                        }
                     }
                 }
             }
