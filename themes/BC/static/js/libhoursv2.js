@@ -78,6 +78,7 @@ $(document).ready(function () {
             const hours = location_data.rendered.replace("\n", " ; ");
 
             // Add a row to the hours table
+            const new_tr = buildRow(hours, loc_to_show.label, loc_to_show.url);
             new_tbody.appendChild(new_tr);
 
             // Insert the hours into any other places it needs to appear on the page.
