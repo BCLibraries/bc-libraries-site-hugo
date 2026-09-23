@@ -208,7 +208,7 @@ $(document).ready(function () {
      * @return {Promise<void>}
      */
     async function getHours() {
-        const url = "https://library.bc.edu/bc-hours/api_hours_today.php";
+        const url = "https://library.bc.edu/bc-hours/api_hours_today";
         try {
             const response = await fetch(url);
             if (!response.ok) {
