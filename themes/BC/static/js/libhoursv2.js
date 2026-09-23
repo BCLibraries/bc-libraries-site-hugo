@@ -13,6 +13,7 @@ $(document).ready(function () {
     // the locations we want, in order
     const locations_to_show = [
         new Location("501", "O'Neill Library", "https://libguides.bc.edu/oneill/hours", "library", "onl"),
+        //new Location("26878", "O'Neill Library first floor", "https://libguides.bc.edu/oneill/hours", "department", "onl"),
         new Location("505", "Bapst Library", "https://libguides.bc.edu/bapst/hours", "library", "bapst"),
         new Location("506", "Bapst Library - Gargan Hall", "https://libguides.bc.edu/bapst/hours", "department", "gargan"),
         new Location("507", "Burns Library", "https://libguides.bc.edu/burns/hours", "library", "burns"),
@@ -21,7 +22,7 @@ $(document).ready(function () {
         new Location("510", "Social Work Library", "https://libguides.bc.edu/socialwork/hours", "library", "swl"),
         new Location("511", "Theology and Ministry Library", "https://libguides.bc.edu/tml/hours", "library", "tml")
     ].filter(loc => {
-        return SHOW_DEPARTMENTS || loc.category !== 'department'
+        return SHOW_DEPARTMENTS || loc.category !== 'department' || loc.id === "26878";
     });
 
     // set today's date
@@ -77,7 +78,6 @@ $(document).ready(function () {
             const hours = location_data.rendered.replace("\n", " ; ");
 
             // Add a row to the hours table
-            const new_tr = buildRow(hours, loc_to_show.label, location_data.url);
             new_tbody.appendChild(new_tr);
 
             // Insert the hours into any other places it needs to appear on the page.
