@@ -1,5 +1,5 @@
 {{ $dataJSON := dict }}
-{{ $url := "https://library.bc.edu/bc-hours/api_hours_today.php" }}
+{{ $url := "https://library.bc.edu/bc-hours-v2/api_hours_today.php" }}
 {{ with resources.GetRemote $url }}
     {{ with .Err }}
         {{/* errorf "%s" . */}}
@@ -16,16 +16,22 @@
     
     <h2>Locations and Today's Hours</h2>
 
-    <p class="lib-hours__id-requirement-notice">Access to libraries requires a BC ID from from 10 pm to 7 am.<br/>O'Neill Library first floor is open 24 hours today.</p>
+    <p class="lib-hours__id-requirement-notice">Access to libraries requires a BC ID from from 10 pm to 7 am.</p>
 
     <div class="row panel-container">
 
         {{ range sort $dataJSON.locations "id" }}
-            {{ if eq .category "library" }}
-                <div class="col-md-4 col-sm-4 col-xs-6 col-xxs panel-wrapper" id="panel-wrapper-id-{{ .lid }}">
+            {{ if or (eq .category "library") (eq (int .lid) 26878) }}
+                {{/* Rewrite the O'Neill Library first floor name */}}
+                {{ if eq (int .lid) 26878 }}
+                    {{ $.Scratch.Set "name" "O'Neill Library first floor" }}
+                {{ else }}
+                    {{ $.Scratch.Set "name" .name }}
+                {{ end }}
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-xxs panel-wrapper" id="panel-wrapper-id-{{ .lid }}">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <a class="lib-hours__name" href="{{ .url }}">{{ .name }}&nbsp;></a></td>
+                            <a class="lib-hours__name" href="{{ .url }}">{{ $.Scratch.Get "name" }}&nbsp;></a></td>
                             <div class="lib-hours__content">
                                 <div class="lib-hours__status current-status-lib-{{ .lid }}">&nbsp;</div>
                                 <div class="lib-hours lib-hours__hours lib-hours-{{ .lid }} lib-{{ .lid }} todays-hours-lib-{{ .lid }}">&nbsp;</div>
