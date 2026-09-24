@@ -420,10 +420,15 @@
                     gap: 10px;
                     font-size: 16px;
                     justify-content: space-between;
+                    width: 100%;
 
                     &::before, &::after {
                         position: absolute;
                         content: "";
+                    }
+
+                    .fa {
+                        padding: .35rem 0 0 0;
                     }
 
                     .lib-hours__content {
@@ -434,7 +439,7 @@
                         .lib-hours__status,
                         .lib-hours__hours {
                             display: flex;
-                            align-items: center;
+                            align-items: flex-start;
                             gap: 10px;
                         }
 
