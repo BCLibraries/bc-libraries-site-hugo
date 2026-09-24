@@ -1,5 +1,5 @@
 {{ $dataJSON := dict }}
-{{ $url := "https://library.bc.edu/bc-hours-v2/api_hours_today.php" }}
+{{ $url := "https://library.bc.edu/bc-hours-v2/api_hours_today" }}
 {{ with resources.GetRemote $url }}
     {{ with .Err }}
         {{/* errorf "%s" . */}}
