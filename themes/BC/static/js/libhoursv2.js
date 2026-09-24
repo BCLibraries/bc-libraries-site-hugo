@@ -13,7 +13,7 @@ $(document).ready(function () {
     // the locations we want, in order
     const locations_to_show = [
         new Location("501", "O'Neill Library", "https://libguides.bc.edu/oneill/hours", "library", "onl"),
-        //new Location("26878", "O'Neill Library first floor", "https://libguides.bc.edu/oneill/hours", "department", "onl"),
+        new Location("26878", "O'Neill Library first floor", "https://libguides.bc.edu/oneill/hours", "department", "onl"),
         new Location("505", "Bapst Library", "https://libguides.bc.edu/bapst/hours", "library", "bapst"),
         new Location("506", "Bapst Library - Gargan Hall", "https://libguides.bc.edu/bapst/hours", "department", "gargan"),
         new Location("507", "Burns Library", "https://libguides.bc.edu/burns/hours", "library", "burns"),
@@ -209,7 +209,7 @@ $(document).ready(function () {
      * @return {Promise<void>}
      */
     async function getHours() {
-        const url = "https://library.bc.edu/bc-hours/api_hours_today";
+        const url = "https://library.bc.edu/bc-hours-v2/api_hours_today";
         try {
             const response = await fetch(url);
             if (!response.ok) {
