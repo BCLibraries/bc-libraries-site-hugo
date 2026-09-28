@@ -28,9 +28,9 @@
                 {{ else }}
                     {{ $.Scratch.Set "name" .name }}
                 {{ end }}
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-xxs panel-wrapper" id="panel-wrapper-id-{{ .lid }}">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 card-wrapper" id="card-wrapper-id-{{ .lid }}">
+                    <div class="card">
+                        <div class="card-body">
                             <a class="lib-hours__name" href="{{ .url }}">{{ $.Scratch.Get "name" }}&nbsp;></a></td>
                             <div class="lib-hours__content">
                                 <div class="lib-hours__status current-status-lib-{{ .lid }}">&nbsp;</div>
