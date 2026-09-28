@@ -1,23 +1,24 @@
 /* NEWS ARCHIVE STUFF */
 
 .news-container {
-  padding-top: 50px;
+  padding-top: 3.125rem; // 50px
 }
 
 .news-archives {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 3em;
+  // justify-content: space-evenly;
+  // margin-top: 3em;
 }
 
 .news-archives .post {
-  margin-bottom: 6rem;
-  max-width: 600px;
-  width: 95%;
+  // margin-bottom: 6rem;
+  // max-width: 600px;
+  // width: 95%;
+  position: relative;
 }
 
-@media (min-width: 767px) {
+/*@media (min-width: 767px) {
   .news-archives {
     justify-content: space-between;
   }
@@ -31,7 +32,7 @@
   .news-archives .post {
     width: 30%;
   }
-}
+}*/
 
 .news-archives .post img {
   width: 100%;

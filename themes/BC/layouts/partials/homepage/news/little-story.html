@@ -4,13 +4,20 @@
         {{ $imageName :=  path.BaseName .Params.imagethumb }}
         {{ $imageDir := path.Dir .Params.imagethumb }}
         {{ $fullImagePath := print .Params.type "/" $imageDir "/" $imageName }}
-        {{ partial "picture" (dict "ctx"   .
-                   "base"  $fullImagePath
-                   "alt"   .Params.imagealt
-                   "class" ""
-                   "avif"  true
-                   "webp"  true
-                   "lazy"  true) }}
+        <div class="news-section-image-container">
+            {{ partial "picture" (dict "ctx"   .
+                    "base"  $fullImagePath
+                    "alt"   .Params.imagealt
+                    "class" ""
+                    "avif"  true
+                    "webp"  true
+                    "lazy"  true) }}
+            {{ if .Params.attribution_text -}}
+            <div class="news-section-image-attribution">
+                {{ .Params.attribution_text | safeHTML }}
+            </div>
+            {{ end -}}
+        </div>
 
         <div class="news-section-text">
             {{/*<div class="news-section-date">{{ .Date.Format "Mon Jan 2, 2006" }}</div>*/}}

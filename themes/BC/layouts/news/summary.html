@@ -10,21 +10,24 @@
     {{ $alt_text = .Params.imagealt -}}
 {{ end -}}
 
-<article class="post">
+<article class="post col-lg-4 col-md-6 col-sm-12 pb-5">
     <a href='{{ $link_target }}'>
-            {{ $imageName :=  path.BaseName .Params.imagethumb }}
-            {{ $imageDir := path.Dir .Params.imagethumb }}
-            {{ $fullImagePath := print .Params.type "/" $imageDir "/" $imageName }}
+        {{ $imageName :=  path.BaseName .Params.imagethumb }}
+        {{ $imageDir := path.Dir .Params.imagethumb }}
+        {{ $fullImagePath := print .Params.type "/" $imageDir "/" $imageName }}
+        <div class="news-section-image-container">
             {{ partial "picture" (dict "ctx"   .
-            "base"  $fullImagePath
-            "alt"   .Params.imagealt
-            "class" ""
-            "avif"  true
-            "webp"  true
-            "lazy"  true) }}
-        <div class="news-section-image-attribution">
+                "base"  $fullImagePath
+                "alt"   .Params.imagealt
+                "class" ""
+                "avif"  true
+                "webp"  true
+                "lazy"  true) 
+            }}
             {{ if .Params.attribution_text -}}
-            {{ .Params.attribution_text | safeHTML }}
+            <div class="news-section-image-attribution">
+                {{ .Params.attribution_text | safeHTML }}
+            </div>
             {{ end -}}
         </div>
 
