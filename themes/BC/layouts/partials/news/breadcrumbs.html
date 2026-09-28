@@ -1,9 +1,11 @@
-<ol class="breadcrumb" id="s-lib-bc-list">
-    <li id="s-lib-bc-customer"><a href="{{ relref . "/"}}" title="{{ .Site.Title }}">{{ .Site.Title }}</a></li>
-    {{ if .IsPage }}
-    <li id="s-lib-bc-site"><a href="{{ relref . "/news"}}" title="Library News Archives">Library News &amp; Announcements</a></li>
-    <li id="s-lib-bc-page" class="active">{{ .Title }}</li>
-    {{ else }}
-    <li id="s-lib-bc-site" class="active">Library News &amp; Announcements</li>
-    {{ end }}
-</ol>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb" id="s-lib-bc-list">
+        <li class="breadcrumb-item" id="s-lib-bc-customer"><a href="{{ relref . "/"}}" title="{{ .Site.Title }}">{{ .Site.Title }}</a></li>
+        {{ if .IsPage }}
+        <li class="breadcrumb-item" id="s-lib-bc-site"><a href="{{ relref . "/news"}}" title="Library News Archives">Library News &amp; Announcements</a></li>
+        <li class="breadcrumb-item active" id="s-lib-bc-page">{{ .Title }}</li>
+        {{ else }}
+        <li class="breadcrumb-item active" id="s-lib-bc-site">Library News &amp; Announcements</li>
+        {{ end }}
+    </ol>
+</nav>
