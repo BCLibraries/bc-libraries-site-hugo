@@ -34,9 +34,11 @@ MAIN MEDIA QUERY SIZES:;
 
 /* THE BASICS */ /* CORE - KEEP */
 
+/*
 p, h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
+*/
 
 /*a, a:visited, .ui-widget-content a, .ui-widget-content a:visited {
     color: $red;
@@ -44,14 +46,16 @@ p, h1, h2, h3, h4, h5, h6 {
 }*/
 
 /* LibGuides adds 15px of padding on all sides. */
-body {
+/*body {
     padding: 0;
-}
+}*/
 
+/*
 a:hover, a:active, a:focus, .ui-widget-content a:active {
     color: $red;
     text-decoration: underline;
 }
+*/
 
 /*THIS IS A TEMPORARY STYLE, USED TO INDICATE THAT A LINK IS NOT CLICKABLE */
 .grayed {
@@ -59,6 +63,7 @@ a:hover, a:active, a:focus, .ui-widget-content a:active {
     cursor: default;
 }
 
+/*
 b, strong {
     font-weight: bold;
 }
@@ -73,42 +78,38 @@ h1 {
     margin: 0 0 10px;
     padding: 0;
 }
+*/
 
-.h2style, h2,
-.h3style, h3,
-.h4style, h4,
-.h5style, h5,
-.h6style, h6 {
+.h2style,
+.h3style,
+.h4style,
+.h5style,
+.h6style {
     margin: 2.25rem 0 .25rem;
     padding: 0;
 }
 
-.h2style,
-h2 {
+.h2style {
     font-size: 24px;
     font-weight: 200;
 }
 
-.h3style,
-h3 {
+.h3style {
     font-size: 22px;
     font-weight: 200;
 }
 
-.h4style,
-h4 {
+.h4style {
     font-size: 20px;
     font-weight: 200;
 }
 
-.h5style,
-h5 {
+.h5style {
     font-size: 18px;
     font-weight: 200;
 }
 
-.h6style,
-h6 {
+.h6style {
     font-size: 16px;
     font-weight: 600;
 }
@@ -126,10 +127,12 @@ hr {
 #megamenu .h3style,
 #megamenu .h4style {margin-top: .25rem;}
 
+/*
 ul, ol {
     margin: 0 0 10px 0;
     padding: 0 0 0 30px;
 }
+*/
 
 img.center {
     margin-left: auto;
@@ -146,6 +149,7 @@ table.ckeditor-table {
     width: 100% !important;
 }
 
+/*
 table, th, td {
     border: 1px solid $very-light-gray;
 }
@@ -161,6 +165,7 @@ td {
 th {
     background-color: #E9E9E9;
 }
+*/
 
 /* THIS HIDES THE FONT AND FONT SIZE BUTTONS IN SPRINGSHARE'S EDITOR */
 #cke_s-lg-editor-content .cke_combo__font,
@@ -218,19 +223,19 @@ th {
 
 #guidetitle {
     padding: 0 0 0 0;
-    margin: 0 0 20px 0;
+    // margin: 0 0 20px 0;
 }
 
 #guidetitle h1 {
-    font-size: 30px;
+    //font-size: 30px;
     /*text-transform: uppercase;*/
-    padding: 0;
-    margin:  0;
+    //padding: 0;
+    //margin:  0;
     display: inline-block;
 }
 
 #guidetitle h2 {
-    font-size: 30px;
+    font-size: 2rem;
     display: inline-block;
     margin: 0;
 }
@@ -244,7 +249,7 @@ th {
 }
 
 .colon {
-    font-size: 30px;
+    font-size: 2rem;
     /*color: $dark-blue-green;*/
     display: inline-block;
 }
@@ -281,26 +286,29 @@ th {
 /* CONTENT  */ /* LIBGUIDES - KEEP */
 
 #content_container /*USED IN HOMEPAGE & LIBGUIDES */ {
-    margin: 0;
-    padding: 0;
-    width: 1170px;
-    display: inline-block;
+    //margin: 0;
+    //padding: 0;
+    //width: 1170px;
+    //display: inline-block;
 }
 
+/*
 @media ( max-width: 1199px ) {
     #content_container {
         width: 100%;
     }
 }
+*/
 
 #content /*USED IN LIBGUIDES, NOT HOMEPAGE */{
     margin: 0;
     padding: 0 0 0 10px;
-    width: 980px;
-    float: right;
+    // width: 980px;
+    // float: right;
     display: inline-block;
 }
 
+/*
 @media ( max-width: 1199px ) {
     #content {
         width: 80%;
@@ -312,6 +320,7 @@ th {
         width: 100%;
     }
 }
+*/
 
 #content_container ul li {
     line-height: 1.5;
@@ -374,9 +383,11 @@ th {
 }}
 
 #s-lg-guide-header-meta {
-    width: auto;
-    margin: 5em 0 0 0;
+    // width: auto;
+    // margin: 5em 0 0 0;
     font-size:.85em;
+    display: flex;
+    justify-content: space-between;
 }
 
 #s-lg-guide-header-meta hr {
@@ -445,6 +456,7 @@ th {
     text-decoration: underline;
 }
 
+/*
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
     min-height: 1px;
     padding-left: 14px;
@@ -466,13 +478,16 @@ th {
 .col-md-12:last-of-type, .col-md-3:last-of-type, .col-md-4:last-of-type, .col-md-6:last-of-type {
     padding-right: 0;
 }
+*/
 
 /*EDITS TO BOXES, COLUMNS, ROWS, ETC. OVERWRITING SPRINGSHARE. */
 
-.row /*THIS SHOULD CONTROL THE ENTIRE ROW OF COLUMNS, MARGIN-TOP IS NEW. LEFT, RIGHT WERE TO KEEP IN LINE W/ SPRINGSHARE */
+/*
+.row
 {
     margin: 0;
 }
+*/
 
 /* override custom LG style to zero-out row margins */
 .homepagerefresh #megamenu-refresh .row, #bclib-header .row {
@@ -522,10 +537,12 @@ th {
     display: none !important;
 }
 
+/*
 .s-lg-row {
     margin: 0;
     padding: 0;
 }
+*/
 
 .s-lib-box-content {
     padding: 0 10px 15px 10px;
@@ -551,22 +568,26 @@ th {
 
 #s-lg-guide-tabs
 /*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */       {
-    font-size: 14px;
-    margin: 1px 0 1px 0;
-    padding: 0;
-    width: 185px;
-    display: inline-block;
+    //font-size: 14px;
+    //margin: 1px 0 1px 0;
+    //padding: 0;
+    //width: 185px;
+    //display: inline-block;
 }
+/*
 @media ( max-width: 1199px ) {
     #s-lg-guide-tabs {
         width: 15%;
     }
 }
+*/
+/*
 @media ( max-width: 768px ) {
     #s-lg-guide-tabs {
         width: 100%;
     }
 }
+*/
 
 #s-lg-guide-tabs ul {
     margin: 0;
@@ -850,9 +871,11 @@ COULD BE USEFUL ELSEWHERE  */
 
 /* LIBRARY EXHIBITS STYLES */
 /* REVIEW */
+/*
 html {
     overflow-x: hidden;
 }
+*/
 
 /* CAREER */ /* LIBGUIDES - KEEP */
 
@@ -962,12 +985,12 @@ $bc-brand-gold green
 #s-lg-guide-tabs ul.nav-tabs > li.active.has-active-child .dropdown-wrapper a.dropdown-toggle .caret {border-top:none; border-bottom:4px dashed;}
 
 /* updated style - 20170816 */
-body {font-size:15px;}
+//body {font-size:15px;}
 /*a, a:visited, .ui-widget-content a, .ui-widget-content a:visited {color:#337ab7;}*/
 #bclib-header-form .input-group-btn{width:1%;}
-.megamenu-container {
-    background-color: rgba(16,14,15,.90);
-}
+//.megamenu-container {
+//    background-color: rgba(16,14,15,.90);
+//}
 /*h1, h2, h3,
 .s-lib-public-side-header h2 {color: $black-text; text-transform: none;}
 h4, h6 {font-weight: 400;}
@@ -982,7 +1005,7 @@ h5 {font-weight:600;}*/
 .edit-mode .s-lib-box-title {padding:3px 2px 3px 0; font-weight: normal;}
 
 #midlevelcontainer {margin: 80px auto 0 auto;}
-#midlevelcontainer-refresh {margin-top:60px;}
+#midlevelcontainer-refresh {margin-top:1rem;}
 .edit-mode #midlevelcontainer-refresh {margin-top:80px; margin-bottom:40px;}
 .bottom_row {background-color:$white-body;}
 .more a {
@@ -993,6 +1016,7 @@ h5 {font-weight:600;}*/
     border-bottom: none;
 }
 
+/*
 .col-md-12:first-of-type,
 .col-md-3:first-of-type,
 .col-md-4:first-of-type,
@@ -1007,6 +1031,8 @@ h5 {font-weight:600;}*/
     padding-left: 15px;
     padding-right: 15px;
 }
+*/
+
 .s-lib-box-content {margin-bottom:1.5em;}
 
 .view-mode #content-refresh {padding-left:0; padding-right:0;}
@@ -1017,7 +1043,7 @@ h5 {font-weight:600;}*/
      float: right;
 }
 
-#content_container .row {padding-top:0; padding-bottom:0;}
+// #content_container .row {padding-top:0; padding-bottom:0;}
 
 .s-lib-box-content .ui-widget {font-family:inherit;}
 
@@ -1045,9 +1071,9 @@ footer h4 {margin:0 0 5px!important;}
    nav select {display:none;}
 }
 @media (min-width: 768px) {
-   #s-lg-guide-tabs.col-sm-3 {
+   /*#s-lg-guide-tabs.col-sm-3 {
        width: 25%;
-   }
+   }*/
   .edit-mode .navbar-nav {
       float: none;
   }
@@ -1057,11 +1083,13 @@ footer h4 {margin:0 0 5px!important;}
       padding-left:0;
    }
 }
+/*
 @media (min-width: 992px) {
    #s-lg-guide-tabs.col-md-2 {
        width: 16.66666667%;
    }
 }
+*/
 @media print {
     /* profile boxes */
     .s-lib-profile-center, .s-lib-profile-widget {
