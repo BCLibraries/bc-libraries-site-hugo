@@ -1,0 +1,1151 @@
+@charset "utf-8";
+
+/** These styles are used in LibGuides/LibAnswers/LibCal but not on library.bc.edu */
+
+/* CSS Document */
+
+/* IMPORTANT NOTES
+
+COLORS:
+MAROON: $bc-brand-maroon
+DARK MAROON: $bc-primary-dark-red
+GOLD: $bc-brand-gold
+BC GRAY: #444444
+BLUE: $dark-blue-green
+LITE BLUE: #32758f
+
+MAIN MEDIA QUERY SIZES:;
+
+@media ( max-width: 1199px ) {
+}
+
+@media ( max-width: 768px ) {
+}
+*/
+
+/*body {
+    background: $white-body 0% 0%;
+    font-family: Arial, sans-serif;
+    color: $black-text;
+    font-size: 14px;
+    padding: 0;
+    line-height: 1.75;
+}*/
+
+/* THE BASICS */ /* CORE - KEEP */
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/*a, a:visited, .ui-widget-content a, .ui-widget-content a:visited {
+    color: $red;
+    font-weight: normal;
+}*/
+
+/* LibGuides adds 15px of padding on all sides. */
+body {
+    padding: 0;
+}
+
+a:hover, a:active, a:focus, .ui-widget-content a:active {
+    color: $red;
+    text-decoration: underline;
+}
+
+/*THIS IS A TEMPORARY STYLE, USED TO INDICATE THAT A LINK IS NOT CLICKABLE */
+.grayed {
+    color: #ababab !important;
+    cursor: default;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.h2style, h2,
+.h3style, h3,
+.h4style, h4,
+.h5style, h5,
+.h6style, h6 {
+    margin: 2.25rem 0 .25rem;
+    padding: 0;
+}
+
+.h2style,
+h2 {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.h3style,
+h3 {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.h4style,
+h4 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.h5style,
+h5 {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.h6style,
+h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+hr {
+    border-image: none;
+    border: 0 none $very-light-gray;
+    border-top: 2px solid;
+    margin-top: 0;
+}
+
+.panel-body h2:first-child,
+.panel-body h3:first-child,
+.panel-body h4:first-child,
+#megamenu .h3style,
+#megamenu .h4style {margin-top: .25rem;}
+
+ul, ol {
+    margin: 0 0 10px 0;
+    padding: 0 0 0 30px;
+}
+
+img.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+table, table.ckeditor-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.ckeditor-table {
+    width: 100% !important;
+}
+
+table, th, td {
+    border: 1px solid $very-light-gray;
+}
+
+td, th {
+    padding: 3px;
+}
+
+td {
+    vertical-align:top;
+}
+
+th {
+    background-color: #E9E9E9;
+}
+
+/* THIS HIDES THE FONT AND FONT SIZE BUTTONS IN SPRINGSHARE'S EDITOR */
+#cke_s-lg-editor-content .cke_combo__font,
+#cke_s-lg-editor-content .cke_combo__fontsize {
+    display: none;
+}
+
+.clear:before,
+.clear:after {
+    content: "";
+}
+
+.clear:after {
+    clear: both;
+}
+
+.accessibility-text {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* UNDER HEADER */ /* LIBGUIDES - KEEP */
+
+.breadcrumb {
+    background-color: transparent;
+    list-style: none outside none;
+    margin: 0 0 12px 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.breadcrumb > .active {
+    color: $wcagaa-compliant-gray-text;
+    font-weight: normal;
+}
+
+.pageurl {
+    color: #666;
+    float: right;
+    max-width: 599px;
+}
+
+@media ( max-width: 768px ) {
+    .pageurl {
+        color: #666;
+        float: none;
+        max-width: 599px;
+        margin: 0 0 0 5px;
+    }
+}
+
+#guidetitle {
+    padding: 0 0 0 0;
+    margin: 0 0 20px 0;
+}
+
+#guidetitle h1 {
+    font-size: 30px;
+    /*text-transform: uppercase;*/
+    padding: 0;
+    margin:  0;
+    display: inline-block;
+}
+
+#guidetitle h2 {
+    font-size: 30px;
+    display: inline-block;
+    margin: 0;
+}
+
+#guidetitle p {
+    font-size: 30px;
+    color: #CCCCCC;
+    padding: 0;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.colon {
+    font-size: 30px;
+    /*color: $dark-blue-green;*/
+    display: inline-block;
+}
+
+#s-lg-guide-description {
+    display: none;
+}
+
+#s-lg-guide-tabs-title-bar {
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.view-mode #s-lg-guide-tabs-title-bar {
+    padding: 0;
+    margin: 0 0 0 0;
+    border-top: 0;
+}
+
+.pad-top-med
+/* THIS OVERWRITES A DIV THAT DOES NOT APPEAR, BUT STILL CAUSES PADDING ISSUES.*/       {
+    padding-top: 0;
+}
+
+.mainhomepage hr {
+    border-color: $very-light-gray;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 2px 0 0;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+/* CONTENT  */ /* LIBGUIDES - KEEP */
+
+#content_container /*USED IN HOMEPAGE & LIBGUIDES */ {
+    margin: 0;
+    padding: 0;
+    width: 1170px;
+    display: inline-block;
+}
+
+@media ( max-width: 1199px ) {
+    #content_container {
+        width: 100%;
+    }
+}
+
+#content /*USED IN LIBGUIDES, NOT HOMEPAGE */{
+    margin: 0;
+    padding: 0 0 0 10px;
+    width: 980px;
+    float: right;
+    display: inline-block;
+}
+
+@media ( max-width: 1199px ) {
+    #content {
+        width: 80%;
+    }
+}
+
+@media ( max-width: 768px ) {
+    #content {
+        width: 100%;
+    }
+}
+
+#content_container ul li {
+    line-height: 1.5;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/*OVERWRITING LIBGUIDES 2.0 */ /* LIBGUIDES - KEEP */
+
+#s-lib-scroll-top {
+    z-index: 10;
+}
+
+#s-lg-guide-header-search /* THIS DISPLAYS THE VIEW/EDIT/PUBLISH BUTTONS WHEN EDITING. */       {
+    float: right;
+    margin: 20px;
+}
+
+#s-lg-public-skiplink /*DUE TO LINE HEIGHT CHANGES, SPRINGSHARE'S SKIPLINK SECTION WAS BLEEDING INTO OUR HEADER */ {
+    top: -55px;
+}
+
+.s-lib-profile-div {
+    margin-bottom: 30px;
+}
+
+.s-lib-profile-email .label-info, .s-lib-profile-widget .label-info {
+    background: $dark-blue-green;
+    border-bottom: 4px solid #04394e;
+}
+
+.label-info[href]:focus, .label-info[href]:hover {
+    background-color: #32758f;
+    border-bottom: 2px solid $dark-blue-green;
+}
+
+.s-lib-profile-email .label, .s-lib-profile-widget .label {
+    border-radius: 0;
+    color: $white-text;
+    display: inline;
+    font-size: 14px !important;
+    font-weight: normal;
+    line-height: 1;
+    padding: 10px 15px;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.s-lib-profile-image img {
+    background-color: $white-body;
+    border: 1px solid #a9a9a9;
+    box-shadow: 3px 3px 4px #aaa;
+    max-width: 95%;
+    padding: 4px;
+}
+@media ( max-width: 768px ) {
+    .s-lib-profile-image img {
+        max-width: 300px;
+}}
+
+#s-lg-guide-header-meta {
+    width: auto;
+    margin: 5em 0 0 0;
+    font-size:.85em;
+}
+
+#s-lg-guide-header-meta hr {
+    margin: 5px 0;
+}
+
+#s-lg-guide-header-meta #s-lg-guide-header-attributes {
+    padding: 0 0 0 25px;
+}
+
+#s-lib-footer-login-link {
+    float: right;
+    padding-right: 20px
+}
+@media ( max-width: 768px ) {
+    #s-lib-footer-login-link {
+    float: none;
+}}
+
+#s-lg-add-page-icon
+/*I GUESS THIS IS TOO, NOT SURE*/       {
+    margin: 0;
+    display: inline;
+    font-size: 12px;
+}
+
+#s-lg-admin-tab-add /* THIS IS THE + SIGN TO ADD A NEW PAGE */       {
+    padding: 4px;
+    margin: 0;
+    border: 2px solid $bc-brand-gold;
+}
+
+#s-lg-admin-tab-add a {
+    border: none;
+    color: #444;
+}
+
+#s-lg-admin-tab-add a:hover {
+    border: none;
+    color: $white-text;
+}
+
+.s-lg-link-list {
+    margin-bottom: 0;
+}
+
+.pager .previous > a, .pager .previous > span /* OVERWRITES PREVIOUS BUTTON */       {
+    float: left;
+}
+
+.pager .next > a, .pager .next > span /* OVERWRITES NEXT BUTTON */      {
+    float: right;
+}
+
+.pager li > a, .pager li > span /* OVERWRITES PREVIOUS/NEXT BUTTON STYLES*/      {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    display: inline-block;
+    padding: 0;
+    font-size: 17px;
+}
+
+.pager li > a:hover, .pager li > a:focus {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    min-height: 1px;
+    padding-left: 14px;
+    padding-right: 14px;
+    position: relative;
+}
+
+@media ( max-width: 768px ) {
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 0;
+    padding-right: 0;
+    }
+}
+
+.col-md-12:first-of-type, .col-md-3:first-of-type, .col-md-4:first-of-type, .col-md-6:first-of-type {
+    padding-left: 0;
+}
+
+.col-md-12:last-of-type, .col-md-3:last-of-type, .col-md-4:last-of-type, .col-md-6:last-of-type {
+    padding-right: 0;
+}
+
+/*EDITS TO BOXES, COLUMNS, ROWS, ETC. OVERWRITING SPRINGSHARE. */
+
+.row /*THIS SHOULD CONTROL THE ENTIRE ROW OF COLUMNS, MARGIN-TOP IS NEW. LEFT, RIGHT WERE TO KEEP IN LINE W/ SPRINGSHARE */
+{
+    margin: 0;
+}
+
+/* override custom LG style to zero-out row margins */
+.homepagerefresh #megamenu-refresh .row, #bclib-header .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#s-lg-box-top
+/* TOP BOX, IF IN USE */       {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.s-lib-box
+/*THE INNER BOX ITSELF, WITH BORDERS, MARGIN, PADDING, SHADOW, * MORE */       {
+    box-shadow: none;
+    border: 0;
+    margin: 0;
+    color: #151515;
+}
+
+.edit-mode .s-lib-box-title
+/* EFFECTS BOX TITLES. USES BOOTSTRAP STYLE WHEN IN EDIT MODE */       {
+    border-bottom: 1px solid #CCC;
+    padding: 3px 8px;
+    /*font-size: 13px;
+    color: #333;*/
+    background: $white-body;
+}
+
+.view-mode .s-lib-box .s-lib-box-title
+/* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. */       {
+    border-bottom: 0 none;
+    border-radius: 0 0 0 0;
+    /*color: $dark-blue-green;
+    font-size: 18px;
+    font-weight: normal;*/
+    line-height: 1.15;
+    /*margin: 15px 0 5px;*/
+    padding: 0;
+    /*text-transform: uppercase;*/
+    background: none;
+}
+
+.view-mode .libhomepage .s-lib-box-title
+/* HIDES BOX TITLES FOR LIBRARY HOMEPAGES. */       {
+    display: none !important;
+}
+
+.s-lg-row {
+    margin: 0;
+    padding: 0;
+}
+
+.s-lib-box-content {
+    padding: 0 10px 15px 10px;
+}
+
+/* HACKED SIDE NAVIGATION  */
+
+#s-lg-guide-tabs .nav-tabs {
+    border-bottom: 0;
+}
+
+@media ( max-width: 768px ) {
+    #s-lg-guide-tabs .nav-tabs {
+        display: none;
+    }
+}
+
+#s-lg-guide-tabs .nav {
+    list-style: none outside none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+#s-lg-guide-tabs
+/*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */       {
+    font-size: 14px;
+    margin: 1px 0 1px 0;
+    padding: 0;
+    width: 185px;
+    display: inline-block;
+}
+@media ( max-width: 1199px ) {
+    #s-lg-guide-tabs {
+        width: 15%;
+    }
+}
+@media ( max-width: 768px ) {
+    #s-lg-guide-tabs {
+        width: 100%;
+    }
+}
+
+#s-lg-guide-tabs ul {
+    margin: 0;
+    padding: 0;
+}
+
+#s-lg-guide-tabs .nav-tabs li {
+    display: list-item;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    float: none;
+    line-height: 1.75;
+    padding: 0;
+    font-size: 13px;
+}
+
+#s-lg-guide-tabs .nav-tabs li a {
+    border-bottom: 1px solid $white-body;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: $black-text;
+    display: inline-block;
+    padding: 10px 8px;
+    text-decoration: none;
+    width: 100%;
+    background: #E9E9E9;
+    border-radius: 0;
+    margin-right: 0;
+    outline: 0 none;
+}
+
+#s-lg-guide-tabs .nav-tabs li.dropdown {
+    background: #E9E9E9;
+}
+
+#s-lg-guide-tabs .nav-tabs li.dropdown:hover {
+    background: $bc-brand-gold;
+}
+
+#s-lg-guide-tabs .nav-tabs li a.dropdown-toggle {
+    width: 20%;
+    float: right;
+    background: transparent;
+}
+
+#s-lg-guide-tabs .nav-tabs li a.pull-left {
+    width: 80%;
+    background: transparent;
+}
+
+#s-lg-guide-tabs .nav-tabs li a:hover {
+    background: $bc-brand-gold;
+}
+
+#s-lg-guide-tabs .nav-tabs .active a {
+    background: $red;
+    color: $white-text;
+    text-decoration: none;
+}
+
+#s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */      {
+    background-clip: padding-box;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    display: none;
+    float: left;
+    font-size: 14px;
+    left: 0;
+    list-style: none outside none;
+    min-width: 160px;
+    width: 100%;
+    position: relative;
+    top: 100%;
+    z-index: 10;
+    padding: 0;
+}
+
+#s-lg-guide-tabs .dropdown-menu {
+    margin: 0 !important;
+}
+
+#s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a,
+#s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a
+ /*THIS IS THE DROP DOWN TAB ITSELF*/       {
+    clear: both;
+    color: $red;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    white-space: nowrap;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    background: $bc-brand-gold;
+    height: 30px;
+    margin: 0;
+    box-shadow: none;
+}
+
+#s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a:hover,
+#s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a:hover {
+    color: $white-text;
+}
+
+/* THIS CONTROLS THE SUBNAVS WHEN ACTIVE */
+#s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a.active {
+    background: $red;
+    color: $white-text;
+    text-decoration: none;
+}
+
+#s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a.active:hover {
+    background: $bc-brand-gold;
+}
+
+        /* CSS TO TURN NAV TABS INTO NAV DROPDOWN */
+nav select {
+    display: none;
+}
+@media ( max-width: 768px ) {
+    nav select {
+        display: block;
+        height: 24px;
+        padding: 2px 4px;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
+    /* CODE FOR THE SUBJECT PAGES DROPDOWN IN LIBGUIDES */
+
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+
+/* ALL THE MEGA MENU STUFF */ /* REVIEW */
+
+/* Grid demo styles */ /* REVIEW */
+.grid-demo {
+    padding: 10px 30px;
+}
+
+.grid-demo [class*="col-"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    text-align: center;
+    line-height: 2;
+    background-color: #e5e1ea;
+    border: 1px solid #d1d1d1;
+}
+
+.dropdown-menu {  /* REVIEW */
+    background-clip: padding-box;
+    background-color: $white-body;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    display: none;
+    float: left;
+    font-size: 14px;
+    left: 0;
+    list-style: none outside none;
+    margin: 2px 0 0;
+    min-width: 160px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+
+/* CUSTOM LIBGUIDES PAGE CSS */ /* LIBGUIDES - KEEP */
+
+/* CODE FOR BURNS HOMEPAGE AND JOBS HOMEPAGE */
+
+#s-lg-content-12755569 img {height:auto!important;}
+#s-lg-box-collapse-6437327 {background-color:#eee; padding:20px 0 10px 30px;}
+.column-container { width:100%; background-color:#eee;}
+.column-container-inner {padding:20px 10px 20px 20px}
+.column-container .column {padding:0; background-color:#eee;}
+.column .inner {min-height:172px; padding:0 10px 10px 0;}
+.column .column-content {padding:0; min-height: inherit; margin-bottom:0;}
+.column .inner.first {}
+.column .inner.last {}
+.inner .text {padding:20px 0 0 16px; font-size:18px; line-height:24px;}
+.inner .image {position: relative; width: 100%; /* for IE 6 */}
+.image img {height:auto!important;}
+
+.inner h2 {
+   position: absolute;
+   top: 150px;
+   left: 0;
+   width: 100%;
+}
+
+.inner .image h2 span {
+   color: white;
+   font: bold 24px/45px Arial, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+.inner p {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    display: inline-block;
+    left: 0;
+    margin: 0;
+    padding: 10px 10px 10px 5px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.inner .image p span {
+   color: white;
+   font: bold 15px/20px Arial,Sans-Serif;
+   letter-spacing: -1px;
+}
+
+#s-lg-box-wrapper-7568497,
+#s-lg-box-wrapper-7613059 {
+    margin-bottom:20px;
+}
+
+.s-lib-box-content {
+    padding: 0 15px 0 0;
+    margin: 0 0 15px;
+}
+
+.searchbox-container {
+    height:70px;
+}
+
+.searchbox-container .sb-search {
+    right: 0;
+}
+
+.searchbox-container input.sb-search-input {
+    width:100%;
+}
+
+
+/* RESPONSIVE YOUTUBE EMBED CODE -
+COULD BE USEFUL ELSEWHERE  */
+/* REVIEW */
+.video-container {
+    position: relative;
+    max-width: 853px;
+    max-height: 480px;
+    margin: 0 auto;
+}
+
+@media ( max-width: 1199px ) {
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        max-width: 853px;
+        max-height: 480px;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* LIBRARY EXHIBITS STYLES */
+/* REVIEW */
+html {
+    overflow-x: hidden;
+}
+
+/* CAREER */ /* LIBGUIDES - KEEP */
+
+.career #fakebctitle {
+display: none;
+}
+
+.career #librarytitle a h1 {
+background: url("https://library.bc.edu/images/career_logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+display: block;
+float: left;
+height: 125px;
+text-indent: -9999px;
+width: 125px;
+margin: -50px 0 0 0px;
+}
+
+/* Tooltip */
+.tooltip-inner {
+  background-color: #fff8c4;
+  font-size: 120%;
+  color: #151515;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #fff8c4;
+}
+.tooltip-inner a {
+  color: $dark-blue-green;
+}
+
+li#new-catalog-promo {
+    background-color: lightyellow;
+    padding: 1em;
+}
+
+/*                                     */
+/*   STYLES PORTED OVER FROM LIBGUIDES */
+/*                                     */
+
+/* HIDE DESCRIPTION DISPLAY OPTIONS THAT USE HOVER OVER SINCE IT ISNT ACCESSIBLE */
+.edit-mode form #form-group-desc_pos .radio:nth-child(2),
+.edit-mode form #form-group-desc_pos .radio:nth-child(3) {display: none;}
+
+/* INFO BUTTON STYLE */
+a.more-info {display:inline-block; padding:0 8px 0 0; cursor:pointer; color:$black-text; text-shadow: 0 1px 0 $white-body; opacity:.6; font-size:14px;}
+a.more-info:hover {opacity:1; color: $black-text;}
+.box-value {padding-left:5px;}
+.box-label {width:100px; display:inline-block; text-align:right;}
+.box-value textarea {width:425px; height:78px; margin-left:110px;}
+
+/* FIXING ACTIVE SUBNAV MENUS AND BREADCRUMBS */
+#s-lib-bc-site,
+#s-lib-bc-group {display: none;}
+
+/* MAKE SURE GUIDE DESCRIPTION IS PROPERLY LABELED */
+.edit-mode #s-lg-guide-description {display:block;}
+.edit-mode #s-lg-guide-desc-container {width:70%; padding-bottom:20px; margin-top:-10px;}
+.edit-mode #s-lg-guide-desc-container::before {content: "Guide Description: ";}
+span.pad-left-med.hitst {display: none;}
+
+/* GRACEFULLY HANDLE SUBPAGE NAVIGATION */
+/*
+#E9E9E9 gray
+$red red
+$bc-brand-gold green
+*/
+.dropdown-wrapper {position:relative;}
+#s-lg-guide-tabs .nav-tabs li a:focus {
+    background: $bc-brand-gold;
+}
+#s-lg-guide-tabs ul.nav-tabs > li a {display:block; height:100%;}
+#s-lg-guide-tabs ul.nav-tabs > li > .dropdown-wrapper a.dropdown-toggle {vertical-align:middle;}
+#s-lg-guide-tabs ul.nav-tabs > li > .dropdown-wrapper a {height:100%; width: 100%; float:none!important; display:table-cell; color: $black-text;}
+#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a::before {content:"↳  "; position:relative;}
+#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a .subitem {width:100%; height:100%; white-space:pre-line;}
+#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a {padding-left:10px!important; text-align: left;}
+#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a:focus,
+#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a:hover,
+#s-lg-guide-tabs ul.nav-tabs > li.active > ul.wrapper-subitems li.active a:hover,
+#s-lg-guide-tabs ul.nav-tabs > li.active > ul.wrapper-subitems li.active a:focus {
+    background: $bc-brand-gold;
+}
+
+/* grey - inactive */
+#s-lg-guide-tabs ul.nav-tabs > li.active .dropdown-wrapper,
+#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a {background-color: #E9E9E9; color: $black-text;}
+
+/* maroon - active */
+#s-lg-guide-tabs ul.nav-tabs > li.active.no-active-child > .dropdown-wrapper,
+#s-lg-guide-tabs ul.nav-tabs > li.active > ul.wrapper-subitems li.active a {background:$red; cursor:pointer; color:$white-text; width:100%}
+
+/* gold - hoverover */
+#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a:hover,
+#s-lg-guide-tabs ul.nav-tabs > li.active > ul.wrapper-subitems li a:hover,
+#s-lg-guide-tabs ul.nav-tabs > li.active .dropdown-wrapper:hover {background: $bc-brand-gold; color: $black-text;}
+
+/* force active to always have white font */
+#s-lg-guide-tabs ul.nav-tabs > li.active.no-active-child .dropdown-wrapper a,
+#s-lg-guide-tabs ul.nav-tabs > li.active > ul.wrapper-subitems li.active a:hover,
+#s-lg-guide-tabs ul.nav-tabs > li.active.no-active-child .dropdown-wrapper a:hover {color:$white-text;}
+
+/* hide/show blocks */
+#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems {display:none;}
+#s-lg-guide-tabs ul.nav-tabs > li.active.has-active-child > ul.wrapper-subitems {display:block;}
+
+.caret-up,
+#s-lg-guide-tabs ul.nav-tabs > li.active.has-active-child .dropdown-wrapper a.dropdown-toggle .caret {border-top:none; border-bottom:4px dashed;}
+
+/* updated style - 20170816 */
+body {font-size:15px;}
+/*a, a:visited, .ui-widget-content a, .ui-widget-content a:visited {color:#337ab7;}*/
+#bclib-header-form .input-group-btn{width:1%;}
+.megamenu-container {
+    background-color: rgba(16,14,15,.90);
+}
+/*h1, h2, h3,
+.s-lib-public-side-header h2 {color: $black-text; text-transform: none;}
+h4, h6 {font-weight: 400;}
+h3 {font-size:17px;}
+h4 {font-size:16px;}
+h5, h6 {font-size:15px;}
+h5 {font-weight:600;}*/
+
+.edit-mode .breadcrumb {display:none;}
+.edit-mode .s-lib-cmd-bar .navbar-collapse .navbar-nav {float: left!important;}
+.edit-mode #s-lg-guide-header-meta {display:none;}
+.edit-mode .s-lib-box-title {padding:3px 2px 3px 0; font-weight: normal;}
+
+#midlevelcontainer {margin: 80px auto 0 auto;}
+#midlevelcontainer-refresh {margin-top:60px;}
+.edit-mode #midlevelcontainer-refresh {margin-top:80px; margin-bottom:40px;}
+.bottom_row {background-color:$white-body;}
+.more a {
+    background: inherit;
+    display: inline;
+    padding: 0;
+    width: auto;
+    border-bottom: none;
+}
+
+.col-md-12:first-of-type,
+.col-md-3:first-of-type,
+.col-md-4:first-of-type,
+.col-md-6:first-of-type {padding-left: 15px;}
+
+.col-md-12:last-of-type,
+.col-md-3:last-of-type,
+.col-md-4:last-of-type,
+.col-md-6:last-of-type {padding-right:15px;}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.s-lib-box-content {margin-bottom:1.5em;}
+
+.view-mode #content-refresh {padding-left:0; padding-right:0;}
+.view-mode #content {
+    margin: 0;
+    padding: 0 15px;
+    /* width: 980px; */
+     float: right;
+}
+
+#content_container .row {padding-top:0; padding-bottom:0;}
+
+.s-lib-box-content .ui-widget {font-family:inherit;}
+
+/* Custom block header styling */
+.view-mode .s-lib-box .s-lib-box-title,
+.edit-mode .s-lib-box .s-lib-box-title {margin-top:0; text-transform: none; border-bottom: 1px solid $very-light-gray; color: $black-text;}
+.edit-mode .s-lib-box .s-lib-box-title {font-size:18px; padding-bottom: 4px; margin-bottom: 8px;}
+.view-mode .s-lib-box .s-lib-box-title {font-size: 24px; font-weight: 200; margin: 0 0 .5rem 0; padding: .25rem 0 .5rem 0;}
+/* END Custom block header styling */
+
+footer {margin-top:1em;}
+footer .row {margin-left:-15px; margin-right:-15px;}
+footer h4 {margin:0 0 5px!important;}
+#lib-footer a,
+#lib-footer p {font-weight:300;}
+#lib-footer h4 a {font-weight:700;}
+#lib-footer h4.orgname {margin:0 0 10px 0!important;}
+#lib-footer .address-wrap {padding-left:15px;}
+#socialmedia {margin:0; padding: 0 15px;}
+#guidetitle h1,
+#guidetitle h2 {text-transform:none;}
+
+@media (width: 768px) {
+   #s-lg-guide-tabs .nav-tabs {display:block;}
+   nav select {display:none;}
+}
+@media (min-width: 768px) {
+   #s-lg-guide-tabs.col-sm-3 {
+       width: 25%;
+   }
+  .edit-mode .navbar-nav {
+      float: none;
+  }
+}
+@media (max-width: 991px) {
+   #bclib-header .header-right {
+      padding-left:0;
+   }
+}
+@media (min-width: 992px) {
+   #s-lg-guide-tabs.col-md-2 {
+       width: 16.66666667%;
+   }
+}
+@media print {
+    /* profile boxes */
+    .s-lib-profile-center, .s-lib-profile-widget {
+        text-align:left!important;
+    }
+    .s-lib-profile-div.s-lib-profile-image img {
+        width:20%!important;
+    }
+   .s-lib-profile-div.s-lib-profile-name {
+        margin-bottom:0 !important;
+    }
+    .s-lib-profile-div.s-lib-profile-email {
+       margin: 2em 0!important;
+    }
+    .s-lib-profile-div.s-lib-profile-email a {
+       border: none!important;
+       padding: 0!important;
+       margin: 0!important;
+    }
+}
+
+/* additional styling 2017-09-05 */
+.s-lib-profile-image img {
+    max-height:400px!important;
+}
+
+/* 2018-03-26 */
+.edit-mode ul.s-lg-link-list-10 li div.dropdown:before {
+    font-family: FontAwesome;
+    content: "\f1c0 ";
+    padding-right: 6px;
+}
+
+/* add fixed position chat box on all pages */
+.edit-mode .libraryh3lp {
+    display:none;
+}
+.askuswidget, #askuswidget {
+    position: fixed;
+    right: -169px;
+    z-index: 99999999999;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    font-size: 19.5px;
+    height: auto;
+    padding-bottom: .75rem;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    box-shadow: rgb(0,0,0) 0 0 5px;
+    background-image: none;
+    text-shadow: none;
+    background-color: #337ab7!important;
+}
+.askuswidget.btn, #askuswidget.btn {
+    border-color: $white-body;
+    border-top: none;
+}
+.askuswidget.btn:focus,
+.askuswidget.btn:hover,
+#askuswidget.btn:hover,
+#askuswidget.btn:focus  {
+    border-color: inherit;
+    border-top: none;
+    background-color: #286090!important;
+}
+.askuswidget.btn:visited,
+#askuswidget.btn:visited {
+    color: $white-text !important;
+}
+#s-lib-scroll-top {
+    z-index: 10;
+    right: 50px;
+}
+@media (max-width: 900px) {
+    .askuswidget, #askuswidget {
+        bottom: 200px;
+    }
+}
+@media (min-width: 901px) {
+    .askuswidget, #askuswidget {
+        top:25%;
+    }
+    /* reposition scroll-to-top button */
+    #s-lib-scroll-top {
+        bottom: 25%;
+    }
+}
