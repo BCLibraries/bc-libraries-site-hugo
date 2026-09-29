@@ -1,5 +1,4 @@
 @use 'variables/colors' as *;
-@use 'bootstrap_base' as *;
 
 #top-columns {
     display: flex;
@@ -45,7 +44,7 @@
     }
 }
 
-@include media-breakpoint-up(md) {
+@media (min-width: 768px) {
     #hero-box {
         // padding-top: 80px;
         height: 10rem; // 320px
