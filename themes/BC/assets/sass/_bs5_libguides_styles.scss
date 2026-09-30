@@ -23,95 +23,9 @@ MAIN MEDIA QUERY SIZES:;
 }
 */
 
-/*body {
-    background: $white-body 0% 0%;
-    font-family: Arial, sans-serif;
-    color: $black-text;
-    font-size: 14px;
-    padding: 0;
-    line-height: 1.75;
-}*/
-
-/* THE BASICS */ /* CORE - KEEP */
-
-/*
-p, h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-}
-*/
-
-/*a, a:visited, .ui-widget-content a, .ui-widget-content a:visited {
-    color: $red;
-    font-weight: normal;
-}*/
-
-/* LibGuides adds 15px of padding on all sides. */
-/*body {
-    padding: 0;
-}*/
-
-/*
-a:hover, a:active, a:focus, .ui-widget-content a:active {
-    color: $red;
-    text-decoration: underline;
-}
-*/
-
-/*THIS IS A TEMPORARY STYLE, USED TO INDICATE THAT A LINK IS NOT CLICKABLE */
 .grayed {
     color: #ababab !important;
     cursor: default;
-}
-
-/*
-b, strong {
-    font-weight: bold;
-}
-
-i {
-    font-style: italic;
-}
-
-h1 {
-    font-size: 30px;
-    font-weight: normal;
-    margin: 0 0 10px;
-    padding: 0;
-}
-*/
-
-.h2style,
-.h3style,
-.h4style,
-.h5style,
-.h6style {
-    margin: 2.25rem 0 .25rem;
-    padding: 0;
-}
-
-.h2style {
-    font-size: 24px;
-    font-weight: 200;
-}
-
-.h3style {
-    font-size: 22px;
-    font-weight: 200;
-}
-
-.h4style {
-    font-size: 20px;
-    font-weight: 200;
-}
-
-.h5style {
-    font-size: 18px;
-    font-weight: 200;
-}
-
-.h6style {
-    font-size: 16px;
-    font-weight: 600;
 }
 
 hr {
@@ -121,18 +35,19 @@ hr {
     margin-top: 0;
 }
 
+// Unsure
+.mainhomepage hr {
+    border-color: $very-light-gray;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 2px 0 0;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
 .panel-body h2:first-child,
 .panel-body h3:first-child,
-.panel-body h4:first-child,
-#megamenu .h3style,
-#megamenu .h4style {margin-top: .25rem;}
-
-/*
-ul, ol {
-    margin: 0 0 10px 0;
-    padding: 0 0 0 30px;
-}
-*/
+.panel-body h4:first-child {margin-top: .25rem;}
 
 img.center {
     margin-left: auto;
@@ -149,37 +64,21 @@ table.ckeditor-table {
     width: 100% !important;
 }
 
-/*
-table, th, td {
-    border: 1px solid $very-light-gray;
-}
-
-td, th {
-    padding: 3px;
-}
-
-td {
-    vertical-align:top;
-}
-
-th {
-    background-color: #E9E9E9;
-}
-*/
-
-/* THIS HIDES THE FONT AND FONT SIZE BUTTONS IN SPRINGSHARE'S EDITOR */
+// Edit page style
 #cke_s-lg-editor-content .cke_combo__font,
 #cke_s-lg-editor-content .cke_combo__fontsize {
     display: none;
 }
 
-.clear:before,
-.clear:after {
-    content: "";
-}
+.clear {
+    &:before,
+    &:after {
+        content: "";
+    }
 
-.clear:after {
-    clear: both;
+    &:after {
+        clear: both;
+    }
 }
 
 .accessibility-text {
@@ -193,25 +92,28 @@ th {
 
 /* UNDER HEADER */ /* LIBGUIDES - KEEP */
 
-.breadcrumb {
-    background-color: transparent;
-    list-style: none outside none;
-    margin: 0 0 12px 0;
-    padding: 0;
-    font-size: 1em;
+// Breadcrumb styles
+#s-lib-bc-list {
+    > .active {
+        color: $wcagaa-compliant-gray-text;
+    }
+
+    #s-lib-bc-page {
+        font-size: 1rem;
+    }
+
+    #s-lib-bc-site,
+    #s-lib-bc-group {
+        display: none;
+    }
 }
 
-.breadcrumb > .active {
-    color: $wcagaa-compliant-gray-text;
-    font-weight: normal;
-}
-
+// Unsure
 .pageurl {
     color: #666;
     float: right;
     max-width: 599px;
 }
-
 @media ( max-width: 768px ) {
     .pageurl {
         color: #666;
@@ -221,213 +123,173 @@ th {
     }
 }
 
+// Guide title styles
 #guidetitle {
-    padding: 0 0 0 0;
-    // margin: 0 0 20px 0;
+    h1 {
+        display: inline-block;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 2rem;
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    /*p {
+        font-size: 30px;
+        color: #CCCCCC;
+        padding: 0;
+        margin: 0 10px;
+        display: inline-block;
+    }*/
+
+    .colon {
+        font-size: 2rem;
+        display: inline-block;
+    }
 }
 
-#guidetitle h1 {
-    //font-size: 30px;
-    /*text-transform: uppercase;*/
-    //padding: 0;
-    //margin:  0;
-    display: inline-block;
-}
-
-#guidetitle h2 {
-    font-size: 2rem;
-    display: inline-block;
-    margin: 0;
-}
-
-#guidetitle p {
-    font-size: 30px;
-    color: #CCCCCC;
-    padding: 0;
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.colon {
-    font-size: 2rem;
-    /*color: $dark-blue-green;*/
-    display: inline-block;
-}
-
-#s-lg-guide-description {
+// Allow guide description to be visible
+/*#s-lg-guide-description {
     display: none;
-}
+}*/
 
+// Edit page style
 #s-lg-guide-tabs-title-bar {
     padding: 0;
     margin: 0 0 15px 0;
 }
 
-.view-mode #s-lg-guide-tabs-title-bar {
-    padding: 0;
-    margin: 0 0 0 0;
-    border-top: 0;
+// Public view mode styles
+.view-mode {
+    #s-lg-guide-tabs-title-bar {
+        padding: 0;
+        margin: 0 0 0 0;
+        border-top: 0;
+    }
+
+    .libhomepage .s-lib-box-title {
+        display: none !important;
+    }
+
+    // These styles might conflict with LibGuides custom box heading settings
+    .s-lib-box .s-lib-box-title {
+        border-radius: 0 0 0 0;
+        line-height: 1.15;
+        background: none;
+        text-transform: none; 
+        border-bottom: 1px solid $very-light-gray; 
+        color: $black-text;
+        font-size: 1.5rem; 
+        font-weight: 200; 
+        margin: 0 0 .5rem 0; 
+        padding: .25rem 0 .5rem 0;
+    }
 }
 
-.pad-top-med
-/* THIS OVERWRITES A DIV THAT DOES NOT APPEAR, BUT STILL CAUSES PADDING ISSUES.*/       {
+// Not used anymore
+.pad-top-med {
     padding-top: 0;
 }
 
-.mainhomepage hr {
-    border-color: $very-light-gray;
-    border-image: none;
-    border-style: solid none none;
-    border-width: 2px 0 0;
-    margin-bottom: 15px;
-    margin-top: 0;
-}
-
-/* CONTENT  */ /* LIBGUIDES - KEEP */
-
-#content_container /*USED IN HOMEPAGE & LIBGUIDES */ {
-    //margin: 0;
-    //padding: 0;
-    //width: 1170px;
-    //display: inline-block;
-}
-
-/*
-@media ( max-width: 1199px ) {
-    #content_container {
-        width: 100%;
-    }
-}
-*/
-
-#content /*USED IN LIBGUIDES, NOT HOMEPAGE */{
-    margin: 0;
-    padding: 0 0 0 10px;
-    // width: 980px;
-    // float: right;
-    display: inline-block;
-}
-
-/*
-@media ( max-width: 1199px ) {
-    #content {
-        width: 80%;
-    }
-}
-
-@media ( max-width: 768px ) {
-    #content {
-        width: 100%;
-    }
-}
-*/
-
-#content_container ul li {
-    line-height: 1.5;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-/*OVERWRITING LIBGUIDES 2.0 */ /* LIBGUIDES - KEEP */
-
-#s-lib-scroll-top {
-    z-index: 10;
-}
-
+// Edit page style
+// Unsure
 #s-lg-guide-header-search /* THIS DISPLAYS THE VIEW/EDIT/PUBLISH BUTTONS WHEN EDITING. */       {
     float: right;
     margin: 20px;
 }
 
-#s-lg-public-skiplink /*DUE TO LINE HEIGHT CHANGES, SPRINGSHARE'S SKIPLINK SECTION WAS BLEEDING INTO OUR HEADER */ {
-    top: -55px;
+// Profile box
+.s-lib-profile-container {
+    margin-bottom: 2rem;
+
+    .s-lib-profile-email .label-info, 
+    .s-lib-profile-widget .label-info {
+        background: $dark-blue-green;
+        border-bottom: 4px solid #04394e;
+    }
+
+    .s-lib-profile-email .label, 
+    .s-lib-profile-widget .label {
+        border-radius: 0;
+        color: $white-text;
+        display: inline;
+        font-size: 14px !important;
+        font-weight: normal;
+        line-height: 1;
+        padding: 10px 15px;
+        text-align: center;
+        vertical-align: baseline;
+        white-space: nowrap;
+    }
+
+    .s-lib-profile-image img {
+        background-color: $white-body;
+        border: 1px solid #a9a9a9;
+        box-shadow: 3px 3px 4px #aaa;
+        max-width: 95%;
+        padding: 4px;
+    }
+
+    .label-info[href]:focus, 
+    .label-info[href]:hover {
+        background-color: #32758f;
+        border-bottom: 2px solid $dark-blue-green;
+    }
 }
 
-.s-lib-profile-div {
-    margin-bottom: 30px;
-}
-
-.s-lib-profile-email .label-info, .s-lib-profile-widget .label-info {
-    background: $dark-blue-green;
-    border-bottom: 4px solid #04394e;
-}
-
-.label-info[href]:focus, .label-info[href]:hover {
-    background-color: #32758f;
-    border-bottom: 2px solid $dark-blue-green;
-}
-
-.s-lib-profile-email .label, .s-lib-profile-widget .label {
-    border-radius: 0;
-    color: $white-text;
-    display: inline;
-    font-size: 14px !important;
-    font-weight: normal;
-    line-height: 1;
-    padding: 10px 15px;
-    text-align: center;
-    vertical-align: baseline;
-    white-space: nowrap;
-}
-
-.s-lib-profile-image img {
-    background-color: $white-body;
-    border: 1px solid #a9a9a9;
-    box-shadow: 3px 3px 4px #aaa;
-    max-width: 95%;
-    padding: 4px;
-}
 @media ( max-width: 768px ) {
     .s-lib-profile-image img {
         max-width: 300px;
 }}
 
+// Footer metadata
 #s-lg-guide-header-meta {
-    // width: auto;
-    // margin: 5em 0 0 0;
     font-size:.85em;
     display: flex;
     justify-content: space-between;
+
+    hr {
+        margin: 5px 0;
+    }
+
+    #s-lg-guide-header-attributes {
+        padding: 0;
+    }
+
+    #s-lib-footer-login-link {
+        padding-right: 0px;
+    }
 }
 
-#s-lg-guide-header-meta hr {
-    margin: 5px 0;
-}
-
-#s-lg-guide-header-meta #s-lg-guide-header-attributes {
-    padding: 0 0 0 25px;
-}
-
-#s-lib-footer-login-link {
-    float: right;
-    padding-right: 20px
-}
 @media ( max-width: 768px ) {
     #s-lib-footer-login-link {
     float: none;
 }}
 
-#s-lg-add-page-icon
-/*I GUESS THIS IS TOO, NOT SURE*/       {
+// Edit page style
+#s-lg-add-page-icon {
     margin: 0;
     display: inline;
     font-size: 12px;
 }
 
-#s-lg-admin-tab-add /* THIS IS THE + SIGN TO ADD A NEW PAGE */       {
+// Edit page style
+#s-lg-admin-tab-add {
     padding: 4px;
     margin: 0;
     border: 2px solid $bc-brand-gold;
-}
 
-#s-lg-admin-tab-add a {
-    border: none;
-    color: #444;
-}
+    a {
+        border: none;
+        color: #444;
 
-#s-lg-admin-tab-add a:hover {
-    border: none;
-    color: $white-text;
+        &:hover {
+            border: none;
+            color: $white-text;
+        }
+    }
 }
 
 .s-lg-link-list {
@@ -456,59 +318,33 @@ th {
     text-decoration: underline;
 }
 
-/*
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-    min-height: 1px;
-    padding-left: 14px;
-    padding-right: 14px;
-    position: relative;
-}
-
-@media ( max-width: 768px ) {
-    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-    padding-left: 0;
-    padding-right: 0;
-    }
-}
-
-.col-md-12:first-of-type, .col-md-3:first-of-type, .col-md-4:first-of-type, .col-md-6:first-of-type {
-    padding-left: 0;
-}
-
-.col-md-12:last-of-type, .col-md-3:last-of-type, .col-md-4:last-of-type, .col-md-6:last-of-type {
-    padding-right: 0;
-}
-*/
 
 /*EDITS TO BOXES, COLUMNS, ROWS, ETC. OVERWRITING SPRINGSHARE. */
 
-/*
-.row
-{
+// Unsure
+#s-lg-box-top {
     margin: 0;
-}
-*/
-
-/* override custom LG style to zero-out row margins */
-.homepagerefresh #megamenu-refresh .row, #bclib-header .row {
-    margin-left: -15px;
-    margin-right: -15px;
+    padding: 0 .625rem; // 10px
 }
 
-#s-lg-box-top
-/* TOP BOX, IF IN USE */       {
-    margin: 0;
-    padding: 0 10px;
-}
-
-.s-lib-box
-/*THE INNER BOX ITSELF, WITH BORDERS, MARGIN, PADDING, SHADOW, * MORE */       {
+// Required
+.s-lib-box {
     box-shadow: none;
     border: 0;
     margin: 0;
     color: #151515;
+
+    .s-lib-box-content {
+        padding: 0 1rem 0 0;
+        margin: 0 0 1.5rem 0;
+
+        .ui-widget {
+            font-family:inherit;
+        }
+    }
 }
 
+// Edit page style
 .edit-mode .s-lib-box-title
 /* EFFECTS BOX TITLES. USES BOOTSTRAP STYLE WHEN IN EDIT MODE */       {
     border-bottom: 1px solid #CCC;
@@ -518,139 +354,81 @@ th {
     background: $white-body;
 }
 
-.view-mode .s-lib-box .s-lib-box-title
-/* EFFECTS BOX TITLES. USES HEADER STYLE WHEN IN VIEW-MODE. */       {
-    border-bottom: 0 none;
-    border-radius: 0 0 0 0;
-    /*color: $dark-blue-green;
-    font-size: 18px;
-    font-weight: normal;*/
-    line-height: 1.15;
-    /*margin: 15px 0 5px;*/
-    padding: 0;
-    /*text-transform: uppercase;*/
-    background: none;
-}
-
-.view-mode .libhomepage .s-lib-box-title
-/* HIDES BOX TITLES FOR LIBRARY HOMEPAGES. */       {
-    display: none !important;
-}
-
-/*
-.s-lg-row {
-    margin: 0;
-    padding: 0;
-}
-*/
-
-.s-lib-box-content {
-    padding: 0 10px 15px 10px;
-}
-
-/* HACKED SIDE NAVIGATION  */
-
-#s-lg-guide-tabs .nav-tabs {
-    border-bottom: 0;
-}
-
+// Side navigation
 @media ( max-width: 768px ) {
     #s-lg-guide-tabs .nav-tabs {
         display: none;
     }
 }
 
-#s-lg-guide-tabs .nav {
-    list-style: none outside none;
-    margin-bottom: 0;
-    padding-left: 0;
-}
+// Side navigation
+#s-lg-guide-tabs {
+    ul.nav-tabs { // AKA .nav
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+        border-bottom: 0;
 
-#s-lg-guide-tabs
-/*THIS OVERWRITES SPRINGSHARE'S DEFAULT TABS */       {
-    //font-size: 14px;
-    //margin: 1px 0 1px 0;
-    //padding: 0;
-    //width: 185px;
-    //display: inline-block;
-}
-/*
-@media ( max-width: 1199px ) {
-    #s-lg-guide-tabs {
-        width: 15%;
+        li {
+            display: list-item;
+            margin: 0;
+            line-height: 1.75;
+            padding: 0;
+            font-size: 1rem;
+
+            &.dropdown {
+                background: #E9E9E9;
+
+                a {
+                    &:hover {
+                        background: $bc-brand-gold;
+                    }
+                }
+            }
+
+            &.active {
+                a {
+                    background: $red;
+                    color: $white-text;
+                    text-decoration: none;
+                }
+            }
+
+            a {
+                border-bottom: 1px solid $white-body;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                color: $black-text;
+                display: inline-block;
+                padding: 10px 8px;
+                text-decoration: none;
+                width: 100%;
+                background: #E9E9E9;
+                border-radius: 0;
+                margin-right: 0;
+                outline: 0 none;
+
+                &.dropdown-toggle {
+                    width: 20%;
+                    float: right;
+                    background: transparent;
+                }
+
+                &.pull-left {
+                    width: 80%;
+                    background: transparent;
+                }
+
+                &:hover {
+                    background: $bc-brand-gold;
+                }
+            }
+        }
     }
 }
-*/
-/*
-@media ( max-width: 768px ) {
-    #s-lg-guide-tabs {
-        width: 100%;
-    }
-}
-*/
 
-#s-lg-guide-tabs ul {
-    margin: 0;
-    padding: 0;
-}
-
-#s-lg-guide-tabs .nav-tabs li {
-    display: list-item;
-    list-style: none;
-    margin: 0;
-    text-align: center;
-    float: none;
-    line-height: 1.75;
-    padding: 0;
-    font-size: 13px;
-}
-
-#s-lg-guide-tabs .nav-tabs li a {
-    border-bottom: 1px solid $white-body;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: $black-text;
-    display: inline-block;
-    padding: 10px 8px;
-    text-decoration: none;
-    width: 100%;
-    background: #E9E9E9;
-    border-radius: 0;
-    margin-right: 0;
-    outline: 0 none;
-}
-
-#s-lg-guide-tabs .nav-tabs li.dropdown {
-    background: #E9E9E9;
-}
-
-#s-lg-guide-tabs .nav-tabs li.dropdown:hover {
-    background: $bc-brand-gold;
-}
-
-#s-lg-guide-tabs .nav-tabs li a.dropdown-toggle {
-    width: 20%;
-    float: right;
-    background: transparent;
-}
-
-#s-lg-guide-tabs .nav-tabs li a.pull-left {
-    width: 80%;
-    background: transparent;
-}
-
-#s-lg-guide-tabs .nav-tabs li a:hover {
-    background: $bc-brand-gold;
-}
-
-#s-lg-guide-tabs .nav-tabs .active a {
-    background: $red;
-    color: $white-text;
-    text-decoration: none;
-}
-
-#s-lg-guide-tabs .nav .dropdown-menu /*THIS IS PART OF THE DROP DOWN FOR SIDE NAV */      {
+#s-lg-guide-tabs .nav .dropdown-menu {
     background-clip: padding-box;
     background-color: transparent;
     border: 0;
@@ -707,7 +485,7 @@ th {
     background: $bc-brand-gold;
 }
 
-        /* CSS TO TURN NAV TABS INTO NAV DROPDOWN */
+/* CSS TO TURN NAV TABS INTO NAV DROPDOWN */
 nav select {
     display: none;
 }
@@ -721,7 +499,7 @@ nav select {
     }
 }
 
-    /* CODE FOR THE SUBJECT PAGES DROPDOWN IN LIBGUIDES */
+/* CODE FOR THE SUBJECT PAGES DROPDOWN IN LIBGUIDES */
 
 .navbar-collapse.in {
     overflow-y: visible;
@@ -730,6 +508,7 @@ nav select {
 /* ALL THE MEGA MENU STUFF */ /* REVIEW */
 
 /* Grid demo styles */ /* REVIEW */
+/*
 .grid-demo {
     padding: 10px 30px;
 }
@@ -743,7 +522,9 @@ nav select {
     background-color: #e5e1ea;
     border: 1px solid #d1d1d1;
 }
+*/
 
+// Megamenu
 .dropdown-menu {  /* REVIEW */
     background-clip: padding-box;
     background-color: $white-body;
@@ -819,21 +600,18 @@ nav select {
     margin-bottom:20px;
 }
 
-.s-lib-box-content {
-    padding: 0 15px 0 0;
-    margin: 0 0 15px;
-}
+
 
 .searchbox-container {
     height:70px;
-}
 
-.searchbox-container .sb-search {
-    right: 0;
-}
+    .sb-search {
+        right: 0;
+    }
 
-.searchbox-container input.sb-search-input {
-    width:100%;
+    input.sb-search-input {
+        width:100%;
+    }
 }
 
 
@@ -880,17 +658,17 @@ html {
 /* CAREER */ /* LIBGUIDES - KEEP */
 
 .career #fakebctitle {
-display: none;
+    display: none;
 }
 
 .career #librarytitle a h1 {
-background: url("https://library.bc.edu/images/career_logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-display: block;
-float: left;
-height: 125px;
-text-indent: -9999px;
-width: 125px;
-margin: -50px 0 0 0px;
+    background: url("https://library.bc.edu/images/career_logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    height: 125px;
+    text-indent: -9999px;
+    width: 125px;
+    margin: -50px 0 0 0px;
 }
 
 /* Tooltip */
@@ -920,17 +698,17 @@ li#new-catalog-promo {
 .edit-mode form #form-group-desc_pos .radio:nth-child(3) {display: none;}
 
 /* INFO BUTTON STYLE */
+// Edit page style
 a.more-info {display:inline-block; padding:0 8px 0 0; cursor:pointer; color:$black-text; text-shadow: 0 1px 0 $white-body; opacity:.6; font-size:14px;}
 a.more-info:hover {opacity:1; color: $black-text;}
+
+// Edit page modal window
 .box-value {padding-left:5px;}
 .box-label {width:100px; display:inline-block; text-align:right;}
 .box-value textarea {width:425px; height:78px; margin-left:110px;}
 
-/* FIXING ACTIVE SUBNAV MENUS AND BREADCRUMBS */
-#s-lib-bc-site,
-#s-lib-bc-group {display: none;}
-
 /* MAKE SURE GUIDE DESCRIPTION IS PROPERLY LABELED */
+// Edit page style
 .edit-mode #s-lg-guide-description {display:block;}
 .edit-mode #s-lg-guide-desc-container {width:70%; padding-bottom:20px; margin-top:-10px;}
 .edit-mode #s-lg-guide-desc-container::before {content: "Guide Description: ";}
@@ -985,27 +763,15 @@ $bc-brand-gold green
 #s-lg-guide-tabs ul.nav-tabs > li.active.has-active-child .dropdown-wrapper a.dropdown-toggle .caret {border-top:none; border-bottom:4px dashed;}
 
 /* updated style - 20170816 */
-//body {font-size:15px;}
-/*a, a:visited, .ui-widget-content a, .ui-widget-content a:visited {color:#337ab7;}*/
 #bclib-header-form .input-group-btn{width:1%;}
-//.megamenu-container {
-//    background-color: rgba(16,14,15,.90);
-//}
-/*h1, h2, h3,
-.s-lib-public-side-header h2 {color: $black-text; text-transform: none;}
-h4, h6 {font-weight: 400;}
-h3 {font-size:17px;}
-h4 {font-size:16px;}
-h5, h6 {font-size:15px;}
-h5 {font-weight:600;}*/
 
 .edit-mode .breadcrumb {display:none;}
 .edit-mode .s-lib-cmd-bar .navbar-collapse .navbar-nav {float: left!important;}
 .edit-mode #s-lg-guide-header-meta {display:none;}
 .edit-mode .s-lib-box-title {padding:3px 2px 3px 0; font-weight: normal;}
 
-#midlevelcontainer {margin: 80px auto 0 auto;}
-#midlevelcontainer-refresh {margin-top:1rem;}
+// #midlevelcontainer {margin: 80px auto 0 auto;}
+// #midlevelcontainer-refresh {margin-top:1rem;}
 .edit-mode #midlevelcontainer-refresh {margin-top:80px; margin-bottom:40px;}
 .bottom_row {background-color:$white-body;}
 .more a {
@@ -1016,42 +782,11 @@ h5 {font-weight:600;}*/
     border-bottom: none;
 }
 
-/*
-.col-md-12:first-of-type,
-.col-md-3:first-of-type,
-.col-md-4:first-of-type,
-.col-md-6:first-of-type {padding-left: 15px;}
-
-.col-md-12:last-of-type,
-.col-md-3:last-of-type,
-.col-md-4:last-of-type,
-.col-md-6:last-of-type {padding-right:15px;}
-
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-*/
-
-.s-lib-box-content {margin-bottom:1.5em;}
-
-.view-mode #content-refresh {padding-left:0; padding-right:0;}
-.view-mode #content {
-    margin: 0;
-    padding: 0 15px;
-    /* width: 980px; */
-     float: right;
-}
-
-// #content_container .row {padding-top:0; padding-bottom:0;}
-
-.s-lib-box-content .ui-widget {font-family:inherit;}
-
 /* Custom block header styling */
-.view-mode .s-lib-box .s-lib-box-title,
+//.view-mode .s-lib-box .s-lib-box-title,
 .edit-mode .s-lib-box .s-lib-box-title {margin-top:0; text-transform: none; border-bottom: 1px solid $very-light-gray; color: $black-text;}
 .edit-mode .s-lib-box .s-lib-box-title {font-size:18px; padding-bottom: 4px; margin-bottom: 8px;}
-.view-mode .s-lib-box .s-lib-box-title {font-size: 24px; font-weight: 200; margin: 0 0 .5rem 0; padding: .25rem 0 .5rem 0;}
+//.view-mode .s-lib-box .s-lib-box-title {font-size: 24px; font-weight: 200; margin: 0 0 .5rem 0; padding: .25rem 0 .5rem 0;}
 /* END Custom block header styling */
 
 footer {margin-top:1em;}
@@ -1063,8 +798,6 @@ footer h4 {margin:0 0 5px!important;}
 #lib-footer h4.orgname {margin:0 0 10px 0!important;}
 #lib-footer .address-wrap {padding-left:15px;}
 #socialmedia {margin:0; padding: 0 15px;}
-#guidetitle h1,
-#guidetitle h2 {text-transform:none;}
 
 @media (width: 768px) {
    #s-lg-guide-tabs .nav-tabs {display:block;}
@@ -1083,13 +816,6 @@ footer h4 {margin:0 0 5px!important;}
       padding-left:0;
    }
 }
-/*
-@media (min-width: 992px) {
-   #s-lg-guide-tabs.col-md-2 {
-       width: 16.66666667%;
-   }
-}
-*/
 @media print {
     /* profile boxes */
     .s-lib-profile-center, .s-lib-profile-widget {
