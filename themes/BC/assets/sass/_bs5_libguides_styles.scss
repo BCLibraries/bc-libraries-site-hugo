@@ -265,8 +265,9 @@ table.ckeditor-table {
 
 @media ( max-width: 768px ) {
     #s-lib-footer-login-link {
-    float: none;
-}}
+        float: none;
+    }
+}
 
 // Edit page style
 #s-lg-add-page-icon {
@@ -363,126 +364,165 @@ table.ckeditor-table {
 
 // Side navigation
 #s-lg-guide-tabs {
-    ul.nav-tabs { // AKA .nav
-        list-style: none outside none;
-        margin: 0;
-        padding: 0;
-        border-bottom: 0;
-
-        li {
-            display: list-item;
+    nav#side-nav {
+        ul.nav-tabs {
+            list-style: none outside none;
             margin: 0;
-            line-height: 1.75;
             padding: 0;
-            font-size: 1rem;
+            border-bottom: 0;
+            display: flex;
 
-            &.dropdown {
-                background: #E9E9E9;
+            li {
+                display: flex;
+                margin: 0 0 1px 0;
+                padding: 0;
+                line-height: 1.75;
+                font-size: 1rem;
+                flex: 1 0 100%;
+                flex-wrap: wrap;
+
+                .nav-link {
+                    transition: none;
+                }
 
                 a {
-                    &:hover {
+                    border-bottom: 1px solid $white-body;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    color: $black-text;
+                    padding: 10px 8px;
+                    text-decoration: none;
+                    width: 100%;
+                    background: #E9E9E9;
+                    border-radius: 0;
+                    margin-right: 0;
+                    outline: 0 none;
+
+                    &.dropdown-toggle {
+                        background: transparent;
+                    }
+
+                    /*&:hover {
+                        background: $bc-brand-gold;
+                        color: $black-text;
+                    }*/
+
+                    &:focus {
                         background: $bc-brand-gold;
                     }
                 }
-            }
 
-            &.active {
-                a {
-                    background: $red;
-                    color: $white-text;
-                    text-decoration: none;
+                // Dropdown menu styles
+                &.dropdown {
+                    background: #E9E9E9;
+
+                    // .dropdown-wrapper contains a.nav-link and a.dropdown-toggle links
+                    .dropdown-wrapper {
+                        position: relative;
+
+                        a {
+                            float: none!important; 
+                            display: table-cell; 
+                            color: $black-text;
+                        }
+
+                        // Toggle button placed next to the tab
+                        a.dropdown-toggle {
+                            vertical-align: middle;
+                            //transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+                        }
+                    }
+
+                    ul.wrapper-subitems {
+                        padding: 0;
+
+                        li.dropdown-item {
+                            a {
+                                padding-left: 1rem; 
+                                text-align: left;
+
+                                &::before {
+                                    content:"↳  "; position:relative;
+                                }
+
+                                &:focus {
+                                    background: $bc-brand-gold;
+                                }
+                            }
+                        }
+                    }
+
+                    // Toggle the caret glyph upward for active child or expanded dropdowns
+                    &.has-active-child,
+                    &.expanded {
+                        .dropdown-toggle {
+                            &::after {
+                                border-top: 0;
+                                border-right: .3em solid transparent;
+                                border-bottom: .3em solid;
+                                border-left: .3em solid transparent;
+                            }
+                        }
+                    }
                 }
-            }
 
-            a {
-                border-bottom: 1px solid $white-body;
-                border-top: none;
-                border-right: none;
-                border-left: none;
-                color: $black-text;
-                display: inline-block;
-                padding: 10px 8px;
-                text-decoration: none;
-                width: 100%;
-                background: #E9E9E9;
-                border-radius: 0;
-                margin-right: 0;
-                outline: 0 none;
-
-                &.dropdown-toggle {
-                    width: 20%;
-                    float: right;
-                    background: transparent;
-                }
-
-                &.pull-left {
-                    width: 80%;
-                    background: transparent;
-                }
-
-                &:hover {
-                    background: $bc-brand-gold;
+                // When the tab is active
+                &.active {
+                    > a {
+                        background: $red;
+                        color: $white-text;
+                        text-decoration: none;
+                    }
                 }
             }
         }
     }
 }
 
-#s-lg-guide-tabs .nav .dropdown-menu {
-    background-clip: padding-box;
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    display: none;
-    float: left;
-    font-size: 14px;
-    left: 0;
-    list-style: none outside none;
-    min-width: 160px;
-    width: 100%;
-    position: relative;
-    top: 100%;
-    z-index: 10;
-    padding: 0;
-}
+#s-lg-guide-tabs nav#side-nav ul.nav-tabs {
+    li a.nav-link {
+        display:flex;
+    }
 
-#s-lg-guide-tabs .dropdown-menu {
-    margin: 0 !important;
-}
+    /* grey - inactive */
+    //li.active.dropdown .dropdown-wrapper,
+    li.dropdown ul.wrapper-subitems li a {
+        background-color: #E9E9E9;
+        color: $black-text;
+    }
 
-#s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a,
-#s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a
- /*THIS IS THE DROP DOWN TAB ITSELF*/       {
-    clear: both;
-    color: $red;
-    display: block;
-    width: 100%;
-    padding: 5px 0;
-    white-space: nowrap;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    background: $bc-brand-gold;
-    height: 30px;
-    margin: 0;
-    box-shadow: none;
-}
+    /* maroon - active */
+    // li.active a,
+    li.active.dropdown.no-active-child .dropdown-wrapper,
+    li.active.dropdown.no-active-child .dropdown-wrapper a,
+    li.active.dropdown ul.wrapper-subitems li.active a {
+        background: $red;
+        cursor: pointer;
+        color: $white-text;
+    }
 
-#s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a:hover,
-#s-lg-guide-tabs .nav-tabs .active a .dropdown-menu > li > a:hover {
-    color: $white-text;
-}
+    /* gold - hoverover */
+    li a:hover,
+    li.dropdown ul.wrapper-subitems li a:hover,
+    li.active.dropdown ul.wrapper-subitems li a:hover,
+    li.dropdown .dropdown-wrapper:hover,
+    // li.dropdown .dropdown-wrapper:hover a,
+    li.active.dropdown .dropdown-wrapper:hover,
+    li.active.dropdown .dropdown-wrapper:hover a
+    {
+        background: $bc-brand-gold;
+        color: $black-text;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    }
 
-/* THIS CONTROLS THE SUBNAVS WHEN ACTIVE */
-#s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a.active {
-    background: $red;
-    color: $white-text;
-    text-decoration: none;
-}
-
-#s-lg-guide-tabs .nav-tabs .dropdown-menu > li > a.active:hover {
-    background: $bc-brand-gold;
+    /* hide/show blocks */
+    li.dropdown ul.wrapper-subitems {
+        display:none;
+    }
+    li.active.dropdown.has-active-child ul.wrapper-subitems {
+        display:block;
+    }
 }
 
 /* CSS TO TURN NAV TABS INTO NAV DROPDOWN */
@@ -713,54 +753,6 @@ a.more-info:hover {opacity:1; color: $black-text;}
 .edit-mode #s-lg-guide-desc-container {width:70%; padding-bottom:20px; margin-top:-10px;}
 .edit-mode #s-lg-guide-desc-container::before {content: "Guide Description: ";}
 span.pad-left-med.hitst {display: none;}
-
-/* GRACEFULLY HANDLE SUBPAGE NAVIGATION */
-/*
-#E9E9E9 gray
-$red red
-$bc-brand-gold green
-*/
-.dropdown-wrapper {position:relative;}
-#s-lg-guide-tabs .nav-tabs li a:focus {
-    background: $bc-brand-gold;
-}
-#s-lg-guide-tabs ul.nav-tabs > li a {display:block; height:100%;}
-#s-lg-guide-tabs ul.nav-tabs > li > .dropdown-wrapper a.dropdown-toggle {vertical-align:middle;}
-#s-lg-guide-tabs ul.nav-tabs > li > .dropdown-wrapper a {height:100%; width: 100%; float:none!important; display:table-cell; color: $black-text;}
-#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a::before {content:"↳  "; position:relative;}
-#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a .subitem {width:100%; height:100%; white-space:pre-line;}
-#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a {padding-left:10px!important; text-align: left;}
-#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a:focus,
-#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a:hover,
-#s-lg-guide-tabs ul.nav-tabs > li.active > ul.wrapper-subitems li.active a:hover,
-#s-lg-guide-tabs ul.nav-tabs > li.active > ul.wrapper-subitems li.active a:focus {
-    background: $bc-brand-gold;
-}
-
-/* grey - inactive */
-#s-lg-guide-tabs ul.nav-tabs > li.active .dropdown-wrapper,
-#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a {background-color: #E9E9E9; color: $black-text;}
-
-/* maroon - active */
-#s-lg-guide-tabs ul.nav-tabs > li.active.no-active-child > .dropdown-wrapper,
-#s-lg-guide-tabs ul.nav-tabs > li.active > ul.wrapper-subitems li.active a {background:$red; cursor:pointer; color:$white-text; width:100%}
-
-/* gold - hoverover */
-#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems li a:hover,
-#s-lg-guide-tabs ul.nav-tabs > li.active > ul.wrapper-subitems li a:hover,
-#s-lg-guide-tabs ul.nav-tabs > li.active .dropdown-wrapper:hover {background: $bc-brand-gold; color: $black-text;}
-
-/* force active to always have white font */
-#s-lg-guide-tabs ul.nav-tabs > li.active.no-active-child .dropdown-wrapper a,
-#s-lg-guide-tabs ul.nav-tabs > li.active > ul.wrapper-subitems li.active a:hover,
-#s-lg-guide-tabs ul.nav-tabs > li.active.no-active-child .dropdown-wrapper a:hover {color:$white-text;}
-
-/* hide/show blocks */
-#s-lg-guide-tabs ul.nav-tabs > li > ul.wrapper-subitems {display:none;}
-#s-lg-guide-tabs ul.nav-tabs > li.active.has-active-child > ul.wrapper-subitems {display:block;}
-
-.caret-up,
-#s-lg-guide-tabs ul.nav-tabs > li.active.has-active-child .dropdown-wrapper a.dropdown-toggle .caret {border-top:none; border-bottom:4px dashed;}
 
 /* updated style - 20170816 */
 #bclib-header-form .input-group-btn{width:1%;}
