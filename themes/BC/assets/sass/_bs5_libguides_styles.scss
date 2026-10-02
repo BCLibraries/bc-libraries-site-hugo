@@ -362,6 +362,11 @@ table.ckeditor-table {
     }
 }
 
+@mixin sidenav-hover() {
+    background: $bc-brand-gold;
+    color: $black-text;
+}
+
 // Side navigation
 #s-lg-guide-tabs {
     nav#side-nav {
@@ -376,7 +381,7 @@ table.ckeditor-table {
                 display: flex;
                 margin: 0 0 1px 0;
                 padding: 0;
-                line-height: 1.75;
+                line-height: 1.5;
                 font-size: 1rem;
                 flex: 1 0 100%;
                 flex-wrap: wrap;
@@ -391,22 +396,18 @@ table.ckeditor-table {
                     border-right: none;
                     border-left: none;
                     color: $black-text;
-                    padding: 10px 8px;
+                    padding: .625rem .5rem; // 10px 8px
                     text-decoration: none;
                     width: 100%;
                     background: #E9E9E9;
                     border-radius: 0;
                     margin-right: 0;
                     outline: 0 none;
+                    display: flex;
 
-                    &.dropdown-toggle {
-                        background: transparent;
+                    &:hover {
+                        @include sidenav-hover();
                     }
-
-                    /*&:hover {
-                        background: $bc-brand-gold;
-                        color: $black-text;
-                    }*/
 
                     &:focus {
                         background: $bc-brand-gold;
@@ -415,22 +416,37 @@ table.ckeditor-table {
 
                 // Dropdown menu styles
                 &.dropdown {
-                    background: #E9E9E9;
-
                     // .dropdown-wrapper contains a.nav-link and a.dropdown-toggle links
                     .dropdown-wrapper {
-                        position: relative;
-
                         a {
                             float: none!important; 
-                            display: table-cell; 
-                            color: $black-text;
+                            display: table-cell;
+
+                            &.dropdown-toggle {
+                                vertical-align: middle;
+                            }
                         }
 
-                        // Toggle button placed next to the tab
-                        a.dropdown-toggle {
-                            vertical-align: middle;
-                            //transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+                        &:hover {
+                            > a {
+                                @include sidenav-hover();
+                            }
+                        }
+                    }
+
+                    &.active:not(.has-active-child) {
+                        .dropdown-wrapper {
+                            > a {
+                                background: $red;
+                                color: $white-text;
+                                text-decoration: none;
+                            }
+
+                            &:hover {
+                                > a {
+                                    @include sidenav-hover();
+                                }
+                            }
                         }
                     }
 
@@ -444,10 +460,6 @@ table.ckeditor-table {
 
                                 &::before {
                                     content:"↳  "; position:relative;
-                                }
-
-                                &:focus {
-                                    background: $bc-brand-gold;
                                 }
                             }
                         }
@@ -473,55 +485,22 @@ table.ckeditor-table {
                         background: $red;
                         color: $white-text;
                         text-decoration: none;
+
+                        &:hover {
+                            @include sidenav-hover();
+                        }
                     }
                 }
             }
+
+            /* hide/show blocks */
+            li.dropdown ul.wrapper-subitems {
+                display:none;
+            }
+            li.active.dropdown.has-active-child ul.wrapper-subitems {
+                display:block;
+            }
         }
-    }
-}
-
-#s-lg-guide-tabs nav#side-nav ul.nav-tabs {
-    li a.nav-link {
-        display:flex;
-    }
-
-    /* grey - inactive */
-    //li.active.dropdown .dropdown-wrapper,
-    li.dropdown ul.wrapper-subitems li a {
-        background-color: #E9E9E9;
-        color: $black-text;
-    }
-
-    /* maroon - active */
-    // li.active a,
-    li.active.dropdown.no-active-child .dropdown-wrapper,
-    li.active.dropdown.no-active-child .dropdown-wrapper a,
-    li.active.dropdown ul.wrapper-subitems li.active a {
-        background: $red;
-        cursor: pointer;
-        color: $white-text;
-    }
-
-    /* gold - hoverover */
-    li a:hover,
-    li.dropdown ul.wrapper-subitems li a:hover,
-    li.active.dropdown ul.wrapper-subitems li a:hover,
-    li.dropdown .dropdown-wrapper:hover,
-    // li.dropdown .dropdown-wrapper:hover a,
-    li.active.dropdown .dropdown-wrapper:hover,
-    li.active.dropdown .dropdown-wrapper:hover a
-    {
-        background: $bc-brand-gold;
-        color: $black-text;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-    }
-
-    /* hide/show blocks */
-    li.dropdown ul.wrapper-subitems {
-        display:none;
-    }
-    li.active.dropdown.has-active-child ul.wrapper-subitems {
-        display:block;
     }
 }
 
