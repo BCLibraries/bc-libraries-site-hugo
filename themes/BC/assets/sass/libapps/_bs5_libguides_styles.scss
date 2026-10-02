@@ -1,0 +1,457 @@
+@charset "utf-8";
+
+/* IMPORTANT NOTES
+
+COLORS:
+MAROON: $bc-brand-maroon
+DARK MAROON: $bc-primary-dark-red
+GOLD: $bc-brand-gold
+BC GRAY: #444444
+BLUE: $dark-blue-green
+LITE BLUE: #32758f
+
+MAIN MEDIA QUERY SIZES:;
+
+@media ( max-width: 1199px ) {
+}
+
+@media ( max-width: 768px ) {
+}
+*/
+
+.grayed {
+    color: #ababab !important;
+    cursor: default;
+}
+
+hr {
+    border-image: none;
+    border: 0 none $very-light-gray;
+    border-top: 2px solid;
+    margin-top: 0;
+}
+
+// Unsure
+.mainhomepage hr {
+    border-color: $very-light-gray;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 2px 0 0;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.panel-body h2:first-child,
+.panel-body h3:first-child,
+.panel-body h4:first-child {margin-top: .25rem;}
+
+img.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.clear {
+    &:before,
+    &:after {
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.accessibility-text {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* UNDER HEADER */ /* LIBGUIDES - KEEP */
+
+// Breadcrumb styles
+#s-lib-bc-list {
+    > .active {
+        color: $wcagaa-compliant-gray-text;
+    }
+
+    #s-lib-bc-page {
+        font-size: 1rem;
+    }
+
+    #s-lib-bc-site,
+    #s-lib-bc-group {
+        display: none;
+    }
+}
+
+// Unsure
+.pageurl {
+    color: #666;
+    float: right;
+    max-width: 599px;
+}
+@media ( max-width: 768px ) {
+    .pageurl {
+        color: #666;
+        float: none;
+        max-width: 599px;
+        margin: 0 0 0 5px;
+    }
+}
+
+// Guide title styles
+#guidetitle {
+    h1 {
+        display: inline-block;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 2rem;
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    .colon {
+        font-size: 2rem;
+        display: inline-block;
+    }
+}
+
+// Allow guide description to be visible
+/*#s-lg-guide-description {
+    display: none;
+}*/
+
+// Edit page style
+#s-lg-guide-tabs-title-bar {
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+// Public view mode styles
+.view-mode {
+    #s-lg-guide-tabs-title-bar {
+        padding: 0;
+        margin: 0 0 0 0;
+        border-top: 0;
+    }
+
+    .libhomepage .s-lib-box-title {
+        display: none !important;
+    }
+
+    // These styles might conflict with LibGuides custom box heading settings
+    .s-lib-box .s-lib-box-title {
+        border-radius: 0 0 0 0;
+        line-height: 1.15;
+        background: none;
+        text-transform: none; 
+        border-bottom: 1px solid $very-light-gray; 
+        color: $black-text;
+        font-size: 1.5rem; 
+        font-weight: 200; 
+        margin: 0 0 .5rem 0; 
+        padding: .25rem 0 .5rem 0;
+    }
+}
+
+// Not used anymore
+.pad-top-med {
+    padding-top: 0;
+}
+
+// Profile box
+.s-lib-profile-container {
+    margin-bottom: 2rem;
+
+    .s-lib-profile-email .label-info, 
+    .s-lib-profile-widget .label-info {
+        background: $dark-blue-green;
+        border-bottom: 4px solid #04394e;
+    }
+
+    .s-lib-profile-email .label, 
+    .s-lib-profile-widget .label {
+        border-radius: 0;
+        color: $white-text;
+        display: inline;
+        font-size: 14px !important;
+        font-weight: normal;
+        line-height: 1;
+        padding: 10px 15px;
+        text-align: center;
+        vertical-align: baseline;
+        white-space: nowrap;
+    }
+
+    .s-lib-profile-image img {
+        background-color: $white-body;
+        border: 1px solid #a9a9a9;
+        box-shadow: 3px 3px 4px #aaa;
+        max-width: 95%;
+        padding: 4px;
+    }
+
+    .label-info[href]:focus, 
+    .label-info[href]:hover {
+        background-color: #32758f;
+        border-bottom: 2px solid $dark-blue-green;
+    }
+}
+
+@media ( max-width: 768px ) {
+    .s-lib-profile-image img {
+        max-width: 300px;
+    }
+}
+
+// Footer metadata
+#s-lg-guide-header-meta {
+    font-size:.85em;
+    display: flex;
+    justify-content: space-between;
+
+    hr {
+        margin: 5px 0;
+    }
+
+    #s-lg-guide-header-attributes {
+        padding: 0;
+    }
+
+    #s-lib-footer-login-link {
+        padding-right: 0px;
+    }
+}
+
+@media ( max-width: 768px ) {
+    #s-lib-footer-login-link {
+        float: none;
+    }
+}
+
+// unsure
+.s-lg-link-list {
+    margin-bottom: 0;
+}
+
+.pager .previous > a, .pager .previous > span /* OVERWRITES PREVIOUS BUTTON */       {
+    float: left;
+}
+
+.pager .next > a, .pager .next > span /* OVERWRITES NEXT BUTTON */      {
+    float: right;
+}
+
+.pager li > a, .pager li > span /* OVERWRITES PREVIOUS/NEXT BUTTON STYLES*/      {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    display: inline-block;
+    padding: 0;
+    font-size: 17px;
+}
+
+.pager li > a:hover, .pager li > a:focus {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+// Unsure
+#s-lg-box-top {
+    margin: 0;
+    padding: 0 .625rem; // 10px
+}
+
+// Required
+.s-lib-box {
+    box-shadow: none;
+    border: 0;
+    margin: 0;
+    color: #151515;
+
+    .s-lib-box-content {
+        padding: 0 1rem 0 0;
+        margin: 0 0 1.5rem 0;
+
+        .ui-widget {
+            font-family:inherit;
+        }
+    }
+}
+
+/* CODE FOR THE SUBJECT PAGES DROPDOWN IN LIBGUIDES */
+
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+
+/* CUSTOM LIBGUIDES PAGE CSS */ /* LIBGUIDES - KEEP */
+
+/* CODE FOR BURNS HOMEPAGE AND JOBS HOMEPAGE */
+
+#s-lg-content-12755569 img {height:auto!important;}
+#s-lg-box-collapse-6437327 {background-color:#eee; padding:20px 0 10px 30px;}
+.column-container { width:100%; background-color:#eee;}
+.column-container-inner {padding:20px 10px 20px 20px}
+.column-container .column {padding:0; background-color:#eee;}
+.column .inner {min-height:172px; padding:0 10px 10px 0;}
+.column .column-content {padding:0; min-height: inherit; margin-bottom:0;}
+.column .inner.first {}
+.column .inner.last {}
+.inner .text {padding:20px 0 0 16px; font-size:18px; line-height:24px;}
+.inner .image {position: relative; width: 100%; /* for IE 6 */}
+.image img {height:auto!important;}
+
+.inner h2 {
+   position: absolute;
+   top: 150px;
+   left: 0;
+   width: 100%;
+}
+
+.inner .image h2 span {
+   color: white;
+   font: bold 24px/45px Arial, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+.inner p {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    display: inline-block;
+    left: 0;
+    margin: 0;
+    padding: 10px 10px 10px 5px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.inner .image p span {
+   color: white;
+   font: bold 15px/20px Arial,Sans-Serif;
+   letter-spacing: -1px;
+}
+
+#s-lg-box-wrapper-7568497,
+#s-lg-box-wrapper-7613059 {
+    margin-bottom:20px;
+}
+
+.searchbox-container {
+    height:70px;
+
+    .sb-search {
+        right: 0;
+    }
+
+    input.sb-search-input {
+        width:100%;
+    }
+}
+
+
+/* RESPONSIVE YOUTUBE EMBED CODE -
+COULD BE USEFUL ELSEWHERE  */
+/* REVIEW */
+.video-container {
+    position: relative;
+    max-width: 853px;
+    max-height: 480px;
+    margin: 0 auto;
+}
+
+@media ( max-width: 1199px ) {
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        max-width: 853px;
+        max-height: 480px;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* LIBRARY EXHIBITS STYLES */
+/* REVIEW */
+/*
+html {
+    overflow-x: hidden;
+}
+*/
+
+/* CAREER */ /* LIBGUIDES - KEEP */
+
+.career #fakebctitle {
+    display: none;
+}
+
+.career #librarytitle a h1 {
+    background: url("https://library.bc.edu/images/career_logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    height: 125px;
+    text-indent: -9999px;
+    width: 125px;
+    margin: -50px 0 0 0px;
+}
+
+/* Tooltip */
+.tooltip-inner {
+  background-color: #fff8c4;
+  font-size: 120%;
+  color: #151515;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #fff8c4;
+}
+.tooltip-inner a {
+  color: $dark-blue-green;
+}
+
+li#new-catalog-promo {
+    background-color: lightyellow;
+    padding: 1em;
+}
+
+/* additional styling 2017-09-05 */
+.s-lib-profile-image img {
+    max-height:400px!important;
+}
+
+#s-lib-scroll-top {
+    z-index: 10;
+    right: 50px;
+}
+@media (min-width: 901px) {
+    /* reposition scroll-to-top button */
+    #s-lib-scroll-top {
+        bottom: 25%;
+    }
+}

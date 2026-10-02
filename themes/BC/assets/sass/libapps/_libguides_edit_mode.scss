@@ -1,0 +1,102 @@
+table.ckeditor-table {
+    width: 100% !important;
+    border-collapse: collapse;
+}
+
+#s-lg-add-page-icon {
+    margin: 0;
+    display: inline;
+    font-size: 12px;
+}
+
+#s-lg-admin-tab-add {
+    padding: 4px;
+    margin: 0;
+    border: 2px solid $bc-brand-gold;
+
+    a {
+        border: none;
+        color: #444;
+
+        &:hover {
+            border: none;
+            color: $white-text;
+        }
+    }
+}
+
+#cke_s-lg-editor-content .cke_combo__font,
+#cke_s-lg-editor-content .cke_combo__fontsize {
+    display: none;
+}
+
+.edit-mode .s-lib-box-title
+/* EFFECTS BOX TITLES. USES BOOTSTRAP STYLE WHEN IN EDIT MODE */       {
+    border-bottom: 1px solid #CCC;
+    padding: 3px 8px;
+    /*font-size: 13px;
+    color: #333;*/
+    background: $white-body;
+}
+
+
+/* HIDE DESCRIPTION DISPLAY OPTIONS THAT USE HOVER OVER SINCE IT ISNT ACCESSIBLE */
+.edit-mode form #form-group-desc_pos .radio:nth-child(2),
+.edit-mode form #form-group-desc_pos .radio:nth-child(3) {display: none;}
+
+/* INFO BUTTON STYLE */
+a.more-info {display:inline-block; padding:0 8px 0 0; cursor:pointer; color:$black-text; text-shadow: 0 1px 0 $white-body; opacity:.6; font-size:14px;}
+a.more-info:hover {opacity:1; color: $black-text;}
+
+// Edit page modal window
+.box-value {padding-left:5px;}
+.box-label {width:100px; display:inline-block; text-align:right;}
+.box-value textarea {width:425px; height:78px; margin-left:110px;}
+
+/* MAKE SURE GUIDE DESCRIPTION IS PROPERLY LABELED */
+.edit-mode #s-lg-guide-description {display:block;}
+.edit-mode #s-lg-guide-desc-container {width:70%; padding-bottom:20px; margin-top:-10px;}
+.edit-mode #s-lg-guide-desc-container::before {content: "Guide Description: ";}
+span.pad-left-med.hitst {display: none;}
+
+.edit-mode .breadcrumb {display:none;}
+.edit-mode .s-lib-cmd-bar .navbar-collapse .navbar-nav {float: left!important;}
+.edit-mode #s-lg-guide-header-meta {display:none;}
+.edit-mode .s-lib-box-title {padding:3px 2px 3px 0; font-weight: normal;}
+
+.edit-mode #midlevelcontainer-refresh {margin-top:80px; margin-bottom:40px;}
+.bottom_row {background-color:$white-body;}
+.more a {
+    background: inherit;
+    display: inline;
+    padding: 0;
+    width: auto;
+    border-bottom: none;
+}
+
+.edit-mode .s-lib-box .s-lib-box-title {margin-top:0; text-transform: none; border-bottom: 1px solid $very-light-gray; color: $black-text;}
+.edit-mode .s-lib-box .s-lib-box-title {font-size:18px; padding-bottom: 4px; margin-bottom: 8px;}
+
+@media (min-width: 768px) {
+  .edit-mode .navbar-nav {
+      float: none;
+  }
+}
+
+/* 2018-03-26 */
+.edit-mode ul.s-lg-link-list-10 li div.dropdown:before {
+    font-family: FontAwesome;
+    content: "\f1c0 ";
+    padding-right: 6px;
+}
+
+/* add fixed position chat box on all pages */
+.edit-mode .libraryh3lp {
+    display:none;
+}
+
+// Unsure
+#s-lg-guide-header-search /* THIS DISPLAYS THE VIEW/EDIT/PUBLISH BUTTONS WHEN EDITING. */       {
+    float: right;
+    margin: 20px;
+}

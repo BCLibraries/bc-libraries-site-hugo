@@ -1,0 +1,20 @@
+@media print {
+    /* profile boxes */
+    .s-lib-profile-center, .s-lib-profile-widget {
+        text-align:left!important;
+    }
+    .s-lib-profile-div.s-lib-profile-image img {
+        width:20%!important;
+    }
+   .s-lib-profile-div.s-lib-profile-name {
+        margin-bottom:0 !important;
+    }
+    .s-lib-profile-div.s-lib-profile-email {
+       margin: 2em 0!important;
+    }
+    .s-lib-profile-div.s-lib-profile-email a {
+       border: none!important;
+       padding: 0!important;
+       margin: 0!important;
+    }
+} 

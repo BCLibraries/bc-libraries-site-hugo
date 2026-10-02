@@ -1,0 +1,163 @@
+@mixin sidenav-hover() {
+    background: $bc-brand-gold;
+    color: $black-text;
+}
+
+#s-lg-guide-tabs {
+    nav#side-nav {
+        ul.nav-tabs {
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+            border-bottom: 0;
+            display: flex;
+
+            li {
+                display: flex;
+                margin: 0 0 1px 0;
+                padding: 0;
+                line-height: 1.5;
+                font-size: 1rem;
+                flex: 1 0 100%;
+                flex-wrap: wrap;
+
+                .nav-link {
+                    transition: none;
+                }
+
+                a {
+                    border-bottom: 1px solid $white-body;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    color: $black-text;
+                    padding: .625rem .5rem; // 10px 8px
+                    text-decoration: none;
+                    width: 100%;
+                    background: #E9E9E9;
+                    border-radius: 0;
+                    margin-right: 0;
+                    outline: 0 none;
+                    display: flex;
+
+                    &:hover {
+                        @include sidenav-hover();
+                    }
+
+                    &:focus {
+                        background: $bc-brand-gold;
+                    }
+                }
+
+                // Dropdown menu styles
+                &.dropdown {
+                    // .dropdown-wrapper contains a.nav-link and a.dropdown-toggle links
+                    .dropdown-wrapper {
+                        a {
+                            float: none!important; 
+                            display: table-cell;
+
+                            &.dropdown-toggle {
+                                vertical-align: middle;
+                            }
+                        }
+
+                        &:hover {
+                            > a {
+                                @include sidenav-hover();
+                            }
+                        }
+                    }
+
+                    &.active:not(.has-active-child) {
+                        .dropdown-wrapper {
+                            > a {
+                                background: $red;
+                                color: $white-text;
+                                text-decoration: none;
+                            }
+
+                            &:hover {
+                                > a {
+                                    @include sidenav-hover();
+                                }
+                            }
+                        }
+                    }
+
+                    ul.wrapper-subitems {
+                        padding: 0;
+
+                        li.dropdown-item {
+                            a {
+                                padding-left: 1rem; 
+                                text-align: left;
+
+                                &::before {
+                                    content:"↳  "; position:relative;
+                                }
+                            }
+                        }
+                    }
+
+                    // Toggle the caret glyph upward for active child or expanded dropdowns
+                    &.has-active-child,
+                    &.expanded {
+                        .dropdown-toggle {
+                            &::after {
+                                border-top: 0;
+                                border-right: .3em solid transparent;
+                                border-bottom: .3em solid;
+                                border-left: .3em solid transparent;
+                            }
+                        }
+                    }
+                }
+
+                // When the tab is active
+                &.active {
+                    > a {
+                        background: $red;
+                        color: $white-text;
+                        text-decoration: none;
+
+                        &:hover {
+                            @include sidenav-hover();
+                        }
+                    }
+                }
+            }
+
+            /* hide/show blocks */
+            li.dropdown ul.wrapper-subitems {
+                display:none;
+            }
+            li.active.dropdown.has-active-child ul.wrapper-subitems {
+                display:block;
+            }
+        }
+
+        select#guide-nav-mobile {
+            display: none;
+        }
+    }
+}
+
+@media ( max-width: 767px ) {
+    #s-lg-guide-tabs {
+        nav#side-nav {
+            // Hide the nav tabs on mobile devices
+            ul.nav-tabs {
+                display: none;
+            }
+
+            // Display the mobile dropdown nav
+            select#guide-nav-mobile {
+                display: block;
+                height: 2rem;
+                padding: 0;
+                width: 100%;
+            }
+        }
+    }
+}
