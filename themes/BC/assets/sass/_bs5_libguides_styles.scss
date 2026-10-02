@@ -501,20 +501,29 @@ table.ckeditor-table {
                 display:block;
             }
         }
+
+        select#guide-nav-mobile {
+            display: none;
+        }
     }
 }
 
-/* CSS TO TURN NAV TABS INTO NAV DROPDOWN */
-nav select {
-    display: none;
-}
-@media ( max-width: 768px ) {
-    nav select {
-        display: block;
-        height: 24px;
-        padding: 2px 4px;
-        width: 100%;
-        margin: 0 0 20px 0;
+@media ( max-width: 767px ) {
+    #s-lg-guide-tabs {
+        nav#side-nav {
+            // Hide the nav tabs on mobile devices
+            ul.nav-tabs {
+                display: none;
+            }
+
+            // Display the mobile dropdown nav
+            select#guide-nav-mobile {
+                display: block;
+                height: 2rem;
+                padding: 0;
+                width: 100%;
+            }
+        }
     }
 }
 
