@@ -40,35 +40,64 @@
         background: $white-body;
         font-size: 1.25rem;
         font-weight: normal;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     // Hide description display options that use hover over since it isn't accessible
     form #form-group-desc_pos .radio:nth-child(2),
     form #form-group-desc_pos .radio:nth-child(3) {display: none;}
 
-    /* INFO BUTTON STYLE */
-    a.more-info {display:inline-block; padding:0 8px 0 0; cursor:pointer; color:$black-text; text-shadow: 0 1px 0 $white-body; opacity:.6; font-size:14px;}
-    a.more-info:hover {opacity:1; color: $black-text;}
-
-    .more a {
-        background: inherit;
-        display: inline;
-        padding: 0;
-        width: auto;
-        border-bottom: none;
+    // Box edit button container
+    .float-end {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto; // Push the float-end container to the right
     }
 
-    // Edit page modal window
+    // Box Edit button
+    .s-lg-edit-link {
+        font-size: 1rem;
+        padding: 0 .75rem 0 0; // 0 12px 0 0
+        top: 0;
+        align-self: center;
+    }
+
+    // Box Delete button
+    .s-lib-box-title button {
+        font-size: 1rem;
+    }
+
+    // Box Info button ; not used
+    a.more-info {
+        display: inline-block;
+        padding: 0 .75rem 0 0; // 0 12px 0 0
+        cursor: pointer;
+        color: $black-text;
+        text-shadow: 0 1px 0 $white-body;
+        opacity: .6;
+        font-size: 1.125rem;
+
+        &:hover {
+            opacity: 1;
+            color: $black-text;
+        }
+    }
+
+    // Box Info modal window; unused
     .box-value {padding-left:5px;}
     .box-label {width:100px; display:inline-block; text-align:right;}
     .box-value textarea {width:425px; height:78px; margin-left:110px;}
 
-    // Guide title and description styling
+    // Guide title
     #guidetitle {
         margin-bottom: .5rem;
         cursor: pointer;
     }
 
+    // Guide description container
     #s-lg-guide-desc-container {
         margin-bottom: -.75rem;
 
@@ -83,7 +112,7 @@
     }
 
     // unsure
-    span.pad-left-med.hitst {display: none;}
+    // span.pad-left-med.hitst {display: none;}
 
     // Hide breadcrumb navigation
     .breadcrumb {
@@ -92,33 +121,38 @@
 
     // Hide footer metadata and login links
     #s-lg-guide-header-meta {
-        display:none;
+        display: none;
     }
 
+    // Add spacing below the midlevel container
     #midlevelcontainer-refresh {
         margin-bottom: 3rem;
     }
 
     // unsure
-    .bottom_row {
-        background-color:$white-body;
-    }
-
-    @media (min-width: 768px) {
-        .navbar-nav {
-            float: none;
-        }
-    }
+    //.bottom_row {background-color:$white-body;}
 
     // Add database icon for database assets
     ul.s-lg-link-list-10 li div.dropdown:before {
         font-family: FontAwesome;
         content: "\f1c0 ";
-        padding-right: 6px;
+        padding-right: .375rem; // 6px
     }
 
-    // Hide libraryh3lp modal dialog box
+    // Hide libraryh3lp side button
     .libraryh3lp {
         display: none;
+    }
+
+    // Add styling for box containers
+    .s-lib-box-container {
+        margin-bottom: 1rem;
+        padding: .25rem; // 4px
+        border: 1px dashed lightblue;
+    }
+
+    // Add spacing below the rich-text sections
+    .s-lg-guide-admin-content-rt {
+        margin-bottom: .5rem; // 8px
     }
 }
