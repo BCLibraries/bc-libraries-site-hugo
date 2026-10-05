@@ -53,6 +53,8 @@
                 &.dropdown {
                     // .dropdown-wrapper contains a.nav-link and a.dropdown-toggle links
                     .dropdown-wrapper {
+                        flex: 1 0 100%;
+
                         a {
                             float: none!important; 
                             display: table-cell;
