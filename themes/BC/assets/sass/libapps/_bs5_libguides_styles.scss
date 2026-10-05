@@ -19,6 +19,14 @@ MAIN MEDIA QUERY SIZES:;
 }
 */
 
+html {
+    background-color: #fff;
+}
+
+html.js {
+    display:none;
+}
+
 .grayed {
     color: #ababab !important;
     cursor: default;
@@ -29,6 +37,33 @@ hr {
     border: 0 none $very-light-gray;
     border-top: 2px solid;
     margin-top: 0;
+}
+
+blockquote {
+    font-size: 14px; margin: 1.5rem 0;
+}
+
+dl {
+    &.bulleted {
+        margin: 0 0 0 1.875rem; // 30px
+
+        dt {
+            display: list-item;
+            list-style-type: disc;
+        }
+
+        dd {
+            padding-bottom: .25rem; // 4px
+        }
+    }
+}
+
+dt.highlight {
+   font-size: 22px;
+   font-weight: 200;
+}
+dt.strong-first-letter::first-letter {
+   font-weight: 600;
 }
 
 // Unsure
@@ -65,6 +100,15 @@ table {
     &:after {
         clear: both;
     }
+}
+
+#iframe-message {
+    background-color:#fffdf6;
+    border:1px solid #ffeaae;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding:20px;
+    margin:-15px 0 20px 0;
 }
 
 .accessibility-text {
@@ -454,4 +498,13 @@ li#new-catalog-promo {
     #s-lib-scroll-top {
         bottom: 25%;
     }
+}
+
+// unsure
+.s-lg-rss-links {
+    display: none;
+}
+
+.s-lg-poll-title legend {
+    font-size:inherit;
 }
