@@ -90,9 +90,25 @@ img.center {
     display: block;
 }
 
-table {
+table,
+table.table {
     width: 100%;
     border-collapse: collapse;
+    border: 1px solid $very-light-gray;
+    margin-bottom: .75rem;
+
+    td, th {
+        padding: .5rem;
+        border: 1px solid $very-light-gray;
+    }
+
+    td {
+        vertical-align: top;
+    }
+
+    th {
+        background-color: #E9E9E9;
+    }
 }
 
 .clear {
