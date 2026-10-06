@@ -207,10 +207,14 @@ table {
         text-transform: none; 
         border-bottom: 1px solid $very-light-gray; 
         color: $black-text;
-        font-size: 1.5rem; 
+        font-size: 1.75rem; 
         font-weight: 200; 
-        margin: 0 0 .5rem 0; 
-        padding: .25rem 0 .5rem 0;
+        margin: -.375rem 0 .5rem 0; // 6px 0 8px 0
+        padding: 0 0 .5rem 0; // 0 0 8px 0
+    }
+
+    .s-lib-box-container {
+        margin-bottom: .75rem;
     }
 }
 
