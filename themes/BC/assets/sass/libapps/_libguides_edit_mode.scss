@@ -155,4 +155,58 @@
     .s-lg-guide-admin-content-rt {
         margin-bottom: .5rem; // 8px
     }
+
+    // SpringShare has a bug where the navbar-collapse does not display when the width is exactly 992px
+    @media (min-width: 992px) {
+        .navbar-collapse.collapse {
+            display: flex !important;
+        }
+    }
+
+    @media (max-width: 991px) {
+        // Fix how the mini command bar is displayed on smaller screens
+        #s-lg-guide-mini-cmd-bar {
+            .guide-toolbar {
+                align-items: flex-start;
+
+                // The immediate next <div> element is the "Last Updated" string
+                > div {
+                    padding-top: 1rem;
+                    line-height: 1;
+                }
+            }
+
+            nav.navbar {
+                .container-fluid {
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+
+    // LibGuides page configuration panel
+    #s-lg-guide-tabs-title-bar {
+        .navbar-nav {
+            padding-left: 1rem;
+        }
+
+        #s-lg-page-friendly-anchor {
+            margin-left: 0!important;
+        }
+
+        #pageDropdown {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+    @media (min-width: 992px) {
+        #s-lg-guide-tabs-title-bar {
+            .navbar-expand-lg .navbar-nav {
+                align-items: center;
+                padding-left: 0;
+            }
+        }
+    }
 }
