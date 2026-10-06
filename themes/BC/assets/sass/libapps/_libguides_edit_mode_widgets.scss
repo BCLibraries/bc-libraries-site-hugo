@@ -54,7 +54,19 @@
 
         .panel {
             .panel-heading {
-                padding: 1rem;
+                padding: 1rem 0;
+            }
+
+            .panel-body {
+                h4 {
+                    font-size: 1rem;
+                }
+
+                pre {
+                    border: 1px solid #ccc;
+                    border-radius: .25rem;
+                    padding: 1rem;
+                }
             }
         }
 
