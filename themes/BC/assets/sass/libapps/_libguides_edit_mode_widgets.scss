@@ -1,182 +1,183 @@
-/* for use in LibGuides edit-mode for various custom widget */
-#bc-custom-bar {
-    min-height: 7.5rem; // 120px
+.edit-mode {
+    #bc-custom-bar {
+        min-height: 7.5rem; // 120px
 
-    .bc-custom-bar-item {
-        margin: 0 0 1.25rem 0; // 0 0 20px 0
-    }
-
-    .ui-accordion-header {
-        background: #d9edf7;
-        padding: 1rem 0 1rem 1rem; // 16px 0 16px 16px
-        border-radius: .5rem; // 8px
-        margin-bottom: 0;
-
-        .ui-icon {
-            background-image: none;
+        .bc-custom-bar-item {
+            margin: 0 0 1.25rem 0; // 0 0 20px 0
         }
 
-        &::before {
-            font-family: FontAwesome;
-            content: "\f0d7"; // down caret
-        }
+        .ui-accordion-header {
+            background: #d9edf7;
+            padding: 1rem 0 1rem 1rem; // 16px 0 16px 16px
+            border-radius: .5rem; // 8px
+            margin-bottom: 0;
 
-        &.ui-state-active {
-            color: inherit;
-            border-radius: .5rem .5rem 0 0; // 8px 8px 0 0
+            .ui-icon {
+                background-image: none;
+            }
 
             &::before {
                 font-family: FontAwesome;
-                content: "\f0d8"; // up caret
+                content: "\f0d7"; // down caret
+            }
+
+            &.ui-state-active {
+                color: inherit;
+                border-radius: .5rem .5rem 0 0; // 8px 8px 0 0
+
+                &::before {
+                    font-family: FontAwesome;
+                    content: "\f0d8"; // up caret
+                }
             }
         }
-    }
-
-    .ui-accordion-content {
-        background: #f8f8f8;
-    }
-
-    .pass-test {
-        font-weight: 600;
-    }
-
-    .whatisthis {
-        text-align: right;
-    }
-
-    .ui-state-disabled, 
-    .ui-widget-content .ui-state-disabled, 
-    .ui-widget-header .ui-state-disabled {
-        opacity: .95;
-        filter: Alpha(Opacity=95);
-        color: #333;
-    }
-
-    .panel {
-        .panel-heading {
-            padding: 1rem;
-        }
-    }
-
-    .panel-content {
-        padding: 1rem;
 
         .ui-accordion-content {
-            margin-bottom: 1rem;
-            background-color: #f8f8f8;
+            background: #f8f8f8;
         }
 
-        .ui-accordion {
-            margin-bottom: 1.25rem; // 20px
+        .pass-test {
+            font-weight: 600;
+        }
 
-            p.test-help {
-                margin-top: .125rem; // 2px
+        .whatisthis {
+            text-align: right;
+        }
+
+        .ui-state-disabled, 
+        .ui-widget-content .ui-state-disabled, 
+        .ui-widget-header .ui-state-disabled {
+            opacity: .95;
+            filter: Alpha(Opacity=95);
+            color: #333;
+        }
+
+        .panel {
+            .panel-heading {
+                padding: 1rem;
+            }
+        }
+
+        .panel-content {
+            padding: 1rem;
+
+            .ui-accordion-content {
+                margin-bottom: 1rem;
+                background-color: #f8f8f8;
             }
 
-            .status {
-                display: inline-block;
-                padding: 0 .125rem; // 0 2px
-                margin-left: .24rem; // 4px
-                width: 2rem; // 32px
-            }
+            .ui-accordion {
+                margin-bottom: 1.25rem; // 20px
 
-            h3 {
-                &.ui-accordion-header { 
-                    cursor:no-drop; color:gray;
+                p.test-help {
+                    margin-top: .125rem; // 2px
+                }
 
-                    .ui-accordion-header-icon {
-                        display: none;
+                .status {
+                    display: inline-block;
+                    padding: 0 .125rem; // 0 2px
+                    margin-left: .24rem; // 4px
+                    width: 2rem; // 32px
+                }
+
+                h3 {
+                    &.ui-accordion-header { 
+                        cursor:no-drop; color:gray;
+
+                        .ui-accordion-header-icon {
+                            display: none;
+                        }
                     }
-                }
-                
-                .status:before {
-                    content: "";
-                }
-
-                &.waiting,
-                &.pass,
-                &.fail {
-                    cursor: pointer;
-
-                    .status {
-                        padding: 0 .25rem 0 .625rem; // 0 4px 0 10px
-                        font-family: FontAwesome;
+                    
+                    .status:before {
+                        content: "";
                     }
 
-                    .ui-accordion-header-icon {
-                        display: inline;
+                    &.waiting,
+                    &.pass,
+                    &.fail {
+                        cursor: pointer;
+
+                        .status {
+                            padding: 0 .25rem 0 .625rem; // 0 4px 0 10px
+                            font-family: FontAwesome;
+                        }
+
+                        .ui-accordion-header-icon {
+                            display: inline;
+                        }
                     }
+
+                    &.waiting .status:before {content: "\f1ce";}
+                    &.pass .status:before {content: "\f00c";}
+                    &.fail .status:before {content: "\f071";}
                 }
 
-                &.waiting .status:before {content: "\f1ce";}
-                &.pass .status:before {content: "\f00c";}
-                &.fail .status:before {content: "\f071";}
-            }
+                .ui-accordion-header {
+                    color: #000;
 
-            .ui-accordion-header {
-                color: #000;
+                    &.fail {
+                        background: #f2dede;
+                        color: #a94442;
+                        border-color: #ebcccc;
+                    }
 
-                &.fail {
-                    background: #f2dede;
-                    color: #a94442;
-                    border-color: #ebcccc;
-                }
-
-                &.pass {
-                    background: #dff0d8;
-                    color: #3c763d;
-                    border-color: #d0e9c6;
+                    &.pass {
+                        background: #dff0d8;
+                        color: #3c763d;
+                        border-color: #d0e9c6;
+                    }
                 }
             }
         }
     }
-}
 
-.alert-border {
-    outline: 2px dashed red;
-    background-color:#C0C0C0;
+    .alert-border {
+        outline: 2px dashed red;
+        background-color:#C0C0C0;
 
-    &:hover {
-        outline: 3px dashed red;
-    }
-}
-
-.iter_list {
-    padding-bottom: 2.5rem; // 40px
-    border-bottom: 1px solid #aaa;
-
-    li {
-        padding: .25rem; // 4px
-    }
-}
-
-.link-asset-warning {
-    background-color:#eee;
-    padding: .3125rem .3125rem .3125rem .5rem; // 5px 5px 5px 8px
-    border-radius: .25rem; // 4px
-    border: 2px dashed #555;
-
-    &.match-high {
-        border-color: #d9534f
+        &:hover {
+            outline: 3px dashed red;
+        }
     }
 
-    &.match-medium {
-        border-color: #f0ad4e
+    .iter_list {
+        padding-bottom: 2.5rem; // 40px
+        border-bottom: 1px solid #aaa;
+
+        li {
+            padding: .25rem; // 4px
+        }
     }
 
-    .before-link,
-    .accessibility-before-link {
-        padding: 2px 2px 6px 2px;
+    .link-asset-warning {
+        background-color:#eee;
+        padding: .3125rem .3125rem .3125rem .5rem; // 5px 5px 5px 8px
         border-radius: .25rem; // 4px
-        text-align: center;
-        margin-bottom: .25rem; // 4px
-        font-size: 1.75rem;
-    }
-}
+        border: 2px dashed #555;
 
-// Custom styles for the BC custom bar tips section
-#bc-custom-bar-tips h3.ui-accordion-header {
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
-    color: #3c763d;
+        &.match-high {
+            border-color: #d9534f
+        }
+
+        &.match-medium {
+            border-color: #f0ad4e
+        }
+
+        .before-link,
+        .accessibility-before-link {
+            padding: 2px 2px 6px 2px;
+            border-radius: .25rem; // 4px
+            text-align: center;
+            margin-bottom: .25rem; // 4px
+            font-size: 1.75rem;
+        }
+    }
+
+    // Custom styles for the BC custom bar tips section
+    #bc-custom-bar-tips h3.ui-accordion-header {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #3c763d;
+    }
 }
