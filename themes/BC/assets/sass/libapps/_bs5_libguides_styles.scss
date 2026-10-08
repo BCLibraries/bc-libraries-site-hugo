@@ -73,20 +73,17 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Open Sans", Arial, sans-serif;
 }
 
-// Unsure
-.mainhomepage hr {
-    border-color: $very-light-gray;
-    border-image: none;
-    border-style: solid none none;
-    border-width: 2px 0 0;
-    margin-bottom: 15px;
-    margin-top: 0;
+// Scroll to top button
+#s-lib-scroll-top {
+    z-index: 10;
+    right: 3rem;
 }
-
-// unsure
-// .panel-body h2:first-child,
-// .panel-body h3:first-child,
-// .panel-body h4:first-child {margin-top: .25rem;}
+@media (min-width: 901px) {
+    // reposition scroll-to-top button
+    #s-lib-scroll-top {
+        bottom: 25%;
+    }
+}
 
 // Used in exhibition pages, but also maybe LibGuides?
 img.center {
@@ -95,6 +92,7 @@ img.center {
     display: block;
 }
 
+// Pages/boxes embedded as iframes into Canvas have a top-level message container
 #iframe-message {
     background-color:#fffdf6;
     border:1px solid #ffeaae;
@@ -117,21 +115,6 @@ img.center {
     #s-lib-bc-site,
     #s-lib-bc-group {
         display: none;
-    }
-}
-
-// Unsure
-.pageurl {
-    color: #666;
-    float: right;
-    max-width: 599px;
-}
-@media ( max-width: 768px ) {
-    .pageurl {
-        color: #666;
-        float: none;
-        max-width: 599px;
-        margin: 0 0 0 5px;
     }
 }
 
@@ -158,12 +141,6 @@ img.center {
 /*#s-lg-guide-description {
     display: none;
 }*/
-
-// Edit page style
-#s-lg-guide-tabs-title-bar {
-    padding: 0;
-    margin: 0 0 1rem 0;
-}
 
 // Public view mode styles
 .view-mode {
@@ -286,51 +263,12 @@ img.center {
     padding-left: 2rem;
 }
 
-// unsure
+// Hide RSS links
 .s-lg-rss-links {
     display: none;
 }
 
-// unsure
-.pager {
-    .previous > a,
-    .previous > span {
-        float: left;
-    }
-
-    .next > a,
-    .next > span {
-        float: right;
-    }
-
-    li {
-        > a,
-        > span {
-            background-color: transparent;
-            border: 0;
-            border-radius: 0;
-            display: inline-block;
-            padding: 0;
-            font-size: 17px;
-        }
-
-        > a {
-            &:hover, 
-            &:focus {
-                background-color: transparent;
-                text-decoration: underline;
-            }
-        }
-    }
-}
-
-// Unsure
-#s-lg-box-top {
-    margin: 0;
-    padding: 0 .625rem; // 10px
-}
-
-// Required
+// Make LibGuides boxes less "boxy"
 .s-lib-box {
     box-shadow: none;
     border: 0;
@@ -357,53 +295,16 @@ img.center {
 
 /* CODE FOR BURNS HOMEPAGE AND JOBS HOMEPAGE */
 
+// not found in LibGuides
 #s-lg-content-12755569 img {height:auto!important;}
 #s-lg-box-collapse-6437327 {background-color:#eee; padding:20px 0 10px 30px;}
+
+// unsure
 .column-container { width:100%; background-color:#eee;}
 .column-container-inner {padding:20px 10px 20px 20px}
 .column-container .column {padding:0; background-color:#eee;}
-.column .inner {min-height:172px; padding:0 10px 10px 0;}
-.column .column-content {padding:0; min-height: inherit; margin-bottom:0;}
-.column .inner.first {}
-.column .inner.last {}
-.inner .text {padding:20px 0 0 16px; font-size:18px; line-height:24px;}
-.inner .image {position: relative; width: 100%; /* for IE 6 */}
-.image img {height:auto!important;}
 
-.inner h2 {
-   position: absolute;
-   top: 150px;
-   left: 0;
-   width: 100%;
-}
-
-.inner .image h2 span {
-   color: white;
-   font: bold 24px/45px Arial, Sans-Serif;
-   letter-spacing: -1px;
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px;
-}
-
-.inner p {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
-    bottom: 0;
-    display: inline-block;
-    left: 0;
-    margin: 0;
-    padding: 10px 10px 10px 5px;
-    position: absolute;
-    right: 0;
-    width: 100%;
-}
-
-.inner .image p span {
-   color: white;
-   font: bold 15px/20px Arial,Sans-Serif;
-   letter-spacing: -1px;
-}
-
+// not found in LibGuides
 #s-lg-box-wrapper-7568497,
 #s-lg-box-wrapper-7613059 {
     margin-bottom:20px;
@@ -460,8 +361,7 @@ html {
 }
 */
 
-/* CAREER */ /* LIBGUIDES - KEEP */
-
+// Career pages are not used anymore
 .career #fakebctitle {
     display: none;
 }
@@ -495,20 +395,76 @@ li#new-catalog-promo {
     padding: 1em;
 }
 
-
-// Scroll to top button
-#s-lib-scroll-top {
-    z-index: 10;
-    right: 3rem;
-}
-@media (min-width: 901px) {
-    // reposition scroll-to-top button
-    #s-lib-scroll-top {
-        bottom: 25%;
-    }
-}
-
 // unsure
 .s-lg-poll-title legend {
     font-size: inherit;
+}
+
+// Unsure
+.mainhomepage hr {
+    border-color: $very-light-gray;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 2px 0 0;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+// unsure
+// .panel-body h2:first-child,
+// .panel-body h3:first-child,
+// .panel-body h4:first-child {margin-top: .25rem;}
+
+// unsure
+.pager {
+    .previous > a,
+    .previous > span {
+        float: left;
+    }
+
+    .next > a,
+    .next > span {
+        float: right;
+    }
+
+    li {
+        > a,
+        > span {
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+            display: inline-block;
+            padding: 0;
+            font-size: 17px;
+        }
+
+        > a {
+            &:hover, 
+            &:focus {
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Unsure
+#s-lg-box-top {
+    margin: 0;
+    padding: 0 .625rem; // 10px
+}
+
+// Unsure
+.pageurl {
+    color: #666;
+    float: right;
+    max-width: 599px;
+}
+@media ( max-width: 768px ) {
+    .pageurl {
+        color: #666;
+        float: none;
+        max-width: 599px;
+        margin: 0 0 0 5px;
+    }
 }

@@ -187,6 +187,9 @@
 
     // LibGuides page configuration panel
     #s-lg-guide-tabs-title-bar {
+        padding: 0;
+        margin: 0 0 1rem 0;
+
         .navbar-nav {
             padding-left: 1rem;
         }
