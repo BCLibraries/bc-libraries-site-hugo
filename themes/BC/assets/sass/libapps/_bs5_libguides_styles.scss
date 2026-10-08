@@ -285,32 +285,29 @@ img.center {
     }
 }
 
-/* CODE FOR THE SUBJECT PAGES DROPDOWN IN LIBGUIDES */
-
+// Subject dropdown in LibGuides?
 .navbar-collapse.in {
     overflow-y: visible;
 }
 
-/* CUSTOM LIBGUIDES PAGE CSS */ /* LIBGUIDES - KEEP */
-
 /* CODE FOR BURNS HOMEPAGE AND JOBS HOMEPAGE */
 
-// not found in LibGuides
+// Not found in LibGuides
 #s-lg-content-12755569 img {height:auto!important;}
 #s-lg-box-collapse-6437327 {background-color:#eee; padding:20px 0 10px 30px;}
 
-// unsure
+// Unsure
 .column-container { width:100%; background-color:#eee;}
 .column-container-inner {padding:20px 10px 20px 20px}
 .column-container .column {padding:0; background-color:#eee;}
 
-// not found in LibGuides
+// Not found in LibGuides
 #s-lg-box-wrapper-7568497,
 #s-lg-box-wrapper-7613059 {
     margin-bottom:20px;
 }
 
-// unsure
+// Unsure
 .searchbox-container {
     height: 4.375rem; // 70px
 
@@ -376,7 +373,7 @@ html {
     margin: -50px 0 0 0px;
 }
 
-// unsure
+// Old LibGuides tooltip style
 .tooltip-inner {
   background-color: #fff8c4;
   font-size: 120%;
@@ -395,7 +392,7 @@ li#new-catalog-promo {
     padding: 1em;
 }
 
-// unsure
+// Unsure
 .s-lg-poll-title legend {
     font-size: inherit;
 }
@@ -410,12 +407,12 @@ li#new-catalog-promo {
     margin-top: 0;
 }
 
-// unsure
+// Old LibGuides style
 // .panel-body h2:first-child,
 // .panel-body h3:first-child,
 // .panel-body h4:first-child {margin-top: .25rem;}
 
-// unsure
+// Old LibGuides pager style
 .pager {
     .previous > a,
     .previous > span {
