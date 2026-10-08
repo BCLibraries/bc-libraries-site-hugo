@@ -53,6 +53,39 @@ a {
     }
 }
 
+.clear {
+    &:before,
+    &:after {
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+table,
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid $very-light-gray;
+    margin-bottom: .75rem;
+
+    td, th {
+        padding: .5rem;
+        border: 1px solid $very-light-gray;
+    }
+
+    td {
+        vertical-align: top;
+    }
+
+    th {
+        background-color: #E9E9E9;
+    }
+}
+
+// unsure
 .caption-link {
     position: absolute;
     bottom: 0;
@@ -62,15 +95,15 @@ a {
     color: $white-text;
     font-size: smaller;
     font-weight: 200;
-}
 
-.caption-link a {
-    color: $white-text;
-}
+    a {
+        color: $white-text;
 
-.caption-link a:hover,
-.caption-link a:focus {
-    text-decoration: underline;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
 }
 
 @media (max-width: 767px) {
