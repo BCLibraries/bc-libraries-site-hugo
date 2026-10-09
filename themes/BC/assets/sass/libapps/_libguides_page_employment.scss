@@ -41,3 +41,379 @@
    font: bold 15px/20px Arial,Sans-Serif;
    letter-spacing: -1px;
 }
+
+// Migrated custom Employment guide styles
+
+.s-lib-box-content {padding:0; margin-top:0px; margin-bottom:0px;}
+/*img {width:100%!important;}*/
+
+/*
+.org-chart {}
+.org-chart p {margin:0;}
+.org-top {text-align:center; background-color:#336699; padding:10px 0; margin:0  0;}
+.org-auls {}
+.org-aul p,
+.org-aul ul.org-dept {background-color:#339999; margin: 0 2px 0 2px; padding: 4px; text-align: center; min-height:56px;}
+.org-aul ul.org-dept {background-color:#33CC99; list-style-type:none;}
+.org-chart .connector {
+    margin:0 48%;
+    height: 10px;
+    background: -webkit-linear-gradient(#336699, #339999); 
+    background: -o-linear-gradient(#336699, #339999); 
+    background: -moz-linear-gradient(#336699, #339999); 
+    background: linear-gradient(#336699, #339999); 
+}
+*/
+
+/* FAQ */
+#accordion {cursor:pointer;}
+#accordion h4 {padding-bottom: 10px;}
+.accordion-toggle {cursor: pointer;}
+.accordion-content {display: none;}
+.accordion-content.default {display: block;}
+
+
+#joinus-content {/*background-color:aqua;*/}
+#topreasons {background-color:transparent; margin-top:0px;}
+#topreasons-content, #jobs {
+    background-color:#EAEAEA;
+}
+#topreasons-content {
+    margin-bottom: 2rem;
+}
+#applicationprocess, #jobs-content {background-color:#B29D6C;}
+#whyboston, #organization-content {background-color:#EAEAEA;}
+#organization, #whyboston-content {background-color:#4A777A;}
+#livinginboston-content {background-color:#EAEAEA;}
+#livinginboston, #applicationprocess-content {background-color:#32758f;}
+
+.anchor {
+    height: 0;
+}
+
+.segment {
+    padding: 2.5rem 1.25rem; // 40px 20px
+    margin: 0; 
+    position: relative;
+}
+#joinus {height:0px; background-color:transparent;}
+#joinus-content {padding:0;}
+#joinus-content h3 {display:none; position:absolute; top:-5px; left:0; font-size:42px; color:#fff; text-transform:none; background-color: rgba(0,0,0,.6); padding:15px;}
+#joinus-content img {}
+.reason {padding:20px; background-color:#eaeaea; text-align:center;}
+.reason .fa {font-size:100px;}
+.reason p {padding-top:15px;}
+#reasons-community {background-color:#CCC;}
+
+/* overwrite this style */
+.column .inner {padding-bottom:20px!important;}
+
+#learnmore {padding:30px;}
+#learnmore ul {font-size:20px; line-height:1.2; list-style-type: none;}
+#learnmore ul li {padding:10px;}
+#learnmore h4 {font-size:22px;}
+
+.livinginboston-container a {color:#000; text-decoration: underline;}
+.livinginboston-container a:hover,
+.livinginboston-container a:focus {color:#337ab7;}
+.livinginboston-container .reason {padding:0!important;}
+.livinginboston-container .reason p {padding-top:10px;}
+.livinginboston-container .inner {padding:0; position:relative;}
+
+#livinginboston-housing .back {background-color:#6e928a;}
+#livinginboston-transportation .back {background-color:#fff;}
+#livinginboston-weather .back {background-color:#b1eaee;}
+#livinginboston-recommendations .back {background-color:#e9ebd4;}
+
+#jobs-content #tabs {border:none; background:none;}
+#jobs-content #tabs.ui-tabs .ui-tabs-nav {padding:0;}
+#jobs-content #tabs.ui-tabs .ui-tabs-panel {min-height:300px; background-color:#EAEAEA; padding-top:30px;}
+#jobs-content #tabs.ui-tabs .ui-tabs-nav li {margin-right:.8em; background:none; background-color:#fff!important; border-color:#fff!important;}
+#jobs-content #tabs.ui-tabs .ui-tabs-nav li a {padding-left:50px; padding-right:50px;}
+#jobs-content #tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active,
+#jobs-content #tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+#jobs-content #tabs.ui-tabs .ui-tabs-nav li.ui-state-active {background:none; background-color:#EAEAEA!important; border-color:#EAEAEA!important;}
+#jobs-content #tabs.ui-tabs .ui-widget-header {background:none; border:none;}
+#jobs-content p {
+    padding: 10px 0 10px 40px; 
+    font-size: 18px;
+}
+#jobs-content {
+    img {
+        position: absolute;
+        right: 1.25rem;
+        top: 1rem;
+        width: auto !important;
+        height: 90px !important;
+    }
+}
+
+
+#applicationprocess-content .ui-accordion {padding-bottom:0px;}
+#applicationprocess-content .ui-accordion .ui-accordion-header {padding:20px 0 20px 30px; background:none; background-color:#EAEAEA;}
+#applicationprocess-content .ui-accordion-content {cursor:default;}
+
+#whyboston-content #eastcoast {padding-left:15px!important;}
+#whyboston-content #community {padding-right:14px!important;}
+
+.isStuck{
+    left:0px;
+    width:100%;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.box-toggle .front {cursor:pointer;}
+.back {position:relative; padding:20px 20px 20px; font-size:18px;}
+.back ul {list-style: none; margin:0; padding:0; text-align: left;}
+#content_container .back ul li {padding-bottom:15px;}
+.back span.link, 
+.back span.desc {}
+.back .fa {font-size:22px; margin-right:5px; vertical-align:middle; width:30px;}
+.back .fill {width:100%; height:100%;}
+.back i.close {position:absolute; top:10px; right:0px; cursor:pointer; opacity:.7; z-index:10000;}
+.back i.close:hover {opacity:1;}
+
+
+#joinus-mobile {display:none;}
+#navigation-mobile {display:none;}
+.back-n {display:none;}
+#joinus-mobile{height:300px;background: #000 url("https://s3.amazonaws.com/libapps/customers/94/images/background-mobile.jpg") no-repeat center center;}
+#joinus-mobile .inner {position:absolute; bottom:15px; width:100%; text-align:center;}
+#navigation-mobile-label,
+.back .mobile,
+
+.image .short {display:none;}
+
+@media ( max-width: 768px ) { 
+	#whyboston-content .image {
+		/*margin:0 40px;
+		width:auto;*/
+	}
+
+	#joinus-slider {display:none;}
+	#joinus-mobile {display:block;}
+	#navigation-mobile {display:block; width:100%;}
+	#employment-menu {display:none;}
+    #whyboston-content #eastcoast {padding-left:0px!important;}
+    #whyboston-content #community {padding-right:0px!important;}
+
+	#navigation-mobile-label {display:block; padding: 10px 0;}
+	#navigation-mobile {margin: 10px 0;}
+	#livinginboston-content .back {padding:5px;}
+	.back .mobile {display:inline-block;}
+	.back .link {display:none;}
+	#content_container .back ul li {padding:1px 3px 3px 3px!important;}
+	.back .fa {width:26px!important;}
+	.image .short {display:block; padding:2px 0;}
+	.image .full {display:none;}
+}
+
+
+.reasons-container {
+    display: flex;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+#employment-menu.navbar-wrapper {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    margin-bottom: -2.25rem; // 1.5rem + .75rem
+
+    &:not(.isStuck) {
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .navwrapper {
+        border-bottom: 1px solid #790009;
+    }
+
+    .navbar {
+        background: #B29D6C;
+
+        ul.navbar-nav {
+            justify-content: flex-start;
+            width: 100%;
+            gap: 1.5rem 0;
+
+            li.nav-item {
+                padding: 0;
+
+                a {
+                    color: #fff;
+                    padding: .5rem;
+
+                    &:hover,
+                    &:focus,
+                    &:focus-visible {
+                        color: #0A64A4;
+                        display: inline;
+                    }
+                }
+
+                &.active {
+                    a {
+                        color: #fff;
+                        background: #790009;
+
+                        &:hover,
+                        &:focus,
+                        &:focus-visible {
+                            background: #790009;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  /*
+  margin-bottom: 60px;
+
+  margin-top: -90px;
+
+  Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 450px;
+  background-color: #0A64A4;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  /*
+  #employment-menu.navbar-wrapper .container {
+  	width:100%;
+  	padding:0;
+  }
+
+  #employment-menu .navbar-wr apper.isStuck .container {
+  	width:auto;
+  	padding:inherit;
+  	margin:inherit;
+  }
+    */
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  #employment-menu.navbar-wrapper .navbar {
+    /*bor der-radius: 4px;*/
+    /*paddi ng:0 15px;*/
+  }
+
+  /*
+  #employment-menu.navbar-wrapper .navbar .navbar-collapse {
+  	margin:4px 10px 0 10px;
+  }
+
+  #employment-menu .navbar-nav {
+  	float:none;
+  	margin:auto;
+  }
+    */
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/*
+@media (min-width: 1200px) {
+  #employment-menu.navbar-wrapper .container {
+    width:1170px;
+    padding:0;
+    margin:auto;
+  }
+}
+*/
