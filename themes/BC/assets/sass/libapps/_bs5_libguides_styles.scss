@@ -386,6 +386,21 @@ html {
   color: $dark-blue-green;
 }
 
+// SpringShare doesn't provide default icons for active, hover, and focus states, so we set a background image manually.
+.ui-state-active .ui-icon, .ui-button:active .ui-icon,
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon {
+    background-image: url("https://static-assets-us.libguides.com/web/jquery/css/images/ui-icons_444444_256x240.png");
+}
+
+// Set default text color for jQuery UI widget content
+.ui-widget-content {
+    color: #000;
+
+    a {
+        color: #245c8a;
+    }
+}
+
 // unsure
 li#new-catalog-promo {
     background-color: lightyellow;
