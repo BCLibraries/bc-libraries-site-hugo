@@ -8,30 +8,30 @@
 .aal-boxes {
     display: flex;
     flex-wrap: wrap;
+}
 
-    .aal-box {
-        display: flex;
+.aal-box {
+    display: flex;
 
-        a.card-link-wrapper {
-            text-decoration: none;
+    a.card-link-wrapper {
+        text-decoration: none;
 
-            &:hover,
-            &:focus {
-                .card {
-                    border: 1px solid blue;
-                    outline: 1px solid blue;
-                    text-decoration: none;
-                }
+        &:hover,
+        &:focus {
+            .card {
+                border: 1px solid blue;
+                outline: 1px solid blue;
+                text-decoration: none;
+            }
 
-                .aal-icon {
-                    background-color: $aal-icon-blue;
-                }
+            .aal-icon {
+                background-color: $aal-icon-blue;
             }
         }
+    }
 
-        .card {
-            background-color: $very-very-light-gray;
-        }
+    .card {
+        background-color: $very-very-light-gray;
     }
 }
 
@@ -65,5 +65,22 @@
 
     &.aal-icon-visit {
         background-color: $bc-primary-light-gold; // #dccaa0
+    }
+}
+
+
+// Large format AAL boxes
+.aal-box-large {
+    .card {
+        .card-body {
+            .card-title {
+                font-size: 1.25rem; // 20px
+            }
+        }
+    }
+
+    .aal-icon {
+        font-size: 5rem; // 80px
+        width: 6.25rem; // 104px
     }
 }
