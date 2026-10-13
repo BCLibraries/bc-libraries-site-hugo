@@ -236,19 +236,19 @@
             width: 100%;
         }
 
-        &#livinginboston-housing .back {
+        #livinginboston-housing .back {
             background-color: #6e928a;
         }
 
-        &#livinginboston-transportation .back {
+        #livinginboston-transportation .back {
             background-color: #fff;
         }
 
-        &#livinginboston-weather .back {
+        #livinginboston-weather .back {
             background-color: #b1eaee;
         }
 
-        &#livinginboston-recommendations .back {
+        #livinginboston-recommendations .back {
             background-color: #e9ebd4;
         }
     }
@@ -298,18 +298,17 @@
     .back {
         position: relative;
         padding: 1.125rem 1.25rem 1.25rem; // 18px 20px 20px
-        font-size: 1.125rem;
+        // font-size: 1.125rem;
         background-color: #CCC;
 
         ul {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
             list-style: none;
             margin: 0;
             padding: 1rem 0 0 0;
             text-align: left;
-
-            li {
-                padding-bottom: 1rem;
-            }
         }
 
         i.close {
@@ -335,6 +334,25 @@
         .fill {
             width: 100%;
             height: 100%;
+        }
+    }
+
+    .short,
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-toggle {
+        .link,
+        .full {
+            display: none;
+        }
+
+        .short,
+        .mobile {
+            display: inline-block;
         }
     }
 }
