@@ -18,10 +18,11 @@
         width: 100%;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:focus-visible {
             .card {
                 border: 1px solid blue;
-                outline: 1px solid blue;
+                outline: blue 1px solid;
                 text-decoration: none;
             }
 

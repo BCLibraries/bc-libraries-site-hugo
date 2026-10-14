@@ -25,9 +25,16 @@ a {
     text-decoration: none;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:focus-visible {
         color: $bc-link-color-hover;
         text-decoration: underline;
+        outline: none;
+    }
+
+    &:focus-visible {
+        outline: blue 2px solid !important;
+        outline-offset: 1px !important;
     }
 }
 

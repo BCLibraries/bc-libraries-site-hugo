@@ -165,17 +165,7 @@
                     word-break: normal;
                     display: inline-block;
                     width: 100%;
-    
-                    &:hover,
-                    &:focus {
-                        color: $pitch_black; // #000000
-                        text-decoration: underline;
-                    }
-    
-                    &.menu-header {
-                        // color: $bc-link-color; // #2f7ab9
-                    }
-    
+
                     .tuck {
                         font-size: small;
                         padding: 0;
