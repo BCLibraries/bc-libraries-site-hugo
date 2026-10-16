@@ -1,0 +1,250 @@
+.burns {
+    .nopadding {
+        padding: 0 !important;
+    }
+
+    // Hide group breadcrumb
+    #s-lib-bc-group {
+        display: inline-block;
+    }
+
+    // #guide-title h2 {text-transform: capitalize;}
+
+    #burns-logo {
+        text-transform: capitalize;
+        font-style: italic;
+        font-size: 18px;
+    }
+
+    /*
+    #banner-all {
+        background-color: #f2ede8;
+    }
+    //#banner-right {padding:0 0px 0px 20px;}
+    #banner-right {
+        padding: 0px;
+    
+        ul {
+            margin-bottom: 0;
+        }
+
+        .banner-item {
+            padding: 0;
+            margin: 0 0 5px 0;
+
+            p {
+                padding: 0 10px;
+                margin: 0;
+            }
+
+            h3 {
+                color: #fff; 
+                background-color: #333;
+                margin: 0;
+                padding: 5px 10px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+
+        .ask_resources {
+            background-color: #dfddcf;
+            height: 197px;
+        }
+
+        .askus p {
+            padding-top: 5px;
+        }
+
+        .visitus {
+            background-color: #dfddcf;
+            height: 197px;
+            margin: 0;
+
+            img {
+                border: 1px solid transparent;
+                display: block;
+                max-width: 767px;
+                max-height: 157px;
+                width: auto;
+                height: auto;
+                margin-left: -194px;
+
+                &:hover {
+                    border: 1px solid black;
+                }
+            }
+        }
+
+        .visitus-links {
+            padding: 0 10px;
+
+            .status-msg {
+                text-align: right;
+            }
+        }
+
+        a {
+            color: #2B6597;
+        }
+    }
+    */
+
+    /*
+    .menu_list li {
+        p.caption {
+            padding: 2px 0;
+            margin: 0;
+            font-style: italic;
+            line-height: 1.25;
+            color: #666;
+        }
+
+        .image_wrapper img {
+            margin-left: 0;
+        }
+    }
+    */
+
+    // Homepage boxes
+    #explore {
+        padding: 1rem;
+        background-color: #f2ede8;
+        display: flex;
+        flex-direction: row;
+
+        img {
+            width: 100%;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+
+            .image {
+                position: relative;
+
+                h3 {
+                    position: absolute;
+                    top: 0 !important;
+                    right: 0 !important;
+                    left: 0 !important;
+                    width: 100%;
+                    margin: 0;
+
+                    span {
+                        color: white;
+                        font-size: 1.375rem; // 22px
+                        background: rgb(0, 0, 0); // fallback color
+                        background: rgba(0, 0, 0, 0.8);
+                        padding: .25rem .5rem;
+                        display: inline-block;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .column-content {
+                padding: .5rem; // 8px
+            }
+        }
+    }
+
+    // #socialmedia-slider {padding:20px 30px; background-color:#f2ede8;}
+    // #social media-slider ul.bxslider li {margin:0 50px;}
+
+    // Hours block in footer
+    #weekly_hours_container {
+        border: 1px solid #fff;
+        border-bottom: none;
+
+        ul {
+            &.dailyhours {
+                padding: 2px 0;
+                border-bottom: 1px solid #fff;
+            
+                li {
+                    display: inline-block;
+                    margin: 0;
+                    vertical-align: top;
+                    padding: 1px 0 1px 4px;
+
+                    &.day {width: 25%;}
+                    &.date {width: 25%;}
+                    &.hours {width: 50%;}
+                }
+            }
+
+            &.today {
+                font-weight: 600;
+                background-color: #DCB8A0;
+                color: #000;
+            }
+        }
+    }
+
+    .nav .h3style {
+        margin: .25rem 0;
+    }
+
+    @media (max-width: 1050px) {
+        // .f_column {border-right:none; margin-left:0;}
+    }
+    @media (max-width: 1024px) {
+        // #banner-right .visitus img {margin-left:-250px;}
+        //#explore {padding: 0;}
+        //#services {padding: 0 8px 0 7px;}
+    }
+     @media (max-width: 768px) {
+        // #banner-left {padding-right:0;}
+        // #banner-right {padding-left:0;}
+        // #banner-right .ask_resources {height:210px;}
+        //#services, #collections, #exhibits {padding: 0; margin-bottom: 20px;}
+        //#exhibits {margin: 0;}
+        //#explore .column img {display: none;}
+        //#explore .column .image {height: 0;}
+        //.column .column-content {padding-top: 0;}
+        //.column .image {width: 100%;}
+    }
+    @media (min-width: 426px) and (max-width:767px) {
+        // #banner-right .visitus img {margin-left:0;}
+    }
+    @media (max-width: 350px) {
+        // #banner-right .askus p {padding-top:0px!important;}
+        // .askus-elem {display:inline-block; line-height:1;}
+    }
+    @media (max-width: 320px) {
+        // #banner-right .visitus img {margin-left:-300px; margin-top:-40px;}
+    }
+
+    // Add WordPress icon for media blog in footer
+    #media_blog:after {
+        font-family: 'FontAwesome';
+        content: "\f19a";
+    }
+
+    //
+    // From Burns main page
+    //
+
+    // .s-lib-box-content {padding: 0 0 inherit 0;}
+    // .s-lib-box-content {margin-bottom:0; padding:0;}
+    // #banner-left {padding:0 10px 0 0; min-height:405px; background-repeat: no-repeat; background-position: center; background-image: url("//s3.amazonaws.com/libapps/customers/94/images/burns-banner990.jpg");}
+    // #banner-right .resourcesfor ul {padding-top:5px;}
+    // .map-wrapper {width:auto; margin:auto; overflow:hidden; cursor:pointer;}
+    // .overlay{background:transparent; position:relative; width:990px; height:150px; top:150px; margin-top:-150px;}
+    // .bxslider .slide {padding:20px 80px;}
+    // .bxslider .blog {padding:20px 120px;}
+    // .itemcontent-image,
+    // .itemcontent-content {display:inline-block; padding-right:15px; font-size:15px;}
+    // .ip {padding:4px 0 0 8px;}
+    // #emergencybox {background-color: #fde073; padding: 10px;}
+
+    @media (max-width: 990px) {
+        // #banner-left {padding-right:0; max-height:416px;}
+        // #banner-right {padding-left:0;}
+    }
+    @media (max-width: 425px) {
+        // .s-lg-box-wrapper-23877807 {display:none;}
+    }
+}
