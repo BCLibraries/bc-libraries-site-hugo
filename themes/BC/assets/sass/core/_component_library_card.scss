@@ -51,7 +51,7 @@
             .library-card-footer-links {
                 display: flex;
                 // gap: .5rem; // 8px
-                justify-content: space-between;
+                // justify-content: space-between;
 
                 // Override Bootstrap 5 default margin for multiple card-links
                 .card-link+.card-link {
@@ -72,7 +72,7 @@
     }
 }
 
-@media (max-width: 425px) {
+/*@media (max-width: 425px) {
     .library-card-footer-links {
         flex-wrap: wrap;
 
@@ -81,4 +81,4 @@
             width: 100%;
         }
     }
-}
+}*/
