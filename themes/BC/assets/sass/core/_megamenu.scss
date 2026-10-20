@@ -145,7 +145,7 @@
             // padding: 0 1rem; // 0 16px
             display: flex;
             flex-direction: column;
-            gap: 0.625rem; // 10px
+            gap: 0.75rem; // 12px
     
             border-right: 1px solid $very-light-gray; // #dadada
     
@@ -160,10 +160,10 @@
     
                 a {
                     padding: 0;
-                    margin: 0;
+                    // margin: 0;
                     // color: #666666; // #666666
                     word-break: normal;
-                    display: inline-block;
+                    // display: inline-block;
                     width: 100%;
 
                     .tuck {
@@ -177,8 +177,8 @@
 
         .menu-header {
             font-weight: 700;
-            //padding: .375rem .25rem; // 6px 4px
             display: block;
+            margin-bottom: -.25rem; // -4px
         }
     
         .menu-text {

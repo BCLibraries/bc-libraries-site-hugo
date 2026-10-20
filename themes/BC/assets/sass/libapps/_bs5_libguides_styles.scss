@@ -102,6 +102,23 @@ img.center {
     margin: -15px 0 20px 0;
 }
 
+#megamenu {
+    .card {
+        .card-body {
+            .card-title {
+                font-size: 1rem;
+                padding-bottom: .5rem; // 12px
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #nav-item-menu-burns-myaccounts {
+        display: none;
+    }
+}
+
 // Breadcrumb styles
 #s-lib-bc-list {
     > .active {
@@ -347,6 +364,18 @@ img.center {
         left: 0;
         width: 100%;
         height: 100%;
+    }
+}
+
+// Overwrite default SpringShare navbar collapse behavior for smaller screens
+@media (max-width: 991px) {
+    .view-mode {
+        #megamenu {
+            .navbar .navbar-collapse {
+                max-height: unset;
+                overflow-y: visible;
+            }
+        }
     }
 }
 
