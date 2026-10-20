@@ -16,6 +16,21 @@
         font-size: 18px;
     }
 
+    // Menu list card images max width
+    #megamenu {
+        .menu-list {
+            .card {
+                img {
+                    max-width: 12rem;
+                }
+
+                .card-body {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
     /*
     #banner-all {
         background-color: #f2ede8;
@@ -195,7 +210,7 @@
         //#explore {padding: 0;}
         //#services {padding: 0 8px 0 7px;}
     }
-     @media (max-width: 768px) {
+    @media (max-width: 768px) {
         // #banner-left {padding-right:0;}
         // #banner-right {padding-left:0;}
         // #banner-right .ask_resources {height:210px;}
