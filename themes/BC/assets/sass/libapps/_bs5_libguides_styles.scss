@@ -509,3 +509,34 @@ li#new-catalog-promo {
         margin: 0 0 0 5px;
     }
 }
+
+// SpringShare hard-codes container max-widths, so we override them with !important
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 540px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-md, .container-sm, .container {
+        max-width: 720px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1140px !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1320px !important;
+    }
+}
