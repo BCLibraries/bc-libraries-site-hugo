@@ -19,6 +19,10 @@
         .library-image {
             padding: 0;
             margin: 0;
+            display: block;
+            height: 100%;
+            overflow: hidden;
+            border-radius: .375rem 0 0 .375rem; // 6px 0 0 6px
 
             a {
                 display: block;

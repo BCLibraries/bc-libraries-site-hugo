@@ -30,16 +30,14 @@
     <div class="library-box card">
         <div class="row g-0 flex-grow-1">
             <div class="col-5 d-none d-lg-block library-image">
-                <a href="{{ $library_url }}" class="library-card-link">
-                    {{ partial "picture" (dict "ctx"   .
-                                                "base"  $base_image
-                                                "ext"   ".png"
-                                                "alt"   .library.name 
-                                                "class" ""
-                                                "avif"  true
-                                                "webp"  true
-                                                "lazy"  true) }}
-                </a>
+                {{ partial "picture" (dict "ctx"   .
+                                            "base"  $base_image
+                                            "ext"   ".png"
+                                            "alt"   .library.name 
+                                            "class" ""
+                                            "avif"  true
+                                            "webp"  true
+                                            "lazy"  true) }}
             </div>
             <div class="col-12 col-lg-7 library-metadata">
                 <div class="card-body">
