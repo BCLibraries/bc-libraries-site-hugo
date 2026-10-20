@@ -220,6 +220,28 @@
         //#explore .column .image {height: 0;}
         //.column .column-content {padding-top: 0;}
         //.column .image {width: 100%;}
+
+        #explore {
+            background-color: transparent;
+
+            .column {
+                .image {
+                    a img {
+                        display: none;
+                    }
+
+                    h3 {
+                        span {
+                            background-color: #000;
+                        }
+                    }
+                }
+
+                .column-content {
+                   padding-top: 3rem; 
+                }
+            }
+        }
     }
     @media (min-width: 426px) and (max-width:767px) {
         // #banner-right .visitus img {margin-left:0;}
