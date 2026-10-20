@@ -50,14 +50,15 @@
                 </div>
                 <div class="card-footer">
                     {{/* Contact info */}}
-                    <div class="library-card-footer-links">
+                    <div class="library-card-footer-links row gap-1">
                         {{ if (eq .library.contact_type "phone") }}
                             {{ range first 1 .library.phone }}
                                 <a class="card-link" href="tel:{{ .compressed }}">{{ .number }}</a>
                             {{ end }}
                         {{ else if (eq .library.contact_type "email") }}
                             {{ range first 1 .library.email }}
-                                <div class="d-flex justify-content-start">Contact&nbsp;<a class="card-link" href="mailto:{{ .address }}">{{ .label }}</a></div>
+                                <div class="card-text">Contact:</div>
+                                <div class="card-text"><a class="card-link" href="mailto:{{ .address }}">{{ .label }}</a></div>
                             {{ end }}
                         {{ end }}
                         {{ if .library.map }}
