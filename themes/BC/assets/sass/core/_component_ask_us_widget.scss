@@ -2,43 +2,44 @@
 
 .askuswidget, #askuswidget {
     position: fixed;
-    right: -169px;
+    top: 25%;
+    right: -11.25rem; // 146 text width + 16 left-padding + 16 right-padding + 2 border = 180px or 11.25rem
     z-index: 99999999999;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-    font-size: 19.5px;
+    font-size: 1.25rem; // 20px
     height: auto;
-    padding-bottom: .75rem;
     transform: rotate(90deg);
     transform-origin: top left;
-    box-shadow: rgb(0,0,0) 0 0 5px;
+    box-shadow: rgb(0,0,0) 0 0 .25rem;
     background-image: none;
     text-shadow: none;
-    background-color: #337ab7!important;
-}
-.askuswidget.btn, #askuswidget.btn {
-    border-color: $white-body;
+    border: 1px solid $white-body;
     border-top: none;
-}
-.askuswidget.btn:focus,
-.askuswidget.btn:hover,
-#askuswidget.btn:hover,
-#askuswidget.btn:focus  {
-    border-color: inherit;
-    border-top: none;
-    background-color: #286090!important;
-}
-.askuswidget.btn:visited,
-#askuswidget.btn:visited {
-    color: $white-text !important;
-}
-@media (max-width: 900px) {
-    .askuswidget, #askuswidget {
-        bottom: 200px;
+    line-height: 1;
+    padding: .75rem 1rem 1rem 1rem;
+
+    &.btn {
+        &:focus,
+        &:focus-visible,
+        &:hover,
+        &:active {
+            border-color: inherit;
+            border-top: none;
+            background-image: none;
+            text-decoration: underline;
+            background-color: var(--bs-btn-hover-bg);
+        }
+
+        &:visited {
+            color: $white-text !important;
+        }
     }
 }
-@media (min-width: 901px) {
+
+@media (max-width: 991px) {
     .askuswidget, #askuswidget {
-        top:25%;
+        bottom: 25%;
+        top: unset;
     }
 }
