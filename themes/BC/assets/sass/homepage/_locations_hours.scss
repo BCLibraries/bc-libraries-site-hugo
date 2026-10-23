@@ -38,10 +38,20 @@
             display: flex;
             flex-flow: column;
 
+            a {
+                &:hover,
+                &:focus,
+                &:focus-visible {
+                    .card-title {
+                        text-decoration: underline;
+                        color: var(--bs-link-color-rgb);
+                    }
+                }
+            }
+
             .card {
                 display: flex;
                 flex-grow: 1;
-                //font-size: 14px;
                 background-color: #f8f8f8;
                 box-shadow: 0 2px 4px 0 rgba(221, 221, 221, 0.25);
 
@@ -58,17 +68,20 @@
                         content: "";
                     }
 
-                    .lib-hours__content {
+                    .card-title {
+                        padding: 0;
+                        color: #245c8a;
+                    }
+
+                    .lib-hours__details {
                         display: flex;
                         flex-direction: column;
                         gap: .625rem; // 10px
 
-                        .lib-hours__status,
                         .lib-hours__hours {
-                            display: flex;
-                            align-items: flex-start;
-                            line-height: 1.25;
-                            gap: .625rem; // 10px
+                            &.has-comma {
+                                font-size: .9375rem; // 15px
+                            }
                         }
                     }
                 }
