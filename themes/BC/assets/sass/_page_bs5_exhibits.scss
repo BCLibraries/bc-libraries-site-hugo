@@ -1,19 +1,6 @@
 @use 'variables/colors' as *;
 
-/* LIBRARY EXHIBITS STYLES */
-
-html {
-    overflow-x: hidden;
-}
-
-.exhibit-container {
-    padding-top: 50px;
-}
-
 .exhibit-container .breadcrumb {
-    margin: 1rem 0 1rem 0;
-    background-color: $white-body;
-
     &>.active {
         color: $wcagaa-compliant-gray-text;
     }
@@ -28,227 +15,241 @@ html {
 
 .latest_exhibit {
     position: relative;
-    display: block;
+    display: flex;
     width: 100%;
     height: auto;
     z-index: 1;
-    padding: 275px 0 0;
-}
+    //padding: 275px 0 0;
 
-@media ( max-width: 1199px ) {
-    .latest_exhibit {
-        padding: 0 0 0;
+    h3 {
+        font-size: 1.375rem; // 22px
+        margin-top: 0;
     }
-}
 
-#exhibit .latest_exhibit h3 {
-    font-size: 22px;
-    margin-top: 0;
-}
+    .left {
+        //float: left;
+        //width: 25%;
+        display: flex;
+        flex-direction: column;
+        background: $very-light-gray;
+        border-bottom: .25rem solid $very-light-gray;
+        padding: .5rem 1.25rem 0;
 
-#exhibit .latest_exhibit .left h3 {
-    text-align: center;
-}
+        h3 {
+            text-align: center;
+        }
 
-#exhibit .latest_exhibit .left {
-    float: left;
-    width: 25%;
-    background: $very-light-gray;
-    border-bottom: 5px solid $very-light-gray;
-    padding: 10px 20px 0;
-}
+        ul {
+            margin: 0 0 1.25rem; // 0 0 20px
+            padding: .5rem 0 0 1rem;
 
-@media ( max-width: 1199px ) {
-    #exhibit .latest_exhibit .left {
-        display: none;
+            li {
+                list-style: none outside none;
+                margin: 0;
+                padding: 0 0 .75rem; // 0 0 12px
+
+                &.digital-exhibits-li {
+                    line-height: 1.6;
+                }
+
+                a:hover {
+                    text-decoration: none;
+                    border-bottom: 1px solid $red;
+                    margin: 0 0 .625rem; // 0 0 10px
+                }
+            }
+        }
+
+        .target {
+            color: #666;
+            border-bottom: 1px solid $red;
+            padding: 0;
+            margin: 0 0 .625rem; // 0 0 10px
+        }
     }
-}
 
-#exhibit .latest_exhibit .left ul {
-    margin: 0 0 20px;
-    padding: 0 0 0 15px;
-}
+    .right {
+        //float: right;
+        //width: 75%;
+        display: flex;
+        flex-direction: column;
+        padding: .625rem 1.25rem 0;
 
-#exhibit .latest_exhibit .left ul li {
-    list-style: none outside none;
-    margin: 0;
-    padding: 0 0 10px;
-}
+        ul {
+            margin: 0;
+            padding: 0;
+            clear: both;
+            display: inline-block;
 
-/* li for digitial exhibits wraps around to two lines */
-#exhibit .latest_exhibit .left ul li.digital-exhibits-li {
-    line-height: 1.6;
-}
+            &.exhibits {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1rem;
+                // justify-content: space-between;
 
-#exhibit .latest_exhibit .left ul li a:hover {
-    text-decoration: none;
-    border-bottom: 1px solid $red;
-    margin: 0 0 10px;
-}
-
-#exhibit .latest_exhibit .left .target {
-    color: #666;
-    border-bottom: 1px solid $red;
-    padding: 0;
-    margin: 0 0 10px;
-}
-
-#exhibit .latest_exhibit .right {
-    float: right;
-    width: 75%;
-    padding: 10px 20px 0;
-}
-
-@media ( max-width: 1199px ) {
-    #exhibit .latest_exhibit .right {
-        float: right;
-        width: 100%;
-        padding: 10px 20px 0;
+                li.exhibit.holder {
+                    float: none;
+                    margin: 0;
+                }
+            }
+        }
     }
-}
 
-#exhibit .latest_exhibit .right ul {
-    margin: 0;
-    padding: 0;
-    clear: both;
-    display: inline-block;
-}
+    .holdhead {
+        position: relative;
 
-@media ( max-width: 1199px ) {
-    #exhibit .latest_exhibit .right ul {
-        width: 100%;
+        h4 {
+            border-bottom: 1px solid $dark-blue-green;
+            margin: 5px 0 0 !important;
+        }
+
+        p {
+            font-size: 12px;
+        }
     }
-}
 
-#exhibit .latest_exhibit .holder {
-    display: inline-block;
-    position: relative;
-    margin: 0 0 30px 0;
-    padding: 0;
-    width: 375px;
-    height: auto;
-}
-
-@media ( max-width: 1199px ) {
-    #exhibit .latest_exhibit .holder {
+    .holder {
         display: inline-block;
         position: relative;
-        margin: 0 0 15px 0;
+        margin: 0 0 30px 0;
         padding: 0;
-        width: 40%;
+        //width: 375px;
+        // width: auto;
         height: auto;
+
+        &:nth-child(odd) {
+            float: right;
+        }
+
+        &:nth-child(even) {
+            float: left;
+        }
+
+        .frame {
+            border: 2px solid $dark-blue-green;
+            position: relative;
+            color: #444;
+            //height: 375px;
+            //width: 375px;
+
+            &:hover {
+                border: 2px solid #32758F;
+
+                .info {
+                    .title {
+                        color: #32758F;
+                    }
+                } 
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+            .info {
+                bottom: 0;
+                position: absolute;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+                min-height: 65px;
+                padding: 10px 5px 5px;
+                border-top: 1px solid $dark-blue-green;
+
+                .date {
+                    font-size: 12px;
+                    margin: 0;
+                    font-style: italic;
+                    color: #444;
+                }
+
+                .title {
+                    font-weight: bold;
+                    line-height: 1;
+                    font-size: 15px;
+                }
+            }
+        }
     }
-}
-
-@media ( max-width: 768px ) {
-      #exhibit .latest_exhibit .holder {
-        display: inline-block;
-        position: relative;
-        margin: 0 auto 30px;
-        padding: 0;
-        width: 100%;
-        height: auto;
-    }
-}
-
-#exhibit .latest_exhibit .holder:nth-child(odd) {
-   float: right;
-}
-
-#exhibit .latest_exhibit .holder:nth-child(even) {
-   float: left;
-}
-
-#exhibit .latest_exhibit .holder .holdhead {
-    position: relative;
-}
-
-#exhibit .latest_exhibit .holdhead h4 {
-    border-bottom: 1px solid $dark-blue-green;
-    margin: 5px 0 0 !important;
-}
-
-#exhibit .latest_exhibit .holder .holdhead p {
-    font-size: 12px;
-}
-
-#exhibit .latest_exhibit .holder .frame {
-    border: 2px solid $dark-blue-green;
-    position: relative;
-    color: #444;
-    height: 375px;
-    width: 375px;
-}
-
-@media ( max-width: 1199px ) {
-    #exhibit .latest_exhibit .holder .frame {
-        height: auto;
-        width: 100%;
-    }
-}
-
-@media ( max-width: 768px ) {
-    #exhibit .latest_exhibit .holder .frame {
-        border: 2px solid $dark-blue-green;
-        position: relative;
-        color: #444;
-        height: 100%;
-        width: auto;
-    }
-    .exhibit-container .breadcrumb {
-        margin: 1rem 0 1rem 0;
-    }
-}
-
-#exhibit .latest_exhibit .holder .frame:hover {
-    border: 2px solid #32758F;
-}
-
-#exhibit .latest_exhibit .holder .frame img {
-    height: 100%;
-    width: 100%;
-}
-
-#exhibit .latest_exhibit .holder .frame .info {
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
-    min-height: 65px;
-    padding: 10px 5px 5px;
-    border-top: 1px solid $dark-blue-green;
-}
-
-#exhibit .latest_exhibit .holder .frame .info .date {
-    font-size: 12px;
-    margin: 0;
-    font-style: italic;
-    color: #444;
-}
-
-#exhibit .latest_exhibit .holder .frame .info .title {
-    font-weight: bold;
-    line-height: 1;
-    font-size: 15px;
-}
-
-#exhibit .latest_exhibit .holder .frame:hover .info .title {
-    color: #32758F;
 }
 
 #exhibit .above_footer {
     clear: both;
 }
 
+@media ( max-width: 1023px ) {
+    #exhibit {
+        .latest_exhibit {
+            padding: 0;
+
+            .left {
+                display: none;
+            }
+
+            .right {
+                //float: right;
+                //width: 100%;
+                padding: 10px 20px 0;
+
+                ul {
+                    width: 100%;
+                }
+            }
+
+            .holder {
+                // display: inline-block;
+                position: relative;
+                // margin: 0 0 15px 0;
+                padding: 0;
+                // width: 40%;
+                height: auto;
+
+                .frame {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 768px ) {
+    #exhibit {
+        .latest_exhibit {
+            .holder {
+                // display: inline-block;
+                position: relative;
+                // margin: 0 auto 30px;
+                padding: 0;
+                // width: 100%;
+                height: auto;
+
+                .frame {
+                    border: 2px solid $dark-blue-green;
+                    position: relative;
+                    color: #444;
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .exhibit-container .breadcrumb {
+        margin: 1rem 0 1rem 0;
+    }
+}
+
 /* EXHIBIT BLACKBAND HEADER STYLING AND CUSTOMIZATION */
 
 .blackband {
-    display: inline-block;
-    position: absolute;
-    left: calc(-50vw + 50%);
-    width: 100vw;
+    //display: inline-block;
+    //position: absolute;
+    //left: calc(-50vw + 50%);
+    //width: 100vw;
     min-height: 150px;
-    height: 290px;
+    // height: 290px;
     background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0 100% $very-dark-gray;
     border-top: 1px solid $very-light-gray;
     border-bottom: 1px solid $very-light-gray;
@@ -256,9 +257,36 @@ html {
     padding: 30px 0;
     z-index: 2;
     background-size: cover;
+
+    a {
+        color: $white-text;
+        text-decoration: underline;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+    h2 {
+        font-size: 2.25rem; // 36px
+        color: $white-text;
+        text-align: center;
+        border-bottom: 1px solid $white-body;
+        margin: 0 0 20px 0;
+    }
+
+    .bandcenter {
+        width: 50%;
+        max-width: 610px;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+        text-align: justify;
+        text-shadow: 2px 2px 1px $black-text;
+    }
 }
 
-@media ( max-width: 1199px ) {
+/*@media ( max-width: 1199px ) {
     .blackband {
     display: inline-block;
     position: relative;
@@ -273,31 +301,13 @@ html {
     z-index: 2;
     background-size: cover;
     }
-}
+}*/
 
-.blackband h2 {
-    font-size: 36px;
-    color: $white-text;
-    text-align: center;
-    border-bottom: 1px solid $white-body;
-    margin: 0 0 20px 0;
-}
-
-@media ( max-width: 1199px ) {
+/*@media ( max-width: 1199px ) {
     .blackband h2 {
     font-size: 24px;
     }
-}
-
-.blackband .bandcenter {
-    width: 50%;
-    max-width: 610px;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    text-align: justify;
-    text-shadow: 2px 2px 1px $black-text;
-}
+}*/
 
 .exhibit_page .blackband .bandcenter {
     text-align: center;
@@ -369,18 +379,11 @@ html {
     background: url("https://library.bc.edu/images/exhibits/banner_default.jpg") no-repeat 0 100% $very-dark-gray;
 }
 
-.blackband a {
-    color: $white-text;
-    text-decoration: underline;
-}
 
-.blackband a:hover {
-    font-weight: bold;
-}
+// EXHIBIT ARCHIVE STYLING
 
-/* EXHIBIT ARCHIVE STYLING */
-
-#exhibit.archives .latest_exhibit .holder:nth-child(odd), #exhibit.archives .latest_exhibit .holder:nth-child(even) {
+#exhibit.archives .latest_exhibit .holder:nth-child(odd), 
+#exhibit.archives .latest_exhibit .holder:nth-child(even) {
    float: left;
    margin: 0 25px 25px 0;
 }
@@ -409,33 +412,91 @@ html {
     }
 }
 
-#exhibit.archives .latest_exhibit .holdhead {
-    margin: 0 0 10px 0;
-    width: 375px;
-}
+#exhibit {
+    &.archives {
+        .latest_exhibit {
+            .holdhead {
+                margin: 1rem 0 .75rem 0; // 16px 0 12px 0
+                width: 375px;
+            }
 
-#exhibit.archives .latest_exhibit .holder {
-    display: inline-block;
-    position: relative;
-    margin: 0 0 50px 0;
-    padding: 0;
-    width: 250px;
-    height: auto;
-}
+            .holder {
+                display: inline-block;
+                position: relative;
+                // margin: 0 0 50px 0;
+                padding: 0;
+                //width: 250px;
+                //width: auto;
+                height: auto;
 
-#exhibit.archives .latest_exhibit .holder .frame {
-    border: 2px solid $dark-blue-green;
-    position: relative;
-    color: #444;
-    height: 250px;
-    width: 250px;
+                .frame {
+                    border: 2px solid $dark-blue-green;
+                    position: relative;
+                    color: #444;
+                    //height: 250px;
+                    //width: 250px;
+                    //margin: .5rem;
+
+                    &:hover {
+                        border: 2px solid #32758F;
+
+                        .info {
+                            .title {
+                                color: #32758F;
+                            }
+                        }
+                    }
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    .info {
+                        bottom: 0;
+                        position: absolute;
+                        width: 100%;
+                        background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+                        min-height: 55px;
+                        padding: 5px;
+
+                        .date {
+                            font-size: 12px;
+                            margin: 0;
+                            font-style: italic;
+                            color: #444;
+                        }
+
+                        .title {
+                            font-weight: bold;
+                            line-height: 1;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+
+            .exhibit.holder {
+                display: flex;
+                float: none;
+                margin: 0;
+
+                .frame {
+                    //display: flex;
+                    // width: 100%;
+                    // width: inherit;
+                    //height: auto;
+                }
+            }
+        }
+    }
 }
 
 @media ( max-width: 1199px ) {
     #exhibit.archives .latest_exhibit .holder {
         margin: 0 0 25px 0;
         padding: 0;
-        width: 45%;
+        //width: 45%;
         height: auto;
     }
 
@@ -446,60 +507,25 @@ html {
 }
 
 @media ( max-width: 767px ) {
-    .exhibit-container {
+    /*.exhibit-container {
         padding-top: 60px;
-    }
-    #exhibit.archives .latest_exhibit .holder {
+    }*/
+    /*#exhibit.archives .latest_exhibit .holder {
         margin: 0 0 25px 0;
         padding: 0;
         width: 100%;
         height: auto;
-    }
+    }*/
     #exhibit.archives .latest_exhibit .holdhead {
         width: 100%;
     }
-}
-
-#exhibit.archives .latest_exhibit .holder .frame:hover {
-    border: 2px solid #32758F;
-}
-
-#exhibit.archives .latest_exhibit .holder .frame img {
-    height: 100%;
-    width: 100%;
-}
-
-#exhibit.archives .latest_exhibit .holder .frame .info {
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
-    min-height: 55px;
-    padding: 5px;
-}
-
-#exhibit.archives .latest_exhibit .holder .frame .info .date {
-    font-size: 12px;
-    margin: 0;
-    font-style: italic;
-    color: #444;
-}
-
-#exhibit.archives .latest_exhibit .holder .frame .info .title {
-    font-weight: bold;
-    line-height: 1;
-    font-size: 15px;
-}
-
-#exhibit.archives .latest_exhibit .holder .frame:hover .info .title {
-    color: #32758F;
 }
 
 
 /* INDIVIDUAL EXHIBIT PAGE STYLES */
 
 #individualpage {
-    padding: 205px 0 0;
+    // padding: 205px 0 0;
     z-index: 3;
 }
 
@@ -556,23 +582,23 @@ html {
 
 @media ( max-width: 1199px ) {
     #individualpage {
-    padding: 0 0 25px;
-    z-index: 3;
-}
-
-.exhibit_page .exhibittitle {
-    width: 100%;
-    min-height: 120px;
-    padding: 10px 5px 0;
-    margin: 0 auto 25px;
-    display: block;
-    background: $white-body;
-    position: relative;
-    text-align: center;
-    z-index: 3;
-    box-shadow: 0px -15px 12px 1px rgba(0,0,0,0);
-}
+        padding: 0 0 25px;
+        z-index: 3;
     }
+
+    .exhibit_page .exhibittitle {
+        width: 100%;
+        min-height: 120px;
+        padding: 10px 5px 0;
+        margin: 0 auto 25px;
+        display: block;
+        background: $white-body;
+        position: relative;
+        text-align: center;
+        z-index: 3;
+        box-shadow: 0px -15px 12px 1px rgba(0,0,0,0);
+    }
+}
 
 /* FOR NON-POSTER IMAGES THAT APPEAR IN SOME EXHIBIT PAGES */
 
@@ -589,13 +615,15 @@ html {
 
 /* SPECIFIC EXHIBIT STYLES */
 
-.default .article_content .poster, .left .article_content .poster  {
+.default .article_content .poster,
+.left .article_content .poster  {
     float: left;
     margin: 0 25px 10px 0;
     max-width: 50%;
 }
 
-.default .article_content .text, .left .article_content .text  {
+.default .article_content .text,
+.left .article_content .text  {
     padding: 0 95px 0 0;
 }
 
@@ -616,12 +644,14 @@ html {
     width: 50%;
 }
 
-#exhibit.tiponeill .poster figure, .exhibit_page.tiponeill .poster figure {
+#exhibit.tiponeill .poster figure,
+.exhibit_page.tiponeill .poster figure {
     margin: 2rem 0;
     font-size: small;
 }
 
-#exhibit.tiponeill .poster figure img, .exhibit_page.tiponeill .poster figure img {
+#exhibit.tiponeill .poster figure img,
+.exhibit_page.tiponeill .poster figure img {
     width: 100%;
     max-width: 100%;
 }

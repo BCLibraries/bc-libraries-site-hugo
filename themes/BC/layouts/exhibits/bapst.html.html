@@ -16,17 +16,18 @@
     <div id="exhibit" class="archives">
         <div class="row">
             <div class="latest_exhibit">
-                <div class="left">
+                <div class="left col-3">
                     {{ partial "exhibits/gallerynav.html" . }}
                 </div>
     
-                <div class="right">
+                <div class="right col">
                     <h3 id="main-heading">Exhibits in the Bapst Art Library Gargan Hall Exhibit Cases</h3>
-                    <ul>
-                        <div class="holdhead">
-                            <h4>2016-2020</h4>
-                        </div>
-                        
+
+                    <div class="holdhead">
+                        <h4>2016-2020</h4>
+                    </div>
+
+                    <ul class="exhibits">
                         {{ range (where .Site.RegularPages ".Params.location" .Params.location) }}
                         {{ partial "exhibits/thumbnail-summary.html" . }}
                         {{ end }}
@@ -43,9 +44,11 @@
                             <h4>2011-2014</h4>
                         </div>
                         {{/* manually set the location to "bapstarchive" */}}
+                        <ul class="exhibits">
                         {{ range (where .Site.Pages ".Params.location" "bapstarchive") }}
                         {{ partial "exhibits/thumbnail-summary.html" . }}
                         {{ end }}
+                        </ul>
                     </ul>
 
                 </div> {{/* end .right */}}

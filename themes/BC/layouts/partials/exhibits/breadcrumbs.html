@@ -1,21 +1,23 @@
-<ol class="breadcrumb" id="s-lib-bc-list">
-    <li id="s-lib-bc-customer"><a href="{{ relref . "/"}}">{{ .Site.Title }}</a></li>
-    {{/* pages like /exhibits and /exhibits/burns are nodes */}}
-    {{ if .Page.IsNode }}
-        {{/* pages like /exhibits/burns and /exhibits/bapst have 'archivepage: true' set in their respective _index.md front matter */}}
-        {{ if eq .Page.Params.archivepage true }}
-            <li id="s-lib-bc-site"><a href="{{ relref . "/exhibits"}}">{{ .Site.Params.exhibits }}</a></li>
-            {{ if eq .Params.location "tiponeill" }}
-                <li id="s-lib-bc-group" class="active">{{ .Site.Param .Page.Params.location }}</li>
+<nav aria-label="breadcrumb" class="pt-0 pt-md-4 pb-2">
+    <ol class="breadcrumb" id="s-lib-bc-list">
+        <li id="s-lib-bc-customer" class="breadcrumb-item"><a href="{{ relref . "/"}}">{{ .Site.Title }}</a></li>
+        {{/* pages like /exhibits and /exhibits/burns are nodes */}}
+        {{ if .Page.IsNode }}
+            {{/* pages like /exhibits/burns and /exhibits/bapst have 'archivepage: true' set in their respective _index.md front matter */}}
+            {{ if eq .Page.Params.archivepage true }}
+                <li id="s-lib-bc-site" class="breadcrumb-item"><a href="{{ relref . "/exhibits"}}">{{ .Site.Params.exhibits }}</a></li>
+                {{ if eq .Params.location "tiponeill" }}
+                    <li id="s-lib-bc-group" class="breadcrumb-item active">{{ .Site.Param .Page.Params.location }}</li>
+                {{ else }}
+                    <li id="s-lib-bc-group" class="breadcrumb-item active">{{ .Site.Param .Page.Params.location }} Exhibit Archives</li>
+                {{ end }}
             {{ else }}
-                <li id="s-lib-bc-group" class="active">{{ .Site.Param .Page.Params.location }} Exhibit Archives</li>
+                <li id="s-lib-bc-page" class="breadcrumb-item active">{{ .Site.Params.exhibits }}</li>
             {{ end }}
-        {{ else }}
-            <li id="s-lib-bc-page" class="active">{{ .Site.Params.exhibits }}</li>
+        {{ else }} {{/* all other exhibit pages */}}
+            <li id="s-lib-bc-site" class="breadcrumb-item"><a href="{{ relref . "/exhibits"}}">{{ .Site.Params.exhibits }}</a></li>
+            <li id="s-lib-bc-group" class="breadcrumb-item"><a href="{{ relref . "/exhibits"}}{{ .Page.Params.location }}">{{ .Site.Param .Page.Params.location }} Exhibit Archives</a></li>
+            <li id="s-lib-bc-page" class="breadcrumb-item active">{{ .Title }}</li>
         {{ end }}
-    {{ else }} {{/* all other exhibit pages */}}
-        <li id="s-lib-bc-site"><a href="{{ relref . "/exhibits"}}">{{ .Site.Params.exhibits }}</a></li>
-        <li id="s-lib-bc-group"><a href="{{ relref . "/exhibits"}}{{ .Page.Params.location }}">{{ .Site.Param .Page.Params.location }} Exhibit Archives</a></li>
-        <li id="s-lib-bc-page" class="active">{{ .Title }}</li>
-    {{ end }}
-</ol>
+    </ol>
+</nav>
