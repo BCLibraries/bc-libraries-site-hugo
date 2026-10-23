@@ -67,8 +67,27 @@
                 $('.whats-this').popover(tooltip_options);
             }
 
-            run_on_ready(makeQuickLinkBoxesClickable);
+            function locationHoursHasComma() {
+                const lib_hours_elements = document.querySelectorAll('.card-link-wrapper .lib-hours__hours');
+
+                const callback = (mutationsList) => {
+                    for (const mutation of mutationsList) {
+                        if (mutation.type === 'childList' || mutation.type === 'characterData') {
+                            // console.log('Text changed to:', mutation.target.textContent);
+                            if (mutation.target.textContent.includes(', ')) {
+                                mutation.target.classList.add('has-comma');
+                            }
+                        }
+                    }
+                };
+                const observer = new MutationObserver(callback);
+                lib_hours_elements.forEach(element => {
+                    observer.observe(element, { childList: true, characterData: true, subtree: true });
+                });
+            }
+
             run_on_ready(onlineOnlyPopover);
+            run_on_ready(locationHoursHasComma);
         })();
     </script>
 {{ end }}
