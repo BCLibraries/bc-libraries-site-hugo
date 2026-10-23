@@ -13,34 +13,6 @@
 .aal-box {
     display: flex;
 
-    a.card-link-wrapper {
-        text-decoration: none;
-        width: 100%;
-
-        &:hover,
-        &:focus,
-        &:focus-visible {
-            .card {
-                border: 1px solid blue;
-                outline: blue 1px solid;
-                text-decoration: none;
-            }
-
-            .aal-icon {
-                background-color: $aal-icon-blue;
-                text-decoration: none;
-            }
-        }
-
-        &:focus-visible {
-            border-radius: .375rem; // 6px
-
-            .card {
-                outline: blue 2px solid;
-            }
-        }
-    }
-
     .card {
         background-color: $very-very-light-gray;
     }
