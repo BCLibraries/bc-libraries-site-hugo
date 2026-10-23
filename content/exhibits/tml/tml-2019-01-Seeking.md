@@ -2,7 +2,7 @@
 title: "Seeking Shelter"
 subtitle: "A Story of Place, Faith and Resistance"
 draft: false
-active: true
+active: false
 date: 2019-01-22T01:01:00-04:00
 daterange: "February 4 - April 12, 2019"
 year: "2019"

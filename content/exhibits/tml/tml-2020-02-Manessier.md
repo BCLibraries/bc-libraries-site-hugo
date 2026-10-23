@@ -2,7 +2,7 @@
 title: "Alfred Manessier"
 subtitle: "Composer in Colors"
 draft: false
-active: true
+active: false
 date: 2020-02-12T01:01:00-04:00
 daterange: "January 15 - April 20, 2020"
 year: "2020"
