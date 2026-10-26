@@ -8,6 +8,11 @@
         display: inline-block;
     }
 
+    #s-lib-bc-guide,
+    #s-lib-bc-page {
+        display:none;
+    }
+
     // #guide-title h2 {text-transform: capitalize;}
 
     #burns-logo {
@@ -231,6 +236,12 @@
                     }
 
                     h3 {
+                        position: relative;
+                        top: unset;
+                        left: unset;
+                        right: unset;
+                        bottom: unset;
+
                         span {
                             background-color: #000;
                         }
@@ -238,7 +249,7 @@
                 }
 
                 .column-content {
-                   padding-top: 3rem; 
+                   padding-top: .5rem; 
                 }
             }
         }
@@ -275,7 +286,11 @@
     // .itemcontent-image,
     // .itemcontent-content {display:inline-block; padding-right:15px; font-size:15px;}
     // .ip {padding:4px 0 0 8px;}
-    // #emergencybox {background-color: #fde073; padding: 10px;}
+
+    #emergencybox {
+        background-color: #fde073; 
+        padding: .675rem; // 10px
+    }
 
     @media (max-width: 990px) {
         // #banner-left {padding-right:0; max-height:416px;}
