@@ -247,8 +247,10 @@ img.center {
 
 // Footer metadata
 #s-lg-guide-header-meta {
-    font-size: .875rem; // 14px
+    // font-size: .875rem; // 14px
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 0;
     justify-content: space-between;
 
     hr {
@@ -257,16 +259,25 @@ img.center {
 
     #s-lg-guide-header-attributes {
         padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem 1rem;
+
+        li {
+            float: none;
+            padding: 0;
+
+            .s-lg-small {
+                font-size: .875rem; // 14px
+            }
+        }
     }
 
     #s-lib-footer-login-link {
-        padding-right: 0;
-    }
-}
-
-@media ( max-width: 768px ) {
-    #s-lib-footer-login-link {
-        float: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        gap: .25rem; // 4px
     }
 }
 
