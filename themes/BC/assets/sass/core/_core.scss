@@ -5,10 +5,10 @@ html {
 }
 
 body {
-    font-family: "Open Sans", Arial, sans-serif;
-    color: $black-text;
-    font-size: 1rem;
-    line-height: 1.5; // 24px
+    font-family: "Open Sans", Arial, sans-serif !important;
+    color: $black-text !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important; // 24px
 }
 
 .accessibility-text {
