@@ -121,6 +121,8 @@ img.center {
 
 // Breadcrumb styles
 #s-lib-bc-list {
+    font-size: 1rem;
+
     > .active {
         color: $wcagaa-compliant-gray-text;
     }
