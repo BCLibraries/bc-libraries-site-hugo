@@ -4,11 +4,13 @@
 }
 
 #s-lg-guide-tabs {
+    padding: 0;
+
     nav#side-nav {
         ul.nav-tabs {
             list-style: none outside none;
             margin: 0;
-            padding: 0;
+            padding: 0 .75rem; // 12px
             border-bottom: 0;
             display: flex;
 
