@@ -36,6 +36,12 @@ a {
         outline: blue 2px solid !important;
         outline-offset: 1px !important;
     }
+
+    .fa-external-link {
+        font-size: .625rem !important; // 10px
+        margin-left: .125rem; // 2px
+        align-items: baseline;
+    }
 }
 
 #skiplink {
