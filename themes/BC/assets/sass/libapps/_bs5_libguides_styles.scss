@@ -210,13 +210,15 @@ img.center {
 
     .s-lib-profile-div {
         margin: 0;
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
     }
 
-    .s-lib-profile-widget {
+    /*.s-lib-profile-widget {
         display: flex;
-    }
+        flex-direction: column;
+        justify-content: center;
+    }*/
 
     .s-lib-profile-email:empty,
     .s-lib-profile-pronouns:empty,
@@ -254,6 +256,10 @@ img.center {
     .s-lib-profile-contact,
     .s-lib-profile-subjects {
         display: block;
+    }
+
+    .s-lib-profile-contact {
+        margin-top: .5rem; // 8px
     }
 
     .s-lib-profile-image img {
