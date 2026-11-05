@@ -329,6 +329,11 @@ img.center {
     padding-left: 2rem;
 }
 
+// Book widget lists doesn't use left padding
+.s-lg-link-list-5 {
+    padding-left: 0;
+}
+
 // Hide RSS links
 .s-lg-rss-links {
     display: none;
