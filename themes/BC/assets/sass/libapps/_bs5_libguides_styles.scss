@@ -332,11 +332,17 @@ img.center {
 // Book widget lists doesn't use left padding
 .s-lg-link-list-5 {
     padding-left: 0;
+    margin-top: .5rem; // 8px
 }
 
 // Hide RSS links
 .s-lg-rss-links {
     display: none;
+}
+
+// Add top margin to content sections following link list container
+.s-lg-link-list-container + div[id^="s-lg-content-"] {
+    margin-top: 1rem;
 }
 
 // Make LibGuides boxes less "boxy"
