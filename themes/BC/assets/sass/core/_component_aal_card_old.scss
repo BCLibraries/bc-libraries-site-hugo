@@ -164,9 +164,15 @@
                     padding: 0;
 
                     .media {
-                       text-decoration: none;
-                       color: #666;
-                       display: block;
+                        text-decoration: none;
+                        color: #666;
+                        display: flex;
+                        gap: .5rem; // 8px
+                        align-items: flex-start;
+
+                        .media-body {
+                            padding-top: .5rem; // 8px
+                        }
                     }
 
                     .media-left {
@@ -375,6 +381,28 @@
 .lib-box-small h3,
 .lib-box-small .panel h3 {
     font-size: 15px;
+}
+
+.aal-box-small {
+    .panel-body {
+        padding: 0;
+
+        .media {
+            text-decoration: none;
+            color: #666;
+            display: flex;
+            gap: .5rem; // 8px
+            align-items: flex-start;
+
+            .media-body {
+                padding-top: .5rem; // 8px
+
+                h3.media-heading {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
 }
 
 /* media query overrides */
