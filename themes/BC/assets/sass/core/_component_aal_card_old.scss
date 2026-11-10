@@ -383,6 +383,7 @@
     font-size: 15px;
 }
 
+.lib-box,
 .aal-box-small {
     .panel-body {
         padding: 0;
@@ -399,6 +400,20 @@
 
                 h3.media-heading {
                     font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.lib-box {
+    .panel-body {
+        .media {
+            min-height: 11rem; // 176px
+
+            .media-left {
+                img {
+                    max-width: 150px;
                 }
             }
         }
