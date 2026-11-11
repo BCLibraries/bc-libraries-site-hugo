@@ -9,7 +9,7 @@
     border-color: #ddd;
 
     .panel-heading {
-        padding: .625rem 0.9375rem; // 10px 15px
+        padding: .5rem 1rem; // 8px 16px
         border-bottom: 1px solid transparent;
         border-top-left-radius: .25rem; // 4px
         border-top-right-radius: .25rem; // 4px
@@ -31,14 +31,14 @@
     }
 
     .panel-footer {
-        padding: .625rem 0.9375rem; // 10px 15px;
+        padding: .5rem 1rem; // 8px 16px
         background-color: #f5f5f5;
         border-top: 1px solid #ddd;
         border-bottom-right-radius: .25rem; // 4px
         border-bottom-left-radius: .25rem; // 4px
     }
 
-    .panel-default {
+    &.panel-default {
         border-color: #ddd;
 
         > .panel-heading {
@@ -48,7 +48,7 @@
         }
     }
 
-    .panel-primary {
+    &.panel-primary {
         border-color: #337ab7;
 
         > .panel-heading {
@@ -58,7 +58,7 @@
         }
     }
 
-    .panel-success {
+    &.panel-success {
         border-color: #d6e9c6;
 
         > .panel-heading {
@@ -68,7 +68,7 @@
         }
     }
 
-    .panel-info {
+    &.panel-info {
         border-color: #bce8f1;
 
         > .panel-heading {
@@ -78,7 +78,7 @@
         }
     }
 
-    .panel-warning {
+    &.panel-warning {
         border-color: #faebcc;
 
         > .panel-heading {
@@ -88,7 +88,7 @@
         }
     }
 
-    .panel-danger {
+    &.panel-danger {
         border-color: #ebccd1;
 
         > .panel-heading {
