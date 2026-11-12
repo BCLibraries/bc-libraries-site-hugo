@@ -11,13 +11,17 @@ body {
     line-height: 1.5 !important; // 24px
 }
 
+// Same style as .sr-only for accessibility text (visually hidden but accessible to screen readers)
 .accessibility-text {
     position: absolute;
-    left: -10000px;
-    top: auto;
     width: 1px;
     height: 1px;
+    padding: 0;
+    margin: -1px;
     overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 a {
