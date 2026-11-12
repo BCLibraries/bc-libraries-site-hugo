@@ -23,7 +23,7 @@
         <!-- End Google Tag Manager (noscript) -->
         {{ end }}
 
-        <a id="skiplink" href="#main-heading" class="accessibility-text">Skip to main content</a>
+        <a id="skiplink" href="#main-heading" class="visually-hidden">Skip to main content</a>
 
         <header>
             {{/* show floating help button */}}
@@ -42,7 +42,7 @@
             {{/* add mega menu to header */}}
             {{ partial "megamenu/megamenu.html" . }}
 
-            <h1 class="sr-only sr-only-focusable">{{ .Title }}</h1>
+            <h1 class="visually-hidden">{{ .Title }}</h1>
         </header>
 
         <main>

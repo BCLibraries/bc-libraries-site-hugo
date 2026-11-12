@@ -81,7 +81,7 @@ $(function () {
     }
 
     if (is_homepage_bool) {
-        var homepage_anchors = $('body.mainhomepage a').not(".askuswidget, .askuswidget-mm, .accessibility-text");
+        var homepage_anchors = $('body.mainhomepage a').not(".askuswidget, .askuswidget-mm, .visually-hidden");
         addClickEvents(homepage_anchors, "click_homepage");
     }
     
