@@ -9,6 +9,23 @@ body {
     color: $black-text !important;
     font-size: 1rem !important;
     line-height: 1.5 !important; // 24px
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    #fullpagewrapper-refresh {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-between;
+    }
 }
 
 // Same style as .sr-only for accessibility text (visually hidden but accessible to screen readers)
