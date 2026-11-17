@@ -327,6 +327,11 @@ img.center {
     margin-bottom: 0;
     margin-left: 0;
     padding-left: 2rem;
+
+    li {
+        padding-top: 0;
+        padding-bottom: .3125rem; // 5px
+    }
 }
 
 // Book widget lists doesn't use left padding
@@ -358,6 +363,42 @@ img.center {
 
         .ui-widget {
             font-family: inherit;
+        }
+
+        ol,
+        ul {
+            li {
+                padding-top: 0;
+                padding-bottom: .3125rem; // 5px
+
+                // Remove bottom margin for the last paragraph within list items
+                > p:last-child {
+                   margin-bottom: 0;
+                }
+            }
+        }
+
+        > div[id^="s-lg-content-"] {
+            // Remove bottom margin for consecutive lists
+            > ul + ul,
+            > ol + ol,
+            > ul + ol,
+            > ol + ul {
+                margin-bottom: 0;
+            }
+
+            // Remove bottom margin for lists that are followed by another list
+            ul:has(+ ul),
+            ol:has(+ ol),
+            ul:has(+ ol),
+            ol:has(+ ul) {
+                margin-bottom: 0;
+            }
+            
+            // Remove bottom margin for the last child list within content sections
+            > :last-child:is(ul, ol) {
+                margin-bottom: 0;
+            }
         }
     }
 }
